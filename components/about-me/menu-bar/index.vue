@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="@/asset/image/common/logo.png" alt="" width="90%">
+      <img src="@/asset/image/common/logo.png" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
@@ -50,11 +50,13 @@
 </div>
 </template>
 <style lang="scss" scoped>
-.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+//pc
+@media only screen and (min-width: 768px) {
+  .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
   width: 90%;
   background-color: #fff;
   border-radius: 80px 80px 80px 80px;
- 
+
 }
     .navbar-light .navbar-nav .nav-link {
       color: #57B2F3;
@@ -78,4 +80,20 @@
         }
       }
     }
+  
+}
+//mb
+@media only screen and (max-width: 768px) {
+ .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+  width: 100%;
+  background-color: #fff;
+  border-radius: 80px 80px 80px 80px;
+}
+.navbar-brand {
+  margin-right: 0
+}
+img{
+  width: 50%;
+}
+}
 </style>

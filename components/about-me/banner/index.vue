@@ -1,12 +1,6 @@
 <template>
   <!-- 轮播 -->
 <div id="demo" class="carousel slide" data-bs-ride="carousel">
-   <!-- 指示符 -->
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-  </div>
   <!-- 轮播图片 -->
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -19,15 +13,22 @@
       <img src="@/asset/image/banner/ban_pixta.jpg"  class="d-block" style="width:90%">
     </div>
   </div>
+    <!-- 指示符 -->
   
   <!-- 左右切换按钮 -->
-  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </button>
+  </button> -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1" ></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
 </div>
+
 </template>
 
 <script>
@@ -41,14 +42,20 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.carousel-inner{
+
+//mb
+@media only screen and (max-width: 768px) {
+  .d-block {
+    display: block!important;
+    height: 83vw;
+    /* transform: scale(3,3); */
+}
+   .carousel-inner{
   text-align: -webkit-center;
   img{
-     border-radius: 80px 80px 80px 80px;
+     border-radius: 30px 30px 30px 30px;
   }
 }
-// mb
-@media (max-width: 768px) {
   .section {
     width: 100%;
     margin: 0;
@@ -58,8 +65,14 @@ export default {
     display: none;
   }
 }
-// pc
-@media (min-width: 768px) {
+//pc
+@media only screen and (min-width: 768px) {
+  .carousel-inner{
+  text-align: -webkit-center;
+  img{
+     border-radius: 80px 80px 80px 80px;
+  }
+}
   .swiper-button-prev,
   .swiper-button-next {
     background-image: none;
@@ -88,5 +101,37 @@ export default {
       }
     }
   }
+}
+</style>
+<style lang="scss" >
+.carousel-indicators [data-bs-target]{
+  box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 12px;
+    height: 12px;
+    padding: 0;
+    margin-right: 8px;
+    margin-left: 8px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: #C2C7CD;
+    background-clip: padding-box;
+    border: 0;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    border-radius: 100%;
+    transition: opacity .6s ease;
+}
+.carousel-indicators {
+  position: inherit;
+}
+.carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #9BA5B1;
+  width: 14px;
+  height: 14px;
 }
 </style>
