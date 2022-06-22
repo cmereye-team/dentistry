@@ -1,0 +1,225 @@
+<template>
+  <div class="section vedio_box md:font-black">
+    <div class="flex justify-center texts">
+      <h2>診所地址</h2>
+      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+    </div>
+    <div class="adress">
+      <ul>
+        <li>港島</li>
+        <li>九龍</li>
+        <li>新界</li>
+      </ul>
+    </div>
+    <div class="tab flex justify-center" id="tab">
+      <ul>
+        <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
+          v-for='(item, index) in list'>
+          <p>{{ item.title }}</p>
+        </li>
+      </ul>
+    </div>
+    <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap" >
+    <div id="map">
+         <iframe 
+      width="100%" height="100%"
+     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div>
+      <div class="mapcontennt">
+      <p>地址</p>
+      <p>銅鑼灣軒尼詩道555號東角中心11樓1112室</p></br>
+     </div>
+     <div class="button">
+        <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+        <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+     </div>
+
+    </div>
+     
+     
+    </div>
+    <div v-if='currentIndex == 1 ? true : false' class="justify-center">
+      222</div>
+    <div v-if='currentIndex == 2 ? true : false' class="justify-center">
+      33333</div>
+  </div>
+  </div>
+</template>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</script>
+<script src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/724128333/?random=1636507954390&amp;cv=9&amp;fst=1636507954390&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=1152&amp;u_w=2048&amp;u_ah=1112&amp;u_aw=2048&amp;u_cd=24&amp;u_his=1&amp;u_tz=480&amp;u_java=false&amp;u_nplug=2&amp;u_nmime=2&amp;gtm=2oab80&amp;sendb=1&amp;ig=1&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.hkeyecmer.com%2Fteam%2F&amp;tiba=%E7%9C%BC%E7%A7%91%E9%86%AB%E7%94%9F&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script><script type="text/javascript" charset="utf-8" src="https://mqj.zoosnet.net/js/CdCheck.aspx?id=40126824&amp;sid=fdfd20355a524f8ca3ad942f4def42c9&amp;d=1636509748743"></script>
+<script>
+export default {
+  data() {
+    return {
+      list: [{
+        id: 1,
+        title: '中環'
+      },
+      {
+        id: 2,
+        title: '銅鑼灣'
+      },
+      {
+        id: 3,
+        title: '灣仔'
+      }],
+      currentIndex: 0,   // 当前点击的tab的索引
+    }
+  },
+  created() {
+  },
+   
+  methods: {
+    // initMap() {
+    //   var googleMap = new google.maps.Map(document.getElementById("map"), {
+    //       center: {lat: 40, lng: 116},	//地图初始化中心点
+    //       mapTypeId: google.maps.MapTypeId.ROADMAP,//地图类型（地图、地形图、卫星图 三种可选）
+    //       disableDefaultUI: false,	//是否彻底停用默认用户界面
+    //       zoomControl: false,			//是否显示右下角放大、缩小按钮
+    //       mapTypeControl: false,		//是否显示左上角地图类型选择框
+    //       scaleControl: false,		//是否右下角显示地图比例尺
+    //       zoom: 13				   //地图缩放级别（放大、缩小也是修改此选项）
+    //   });
+    // };
+
+    handleClick(index) {
+      // console.log(index);
+      this.currentIndex = index
+    },
+  }
+};
+</script>
+<style lang="scss" scoped>
+.button{
+  display:flex;
+  margin-left: 7vw;
+}
+@keyframes slidein {
+  0% {
+    // background: linear-gradient(94.37deg, #4570b6 12.08%, #81dbec 92.9%);
+  }
+  100% {
+    background: linear-gradient(94.37deg, #57B2F3 12.08%, #57B2F3 92.9%);
+    color: white;
+  }
+}
+.link_more {
+    border: 2px solid #57B2F3;
+    border-radius: 30px 30px 30px 30px;
+    transition: all 0.5s;
+    color: #57B2F3;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 1vw;
+    margin: 0 auto;
+    width: 12vw;
+    letter-spacing: 0.2vw;
+    margin-top: 3vw;
+    text-align: center;
+    &:hover {
+      animation: 3s ease-in 1s 2 reverse both paused slidein;
+    }
+  }
+.addmap{
+  display: flex;
+
+}
+.mapcontennt{
+    height: 20vw;
+    width: 27vw;
+    border: 1;
+    background: #8CD1F8;
+    border-radius: 30px 30px 30px 30px;
+    margin-left: 8vw;
+    margin-top: 2vw;
+    p{
+      margin: 0.8vw 1.3vw;
+      color:white
+    }
+}
+#map {
+  height: 28vw;
+  width: 43vw;
+  // border: 1px solid;
+  border-radius: 10px 10px 10px 10px;
+  box-shadow: 15px 15px 5px #8CD1F8;
+}
+
+.map {
+  border: #ddd;
+}
+
+.active {
+  //  background-color: #F3FCFE;
+  color: #57B2F3;
+  border-bottom: 2px solid #57B2F3;
+  display: block;
+}
+
+.tab {
+  display: flex;
+  justify-content: center;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    display: contents;
+    // position: absolute;
+  }
+
+  li {
+    cursor: pointer;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+    float: left;
+    margin: 1vw;
+    // border-bottom: 2px solid linear-gradient(#81dbec,#4570b6 );
+    // border-image: -webkit-linear-gradient(60deg, #81dbec, #4570b6) 1 2;
+    width: 6vw;
+  }
+}
+
+.texts {
+  text-align: center;
+
+  h2 {
+    font-weight: 300;
+    color: #79828D;
+    margin-bottom: 1vw;
+  }
+
+  image {
+    text-align: center;
+  }
+}
+
+.adress {
+  ul {
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    li {
+      margin: 2vw 2vw;
+      background: #9BD0F5;
+      border-radius: 100%;
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      color: white;
+
+    }
+
+    li:nth-of-type(1) {
+      background: #57B2F3;
+      border-radius: 100%;
+    }
+  }
+}
+</style>

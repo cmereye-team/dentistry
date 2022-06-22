@@ -5,6 +5,9 @@
   <footce/>
   <serve/>
   <serveConcept/>
+  <debtistryHealth/>
+  <mapGoogle/>
+  <foot/>
   
 </div>
 </template>
@@ -15,14 +18,19 @@ import Banner from "@/components/about-me/banner/index.vue";
 import serve from "@/components/about-me/serve/index.vue"
 import serveConcept from "@/components/about-me/service-concept/index.vue"
 import footce from "@/components/footce.vue"
-
+import debtistryHealth from "@/components/about-me/debtistry-health/index.vue"
+import mapGoogle from "@/components/about-me/map-google/index.vue"
+import foot from "@/components/foot.vue"
 export default {
    components: { 
     menuBar,
     Banner, 
     serve,
     serveConcept,
-    footce
+    footce,
+    debtistryHealth,
+    mapGoogle,
+    foot
     }
   
 }
