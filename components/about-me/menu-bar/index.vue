@@ -62,9 +62,6 @@
       color: #57B2F3;
     }
     .nar{
-      
-      
-      
       .navbar-brand{
         img{
           padding-left: 2vw;

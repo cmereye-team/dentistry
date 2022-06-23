@@ -4,6 +4,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1;
     padding: 0;
+    overflow-y: hidden !important;
 }
 
 body.boxed {

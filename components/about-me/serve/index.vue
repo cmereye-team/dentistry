@@ -3,8 +3,7 @@
     <div class="flex justify-center texts">
         <h2>牙科服務</h2>
                 <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
-                <p>中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，</p><br>
-                <p>到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
+                <p class="serve_con">中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
     </div>
     <div class="service_box">
       <!-- <div class="text-left font-weight-bold text-xs-center ls-4  title  fs-md-34  fs-lg-34  fs-xs-26 ">醫療服務</div> -->
@@ -116,6 +115,18 @@
             </div>
             
           </div>
+          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="1.1s">
+            <div class="service_hover">
+              <a href="/Vision-Correction/">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_smile矯視"
+                    alt="希瑪林順潮眼科中心_smile矯視" /> </div>
+                <div class="service_txt">
+                  <p class=" ">屈光矯視</p>
+                </div>
+                </a>
+            </div>
+            
+          </div>
         </div>
       </div>
     </div>
@@ -139,8 +150,7 @@
     height: auto;
     padding-bottom: 1rem;
     z-index: 999;
-    background: #ECF7FC
-;
+    background: #ECF7FC;
   }
 a{
   
@@ -178,10 +188,44 @@ a{
 }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
+  .service_box .service_item[data-v-47af9056] {
+    flex: 1 0 36.333333%;
+    max-width: 40.333333%;
+    margin-bottom: 1.428rem;
+    padding-right: 0;
+}
+.service_box .service_item .service_pic[data-v-47af9056] {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    height: 19vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6vw;
+}
+.service_box .service_item .service_txt[data-v-47af9056] {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.service_box .row[data-v-47af9056] {
+    padding-right: 15px;
+    justify-content: center;
+}
   .service_box .row {
     padding-right: 15px;
   }
-
+  .serve_con{
+    text-align: left;
+    padding: 3vw;
+  }
   .service_box .service_item {
     -ms-flex: 0 0 33.333333%;
     flex: 0 0 33.333333%;
@@ -202,6 +246,14 @@ a{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
+  
+  .serve_con{
+    width: 73vw;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-left: 31vw;
+  }
   .service_box .service_item {
     margin-bottom: 3.571rem;
   }
@@ -316,8 +368,7 @@ a{
     height: auto;
     padding-bottom: 1rem;
     z-index: 999;
-    background: #ECF7FC
-;
+    background: #ECF7FC;
   }
 }
 

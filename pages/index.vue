@@ -1,5 +1,5 @@
 <template>
-<div>
+<div id="lay">
   <menuBar/>
   <Banner/>
   <footce/>
@@ -35,3 +35,8 @@ export default {
   
 }
 </script>
+<style>
+  #lay{
+    overflow-y: hidden;
+  }
+</style>
