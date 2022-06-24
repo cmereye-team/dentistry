@@ -3,7 +3,7 @@
     <div class="flex justify-center texts">
         <h2>牙科服務</h2>
                 <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
-                <p class="serve_con">中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
+                <p class="serve_con" >中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
     </div>
     <div class="service_box">
       <!-- <div class="text-left font-weight-bold text-xs-center ls-4  title  fs-md-34  fs-lg-34  fs-xs-26 ">醫療服務</div> -->
@@ -23,7 +23,7 @@
           <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.4s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_黃斑病變"
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group.png" title="希瑪林順潮眼科中心_黃斑病變"
                     alt="希瑪林順潮眼科中心_黃斑病變" /> </div>
                 <div class="service_txt">
                   <p class=" ">黃斑病變</p>
@@ -35,7 +35,7 @@
           <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.5s">
             <div class="service_hover">
               <a href="/Retinal-detachment-and-diseases/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_視網膜脫落"
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="希瑪林順潮眼科中心_視網膜脫落"
                     alt="希瑪林順潮眼科中心_視網膜脫落" /> </div>
                 <div class="service_txt">
                   <p class=" ">視網膜脫落<br /> 及疾病</p>
@@ -46,7 +46,7 @@
           <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.6s">
             <div class="service_hover">
               <a href="/Glaucoma/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_青光眼"
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_0.png" title="希瑪林順潮眼科中心_青光眼"
                     alt="希瑪林順潮眼科中心_青光眼" /> </div>
                 <div class="service_txt">
                   <p class=" ">青光眼</p>
@@ -190,7 +190,7 @@ a{
 @media only screen and (min-width: 100px) and (max-width: 991px) {
   .service_box .service_item[data-v-47af9056] {
     flex: 1 0 36.333333%;
-    max-width: 40.333333%;
+    max-width: 44.333333%;
     margin-bottom: 1.428rem;
     padding-right: 0;
 }
@@ -224,7 +224,8 @@ a{
   }
   .serve_con{
     text-align: left;
-    padding: 3vw;
+    padding: 5vw;
+    color: #79828D;
   }
   .service_box .service_item {
     -ms-flex: 0 0 33.333333%;

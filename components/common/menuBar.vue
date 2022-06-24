@@ -2,7 +2,7 @@
 <div class="nar sticky-sm-top sticky-top" style="width=90%">
     <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index">
+    <a class="navbar-brand" href="/">
       <img src="@/asset/image/common/logo.svg" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">

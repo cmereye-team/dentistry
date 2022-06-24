@@ -4,67 +4,29 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src=" @/asset/image/banner/pixta_phone.jpg "
-            srcset="
-            @/asset/image/banner/pixta_phone.jpg 400w,
-            @/asset/image/banner/pixta_phone.jpg 750w,
-            @/asset/image/banner/pixta_phone.jpg 768w,
-            @/asset/image/banner/ban_pixta.jpg 1024w,
-            @/asset/image/banner/pixta_phone.jpg 1125w,
-            @/asset/image/banner/ban_pixta.jpg 1650w,
-            ">
-        <!-- <img 
-            src="@/asset/image/banner/pixta_phone.jpg"
-            srcset="
-            @/asset/image/banner/ban_pixta.jpg 1024w 
-            @/asset/image/banner/ban_pixta.jpg 768w 
-            @/asset/image/banner/ban_pixta.jpg 375w"    
-            sizes="(max-width: 376px) 375px, (max-width: 769px) 768px, 1024px" 
-            class="d-block"  > -->
+        <img src="@/asset/image/banner/ContactUs.jpg">
       </div>
       <div class="carousel-item">
-        <img src=" @/asset/image/banner/pixta_phone.jpg "
-            srcset="
-            @/asset/image/banner/pixta_phone.jpg 400w,
-            @/asset/image/banner/pixta_phone.jpg 750w,
-            @/asset/image/banner/pixta_phone.jpg 768w,
-            @/asset/image/banner/ban_pixta.jpg 1024w,
-            @/asset/image/banner/pixta_phone.jpg 1125w,
-            @/asset/image/banner/ban_pixta.jpg 1650w,
-            ">
-      <!-- <img src="@/asset/image/banner/ban_pixta.jpg" 
-          srcset="@/asset/image/banner/pixta_phone.jpg 640w @/asset/image/banner/ban_pixta.jpg"     
-          class="d-block" > -->
+        <img src="@/asset/image/banner/ContactUs.jpg">
     </div>
     <div class="carousel-item">
-      <img src=" @/asset/image/banner/pixta_phone.jpg "
-            srcset="
-            @/asset/image/banner/pixta_phone.jpg 400w,
-            @/asset/image/banner/pixta_phone.jpg 750w,
-            @/asset/image/banner/pixta_phone.jpg 768w,
-            @/asset/image/banner/ban_pixta.jpg 1024w,
-            @/asset/image/banner/pixta_phone.jpg 1125w,
-            @/asset/image/banner/ban_pixta.jpg 1650w,
-            ">
-      <!-- <img src="@/asset/image/banner/ban_pixta.jpg"
-          srcset="@/asset/image/banner/pixta_phone.jpg 640w @/asset/image/banner/ban_pixta.jpg"       
-          class="d-block" > -->
+      <img src="@/asset/image/banner/ContactUs.jpg">
     </div>
     </div>
     <!-- 指示符 -->
 
     <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </button> -->
-    <div class="carousel-indicators">
+  </button>
+    <!-- <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div>
+    </div> -->
   </div>
 
 </template>
@@ -115,14 +77,15 @@ export default {
 @media only screen and (min-width: 768px) {
   .carousel-inner img[data-v-703b804a] {
     width: 90%;
-    border-radius: 80px 80px 80px 80px;
+    // border-radius: 80px 80px 80px 80px;
   }
 
   .carousel-inner {
     text-align: -webkit-center;
 
     img {
-      border-radius: 80px 80px 80px 80px;
+      width: 90%;
+      // border-radius: 80px 80px 80px 80px;
     }
   }
 

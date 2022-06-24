@@ -105,7 +105,7 @@ export default {
     padding: 0;
 
     img {
-      padding-left: 6vw;
+      padding-left: 9vw;
       padding-bottom: 6vw;
     }
   }

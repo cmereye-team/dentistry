@@ -1,0 +1,32 @@
+<template>
+<div id="lay">
+  <menuBar/>
+  <Banner/>
+  <footce/>
+  <mapGoogle/>
+  <foot/>
+  
+</div>
+</template>
+
+<script>
+import menuBar from "@/components/common/menuBar.vue";
+import footce from "@/components/common/footce.vue"
+import mapGoogle from "@/components/common/googleMap.vue"
+import foot from "@/components/common/foot.vue"
+import Banner from "@/components/contactUs/Banner/index.vue"
+
+export default {
+   components: { 
+    menuBar,
+    footce,
+    Banner,
+    mapGoogle,
+    foot
+    }
+  
+}
+</script>
+<style>
+ 
+</style>

@@ -256,7 +256,7 @@ export default {
     }
 
     .swiper-slide-active {
-      color: #4570b6;
+      color: #57B2F3;
     }
   }
 
@@ -274,6 +274,18 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+  .texts {
+    margin-left: 10vw;
+  text-align: center;
+  }
+  body .section {
+    width: 90vw;
+    margin: 0 !important;
+}
+.swiperWrap[data-v-7464405a] {
+    margin: 0 !important;
+
+}
   .swiper-button-prev,
   .swiper-button-next {
     background-image: none;
@@ -298,7 +310,7 @@ export default {
 
     .link_more {
       border: 2px solid #57B2F3;
-      border-radius: 3px 3px 3px 3px;
+      border-radius: 16px 16px 16px 16px;
       transition: all 0.5s;
       color: #57B2F3;
       text-decoration: none;
@@ -310,7 +322,7 @@ export default {
       letter-spacing: 0.2vw;
       margin-top: 3vw;
       text-align: center;
-
+       margin-left:38vw;
       &:hover {
         animation: 3s ease-in 1s 2 reverse both paused slidein;
       }
@@ -318,7 +330,7 @@ export default {
   }
 
   .swiperWrap {
-    width: 80vw;
+    width: 100vw;
     margin: 0vw auto;
 
     .swiper-slide {
@@ -350,7 +362,7 @@ export default {
     }
 
     .swiper-slide-active {
-      color: #4570b6;
+      color: #57B2F3;
     }
   }
 
