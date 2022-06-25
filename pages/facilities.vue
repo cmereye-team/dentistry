@@ -4,9 +4,7 @@
   <Banner/>
   <footce/>
   <mapGoogle/>
-  <contact/>
   <foot/>
-
   
 </div>
 </template>
@@ -16,18 +14,15 @@ import menuBar from "@/components/common/menuBar.vue";
 import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
-import Banner from "@/components/contactUs/Banner/index.vue"
-import contact from "@/components/contactUs/contact/index.vue"
-
-
+import Banner from "@/components/facilities/banner/index.vue"
 export default {
    components: { 
     menuBar,
     footce,
     Banner,
     mapGoogle,
-    foot,
-    contact
+
+    foot
     }
   
 }

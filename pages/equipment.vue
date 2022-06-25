@@ -2,11 +2,10 @@
 <div id="lay">
   <menuBar/>
   <Banner/>
+  <equipInfo/>
   <footce/>
   <mapGoogle/>
-  <contact/>
   <foot/>
-
   
 </div>
 </template>
@@ -16,18 +15,16 @@ import menuBar from "@/components/common/menuBar.vue";
 import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
-import Banner from "@/components/contactUs/Banner/index.vue"
-import contact from "@/components/contactUs/contact/index.vue"
-
-
+import Banner from "@/components/equipment/banner/index.vue"
+import equipInfo from "@/components/equipment/equipInfo/index.vue"
 export default {
    components: { 
     menuBar,
     footce,
     Banner,
     mapGoogle,
-    foot,
-    contact
+    equipInfo,
+    foot
     }
   
 }

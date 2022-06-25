@@ -31,7 +31,7 @@ export default {
     'asset/css/tailwind.css',
     // 'asset/css/style.css',
     'element-ui/lib/theme-chalk/index.css',
-    { src: "swiper/dist/css/swiper.css" }
+     'swiper/dist/css/swiper.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

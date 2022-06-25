@@ -4,13 +4,13 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="@/asset/image/banner/ContactUs.jpg">
+        <img src="@/asset/image/banner/News.jpg">
       </div>
       <div class="carousel-item">
-        <img src="@/asset/image/banner/ContactUs.jpg">
+        <img src="@/asset/image/banner/News.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/ContactUs.jpg">
+      <img src="@/asset/image/banner/News.jpg">
     </div>
     </div>
     <!-- 指示符 -->
@@ -27,11 +27,6 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div> -->
-     <div class="meun">
-      <p>首頁</p>
-      <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">聯絡我們</p>
-    </div>
   </div>
 
 </template>
@@ -80,11 +75,6 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
-    .meun {
-      padding-top: 2vw;
-    padding-left: 6vw;
-    display: flex;
-  }
   .carousel-inner img[data-v-703b804a] {
     width: 90%;
     // border-radius: 80px 80px 80px 80px;

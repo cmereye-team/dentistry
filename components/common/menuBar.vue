@@ -39,13 +39,13 @@
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">儀器及設備</a>
+          <a class="nav-link" href="/facilities">儀器及設備</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">健康資訊</a>
+          <a class="nav-link" href="/equipment">健康資訊</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">最新消息</a>
+          <a class="nav-link" href="/news">最新消息</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/contactUs">聯絡我們</a>
