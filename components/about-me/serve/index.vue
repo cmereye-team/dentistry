@@ -5,8 +5,172 @@
                 <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
                 <p class="serve_con" >中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
     </div>
+    <div class="box">
+        <div class="service_box">
+      <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="植牙"
+                    alt="植牙" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">植牙</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
+                    alt="根管治療（杜牙根）" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">根管治療（杜牙根）</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
+                    alt="Invisalign隱形牙箍" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">Invisalign隱形牙箍</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_0.png" title=" 瓷貼片"
+                    alt=" 瓷貼片" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 "> 瓷貼片</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
     <div class="service_box">
-      <!-- <div class="text-left font-weight-bold text-xs-center ls-4  title  fs-md-34  fs-lg-34  fs-xs-26 ">醫療服務</div> -->
+      <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_1.png" title="牙齒美白"
+                    alt="牙齒美白" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">牙齒美白</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
+                    alt="全瓷牙冠及全鋯牙冠" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">全瓷牙冠及全鋯牙冠</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除"
+                    alt="拔牙及智慧齒脫除" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">拔牙及智慧齒脫除</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame03.png" title="牙周病治療"
+                    alt="牙周病治療" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">牙周病治療</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+    <div class="service_box">
+      <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+    <div class="service_box service_boxs">
+      <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class=" service_item" data-wow-delay="0.3s">
+            <div class="service_hover">
+              <a href="#">
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
+                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_txt">
+                  <p class="fs-sm-16 ">白內障</p>
+                </div>
+              </a>
+            </div>
+          </div>
+    </div>
+    </div>
+    
+    <!-- <div class="service_box">
       <div class=" ">
         <div class="row">
           <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.3s">
@@ -129,7 +293,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <style lang="scss" scoped>
@@ -158,13 +322,18 @@ a{
 }
 .service_pic img {
   max-width: 80px;
+  width: 4vw;
 }
-
+.box{
+  margin: 5vw 17.5vw;
+}
 .service_box {
-  padding-top: 3.714rem;
-  padding-bottom: 3.571rem;
-  max-width: 800px;
-  margin: auto;
+  // padding-top: 3.714rem;
+  // padding-bottom: 3.571rem;
+  display: flex;
+  justify-content: left;
+  // max-width: 800px;
+  // margin: auto;
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
@@ -181,10 +350,11 @@ a{
 
 .service_box .service_item {
   text-align: center;
-  display: flex;
-  align-items: center;
+  // display: flex;
+  // align-items: center;
   justify-content: center;
   flex-flow: column;
+  margin: 2vw;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
@@ -193,6 +363,7 @@ a{
     max-width: 44.333333%;
     margin-bottom: 1.428rem;
     padding-right: 0;
+    // margin: 1vw;
 }
 .service_box .service_item .service_pic[data-v-47af9056] {
     width: 55%;
@@ -427,8 +598,8 @@ a{
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
   .service_box .service_item .service_pic {
-    height: 11rem;
-    line-height: 11rem;
+    height: 10rem;
+    line-height: 10rem;
   }
 }
 
@@ -452,7 +623,7 @@ a{
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
   .service_box .service_item .service_txt {
-    padding: 0 1rem 1rem;
+    padding: 0 3rem 2rem;
     display: flex;
     align-items: center;
     flex-flow: column;
