@@ -17,6 +17,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/equipment/post01pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content">
         <h2>護齒食物你要知 #堅果 </h2>
         <p>食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減低蛀牙機會🌰加上堅果含有豐富嘅鈣質、磷，呢兩個元素都對牙齒和牙齦健康好有益㗎😗</p>
@@ -26,6 +29,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/equipment/post02pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content">
         <h2>漱口水可以取代牙刷及牙線？ </h2>
         <p>聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉？</p>
@@ -36,6 +42,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/equipment/post03pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content yagao">
         <h2>牙膏的秘密 </h2>
         <p>相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆其實吞咗少少牙膏一般都冇咩太大影響👌但如果當中嘅成份，如三氯沙、氟化物、色素等濃度太高，就對人體有害喇🙌</p>
@@ -49,6 +58,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/equipment/post04pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content yagao">
         <h2>懷孕媽媽牙齒健康 #母親節 </h2>
         <p>母親節快樂💝可能大家都聽過坊間流傳，懷孕中嘅媽媽會被BB不斷吸收鈣質，令媽媽牙齒鈣質流失而甩牙🤰🏻 其實BB並唔會直接大量吸收媽媽牙齒鈣質👶🏻部份孕婦會發生甩牙情況，其實亦有不同因素導致：</p>
@@ -61,6 +73,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/equipment/post05pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content">
         <h2>勞動節 勤刷牙 </h2>
         <p>今日勞動節，不如勤力啲刷牙，做好牙齒清潔🦷✨</p>
@@ -173,10 +188,96 @@ export default {
 <style lang="scss" scoped>
 
 //mb
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+  .dateinfo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 32vw;
+    top: 71vw;
+    .date2 {
+      width: 14vw;
+      height: 14vw;
+    }
+  }
+  .el-pagination {
+    text-align: center;}
+   .meun {
+    padding-left: 6vw;
+    display: flex;
+  }
+  .selectEqu {
+    text-align: end;
+    justify-content: end;
+    margin: 2vw;
+  }
+
+  .el-select {
+    display: flex;
+    position: relative;
+    margin: 0 1vw;
+  }
+
+  .info {
+    border-radius: 30px 30px 30px 30px;
+    background-color: #ECF7FC;
+    margin: 3vw 9vw 3vw 9vw;
+    position: relative;
+    img {
+      width: 25vw;
+      height: 25vw;
+      margin: 1vw;
+    }
+    .pic{
+      width: 80vw;
+      height: 80vw;
+      margin: auto;
+      padding: 1vw;
+    }
+
+    .date {
+      width: 6vw;
+      height: 6vw;
+      display:none;
+      
+    }
+.yagao{
+      margin-top: 8.5vw !important;
+      }
+    .content {
+      display: inline-block;
+      margin-top: 7vw;
+      margin-left: 3vw;
+      
+      h2 {
+        padding: 0;
+        text-align: left;
+        margin-bottom: 2vw;
+        justify-content: left;
+        color: #57B2F3;
+        font-weight: 600;
+        &:before {
+          content: "";
+          border-left: 1vw solid #9BD0F5;
+          margin-right: 1vw;
+          height: 4vw;
+          display: inline-block;
+          vertical-align: middle;
+      }
+    }
+
+    p {
+      color: #57B2F3;
+    }
+  }
+}
+}
 
 //pc
 @media only screen and (min-width: 768px) {
+  .date2{
+    display: none;
+  }
   .el-pagination {
     text-align: center;}
   .meun {

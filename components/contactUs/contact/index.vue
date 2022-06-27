@@ -36,6 +36,11 @@
       <div class="radiocon"><el-radio v-model="radio" label="2">本人已閱讀，明白及同意收集個人資料及<span>私隱政策</span>。</el-radio></div>
       <div class="radiocon"><el-radio v-model="radio" label="3">本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、折扣及其他優惠資訊。</el-radio></div>
   </div>
+  <div class="radioInfo1">
+      <div class="radiocon"><el-radio v-model="radio" label="1">閣下必須提前至少三個工作天進行網上預約；<br>網上提交表格並不等於預約成功，閣下將會在兩<br>個工作天內以電話或電郵收取預約確認通知；<br>閣下所提供的個人信息只會用於預約服務，<br>所有內容皆會保密處理。</el-radio></div>
+      <div class="radiocon"><el-radio v-model="radio" label="2">本人已閱讀，明白及同意收集個人資料及<br><span>私隱政策</span>。</el-radio></div>
+      <div class="radiocon"><el-radio v-model="radio" label="3">本人願意日後收取希瑪醫療集團以及其關連<br>公司之產品資料及宣傳資訊。如選擇拒絕，本<br>人同時不會收到貴公司的任何禮品、折扣及其<br>他優惠資訊。</el-radio></div>
+  </div>
   <div class="button">
     <nuxt-link class="link_more" to="">提交</nuxt-link>
   </div>
@@ -132,6 +137,9 @@ export default {
         }
       }
   }
+  .radioInfo1{
+    display: none;
+  }
   .radioInfo{
     padding: 0 17vw;
     padding-bottom: 5vw;
@@ -168,10 +176,84 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+  ::v-deep .el-form--inline .el-form-item {
+    display:grid;
+  }
+  .button{
+    background: #9BD0F5;
+    padding-bottom: 15vw;
+      .link_more {
+        background: #fff;
+        border: 2px solid #57B2F3;
+        border-radius: 15px 15px 15px 15px;
+        transition: all 0.5s;
+        color: #57B2F3;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        padding: 0.5vw;
+        margin: 0 auto;
+        width: 20vw;
+        letter-spacing: 0.2vw;
+        text-align: center;
+
+        &:hover {
+          animation: 3s ease-in 1s 2 reverse both paused slidein;
+        }
+      }
+  }
+  .radioInfo{
+    display:none;
+    padding: 0 17vw;
+    padding-bottom: 5vw;
+    background: #9BD0F5;
+    .radiocon{
+      padding-bottom: 1vw;
+      span{
+        color: #FF000A;
+        border-bottom: 1px solid #FF000A;
+      }
+    }
+  }
+  .radioInfo1{
+    padding: 0 17vw;
+    padding-bottom: 5vw;
+    background: #9BD0F5;
+    .radiocon{
+      padding-bottom: 1vw;
+      span{
+        color: #FF000A;
+        border-bottom: 1px solid #FF000A;
+      }
+    }
+  }
+  .form{
+    left: -10%; 
+    border-radius: 36% 36% 0 0;
+    background-color: #9BD0F5;
+    display: grid;
+    // justify-content: center;
+    form{
+      margin: 5vw 5.5vw 5vw 6.5vw;
+    }
+    .el-select {
+    display: inline-block;
+    position: relative;
+    // width: 19vw;
+}
+    .el-form-item {
+    margin: 3vw 10vw;
+    // width: 19vw;
+}
+  }
   
 }
 </style>
 <style lang="scss" scoped>
+::v-deep .el-radio__label {
+    padding-left: 10px;
+    font-size: 18px;
+}
 ::v-deep .el-input__inner {
     border: 0px;
     border-bottom: 2px solid #fff;

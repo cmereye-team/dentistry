@@ -4,7 +4,9 @@
     <div>
       <a id="zxzx" class="face-button d-block   ">
             <div class="face-primary">
-              <span class="icon"> <i class="fa fa-headphones "></i></span>
+              <span class="icon"> <i class="fa fa-headphones ">
+                <img src="@/asset/image/footce/phone.png" alt="">
+              </i></span>
               電話預約
             </div>
           </a>
@@ -12,9 +14,10 @@
    <div>
     <a class="face-button1 d-block">
       <div class="face-primary">
-        <span class="icon"> <i class="fa  fa-volume-control-phone "></i></span>
-        WhatApps<br>預約
-
+        <span class="icon"> <i class="fa  fa-volume-control-phone ">
+        <img class="what" src="@/asset/image/footce/yuyue.png" alt="">
+        </i></span>
+        WhatApps預約
       </div>
     </a>
    </div>
@@ -27,6 +30,11 @@
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .face-primary{
+    img{
+      padding-left: 0.5vw;
+    }
+  }
   .online{
       position: fixed;
       right:0;
@@ -94,11 +102,17 @@
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .face-primary{
+    .what{
+      width:6vw
+      }
+  }
   .container{
     position: fixed;
     bottom: 0;
     z-index: 9999;
     padding: 0;
+    overflow-y: hidden;
     // display: flex;
     // justify-content: center;
   }
@@ -108,7 +122,7 @@
   }
 .face-button1 {
             width: 50%;
-            height: 56px;
+            // height: 60px;
             line-height: 56px ;
             display: block;
             font-size: 20px;
@@ -125,7 +139,7 @@
         }
 .face-button {
             width: 50%;
-            height: 56px;
+            // height: 60px;
             line-height: 56px ;
             display: block;
             font-size: 20px;

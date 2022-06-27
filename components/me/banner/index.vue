@@ -52,11 +52,11 @@ export default {
   }
 
   .carousel-inner {
-    margin-top: 16vw;
+    margin-top: 1vw;
     text-align: -webkit-center;
 
     img {
-      height: 100%;
+      height: 51vw;
       width: 90%;
       border-radius: 30px 30px 30px 30px;
     }

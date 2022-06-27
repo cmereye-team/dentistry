@@ -1,4 +1,5 @@
 <template>
+<div>
   <!-- 轮播 -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <!-- 轮播图片 -->
@@ -27,13 +28,16 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div> -->
-     <div class="meun">
+     
+  </div>
+  <div>
+    <div class="meun">
       <p>首頁</p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">聯絡我們</p>
     </div>
   </div>
-
+</div>  
 </template>
 
 <script>
@@ -47,9 +51,48 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+::v-deep .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #C2C7CD;
+  background-clip: padding-box;
+  border: 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  border-radius: 100%;
+  transition: opacity .6s ease;
+}
+
+::v-deep .carousel-indicators {
+  position: inherit;
+}
+
+::v-deep .carousel-indicators .active {
+   opacity: 1 !important;
+  background-color: #9BA5B1;
+  width: 14px;
+  height: 14px;
+}
+::v-deep .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: #fff
+}
 //mb
 @media only screen and (max-width: 768px) {
-
+   .meun{
+    padding-left:6vw;
+    display: flex;
+  }
   .d-block {
     display: block !important;
     height: 83vw;
@@ -57,11 +100,11 @@ export default {
   }
 
   .carousel-inner {
-    margin-top: 16vw;
+    margin-top: 1vw;
     text-align: -webkit-center;
 
     img {
-      height: 100%;
+      height: 49vw;
       width: 90%;
       border-radius: 30px 30px 30px 30px;
     }
@@ -76,6 +119,7 @@ export default {
   .swiper-button-next {
     display: none;
   }
+  
 }
 
 //pc
@@ -133,40 +177,5 @@ export default {
 }
 </style>
 <style lang="scss" >
-.carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  margin-right: 8px;
-  margin-left: 8px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #C2C7CD;
-  background-clip: padding-box;
-  border: 0;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: .5;
-  border-radius: 100%;
-  transition: opacity .6s ease;
-}
 
-.carousel-indicators {
-  position: inherit;
-}
-
-.carousel-indicators .active {
-  opacity: 1 !important;
-  background-color: #9BA5B1;
-  width: 14px;
-  height: 14px;
-}
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.55);
-    border-color: #fff
-}
 </style>

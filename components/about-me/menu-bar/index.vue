@@ -5,6 +5,7 @@
     <a class="navbar-brand" href="index">
       <img src="@/asset/image/common/logo.svg" alt="">
     </a>
+    <div><a class="nav-link engmb" href="/contactUs" >ENG</a></div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -50,7 +51,9 @@
         <li class="nav-item">
           <a class="nav-link" href="/contactUs">聯絡我們</a>
         </li>
-        
+        <li class="nav-item">
+          <a class="nav-link eng" href="/contactUs" >ENG</a>
+        </li>
       </ul>
     </div>
   </div>
@@ -60,6 +63,12 @@
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .engmb{
+    display: none;
+  }
+  .eng{
+    color: #00477B !important;
+  }
   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
   width: 90%;
   background-color: #fff;
@@ -89,6 +98,14 @@
 }
 //mb
 @media only screen and (max-width: 768px) {
+   .engmb{
+    margin-left: 20vw;
+    color: #00477B !important;
+
+  }
+  .eng{
+    display: none;
+  }
   .sticky-top {
     // position: -webkit-sticky;
     position: inherit !important;
@@ -117,7 +134,7 @@
     display: flex;
     flex-direction: column;
     padding-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 206px;
     list-style: none;
     line-height: 15vw;
 }

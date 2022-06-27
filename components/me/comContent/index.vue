@@ -32,8 +32,7 @@
           中心秉持<br></p>
         <h3>「整體分析」的原則 </h3>
         <p class="ya_con" >
-          根據客人的實際口腔健康狀況，制定嚴格且針對性的治療。同時，我們亦注重<br>
-口腔衛生教育，希望透過推廣牙齒健康的重要性，提高大眾對口腔護理的關注。
+          根據客人的實際口腔健康狀況，制定嚴格且針對性的治療。同時，我們亦注重<br>口腔衛生教育，希望透過推廣牙齒健康的重要性，提高大眾對口腔護理的關注。
         </p>
       </div>
   </div>
@@ -74,10 +73,15 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .meun{
+    padding-left:6vw;
+    display: flex;
+  }
   .ya_con{
     text-align: center;
     color: #9BA5B1;
     font-size: 13px;
+    padding: 0 20vw;
   }
   .city{
     display: flex;
@@ -85,6 +89,7 @@ export default {
     justify-content: center;
     img{
       padding:1vw;
+      width:82vw;
     }
   }
     h3{

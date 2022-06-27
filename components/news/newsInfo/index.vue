@@ -17,6 +17,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/news/post01pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content yagao">
         <h2>睇牙都可以用消費劵? </h2>
         <p>尖沙咀K11旗艦店位處K11 ATELIER甲級商廈，除咗提供一站式牙科服務，亦同樣著重整體感官享受，診所等候區配置時尚傢俱🛋及休閒刊物📰，為客人打造舒適放鬆嘅環境，讓每位客人享受整個體驗👍</p>
@@ -30,6 +33,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/news/post02pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content">
         <h2>復活節連假休診通知</h2>
         <p>預祝大家復活節快樂🗿</p>
@@ -39,6 +45,9 @@
     </div>
     <div class="info">
       <img class="pic" src="@/asset/image/news/post03pic.png" alt="">
+      <div class="dateinfo">
+      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      </div>
       <div class="content yagao">
         <h2>希瑪牙科接受消費券支付方式</h2>
         <p>想用消費券睇牙？緊係冇問題啦👌我哋大部份嘅牙科診所都接受消費券支付方式，無論你做邊種牙科療程，都可以用㗎😉</p>
@@ -120,10 +129,99 @@ export default {
 <style lang="scss" scoped>
 
 //mb
-@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+ .dateinfo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 32vw;
+    top: 71vw;
+    .date2 {
+      width: 14vw;
+      height: 14vw;
+    }
+  }
+  .el-pagination {
+    text-align: center;}
+   .meun {
+    padding-left: 6vw;
+    display: flex;
+  }
+  .selectEqu {
+    text-align: end;
+    justify-content: end;
+    margin: 2vw;
+  }
+
+  .el-select {
+    display: flex;
+    position: relative;
+    margin: 0 1vw;
+  }
+
+  .info {
+    border-radius: 30px 30px 30px 30px;
+    background-color: #ECF7FC;
+    margin: 3vw 9vw 3vw 9vw;
+    position: relative;
+    img {
+      width: 25vw;
+      height: 25vw;
+      margin: 1vw;
+    }
+    .pic{
+      width: 80vw;
+      height: 80vw;
+      margin: auto;
+      padding: 1vw;
+    }
+
+    .date {
+      width: 6vw;
+      height: 6vw;
+      display:none;
+      
+    }
+.yagao{
+      margin-top: 8.5vw !important;
+      }
+    .content {
+      display: inline-block;
+      margin-top: 7vw;
+      margin-left: 3vw;
+      
+      h2 {
+        padding: 0;
+        text-align: left;
+        margin-bottom: 2vw;
+        justify-content: left;
+        color: #57B2F3;
+        font-weight: 600;
+        &:before {
+          content: "";
+          border-left: 1vw solid #9BD0F5;
+          margin-right: 1vw;
+          height: 4vw;
+          display: inline-block;
+          vertical-align: middle;
+      }
+    }
+
+    p {
+      color: #57B2F3;
+    }
+  }
+}
+
+
+}
 
 //pc
 @media only screen and (min-width: 768px) {
+  .dateinfo{
+    display: none;
+  }
   .meun {
     padding-left: 6vw;
     display: flex;

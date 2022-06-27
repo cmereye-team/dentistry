@@ -136,6 +136,7 @@ export default {
     };
 </script>
 <style lang="scss" scoped>
+
 .texts {
   text-align: center;
 

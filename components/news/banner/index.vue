@@ -42,6 +42,42 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+::v-deep .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #C2C7CD;
+  background-clip: padding-box;
+  border: 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  border-radius: 100%;
+  transition: opacity .6s ease;
+}
+
+::v-deep .carousel-indicators {
+  position: inherit;
+}
+
+::v-deep .carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #9BA5B1;
+  width: 14px;
+  height: 14px;
+}
+::v-deep .navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.55);
+    border-color: #fff
+}
 //mb
 @media only screen and (max-width: 768px) {
 
@@ -52,11 +88,11 @@ export default {
   }
 
   .carousel-inner {
-    margin-top: 16vw;
+    margin-top: 1vw;
     text-align: -webkit-center;
 
     img {
-      height: 100%;
+      height: 51vw;
       width: 90%;
       border-radius: 30px 30px 30px 30px;
     }
@@ -123,40 +159,5 @@ export default {
 }
 </style>
 <style lang="scss" >
-.carousel-indicators [data-bs-target] {
-  box-sizing: content-box;
-  flex: 0 1 auto;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  margin-right: 8px;
-  margin-left: 8px;
-  text-indent: -999px;
-  cursor: pointer;
-  background-color: #C2C7CD;
-  background-clip: padding-box;
-  border: 0;
-  margin-bottom: 2rem;
-  margin-top: 1rem;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  opacity: .5;
-  border-radius: 100%;
-  transition: opacity .6s ease;
-}
 
-.carousel-indicators {
-  position: inherit;
-}
-
-.carousel-indicators .active {
-  opacity: 1 !important;
-  background-color: #9BA5B1;
-  width: 14px;
-  height: 14px;
-}
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.55);
-    border-color: #fff
-}
 </style>

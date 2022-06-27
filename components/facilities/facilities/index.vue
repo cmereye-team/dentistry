@@ -6,426 +6,27 @@
       <p style="color:#57B2F3">我們的團隊</p>
     </div>
     <div class="flex justify-center texts">
-        <h2>我們的團隊介</h2>
+        <h2>診所設備</h2>
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
     </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
+    <div class="facilities">
+      <div class="Machine">
+      <div class="dec"><h3>CBCT錐狀射束<br>電腦斷層掃描</h3></div>
+      <img src="@/asset/image/facilities/Machine01.png" alt=""  >
+      <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對療</p>
     </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
+     <div class="Machine">
+      <div class="dec"><h3>CEREC</h3></div><br>
+      <img src="@/asset/image/facilities/Machine02.png" alt=""  >
+      <p>有別於傳統的全瓷牙齒製作，CEREC利用3D攝影、電腦輔助設計與製作即日完成牙齒修復，客人毋須多次覆診及配戴臨時牙套。CEREC使用的瓷塊是接近真牙的材質，確保自然美觀。</p>
     </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
+     <div class="Machine">
+      <div class="dec"><h3>Class B 高壓滅菌器<br>及高溫消毒儀器</h3></div>
+      <img src="@/asset/image/facilities/Machine03.png" alt=""  >
+      <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對療</p>
     </div>
+    </div> 
     </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>姚本基</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
-        </ul>
-      </div>
-    </div>
-     <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>柯明哲</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-        </ul>
-      </div>
-    </div>
-    <div class="doctor">
-      <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-  </div>
 </template>
 <script>
 export default {
@@ -463,109 +64,124 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
-  .ya_con{
-    text-align: center;
-    color: #9BA5B1;
-    font-size: 13px;
-  }
-  .city{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    img{
-      padding:1vw;
-    }
-  }
-    h3{
-    color: #57B2F3;
-    padding-top:2vw;
-  }
- .serve_con{
-
-    text-align: center;
-    padding: 2vw;
-    color: #57B2F3;
-}
-}
-//pc
-@media only screen and (min-width: 768px) {
-  /* 设置滚动条的样式 */
-::-webkit-scrollbar {
-width:12px;
-}
-/* 滚动槽 */
-::-webkit-scrollbar-track {
--webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-border-radius:10px;
-}
-/* 滚动条滑块 */
-::-webkit-scrollbar-thumb {
-border-radius:10px;
-background:#9BD0F5;
--webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
-}
-::-webkit-scrollbar-thumb:window-inactive {
-background:rgba(255,0,0,0.4);
-}
-  .team{
-    margin: 5vw;
-    display: flex;
-    justify-content: center;
-  }
-  .doctor{
-    margin: 0 2vw;
-    display: inline-block;
-    .name{
-      display: flex;
-    }
-    .conts{
-      border: 1px solid #57B2F3;
-      border-radius: 1vw;
-      height: 11vw;
-      overflow:auto;
-      margin-top: 0.3vw;
-    }
-    img{
-      width: 4vw;
-    }
-    ul{
-      margin: 1vw;
-      list-style-type: disc;
-    }
-    p{
-      margin-top: 0.4vw;
-      font-size: 24px;
-      font-weight: 800;
-      color: #57B2F3;
-      span{
-      font-size: 34px;
-      }
-    }
-  }
   .meun{
     padding-left:6vw;
     display: flex;
   }
-  .ya_con{
-    text-align: center;
-    color: #9BA5B1;
-  }
-  .city{
-    display: flex;
-    text-align: center;
-    justify-content: center;
+  .facilities{
     img{
-      padding:1vw;
+        padding-top:1vw;
+      }
+  }
+  .facilities{
+    justify-content: center;
+    text-align: center;
+    background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
+  // background: #ECF7FC !important;
+     border-radius: 12% 12% 0 0;
+    height: 382vw;
+    .Machine{
+      margin-top:6vw;
+      padding:7vw;
+      img{
+        padding-top:1vw;
+      }
+    }
+    p{
+      padding-top:1vw;
+      color:#57B2F3;
+      text-align: left;
+    }
+    h3{
+      color:#57B2F3;
+    }
+    .dec{
+      display:flex;
+      justify-content: center;
+       &:before {
+         content: "";
+          margin-left: 16px;
+          padding-left: 15px;
+          border-left: 9.3vw solid #9BD0F5;
+          height: 1.9vw;
+          display: inline-block;
+          vertical-align: middle;
+          transform: rotate(52deg);
+          margin-top: 5vw;
+        }
+         &:after {
+              content: "";
+              margin-left: 6px;
+              padding-left: 15px;
+              border-left: 9.3vw solid #9BD0F5;
+              height: 1.9vw;
+              display: inline-block;
+              vertical-align: middle;
+              transform: rotate(-58deg);
+              margin-top: 6px;
+        }
     }
   }
-    h3{
-      color: #57B2F3;
-       padding-top:2vw;
-      }
-    .serve_con{
+
+}
+//pc
+@media only screen and (min-width: 768px) {
+ 
+  .meun{
+    padding-left:6vw;
+    display: flex;
+  }
+  .facilities{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    color: #57B2F3;
+    background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
+  // background: #ECF7FC !important;
+     border-radius: 37% 37% 0 0;
+     height:67vw;
+    .Machine{
+      margin-top:6vw;
+      padding:7vw;
+      img{
+        padding-top:1vw;
+      }
     }
+    p{
+      padding-top:1vw;
+      color:#57B2F3;
+      text-align: left;
+    }
+    h3{
+      color:#57B2F3;
+    }
+    .dec{
+      display:flex;
+      justify-content: center;
+       &:before {
+          content: "";
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 0.3vw solid #9BD0F5;
+          height: 1.9vw;
+          display: inline-block;
+          vertical-align: middle;
+          transform: rotate(-16deg);
+        }
+         &:after {
+          content: "";
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 0.3vw solid #9BD0F5;
+          height: 2.1vw;
+          display: inline-block;
+          vertical-align: middle;
+          transform: rotate(16deg);
+          margin-top: 5px;
+        }
+    }
+  }
+
+  
 }
 </style>
 <style lang="scss" >

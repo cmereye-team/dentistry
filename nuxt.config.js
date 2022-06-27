@@ -19,7 +19,8 @@ export default {
     ],
     link: [
       { rel: 'stylesheet',  href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css'}
     ]
   },
 
@@ -29,9 +30,8 @@ export default {
     'asset/css/base-variable.scss',
     'asset/css/base-style.scss',
     'asset/css/tailwind.css',
-    // 'asset/css/style.css',
+    'swiper/dist/css/swiper.css',
     'element-ui/lib/theme-chalk/index.css',
-     'swiper/dist/css/swiper.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
