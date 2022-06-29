@@ -28,7 +28,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/implant">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="植牙"
                             alt="植牙" /> </div>
                         <div class="service_txt">
@@ -265,7 +265,7 @@
           </a>
           <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
          <ul class="dropdown-menu  ">
-            <li><a class="dropdown-item" href="#">植牙</a></li>
+            <li><a class="dropdown-item" href="/implant">植牙</a></li>
             <li><a class="dropdown-item" href="#">根管治療（杜牙根）</a></li>
             <li><a class="dropdown-item" href="#">Invisalign 隱適美</a></li>
             <li><a class="dropdown-item" href="#">瓷貼片</a></li>
@@ -496,8 +496,8 @@ a{
       }
       ul{
         li{
-          padding: 0 1.9vw;
-          font-weight: 800;
+          padding: 0 1.8vw;
+          font-weight: 400;
           a{
             color: #57B2F3;
           }

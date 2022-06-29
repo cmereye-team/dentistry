@@ -1,0 +1,38 @@
+<template>
+<div id="lay">
+  <menuBar/>
+  <Banner/>
+  <zhiya/>
+  <footce/>
+  <serve/>
+  <mapGoogle/>
+  <foot/>
+  
+</div>
+</template>
+
+<script>
+import menuBar from "@/components/common/menuBar.vue";
+import footce from "@/components/common/footce.vue"
+import mapGoogle from "@/components/common/googleMap.vue"
+import foot from "@/components/common/foot.vue"
+import Banner from "@/components/implant/banner/index.vue"
+import serve from "@/components/implant/serve/index.vue"
+import zhiya from "@/components/implant/zhiya/index.vue"
+
+export default {
+   components: { 
+    menuBar,
+    footce,
+    Banner,
+    serve,
+    mapGoogle,
+    zhiya,
+    foot
+    }
+  
+}
+</script>
+<style>
+ 
+</style>

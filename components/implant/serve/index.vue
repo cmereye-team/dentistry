@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
-        <h2>牙科服務</h2>
+        <h2>其他牙科服務</h2>
                 <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
                 <p class="serve_con" >中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。</p>
     </div>
@@ -9,7 +9,7 @@
         <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="/implant">
+              <a href="#">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="植牙"
                     alt="植牙" /> </div>
                 <div class="service_txt">
@@ -175,7 +175,7 @@
 .texts{
     text-align: center;
     h2{
-    font-weight: 500;
+    font-weight: 600;
     color: #79828D;
     margin-bottom: 1vw;
   }
@@ -544,14 +544,12 @@ a{
 .service_box p {
   color: #505050;
   font-size: 1.2rem;
-  font-weight: 540;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
   .service_box p {
     font-size: 1rem;
     padding-top: 0.2rem;
-    font-weight: 540;
   }
 }
 </style>

@@ -51,7 +51,7 @@
             display: inline-block;
             font-size: 20px;
             font-weight: 500;
-            text-align: center;
+            text-align: left;
             text-decoration: none;
             overflow: hidden;
             margin-bottom:10px;
