@@ -21,7 +21,7 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
+                <div class="service_pic"> <img class="imgya" src="@/asset/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
                     alt="根管治療（杜牙根）" /> </div>
                 <div class="service_txt">
                   <p class="fs-sm-16 ">根管治療（杜牙根）</p>
@@ -102,10 +102,10 @@
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
+                    alt="全口牙托及局部牙托" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">全口牙托及局部牙托</p>
                 </div>
               </a>
             </div>
@@ -113,10 +113,10 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame04.png" title="矯齒"
+                    alt="矯齒" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">矯齒</p>
                 </div>
               </a>
             </div>
@@ -124,10 +124,10 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_3.png" title="洗牙"
+                    alt="洗牙" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">洗牙</p>
                 </div>
               </a>
             </div>
@@ -135,10 +135,10 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_4.png" title="補牙"
+                    alt="補牙" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">補牙</p>
                 </div>
               </a>
             </div>
@@ -148,10 +148,10 @@
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_5.png" title="一般口腔檢查"
+                    alt="一般口腔檢查" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">一般口腔<br>檢查</p>
                 </div>
               </a>
             </div>
@@ -159,148 +159,23 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
+                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
+                    alt="兒童牙科保健及治療" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
+                  <p class="fs-sm-16 ">兒童牙科保健及治療</p>
                 </div>
               </a>
             </div>
           </div>
     </div>
     </div>
-    
-    <!-- <div class="service_box">
-      <div class=" ">
-        <div class="row">
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_白內障"
-                    alt="希瑪林順潮眼科中心_白內障" /> </div>
-                <div class="service_txt">
-                  <p class="fs-sm-16 ">白內障</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.4s">
-            <div class="service_hover">
-              <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group.png" title="希瑪林順潮眼科中心_黃斑病變"
-                    alt="希瑪林順潮眼科中心_黃斑病變" /> </div>
-                <div class="service_txt">
-                  <p class=" ">黃斑病變</p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.5s">
-            <div class="service_hover">
-              <a href="/Retinal-detachment-and-diseases/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="希瑪林順潮眼科中心_視網膜脫落"
-                    alt="希瑪林順潮眼科中心_視網膜脫落" /> </div>
-                <div class="service_txt">
-                  <p class=" ">視網膜脫落<br /> 及疾病</p>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.6s">
-            <div class="service_hover">
-              <a href="/Glaucoma/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_0.png" title="希瑪林順潮眼科中心_青光眼"
-                    alt="希瑪林順潮眼科中心_青光眼" /> </div>
-                <div class="service_txt">
-                  <p class=" ">青光眼</p>
-                </div>
-              </a>
-            </div>
-
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.7s">
-            <div class="service_hover">
-              <a href="/Ocular-surface-and-corneal-disease/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病"
-                    alt="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病" /> </div>
-                <div class="service_txt">
-                  <p class=" ">眼表及角膜疾病</p>
-                </div>
-                </a>
-            </div>
-            
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.8s">
-            <div class="service_hover">
-              <a href="/Amblyopia-and-Strabismus-in-Children/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_小兒眼疾斜視弱視"
-                    alt="希瑪林順潮眼科中心_小兒眼疾斜視弱視" /> </div>
-                <div class="service_txt">
-                  <p class=" ">兒童斜弱視</p>
-                </div>
-                </a>
-            </div>
-            
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="0.9s">
-            <div class="service_hover">
-              <a href="/Eyelid-malposition/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                    alt="希瑪林順潮眼科中心_眼整形_眼眶疾病" /> </div>
-                <div class="service_txt">
-                  <p class=" ">&nbsp;眼整形及 <br />眼眶疾病</p>
-                </div>
-                </a>
-            </div>
-            
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="1s">
-            <div class="service_hover">
-              <a href="/Myopia-control-and-ophthalmic-services/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_驗光配鏡"
-                    alt="希瑪林順潮眼科中心_驗光配鏡" /> </div>
-                <div class="service_txt">
-                  <p class=" ">近視控制及<br />醫學驗光配鏡</p>
-                </div>
-                 </a>
-            </div>
-           
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="1.1s">
-            <div class="service_hover">
-              <a href="/Vision-Correction/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_smile矯視"
-                    alt="希瑪林順潮眼科中心_smile矯視" /> </div>
-                <div class="service_txt">
-                  <p class=" ">屈光矯視</p>
-                </div>
-                </a>
-            </div>
-            
-          </div>
-          <div class="wow fadeInLeft service_item col-lg-4" data-wow-delay="1.1s">
-            <div class="service_hover">
-              <a href="/Vision-Correction/">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="希瑪林順潮眼科中心_smile矯視"
-                    alt="希瑪林順潮眼科中心_smile矯視" /> </div>
-                <div class="service_txt">
-                  <p class=" ">屈光矯視</p>
-                </div>
-                </a>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 <style lang="scss" scoped>
 .texts{
     text-align: center;
     h2{
-    font-weight: 300;
+    font-weight: 600;
     color: #79828D;
     margin-bottom: 1vw;
   }
@@ -315,6 +190,7 @@
     padding-bottom: 1rem;
     z-index: 999;
     background: #ECF7FC;
+    padding: 0;
   }
 a{
   
@@ -322,7 +198,7 @@ a{
 }
 .service_pic img {
   max-width: 80px;
-  width: 4vw;
+  // width: 4vw;
 }
 .box{
   margin: 5vw 17.5vw;
@@ -358,6 +234,26 @@ a{
 }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
+      .imgya{
+    margin-left: 7vw !important;
+  }
+  .box{
+    margin: 0;
+  }
+  .service_txt{
+    color: #505050;
+    font-weight: 600;
+  }
+  .service_box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 0 !important;
+  }
+
+
   .service_box .service_item[data-v-47af9056] {
     flex: 1 0 36.333333%;
     max-width: 44.333333%;
@@ -405,26 +301,27 @@ a{
     margin-bottom: 1.428rem;
     padding-right: 0;
   }
-
-  .service_box .service_item:nth-child(4),
-  .service_box .service_item:nth-child(1) {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
   .service_box .service_item img {
     max-width: 100%;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
-  
+  .service_txt{
+    color: #505050;
+    font-weight: 600;
+  }
+    .imgya{
+    margin-left: 2vw !important;
+  }
   .serve_con{
     width: 73vw;
     display: flex;
     text-align: center;
     justify-content: center;
     padding-left: 31vw;
+    color: #79828D;
+
   }
   .service_box .service_item {
     margin-bottom: 3.571rem;
@@ -486,7 +383,7 @@ a{
     width: 97%;
     height: 108%;
     margin-left: 9.5px;
-    z-index: 1;
+    z-index: 0 !important;
     background: linear-gradient(120deg, rgba(0, 123, 255, 0) 20%,
         rgba(0, 123, 255, .25), rgba(255, 255, 255, 0), #b3d7ff, rgba(255, 255, 255, 0), #4777d8, rgba(0, 123, 255, .25), rgba(0, 123, 255, .5), rgba(0, 123, 255, .25), rgba(255, 255, 255, 0));
     background-size: 482%;
@@ -539,7 +436,7 @@ a{
     width: 100%;
     height: auto;
     padding-bottom: 1rem;
-    z-index: 999;
+    z-index: 1 !important;
     background: #ECF7FC;
   }
 }
@@ -651,7 +548,7 @@ a{
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {
   .service_box p {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-top: 0.2rem;
   }
 }

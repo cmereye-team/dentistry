@@ -17,6 +17,18 @@
     <div class="carousel-item">
       <img src="@/asset/image/me/BigPic.jpg">
     </div>
+    <div class="carousel-item">
+        <img src="@/asset/image/me/BigPic.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="@/asset/image/me/BigPic.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="@/asset/image/me/BigPic.jpg">
+    </div>
+    <div class="carousel-item">
+        <img src="@/asset/image/me/BigPic.jpg">
+    </div>
     </div>
     <!-- 指示符 -->
 
@@ -43,7 +55,23 @@
         <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
         </div>
       </button>
-      
+       <button type="button" data-bs-target="#demo2" data-bs-slide-to="3">
+        <div >
+        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
+        </div>
+      </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="4">
+        <div >
+        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
+        </div>
+      </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="5">
+        <div >
+        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
+        </div>
+      </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="6">
+        <div >
+        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
+        </div>
+      </button>
     </div>
   </div>
   </div>
@@ -70,6 +98,7 @@ export default {
 .texts {
   text-align: center;
   margin-bottom: 2vw;
+  margin-top: 2vw;
   h2 {
     font-weight: 300;
     color: #79828D;
@@ -82,12 +111,19 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  [data-v-2f2cc59f] .carousel-indicators {
+    display: block;
+    margin: 0 10vw;
+  }
   .ambient{
-     background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
+    //  background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
   // background: #ECF7FC !important;
-     border-radius: 27% 27% 0 0;
-    height: 171vw;
+    //  border-radius: 27% 27% 0 0;
+    height: 241vw;
     margin-top: 5vw;
+    clip-path: ellipse(100% 54% at 51% 54%);
+    background: radial-gradient(108vw 68vw at  bottom ,transparent 50%,#ECF7FC 50%) !important;
+
   }
 .imgbox {
   margin: 0 3vw;
@@ -110,7 +146,6 @@ export default {
   opacity: .5;
   // border-radius: 100%;
   margin-right: 3% !important;
-
   transition: opacity .6s ease;
   button{
     margin: 0 4vw;
@@ -205,10 +240,15 @@ export default {
 //pc
 @media only screen and (min-width: 768px) {
   .ambient{
-     background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
+
+    background: #ECF7FC;
+    background: radial-gradient(129vw 28vw at bottom, transparent 50%, #ECF7FC 50%);
   // background: #ECF7FC !important;
-     border-radius: 37% 37% 0 0;
-     height: 70vw;
+    //  border-radius: 37% 37% 0 0;
+     height: 67vw;
+     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
+      clip-path: ellipse(100% 67% at 50% 70%);
+     height: 72vw;
      margin-top: 5vw;
   }
 .imgbox {
@@ -231,7 +271,7 @@ export default {
   border-bottom: 10px solid transparent;
   opacity: .5;
   // border-radius: 100%;
-  margin-right: 23% !important;
+  margin-right: 4% !important;
 
   transition: opacity .6s ease;
   button{

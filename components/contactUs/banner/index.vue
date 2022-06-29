@@ -4,25 +4,22 @@
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <div class="carousel-item active titleImg">
         <img src="@/asset/image/banner/ContactUs.jpg">
+                <div class="title">
+        聯絡我們
       </div>
-      <div class="carousel-item">
-        <img src="@/asset/image/banner/ContactUs.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="@/asset/image/banner/ContactUs.jpg">
-    </div>
+      </div>
     </div>
     <!-- 指示符 -->
 
     <!-- 左右切换按钮 -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </button>
+  </button> -->
     <!-- <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -89,6 +86,22 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .titleImg{
+    position: relative;
+    height: 53vw;
+    width: 100vw;
+    .title{
+      position: absolute;
+      z-index:2;
+      height: 53vw;
+      width: 100vw;
+      left:0;
+      top:45%;
+      font-weight: 600;
+      color: #79828D;
+      font-size: 24px;
+    }
+  }
    .meun{
     padding-left:6vw;
     display: flex;
@@ -124,6 +137,22 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .titleImg{
+    position: relative;
+    height: 30vw;
+    width: 100vw;
+    .title{
+      position: absolute;
+      z-index:2;
+      height: 30vw;
+      width: 100vw;
+      left:0;
+      top:45%;
+      font-weight: 600;
+      color: #79828D;
+      font-size: 30px;
+    }
+  }
     .meun {
       padding-top: 2vw;
     padding-left: 6vw;

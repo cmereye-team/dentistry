@@ -252,7 +252,7 @@ export default {
 <style lang="scss" scoped>
 ::v-deep .el-radio__label {
     padding-left: 10px;
-    font-size: 18px;
+    font-size: 14px;
 }
 ::v-deep .el-input__inner {
     border: 0px;

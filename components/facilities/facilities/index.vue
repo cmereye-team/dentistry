@@ -10,7 +10,7 @@
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="facilities">
-      <div class="Machine">
+      <div class="Machine MacOne">
       <div class="dec"><h3>CBCT錐狀射束<br>電腦斷層掃描</h3></div>
       <img src="@/asset/image/facilities/Machine01.png" alt=""  >
       <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對療</p>
@@ -76,10 +76,14 @@ export default {
   .facilities{
     justify-content: center;
     text-align: center;
-    background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
-  // background: #ECF7FC !important;
-     border-radius: 12% 12% 0 0;
-    height: 382vw;
+    clip-path: ellipse(100% 54% at 51% 54%);
+    background: radial-gradient(108vw 68vw at  bottom ,transparent 50%,#ECF7FC 50%) !important;
+    height: 410vw;
+    .MacOne{
+      padding-top:26vw !important;
+      margin-top: 0 !important;
+
+    }
     .Machine{
       margin-top:6vw;
       padding:7vw;
@@ -135,10 +139,13 @@ export default {
     display: flex;
     justify-content: center;
     text-align: center;
-    background: radial-gradient(99vw 24vw at  bottom ,transparent 50%,#ECF7FC 50%);
+    background: #ECF7FC;
+    background: radial-gradient(129vw 28vw at bottom, transparent 50%, #ECF7FC 50%);
   // background: #ECF7FC !important;
-     border-radius: 37% 37% 0 0;
-     height:67vw;
+    //  border-radius: 37% 37% 0 0;
+     height: 67vw;
+     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
+      clip-path: ellipse(100% 67% at 50% 70%);
     .Machine{
       margin-top:6vw;
       padding:7vw;

@@ -52,12 +52,12 @@ export default {
     return {
       screenWidth: '',
       banners: [
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' }
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup1.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup2.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' },
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup1.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup2.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
 
       ],
       swiperOptions: {
@@ -205,7 +205,7 @@ export default {
 
     .link_more {
       border: 2px solid #57B2F3;
-      border-radius: 30px 30px 30px 30px;
+      border-radius: 40px 40px 40px 40px;
       transition: all 0.5s;
       color: #57B2F3;
       text-decoration: none;

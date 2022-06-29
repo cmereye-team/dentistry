@@ -21,7 +21,7 @@ export default {
     return {   
       serContentList: [
         { src: require("@/asset/image/about-me/service-concept/Pic01.png"), link: "", des: '全面口腔照顧', content: '中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。' },
-        { src: require("@/asset/image/about-me/service-concept/Pic02.png"), link: "", des: '整體分析牙齒及口腔狀況', content: '進行治療前，牙科醫生會先整體分析客人的口腔健康狀況，了解其病歷，根據實際情況制定嚴格且針對性的治療方案。' },
+        { src: require("@/asset/image/about-me/service-concept/Pic021.png"), link: "", des: '整體分析牙齒及口腔狀況', content: '進行治療前，牙科醫生會先整體分析客人的口腔健康狀況，了解其病歷，根據實際情況制定嚴格且針對性的治療方案。' },
         { src: require("@/asset/image/about-me/service-concept/Pic03.png"), link: "", des: '注重感染控制措施', content: '中心使用高溫消毒儀器及最高規格的高壓滅菌器，確保徹底洗淨及消毒牙科用具。每週亦會進行一次生物監測及驗證，確保機器運作正常。' },
       ],
     }
@@ -67,11 +67,11 @@ export default {
       margin-bottom: 2vw;
       padding: 0 2vw;
     }
-
     li {
       text-align: left;
       color: #fff;
-      padding-left: 2vw;
+      // padding-left: 2vw;
+      margin: 0 3vw;
 
       p {
         padding-left: 4vw;

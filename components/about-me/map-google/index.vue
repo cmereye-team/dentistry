@@ -159,7 +159,7 @@ export default {
 
   .link_more {
     border: 2px solid #57B2F3;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 40px 40px 40px 40px;
     transition: all 0.5s;
     color: #57B2F3;
     text-decoration: none;
@@ -362,7 +362,7 @@ export default {
 
   .link_more {
     border: 2px solid #57B2F3;
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 20px 20px 20px 20px;
     transition: all 0.5s;
     color: #57B2F3;
     text-decoration: none;
