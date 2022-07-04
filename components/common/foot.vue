@@ -15,7 +15,11 @@
         </ul>
       </div>
       <div class="copyright">
-        <span>私隱政策</span> | <span>免責條款</span>
+        <span>私隱政策</span>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+        <span>免責條款</span>
       </div>
       <div class="copyright long" >©2022 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
       
@@ -51,12 +55,12 @@ export default {
   }
 }
 .main_footer {
-  background: #f3fcfe;
+  background: #ECF7FC;
   padding: 5.5vw 0 2vw;
   .section {
     margin: 0 auto;
     img {
-      width: 5vw;
+      width: 3vw;
     }
     .main_menu {
       letter-spacing: 0.2vw;
@@ -75,6 +79,7 @@ export default {
       justify-content: center;
       font-size: 0.9vw;
       margin-top: 1vw;
+      color: #57B2F3;
       span {
         border-bottom: 1px solid;
       }

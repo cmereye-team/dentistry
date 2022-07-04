@@ -30,6 +30,14 @@
     <div class="Advantage">
      <img src="@/asset/image/implant/AdvantageBG.png" alt="">
     </div>
+    <div class="Advanbutton">
+    <div class="guoc">
+    <a href="">2131</a>
+    </div>
+    <div class="guoc">
+    <a href="">12312</a>
+    </div>
+    </div>
   </di>
 </template>
 <script>
@@ -64,6 +72,37 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .Advantage{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 29vw;
+    z-index: 1;
+    top: 60vw;
+  }
+  .Advanbutton{
+   position: absolute;
+    left: 35vw;
+    z-index: 1;
+    top: 73vw;
+    display: flex;
+    .guoc{
+      background: #57B2F3;
+      height: 6vw;
+      width: 6vw;
+      border-radius: 100%;
+      margin: 0 1vw;
+      a{
+        text-decoration: none;
+        line-height: 10vw;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+      }
+    }
+    
+  }
   .list_con{
     margin-top: 7vw;
     width: 41vw;
@@ -91,8 +130,9 @@ export default {
     // margin: 0 20vw;
 
     img {
-      width: 26vw;
-      margin-bottom: 2vw;
+      width: 22vw;
+      height: 14vw;
+      margin-bottom: 12vw;
       padding: 0 2vw;
     }
     li {
@@ -128,11 +168,11 @@ export default {
 
   .list {
     margin-top:5vw;
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 23%, #ECF7FC 0);
   }
 }
 
-//mb
+//md
 @media only screen and (max-width: 768px) {
     .meun{
     padding-left:6vw;
@@ -142,6 +182,7 @@ export default {
     padding: 0;
 
     img {
+      width: 24vw;
       padding-left: 9vw;
       padding-bottom: 6vw;
     }

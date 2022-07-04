@@ -45,7 +45,7 @@ export default {
   h2 {
     font-weight: 300;
     color: #79828D;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
   }
 
   image {
@@ -56,7 +56,8 @@ export default {
 //pc
 @media only screen and (min-width: 768px) {
   .step_list {
-    width: 80vw;
+    // width: 80vw;
+    padding-left: 0px;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -74,19 +75,20 @@ export default {
       margin: 0 3vw;
 
       p {
-        padding-left: 4vw;
+        padding-left: 4.5vw;
         padding-top: 1vw;
       }
 
       strong {
         padding-left: 4vw;
-
+        font-weight: 400;
+            font-size: 22px;
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.3vw solid #fff;
-          height: 1vw;
+          border-left: 0.5vw solid #ECF7FC;
+          height: 1.5vw;
           display: inline-block;
           vertical-align: middle;
         }
@@ -123,7 +125,7 @@ export default {
     padding-top: 2vw;
     padding-left: 4vw;
     color: #fff;
-
+    font-weight: 400;
   }
 
   strong:before {

@@ -496,10 +496,10 @@ a{
       }
       ul{
         li{
-          padding: 0 1.8vw;
-          font-weight: 400;
+          padding: 0 1.3vw;
+          font-weight: 550;
           a{
-            color: #57B2F3;
+            color: #505050;
           }
         }
       }

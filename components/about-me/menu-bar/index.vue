@@ -12,6 +12,9 @@
     <div class="collapse navbar-collapse pcshow" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
+          <a class="nav-link " href="/">首页</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link " href="/aboutMe">關於我們</a>
         </li>
         <li class="nav-item">
@@ -304,7 +307,11 @@
 </div>
 </template>
 <style lang="scss" scoped>
-
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 0;
+  }
+}
 //pc
 @media only screen and (min-width: 768px) {
   .mbshow{
@@ -352,25 +359,25 @@
   overflow: hidden;
   position: relative;
   transition: all .3s ease-in-out;
-  box-shadow: 0 0 15px lightgray;
+  // box-shadow: 0 0 15px lightgray;
   border-radius: 1.071rem;
   cursor: pointer;
 }
 
-.service_box .service_item .service_hover:before {
-  position: absolute;
-  content: "";
-  width: 400px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.3);
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transform: rotate(-45deg) translateY(-232px) translateX(-55px);
-  ;
-  transition: all .3s ease-in;
-}
+// .service_box .service_item .service_hover:before {
+//   position: absolute;
+//   content: "";
+//   width: 400px;
+//   height: 40px;
+//   background: rgba(255, 255, 255, 0.3);
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto;
+//   transform: rotate(-45deg) translateY(-232px) translateX(-55px);
+//   ;
+//   transition: all .3s ease-in;
+// }
 
 .service_box .service_item:hover .service_hover:before {
   transform: rotate(-45deg) translateY(115px) translateX(-55px);
@@ -378,10 +385,9 @@
 }
   .service_box .service_item:hover .service_hover {
   background: #9BD0F5;
-
   border-radius: 1.071rem;
-  box-shadow: 0 5px 15px lightgray;
-  transform: translate(2px, -2px);
+  // box-shadow: 0 5px 15px lightgray;
+  // transform: translate(2px, -2px);
 }
 .service_box .service_item .service_pic .service_txt{
   background-color: #b3d7ff;
@@ -418,6 +424,7 @@
     flex-flow: column;
     justify-content: center;
     margin-top: 4vw;
+    // font-weight: 500 !important;
 }
 .service_box .row[data-v-47af9056] {
     padding-right: 15px;
@@ -491,15 +498,16 @@ a{
     .nar{
       .navbar-brand{
         img{
+          width: 18vw;
           padding-left: 2vw;
         }
       }
       ul{
         li{
-          padding: 0 1.8vw;
-          font-weight: 400;
+            padding: 0 1vw;
+            font-weight: 500;
           a{
-            color: #57B2F3;
+            color: #505050;
           }
         }
       }
@@ -507,10 +515,19 @@ a{
   
 //mb
 @media only screen and (max-width: 768px) {
+    .nar{
+      .navbar-brand{
+        img{
+          width: 45vw;
+          padding-left: 2vw;
+        }
+      }
+      }
   .pcshow{
     display: none;
   }
    .engmb{
+    display: block !important;
     margin-left: 20vw;
     color: #00477B !important;
 
@@ -534,7 +551,7 @@ a{
     // padding-bottom: 11.5rem;
 }
   .navbar-light .navbar-toggler-icon {
-    background-image: url('@/asset/image/banner/BurgerBtn.png') no-repeat !important;
+    background: url('@/asset/image/banner/BurgerBtn.png') no-repeat !important;
 }
 .dropdown-menu {
   border:0px;

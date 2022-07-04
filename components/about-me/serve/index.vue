@@ -11,7 +11,7 @@
             <div class="service_hover">
               <a href="/implant">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="植牙"
-                    alt="植牙" /> </div>
+                    alt="植牙" class="yas" /> </div>
                 <div class="service_txt">
                   <p class="fs-sm-16 ">植牙</p>
                 </div>
@@ -35,7 +35,7 @@
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">Invisalign隱形牙箍</p>
+                  <p class="fs-sm-16 ">Invisalign 隱形牙箍</p>
                 </div>
               </a>
             </div>
@@ -135,7 +135,7 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_4.png" title="補牙"
+                <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_4.png" title="補牙"
                     alt="補牙" /> </div>
                 <div class="service_txt">
                   <p class="fs-sm-16 ">補牙</p>
@@ -148,10 +148,10 @@
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_5.png" title="一般口腔檢查"
+                <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_5.png" title="一般口腔檢查"
                     alt="一般口腔檢查" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">一般口腔<br>檢查</p>
+                  <p class="fs-sm-16 ">一般口腔檢查</p>
                 </div>
               </a>
             </div>
@@ -159,7 +159,7 @@
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
               <a href="#">
-                <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
+                <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
                     alt="兒童牙科保健及治療" /> </div>
                 <div class="service_txt">
                   <p class="fs-sm-16 ">兒童牙科保健及治療</p>
@@ -177,7 +177,7 @@
     h2{
     font-weight: 500;
     color: #79828D;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
   }
   image{
     text-align: center;
@@ -198,10 +198,11 @@ a{
 }
 .service_pic img {
   max-width: 80px;
-  // width: 4vw;
+  width: 5vw;
 }
 .box{
-  margin: 5vw 17.5vw;
+  display: table;
+  margin: 5vw auto;
 }
 .service_box {
   // padding-top: 3.714rem;
@@ -216,6 +217,16 @@ a{
   .service_box {
     padding-top: 2rem;
   }
+  .service_box .service_item .service_hover[data-v-47af9056]{
+    height: 196px;
+  }
+  .service_pic img{
+    width: 8vw;
+  }
+  .yas{
+    width: 7vw !important;
+  }
+  
 }
 
 @media only screen and (max-width: 768px) {
@@ -230,13 +241,20 @@ a{
   // align-items: center;
   justify-content: center;
   flex-flow: column;
-  margin: 2vw;
+  margin: 1vw;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
       .imgya{
     margin-left: 7vw !important;
   }
+ .yas{
+    width: 16vw !important;
+  }
+  .service_pic img[data-v-47af9056] {
+    // max-width: 80px;
+    width: 22vw;
+    }
   .box{
     margin: 0;
   }
@@ -307,6 +325,18 @@ a{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
+  .yas{
+  width: 4.5vw !important;
+
+  }
+  .buya{
+    width: 5.5vw !important;
+
+  }
+  .service_pic img {
+  max-width: 80px;
+  width: 7vw;
+}
   .service_txt{
     color: #505050;
     font-weight: 600;
@@ -324,13 +354,13 @@ a{
 
   }
   .service_box .service_item {
-    margin-bottom: 3.571rem;
+    // margin-bottom: 3.571rem;
   }
 }
 
 .service_box .service_item .service_hover {
-  width: 230px;
-  height: 230px;
+  width: 218px;
+  height: 218px;
   overflow: hidden;
   position: relative;
   transition: all .3s ease-in-out;
@@ -448,6 +478,7 @@ a{
 }
 
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
+
   .service_box .service_item .service_hover {
     width: 15.2vw;
   }
@@ -468,7 +499,7 @@ a{
   }
 
   .service_box .service_item .service_hover .service_txt p {
-    font-size: 22px;
+    font-size: 16px;
     padding-bottom: 3rem;
   }
 }
@@ -514,13 +545,13 @@ a{
 
 @media only screen and (min-width: 1440px) and (max-width: 1920px) {
   .service_box .service_item .service_pic img {
-    max-width: 100px;
+    max-width: 120px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
   .service_box .service_item .service_txt {
-    padding: 0 3rem 2rem;
+    // padding: 0 3rem 2rem;
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -542,9 +573,10 @@ a{
 }
 
 .service_box p {
-  color: #505050;
-  font-size: 1.2rem;
-  font-weight: 540;
+   color: #505050;
+    font-size: 1.2rem;
+    font-weight: 540;
+    letter-spacing: 1px;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 768px) {

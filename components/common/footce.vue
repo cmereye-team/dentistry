@@ -32,7 +32,7 @@
 @media only screen and (min-width: 768px) {
   .face-primary{
     img{
-      padding-left: 0.5vw;
+      // padding-left: 0.5vw;
     }
   }
   .online{
@@ -46,8 +46,8 @@
       }
    }
    .face-button1 {
-            width: 146px;
-            height: 56px;
+            width: 180px;
+            height: 60px;
             display: inline-block;
             font-size: 20px;
             font-weight: 500;
@@ -68,9 +68,12 @@
             height: 100%;
              border-radius: 16px 0 0 16px;
         }
+        .what{
+              padding: 0 0.5vw 0 1.5vw;
+        }
 .face-button {
-            width: 146px;
-            height: 56px;
+              width: 180px;
+            height: 60px;
             display: inline-block;
             font-size: 20px;
             font-weight: 500;
@@ -78,6 +81,7 @@
             text-decoration: none;
             overflow: hidden;
             margin-bottom:10px;
+            // padding-right: 1vw;
             // background: white;
         }
 
@@ -99,6 +103,11 @@
 
         }
 
+}
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  .online{
+    z-index: 9999;
+  }
 }
 //mb
 @media only screen and (max-width: 768px) {
