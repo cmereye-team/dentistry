@@ -23,7 +23,7 @@
     </div>
     <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
       <div id="map">
-        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
+        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" >
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -49,7 +49,7 @@
     </div>
     <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
       <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
+          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg">
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -76,7 +76,7 @@
     </div>
     <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
     <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%">
+          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" >
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -233,12 +233,11 @@ export default {
       display: block;
       padding: 1vw;
       margin: 0 auto;
-      width: 14vw;
+      width: 12vw;
       letter-spacing: 0.2vw;
       margin-top: 3vw;
-      margin-left: 13px;
       text-align: center;
-      font-size: 23px;
+      font-size: 26px;
 
     &:hover {
       animation: 3s ease-in 1s 2 reverse both paused slidein;
@@ -276,6 +275,7 @@ export default {
     }
     
     .address1 {
+      
       padding: 0.8vw 1.3vw 0 2.8vw;
       color: white;
       margin-bottom: 0.5vw;
@@ -318,7 +318,7 @@ export default {
   }
 
   #map {
-    // height: 28vw;
+    height: 28vw;
     width: 43vw;
     // border: 1px solid;
     border-radius: 10px 10px 10px 10px;
@@ -409,8 +409,7 @@ export default {
         padding: 2.5vw 1.3vw 0 6.8vw;
       }
   #map {
-    // height: 55vw;
-    width: 92%;
+    height: 55vw;
     // border: 1px solid;
     // border-radius: 10px 10px 10px 10px;
     box-shadow: 9px 9px 5px #8CD1F8;
@@ -464,7 +463,7 @@ export default {
 
   .mapcontennt {
     height: 69vw;
-    width: 81vw;
+    width: 86vw;
     border: 1;
     background: #8CD1F8;
     border-radius: 16px 16px 16px 16px;

@@ -5,7 +5,7 @@
   <comContent/>
   <ambient/>
   <footce/>
-  <mapGoogle/>
+  <mapGoogle style="margin-top: 0vw;"/>
   <foot/>
   
 </div>

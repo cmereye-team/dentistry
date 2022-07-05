@@ -86,7 +86,7 @@
               <tr>
                 <td>植牙</td>
               </tr>
-              <tr>
+              <tr style=" background: #ECF7FC">
                 <td>固定假牙</td>
               </tr>
               <tr>
@@ -100,8 +100,13 @@
               <tr>
                 <td>植牙</td>
               </tr>
-              <tr>
-                <td>固定假牙</td>
+              <tr style=" background: #ECF7FC">
+                <ul>
+                  <li>1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                </ul>
               </tr>
               <tr>
                 <td>活動假牙</td>
@@ -111,10 +116,10 @@
               <tr style="height: 3vw;">
                 <td>植牙</td>
               </tr>
-              <tr>
+              <tr >
                 <td>植牙</td>
               </tr>
-              <tr>
+              <tr style=" background: #ECF7FC">
                 <td>固定假牙</td>
               </tr>
               <tr>
@@ -237,7 +242,7 @@ export default {
     border-spacing: 1;
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
-    width: 6%;
+    width: 7%;
     height: 22vw;
     font-weight: 550;
     letter-spacing: 0.1vw;
@@ -275,10 +280,10 @@ export default {
     border-right: none;
   }
 
-  tr:nth-child(even) {
-    background: #ECF7FC;
+  // tr:nth-child(even) {
+  //   background: #ECF7FC;
 
-  }
+  // }
 
   
   .list_disd {
@@ -383,7 +388,7 @@ export default {
 
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
-        background-color: rgba($color: #fff, $alpha: 0.8);
+        background-color: rgba(255, 255, 255, 0.8);
         height: 100px;
         /* line-height: 94px; */
         align-self: center;
@@ -394,6 +399,7 @@ export default {
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
+        justify-content: center;
 
         p {
           display: block;

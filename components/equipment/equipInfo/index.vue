@@ -38,6 +38,8 @@
         <p>聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉？</p>
         <p>👩‍⚕️💥漱口水嘅作用係清潔口腔💦牙刷可以清走牙齒上嘅牙菌斑及食物殘渣；牙線係清潔牙縫及牙齦位置，單靠漱口水係不足以清潔到牙齒㗎💢</p>
         <p>市面上有好多漱口水選擇，記得睇清楚功能及成份，了解自己需要先選購🧐每日再配合正確嘅刷牙及牙線使用方式，維持牙齒及口腔清潔💪</p>
+        <p class="label">護齒心得</p>
+        <p class="label">補牙</p>
       </div>
       <img class="date" src="@/asset/image/equipment/date.png" alt="">
     </div>
@@ -54,6 +56,8 @@
         <p>🔍敏感牙齒<br>選擇有硝酸鉀、氯化鍶嘅抗敏成份，以及含較細嘅研磨劑顆粒</p>
         <p>🔍牙周病牙膏<br>揀選含有殺菌或抗菌劑，例如IPMP、氯化十六烷基吡啶、異丙基甲基酚、鹽酸氯己定等成份牙膏，有助消滅牙周病菌</p>
         <p>買牙膏前先諗諗自己想要咩功能，睇清楚成份內容，咁就可以做個精明清費者啦😉</p>
+        <p class="label">護齒心得</p>
+        <p class="label">牙周病治療</p>
       </div>
       <img class="date" src="@/asset/image/equipment/date.png" alt="">
     </div>
@@ -382,9 +386,10 @@ export default {
         display: inline-block;
         border: 1px solid #57B2F3;
         border-radius: 60px;
-        width: 5vw;
+        width: 8vw;
         text-align: center;
         background-color: #fff;
+        padding: 0.5vw;
       }
       h2 {
         padding: 0;

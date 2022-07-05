@@ -314,6 +314,9 @@
 }
 //pc
 @media only screen and (min-width: 768px) {
+  .navbar-nav {
+    letter-spacing: 0.1vw;
+  }
   .mbshow{
     display: none !important;
   }
@@ -496,6 +499,7 @@ a{
       color: #57B2F3;
     }
     .nar{
+      
       .navbar-brand{
         img{
           width: 18vw;
