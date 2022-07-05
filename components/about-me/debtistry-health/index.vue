@@ -284,7 +284,14 @@ export default {
         font-size: 24px;
         text-align: left;
         padding-left: 3vw;
-
+        &:after{
+          content: "";
+          border-bottom: 0.2vw solid #9BA5B1;
+          // margin-right: 1vw;
+          width: 2vw;
+          display: block;
+          // vertical-align: middle;
+        }
       }
 
       .content {
@@ -296,6 +303,19 @@ export default {
 
     .swiper-slide-active {
       color: #57B2F3;
+      .des {
+        font-size: 24px;
+        text-align: left;
+        padding-left: 3vw;
+        &:after{
+          content: "";
+          border-bottom: 0.2vw solid #9BD0F5;
+          // margin-right: 1vw;
+          width: 2vw;
+          display: block;
+          // vertical-align: middle;
+        }
+      }
     }
   }
 

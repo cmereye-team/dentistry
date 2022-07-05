@@ -134,6 +134,7 @@ export default {
     position: relative;
     height: 30vw;
     width: 100vw;
+    text-align: center;
     .title{
       position: absolute;
       z-index:2;

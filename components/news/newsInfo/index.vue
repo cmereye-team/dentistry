@@ -219,6 +219,22 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+    ::v-deep .el-input__inner {
+    -webkit-appearance: none;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: initial;
+    height: 48px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 16vw;
+}
   .dateinfo{
     display: none;
   }

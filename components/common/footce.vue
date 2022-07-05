@@ -41,6 +41,7 @@
       margin-left:auto;
       margin-right:auto;
       bottom: 16vw;
+      z-index: 999;
       a{
         margin: 0;
       }

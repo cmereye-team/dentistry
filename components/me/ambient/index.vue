@@ -9,68 +9,103 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="@/asset/image/me/BigPic.jpg">
+          <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>  
       </div>
       <div class="carousel-item">
-        <img src="@/asset/image/me/BigPic.jpg">
+        <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/me/BigPic.jpg">
+      <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
     <div class="carousel-item">
-        <img src="@/asset/image/me/BigPic.jpg">
+        <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
     <div class="carousel-item">
-        <img src="@/asset/image/me/BigPic.jpg">
+        <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
     <div class="carousel-item">
-        <img src="@/asset/image/me/BigPic.jpg">
+        <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
     <div class="carousel-item">
-        <img src="@/asset/image/me/BigPic.jpg">
+        <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="@/asset/image/me/BigPic.jpg">
+          </div>
     </div>
+   
     </div>
-    <!-- 指示符 -->
-
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active">
         <div >
-          <img height="100px"  width="100px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button>
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="1">
         <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
       </button>
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="2">
         <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
       </button>
        <button type="button" data-bs-target="#demo2" data-bs-slide-to="3">
         <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
       </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="4">
-        <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
+       <div >
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
       </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="5">
         <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
-      </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="6">
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
+      </button> 
+      <button type="button" data-bs-target="#demo2" data-bs-slide-to="6">
         <div >
-        <img height="100px" width="100px" src="@/asset/image/me/BigPic.jpg" alt="">
-        </div>
+          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          </div>
       </button>
     </div>
   </div>
@@ -102,7 +137,7 @@ export default {
   h2 {
     font-weight: 300;
     color: #79828D;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
   }
 
   image {
@@ -171,9 +206,8 @@ export default {
 
   .carousel-inner {
     text-align: -webkit-center;
-
     img {
-      // border-radius: 80px 80px 80px 80px;
+      //  border: 1px solid #79828D;
     }
   }
 
@@ -236,24 +270,84 @@ export default {
     display: none;
   }
 }
-
 //pc
 @media only screen and (min-width: 768px) {
+  .show{
+    padding: 2vw;
+    width: 100%;
+  }
+.main{
+  position: relative;
+  width: 50%;
+}
+.border_corner{
+    z-index: 2500;
+    position: absolute;
+    width: 20px;
+    height: 23px;
+    padding: 1vw;
+    background: rgba(0, 0, 0, 0);
+    border: 4px solid #FFB7B7;
+}
+.border_corner_left_top{
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 14px;
+}
+.border_corner_right_top{
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
+    border-top-right-radius: 14px;
+}
+.border_corner_left_bottom{
+    bottom: 0;
+    left: 0;
+    border-right: none;
+    border-top: none;
+    border-bottom-left-radius: 14px;
+}
+.border_corner_right_bottom{
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 14px;
+}
   .ambient{
-
+    position: relative;
     background: #ECF7FC;
     background: radial-gradient(129vw 28vw at bottom, transparent 50%, #ECF7FC 50%);
-  // background: #ECF7FC !important;
-    //  border-radius: 37% 37% 0 0;
-     height: 67vw;
-     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
-      clip-path: ellipse(100% 67% at 50% 70%);
-     height: 72vw;
-     margin-top: 5vw;
+    -webkit-clip-path: ellipse(100% 67% at 50% 70%);
+    clip-path: ellipse(100% 67% at 50% 70%);
+    height: 80vw;
+    margin-top: 5vw;
   }
 .imgbox {
   margin: 0 3vw;
 }
+::v-deep .carousel-indicators {
+    /* position: absolute; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* z-index: 2; */
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 0;
+    margin-right: 15%;
+    /* margin-bottom: 1rem; */
+    /* margin-left: 15%; */
+    list-style: none;
+    word-wrap: break-word;
+    width: 55%;
+    justify-content: center;
+    // margin-left: 21vw;
+    display: block !important;
+    }
 ::v-deep .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
@@ -266,7 +360,7 @@ export default {
   // background-color: #C2C7CD;
   background-clip: padding-box;
   border: 0;
-  margin: 2rem 6rem !important;
+  margin: 3rem 10rem !important;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   opacity: .5;
@@ -279,12 +373,10 @@ export default {
   }
 }
 
-::v-deep .carousel-indicators {
-  position: inherit;
-}
+
 
 ::v-deep .carousel-indicators .active {
-  opacity: 1 !important;
+   opacity: 1 !important;
    background-color: #9BA5B1;
 }
 ::v-deep .navbar-light .navbar-toggler {
@@ -295,12 +387,12 @@ export default {
     width: 90%;
     // border-radius: 80px 80px 80px 80px;
   }
-
   .carousel-inner {
     text-align: -webkit-center;
 
     img {
       // border-radius: 80px 80px 80px 80px;
+      
     }
   }
 
@@ -336,42 +428,4 @@ export default {
     }
   }
 }
-</style>
-<style lang="scss" >
-// .carousel-indicators [data-bs-target] {
-//   box-sizing: content-box;
-//   flex: 0 1 auto;
-//   width: 12px;
-//   height: 12px;
-//   padding: 0;
-//   margin-right: 8px;
-//   margin-left: 8px;
-//   text-indent: -999px;
-//   cursor: pointer;
-//   background-color: #C2C7CD;
-//   background-clip: padding-box;
-//   border: 0;
-//   margin-bottom: 2rem;
-//   margin-top: 1rem;
-//   border-top: 10px solid transparent;
-//   border-bottom: 10px solid transparent;
-//   opacity: .5;
-//   border-radius: 100%;
-//   transition: opacity .6s ease;
-// }
-
-// .carousel-indicators {
-//   position: inherit;
-// }
-
-// .carousel-indicators .active {
-//   opacity: 1 !important;
-//   background-color: #9BA5B1;
-//   width: 14px;
-//   height: 14px;
-// }
-// .navbar-light .navbar-toggler {
-//     color: rgba(0,0,0,.55);
-//     border-color: #fff
-// }
 </style>

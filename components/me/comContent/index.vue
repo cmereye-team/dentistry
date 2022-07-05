@@ -6,7 +6,7 @@
       <p style="color:#57B2F3">關於我們</p>
     </div>
     <div class="flex justify-center texts">
-        <h2>牙科服務</h2>
+        <h2>公司簡介</h2>
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
         <h3>希瑪牙科</h3>
         <p class="serve_con" >
@@ -16,7 +16,7 @@
         </p>
     </div>
      <div class="city">
-        <img src="@/asset/image/me/cityskyline.jpg" alt=""  >
+        <img src="@/asset/image/me/CitySkyline.png" alt=""  >
       </div>
       <div class="textsd">
         <p class="ya" >
@@ -28,7 +28,7 @@
         </p>
       </div>
        <div class="textsd" style="padding-top:1vw">
-        <p class="ya" >
+        <p class="ya yas" >
           中心秉持<br></p>
         <h3>「整體分析」的原則 </h3>
         <p class="ya_con" >
@@ -52,6 +52,7 @@ export default {
    text-align: center;
     .ya{
          color:#57B2F3;
+         margin-bottom:0.5vw;
     }
   h3{
     padding:0;
@@ -65,7 +66,7 @@ export default {
     h2{
     font-weight: 300;
     color: #79828D;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
   }
   image{
     text-align: center;
@@ -105,6 +106,10 @@ export default {
 }
 //pc
 @media only screen and (min-width: 768px) {
+  .yas{
+    padding-top: 5vw;
+    margin-bottom: 0.5vw;
+  }
   .meun{
     padding-left:6vw;
     display: flex;
@@ -118,12 +123,12 @@ export default {
     text-align: center;
     justify-content: center;
     img{
-      padding:1vw;
+      padding:5vw;
     }
   }
     h3{
       color: #57B2F3;
-       padding-top:2vw;
+       padding-top:5vw;
       }
     .serve_con{
     text-align: center;

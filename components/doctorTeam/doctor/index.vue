@@ -6,13 +6,13 @@
       <p style="color:#57B2F3">我們的團隊</p>
     </div>
     <div class="flex justify-center texts">
-        <h2>我們的團隊介</h2>
+        <h2>我們的團隊</h2>
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>姚本基</span> 醫生</p>
       </div>
       <div class="conts">
@@ -27,7 +27,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>柯明哲</span> 醫生</p>
       </div>
       <div class="conts">
@@ -42,7 +42,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>葉學韶</span> 醫生</p>
       </div>
       <div class="conts">
@@ -64,7 +64,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>區舜韡</span> 醫生</p>
       </div>
       <div class="conts">
@@ -79,7 +79,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>許國權</span> 醫生</p>
       </div>
       <div class="conts">
@@ -93,7 +93,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>陸嘉駿</span> 醫生</p>
       </div>
       <div class="conts">
@@ -109,7 +109,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>謝志聰</span> 醫生</p>
       </div>
       <div class="conts">
@@ -124,7 +124,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>楊麗明</span> 醫生</p>
       </div>
       <div class="conts">
@@ -139,7 +139,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>陳揮文</span> 醫生</p>
       </div>
       <div class="conts">
@@ -155,7 +155,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>陳奕朗</span> 醫生</p>
       </div>
       <div class="conts">
@@ -167,7 +167,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>張文偉</span> 醫生</p>
       </div>
       <div class="conts">
@@ -180,7 +180,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>周成輝</span> 醫生</p>
       </div>
       <div class="conts">
@@ -193,7 +193,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>董雨菁</span> 醫生</p>
       </div>
       <div class="conts">
@@ -204,7 +204,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>范希諾</span> 醫生</p>
       </div>
       <div class="conts">
@@ -215,7 +215,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>馮祉晴</span> 醫生</p>
       </div>
       <div class="conts">
@@ -229,7 +229,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span></span> Dr. Khawaja Abrar Tahir</p>
       </div>
       <div class="conts">
@@ -241,7 +241,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>劉嘉儀</span> 醫生</p>
       </div>
       <div class="conts">
@@ -253,7 +253,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>羅振道</span> 醫生</p>
       </div>
       <div class="conts">
@@ -267,7 +267,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>姚本基</span> 醫生</p>
       </div>
       <div class="conts">
@@ -282,7 +282,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>柯明哲</span> 醫生</p>
       </div>
       <div class="conts">
@@ -297,7 +297,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>葉學韶</span> 醫生</p>
       </div>
       <div class="conts">
@@ -319,7 +319,7 @@
     <div class="team">
        <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>姚本基</span> 醫生</p>
       </div>
       <div class="conts">
@@ -334,7 +334,7 @@
     </div>
      <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>柯明哲</span> 醫生</p>
       </div>
       <div class="conts">
@@ -349,7 +349,7 @@
     </div>
     <div class="doctor">
       <div class="name">
-        <img src="@/asset/image/doctorTeam/star.png" alt="">
+        <img src="@/asset/image/doctorTeam/star.svg" alt="">
         <p><span>葉學韶</span> 醫生</p>
       </div>
       <div class="conts">
@@ -406,24 +406,42 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
-   /* 设置滚动条的样式 */
-::-webkit-scrollbar {
-width:12px;
+
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
 }
-/* 滚动槽 */
-::-webkit-scrollbar-track {
--webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-border-radius:10px;
-}
-/* 滚动条滑块 */
+
 ::-webkit-scrollbar-thumb {
-border-radius:10px;
-background:#9BD0F5;
--webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+    border-radius: 12px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    box-shadow: 8px 0 0 #9BD0F5 inset;
 }
-::-webkit-scrollbar-thumb:window-inactive {
-background:rgba(255,0,0,0.4);
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 8px 0 0 #9BD0F5 inset;
 }
+
+   /* 设置滚动条的样式 */
+// ::-webkit-scrollbar {
+//   width:12px;
+// }
+// /* 滚动槽 */
+// ::-webkit-scrollbar-track {
+// -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+// border-radius:10px;
+// }
+// /* 滚动条滑块 */
+// ::-webkit-scrollbar-thumb {
+// border-radius:50px;
+// background:#9BD0F5;
+// height: 100px;    /* 滚动条滑块长度 */
+// padding-right: 1vw;
+// -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+// }
+// ::-webkit-scrollbar-thumb:window-inactive {
+// background:rgba(255,0,0,0.4);
+// }
   .team{
     margin: 5vw;
     
@@ -447,6 +465,7 @@ background:rgba(255,0,0,0.4);
     img{
       width: 12vw;
       height: 12vw;
+      margin-bottom: 1vw;
     }
     ul{
       margin: 1vw;
@@ -492,24 +511,39 @@ background:rgba(255,0,0,0.4);
 }
 //pc
 @media only screen and (min-width: 768px) {
-  /* 设置滚动条的样式 */
-::-webkit-scrollbar {
-width:12px;
+
+  ::-webkit-scrollbar {
+    width: 20px;
+    height: 8px;
 }
-/* 滚动槽 */
-::-webkit-scrollbar-track {
--webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-border-radius:10px;
-}
-/* 滚动条滑块 */
+
 ::-webkit-scrollbar-thumb {
-border-radius:10px;
-background:#9BD0F5;
--webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+    border-radius: 12px;
+    border: 6px solid rgba(0, 0, 0, 0);
+    box-shadow: 8px 0 0 #9BD0F5 inset;
 }
-::-webkit-scrollbar-thumb:window-inactive {
-background:rgba(255,0,0,0.4);
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 8px 0 0 #9BD0F5 inset;
 }
+  /* 设置滚动条的样式 */
+// ::-webkit-scrollbar {
+// width:12px;
+// }
+// /* 滚动槽 */
+// ::-webkit-scrollbar-track {
+// -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+// border-radius:10px;
+// }
+// /* 滚动条滑块 */
+// ::-webkit-scrollbar-thumb {
+// border-radius:10px;
+// background:#9BD0F5;
+// -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+// }
+// ::-webkit-scrollbar-thumb:window-inactive {
+// background:rgba(255,0,0,0.4);
+// }
   .team{
     margin: 5vw;
     display: flex;
@@ -532,6 +566,7 @@ background:rgba(255,0,0,0.4);
     }
     img{
       width: 4vw;
+      margin-bottom: 1vw;
     }
     ul{
       margin: 1vw;

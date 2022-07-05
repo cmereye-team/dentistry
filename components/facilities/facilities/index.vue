@@ -3,7 +3,7 @@
     <div class="meun">
       <p>首頁</p>
       <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">我們的團隊</p>
+      <p style="color:#57B2F3">診所設備</p>
     </div>
     <div class="flex justify-center texts">
         <h2>診所設備</h2>
@@ -56,7 +56,7 @@ export default {
     h2{
     font-weight: 300;
     color: #79828D;
-    margin-bottom: 1vw;
+    margin-bottom: 0vw;
   }
   image{
     text-align: center;

@@ -4,9 +4,9 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <img src="@/asset/image/banner/DentalCare.png">
       <div class="title">
-        診所設備
+        牙齒健康
       </div>
       </div>
       <!-- <div class="carousel-item">
@@ -135,16 +135,17 @@ export default {
     position: relative;
     height: 30vw;
     width: 100vw;
-    .title{
+    text-align: center;
+     .title{
       position: absolute;
       z-index:2;
       height: 30vw;
       width: 100vw;
       left:0;
       top:45%;
-      font-weight: 600;
+      font-weight: 500;
       color: #79828D;
-      font-size: 30px;
+      font-size: 39px;
     }
   }
   .carousel-inner img[data-v-703b804a] {

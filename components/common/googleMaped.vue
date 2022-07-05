@@ -6,11 +6,9 @@
     </div>
     <div class="adress">
       <ul>
-        <li @click='addhandleClick(index)' v-for='(item, index) in addresslist'
-        :class='addcurrentIndex == index ? "actives" : ""' :key='item.id'>
-        {{ item.title }}</li>
-        <!-- <li>九龍</li>
-        <li>新界</li> -->
+        <li>港島</li>
+        <li>九龍</li>
+        <li>新界</li>
       </ul>
     </div>
     <div class="tab flex justify-center" id="tab">
@@ -23,20 +21,20 @@
     </div>
     <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
       <div id="map">
-        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
+        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%">
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
       <div>
         <div class="mapcontennt">
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.png" alt="">
           <p class="address1" id="addresd">地址</p>
           <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.png" alt="">
           <p class="address1">查詢熱線</p>
           <p class="address2">36202428</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.png" alt="">
           <p class="address1">營業時間</p>
           <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
           <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
@@ -49,20 +47,20 @@
     </div>
     <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
       <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
+          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%"></img>
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
       <div>
         <div class="mapcontennt">
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.png" alt="">
           <p class="address1 " id="addresd">地址</p>
           <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.png" alt="">
           <p class="address1">查詢熱線</p>
           <p class="address2">36202428</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.svg" alt="">
+          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.png" alt="">
           <p class="address1">營業時間</p>
           <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
           <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
@@ -75,32 +73,7 @@
       </div>
     </div>
     <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
-    <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%">
-        <!-- <iframe width="100%" height="100%"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-      </div>
-      <div>
-        <div class="mapcontennt">
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.svg" alt="">
-          <p class="address1 " id="addresd">地址</p>
-          <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.svg" alt="">
-          <p class="address1">查詢熱線</p>
-          <p class="address2">36202428</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.svg" alt="">
-          <p class="address1">營業時間</p>
-          <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
-          <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
-        </div>
-        <div class="button">
-          <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-          <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
-        </div>
-
-      </div>
-    </div>
+      33333</div>
   </div>
 </template>
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
@@ -122,21 +95,7 @@ export default {
         id: 3,
         title: '灣仔'
       }],
-      addresslist: [{
-        id: 1,
-        title: '港島'
-      },
-      {
-        id: 2,
-        title: '九龍'
-      },
-      {
-        id: 3,
-        title: '新界'
-      }],
       currentIndex: 0,   // 当前点击的tab的索引
-      addcurrentIndex: 0,   // 当前点击的tab的索引
-
     }
   },
   created() {
@@ -159,10 +118,6 @@ export default {
       // console.log(index);
       this.currentIndex = index
     },
-    addhandleClick(index) {
-      console.log(index);
-      this.addcurrentIndex = index
-    },
   }
 };
 </script>
@@ -173,39 +128,18 @@ export default {
   h2 {
     font-weight: 300;
     color: #79828D;
-    margin-bottom: 0vw;
+    margin-bottom: 1vw;
   }
 
   image {
     text-align: center;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
-  .mapcontennt{
-    z-index: -1;
-  }
-  .mapcontennt::before {
-    //这里就是小三角了
-    content: "";
-    display: block;
-    position: absolute;
-    left: -56px !important;
-    top: 92px !important;
-    border-width: 30px;
-    border-style: dashed solid dashed dashed;
-    border-color: transparent #8CD1F8 transparent transparent;
-  }
-}
+
 //pc
 @media only screen and (min-width: 768px) {
   #map{
-    img{
     border-radius: 30px 30px 30px 30px;
-    // height: 28vw;
-    width: 43vw;
-    border-radius: 10px 10px 10px 10px;
-    box-shadow: 22px 22px 0px #8cd1f8;
-    }
   }
   .button {
     display: flex;
@@ -225,20 +159,18 @@ export default {
 
   .link_more {
     border: 2px solid #57B2F3;
-      border-radius: 40px 40px 40px 40px;
-      transition: all 0.5s;
-      color: #57B2F3;
-      text-decoration: none;
-      // font-weight: 600;
-      display: block;
-      padding: 1vw;
-      margin: 0 auto;
-      width: 14vw;
-      letter-spacing: 0.2vw;
-      margin-top: 3vw;
-      margin-left: 13px;
-      text-align: center;
-      font-size: 23px;
+    border-radius: 30px 30px 30px 30px;
+    transition: all 0.5s;
+    color: #57B2F3;
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 1vw;
+    margin: 0 auto;
+    width: 12vw;
+    letter-spacing: 0.2vw;
+    margin-top: 3vw;
+    text-align: center;
 
     &:hover {
       animation: 3s ease-in 1s 2 reverse both paused slidein;
@@ -253,11 +185,11 @@ export default {
     content: "";
     display: block;
     position: absolute;
-    left: -59px;
-    top: 181px;
-    border-width: 30px;
-    border-style: dashed solid dashed dashed;
-    border-color: transparent #8CD1F8 transparent transparent;
+    left: -20px; //给小三角定位，更具实际需求调整
+    top: 75px; //给小三角定位，更具实际需求调整
+    border-width: 10px;
+    border-style: dashed solid dashed dashed; //四个参数分别代表向下，左，上右的小三角(对应方向的小三角设置为solid，其他的为dashed。我这里演示向左的小三角，所以设置第二个）
+    border-color: transparent #8CD1F8 transparent transparent; //四个参数分别代表向下，左，上右的小三角。对应方向的小三角设置你想要的颜色（为了直观我这里设置黑色），其他的为transparent。我这里演示向左的小三角，所以设置第二个。
   }
   .mapcontennt {
     height: 20vw;
@@ -276,6 +208,7 @@ export default {
     }
     
     .address1 {
+      
       padding: 0.8vw 1.3vw 0 2.8vw;
       color: white;
       margin-bottom: 0.5vw;
@@ -318,11 +251,11 @@ export default {
   }
 
   #map {
-    // height: 28vw;
+    height: 28vw;
     width: 43vw;
     // border: 1px solid;
     border-radius: 10px 10px 10px 10px;
-    // box-shadow: 15px 15px 5px #8CD1F8;
+    box-shadow: 15px 15px 5px #8CD1F8;
   }
 
   .map {
@@ -371,46 +304,31 @@ export default {
       justify-content: center;
 
       li {
-        // margin: 2vw 2vw;
-        // background: #9BD0F5;
-        // border-radius: 100%;
-        // height: 100px;
-        // width: 100px;
-        // line-height: 100px;
-        // color: white;
         margin: 2vw 2vw;
         background: #9BD0F5;
         border-radius: 100%;
-        height: 90px;
-        width: 90px;
-        line-height: 90px;
+        height: 100px;
+        width: 100px;
+        line-height: 100px;
         color: white;
-        font-size: 20px;
+
       }
-      .actives{
+
+      li:nth-of-type(1) {
         background: #57B2F3;
         border-radius: 100%;
       }
-      // li:nth-of-type(1) {
-      //   background: #57B2F3;
-      //   border-radius: 100%;
-      // }
     }
   }
 }
 
 //mb
 @media only screen and (max-width: 768px) {
-  .actives{
-        background: #57B2F3 !important;
-        border-radius: 100% !important;
-      }
   #addresd{
         padding: 2.5vw 1.3vw 0 6.8vw;
       }
   #map {
-    // height: 55vw;
-    width: 92%;
+    height: 55vw;
     // border: 1px solid;
     // border-radius: 10px 10px 10px 10px;
     box-shadow: 9px 9px 5px #8CD1F8;
@@ -427,14 +345,14 @@ export default {
   }
   .mapcontennt::before {
     //这里就是小三角了
-  content: "";
+   content: "";
     display: block;
     position: absolute;
-     left: -58px;
-    top: 103px;
-    border-width: 30px;
-    border-style: dashed solid dashed dashed;
-    border-color: transparent #8CD1F8 transparent transparent;
+    left: 147px;
+    top: -17px;
+    border-width: 10px;
+    border-style: solid dashed dashed dashed;
+    border-color: transparent transparent #8CD1F8 transparent;
   }
 
   .button {
@@ -444,7 +362,7 @@ export default {
 
   .link_more {
     border: 2px solid #57B2F3;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 15px 15px 15px 15px;
     transition: all 0.5s;
     color: #57B2F3;
     text-decoration: none;
@@ -464,7 +382,7 @@ export default {
 
   .mapcontennt {
     height: 69vw;
-    width: 81vw;
+    width: 86vw;
     border: 1;
     background: #8CD1F8;
     border-radius: 16px 16px 16px 16px;
@@ -580,6 +498,10 @@ export default {
 
       }
 
+      li:nth-of-type(1) {
+        background: #57B2F3;
+        border-radius: 100%;
+      }
     }
   }
 }

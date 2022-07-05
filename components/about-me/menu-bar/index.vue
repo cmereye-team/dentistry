@@ -12,7 +12,7 @@
     <div class="collapse navbar-collapse pcshow" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link " href="/">首页</a>
+          <a class="nav-link " href="/">首頁</a>
         </li>
         <li class="nav-item">
           <a class="nav-link " href="/aboutMe">關於我們</a>
@@ -508,6 +508,7 @@ a{
             font-weight: 500;
           a{
             color: #505050;
+            font-weight: 500;
           }
         }
       }

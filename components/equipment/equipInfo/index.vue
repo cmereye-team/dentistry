@@ -24,6 +24,7 @@
         <h2>護齒食物你要知 #堅果 </h2>
         <p>食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減低蛀牙機會🌰加上堅果含有豐富嘅鈣質、磷，呢兩個元素都對牙齒和牙齦健康好有益㗎😗</p>
         <p>不過記得進食堅果份量要適中，唔好最後因為食得太多堅硬食物令到牙齒磨損喇！🙌</p>
+        <p class="label">護齒心得</p>
       </div>
       <img class="date" src="@/asset/image/equipment/date.png" alt="">
     </div>
@@ -275,6 +276,56 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+ ::v-deep .el-pager .more::before {
+    line-height: 30px;
+    color: #9BD0F5;
+}
+  ::v-deep .el-pagination {
+    white-space: nowrap;
+    padding: 2px 5px;
+    color: #9BD0F5;
+    font-weight: 700;
+}
+  ::v-deep .el-pagination button, .el-pagination span:not([class*=suffix]) {
+    display: inline-block;
+    font-size: 16px;
+    min-width: 35.5px;
+    height: 34px;
+    line-height: 28px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+  ::v-deep .el-pager li.active {
+    color: #57B2F3;
+    cursor: default;
+  }
+  ::v-deep .el-pager li {
+    padding: 2px 25px;
+    background: #FFF;
+    font-size: 23px;
+    min-width: 35.5px;
+    height: 28px;
+    line-height: 28px;
+    box-sizing: border-box;
+}
+  
+    
+  ::v-deep .el-input__inner {
+    -webkit-appearance: none;
+    background-color: #FFF;
+    border-radius: 4px;
+    border: 1px solid #DCDFE6;
+    box-sizing: border-box;
+    color: #606266;
+    display: inline-block;
+    font-size: initial;
+    height: 48px;
+    line-height: 40px;
+    outline: 0;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    width: 16vw;
+}
   .date2{
     display: none;
   }
@@ -327,7 +378,14 @@ export default {
       display: inline-block;
       margin-top: 4vw;
       margin-left: 3vw;
-      
+      .label{
+        display: inline-block;
+        border: 1px solid #57B2F3;
+        border-radius: 60px;
+        width: 5vw;
+        text-align: center;
+        background-color: #fff;
+      }
       h2 {
         padding: 0;
         text-align: left;

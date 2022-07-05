@@ -13,6 +13,9 @@
             @/asset/image/banner/pixta_phone.jpg 1125w,
             @/asset/image/banner/ban_pixta.jpg 1650w,
             ">
+            <div class="title">提供全方位牙科服務</div>
+            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
+            <!-- <div class="title">提供全方位牙科服務</div> -->
         <!-- <img 
             src="@/asset/image/banner/pixta_phone.jpg"
             srcset="
@@ -32,9 +35,6 @@
             @/asset/image/banner/pixta_phone.jpg 1125w,
             @/asset/image/banner/ban_pixta.jpg 1650w,
             ">
-      <!-- <img src="@/asset/image/banner/ban_pixta.jpg" 
-          srcset="@/asset/image/banner/pixta_phone.jpg 640w @/asset/image/banner/ban_pixta.jpg"     
-          class="d-block" > -->
     </div>
     <div class="carousel-item">
       <img src=" @/asset/image/banner/pixta_phone.jpg "
@@ -46,9 +46,6 @@
             @/asset/image/banner/pixta_phone.jpg 1125w,
             @/asset/image/banner/ban_pixta.jpg 1650w,
             ">
-      <!-- <img src="@/asset/image/banner/ban_pixta.jpg"
-          srcset="@/asset/image/banner/pixta_phone.jpg 640w @/asset/image/banner/ban_pixta.jpg"       
-          class="d-block" > -->
     </div>
     </div>
     <!-- 指示符 -->
@@ -149,6 +146,32 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .carousel-item{
+    text-align: center;
+
+  }
+  .contents{
+    position: absolute;
+    z-index: 2;
+    height: 53vw;
+    width: 39vw;
+    left: 0;
+    top: 37%;
+    font-weight: 500;
+    color: #79828D;
+    font-size: 23px;
+  }
+  .title{
+      position: absolute;
+      z-index: 2;
+      height: 53vw;
+      width: 45vw;
+      left: 0;
+      top: 23%;
+      font-weight: 500;
+      color: #79828D;
+      font-size: 37px;
+    }
   .carousel-inner img[data-v-703b804a] {
     width: 90%;
     border-radius: 80px 80px 80px 80px;

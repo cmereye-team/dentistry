@@ -59,7 +59,7 @@ export default {
       width: 100vw;
       left:0;
       top:45%;
-      font-weight: 600;
+      font-weight: 500;
       color: #79828D;
       font-size: 24px;
     }
@@ -98,6 +98,8 @@ export default {
     position: relative;
     height: 30vw;
     width: 100vw;
+    text-align: center;
+
     .title{
       position: absolute;
       z-index:2;
@@ -105,9 +107,9 @@ export default {
       width: 100vw;
       left:0;
       top:45%;
-      font-weight: 600;
+      font-weight: 500;
       color: #79828D;
-      font-size: 30px;
+      font-size: 39px;
     }
   }
   .carousel-inner img[data-v-703b804a] {
