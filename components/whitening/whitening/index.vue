@@ -5,18 +5,28 @@
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">植牙</p>
+      <p style="color:#57B2F3">牙齒美白</p>
     </div>
     <div class="step">
       <div class="list">
       <ul class="step_list items-center ">
         <li>
-          <img src="@/asset/image/implant/Group1.png" alt="">
-          <div class="list_con">
-            <strong>植牙</strong>
-            <p>植牙，俗稱為「種牙」，是處理缺牙的一種治療方法。牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。</p>
+          <div  class="list_con">
+            <img src="@/asset/image/whitening/apple.png" alt="">
+            <h3>想擁有更亮白的牙齒，</h3>
+            <p>可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
+            <div style="display: flex; margin: 3vw 0;">
+            <div class="list_d" >
+            <strong>激光牙齒美白</strong>
+            <span style="padding-right: 11vw;">激光美白是利用激光能量激活美白劑，將適量的過氧化氫（hydrogen peroxide，即是美白劑），透過氧化原理滲入象牙質，將色素分子打碎，排除沉澱的色素。相比其他美白牙齒的方式，激光美白屬較安全、快速、效果較持久及較亮白的方法。過程約 30分鐘，即時見效，可維持至少1年。</span>
           </div>
-          <div class="list_dis">
+          <div class="list_d"  style="padding-right: 7vw;">
+            <strong>藍光牙齒美白</strong>
+            <span>藍光美白是將專用美白溶液塗上牙齒表面，以藍光照射數次，進行氧化還原作用，達到美白的效果。過程約1小時，效果可維持約1年。</span>
+          </div>
+          </div>
+          </div>
+          <!-- <div class="list_dis">
             <strong>常見植牙的原因</strong>
             <ul>
               <li>傳統治療方法（牙套、牙橋及假牙托等）無法修復缺牙的情況</li>
@@ -24,13 +34,13 @@
               <li>缺牙容易令牙齒移位，影響咬合、發音</li>
               <li>改善咀嚼問題，回復正常飲食</li>
             </ul>
-          </div>
+          </div> -->
         </li>
       </ul>
       </div>
       <div v-if='currentIndex == 0 ? true : false'>
         <div class="Advantage">
-          <img src="@/asset/image/implant/AdvantageBG.png" alt="">
+          <img src="@/asset/image/whitening/AdvantageBG.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -45,29 +55,41 @@
             <div class="gcon">
               <div class="content left">
                 <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
-                <p>進行全面口腔檢查、X光或3D電腦掃描，確定植體的安裝位置，同時需確認患者的身體狀況及病歷</p>
+                <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
               </div>
               <div class="content left">
                 <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
-                <p>注射麻醉藥</p>
+                <p>進行簡單清潔</p>
               </div>
               <div class="content left">
                 <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
-                <p>翻開牙齦在適合安裝的位置鑽孔，植入植體，作為假牙的牙根，有需要時可以利用手術導航系統輔助植入理想位置，再縫合傷口</p>
+                <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
+              </div>
+              <div class="content left">
+                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <p>套上口腔張口器及保護眼罩</p>
+              </div>
+              <div class="content left">
+                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <p>在牙齦塗上牙齦保護劑，以免激光及美白劑刺激牙齦</p>
               </div>
             </div>
             <div class="gcon">
-              <div class="content ">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
-                <p>2至3個月後，當牙骨與植體癒合，牙醫會安放癒合帽</p>
-              </div>
-              <div class="content">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
-                <p>牙齦癒合後，再進行下一階段的療程進行掃描式印模，再由牙科技師製作義齒</p>
-              </div>
-              <div class="content">
+              <div class="content right">
                 <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                <p>將義齒固定在植體上，補上缺去的牙齒</p>
+                <p>牙齒表面均勻塗上激光專用美白劑</p>
+              </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/7.svg" height="50vw" width="50vw" alt="">
+                <p>以激光儀器照射牙齒</p>
+              </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/8.svg" height="50vw" width="50vw" alt="">
+                <p>療程完成後，清除美白劑與牙齦保護劑</p>
+              </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/9.svg" height="50vw" width="50vw" alt="">
+                <p>療程完成後，清以牙齒專用色階進行對色，比對療程前後效果除美白劑與牙齦保護劑</p>
               </div>
             </div>
           </div>
@@ -75,81 +97,6 @@
         <div class="video">
           <div class="video_con">
             <img src="@/asset/image/implant/vedio.png" alt="">
-          </div>
-          <div class="flex justify-center texts">
-            <h2>植牙、假牙點揀好？</h2>
-            <img src="@/asset/image/about-me/serve/Vector.png" alt="">
-            <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。<br>想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
-          </div>
-          <div class="table-box">
-            <table class="tables">
-              <tr>
-                <td>植牙</td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td>固定假牙</td>
-              </tr>
-              <tr>
-                <td>活動假牙</td>
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 3vw;">
-                <th>優點</th>
-              </tr>
-              <tr>
-                <td>
-                 <ul>
-                  <li>效果堅固持久</li>
-                  <li>無需要磨細附近牙齒</li>
-                </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-              <td>
-                <ul>
-                  <li>承托力較高，良好咀嚼力</li>
-                  <li>無須手術，簡便安全</li>
-                </ul>
-                </td>
-              </tr>
-              <tr>
-              <td>
-                 <ul>
-                  <li>容易配戴，方便清潔</li>
-                  <li>代替缺牙，有助咀嚼功能</li>
-                </ul>
-                </td>
-
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 3vw;">
-                <th class="thd">缺點</th>
-              </tr>
-              <tr>
-                <td>
-                 <ul>
-                  <li style="padding: 0.6vw;">療程較長</li>
-                </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-              <td>
-                <ul>
-                  <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
-                </ul>
-                </td>
-              </tr>
-              <tr>
-              <td>
-                 <ul>
-                  <li>容易引致牙肉萎縮，一段時間後需更換新牙托</li>
-                </ul>
-                </td>
-
-              </tr>
-            </table>
           </div>
           <div class="lists">
             <div class="list_disd">
@@ -165,7 +112,7 @@
       </div>
       <div v-else>
          <div class="Advantage">
-          <img src="@/asset/image/implant/AdvantageBG.png" alt="">
+          <img src="@/asset/image/whitening/AdvantageBG1.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -178,33 +125,45 @@
         <div class="contents">
           <div class="gcond">
             <div class="gcon">
-              <div class="content">
+              <div class="content left">
                 <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
-                <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
+                <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
               </div>
-              <div class="content">
+              <div class="content left">
                 <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
-                <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
+                <p>進行簡單清潔</p>
               </div>
-              <div class="content ">
+              <div class="content left">
                 <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
-                <p>牙醫建議牙橋的材質，理想顏色、形狀和色澤</p>
+                <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
+              </div>
+              <div class="content left">
+                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <p>套上口腔張口器及保護眼罩</p>
+              </div>
+              <div class="content left">
+                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <p>在牙齦塗上牙齦保護劑，以免藍光及美白劑刺激牙齦</p>
               </div>
             </div>
             <div class="gcon">
               <div class="content right">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
-                <p>取得病人共識後，牙醫會把牙齒印模及其他資料交給牙科技師訂製假牙</p>
-              </div>
-              <div class="content right">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
-                <p>牙橋訂製一般需要多個工作天，期間病人只能使用臨時牙橋。臨時牙橋只為保護牙齒，並不能照常進食</p>
-              </div>
-              <div class="content right">
                 <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                <p>成品製作完成後，牙醫會作最後微調，令牙橋與病人口腔有完全的密合度</p>
+                <p>牙齒表面均勻塗上激光專用美白劑</p>
               </div>
-            </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/7.svg" height="50vw" width="50vw" alt="">
+                <p>以藍光燈開始照射牙齒，整個過程大概需要照射照2-3次</p>
+              </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/8.svg" height="50vw" width="50vw" alt="">
+                <p>療程完成後，清除美白劑與牙齦保護劑-3次</p>
+              </div>
+              <div class="content right">
+                <img src="@/asset/image/whitening/9.svg" height="50vw" width="50vw" alt="">
+                <p>以牙齒專用色階進行對色，比對療程前後效果</p>
+              </div>
+              </div>
           </div>
         </div>
         <div class="videos">
@@ -212,81 +171,7 @@
             <div style="background-color: #fff; width:80%; height: 6vw"></div>
             <!-- <img src="@/asset/image/implant/vedio.png" alt=""> -->
           </div>
-          <div class="flex justify-center texts" style="padding-top: 1vw;">
-            <h2>植牙、假牙點揀好？</h2>
-            <img src="@/asset/image/about-me/serve/Vector.png" alt="">
-            <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。<br>想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
-          </div>
-          <div class="table-box">
-            <table class="tables">
-              <tr>
-                <td>植牙</td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td>固定假牙</td>
-              </tr>
-              <tr>
-                <td>活動假牙</td>
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 3vw;">
-                <th>優點</th>
-              </tr>
-              <tr>
-                <td>
-                 <ul>
-                  <li>效果堅固持久</li>
-                  <li>無需要磨細附近牙齒</li>
-                </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-              <td>
-                <ul>
-                  <li>承托力較高，良好咀嚼力</li>
-                  <li>無須手術，簡便安全</li>
-                </ul>
-                </td>
-              </tr>
-              <tr>
-              <td>
-                 <ul>
-                  <li>容易配戴，方便清潔</li>
-                  <li>代替缺牙，有助咀嚼功能</li>
-                </ul>
-                </td>
-
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 3vw;">
-                <th class="thd">缺點</th>
-              </tr>
-              <tr>
-                <td>
-                 <ul>
-                  <li style="padding: 0.6vw;">療程較長</li>
-                </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-              <td>
-                <ul>
-                  <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
-                </ul>
-                </td>
-              </tr>
-              <tr>
-              <td>
-                 <ul>
-                  <li>容易引致牙肉萎縮，一段時間後需更換新牙托</li>
-                </ul>
-                </td>
-
-              </tr>
-            </table>
-          </div>
+          
           <div class="lists">
             <div class="list_disd">
               <strong>療程後注意事項</strong>
@@ -308,11 +193,11 @@ export default {
     return {
       list: [{
         id: 0,
-        title: '植牙過程'
+        title: '激光牙齒美白過程'
       },
       {
         id: 1,
-        title: '固定式牙橋過程'
+        title: '藍光牙齒美白過程'
       }
       ],
       currentIndex: 0,   // 当前点击的tab的索引
@@ -357,6 +242,30 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .list_d{
+    text-align: left;
+    strong {
+    color: #9BA5B1;
+    font-size: 24px;  
+    font-weight: 500;
+    padding: 0vw !important;
+    &:before {
+      content: "";
+      margin-left: 15px;
+      padding-left: 15px;
+      border-left: 0.8vw solid #9BD0F5;
+      height: 6vw;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+    span{
+      display: block;
+      padding-left: 2vw;
+      padding-top: 1vw;
+      color: #9BA5B1;
+    }
+  }
   .table-box {
     display: flex;
     align-items: flex-end;
@@ -365,7 +274,7 @@ export default {
   }
   .lists{
     display: flex;
-    margin: 0 18vw;
+    margin: 2vw 18vw;
   }
   .tablesd {
     margin-left: 4vw;
@@ -420,64 +329,12 @@ export default {
       text-align: center;
     }
   }
-
-  // table tr {
-  //   text-align: center;
-  // }
-
-  // table td,
-  // table th {
-  //   border-right: 1px solid #ECF7FC;
-  //   /*设置表格单元格外边框，只设置右下边框*/
-  //   border-bottom: 1px solid #ECF7FC;
-  //   padding: 10px;
-  //   /*设置单元格内边距，单元格内容显得不拥挤*/
-  //   text-align: center;
-  // }
-
-  // tr:last-child td:first-child {
-  //   border-radius: 0 0 0 10px;
-  // }
-
-  // tr:last-child td:last-child {
-  //   border-radius: 0 0 10px 0;
-  // }
-
-  // tr:last-child td {
-  //   border-bottom: none;
-  // }
-
-  // tr td:last-child,
-  // tr th:last-child {
-  //   border-right: none;
-  // }
-
-  // tr:nth-child(even) {
-  //   background: #ECF7FC;
-
-  // }
-
-  
   .list_disd {
     li {
       font-size: 16px;
       color: #79828D;
       margin-left: 2vw;
     }
-    strong {
-    color: #79828D;
-    font-size: 24px;  
-    font-weight: 500;
-    &:before {
-      content: "";
-      margin-left: 15px;
-      padding-left: 15px;
-      border-left: 0.8vw solid #9BD0F5;
-      height: 3vw;
-      display: inline-block;
-      vertical-align: middle;
-    }
-  }
   }
   .list_cons{
     margin: 2vw 0;
@@ -490,7 +347,7 @@ export default {
     background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
     // background-color: #ECF7FC;
     margin: 0 8vw;
-
+    height: 26vw;
   }
   .video_con {
     display: flex;
@@ -500,11 +357,13 @@ export default {
   }
 
   .left {
-    padding: 5vw 13vw 5vw 2vw !important;
+    padding: 2vw 13vw 2vw 2vw !important;
 
   }
 .right{
-  padding-left: 14vw !important;
+  // padding-left: 14vw !important;
+    padding: 2vw 0vw 2vw 2vw !important;
+
 }
   .contents {
     background-color: #fff;
@@ -593,7 +452,19 @@ export default {
 
   .list_con {
     margin-top: 7vw;
-    width: 41vw;
+    margin-bottom: 6vw;
+    // width: 41vw;
+    width: 63%;
+    h3{
+      margin-top: 1vw;
+      color: #57B2F3;
+    }
+    p{
+      color: #57B2F3 !important;
+    }
+    img{
+      margin: 0 !important;
+    }
   }
 
   .list_dis {
@@ -622,17 +493,18 @@ export default {
     // margin: 0 20vw;
 
     img {
-      width: 22vw;
-      height: 14vw;
+      // width: 32vw;
+      // height: 24vw;
       margin-bottom: 12vw;
       padding: 0 2vw;
     }
 
     li {
-      text-align: left;
+      text-align: center;
+      justify-content: center;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      // margin: 0 3vw;
       display: flex;
 
       p {
@@ -650,8 +522,8 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.3vw solid #9BD0F5;
-          height: 1vw;
+          border-left: 0.8vw solid #9BD0F5;
+          height: 2vw;
           display: inline-block;
           vertical-align: middle;
         }
@@ -660,8 +532,8 @@ export default {
   }
 
   .list {
-    margin-top: 5vw;
-    background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
+    // margin-top: 5vw;
+    background-image: linear-gradient(to bottom, #fff 33%, #ECF7FC 0);
   }
 }
 

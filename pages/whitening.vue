@@ -2,7 +2,7 @@
 <div id="lay">
   <menuBar/>
   <Banner/>
-  <zhiya/>
+  <whitening/>
   <footce/>
   <problem/>
   <serve/>
@@ -17,10 +17,10 @@ import menuBar from "@/components/common/menuBar.vue";
 import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
-import Banner from "@/components/implant/banner/index.vue"
-import serve from "@/components/implant/serve/index.vue"
-import zhiya from "@/components/implant/zhiya/index.vue"
-import problem from "@/components/implant/problem/index.vue"
+import Banner from "@/components/whitening/banner/index.vue"
+import serve from "@/components/whitening/serve/index.vue"
+import problem from "@/components/whitening/problem/index.vue"
+import whitening from "@/components/whitening/whitening/index.vue"
 
 export default {
    components: { 
@@ -29,7 +29,7 @@ export default {
     Banner,
     serve,
     mapGoogle,
-    zhiya,
+    whitening,
     foot,
     problem
     }

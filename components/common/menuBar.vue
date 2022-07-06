@@ -76,7 +76,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/porcelain">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_0.png" title=" 瓷貼片"
                             alt=" 瓷貼片" /> </div>
                         <div class="service_txt">
@@ -93,7 +93,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/whitening">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_1.png" title="牙齒美白" alt="牙齒美白" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">牙齒美白</p>
@@ -271,7 +271,7 @@
             <li><a class="dropdown-item" href="/implant">植牙</a></li>
             <li><a class="dropdown-item" href="#">根管治療（杜牙根）</a></li>
             <li><a class="dropdown-item" href="#">Invisalign 隱適美</a></li>
-            <li><a class="dropdown-item" href="#">瓷貼片</a></li>
+            <li><a class="dropdown-item" href="/porcelain">瓷貼片</a></li>
             <li><a class="dropdown-item" href="#">牙齒美白</a></li>
             <li><a class="dropdown-item" href="#">全瓷牙冠及全鋯牙冠</a></li>
             <li><a class="dropdown-item" href="#">拔牙及智慧齒脫除</a></li>
