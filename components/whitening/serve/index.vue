@@ -19,7 +19,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/therapy">
                 <div class="service_pic"> <img class="imgya" src="@/asset/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
                     alt="根管治療（杜牙根）" /> </div>
                 <div class="service_txt">
