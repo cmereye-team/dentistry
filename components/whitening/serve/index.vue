@@ -7,8 +7,8 @@
     <div class="box">
         <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover" style="background: #C2C7CD;">
-              <a href=""  style="pointer-events:none;cursor:default;">
+            <div class="service_hover" >
+              <a href="/implant"  >
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame.png" title="植牙"
                     alt="植牙" class="yas" /> </div>
                 <div class="service_txt">
@@ -53,8 +53,8 @@
     </div>
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="/whitening">
+            <div class="service_hover" style="background: #C2C7CD;">
+              <a href="" style="pointer-events:none;cursor:default;">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_1.png" title="牙齒美白"
                     alt="牙齒美白" /> </div>
                 <div class="service_txt">
