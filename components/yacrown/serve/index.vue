@@ -53,8 +53,8 @@
     </div>
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover" style="background: #C2C7CD;">
-              <a href="" style="pointer-events:none;cursor:default;">
+            <div class="service_hover" >
+              <a href="/whitening" >
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_1.png" title="牙齒美白"
                     alt="牙齒美白" /> </div>
                 <div class="service_txt">
@@ -64,8 +64,9 @@
             </div>
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="/yacrown">
+            <div class="service_hover" style="background: #C2C7CD;">
+              <a href="" style="pointer-events:none;cursor:default;">
+              <!-- <a href="/yacrown"> -->
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
                     alt="全瓷牙冠及全鋯牙冠" /> </div>
                 <div class="service_txt">
@@ -75,8 +76,9 @@
             </div>
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="/exelcymosis">
+            <div class="service_hover" >
+              <a href="/exelcymosis" >
+              <!-- <a href="/exelcymosis"> -->
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除"
                     alt="拔牙及智慧齒脫除" /> </div>
                 <div class="service_txt">
@@ -86,7 +88,8 @@
             </div>
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
+            <div class="service_hover" >
+              <!-- <a href="/periodontosis" style="pointer-events:none;cursor:default;"> -->
               <a href="/periodontosis">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame03.png" title="牙周病治療"
                     alt="牙周病治療" /> </div>

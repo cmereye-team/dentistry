@@ -148,8 +148,6 @@
       </div>
 
     </div>
-    </div>
-    </div>
   </di>
 </template>
 <script>
@@ -458,12 +456,12 @@ export default {
   }
 
   .list_con {
-    margin-top: 7vw;
+    margin-top: 9vw;
     width: 41vw;
   }
 
   .list_dis {
-    margin-top: 7vw;
+    margin-top: 9vw;
     // width: 41vw;
     padding-left: 5vw;
 
@@ -516,8 +514,8 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.3vw solid #9BD0F5;
-          height: 1vw;
+          border-left: 0.6vw solid #9BD0F5;
+          height: 1.6vw;
           display: inline-block;
           vertical-align: middle;
         }

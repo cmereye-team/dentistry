@@ -65,7 +65,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/yacrown">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
                     alt="全瓷牙冠及全鋯牙冠" /> </div>
                 <div class="service_txt">
@@ -76,7 +76,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href/exelcymosis">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除"
                     alt="拔牙及智慧齒脫除" /> </div>
                 <div class="service_txt">
@@ -87,7 +87,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/periodontosis">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame03.png" title="牙周病治療"
                     alt="牙周病治療" /> </div>
                 <div class="service_txt">
@@ -100,7 +100,7 @@
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/dentures">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
                     alt="全口牙托及局部牙托" /> </div>
                 <div class="service_txt">
@@ -111,7 +111,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/toothStraighten">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame04.png" title="矯齒"
                     alt="矯齒" /> </div>
                 <div class="service_txt">

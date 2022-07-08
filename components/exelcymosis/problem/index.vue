@@ -1,7 +1,7 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
-      <h2> 根管治療（杜牙根）常見問題</h2>
+      <h2>拔牙及智慧齒脫除<br>常見問題</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
@@ -12,16 +12,15 @@
             <div class="contents">
               <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
-              <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">杜牙根會很痛嗎？</p>
+              <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">拔牙後多久才能進食？</p>
             </div>
             <i :class="judgeActive('1') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
           <div class="discon">
             <i class="title2"></i>
             <span>
-
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
+                <li>拔牙當天可暫停刷牙，第二天可恢復刷牙程序，但應注意力度，避免觸碰到傷口，造成滲血。</li>
               </ul>
             </span>
           </div>
@@ -31,7 +30,7 @@
             <div class="contents">
               <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
-              <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">杜牙根過程需時多久？</p>
+              <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">拔牙後可以刷牙嗎?</p>
             </div>
             <i :class="judgeActive('2') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
@@ -40,7 +39,7 @@
             <span>
 
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
+                <li>拔牙當天可暫停刷牙，第二天可恢復刷牙程序，但應注意力度，避免觸碰到傷口，造成滲血。</li>
               </ul>
             </span>
           </div>
@@ -50,7 +49,7 @@
             <div class="contents">
               <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
-              <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">杜牙根後是否不會再蛀牙？ </p>
+              <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">甚麼情況下需拔掉智慧齒？</p>
             </div>
             <i :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
@@ -59,8 +58,9 @@
             <span>
 
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
-
+                <li>2. 沒有定期口腔檢查及洗牙</li>
+                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
+                <li>4. 長期服用藥物人士</li>
               </ul>
             </span>
           </div>
@@ -70,7 +70,7 @@
             <div class="contents">
               <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
-              <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">完成杜牙根後，為何要裝上牙套？ </p>
+              <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">拔智慧齒痛嗎？</p>
             </div>
             <i :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
@@ -79,8 +79,51 @@
             <span>
 
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
+                <li>2. 沒有定期口腔檢查及洗牙</li>
+                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
+                <li>4. 長期服用藥物人士</li>
+              </ul>
+            </span>
+          </div>
+        </el-collapse-item>
+        <el-collapse-item name="5">
+          <template slot="title">
+            <div class="contents">
+              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <i class="title1"></i>
+              <p :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">拔智慧齒需要照x光嗎？</p>
+            </div>
+            <i :class="judgeActive('5') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+          </template>
+          <div class="discon">
+            <i class="title2"></i>
+            <span>
 
+              <ul>
+                <li>2. 沒有定期口腔檢查及洗牙</li>
+                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
+                <li>4. 長期服用藥物人士</li>
+              </ul>
+            </span>
+          </div>
+        </el-collapse-item>
+          <el-collapse-item name="6">
+          <template slot="title">
+            <div class="contents">
+              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <i class="title1"></i>
+              <p :class="judgeActive('6') !== -1 ? 'p2' : 'p1'">為何拔智慧齒會比一般拔牙程序複雜？</p>
+            </div>
+            <i :class="judgeActive('6') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+          </template>
+          <div class="discon">
+            <i class="title2"></i>
+            <span>
+
+              <ul>
+                <li>2. 沒有定期口腔檢查及洗牙</li>
+                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
+                <li>4. 長期服用藥物人士</li>
               </ul>
             </span>
           </div>

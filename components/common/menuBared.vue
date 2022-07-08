@@ -104,7 +104,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/yacrown">
                         <div class="service_pic"> <img class="quanci" src="@/asset/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠" alt="全瓷牙冠及全鋯牙冠" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">全瓷牙冠<br>及全鋯牙冠</p>
@@ -118,7 +118,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/exelcymosis">
                         <div class="service_pic"> <img class="imgba" src="@/asset/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除" alt="拔牙及智慧齒脫除" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">拔牙及智慧齒脫除</p>
@@ -132,7 +132,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/periodontosis">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame03.png" title="牙周病治療" alt="牙周病治療" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 "> 牙周病治療</p>
@@ -148,7 +148,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/dentures">
                         <div class="service_pic"><img class="allya" src="@/asset/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托" alt="全口牙托及局部牙托" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">全口牙托及<br>局部牙托</p>
@@ -162,7 +162,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/toothStraighten">
                         <div class="service_pic"> <img class="quanci" src="@/asset/image/about-me/serve/Frame04.png" title="矯齒" alt="矯齒" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">矯齒</p>
@@ -270,10 +270,10 @@
             <li><a class="dropdown-item" href="#">Invisalign 隱適美</a></li>
             <li><a class="dropdown-item" href="/porcelain">瓷貼片</a></li>
             <li><a class="dropdown-item" href="#">牙齒美白</a></li>
-            <li><a class="dropdown-item" href="#">全瓷牙冠及全鋯牙冠</a></li>
+            <li><a class="dropdown-item" href="/yacrown">全瓷牙冠及全鋯牙冠</a></li>
             <li><a class="dropdown-item" href="#">拔牙及智慧齒脫除</a></li>
-            <li><a class="dropdown-item" href="#">牙周病治療</a></li>
-            <li><a class="dropdown-item" href="#">全口牙托及局部牙托</a></li>
+            <li><a class="dropdown-item" href="/periodontosis">牙周病治療</a></li>
+            <li><a class="dropdown-item" href="/dentures">全口牙托及局部牙托</a></li>
             <li><a class="dropdown-item" href="#">矯齒 action</a></li>
             <li><a class="dropdown-item" href="#">洗牙</a></li>
             <li><a class="dropdown-item" href="#">補牙</a></li>

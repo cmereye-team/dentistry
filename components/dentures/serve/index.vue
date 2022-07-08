@@ -53,8 +53,8 @@
     </div>
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover" style="background: #C2C7CD;">
-              <a href="" style="pointer-events:none;cursor:default;">
+            <div class="service_hover" >
+              <a href="/whitening" >
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_1.png" title="牙齒美白"
                     alt="牙齒美白" /> </div>
                 <div class="service_txt">
@@ -86,8 +86,9 @@
             </div>
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="/periodontosis">
+            <div class="service_hover" >
+              <a href="/periodontosis" >
+              <!-- <a href="/periodontosis"> -->
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Frame03.png" title="牙周病治療"
                     alt="牙周病治療" /> </div>
                 <div class="service_txt">
@@ -99,8 +100,8 @@
     </div>
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
-            <div class="service_hover">
-              <a href="/dentures">
+            <div class="service_hover" style="background: #C2C7CD;">
+              <a href="/dentures" style="pointer-events:none;cursor:default;">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
                     alt="全口牙托及局部牙托" /> </div>
                 <div class="service_txt">
