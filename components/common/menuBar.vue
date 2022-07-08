@@ -61,7 +61,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/hiddenBeauty">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                             alt="Invisalign隱形牙箍" /> </div>
                         <div class="service_txt">
@@ -179,7 +179,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/scaleTeeth">
                         <div class="service_pic"><img src="@/asset/image/about-me/serve/Group_3.png" title="洗牙" alt="洗牙" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">洗牙</p>
@@ -193,7 +193,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/filling">
                         <div class="service_pic"><img src="@/asset/image/about-me/serve/Group_4.png" title="補牙" alt="補牙" />  </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 "> 補牙</p>
@@ -209,7 +209,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/oralExamination">
                         <div class="service_pic"><img src="@/asset/image/about-me/serve/Group_5.png" title="一般口腔檢查"  alt="一般口腔檢查" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">一般口腔檢查</p>
@@ -223,7 +223,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/healthcare">
                         <div class="service_pic"> <img src="@/asset/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療" alt="兒童牙科保健及治療" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">兒童牙科<br>保健及治療</p>
@@ -278,10 +278,10 @@
             <li><a class="dropdown-item" href="#">牙周病治療</a></li>
             <li><a class="dropdown-item" href="/dentures">全口牙托及局部牙托</a></li>
             <li><a class="dropdown-item" href="/toothStraighten">矯齒 action</a></li>
-            <li><a class="dropdown-item" href="#">洗牙</a></li>
-            <li><a class="dropdown-item" href="#">補牙</a></li>
+            <li><a class="dropdown-item" href="/scaleTeeth">洗牙</a></li>
+            <li><a class="dropdown-item" href="/filling">補牙</a></li>
             <li><a class="dropdown-item" href="#">一般口腔檢查</a></li>
-            <li><a class="dropdown-item" href="#">兒童牙科保健及治療</a></li>
+            <li><a class="dropdown-item" href="/healthcare">兒童牙科保健及治療</a></li>
           </ul>
            
         </li>

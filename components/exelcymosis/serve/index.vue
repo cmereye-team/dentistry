@@ -30,7 +30,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/hiddenBeauty">
                 <div class="service_pic"> <img src="@/asset/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
@@ -135,7 +135,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/filling">
                 <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_4.png" title="補牙"
                     alt="補牙" /> </div>
                 <div class="service_txt">
@@ -148,7 +148,7 @@
     <div class="service_box service_boxs">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/oralExamination">
                 <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_5.png" title="一般口腔檢查"
                     alt="一般口腔檢查" /> </div>
                 <div class="service_txt">
@@ -159,7 +159,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <a href="#">
+              <a href="/healthcare">
                 <div class="service_pic"> <img class="buya" src="@/asset/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
                     alt="兒童牙科保健及治療" /> </div>
                 <div class="service_txt">

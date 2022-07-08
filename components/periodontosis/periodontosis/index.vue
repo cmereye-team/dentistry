@@ -132,7 +132,7 @@
                 <p>牙周病手術主要分成兩類，牙肉翻瓣手術及牙周再生手術，更深入地把發炎組織處理乾淨，防止發炎繼續惡化。</p>
               </div>
               <div  class="quote">
-                <img src="@/asset/image/periodontosis/quote2.png" alt=""></img>
+                <img src="@/asset/image/periodontosis/quote2.png" alt="">
               </div>
               
             </div>

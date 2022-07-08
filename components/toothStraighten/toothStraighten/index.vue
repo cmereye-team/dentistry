@@ -5,26 +5,25 @@
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">根管治療（杜牙根）</p>
+      <p style="color:#57B2F3">矯齒</p>
     </div>
     <div class="step">
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/therapy/apple.png" alt="">
+            <img src="@/asset/image/toothStraighten/apple.png" alt="">
             <div class="list_con">
-              <strong>根管治療（杜牙根）</strong>
+              <strong>矯齒（箍牙）</strong>
               <p>
-                根管治療（杜牙根）是治療嚴重蛀牙或牙根受細菌感染的手術，當蛀牙菌的感染深入牙髓，以致牙齒內的神經發炎，便需要以杜牙根手術徹底清除感染的部分。
+                矯齒（箍牙）治療除了能矯正不整齊排列的牙齒，改善外觀外，更能有助減低患上各種牙齒問題的風險。
               </p>
             </div>
             <div class="list_dis">
-              <strong>根管治療（杜牙根）的原因</strong>
+              <strong>矯齒（箍牙）目的</strong>
               <ul>
-                <li>切除受感染的牙髓神經，解決牙痛問題</li>
-                <li>防止牙髓感染蔓延至牙周組織和牙槽骨，導致更嚴重的口腔問題</li>
-                <li>患者出現牙痛問題，經醫生評估後，認為牙齒仍有保留價值而確定保留真牙</li>
-                <li>牙齒被蛀蝕得太深、撞斷或嚴重磨耗，需徹底清除牙髓內的感染，解決牙髓壞死、化膿等問題</li>
+                <li>因先天或其他因素引致上顎或下顎較為突出，影響臉型，透過矯齒可改善臉部與牙齒的平衡</li>
+                <li>當出現上下顎咬合不正的情況，容易導致蛀牙、影響進食及口腔健康，矯齒能有效改善情況</li>
+                <li>牙齒排列不整，例如前後重疊、高低不等，影響進食、發音、清潔等，更容易引致牙周病等情況，矯齒能將位置對齊，減少對口腔健康的影響</li>
               </ul>
             </div>
           </li>
@@ -33,36 +32,30 @@
       <div class="video">
 
         <div class="flex justify-center texts">
-          <h2>根管治療（杜牙根）過程</h2>
+          <h2>矯齒（箍牙）過程</h2>
           <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
-                <div class="content left">
+                <div class="content ">
                   <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
-                  <p>為受感染的牙齒照X光，了解根管形狀及長度</p>
+                  <p>醫生會先進行檢查及評估，確認矯齒的需要</p>
                 </div>
-                <div class="content left">
+                <div class="content ">
                   <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
-                  <p>局部麻醉，進行牙根消毒</p>
+                  <p>拍攝牙齒外觀照片，包括全口腔及側面X光照片，以印製牙模</p>
                 </div>
-                <div class="content left">
+                <div class="content ">
                   <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
-                  <p>從牙冠進入牙髓腔，把牙髓組織刮除或吸出</p>
+                  <p>醫生講解情況及治療方案</p>
                 </div>
-              </div>
-              <div class="gcon">
-                <div class="content right">
+                 <div class="content ">
                   <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
-                  <p>以藥水徹底消毒乾淨根管內壁</p>
+                  <p>配戴牙箍及定期覆診</p>
                 </div>
-                <div class="content right">
+                <div class="content ">
                   <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
-                  <p>把牙冠髓腔填封及覆蓋牙洞，以降低蛀牙菌再度入侵的機會</p>
-                </div>
-                <div class="content right">
-                  <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                  <p>如經治療後的牙齒太脆弱，需為牙齒套上牙套，預防再被咬崩而要拔除</p>
+                  <p>矯齒完成後，需定期覆診，晚上佩戴固定器，防止牙齒移位</p>
                 </div>
               </div>
             </div>
@@ -316,10 +309,13 @@ export default {
       display: flex;
       margin: 0 auto;
       width: 100%;
+      .gcon{
+        margin: 0 auto;
+      }
     }
 
     .content {
-      padding: 1vw 1vw;
+      padding: 1.5vw 1vw;
       display: flex;
       align-items: center;
 
