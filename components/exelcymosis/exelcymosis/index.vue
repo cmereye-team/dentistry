@@ -780,6 +780,246 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .video {
+    background-color: #ECF7FC;
+    padding: 5vw 0;
+    // margin: 6vw 16vw;
+
+    .cons-box {
+      padding-bottom: 6vw;
+    }
+  }
+  .coin{
+    img{
+      width: 89%;
+    }
+      display: block;
+    text-align: center;
+
+    p {
+      color: #79828D;
+      font-size: 16px;
+      padding: 1vw 0;
+    }
+  }
+  .py-5{
+    padding-top: 0rem!important;
+  }
+  .list_cons{
+    p{
+      padding-top: 2vw;
+    }
+  }
+   .coin_box {
+    // display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7vw 0;
+  }
+  .list-dis {
+    width: 100%;
+    text-align: left !important;
+    padding: 7vw 5vw 14vw 5vw;
+    ul{
+        color: #9BA5B1;
+        list-style-type: disc;
+        padding: 6.5vw;
+    }
+    strong {
+      // padding-left: 4vw;
+      color: #9BA5B1;
+      font-size: 23px;
+      font-weight: 500;
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 6vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    }
+  
+  .list {
+    // margin-top: 5vw;
+    background-image: linear-gradient(to bottom, #fff 29%, #ECF7FC 0);
+  }
+  .serve_con {
+    padding: 0 5vw;
+    text-align: left;
+  }
+
+  .texts {
+    margin-top: 13vw;
+  }
+
+  ::v-deep .Advanbutton {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 2vw;
+      }
+
+      .guoc {
+        border: 10px solid rgba(255, 41, 41, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 70px;
+        /* line-height: 94px; */
+        align-self: center;
+        width: 70px;
+        display: flex;
+        border-radius: 100%;
+        margin: 1px 4vw;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+
+        p {
+          display: block;
+          color: #57B2F3;
+          font-weight: bold;
+          margin-bottom: 0rem;
+          // font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .lists {
+    display: flex;
+    margin: 0 1vw;
+  }
+  .list_disd {
+    li {
+      font-size: 16px;
+      color: #79828D;
+      margin-left: 2vw;
+    }
+
+    strong {
+      color: #79828D;
+      font-size: 24px;
+      font-weight: 500;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .list_cons {
+    margin: 2vw 2vw;
+  }
+
+  .contents {
+    background-color: #fff;
+
+    .gcond {
+      // display: flex;
+      // margin: 0 auto;
+      padding: 0 6vw;
+
+      width: 100%;
+    }
+
+    .content {
+      padding: 5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+
+    p {
+      color: #79828D;
+      font-size: 18px;
+      padding-left: 1vw;
+      margin-bottom: 0rem;
+    }
+  }
+
+  ul {
+    margin-bottom: -4rem;
+  }
+
+  .active {
+    float: inherit;
+    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // background-clip:content-box;
+    background-clip: padding-box;
+  }
+
+  .Advantage {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+    // margin-top: 15vw;
+
+    img {
+      width: 126%;
+    }
+
+  }
+.texts p{
+  padding: 3vw 12vw;
+}
+.gconds{
+  padding: 2vw;
+}
+  .list_con {
+    p {
+      padding: 3vw 7vw;
+    }
+  }
+
+    .list_dis {
+    margin-top: 3vw;
+    width: 100%;
+    // width: 41vw;
+    padding-left: 5vw;
+    text-align: left !important;
+    ;
+
+    strong {
+      // padding-left: 4vw;
+      color: #9BA5B1;
+      font-size: 23px;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+         border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    ul {
+      padding: 4vw;
+      list-style-type: disc;
+
+      li {
+        color: #9BA5B1;
+
+      }
+    }
+  }
   .meun {
     padding-left: 6vw;
     display: flex;
@@ -795,18 +1035,19 @@ export default {
     }
   }
 
-  li {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
-  }
+  // li {
+  //   background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+  // }
 
   p {
-    padding: 2vw 4vw 9vw 4vw;
+    // padding: 2vw 4vw 9vw 4vw;
+    padding: 1vw 1vw;
     color: #9BA5B1;
   }
 
   strong {
     padding-top: 2vw;
-    padding-left: 4vw;
+    // padding-left: 4vw;
     color: #9BA5B1;
   }
 
@@ -814,8 +1055,8 @@ export default {
     content: "";
     margin-left: 15px;
     padding-left: 15px;
-    border-left: 2vw solid #9BD0F5;
-    height: 6vw;
+    border-left: 1.8vw solid #9BD0F5;
+    height: 7vw;
     display: inline-block;
     vertical-align: middle;
   }

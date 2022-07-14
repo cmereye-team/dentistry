@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/zhiya.jpg">
+        <!-- <img src="@/asset/image/banner/zhiya.jpg"> -->
+         <img src=" @/asset/image/banner/equgroup.jpg "
+            srcset="
+            @/asset/image/banner/Mbzhiya.jpg 400w,
+            @/asset/image/banner/Mbzhiya.jpg 750w,
+            @/asset/image/banner/Mbzhiya.jpg 768w,
+            @/asset/image/banner/zhiya.jpg 1024w,
+            @/asset/image/banner/Mbzhiya.jpg 1125w,
+            @/asset/image/banner/zhiya.jpg 1650w,
+            ">
           <div class="title">
         植牙
       </div>

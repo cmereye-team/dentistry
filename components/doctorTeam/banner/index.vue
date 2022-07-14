@@ -87,7 +87,7 @@ export default {
       height: 53vw;
       width: 100vw;
       left:0;
-      top:45%;
+      top:36%;
       font-weight: 600;
       color: #79828D;
       font-size: 24px;

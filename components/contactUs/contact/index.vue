@@ -111,34 +111,7 @@ export default {
     text-align: center;
   }
 }
-// @media  screen and (min-width: 1500px) and (max-width: 2560px) {
-// ::v-deep .el-radio__label {
-//     padding-left: 10px;
-//     font-size: 23px !important;
-// }
-// ::v-deep  .el-form--inline .el-form-item__label {
-//     float: none;
-//     display: inline-block;
-//     color: #fff;
-//     font-size: 30px  !important;
-//   }
-//  ::v-deep .el-input__inner {
-//     -webkit-appearance: none;
-//     background-color: #FFF;
-//     border-radius: 4px;
-//     border: 1px solid #DCDFE6;
-//     box-sizing: border-box;
-//     color: #606266;
-//     display: inline-block;
-//     font-size: 21px;
-//     height: 54px;
-//     line-height: 54px;
-//     outline: 0;
-//     padding: 0 15px;
-//     transition: border-color .2s cubic-bezier(.645,.045,.355,1);
-//     width: 100%;
-// }
-// }
+
 //pc
 @media only screen and (min-width: 768px) {
   ::v-deep .el-radio__label {
@@ -199,7 +172,6 @@ export default {
         width: 10vw;
         letter-spacing: 0.2vw;
         text-align: center;
-
         &:hover {
           animation: 3s ease-in 1s 2 reverse both paused slidein;
         }
@@ -252,32 +224,31 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
-  ::v-deep .el-radio__label {
-    padding-left: 10px;
-    font-size: 14px;
-}
-::v-deep .el-input__inner {
-    border: 0px;
-    border-bottom: 2px solid #fff;
-    border-radius: 0px;
-    background-color: #fff0;
-    color: #ffffff;
+  ::v-deep .el-input__inner {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    height: 52px;
+    line-height: 52px;
+    background-color: #fff;
+    color: #9BD0F5;
  }
 ::v-deep .el-form--inline .el-form-item__label {
     float: none;
     display: inline-block;
     color: #fff;
-    font-size: 18px;
+        font-size: 1.2rem;
+
 }
 ::v-deep  .el-select .el-input .el-select__caret {
-    color: #fff;
-    font-size: 14px;
+    color: #9BD0F5;
+    font-size: 1.2rem;
+    margin-right: 0.6rem;
     transition: transform .3s;
     transform: rotateZ(180deg);
     cursor: pointer;
 }
 ::v-deep .el-input__inner::placeholder {
-  color:  #fff;
+  color:  #9BD0F5;
 
 }
 ::v-deep  .el-radio__input.is-checked+.el-radio__label {
@@ -286,9 +257,43 @@ export default {
 ::v-deep .el-radio {
     color: #fff;
     }
-  ::v-deep .el-form--inline .el-form-item {
-    display:grid;
-  }
+  ::v-deep .el-radio__label {
+    padding-left: 10px;
+    font-size: 14px;
+}
+// ::v-deep .el-input__inner {
+//     border: 0px;
+//     border-bottom: 2px solid #fff;
+//     border-radius: 0px;
+//     background-color: #fff0;
+//     color: #ffffff;
+//  }
+// ::v-deep .el-form--inline .el-form-item__label {
+//     float: none;
+//     display: inline-block;
+//     color: #fff;
+//     font-size: 18px;
+// }
+// ::v-deep  .el-select .el-input .el-select__caret {
+//     color: #fff;
+//     font-size: 14px;
+//     transition: transform .3s;
+//     transform: rotateZ(180deg);
+//     cursor: pointer;
+// }
+// ::v-deep .el-input__inner::placeholder {
+//   color:  #fff;
+
+// }
+// ::v-deep  .el-radio__input.is-checked+.el-radio__label {
+//     color: #ffffff;
+// }
+// ::v-deep .el-radio {
+//     color: #fff;
+//     }
+//   ::v-deep .el-form--inline .el-form-item {
+//     display:grid;
+//   }
   .button{
     background: #9BD0F5;
     padding-bottom: 15vw;

@@ -49,7 +49,7 @@
                   <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>醫生講解情況及治療方案</p>
                 </div>
-                 <div class="content ">
+                <div class="content ">
                   <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>配戴牙箍及定期覆診</p>
                 </div>
@@ -57,24 +57,142 @@
                   <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>矯齒完成後，需定期覆診，晚上佩戴固定器，防止牙齒移位</p>
                 </div>
+                <div class="mbshow">
+                  <p>*不建議牙齒還沒完成發育、智慧齒還沒長出的人士接受牙齒矯正治療</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      <div class="lists">
-            <div class="list_disd">
-              <strong>療程後注意事項</strong>
-              <div class="list_cons">
+        <div class="lists mbshow-list">
+          <div class="list_disd">
+            <strong>療程後注意事項</strong>
+            <div class="list_cons">
               <li>注意口腔衛生</li>
               <li>避免吃堅硬食物，失去牙髓的牙齒不能承受過大的咬合力</li>
               <li>牙齒失去牙髓後，有機會漸漸變黑，戴上牙套可保持美觀</li>
               <li>杜牙根手術後，牙齒變得脆弱，需配戴牙套來保護牙齒，避免斷裂</li>
               <li>定期覆診，檢查牙齒是否出現斷裂、二度感染、異常腫痛等問題</li>
               <li>如發現臨時補牙物料脫落，須盡快見牙醫，以免唾液中的細菌滲入牙齒髓腔</li>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white py-5 pb-0 py-xs-2 pcnnot">
+          <div class="flex justify-center texts">
+            <h2>想箍牙要點揀？</h2>
+            <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+            <p>箍牙主要可分為三類，固定式外箍、內箍及透明配戴式牙箍。矯正時間因人而異，一般為一年至一年半左右，複雜個案需要兩年或以上。心思思想箍牙，但你又知唔知道各種牙箍的分別？</p>
+          </div>
+          <div class="boxs">
+            <div class="box">
+              <div class="card">
+                <div class="table-box">
+                  <table class="tables">
+                    <tr>
+                      <td>原理</td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>物料</td>
+                    </tr>
+                    <tr>
+                      <td>拆卸</td>
+                    </tr>
+                    <tr style=" background: #ECF7FC; ">
+                      <td >美觀</td>
+                    </tr>
+                    <tr>
+                      <td>清潔</td>
+                    </tr>
+                  </table>
+                  <table class="tablesd">
+                    <tr style="height: 2vw;">
+                      <th>固定式外箍/內箍</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul class="teshu">
+                          <li>將矯正器黏貼在牙齒表面，以鋼絲連上牙釘，施加外力移動牙齒</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>
+                        <ul>
+                          <li>金屬/ 搪瓷/ 樹脂</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>不能自行拆卸</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td >
+                        <ul>
+                          <li>牙箍固定於牙齒外側會外露（固定式外箍）</li>
+                          <li>牙箍固定於牙齒內側，較難察覺（固定式內箍）</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr >
+                      <td >
+                        <ul>
+                          <li>需以工具輔助清潔矯正器與鋼絲死角</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="tablesd">
+                    <tr style="height: 2vw;">
+                      <th>其他隱形牙箍品牌</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul style="margin: 1.5vw 0;">
+                          <li>使用無乳膠或醫用塑料牙箍剪裁較為平面，舒適度欠佳，有機會令牙齦受感染</li>
+
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>
+                        <ul>
+                          <li>獲註冊牙醫最少3次看診，只有註冊牙醫初次面診，甚至沒有註冊牙醫看診及跟進</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>未有收集資料庫或使用者數據甚少</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td >
+                        <ul style="margin: 0.6vw 0;">
+                          <li>只可處理輕微至中度複雜個案</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul style="margin: 0.6vw 0;">
+                          <li>未有使用附件或預測精準度低</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+
+                </div>
               </div>
             </div>
           </div>
-    </div>
+        </div>
+      </div>
     </div>
   </di>
 </template>
@@ -133,10 +251,15 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
-  .icons{
+  .pcnnot {
+    display: none !important;
+  }
+
+  .icons {
     margin-bottom: 3.5vw;
     margin-top: 0.5vw;
   }
+
   .newsty {
     background: #ECF7FC;
     border-radius: 0 0 17px 17px !important;
@@ -309,7 +432,8 @@ export default {
       display: flex;
       margin: 0 auto;
       width: 100%;
-      .gcon{
+
+      .gcon {
         margin: 0 auto;
       }
     }
@@ -319,6 +443,10 @@ export default {
       display: flex;
       align-items: center;
 
+    }
+
+    .mbshow {
+      display: none;
     }
 
     p {
@@ -467,44 +595,566 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
-  .meun {
-    padding-left: 6vw;
-    display: flex;
+  .texts{
+    p{
+      color: #79828D;
+      padding: 1vw 4vw;
+    }
+  }
+  .box {
+    height: 700px;
+    // background: #eee;
+    // padding: 10px 0;
+    white-space: pre-line;
+    /* 禁止超出自动换行 */
+    overflow-y: auto;
+    /* 横向滑动 */
+    margin: 0 0 0 8vw;
   }
 
-  ul {
-    padding: 0;
+  /*隐藏下面的滚动条*/
+  .box::-webkit-scrollbar {
+    display: none;
+  }
 
-    img {
-      width: 24vw;
-      padding-left: 9vw;
-      padding-bottom: 6vw;
+  .card {
+    display: inline-block;
+    /*行内块元素*/
+    // line-height: 300px;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff0;
+    background-clip: border-box;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 0.25rem;
+  }
+
+  .porcelain—con {
+    // display: flex;
+    text-align: center;
+
+    p {
+      padding: 1vw 0;
+      color: #57B2F3;
+      font-weight: 500;
+      font-size: 22px;
     }
   }
 
-  li {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+  .porcelain—cons {
+    padding: 0 12vw;
+
+    p {
+      color: #9BA5B1;
+
+    }
   }
 
-  p {
-    padding: 2vw 4vw 9vw 4vw;
-    color: #9BA5B1;
+  .quote {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
   }
 
-  strong {
-    padding-top: 2vw;
-    padding-left: 4vw;
-    color: #9BA5B1;
+  .boxs {
+    display: block;
+    text-align: center;
+    margin: 8vw 0;
   }
 
-  strong:before {
-    content: "";
-    margin-left: 15px;
-    padding-left: 15px;
-    border-left: 2vw solid #9BD0F5;
-    height: 6vw;
-    display: inline-block;
-    vertical-align: middle;
+  .icons {
+    margin-bottom: 3.5vw;
+    margin-top: 0.5vw;
+  }
+
+  .coin_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .coin {
+    padding: 1vw 2vw;
+    display: block;
+    text-align: center;
+
+    p {
+      color: #79828D;
+      font-size: 16px;
+      padding: 1vw 0;
+    }
+  }
+
+  .py-5 {
+    margin-top: 8rem !important;
+  }
+
+  .list_d {
+    padding: 3vw;
+    text-align: left;
+
+    img {
+      padding: 1vw 2vw !important;
+    }
+
+    strong {
+      color: #9BA5B1;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 2vw 0 !important;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 0.8vw solid #9BD0F5;
+        height: 6vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    span {
+      display: block;
+      padding-left: 2vw;
+      padding-top: 1vw;
+      color: #9BA5B1;
+    }
+  }
+
+  .tablesd {
+    margin-left: 4vw;
+    color: #57B2F3;
+    background-color: #fff;
+    border: 3px solid #9BD0F5;
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 13px 15px 0 #a2d4f7;
+    border-spacing: 0;
+    width: 16%;
+    height: 25vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    font-size: 17px;
+
+    ul {
+      list-style-type: disc;
+      margin: 0;
+      font-weight: 500;
+      font-size: 17px;
+      margin: 2vw 0;
+      width: 56vw;
+    }
+
+    td {
+      height: 30vw !important;
+    }
+
+    .teshu {
+      margin: 1vw 0;
+    }
+
+    th {
+      text-align: center;
+      color: #fff;
+      background-color: #57B2F3;
+      border-radius: 17px 17px 0 0;
+    }
+
+    .thd {
+      color: #57B2F3;
+      background-color: #ECF7FC;
+      border-radius: 20px 20px 0 0;
+    }
+
+    td:nth-child(3) {
+      border-radius: 0 0 20px 20px;
+    }
+  }
+
+  .tables {
+    color: #57B2F3;
+    background-color: #fff;
+    border: 2px solid #9BD0F5;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-spacing: 1;
+    box-shadow: 13px 15px 0 #a2d4f7;
+    border-spacing: 0;
+    width: 7%;
+    height: 153vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    font-size: 17px;
+    word-wrap: break-word;
+    word-break: break-all;
+    width: 25vw;
+
+    // td:last-of-type(0){
+    //   background-color: #79828D;
+    //     border-radius:  0 0 10px 10px ;
+    //   }
+    tr {
+      text-align: center;
+
+
+    }
+  }
+
+  .mbshow-list {
+    display: none !important;
+  }
+
+  .mbshow {
+    padding: 1.5vw 1vw;
+    display: flex;
+    align-items: center;
+
+    p {
+      color: #9BA5B1 !important;
+      font-size: 14px !important;
+      margin-bottom: 1rem !important;
+    }
+
+  }
+
+  .icons {
+    margin-bottom: 3.5vw;
+    margin-top: 0.5vw;
+  }
+
+  .newsty {
+    background: #ECF7FC;
+    border-radius: 0 0 17px 17px !important;
+
+  }
+
+  .nofi {
+    margin: 5vw 0vw !important;
+  }
+
+  .table-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 10vw;
+  }
+
+  .lists {
+    display: flex;
+    margin: 0 18vw;
+    margin-top: 5vw;
+  }
+
+  .tablesd {
+    margin-left: 4vw;
+    color: #57B2F3;
+    background-color: #fff;
+    border: 3px solid #9BD0F5;
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 13px 15px 0 #a2d4f7;
+    border-spacing: 0;
+    width: 28%;
+    height: 25vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    font-size: 17px;
+
+    ul {
+      list-style-type: disc;
+      text-align: left;
+      margin: 0;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 0 4.5vw;
+    }
+
+    th {
+      text-align: center;
+      color: #fff;
+      background-color: #57B2F3;
+      border-radius: 17px 17px 0 0;
+    }
+
+    .thd {
+      color: #57B2F3;
+      background-color: #ECF7FC;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .tablesed {
+    margin-left: 4vw;
+    color: #57B2F3;
+    background-color: #fff;
+    border: 3px solid #9BD0F5;
+    border-radius: 20px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 13px 15px 0 #a2d4f7;
+    border-spacing: 0;
+    width: 28%;
+    height: 25vw;
+    font-weight: 550;
+    letter-spacing: 0.1vw;
+    font-size: 17px;
+
+    ul {
+      list-style-type: none;
+      text-align: center;
+      margin: 0;
+      font-weight: 500;
+      font-size: 17px;
+      padding: 0 4.5vw;
+    }
+
+    th {
+      text-align: center;
+      color: #fff;
+      background-color: #57B2F3;
+      border-radius: 17px 17px 0 0;
+    }
+
+    .thd {
+      color: #57B2F3;
+      background-color: #ECF7FC;
+      border-radius: 20px 20px 0 0;
+    }
+  }
+
+  .list_disd {
+    li {
+      font-size: 16px;
+      color: #79828D;
+      margin-left: 2vw;
+    }
+
+    strong {
+      color: #79828D;
+      font-size: 24px;
+      font-weight: 500;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .list_cons {
+    margin: 2vw 0;
+  }
+
+  .video {
+    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
+    margin-top: 132px;
+  }
+
+  .videos {
+    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    // background-color: #ECF7FC;
+    margin: 0 8vw;
+
+  }
+
+  .video_con {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    // background-image: linear-gradient(to bottom, #fff 65%, #ECF7FC 0);
+  }
+
+  .left {
+    padding: 2vw 6vw 2vw 2vw !important;
+
+  }
+
+  .right {
+    // padding-left: 8vw !important;
+    padding: 2vw 0 2vw 0vw !important;
+  }
+
+  .contents {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 13px 15px 0 #A2D4F7;
+    border-radius: 10px;
+
+    .gcond {
+      display: flex;
+      margin: 0 auto;
+      width: 100%;
+
+      .gcon {
+        margin: 0 auto;
+      }
+    }
+
+    .content {
+      padding: 5.5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+
+    p {
+      color: #79828D;
+      font-size: 18px;
+      padding-left: 1vw;
+      margin-bottom: 0rem;
+      text-align: left;
+    }
+  }
+
+  ul {
+    margin-bottom: -4rem;
+  }
+
+  .active {
+    float: inherit;
+    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // background-clip:content-box;
+    background-clip: padding-box;
+  }
+
+  .Advantage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+
+    img {
+      width: 66%;
+    }
+
+  }
+
+  ::v-deep .Advanbutton {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 2vw;
+      }
+
+      .guoc {
+        border: 10px solid rgba(255, 41, 41, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 100px;
+        /* line-height: 94px; */
+        align-self: center;
+        width: 100px;
+        display: flex;
+        border-radius: 100%;
+        margin: 1px 4vw;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+
+        p {
+          display: block;
+          color: #57B2F3;
+          font-weight: bold;
+          margin-bottom: 0rem;
+          // font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .list_con {
+    margin-top: 9vw;
+    // width: 41vw;
+  }
+
+  .list_dis {
+    margin-top: 9vw;
+    // width: 41vw;
+    // padding-left: 5vw;
+
+    ul {
+      padding-top: 3vw;
+      list-style-type: none;
+      padding-left: 0rem;
+
+      li {
+        color: #9BA5B1;
+
+      }
+    }
+  }
+
+  .meun {
+    padding-left: 6vw;
+    margin-top: 1vw;
+    display: flex;
+  }
+
+  .step_list {
+    // margin: 0 20vw;
+
+    img {
+      // width: 22vw;
+      // height: 14vw;
+      // margin-bottom: 12vw;
+      // padding: 0 2vw;
+    }
+
+    li {
+      text-align: left;
+      color: #fff;
+      // padding-left: 2vw;
+      margin: 0 3vw;
+      // display: flex;
+
+      p {
+        padding-left: 3vw;
+        padding-top: 3vw;
+        color: #9BA5B1;
+        display: flex;
+      }
+
+      strong {
+        // padding-left: 4vw;
+        color: #9BA5B1;
+
+        &:before {
+          content: "";
+          margin-left: 15px;
+          padding-left: 15px;
+          border-left: 1.8vw solid #9BD0F5;
+          height: 7vw;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
+  .list {
+    margin-top: 5vw;
+    background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
   }
 }
 </style>

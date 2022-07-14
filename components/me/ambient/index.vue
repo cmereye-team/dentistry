@@ -76,37 +76,38 @@
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="0" class="active">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button>
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="1">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button>
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="2">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button>
        <button type="button" data-bs-target="#demo2" data-bs-slide-to="3">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img h src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="4">
        <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button> <button type="button" data-bs-target="#demo2" data-bs-slide-to="5">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button> 
       <button type="button" data-bs-target="#demo2" data-bs-slide-to="6">
         <div >
-          <img height="105px"  width="142px" src="@/asset/image/me/BigPic.jpg" alt="" >
+          <img  src="@/asset/image/me/BigPic.jpg" alt="" >
           </div>
       </button>
+      
     </div>
   </div>
   </div>
@@ -146,6 +147,48 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .carousel-inner img{
+    height: 92%;
+    width: 76% !important;
+    border-radius: 30px 30px 30px 30px;
+  }
+  .border_corner{
+    z-index: 2500;
+    position: absolute;
+    width: 20px;
+    height: 23px;
+    padding: 1vw;
+    background: rgba(0, 0, 0, 0);
+    border: 4px solid #FFB7B7;
+}
+.border_corner_left_top{
+    top: 0;
+    left: 4vw;
+    border-right: none;
+    border-bottom: none;
+    border-top-left-radius: 14px;
+}
+.border_corner_right_top{
+    top: 0;
+    right: 4vw;
+    border-left: none;
+    border-bottom: none;
+    border-top-right-radius: 14px;
+}
+.border_corner_left_bottom{
+    bottom: 0;
+    left: 4vw;
+    border-right: none;
+    border-top: none;
+    border-bottom-left-radius: 14px;
+}
+.border_corner_right_bottom{
+    bottom: 0;
+    right:  4vw;
+    border-left: none;
+    border-top: none;
+    border-bottom-right-radius: 14px;
+}
   [data-v-2f2cc59f] .carousel-indicators {
     display: block;
     margin: 0 10vw;
@@ -182,6 +225,10 @@ export default {
   // border-radius: 100%;
   margin-right: 3% !important;
   transition: opacity .6s ease;
+  img{
+    height: 92px;
+    width: 102px;
+  }
   button{
     margin: 0 4vw;
   }
@@ -366,7 +413,10 @@ export default {
   opacity: .5;
   // border-radius: 100%;
   margin-right: 4% !important;
-
+  img{
+    height:105px;
+    width:142px;
+  }
   transition: opacity .6s ease;
   button{
     margin: 0 4vw;

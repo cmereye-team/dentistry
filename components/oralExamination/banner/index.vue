@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/oralExamination.png">
+        <!-- <img src="@/asset/image/banner/oralExamination.png"> -->
+        <img src=" @/asset/image/banner/oralExamination.png "
+            srcset="
+            @/asset/image/banner/oralExaminationMb.png 400w,
+            @/asset/image/banner/oralExaminationMb.png 750w,
+            @/asset/image/banner/oralExaminationMb.png 768w,
+            @/asset/image/banner/oralExamination.png 1024w,
+            @/asset/image/banner/oralExaminationMb.png 1125w,
+            @/asset/image/banner/oralExamination.png 1650w,
+            ">
           <div class="title">
         一般口腔檢查
       </div>

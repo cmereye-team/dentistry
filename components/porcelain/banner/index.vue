@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/porcelain.png">
+        <!-- <img src="@/asset/image/banner/porcelain.png"> -->
+        <img src=" @/asset/image/banner/porcelain.png "
+            srcset="
+            @/asset/image/banner/porcelainMb.png 400w,
+            @/asset/image/banner/porcelainMb.png 750w,
+            @/asset/image/banner/porcelainMb.png 768w,
+            @/asset/image/banner/porcelain.png 1024w,
+            @/asset/image/banner/porcelainMb.png 1125w,
+            @/asset/image/banner/porcelain.png 1650w,
+            ">
           <div class="title">
         瓷貼片
       </div>

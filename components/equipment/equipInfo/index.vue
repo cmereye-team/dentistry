@@ -194,6 +194,15 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+   .label{
+        display: inline-block;
+        border: 1px solid #57B2F3;
+        border-radius: 60px;
+        width: 21vw;
+        text-align: center;
+        background-color: #fff;
+        padding: 0.5vw;
+      }
   .dateinfo{
     display: flex;
     justify-content: center;

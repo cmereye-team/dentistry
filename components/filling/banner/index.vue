@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/filling.png">
+        <!-- <img src="@/asset/image/banner/filling.png"> -->
+        <img src=" @/asset/image/banner/filling.png "
+            srcset="
+            @/asset/image/banner/fillingMb.png 400w,
+            @/asset/image/banner/fillingMb.png 750w,
+            @/asset/image/banner/fillingMb.png 768w,
+            @/asset/image/banner/filling.png 1024w,
+            @/asset/image/banner/fillingMb.png 1125w,
+            @/asset/image/banner/filling.png 1650w,
+            ">
           <div class="title">
         補牙
       </div>

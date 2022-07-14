@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/DentalCare.png">
+        <!-- <img src="@/asset/image/banner/DentalCare.png"> -->
+        <img src=" @/asset/image/banner/DentalCare.jpg "
+            srcset="
+            @/asset/image/banner/DentalCareMb.png 400w,
+            @/asset/image/banner/DentalCareMb.png 750w,
+            @/asset/image/banner/DentalCareMb.png 768w,
+            @/asset/image/banner/DentalCare.png 1024w,
+            @/asset/image/banner/DentalCareMb.png 1125w,
+            @/asset/image/banner/DentalCare.png 1650w,
+            ">
       <div class="title">
         牙齒健康
       </div>
@@ -93,7 +102,7 @@ export default {
       height: 53vw;
       width: 100vw;
       left:0;
-      top:45%;
+      top:38%;
       font-weight: 600;
       color: #79828D;
       font-size: 24px;

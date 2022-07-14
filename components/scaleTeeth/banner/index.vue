@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/scaleTeeth.png">
+        <!-- <img src="@/asset/image/banner/scaleTeeth.png"> -->
+        <img src=" @/asset/image/banner/scaleTeeth.png "
+            srcset="
+            @/asset/image/banner/scaleTeethMb.png 400w,
+            @/asset/image/banner/scaleTeethMb.png 750w,
+            @/asset/image/banner/scaleTeethMb.png 768w,
+            @/asset/image/banner/scaleTeeth.png 1024w,
+            @/asset/image/banner/scaleTeethMb.png 1125w,
+            @/asset/image/banner/scaleTeeth.png 1650w,
+            ">
           <div class="title">
         洗牙
       </div>

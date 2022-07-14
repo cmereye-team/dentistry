@@ -10,12 +10,12 @@
     <div class="step">
       <div class="list">
       <ul class="step_list items-center ">
-        <li>
+        <li class="bac-box">
           <div  class="list_con">
             <img src="@/asset/image/whitening/apple.png" alt="">
             <h3>想擁有更亮白的牙齒，</h3>
             <p>可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
-            <div style="display: flex; margin: 3vw 0;">
+            <div class="listcons" >
             <div class="list_d" >
             <strong>激光牙齒美白</strong>
             <span style="padding-right: 11vw;">激光美白是利用激光能量激活美白劑，將適量的過氧化氫（hydrogen peroxide，即是美白劑），透過氧化原理滲入象牙質，將色素分子打碎，排除沉澱的色素。相比其他美白牙齒的方式，激光美白屬較安全、快速、效果較持久及較亮白的方法。過程約 30分鐘，即時見效，可維持至少1年。</span>
@@ -96,7 +96,10 @@
         </div>
         <div class="video">
           <div class="video_con">
-            <img src="@/asset/image/implant/vedio.png" alt="">
+           <video width="100%" height="100%" controls="controls">
+              <source src="@/asset/websitevideo/zhiya.mp4">
+              你的浏览器不支持HTML5视频。
+            </video>
           </div>
           <div class="lists">
             <div class="list_disd">
@@ -168,7 +171,7 @@
         </div>
         <div class="videos">
           <div class="video_con">
-            <div style="background-color: #fff; width:80%; height: 6vw"></div>
+            <div class="cosn" ></div>
             <!-- <img src="@/asset/image/implant/vedio.png" alt=""> -->
           </div>
           
@@ -242,6 +245,15 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+   .cosn{
+    background-color: #fff;
+    width:80%;
+    height: 6vw;
+  }
+  .listcons{
+    display: flex;
+    margin: 3vw 0;
+  }
   .list_d{
     text-align: left;
     strong {
@@ -539,6 +551,159 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .list_disd{
+    padding: 5vw 5vw;
+  }
+  .list_d{
+    display: grid;
+    justify-items: start;
+    strong {
+      font-size: 20px;
+    }
+    span{
+      text-align: left;
+      padding: 1vw 4vw;
+      color: #9BA5B1;
+    }
+  }
+  .list_con{
+    text-align: center;
+    h3{
+      padding-top: 4vw;
+      color: #57B2F3;
+      font-size: 26px;
+    }
+    p{
+      color: #57B2F3;
+
+    }
+  }
+  .contents {
+    background-color: #fff;
+
+    .gcond {
+      // display: flex;
+      // margin: 0 auto;
+      padding: 0 6vw;
+
+      width: 100%;
+    }
+
+    .content {
+      padding: 5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+
+    p {
+      color: #79828D;
+      font-size: 18px;
+      padding-left: 1vw;
+      margin-bottom: 0rem;
+    }
+  }
+
+  ul {
+    margin-bottom: -4rem;
+  }
+
+  .active {
+    float: inherit;
+    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // background-clip:content-box;
+    background-clip: padding-box;
+  }
+
+  .Advantage {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+    margin-top: 15vw;
+
+    img {
+      width: 126%;
+    }
+
+  }
+
+  .list_con {
+    p {
+      padding: 3vw 7vw;
+    }
+  }
+
+  .list_dis {
+    li {
+      color: #9BA5B1;
+    }
+
+    ul {
+      padding: 3vw 7vw;
+    }
+  }
+
+   .list_cons {
+    margin: 2vw 0;
+  }
+
+  .video {
+    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    // margin: 0 8vw;
+  }
+
+  .videos {
+    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    // background-color: #ECF7FC;
+    // margin: 0 8vw;
+
+  }
+
+  .video_con {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    // background-image: linear-gradient(to bottom, #fff 65%, #ECF7FC 0);
+  }
+   ::v-deep .Advanbutton {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 2vw;
+      }
+
+      .guoc {
+        border: 10px solid rgba(255, 41, 41, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 70px;
+        /* line-height: 94px; */
+        align-self: center;
+        width: 70px;
+        display: flex;
+        border-radius: 100%;
+        margin: 1px 4vw;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+
+        p {
+          display: block;
+          color: #57B2F3;
+          font-weight: bold;
+          margin-bottom: 0rem;
+          // font-size: 1.2rem;
+        }
+      }
+    }
+  }
   .meun {
     padding-left: 6vw;
     display: flex;
@@ -548,33 +713,35 @@ export default {
     padding: 0;
 
     img {
-      width: 24vw;
-      padding-left: 9vw;
-      padding-bottom: 6vw;
+      width: 90%;
+      // padding-left: 9vw;
+      // padding-bottom: 6vw;
     }
   }
-
-  li {
+.bac-box {
     background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
   }
+  // li {
+  //   background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+  // }
 
   p {
-    padding: 2vw 4vw 9vw 4vw;
+    padding: 1vw 1vw;
     color: #9BA5B1;
   }
 
   strong {
     padding-top: 2vw;
-    padding-left: 4vw;
+    // padding-left: 4vw;
     color: #9BA5B1;
   }
 
   strong:before {
     content: "";
-    margin-left: 15px;
+    // margin-left: 15px;
     padding-left: 15px;
-    border-left: 2vw solid #9BD0F5;
-    height: 6vw;
+    border-left: 1.8vw solid #9BD0F5;
+    height: 7vw;
     display: inline-block;
     vertical-align: middle;
   }

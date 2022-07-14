@@ -4,9 +4,27 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/hiddenBeauty.png">
+        <!-- <img src="@/asset/image/banner/hiddenBeauty.png"> -->
+        <img class="bannImg" src=" @/asset/image/banner/hiddenBeauty.png "
+            srcset="
+            @/asset/image/banner/hiddenBeautyMb.png 400w,
+            @/asset/image/banner/hiddenBeautyMb.png 750w,
+            @/asset/image/banner/hiddenBeautyMb.png 768w,
+            @/asset/image/banner/hiddenBeauty.png 1024w,
+            @/asset/image/banner/hiddenBeautyMb.png 1125w,
+            @/asset/image/banner/hiddenBeauty.png 1650w,
+            ">
           <div class="title">
-        <img src="@/asset/image/banner/hiddenBeauty1.png">
+        <!-- <img src="@/asset/image/banner/hiddenBeauty1.png"> -->
+        <img class="iconImg" src=" @/asset/image/banner/hiddenBeauty1.png "
+            srcset="
+            @/asset/image/banner/hiddenBeauty2.png 400w,
+            @/asset/image/banner/hiddenBeauty2.png 750w,
+            @/asset/image/banner/hiddenBeauty2.png 768w,
+            @/asset/image/banner/hiddenBeauty1.png 1024w,
+            @/asset/image/banner/hiddenBeauty2.png 1125w,
+            @/asset/image/banner/hiddenBeauty1.png 1650w,
+            ">
       </div>
       </div>
       <!-- <div class="carousel-item">
@@ -93,7 +111,7 @@ export default {
       height: 53vw;
       width: 100vw;
       left:0;
-      top:45%;
+      top:34%;
       font-weight: 600;
       color: #79828D;
       font-size: 24px;
@@ -109,11 +127,15 @@ export default {
     // margin-top: 16vw;
     text-align: -webkit-center;
 
-    img {
+    .bannImg {
       height: 51vw;
       // height: 100%;
       width: 90%;
       border-radius: 30px 30px 30px 30px;
+    }
+    .iconImg{
+      width: 50%;
+      
     }
   }
 

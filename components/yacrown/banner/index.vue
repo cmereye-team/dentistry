@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/yacrown.png">
+        <!-- <img src="@/asset/image/banner/yacrown.png"> -->
+         <img src=" @/asset/image/banner/yacrown.png "
+            srcset="
+            @/asset/image/banner/yacrownMb.png 400w,
+            @/asset/image/banner/yacrownMb.png 750w,
+            @/asset/image/banner/yacrownMb.png 768w,
+            @/asset/image/banner/yacrown.png 1024w,
+            @/asset/image/banner/yacrownMb.png 1125w,
+            @/asset/image/banner/yacrown.png 1650w,
+            ">
           <div class="title">
         全瓷牙冠及全鋯牙冠
       </div>

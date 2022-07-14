@@ -115,6 +115,28 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+    .contents{
+        position: absolute;
+        z-index: 2;
+        height: 58vw;
+        width: 43vw;
+        left: 8%;
+        top: 17%;
+        font-weight: 500;
+        color: #79828D;
+        font-size: 16px;
+    }
+  .title{
+      position: absolute;
+      z-index: 2;
+      height: 53vw;
+      width: 51vw;
+      left: 10%;
+      top: 9%;
+      font-weight: 500;
+      color: #79828D;
+      font-size: 22px;
+    }
 
   .d-block {
     display: block !important;

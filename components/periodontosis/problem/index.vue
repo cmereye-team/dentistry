@@ -149,7 +149,79 @@ p{
 }
 
 @media only screen and (max-width: 768px) {
- 
+ .contents p{
+  color: #79828D;
+    font-size: 16px;
+}
+   ::v-deep .el-collapse-item__arrow{
+  display: none;
+}
+ ::v-deep .el-collapse-item__header {
+  font-weight: 400;
+  font-size: 19px;
+  height: 82px;
+  padding: 0 2vw;
+  justify-content: space-between;
+}
+::v-deep .el-collapse-item__header.is-active{
+  background-color: #ECF7FC;
+
+}
+
+ ::v-deep .el-collapse-item__content{
+  font-weight: 400;
+  font-size: 19px;
+  padding-left: 2vw;
+  // background-color: #DFDFDF;
+}
+.coll-box{
+  padding: 3vw;
+  width: 100%;
+}
+.contents{
+  display: flex;
+  align-items: center;
+  p{
+    color: #79828D;
+  }
+  span{
+    color: #9BA5B1;
+
+  }
+}
+.discon{
+  margin: 1vw 0 0 0;
+  display: flex;
+  ul{
+    padding-left: 0.2vw;
+  }
+   span{
+    color: #9BA5B1;
+    font-size: 16px;
+
+  }
+}
+.title1{
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+ background-image: url(~@/asset/image/implant/Q.png) ;
+ background-repeat: no-repeat;
+}
+.title2{
+  display: inline-block;
+  width: 40px;
+  height: 25px;
+  background-image: url(~@/asset/image/implant/A.png);
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.downArrow1{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url(~@/asset/image/implant/+.png);
+}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {

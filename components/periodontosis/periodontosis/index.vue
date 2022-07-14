@@ -15,7 +15,7 @@
               <img src="@/asset/image/periodontosis/apple.png" alt="">
               <h3> 牙周病屬慢性炎症，</h3>
               <p>分為輕微的牙齦炎及嚴重的牙周炎兩種。會令牙齒鬆脫、移位，影響外貌及口腔健康。</p>
-              <div style="display: flex; margin: 3vw 0;">
+              <div class="listcons">
                 <div class="list_d">
                   <strong>牙齦炎如何形成？</strong>
                   <span>牙齦及牙齒邊緣長期積聚牙菌膜，細菌會分泌毒素刺激牙齦，引致發炎。牙齦發炎時，牙肉會紅腫，刷牙時會流牙血，牙齒表面也會積聚十分粗糙的牙石。</span>
@@ -360,6 +360,10 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .listcons{
+    display: flex;
+    margin: 3vw 0;
+  }
   .porcelain—con{
     // display: flex;
     text-align:center;
@@ -441,75 +445,11 @@ export default {
     }
   }
 
-  .table-box {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    margin: 2vw 0;
-  }
-
   .lists {
     display: flex;
     margin: 2vw 18vw;
   }
 
-  .tablesd {
-    margin-left: 4vw;
-    color: #57B2F3;
-    background-color: #fff;
-    border: 3px solid #9BD0F5;
-    border-radius: 20px;
-    border-collapse: separate;
-    border-spacing: 0;
-    box-shadow: 13px 15px 0 #a2d4f7;
-    border-spacing: 0;
-    width: 20%;
-    height: 25vw;
-    font-weight: 550;
-    letter-spacing: 0.1vw;
-    font-size: 17px;
-
-    ul {
-      list-style-type: disc;
-      margin: 0;
-      font-weight: 500;
-      font-size: 17px;
-    }
-
-    th {
-      text-align: center;
-      color: #fff;
-      background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
-    }
-
-    .thd {
-      color: #57B2F3;
-      background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
-    }
-  }
-
-  .tables {
-    color: #57B2F3;
-    background-color: #fff;
-    border: 2px solid #9BD0F5;
-    border-radius: 10px;
-    border-collapse: separate;
-    border-spacing: 0;
-    border-spacing: 1;
-    box-shadow: 13px 15px 0 #a2d4f7;
-    border-spacing: 0;
-    width: 7%;
-    height: 22vw;
-    font-weight: 550;
-    letter-spacing: 0.1vw;
-    font-size: 17px;
-
-    tr {
-      text-align: center;
-    }
-  }
 
   .list_disd {
     li {
@@ -749,6 +689,328 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .py-5 {
+    margin-top: 7rem !important;
+    padding-top: 0rem!important;
+  }
+  .coin_box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .list_disd{
+    padding: 5vw 5vw;
+  }
+  .list_d{
+    display: grid;
+    justify-items: start;
+    strong {
+      font-size: 20px;
+    }
+    span{
+      text-align: left;
+      padding: 1vw 4vw;
+      color: #9BA5B1;
+    }
+  }
+  .list_con{
+    text-align: center;
+    h3{
+      padding-top: 4vw;
+      color: #57B2F3;
+      font-size: 26px;
+    }
+    p{
+      color: #57B2F3;
+
+    }
+  }
+  .contents {
+    background-color: #fff;
+
+    .gcond {
+      // display: flex;
+      // margin: 0 auto;
+      padding: 0 6vw;
+
+      width: 100%;
+    }
+
+    .content {
+      padding: 5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+    }
+  .porcelain—con{
+    // display: flex;
+    text-align:center;
+    p{
+      padding: 1vw 0;
+      color:#57B2F3;
+      font-weight: 500;
+      font-size: 22px;
+    }
+  }
+  .porcelain—cons{
+    padding: 0 12vw;
+    p{
+      color:#9BA5B1;
+
+    }
+  }
+  .quote{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+  }
+  .boxs {
+    background-image: linear-gradient(to bottom, #fff 53%, #ECF7FC 0);
+
+  }
+.cons-box{
+  background: #ECF7FC;
+  img{
+    padding: 2vw;
+  }
+}
+  .icons {
+    margin-bottom: 3.5vw;
+    margin-top: 0.5vw;
+  }
+
+  .coin_box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .coin {
+    padding: 1vw 2vw;
+    display: block;
+    text-align: center;
+
+    p {
+      color: #79828D;
+      font-size: 16px;
+      padding: 1vw 0;
+    }
+  }
+  .coin_box {
+    // display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 7vw 0;
+  }
+  .list-dis {
+    width: 100%;
+    text-align: left !important;
+    padding: 7vw 5vw 14vw 5vw;
+    ul{
+        color: #9BA5B1;
+        list-style-type: disc;
+        padding: 6.5vw;
+    }
+    strong {
+      // padding-left: 4vw;
+      color: #9BA5B1;
+      font-size: 23px;
+      font-weight: 500;
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 6vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+    }
+  
+  .list {
+    // margin-top: 5vw;
+    background-image: linear-gradient(to bottom, #fff 29%, #ECF7FC 0);
+  }
+  .serve_con {
+    padding: 0 5vw;
+    text-align: left;
+  }
+
+  .texts {
+    margin-top: 13vw;
+  }
+
+  ::v-deep .Advanbutton {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 2vw;
+      }
+
+      .guoc {
+        border: 10px solid rgba(255, 41, 41, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 70px;
+        /* line-height: 94px; */
+        align-self: center;
+        width: 70px;
+        display: flex;
+        border-radius: 100%;
+        margin: 1px 4vw;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+
+        p {
+          display: block;
+          color: #57B2F3;
+          font-weight: bold;
+          margin-bottom: 0rem;
+          // font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .lists {
+    display: flex;
+    margin: 0 1vw;
+  }
+  .list_disd {
+    li {
+      font-size: 16px;
+      color: #79828D;
+      margin-left: 2vw;
+    }
+
+    strong {
+      color: #79828D;
+      font-size: 24px;
+      font-weight: 500;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+.list_con{
+  text-align: center;
+}
+  .list_cons {
+    margin: 2vw 2vw;
+  }
+
+  .contents {
+    background-color: #fff;
+
+    .gcond {
+      // display: flex;
+      // margin: 0 auto;
+      padding: 0 6vw;
+
+      width: 100%;
+    }
+
+    .content {
+      padding: 5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+
+    p {
+      color: #79828D;
+      font-size: 18px;
+      padding-left: 1vw;
+      margin-bottom: 0rem;
+    }
+  }
+
+  ul {
+    margin-bottom: -4rem;
+  }
+
+  .active {
+    float: inherit;
+    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // background-clip:content-box;
+    background-clip: padding-box;
+  }
+
+  .Advantage {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+    // margin-top: 15vw;
+
+    img {
+      width: 126%;
+    }
+
+  }
+.texts p{
+  padding: 3vw 12vw;
+}
+.gconds{
+  padding: 2vw;
+}
+  .list_con {
+    p {
+      padding: 3vw 7vw;
+    }
+  }
+
+    .list_dis {
+    margin-top: 3vw;
+    width: 100%;
+    // width: 41vw;
+    padding-left: 5vw;
+    text-align: left !important;
+    ;
+
+    strong {
+      // padding-left: 4vw;
+      color: #9BA5B1;
+      font-size: 23px;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+         border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+
+    ul {
+      padding: 4vw;
+      list-style-type: disc;
+
+      li {
+        color: #9BA5B1;
+
+      }
+    }
+  }
   .meun {
     padding-left: 6vw;
     display: flex;
@@ -758,24 +1020,25 @@ export default {
     padding: 0;
 
     img {
-      width: 24vw;
-      padding-left: 9vw;
-      padding-bottom: 6vw;
+      width: 90%;
+      // padding-left: 9vw;
+      // padding-bottom: 6vw;
     }
   }
 
-  li {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
-  }
+  // li {
+  //   background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+  // }
 
   p {
-    padding: 2vw 4vw 9vw 4vw;
+    // padding: 2vw 4vw 9vw 4vw;
+    padding: 1vw 1vw;
     color: #9BA5B1;
   }
 
   strong {
     padding-top: 2vw;
-    padding-left: 4vw;
+    // padding-left: 4vw;
     color: #9BA5B1;
   }
 
@@ -783,8 +1046,8 @@ export default {
     content: "";
     margin-left: 15px;
     padding-left: 15px;
-    border-left: 2vw solid #9BD0F5;
-    height: 6vw;
+    border-left: 1.8vw solid #9BD0F5;
+    height: 7vw;
     display: inline-block;
     vertical-align: middle;
   }

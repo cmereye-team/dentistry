@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <!-- <img src="@/asset/image/banner/equgroup.jpg"> -->
+        <img src=" @/asset/image/banner/equgroup.jpg "
+            srcset="
+            @/asset/image/banner/facilitiesMb.jpg 400w,
+            @/asset/image/banner/facilitiesMb.jpg 750w,
+            @/asset/image/banner/facilitiesMb.jpg 768w,
+            @/asset/image/banner/equgroup.jpg 1024w,
+            @/asset/image/banner/facilitiesMb.jpg 1125w,
+            @/asset/image/banner/equgroup.jpg 1650w,
+            ">
           <div class="title">
         診所設備
       </div>
@@ -93,7 +102,7 @@ export default {
       height: 53vw;
       width: 100vw;
       left:0;
-      top:45%;
+      top:40%;
       font-weight: 600;
       color: #79828D;
       font-size: 24px;

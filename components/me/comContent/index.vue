@@ -50,6 +50,7 @@ export default {
 <style lang="scss" scoped>
 .textsd{
    text-align: center;
+   margin: 8vw 0;
     .ya{
          color:#57B2F3;
          margin-bottom:0.5vw;
@@ -89,13 +90,15 @@ export default {
     text-align: center;
     justify-content: center;
     img{
-      padding:1vw;
-      width:82vw;
+      margin:5vw;
+      width: 92%;
     }
   }
     h3{
     color: #57B2F3;
-    padding-top:2vw;
+    padding-top:5vw;
+    font-weight: 600;
+
   }
  .serve_con{
 

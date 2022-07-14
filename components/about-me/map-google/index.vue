@@ -23,7 +23,8 @@
     </div>
     <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
       <div id="map">
-        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
+          <img src="@/asset/map/materials_中環.jpg" width="100%">
+        <!-- <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -76,7 +77,8 @@
     </div>
     <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
     <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%">
+          <!-- <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
+          <img src="@/asset/map/materials_灣仔.jpg" width="100%">
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->

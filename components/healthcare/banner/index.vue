@@ -4,7 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/healthcare.png">
+        <!-- <img src="@/asset/image/banner/healthcare.png"> -->
+        <img src=" @/asset/image/banner/healthcare.png "
+            srcset="
+            @/asset/image/banner/healthcareMb.png 400w,
+            @/asset/image/banner/healthcareMb.png 750w,
+            @/asset/image/banner/healthcareMb.png 768w,
+            @/asset/image/banner/healthcare.png 1024w,
+            @/asset/image/banner/healthcareMb.png 1125w,
+            @/asset/image/banner/healthcare.png 1650w,
+            ">
           <div class="title">
         兒童牙科保健及治療
       </div>

@@ -92,7 +92,7 @@ export default {
       }
     }
     p{
-      padding-top:1vw;
+      padding-top:6vw;
       color:#57B2F3;
       text-align: left;
     }

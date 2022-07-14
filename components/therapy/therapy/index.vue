@@ -471,6 +471,185 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .video {
+    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
+    margin-top: 132px;
+  }
+  .list {
+    text-align: center;
+    margin-top: 5vw;
+    background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
+  }
+  .contents {
+    background-color: #fff;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    box-shadow: 13px 15px 0 #A2D4F7;
+    border-radius: 10px;
+
+    .gcond {
+      // display: flex;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .content {
+      padding: 5vw 1vw;
+      display: flex;
+      align-items: center;
+
+    }
+
+    p {
+      color: #79828D;
+      font-size: 18px;
+      padding-left: 1vw;
+      margin-bottom: 0rem;
+      text-align: left;
+    }
+  }
+
+  ul {
+    margin-bottom: -4rem;
+  }
+
+  .active {
+    float: inherit;
+    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // background-clip:content-box;
+    background-clip: padding-box;
+  }
+
+  .Advantage {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+
+    img {
+      width: 66%;
+    }
+
+  }
+
+  ::v-deep .Advanbutton {
+    display: flex;
+    position: absolute;
+    bottom: 5rem;
+
+    ul {
+      display: flex;
+
+      li {
+        padding: 2vw;
+      }
+
+      .guoc {
+        border: 10px solid rgba(255, 41, 41, 0);
+        background-color: rgba(255, 255, 255, 0.8);
+        height: 100px;
+        /* line-height: 94px; */
+        align-self: center;
+        width: 100px;
+        display: flex;
+        border-radius: 100%;
+        margin: 1px 4vw;
+        text-align: center;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: center;
+
+        p {
+          display: block;
+          color: #57B2F3;
+          font-weight: bold;
+          margin-bottom: 0rem;
+          // font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .list_con {
+    margin-top: 9vw;
+    padding-left: 5vw;
+    text-align: left;
+  }
+
+  .list_dis {
+    margin-top: 9vw;
+    // width: 41vw;
+    padding-left: 5vw;
+    text-align: left;
+    padding-bottom: 24vw;
+    padding-right: 2vw;
+    ul {
+      padding-top: 1vw;
+      list-style-type: none;
+
+      li {
+        color: #9BA5B1;
+
+      }
+    }
+  }
+  .list_disd {
+    li {
+      font-size: 16px;
+      color: #79828D;
+      margin-left: 2vw;
+    }
+
+    strong {
+      color: #79828D;
+      font-size: 24px;
+      font-weight: 500;
+
+      &:before {
+        content: "";
+        margin-left: 15px;
+        padding-left: 15px;
+        border-left: 1.8vw solid #9BD0F5;
+        height: 7vw;
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .list_cons {
+    margin: 2vw 0;
+  }
+
+  .icons{
+    margin-bottom: 3.5vw;
+    margin-top: 0.5vw;
+  }
+  .newsty {
+    background: #ECF7FC;
+    border-radius: 0 0 17px 17px !important;
+
+  }
+
+  .nofi {
+    margin: 5vw 0vw !important;
+  }
+
+  .table-box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-bottom: 10vw;
+  }
+
+  .lists {
+    display: flex;
+    margin: 0 6vw;
+    margin-top: 10vw;
+  }
   .meun {
     padding-left: 6vw;
     display: flex;
@@ -480,24 +659,23 @@ export default {
     padding: 0;
 
     img {
-      width: 24vw;
-      padding-left: 9vw;
-      padding-bottom: 6vw;
+      width: 90%;
+
     }
   }
 
   li {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+    // background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
   }
 
   p {
-    padding: 2vw 4vw 9vw 4vw;
+   padding: 1vw 1vw;
     color: #9BA5B1;
   }
 
   strong {
     padding-top: 2vw;
-    padding-left: 4vw;
+    // padding-left: 4vw;
     color: #9BA5B1;
   }
 
@@ -505,8 +683,8 @@ export default {
     content: "";
     margin-left: 15px;
     padding-left: 15px;
-    border-left: 2vw solid #9BD0F5;
-    height: 6vw;
+    border-left: 1.8vw solid #9BD0F5;
+    height: 7vw;
     display: inline-block;
     vertical-align: middle;
   }
