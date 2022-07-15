@@ -4,25 +4,25 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <!-- <img src="@/asset/image/banner/toothStraighten.png"> -->
-         <img src=" @/asset/image/banner/toothStraighten.png "
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png"> -->
+         <img src=" https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png "
             srcset="
-            @/asset/image/banner/toothStraightenMb.png 400w,
-            @/asset/image/banner/toothStraightenMb.png 750w,
-            @/asset/image/banner/toothStraightenMb.png 768w,
-            @/asset/image/banner/toothStraighten.png 1024w,
-            @/asset/image/banner/toothStraightenMb.png 1125w,
-            @/asset/image/banner/toothStraighten.png 1650w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 750w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 768w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 1125w,
+            https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png 1650w,
             ">
           <div class="title">
         矯齒
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/equgroup.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

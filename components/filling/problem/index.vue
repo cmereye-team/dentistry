@@ -2,15 +2,15 @@
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
       <h2> 補牙常見問題</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
       <el-collapse v-model="activeNames" @change="handleChange">
-        <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">補牙後為何會出現牙齒敏感及酸痛？</p>
             </div>
@@ -31,7 +31,7 @@
         <el-collapse-item name="2">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">補牙後就不會再蛀牙嗎?</p>
             </div>
@@ -51,7 +51,7 @@
         <el-collapse-item name="3">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">為何不能一次過處理所有蛀牙? </p>
             </div>
@@ -69,7 +69,7 @@
         <el-collapse-item name="4">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">可修補水銀補牙後的效果? </p>
             </div>
@@ -180,14 +180,14 @@ p {
   display: inline-block;
   width: 40px;
   height: 25px;
- background-image: url(~@/asset/image/implant/Q.png) ;
+ background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png) ;
  background-repeat: no-repeat;
 }
 .title2{
   display: inline-block;
   width: 40px;
   height: 25px;
-  background-image: url(~@/asset/image/implant/A.png);
+  background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
   background-repeat: no-repeat;
   color: #fff;
 }
@@ -195,7 +195,7 @@ p {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url(~@/asset/image/implant/+.png);
+  background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
 }
 }
 
@@ -262,7 +262,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/Q.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png);
     background-repeat: no-repeat;
   }
 
@@ -270,7 +270,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/A.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
     background-repeat: no-repeat;
     color: #fff;
   }
@@ -279,14 +279,14 @@ p {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-image: url(~@/asset/image/implant/+.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
   }
 
   .downArrow2 {
     // display: inline-block;
     // width: 12px;
     // height: 12px;
-    // background-image: url(~@/asset/image/implant/+.png);
+    // background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
     // transform: rotate(-180deg);
   }
 

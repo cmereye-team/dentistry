@@ -4,25 +4,25 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <!-- <img src="@/asset/image/banner/DentalCare.png"> -->
-        <img src=" @/asset/image/banner/DentalCare.jpg "
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"> -->
+        <img src=" https://static.cmereye.com/static/lkximg/image/banner/DentalCare.jpg "
             srcset="
-            @/asset/image/banner/DentalCareMb.png 400w,
-            @/asset/image/banner/DentalCareMb.png 750w,
-            @/asset/image/banner/DentalCareMb.png 768w,
-            @/asset/image/banner/DentalCare.png 1024w,
-            @/asset/image/banner/DentalCareMb.png 1125w,
-            @/asset/image/banner/DentalCare.png 1650w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 750w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 768w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 1125w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1650w,
             ">
       <div class="title">
         牙齒健康
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/equgroup.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/filling/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/filling/apple.png" alt="">
             <div class="list_dis">
               <strong>補牙</strong>
               <ul>
@@ -25,28 +25,28 @@
       <div class="video">
         <div class="flex justify-center texts">
           <h2>補牙過程</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>清除牙齒蛀壞及脆弱的部分 </p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>用專用的清潔消毒劑清潔牙齒表面，吹乾後，塗上黏固劑</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>填補牙洞及修補缺損部分</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>穩固填充物</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>牙齒修形及拋光（如蛀牙的程度深，或需要使用麻醉劑）</p>
                 </div>
               </div>
@@ -64,7 +64,7 @@
         </div>
         <div class="flex justify-center texts" style="padding-top: 1vw;">
           <h2>補牙材料</h2>
-          <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <p class="serve_con">補牙材料主要分為複合樹脂（俗稱瓷粉）及銀汞合金（俗稱銀粉）兩種。<br>複合樹脂是現時最常用的材料。由於銀汞合金氧化後會變成銀黑色，因此較少被選用。</p>
         </div>
         <div class="boxs">

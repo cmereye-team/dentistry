@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/scaleTeeth/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/scaleTeeth/apple.png" alt="">
             <!-- <div class="list_con">
               <strong>矯齒（箍牙）</strong>
               <p>
@@ -33,24 +33,24 @@
 
         <div class="flex justify-center texts">
           <h2>洗牙過程</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>利用超聲波洗牙工具，清除牙石及牙菌膜 </p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>利用刮牙石器去除細小牙石</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>利用牙科用浮石粉拋光打磨或特製混合物料高速噴洗牙齒表面，去除牙漬及保持牙齒平滑</p>
                 </div>
                  <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>利用氟化物鞏固琺瑯質，強化牙齒</p>
                 </div>
                 <div class="content nofitext">

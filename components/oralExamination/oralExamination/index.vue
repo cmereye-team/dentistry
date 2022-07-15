@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/oralExamination/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/oralExamination/apple.png" alt="">
             <div class="list_dis">
               <strong>一般口腔檢查</strong>
               <ul>
@@ -26,28 +26,28 @@
 
         <div class="flex justify-center texts">
           <h2>一般口腔檢查過程</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>檢查牙齒、牙齦健康</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>面部或頸項有否出現異常情況</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>評估整體口腔健康狀況及提供建議</p>
                 </div>
                  <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>需要時建議進行口腔X光造影檢查</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>提供口腔保健資訊</p>
                 </div>
               </div>

@@ -4,25 +4,25 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <!-- <img src="@/asset/image/banner/News.jpg"> -->
-        <img src=" @/asset/image/banner/News.jpg "
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/News.jpg"> -->
+        <img src=" https://static.cmereye.com/static/lkximg/image/banner/News.jpg "
             srcset="
-            @/asset/image/banner/NewsMb.jpg 400w,
-            @/asset/image/banner/NewsMb.jpg 750w,
-            @/asset/image/banner/NewsMb.jpg 768w,
-            @/asset/image/banner/News.jpg 1024w,
-            @/asset/image/banner/NewsMb.jpg 1125w,
-            @/asset/image/banner/News.jpg 1650w,
+            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 750w,
+            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 768w,
+            https://static.cmereye.com/static/lkximg/image/banner/News.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 1125w,
+            https://static.cmereye.com/static/lkximg/image/banner/News.jpg 1650w,
             ">
                 <div class="title">
         最新消息
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/News.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/News.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/News.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/News.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

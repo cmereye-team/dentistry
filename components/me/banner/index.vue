@@ -4,16 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg" >
-        <img  src="@/asset/image/banner/Maskgroup.jpg">
+        <img  src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg">
         <div class="title">
         關於我們
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/Maskgroup.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/Maskgroup.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

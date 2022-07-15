@@ -640,14 +640,14 @@ li.dropdown i.fa.dropdown-toggle {
 .flex-direction-nav a:before {
     content: " ";
     display: block;
-    background: url('@/asset/image/common/left-white.svg') no-repeat;
+    background: url('https://static.cmereye.com/static/lkximg/image/common/left-white.svg') no-repeat;
     width: 54px;
     height: 100px;
 }
 
 .flex-direction-nav a.flex-next:before {
     content: " ";
-    background: url('@/asset/image/common/right-white.svg') no-repeat;
+    background: url('https://static.cmereye.com/static/lkximg/image/common/right-white.svg') no-repeat;
 }
 
 .flex-control-nav {
@@ -1459,14 +1459,14 @@ span.date {
 }
 
 .blog-slide .flex-direction-nav a:before {
-    background: url('@/asset/image/common/left-white.svg') no-repeat;
+    background: url('https://static.cmereye.com/static/lkximg/image/common/left-white.svg') no-repeat;
     width: 32px;
     height: 49px;
 }
 
 .blog-slide .flex-direction-nav a.flex-next:before {
     content: " ";
-    background: url('@/asset/image/common/right-white.svg') no-repeat;
+    background: url('https://static.cmereye.com/static/lkximg/image/common/right-white.svg') no-repeat;
 }
 
 .blog-slide:hover .flex-direction-nav .flex-prev {

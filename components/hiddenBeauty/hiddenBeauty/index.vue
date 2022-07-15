@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/hiddenBeauty/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/apple.png" alt="">
             <div class="list_con">
               <strong>選擇我們</strong>
               <p>
@@ -31,22 +31,22 @@
       <div class="video pcshow" >
         <div class="flex justify-center texts">
           <h2 style="color: #ECF7FC;">隱適美流程</h2>
-          <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div class="box_cruel">
-        <img class="curve" src="@/asset/image/hiddenBeauty/curve.svg" alt="">
+        <img class="curve" src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/curve.svg" alt="">
         <div class="box">
-        <img src="@/asset/image/hiddenBeauty/cruel01.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel01.png" alt="">
         <h3>收集牙齒資料</h3>
         <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
       </div>
       <div class="box box_center">
-        <img src="@/asset/image/hiddenBeauty/cruel02.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel02.png" alt="">
         <h3>收集牙齒資料</h3>
         <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
       </div>
       <div class="box">
-        <img src="@/asset/image/hiddenBeauty/cruel03.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel03.png" alt="">
         <h3>收集牙齒資料</h3>
         <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
       </div>
@@ -56,26 +56,26 @@
        <div class="video mbshow" >
         <div class="flex justify-center texts">
           <h2 style="color: #ECF7FC;">隱適美流程</h2>
-          <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div class="box_cruel">
-        <img class="curve" src="@/asset/image/hiddenBeauty/curveMb.svg" alt="">
+        <img class="curve" src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/curveMb.svg" alt="">
         <div class="box">
-        <img class="boximgs" src="@/asset/image/hiddenBeauty/cruel01.png" alt="">
+        <img class="boximgs" src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel01.png" alt="">
         <div class="left">
           <h3>收集牙齒資料</h3>
           <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
         </div>
       </div>
       <div class="box box_center">
-        <img src="@/asset/image/hiddenBeauty/cruel02.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel02.png" alt="">
          <div class="right">
             <h3>訂制矯齒計劃</h3>
             <p>牙醫會與廠商方面溝通，為你建立專屬的3D矯齒治療方案。</p>
          </div>
       </div>
       <div class="box">
-        <img src="@/asset/image/hiddenBeauty/cruel03.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel03.png" alt="">
         <div class="left">
           <h3>訂製牙套並開始療程</h3>
           <p>廠商用3D電腦雷射列印科技製成一系列訂製牙箍，寄送至牙醫診所。我們會聯絡客人安排到診進行試戴並評估效果。客人需要每6至8星期複診，與牙醫跟進矯齒進度及取得新牙箍。</p>
@@ -302,7 +302,7 @@ export default {
     width: 60vw !important;
   }
   .video {
-    background-image:url('~@/asset/image/hiddenBeauty/Blueboard.png');
+    background-image:url('https://static.cmereye.com/static/lkximg/image/hiddenBeauty/Blueboard.png');
     background-size: 100% 100%;
   }
 
@@ -533,7 +533,7 @@ export default {
     }
   }
     .video {
-    background-image:url('~@/asset/image/hiddenBeauty/BlueboardMb.png');
+    background-image:url('https://static.cmereye.com/static/lkximg/image/hiddenBeauty/BlueboardMb.png');
     background-size: 100% 100%;
   }
   .texts{

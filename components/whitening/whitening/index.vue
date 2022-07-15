@@ -12,7 +12,7 @@
       <ul class="step_list items-center ">
         <li class="bac-box">
           <div  class="list_con">
-            <img src="@/asset/image/whitening/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/whitening/apple.png" alt="">
             <h3>想擁有更亮白的牙齒，</h3>
             <p>可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
             <div class="listcons" >
@@ -40,7 +40,7 @@
       </div>
       <div v-if='currentIndex == 0 ? true : false'>
         <div class="Advantage">
-          <img src="@/asset/image/whitening/AdvantageBG.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/whitening/AdvantageBG.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -54,52 +54,53 @@
           <div class="gcond">
             <div class="gcon">
               <div class="content left">
-                <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                 <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                 <p>進行簡單清潔</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                 <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                 <p>套上口腔張口器及保護眼罩</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                 <p>在牙齦塗上牙齦保護劑，以免激光及美白劑刺激牙齦</p>
               </div>
             </div>
             <div class="gcon">
               <div class="content right">
-                <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                 <p>牙齒表面均勻塗上激光專用美白劑</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/7.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
                 <p>以激光儀器照射牙齒</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/8.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/8.svg" height="50vw" width="50vw" alt="">
                 <p>療程完成後，清除美白劑與牙齦保護劑</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/9.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/9.svg" height="50vw" width="50vw" alt="">
                 <p>療程完成後，清以牙齒專用色階進行對色，比對療程前後效果除美白劑與牙齦保護劑</p>
               </div>
             </div>
           </div>
         </div>
         <div class="video">
-          <div class="video_con">
-           <video width="100%" height="100%" controls="controls">
-              <source src="@/asset/websitevideo/zhiya.mp4">
+          <div class="video_con" v-loading="loading">
+           <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/Rvh7T1pvqUM" title="【激光美白牙齒你要知】🦷✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+           <!-- <video width="100%" height="100%" controls="controls" src="https://youtu.be/loJSJebtxG8">
+            
               你的浏览器不支持HTML5视频。
-            </video>
+            </video> -->
           </div>
           <div class="lists">
             <div class="list_disd">
@@ -115,7 +116,7 @@
       </div>
       <div v-else>
          <div class="Advantage">
-          <img src="@/asset/image/whitening/AdvantageBG1.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/whitening/AdvantageBG1.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -129,41 +130,41 @@
           <div class="gcond">
             <div class="gcon">
               <div class="content left">
-                <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                 <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                 <p>進行簡單清潔</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                 <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                 <p>套上口腔張口器及保護眼罩</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                 <p>在牙齦塗上牙齦保護劑，以免藍光及美白劑刺激牙齦</p>
               </div>
             </div>
             <div class="gcon">
               <div class="content right">
-                <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                 <p>牙齒表面均勻塗上激光專用美白劑</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/7.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
                 <p>以藍光燈開始照射牙齒，整個過程大概需要照射照2-3次</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/8.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/8.svg" height="50vw" width="50vw" alt="">
                 <p>療程完成後，清除美白劑與牙齦保護劑-3次</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/whitening/9.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/whitening/9.svg" height="50vw" width="50vw" alt="">
                 <p>以牙齒專用色階進行對色，比對療程前後效果</p>
               </div>
               </div>
@@ -172,7 +173,7 @@
         <div class="videos">
           <div class="video_con">
             <div class="cosn" ></div>
-            <!-- <img src="@/asset/image/implant/vedio.png" alt=""> -->
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/implant/vedio.png" alt=""> -->
           </div>
           
           <div class="lists">
@@ -194,6 +195,7 @@
 export default {
   data() {
     return {
+      loading: false, //默认不显示loading
       list: [{
         id: 0,
         title: '激光牙齒美白過程'
@@ -209,7 +211,27 @@ export default {
   computed: {
 
   },
+   mounted() {
+    this.iframeLoad();
+  },
   methods: {
+    // 调用方法
+            iframeLoad() {
+            this.loading = true;
+            const iframe = this.$refs.Iframe;
+            // 兼容处理
+            if (iframe.attachEvent) {
+                // IE
+                iframe.attachEvent("onload", () => {
+                this.loading = false;
+                });
+            } else {
+                // 非IE
+                iframe.onload = () => {
+                this.loading = false;
+                };
+            }
+            },
     handleClick(index) {
       // console.log(index);
       this.currentIndex = index
@@ -245,6 +267,10 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .iframesty{
+     width: 80%; 
+     height: 690px
+  }
    .cosn{
     background-color: #fff;
     width:80%;
@@ -551,6 +577,10 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+   .iframesty{
+     width: 100%; 
+     height: 234px
+  }
   .list_disd{
     padding: 5vw 5vw;
   }

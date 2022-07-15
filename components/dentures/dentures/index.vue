@@ -12,18 +12,18 @@
         <ul class="step_list items-center ">
           <li>
             <div class="list_con">
-              <img src="@/asset/image/periodontosis/apple.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
               <h3> 牙托即活動式假牙，</h3>
               <p>分為局部及全口牙托兩種，可改善缺牙的影響。牙托底部有金屬鉤讓牙托能固定在真牙上，代替缺去的牙齒。活動式假牙可自行配戴，適合缺齒較多的人士使用。</p>
               <div class="cons">
                 <div class="list_d">
                   <strong>牙齦炎如何形成？</strong>
-                  <img src="@/asset/image/dentures/Maskgroup1.png" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup1.png" alt="">
                   <span>局部牙托適用於口腔內尚有健康牙齒的人士，一般以金屬支架或金屬勾設計，以健康牙齒固定牙托，方便自行配戴。</span>
                 </div>
                 <div class="list_d">
                   <strong>牙周病如何形成？</strong>
-                  <img src="@/asset/image/dentures/Maskgroup2.png" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup2.png" alt="">
                   <span>全口牙托適用於所有牙齒已脫落的人士，利用口中黏膜和齒槽骨脊固定，可自行配戴。但全口牙托的咬合感與真牙相差甚大，需以口腔內肌肉及舌頭動作等移動假牙，容易產生不適，需要時間適應。</span>
                 </div>
               </div>
@@ -43,7 +43,7 @@
       <div class="bg-white py-5 pb-0 py-xs-2">
         <div class="flex justify-center texts">
           <h2>固定式假牙、活動式假牙<br>點揀好？</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <p>固定式假牙與活動式假牙各有其優缺點及適用的情況，通常會經由牙醫評估口內缺牙的情況及剩下牙齒的狀況，再進一步進行全面的考量及建議。</p>
         </div>
         <div class="boxs">

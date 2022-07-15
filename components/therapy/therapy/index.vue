@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/therapy/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/therapy/apple.png" alt="">
             <div class="list_con">
               <strong>根管治療（杜牙根）</strong>
               <p>
@@ -34,34 +34,34 @@
 
         <div class="flex justify-center texts">
           <h2>根管治療（杜牙根）過程</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content left">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>為受感染的牙齒照X光，了解根管形狀及長度</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>局部麻醉，進行牙根消毒</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>從牙冠進入牙髓腔，把牙髓組織刮除或吸出</p>
                 </div>
               </div>
               <div class="gcon">
                 <div class="content right">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>以藥水徹底消毒乾淨根管內壁</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>把牙冠髓腔填封及覆蓋牙洞，以降低蛀牙菌再度入侵的機會</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                   <p>如經治療後的牙齒太脆弱，需為牙齒套上牙套，預防再被咬崩而要拔除</p>
                 </div>
               </div>

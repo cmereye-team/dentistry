@@ -2,7 +2,7 @@
   <div class="section vedio_box md:font-black">
     <div class="flex justify-center texts">
       <h2>診所地址</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="adress">
       <ul>
@@ -21,20 +21,20 @@
     </div>
     <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
       <div id="map">
-        <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%">
+        <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%">
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
       <div>
         <div class="mapcontennt">
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.png" alt="">
           <p class="address1" id="addresd">地址</p>
           <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.png" alt="">
           <p class="address1">查詢熱線</p>
           <p class="address2">36202428</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.png" alt="">
           <p class="address1">營業時間</p>
           <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
           <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
@@ -47,20 +47,20 @@
     </div>
     <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
       <div id="map">
-          <img src="@/asset/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%"></img>
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" height="100%"></img>
         <!-- <iframe width="100%" height="100%"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
           style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
       </div>
       <div>
         <div class="mapcontennt">
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Frame.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.png" alt="">
           <p class="address1 " id="addresd">地址</p>
           <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Vector.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.png" alt="">
           <p class="address1">查詢熱線</p>
           <p class="address2">36202428</p>
-          <img class="addrescoin" src="@/asset/image/about-me/mapstyle/Group 65.png" alt="">
+          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.png" alt="">
           <p class="address1">營業時間</p>
           <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
           <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>

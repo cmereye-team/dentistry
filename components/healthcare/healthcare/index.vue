@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/oralExamination/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/oralExamination/apple.png" alt="">
             <div class="list_dis">
               <strong>兒童牙科保健及治療</strong>
               <ul>
@@ -25,7 +25,7 @@
       </div>
       <div class="video">
          <div class="cons-box">
-              <img src="@/asset/image/periodontosis/quote.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote.png" alt="">
               <div class="porcelain—con">
                 <p>兒童定期牙科保健的重要性</p>
               </div>
@@ -47,7 +47,7 @@
                 </div>
               </div>
               <div  class="quote">
-                <img src="@/asset/image/periodontosis/quote2.png" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt="">
               </div>
               
             </div>

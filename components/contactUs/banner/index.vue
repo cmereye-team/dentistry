@@ -5,7 +5,7 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/ContactUs.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg">
                 <div class="title">
         聯絡我們
       </div>

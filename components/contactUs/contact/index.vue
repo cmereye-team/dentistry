@@ -3,7 +3,7 @@
   <div class=" vedio_box md:font-black">
     <div class="flex justify-center texts">
       <h2>預約</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="form">
        <el-form :inline="true" label-position="top" :model="ruleForm" :rules="rules" ref="ruleForm" label-width="100px" class="demo-form-inline">

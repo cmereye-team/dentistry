@@ -12,7 +12,7 @@
         <ul class="step_list items-center ">
           <li>
             <div class="list_con">
-              <img src="@/asset/image/periodontosis/apple.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
               <h3> 牙周病屬慢性炎症，</h3>
               <p>分為輕微的牙齦炎及嚴重的牙周炎兩種。會令牙齒鬆脫、移位，影響外貌及口腔健康。</p>
               <div class="listcons">
@@ -41,49 +41,49 @@
       <div class="bg-white py-5 pb-0 py-xs-2">
         <div class="flex justify-center texts">
           <h2>牙周病的症狀</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         </div>
         <div class="coin_box">
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin1.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin1.svg" alt="">
             <p>刷牙時牙齦<br>出血</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin2.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin2.svg" alt="">
             <p>牙肉紅腫</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin3.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin3.svg" alt="">
             <p>口臭異味</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin4.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin4.svg" alt="">
             <p>牙齒鬆動</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin5.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin5.svg" alt="">
             <p>牙齦腫脹</p>
           </div>
         </div>
         <div class="coin_box">
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin6.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin6.svg" alt="">
             <p>牙齒對冷熱<br>敏感</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin7.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin7.svg" alt="">
             <p>容易流牙血</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin8.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin8.svg" alt="">
             <p>牙齦萎縮</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin9.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin9.svg" alt="">
             <p>牙齦從粉紅色<br>變為暗紅色</p>
           </div>
           <div class="coin">
-            <img src="@/asset/image/periodontosis/coin10.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/coin10.svg" alt="">
             <p>牙齒移位</p>
           </div>
         </div>
@@ -91,7 +91,7 @@
       <div v-if='currentIndex == 0 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/periodontosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -105,15 +105,15 @@
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>口腔檢查</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>利用牙科儀器深入牙齦發炎的底部</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>刮除乾淨牙結石及發炎的牙肉組織</p>
                 </div>
               </div>
@@ -121,7 +121,7 @@
           </div>
           <div class="video">
             <div class="cons-box">
-              <img src="@/asset/image/periodontosis/quote.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote.png" alt="">
               <div class="porcelain—con">
                 <p>牙周病一定要進行手術嗎？</p>
               </div>
@@ -132,7 +132,7 @@
                 <p>牙周病手術主要分成兩類，牙肉翻瓣手術及牙周再生手術，更深入地把發炎組織處理乾淨，防止發炎繼續惡化。</p>
               </div>
               <div  class="quote">
-                <img src="@/asset/image/periodontosis/quote2.png" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt="">
               </div>
               
             </div>
@@ -152,7 +152,7 @@
       <div v-else-if='currentIndex == 1 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/periodontosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -166,25 +166,25 @@
             <div class="gcond">
               <div class="gcon">
                 <div class="content left">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>口腔檢查</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>局部麻醉</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>用超聲波徹底清潔牙根表面及牙周囊袋下的牙垢、牙菌斑和生物膜</p>
                 </div>
               </div>
               <div class="gcon">
                 <div class="content right">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>修整牙周骨缺損</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>縫合傷口</p>
                 </div>
               </div>
@@ -192,7 +192,7 @@
           </div>
           <div class="video">
             <div class="cons-box">
-              <img src="@/asset/image/periodontosis/quote.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote.png" alt="">
               <div class="porcelain—con">
                 <p>牙周病一定要進行手術嗎？</p>
               </div>
@@ -203,7 +203,7 @@
                 <p>牙周病手術主要分成兩類，牙肉翻瓣手術及牙周再生手術，更深入地把發炎組織處理乾淨，防止發炎繼續惡化。</p>
               </div>
               <div  class="quote">
-                <img src="@/asset/image/periodontosis/quote2.png" alt=""></img>
+                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt=""></img>
               </div>
               
             </div>
@@ -223,7 +223,7 @@
       <div v-else-if='currentIndex == 2 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/periodontosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -237,25 +237,25 @@
             <div class="gcond">
               <div class="gcon">
                 <div class="content left">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>評估是否適合進行牙周組織擴增、增生手術</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>根據牙肉狀態及骨頭的再生狀況，設計牙周再生計劃</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>在骨缺損處以骨粉填充</p>
                 </div>
               </div>
               <div class="gcon">
                 <div class="content right">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>覆蓋再生膜，提供牙周組織的生長空間</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>牙周組織增加，使牙周更鞏固，牙齒存活時間更長</p>
                 </div>
               </div>
@@ -263,7 +263,7 @@
           </div>
           <div class="video">
             <div class="cons-box">
-              <img src="@/asset/image/periodontosis/quote.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote.png" alt="">
               <div class="porcelain—con">
                 <p>牙周病一定要進行手術嗎？</p>
               </div>
@@ -274,7 +274,7 @@
                 <p>牙周病手術主要分成兩類，牙肉翻瓣手術及牙周再生手術，更深入地把發炎組織處理乾淨，防止發炎繼續惡化。</p>
               </div>
               <div  class="quote">
-                <img src="@/asset/image/periodontosis/quote2.png" alt=""></img>
+                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt=""></img>
               </div>
               
             </div>

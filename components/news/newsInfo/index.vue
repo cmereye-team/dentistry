@@ -16,9 +16,9 @@
       </el-select>
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/news/post01pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post01pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content yagao">
         <h2>睇牙都可以用消費劵? </h2>
@@ -29,24 +29,24 @@
         <p>✅Tap & Go拍住賞</p>
         <p>想了解更多支付方式，歡迎向我哋查詢💬</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/news/post02pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post02pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content">
         <h2>復活節連假休診通知</h2>
         <p>預祝大家復活節快樂🗿</p>
         <p>復活節連假期間所有牙科診所都會休息💡4月19號正常營業，千祈唔好摸門釘呀😉</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/news/post03pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post03pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content yagao">
         <h2>希瑪牙科接受消費券支付方式</h2>
@@ -63,7 +63,7 @@
         <p>🟠沙田正街11-17號偉華中心2樓1C-1F號舖</p>
         <p>想了解更多支付方式，歡迎向我哋或分店查詢💬</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
   </div>
 </template>

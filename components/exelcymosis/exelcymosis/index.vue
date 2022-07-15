@@ -11,7 +11,7 @@
       <div class="list">
         <div class="coin_box">
           <div class="coin">
-            <img src="@/asset/image/exelcymosis/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/apple.png" alt="">
           </div>
           <div class="list-dis">
             <strong>一般需要拔牙的原因</strong>
@@ -31,7 +31,7 @@
         <!-- <ul class="step_list items-center ">
           <li>
             <div class="list_con">
-              <img src="@/asset/image/periodontosis/apple.png" alt="">
+              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
               <h3> 牙周病屬慢性炎症，</h3>
               <p>分為輕微的牙齦炎及嚴重的牙周炎兩種。會令牙齒鬆脫、移位，影響外貌及口腔健康。</p>
               <div style="display: flex; margin: 3vw 0;">
@@ -51,11 +51,11 @@
       <div class="bg-white py-5 pb-0 py-xs-2">
         <div class="flex justify-center texts">
           <h2>智慧齒脫除</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         </div>
         <div class="coin_box">
           <div class="coin">
-            <img src="@/asset/image/exelcymosis/Maskgroup.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/Maskgroup.png" alt="">
           </div>
           <div class="list_dis">
             <strong>智慧齒可能導致的口腔問題</strong>
@@ -69,13 +69,13 @@
       </div>
       <div class="flex justify-center texts">
         <h2>拔牙及智慧齒脫除過程</h2>
-        <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+        <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         <p>拔牙一般不需要進行手術，但若牙齒歪生或非常接近神經，則有機會需要進行手術式脫牙。</p>
       </div>
       <div v-if='currentIndex == 0 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/exelcymosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -89,23 +89,23 @@
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>透過口腔檢查及口腔全景X光片，了解智慧齒生長的狀況及準確位置</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>注射局部麻醉藥</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>如智慧齒出現阻生，需把牙齦割開、翻起，將智慧齒切成數個部分再逐一移除</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>清潔及縫合傷口</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>預約覆診<br><span style="color:#57B2F3 !important;">手術後腫痛的情況會維持兩至三日，醫生會處方止痛藥和抗生素（需要時服用）舒緩情況，一般約一星期後便完全康復。</span></p>
                 </div>
               </div>
@@ -132,7 +132,7 @@
       <div v-else-if='currentIndex == 1 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/exelcymosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -146,27 +146,27 @@
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>注射局部麻醉或全身麻醉藥（特殊情況下）</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>翻起牙齦</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>除去部分覆蓋牙齒的牙槽骨，使牙根外露</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>把牙齒搖鬆或分割成幾部分取出</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>縫合傷口</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                   <p>咬緊棉花或紗布止血</p>
                 </div>
               </div>
@@ -193,7 +193,7 @@
       <div v-else-if='currentIndex == 2 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="@/asset/image/exelcymosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -207,15 +207,15 @@
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>局部麻醉</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>把牙齒搖鬆，拔掉</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>咬緊棉花或紗布止血</p>
                 </div>
               </div>

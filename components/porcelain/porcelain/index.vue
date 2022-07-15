@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/porcelain/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/porcelain/apple.png" alt="">
             <div class="list_con">
               <strong>瓷貼片</strong>
               <p>
@@ -36,42 +36,42 @@
 
         <div class="flex justify-center texts">
           <h2>瓷貼片治療過程</h2>
-          <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content left">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>進行簡單清潔</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
                 </div>
                 <div class="content left">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>套上口腔張口器及保護眼罩</p>
                 </div>
               </div>
               <div class="gcon">
                 <div class="content right">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>在牙齦塗上牙齦保護劑，以免藍光及美白劑刺激牙齦</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                   <p>牙齒表面均勻塗上激光專用美白劑</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/whitening/7.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
                   <p>以藍光燈開始照射牙齒，整個過程大概需要照射照2-3次</p>
                 </div>
                 <div class="content right">
-                  <img src="@/asset/image/whitening/8.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/whitening/8.svg" height="50vw" width="50vw" alt="">
                   <p>療程完成後，清除美白劑與牙齦保護劑-3次</p>
                 </div>
               </div>
@@ -80,7 +80,7 @@
         </div>
         <div class="flex justify-center texts nofi">
           <h2>選擇瓷貼片療程前你要知</h2>
-          <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         </div>
         <div class="table-box pcshow">
           <table class="tablesd">

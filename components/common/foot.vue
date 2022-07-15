@@ -4,13 +4,13 @@
       <div>
         <ul>
           <li>
-            <img src="@/asset/image/common/FB.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/common/FB.svg" alt="">
           </li>
           <li>
-            <img src="@/asset/image/common/IG.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/common/IG.svg" alt="">
           </li>
           <li>
-            <img src="@/asset/image/common/yt.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/common/yt.svg" alt="">
           </li>
         </ul>
       </div>

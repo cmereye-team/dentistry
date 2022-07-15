@@ -5,7 +5,7 @@
       <a id="zxzx" class="face-button d-block   ">
             <div class="face-primary">
               <span class="icon"> <i class="fa fa-headphones ">
-                <img src="@/asset/image/footce/phone.png" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
               </i></span>
               電話預約
             </div>
@@ -15,7 +15,7 @@
     <a class="face-button1 d-block">
       <div class="face-primary">
         <span class="icon"> <i class="fa  fa-volume-control-phone ">
-        <img class="what" src="@/asset/image/footce/yuyue.png" alt="">
+        <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
         </i></span>
         WhatApps預約
       </div>

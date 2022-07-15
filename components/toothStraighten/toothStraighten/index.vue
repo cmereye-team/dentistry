@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="@/asset/image/toothStraighten/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/toothStraighten/apple.png" alt="">
             <div class="list_con">
               <strong>矯齒（箍牙）</strong>
               <p>
@@ -33,28 +33,28 @@
 
         <div class="flex justify-center texts">
           <h2>矯齒（箍牙）過程</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <div class="contents">
             <div class="gcond">
               <div class="gcon">
                 <div class="content ">
-                  <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>醫生會先進行檢查及評估，確認矯齒的需要</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                   <p>拍攝牙齒外觀照片，包括全口腔及側面X光照片，以印製牙模</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                   <p>醫生講解情況及治療方案</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>配戴牙箍及定期覆診</p>
                 </div>
                 <div class="content ">
-                  <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>矯齒完成後，需定期覆診，晚上佩戴固定器，防止牙齒移位</p>
                 </div>
                 <div class="mbshow">
@@ -80,7 +80,7 @@
         <div class="bg-white py-5 pb-0 py-xs-2 pcnnot">
           <div class="flex justify-center texts">
             <h2>想箍牙要點揀？</h2>
-            <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+            <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
             <p>箍牙主要可分為三類，固定式外箍、內箍及透明配戴式牙箍。矯正時間因人而異，一般為一年至一年半左右，複雜個案需要兩年或以上。心思思想箍牙，但你又知唔知道各種牙箍的分別？</p>
           </div>
           <div class="boxs">

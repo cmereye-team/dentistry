@@ -16,9 +16,9 @@
       </el-select>
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/equipment/post01pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post01pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content">
         <h2>護齒食物你要知 #堅果 </h2>
@@ -26,12 +26,12 @@
         <p>不過記得進食堅果份量要適中，唔好最後因為食得太多堅硬食物令到牙齒磨損喇！🙌</p>
         <p class="label">護齒心得</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/equipment/post02pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post02pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content">
         <h2>漱口水可以取代牙刷及牙線？ </h2>
@@ -41,12 +41,12 @@
         <p class="label">護齒心得</p>
         <p class="label">補牙</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/equipment/post03pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post03pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content yagao">
         <h2>牙膏的秘密 </h2>
@@ -59,12 +59,12 @@
         <p class="label">護齒心得</p>
         <p class="label">牙周病治療</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/equipment/post04pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post04pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content yagao">
         <h2>懷孕媽媽牙齒健康 #母親節 </h2>
@@ -74,12 +74,12 @@
         <p>🔍荷爾蒙變化<br>荷爾蒙於不同孕期會產生不同變化，令牙齦組織因血液循環豐富而更敏感，有機會出現牙齦腫或姙娠型牙齦瘤情況🤔</p>
         <p>備做媽媽嘅你，平時要關注BB同自己健康外，都要好好注意牙齒清潔，最好每3個月就要洗牙喇！</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
     <div class="info">
-      <img class="pic" src="@/asset/image/equipment/post05pic.png" alt="">
+      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post05pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content">
         <h2>勞動節 勤刷牙 </h2>
@@ -88,7 +88,7 @@
         <p>不過謹記用餐30分鐘後先刷，因為進食完嘅口腔PH值會呈酸性狀態，即刻刷會令牙齒受損㗎🏻‍♀️</p>
         <p>不如由今日開始，養成潔齒好習慣啦😉</p>
       </div>
-      <img class="date" src="@/asset/image/equipment/date.png" alt="">
+      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div>
      <el-pagination
     layout="prev, pager, next"

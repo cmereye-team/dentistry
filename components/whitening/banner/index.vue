@@ -4,16 +4,16 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/beauty.png">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/beauty.png">
           <div class="title">
         牙齒美白
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/equgroup.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

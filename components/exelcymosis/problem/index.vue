@@ -2,15 +2,15 @@
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
       <h2>拔牙及智慧齒脫除<br>常見問題</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
       <el-collapse v-model="activeNames" @change="handleChange">
-        <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">拔牙後多久才能進食？</p>
             </div>
@@ -28,7 +28,7 @@
         <el-collapse-item name="2">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">拔牙後可以刷牙嗎?</p>
             </div>
@@ -47,7 +47,7 @@
         <el-collapse-item name="3">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">甚麼情況下需拔掉智慧齒？</p>
             </div>
@@ -68,7 +68,7 @@
         <el-collapse-item name="4">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">拔智慧齒痛嗎？</p>
             </div>
@@ -89,7 +89,7 @@
         <el-collapse-item name="5">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">拔智慧齒需要照x光嗎？</p>
             </div>
@@ -110,7 +110,7 @@
           <el-collapse-item name="6">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="@/asset/image/free/Q.png" alt=""> -->
+              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
               <i class="title1"></i>
               <p :class="judgeActive('6') !== -1 ? 'p2' : 'p1'">為何拔智慧齒會比一般拔牙程序複雜？</p>
             </div>
@@ -224,14 +224,14 @@ p {
   display: inline-block;
   width: 40px;
   height: 25px;
- background-image: url(~@/asset/image/implant/Q.png) ;
+ background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png) ;
  background-repeat: no-repeat;
 }
 .title2{
   display: inline-block;
   width: 40px;
   height: 25px;
-  background-image: url(~@/asset/image/implant/A.png);
+  background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
   background-repeat: no-repeat;
   color: #fff;
 }
@@ -239,7 +239,7 @@ p {
   display: inline-block;
   width: 12px;
   height: 12px;
-  background-image: url(~@/asset/image/implant/+.png);
+  background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
 }
 }
 
@@ -306,7 +306,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/Q.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png);
     background-repeat: no-repeat;
   }
 
@@ -314,7 +314,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/A.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
     background-repeat: no-repeat;
     color: #fff;
   }
@@ -323,14 +323,14 @@ p {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-image: url(~@/asset/image/implant/+.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
   }
 
   .downArrow2 {
     // display: inline-block;
     // width: 12px;
     // height: 12px;
-    // background-image: url(~@/asset/image/implant/+.png);
+    // background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
     // transform: rotate(-180deg);
   }
 

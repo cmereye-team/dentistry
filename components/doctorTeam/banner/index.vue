@@ -4,7 +4,7 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="@/asset/image/banner/OurTeam.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/OurTeam.jpg">
             <div class="title">
         我們的團隊
       </div>

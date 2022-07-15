@@ -7,7 +7,7 @@
     </div>
     <div class="flex justify-center texts">
         <h2>公司簡介</h2>
-        <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
+        <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
         <h3>希瑪牙科</h3>
         <p class="serve_con" >
           為香港希瑪眼科醫療控股有限公司<br>
@@ -16,7 +16,7 @@
         </p>
     </div>
      <div class="city">
-        <img src="@/asset/image/me/CitySkyline.png" alt=""  >
+        <img src="https://static.cmereye.com/static/lkximg/image/me/CitySkyline.png" alt=""  >
       </div>
       <div class="textsd">
         <p class="ya" >

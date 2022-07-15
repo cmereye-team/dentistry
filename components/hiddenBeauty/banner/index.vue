@@ -4,34 +4,34 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <!-- <img src="@/asset/image/banner/hiddenBeauty.png"> -->
-        <img class="bannImg" src=" @/asset/image/banner/hiddenBeauty.png "
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png"> -->
+        <img class="bannImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
             srcset="
-            @/asset/image/banner/hiddenBeautyMb.png 400w,
-            @/asset/image/banner/hiddenBeautyMb.png 750w,
-            @/asset/image/banner/hiddenBeautyMb.png 768w,
-            @/asset/image/banner/hiddenBeauty.png 1024w,
-            @/asset/image/banner/hiddenBeautyMb.png 1125w,
-            @/asset/image/banner/hiddenBeauty.png 1650w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 750w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 768w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1125w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1650w,
             ">
           <div class="title">
-        <!-- <img src="@/asset/image/banner/hiddenBeauty1.png"> -->
-        <img class="iconImg" src=" @/asset/image/banner/hiddenBeauty1.png "
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png"> -->
+        <img class="iconImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png "
             srcset="
-            @/asset/image/banner/hiddenBeauty2.png 400w,
-            @/asset/image/banner/hiddenBeauty2.png 750w,
-            @/asset/image/banner/hiddenBeauty2.png 768w,
-            @/asset/image/banner/hiddenBeauty1.png 1024w,
-            @/asset/image/banner/hiddenBeauty2.png 1125w,
-            @/asset/image/banner/hiddenBeauty1.png 1650w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 750w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 768w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 1125w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png 1650w,
             ">
       </div>
       </div>
       <!-- <div class="carousel-item">
-        <img src="@/asset/image/banner/equgroup.jpg">
+        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div>
     <div class="carousel-item">
-      <img src="@/asset/image/banner/equgroup.jpg">
+      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
     </div> -->
     </div>
     <!-- 指示符 -->

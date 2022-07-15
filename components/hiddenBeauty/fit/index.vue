@@ -3,41 +3,41 @@
     <div class="bg-white py-5 pb-0 py-xs-2">
       <div class="flex justify-center texts">
         <h2>隱適美適合我嗎?</h2>
-        <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+        <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         <p>牙齒不齊有機會影響進食、發音、口腔清潔，更有機會引致蛀牙、牙周病等一系列牙齒問題。隱適美可以解決不同牙齒咬合問題，你有以下牙齒狀況嗎？</p>
       </div>
       <div class="pcshow">
         <div class="coll-box">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth01.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth01.png" alt="">
             <p>咬合過深</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth02.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth02.png" alt="">
             <p>倒及</p>
           </div>
         </div>
         <div class="coll-box coll-box-center">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth03.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth03.png" alt="">
             <p>錯咬/反咬合</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth04.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth04.png" alt="">
             <p>牙縫過大</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth05.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth05.png" alt="">
             <p>開咬</p>
           </div>
         </div>
         <div class="coll-box">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth06.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth06.png" alt="">
             <p>齒列擠擁</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth07.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth07.png" alt="">
             <p>前排齒列擠擁</p>
           </div>
         </div>
@@ -45,38 +45,38 @@
       <div class="mbshow">
         <div class="coll-box">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth01.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth01.png" alt="">
             <p>咬合過深</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth02.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth02.png" alt="">
             <p>倒及</p>
           </div>
         </div>
         <div class="coll-box coll-box-center">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth03.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth03.png" alt="">
             <p>錯咬/反咬合</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth04.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth04.png" alt="">
             <p>牙縫過大</p>
           </div>
         </div>
         <div class="coll-box">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth06.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth06.png" alt="">
             <p>齒列擠擁</p>
           </div>
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth05.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth05.png" alt="">
             <p>開咬</p>
           </div>
 
         </div>
         <div class="coll-box coll-end">
           <div>
-            <img src="@/asset/image/hiddenBeauty/teeth07.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/teeth07.png" alt="">
             <p>前排齒列擠擁</p>
           </div>
         </div>
@@ -85,7 +85,7 @@
     <div class="table-bg">
       <div class="flex justify-center texts">
         <h2>為何選擇隱適美療程?</h2>
-        <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+        <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div class="boxs">
         <div class="box">
@@ -1014,7 +1014,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/Q.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png);
     background-repeat: no-repeat;
   }
 
@@ -1022,7 +1022,7 @@ p {
     display: inline-block;
     width: 40px;
     height: 25px;
-    background-image: url(~@/asset/image/implant/A.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
     background-repeat: no-repeat;
     color: #fff;
   }
@@ -1031,14 +1031,14 @@ p {
     display: inline-block;
     width: 12px;
     height: 12px;
-    background-image: url(~@/asset/image/implant/+.png);
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
   }
 
   .downArrow2 {
     // display: inline-block;
     // width: 12px;
     // height: 12px;
-    // background-image: url(~@/asset/image/implant/+.png);
+    // background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
     // transform: rotate(-180deg);
   }
 

@@ -11,7 +11,7 @@
       <div class="list">
         <div class="coin_box">
           <div class="coin">
-            <img src="@/asset/image/yacrown/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/yacrown/apple.png" alt="">
           </div>
           <div class="list-dis">
             <strong>全瓷牙冠及全鋯牙冠</strong>
@@ -22,7 +22,7 @@
       <div class="bg-white py-5 pb-0 py-xs-2">
         <div class="flex justify-center texts">
           <h2>全瓷牙冠及全鋯牙冠<br>點揀好？</h2>
-          <img class="icons" src="@/asset/image/about-me/serve/Vector.png" alt="">
+          <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <p>有多種製作牙冠的物料，包括：金屬、全鋯及全瓷。每種物料各有優點，可讓患者按需要選擇。</p>
           <p style="color: #57B2F3;">以下為你分析全瓷牙冠及全鋯牙冠的優缺點：</p>
         </div>

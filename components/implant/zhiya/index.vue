@@ -12,7 +12,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li class="bac-box">
-            <img src="@/asset/image/implant/Group1.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/implant/Group1.png" alt="">
             <div class="list_con">
               <strong>植牙</strong>
               <p>植牙，俗稱為「種牙」，是處理缺牙的一種治療方法。牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。</p>
@@ -31,7 +31,7 @@
       </div>
       <div v-if='currentIndex == 0 ? true : false'>
         <div class="Advantage">
-          <img src="@/asset/image/implant/AdvantageBG.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/implant/AdvantageBG.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -45,29 +45,29 @@
           <div class="gcond">
             <div class="gcon">
               <div class="content left">
-                <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                 <p>進行全面口腔檢查、X光或3D電腦掃描，確定植體的安裝位置，同時需確認患者的身體狀況及病歷</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                 <p>注射麻醉藥</p>
               </div>
               <div class="content left">
-                <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                 <p>翻開牙齦在適合安裝的位置鑽孔，植入植體，作為假牙的牙根，有需要時可以利用手術導航系統輔助植入理想位置，再縫合傷口</p>
               </div>
             </div>
             <div class="gcon">
               <div class="content ">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                 <p>2至3個月後，當牙骨與植體癒合，牙醫會安放癒合帽</p>
               </div>
               <div class="content">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                 <p>牙齦癒合後，再進行下一階段的療程進行掃描式印模，再由牙科技師製作義齒</p>
               </div>
               <div class="content">
-                <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                 <p>將義齒固定在植體上，補上缺去的牙齒</p>
               </div>
             </div>
@@ -75,21 +75,21 @@
         </div>
         <div class="video">
 
-          <div class="video_con">
+          <div class="video_con" v-loading="loading">
             
-            <!-- <video width="100%" height="100%"  controls="controls" preload="none"  poster="@/asset/image/implant/vedio.png">
-              <source src="@/asset/websitevideo/zhiya.mp4" type="video/mp4">
+            <!-- <video width="100%" height="100%"  controls="controls" preload="none"  poster="https://static.cmereye.com/static/lkximg/image/implant/vedio.png">
+              <source src="https://static.cmereye.com/static/lkximg/websitevideo/zhiya.mp4" type="video/mp4">
               你的浏览器不支持HTML5视频。
             </video> -->
-
-            <video controls="controls" >
-              <source src="@/asset/websitevideo/zhiya.mp4"  type="video/mp4">
+            <iframe class="iframesty"  ref="Iframe" src="https://www.youtube.com/embed/loJSJebtxG8" title="【拆解植牙全過程】#希小牙實驗室" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- <video controls="controls" >
+              <source src="https://static.cmereye.com/static/lkximg/websitevideo/zhiya.mp4"  type="video/mp4">
               您的浏览器不支持 video 标签。
-          </video>
+          </video> -->
           </div>
           <div class="flex justify-center texts">
             <h2>植牙、假牙點揀好？</h2>
-            <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
             <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
           </div>
 
@@ -181,7 +181,7 @@
       </div>
       <div v-else>
         <div class="Advantage">
-          <img src="@/asset/image/implant/AdvantageBG.png" alt="">
+          <img src="https://static.cmereye.com/static/lkximg/image/implant/AdvantageBG.png" alt="">
           <div class="Advanbutton" style="box-sizing: content-box;">
             <ul>
               <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
@@ -195,29 +195,29 @@
           <div class="gcond">
             <div class="gcon">
               <div class="content">
-                <img src="@/asset/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                 <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
               </div>
               <div class="content">
-                <img src="@/asset/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                 <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
               </div>
               <div class="content ">
-                <img src="@/asset/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                 <p>牙醫建議牙橋的材質，理想顏色、形狀和色澤</p>
               </div>
             </div>
             <div class="gcon">
               <div class="content right">
-                <img src="@/asset/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                 <p>取得病人共識後，牙醫會把牙齒印模及其他資料交給牙科技師訂製假牙</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                 <p>牙橋訂製一般需要多個工作天，期間病人只能使用臨時牙橋。臨時牙橋只為保護牙齒，並不能照常進食</p>
               </div>
               <div class="content right">
-                <img src="@/asset/image/implant/6.svg" height="50vw" width="50vw" alt="">
+                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
                 <p>成品製作完成後，牙醫會作最後微調，令牙橋與病人口腔有完全的密合度</p>
               </div>
             </div>
@@ -226,11 +226,11 @@
         <div class="videos">
           <div class="video_con">
             <div class="cosn" ></div>
-            <!-- <img src="@/asset/image/implant/vedio.png" alt=""> -->
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/implant/vedio.png" alt=""> -->
           </div>
           <div class="flex justify-center texts" style="padding-top: 1vw;">
             <h2>植牙、假牙點揀好？</h2>
-            <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
             <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。<br>想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
           </div>
             <div class="box">
@@ -326,6 +326,7 @@
 export default {
   data() {
     return {
+      loading: false, //默认不显示loading
       list: [{
         id: 0,
         title: '植牙過程'
@@ -339,9 +340,28 @@ export default {
     }
   },
   computed: {
-
+  },
+   mounted() {
+    this.iframeLoad();
   },
   methods: {
+    // 调用方法
+            iframeLoad() {
+            this.loading = true;
+            const iframe = this.$refs.Iframe;
+            // 兼容处理
+            if (iframe.attachEvent) {
+                // IE
+                iframe.attachEvent("onload", () => {
+                this.loading = false;
+                });
+            } else {
+                // 非IE
+                iframe.onload = () => {
+                this.loading = false;
+                };
+            }
+            },
     handleClick(index) {
       // console.log(index);
       this.currentIndex = index
@@ -378,6 +398,10 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .iframesty{
+     width: 80%; 
+     height: 690px
+  }
   .cosn{
     background-color: #fff;
     width:80%;
@@ -688,6 +712,10 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+   .iframesty{
+     width: 100%; 
+     height: 234px
+  }
   .box {
        height: 414px;
     // background: #eee;
