@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # dentistry
+=======
+# dentistry 1
+>>>>>>> 8e9ae0e11604707239b41de944bc07bd91e06aab
 
 ## Build Setup
 
