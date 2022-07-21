@@ -141,6 +141,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  ::v-deep ul {
+      list-style-type: none !important;
+    }
   .mbshow{
     display: none;
   }
@@ -209,7 +212,7 @@ export default {
     font-size: 17px;
 
     ul {
-      list-style-type: none;
+      list-style-type: none !important;
       text-align: center;
       margin: 0;
       font-weight: 500;
@@ -465,7 +468,7 @@ export default {
       display: flex;
 
       p {
-        padding-left: 4vw;
+        padding-left: 4.6vw;
         padding-top: 1vw;
         color: #9BA5B1;
         display: flex;

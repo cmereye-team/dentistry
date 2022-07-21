@@ -13,96 +13,230 @@
         <li>新界</li> -->
       </ul>
     </div>
-    <div class="tab flex justify-center" id="tab">
-      <ul>
-        <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
-          v-for='(item, index) in list'>
-          <p>{{ item.title }}</p>
-        </li>
-      </ul>
-    </div>
-    <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
-      <div id="map">
-        <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
-        <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" >
-        <!-- <iframe width="100%" height="100%"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <div v-if="addcurrentIndex === 0">
+      <div class="tab flex justify-center" id="tab">
+        <ul>
+          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
+            v-for='(item, index) in list'>
+            <p>{{ item.title }}</p>
+          </li>
+        </ul>
       </div>
-      <div>
-        <div class="mapcontennt">
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
-          <p class="address1" id="addresd">地址</p>
-          <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-          <p class="address1">查詢熱線</p>
-          <p class="address2">36202428</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
-          <p class="address1">營業時間</p>
-          <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
-          <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
-        </div>
-        <div class="button">
-          <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-          <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
-        </div>
-      </div>
-    </div>
-    <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
-      <div id="map">
+      <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
+        <div id="map">
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
-          <img src="https://static.cmereye.com/static/lkximg/map/materials_銅鑼灣.jpg" width="100%" >
-        <!-- <iframe width="100%" height="100%"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" >
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1" id="addresd">地址</p>
+            <p class="address2">中環畢打街1-3號中建大廈11樓1102室</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:30</p>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
+        </div>
       </div>
-      <div>
-        <div class="mapcontennt">
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
-          <p class="address1 " id="addresd">地址</p>
-          <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-          <p class="address1">查詢熱線</p>
-          <p class="address2">36202428</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
-          <p class="address1">營業時間</p>
-          <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
-          <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
+      <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
+        <div id="map">
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
+            <img src="https://static.cmereye.com/static/lkximg/map/materials_銅鑼灣.jpg" width="100%" >
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
-        <div class="button">
-          <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-          <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
-        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1 " id="addresd">地址</p>
+            <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:00</p>
+            <p class="week2">星期六<br> 上午9:30 - 下午1:00<br>星期日及公眾假期休息</p>
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
 
+        </div>
+      </div>
+      <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
+      <div id="map">
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
+            <img src="https://static.cmereye.com/static/lkximg/map/materials_灣仔.jpg" width="100%">
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1 " id="addresd">地址</p>
+            <p class="address2">灣仔莊士敦道197號廣亞大樓地下</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午7:00</p>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:00<br>星期日及公眾假期休息</p>
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
+
+        </div>
       </div>
     </div>
-    <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
-    <div id="map">
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
-          <img src="https://static.cmereye.com/static/lkximg/map/materials_灣仔.jpg" width="100%">
-        <!-- <iframe width="100%" height="100%"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    <div v-else-if="addcurrentIndex === 1">
+      <div class="tab flex justify-center" id="tab">
+        <ul>
+          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
+            v-for='(item, index) in list2'>
+            <p>{{ item.title }}</p>
+          </li>
+        </ul>
       </div>
-      <div>
-        <div class="mapcontennt">
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
-          <p class="address1 " id="addresd">地址</p>
-          <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-          <p class="address1">查詢熱線</p>
-          <p class="address2">36202428</p>
-          <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
-          <p class="address1">營業時間</p>
-          <p class="week">星期一至星期五<br> 09:30 － 13:00<br> 14:30 － 18:00</p>
-          <p class="week2">星期六<br> 09:30 － 13:00<br>星期日及公眾假期休息</p>
+      <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
+        <div id="map">
+          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" >
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
-        <div class="button">
-          <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-          <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1" id="addresd">地址</p>
+            <p class="address2">尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期二: <br> 上午9:00 - 下午7:00<br> 
+            星期三至星期五: <br> 上午9:00 - 下午6:00</p>
+            <p class="week2">星期六<br> 上午9:00 - 下午5:00<br>星期日及公眾假期休息</p>
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
         </div>
+      </div>
+      <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
+        <div id="map">
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
+            <img src="https://static.cmereye.com/static/lkximg/map/materials_鑽石山.jpg" width="100%" >
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1 " id="addresd">地址</p>
+            <p class="address2">鑽石山龍蟠街3號荷里活廣場一樓116A舖</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期六:<br> 上午10:00 - 下午7:00<br>星期日及公眾假期休息</p>
+            <!-- <p class="week2">星期日及公眾假期休息</p> -->
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
 
+        </div>
       </div>
+      <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
+      <div id="map">
+            <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
+            <img src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg" width="100%">
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1 " id="addresd">地址</p>
+            <p class="address2">觀塘開源道79號鱷魚恤中心16樓1601室</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期五: <br>上午9:30 - 下午6:30 <br>
+            星期六: 上午9:30 - 下午5:30<br>星期日及公眾假期: 休息</p>
+            <!-- <p class="week2">星期日及公眾假期休息</p> -->
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div v-else-if="addcurrentIndex === 2">
+      <div class="tab flex justify-center" id="tab">
+        <ul>
+          <li @click='handleClick(index)' class="active" :key='item.id'
+            v-for='(item, index) in list3'>
+            <p>{{ item.title }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="justify-center addmap">
+        <div id="map">
+          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_沙田.jpg" width="100%" >
+          <!-- <iframe width="100%" height="100%"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
+            <p class="address1" id="addresd">地址</p>
+            <p class="address2">沙田正街11-17號偉華中心2樓1C-1F號舖</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
+            <p class="address1">查詢熱線</p>
+            <p class="address2">36202428</p>
+            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
+            <p class="address1">營業時間</p>
+            <p class="week">星期一至星期五: <br> 上午9:30 - 下午6:30</p>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+          </div>
+          <div class="button">
+            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
+            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+          </div>
+        </div>
+      </div> 
     </div>
   </div>
 </template>
@@ -124,6 +258,22 @@ export default {
       {
         id: 3,
         title: '灣仔'
+      }],
+       list2: [{
+        id: 1,
+        title: '尖沙咀'
+      },
+      {
+        id: 2,
+        title: '鑽石山'
+      },
+      {
+        id: 3,
+        title: '觀塘'
+      }],
+      list3: [{
+        id: 1,
+        title: '沙田'
       }],
       addresslist: [{
         id: 1,
@@ -263,8 +413,8 @@ export default {
     border-color: transparent #8CD1F8 transparent transparent;
   }
   .mapcontennt {
-    height: 20vw;
-    width: 27vw;
+    height: 22vw;
+    width: 29vw;
     border: 1;
     background: #8CD1F8;
     border-radius: 30px 30px 30px 30px;
@@ -305,13 +455,17 @@ export default {
       color: white;
       position: absolute;
     }
-
+.week1 {
+          padding: 1vw 3.3vw 0 2.5vw;
+          color: white;
+          
+        }
     .week2 {
       position: relative;
       color: #fff;
       display: flex;
       // position: absolute;
-      margin-left: 13vw;
+      margin-left: 15vw;
     }
 
     // p{
@@ -466,7 +620,7 @@ export default {
   }
 
   .mapcontennt {
-    height: 69vw;
+    height: 73vw;
     width: 81vw;
     border: 1;
     background: #8CD1F8;
@@ -507,13 +661,17 @@ export default {
     }
 
     .week {
-      padding: 1vw 1.3vw 0 2.5vw;
+      padding: 1vw 3.3vw 0 2.5vw;
       color: white;
       position: absolute;
     }
-
+    .week1 {
+          padding: 1vw 3.3vw 0 2.5vw;
+          color: white;
+          
+        }
     .week2 {
-      padding: 1vw 1.3vw 0 1.8vw;
+      padding: 1vw 3.3vw 0 1.8vw;
 
       position: relative;
       color: #fff;

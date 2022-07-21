@@ -299,7 +299,7 @@ export default {
   }
     span{
       display: block;
-      padding-left: 2vw;
+      padding-left: 1vw;
       padding-top: 1vw;
       color: #9BA5B1;
     }
@@ -312,7 +312,7 @@ export default {
   }
   .lists{
     display: flex;
-    margin: 2vw 18vw;
+    margin: 2vw 8vw;
   }
   .tablesd {
     margin-left: 4vw;
@@ -371,8 +371,23 @@ export default {
     li {
       font-size: 16px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
+     strong {
+    color: #9BA5B1;
+    font-size: 24px;  
+    font-weight: 500;
+    padding: 0vw !important;
+    &:before {
+      content: "";
+      margin-left: 15px;
+      padding-left: 15px;
+      border-left: 0.8vw solid #9BD0F5;
+      height: 3vw;
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
   }
   .list_cons{
     margin: 2vw 0;
@@ -395,12 +410,12 @@ export default {
   }
 
   .left {
-    padding: 2vw 13vw 2vw 2vw !important;
+    padding: 2vw 3vw 2vw 2vw !important;
 
   }
 .right{
   // padding-left: 14vw !important;
-    padding: 2vw 0vw 2vw 2vw !important;
+    padding: 2vw 0vw 2vw 5vw !important;
 
 }
   .contents {
@@ -409,7 +424,7 @@ export default {
     .gcond {
       display: flex;
       margin: 0 auto;
-      width: 68%;
+      width: 52%;
     }
 
     .content {
@@ -445,7 +460,7 @@ export default {
     background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 66%;
+      width: 48%;
     }
 
   }

@@ -19,9 +19,8 @@
         <ul>
           <li>香港大學牙醫學士</li>
           <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
-          <li>香港大學牙醫學士</li>
+          <li>香港牙醫學院院士(家庭牙醫學)專科</li>
+          <li>香港醫學專科學院院士(牙科) </li>
         </ul>
       </div>
     </div>
@@ -32,11 +31,12 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>蘇格蘭鄧迪大學牙醫學士</li>
+          <li>澳紐皇家牙科醫學院院士</li>
           <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
+          <li>格拉斯哥皇家醫學院牙科院士</li>
           <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
+          <li>香港牙科醫學院院士(家庭牙醫學)專科</li>
         </ul>
       </div>
     </div>
@@ -48,15 +48,15 @@
       <div class="conts">
         <ul>
           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
+          <li>愛丁堡皇家外科醫學院口腔外科學院員</li>
           <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
+          <li>澳紐皇家牙科醫學院院士</li>
           <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
+           <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
+          <li>香港醫學專科學院院士(牙科)</li>
+          <li>英國皇家外科醫學院植齒學文憑</li>
+          <li>香港大學牙醫碩士(植齒學)</li>
+          <li>倫敦英皇學院臨床牙科碩士(固定及活動修復齒科)</li>
         </ul>
       </div>
     </div>
@@ -71,9 +71,11 @@
         <ul>
           <li>香港大學牙醫學士</li>
           <li>香港大學牙醫碩士(口腔頜面外科學) </li>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>愛丁堡皇家外科醫學院口腔頜面外科學院員</li>
+          <li>格拉斯哥皇家醫學院牙科學系院員</li>
+          <li>愛丁堡皇家外科醫學院牙科學系院員</li>
+          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
+          <li>香港醫學專科學院院士(牙科)</li>
         </ul>
       </div>
     </div>
@@ -84,8 +86,8 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>英國紐卡素大學牙科醫學學士 </li>
+          <li>英國倫敦大學理科碩士</li>
           <li>香港醫學專科學院院士(牙科)</li>
           <li>香港牙科醫學院院士(兒童齒科)專科</li>
         </ul>
@@ -102,6 +104,13 @@
           <li>香港大學牙醫碩士(牙周病學)</li>
           <li>香港大學牙周病學高級文憑</li>
           <li>愛丁堡皇家外科醫學院牙齒修復學院員(修復齒科)</li>
+          <li>香港牙科醫學院院士(牙周治療科)專科</li>
+          <li>香港醫學專科學院院士 (牙科)</li>
+          <li>澳紐皇家牙科醫學院院員(牙周治療科)</li>
+          <li>愛丁堡皇家外科醫學院植齒學文憑</li>
+          <li>愛丁堡皇家外科醫學院牙科院士</li>
+          <li>格拉斯哥皇家醫學院牙科院士</li>
+          <li>曼徹斯特大學理科碩士(牙齒修復美學)</li>
         </ul>
       </div>
     </div>
@@ -115,10 +124,12 @@
       <div class="conts">
         <ul>
           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
+          <li>澳紐皇家牙科醫學院院士</li>
           <li>香港大學牙醫碩士(牙髓病學)</li>
           <li>香港大學牙髓病學高級文憑</li>
-          <li>TBC</li>
+          <li>愛丁堡皇家外科醫學院牙髓治療科院員</li>
+          <li>香港醫學專科學院院士(牙科)</li>
+          <li>香港牙科醫學院院士(牙髓治療科)專科</li>
         </ul>
       </div>
     </div>
@@ -129,11 +140,12 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士(牙髓病學) </li>
+          <li>泰國朱拉隆功大學牙醫學士 </li>
+          <li>香港大學牙醫碩士(牙髓病學)</li>
           <li>香港大學牙髓病學高級文憑</li>
-          <li>TBC</li>
+          <li>愛丁堡皇家外科醫學院牙髓治療科院員</li>
           <li>香港牙科醫學院院士(牙髓治療科)專科</li>
+          <li>香港醫學專科學院院士 (牙科)</li>
         </ul>
       </div>
     </div>
@@ -144,9 +156,9 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>英國倫敦大學牙科醫科學士 </li>
+          <li>愛丁堡皇家外科醫學院牙科學系院員</li>
+          <li>格拉斯哥皇家醫學院牙科學系院員</li>
           <li>香港大學理科碩士(植齒學)</li>
         </ul>
       </div>
@@ -160,8 +172,8 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>英國倫敦大學牙科醫科學士</li>
+          <li>曼徹斯特大學理科碩士(牙齒修復美學)</li>
         </ul>
       </div>
     </div>
@@ -172,7 +184,7 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
+          <li>BDS DR MGR Medical Uni (Chennai)</li>
           <li>香港大學牙醫碩士(牙髓病學) </li>
           <li>格拉斯哥皇家醫學院牙科學系院員</li>
         </ul>
@@ -185,7 +197,7 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
+          <li>英國倫敦大學牙科醫學士</li>
         </ul>
       </div>
     </div>
@@ -220,8 +232,8 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
+          <li>英國紐卡素大學牙醫學士</li>
+          <li>愛丁堡皇家外科醫學院牙科學系院員</li>
         </ul>
       </div>
     </div>
@@ -234,8 +246,8 @@
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士(牙周病學) </li>
+          <li>中國溫州醫學院牙醫學士</li>
+          <li>香港大學牙醫碩士(牙周病學)</li>
         </ul>
       </div>
     </div>
@@ -268,14 +280,10 @@
        <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>姚本基</span> 醫生</p>
+        <p><span>李可晴</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
           <li>香港大學牙醫學士</li>
         </ul>
       </div>
@@ -283,35 +291,25 @@
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>柯明哲</span> 醫生</p>
+        <p><span>李曉敏</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
+          <li>澳洲墨爾本大學牙科學學士</li>          
         </ul>
       </div>
     </div>
     <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>葉學韶</span> 醫生</p>
+        <p><span>盧德寶</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
+          <li>澳紐皇家牙科醫學院院士</li>
+          <li>香港牙科醫學院院士</li>
+          <li>香港醫學專科學院院士(牙科)</li>
         </ul>
       </div>
     </div>
@@ -320,14 +318,10 @@
        <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>姚本基</span> 醫生</p>
+        <p><span>麥穎恒</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士</li>
-          <li>香港醫學專科學院院士</li>
           <li>香港大學牙醫學士</li>
         </ul>
       </div>
@@ -335,35 +329,62 @@
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>柯明哲</span> 醫生</p>
+        <p><span>吳彥樑</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
-          <li>TBC</li>
-          <li>TBC</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>TBC</li>
-          <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
+          <li>香港大學牙醫學士</li>
+          <li>格拉斯哥皇家醫學院牙科學系院員</li>
+          <li>愛丁堡皇家外科醫學院牙科學系院員</li>
         </ul>
       </div>
     </div>
     <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>葉學韶</span> 醫生</p>
+        <p><span>沈峰豪</span> 醫生</p>
       </div>
       <div class="conts">
         <ul>
           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港大學牙醫學士</li>
-          <li>TBC</li>
-          <li>香港大學牙醫碩士</li>
-          <li>TBC</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
+          <li>澳紐皇家牙科醫學院院士(牙科全科)</li>
+          <li>香港大學牙醫碩士(矯齒學與牙頜面矯形學)</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+    <div class="team">
+       <div class="doctor">
+      <div class="name">
+        <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
+        <p><span>戴柏全</span> 醫生</p>
+      </div>
+      <div class="conts">
+        <ul>
+          <li>香港大學牙醫學士</li>
+        </ul>
+      </div>
+    </div>
+     <div class="doctor">
+      <div class="name">
+        <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
+        <p><span>邱易光</span> 醫生</p>
+      </div>
+      <div class="conts">
+        <ul>
+          <li>香港大學牙醫學士</li>
+          <li>英國皇家外科醫學院牙醫全科文憑</li>
+        </ul>
+      </div>
+    </div>
+    <div class="doctor">
+      <div class="name">
+        <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
+        <p><span>余維敬</span> 醫生</p>
+      </div>
+      <div class="conts">
+        <ul>
+          <li>香港大學牙醫學士</li>
         </ul>
       </div>
     </div>

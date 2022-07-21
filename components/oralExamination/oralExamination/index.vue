@@ -423,7 +423,7 @@ export default {
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 5vw;
         color: #9BA5B1;
 
         &:before {

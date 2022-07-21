@@ -189,8 +189,8 @@ export default {
     border-top: none;
     border-bottom-right-radius: 14px;
 }
-  [data-v-2f2cc59f] .carousel-indicators {
-    display: block;
+  v::deep .carousel-indicators {
+    display: block !important;
     margin: 0 10vw;
   }
   .ambient{
@@ -236,6 +236,9 @@ export default {
 
 ::v-deep .carousel-indicators {
   position: inherit;
+  display: block !important;
+  margin-right: 8% !important;
+    margin-left: 8% !important;
 }
 
 ::v-deep .carousel-indicators .active {
@@ -246,7 +249,7 @@ export default {
     color: rgba(0,0,0,.55);
     border-color: #fff
 }
-  .carousel-inner img[data-v-703b804a] {
+  .carousel-inner img {
     width: 90%;
     // border-radius: 80px 80px 80px 80px;
   }
@@ -382,7 +385,6 @@ export default {
     /* bottom: 0; */
     /* left: 0; */
     /* z-index: 2; */
-    /* display: flex; */
     /* justify-content: center; */
     padding: 0;
     margin-right: 15%;

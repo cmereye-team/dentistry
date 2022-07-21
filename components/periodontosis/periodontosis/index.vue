@@ -439,7 +439,7 @@ export default {
 
     span {
       display: block;
-      padding-left: 2vw;
+      padding-left: 0.7vw;
       padding-top: 1vw;
       color: #9BA5B1;
     }
@@ -465,7 +465,7 @@ export default {
 
   .video {
     // background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 2vw 16vw;
+    margin: 2vw 22vw;
     .cons-box{
       padding-bottom: 6vw;
     }
@@ -486,19 +486,19 @@ export default {
   }
 
   .left {
-    padding: 2vw 5vw 2vw 2vw !important;
+    padding: 2vw 1vw 2vw 2vw !important;
 
   }
 
   .right {
     // padding-left: 14vw !important;
-    padding: 2vw 0vw 2vw 2vw !important;
+    padding: 2vw 4vw 2vw 2vw !important;
 
   }
 .gconds {
       display: flex;
       margin: 0 auto;
-      width: 68%;
+      width: 52%;
       background: #fff;
       text-align: center;
       justify-content: center;
@@ -509,12 +509,12 @@ export default {
     .gcond {
       display: flex;
       margin: 0 auto;
-      width: 68%;
+      width: 52%;
       background: #fff;
     }
 
     .content {
-      padding: 5vw 1vw;
+      padding: 3vw 1vw;
       display: flex;
       align-items: center;
 
@@ -546,7 +546,7 @@ export default {
     // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 66%;
+      width: 48%;
     }
 
   }
@@ -566,13 +566,13 @@ export default {
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100px;
+        height: 80px;
         /* line-height: 94px; */
         align-self: center;
-        width: 100px;
+        width: 80px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 4vw;
+        margin: 1px 2vw;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
@@ -768,7 +768,7 @@ export default {
     align-items: center;
   }
   .boxs {
-    background-image: linear-gradient(to bottom, #fff 53%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 47%, #ECF7FC 0);
 
   }
 .cons-box{

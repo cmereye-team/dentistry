@@ -62,7 +62,7 @@
                 <td>優點</td>
               </tr>
               <tr style=" background: #ECF7FC; ">
-                <td style="border-radius:  0 0 10px 10px;">缺點</td>
+                <td style="border-radius:  0 0 30px 30px;">缺點</td>
               </tr>
             </table>
             <table class="tablesd">
@@ -96,7 +96,7 @@
                 </td>
               </tr>
               <tr style=" background: #ECF7FC">
-                <td style="border-radius:  0 0 20px 20px;">
+                <td style="border-radius:  0 0 30px 30px;">
                   <ul>
                     <li>需修磨牙齒</li>
                   </ul>
@@ -134,7 +134,7 @@
                 </td>
               </tr>
               <tr style=" background: #ECF7FC">
-                <td style="border-radius:  0 0 20px 20px;">
+                <td style="border-radius:  0 0 30px 30px;">
                   <ul style="margin: 0.6vw 0;">
                     <li>需修磨兩側牙齒，若其中一顆牙齒出現問題，需重新製作整組牙橋</li>
                   </ul>
@@ -326,7 +326,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -353,17 +353,17 @@ export default {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     td:nth-child(3) {
-      border-radius: 0 0 20px 20px;
+      border-radius: 0 0 30px 30px;
     }
   }
 
@@ -371,7 +371,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;

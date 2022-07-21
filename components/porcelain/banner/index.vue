@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/porcelain.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelain.png 1650w,
             ">

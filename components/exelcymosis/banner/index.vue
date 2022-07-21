@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png 1650w,
             ">

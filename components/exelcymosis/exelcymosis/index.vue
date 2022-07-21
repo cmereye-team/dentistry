@@ -484,7 +484,7 @@ export default {
     li {
       font-size: 21px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
     p{
       color: #9BA5B1;
@@ -498,7 +498,7 @@ export default {
 
   .video {
     // background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 6vw 16vw;
+    margin: 2vw 16vw;
 
     .cons-box {
       padding-bottom: 6vw;
@@ -583,7 +583,7 @@ export default {
     // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 66%;
+      width: 48%;
     }
 
   }
@@ -603,13 +603,13 @@ export default {
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100px;
+        height: 60px;
         /* line-height: 94px; */
         align-self: center;
-        width: 100px;
+        width: 60px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 4vw;
+        margin: 1px 2vw;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;

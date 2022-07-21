@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png 1650w,
             ">

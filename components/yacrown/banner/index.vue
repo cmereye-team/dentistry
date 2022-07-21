@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/yacrownMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/yacrownMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/yacrownMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/yacrown.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/yacrownMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/yacrownMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/yacrown.png 1650w,
             ">

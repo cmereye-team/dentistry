@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/healthcare.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/healthcare.png 1650w,
             ">

@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/News.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/News.jpg 1650w,
             ">

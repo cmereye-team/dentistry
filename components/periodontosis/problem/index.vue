@@ -5,7 +5,7 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
               <el-collapse-item  name="1">
                   <template slot="title"  >
@@ -20,10 +20,7 @@
                      <i class="title2"></i>
                    <span>
                     <ul>
-                      <li>1. 吸煙人士</li>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>牙周病的主要原因是口腔衛生狀態不好，令牙垢膜長期積聚，分泌出毒素感染牙周組織，導致牙肉腫脹或流牙血。如發炎情況持續，令牙槽骨受到侵蝕，形成「牙周袋」，當情況持續惡化的時候，便會令牙齒變得鬆動，移位，甚至脫落。</li>
                     </ul>
                     </span>
                   </div>
@@ -42,6 +39,7 @@
                    <span>
                    
                     <ul>
+                      <li>1. 吸煙人士</li>
                       <li>2. 沒有定期口腔檢查及洗牙</li>
                       <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
                       <li>4. 長期服用藥物人士</li>
@@ -63,9 +61,7 @@
                    <span>
                    
                      <ul>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>定期洗牙的確能維持口腔健康，但牙周病並不只是牙齦出現問題，牙周骨質受到破壞也有影響。最近亦有研究顯示，牙周病與糖尿病有若干關係。因此，定期口腔檢查及洗牙是必須的。</li>
                     </ul>
                     </span>
                   </div>
@@ -84,9 +80,7 @@
                    <span>
                    
                      <ul>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>由於牙周病令牙齦萎縮，牙根外露，因此接受牙根刮治後，有些牙齒會變得更敏感，但這些情況一般會在三至四天後慢慢消退。</li>
                     </ul>
                     </span>
                   </div>
@@ -105,9 +99,7 @@
                    <span>
                    
                      <ul>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>牙醫會按病況的嚴重程度，患者的配合程度而預計覆診時間。一般建議情況受控的患者每三個月覆診一次，監察牙周康復進程。</li>
                     </ul>
                     </span>
                   </div>

@@ -163,8 +163,8 @@ export default {
 
   .lists {
     display: flex;
-    margin: 0 18vw;
-    margin-top: 5vw;
+    margin: 0 8vw;
+    margin-top: 3vw;
   }
 
   .tablesd {
@@ -249,7 +249,7 @@ export default {
     li {
       font-size: 16px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
 
     strong {
@@ -440,7 +440,7 @@ export default {
       display: flex;
 
       p {
-        padding-left: 4vw;
+        padding-left: 4.5vw;
         padding-top: 1vw;
         color: #9BA5B1;
         display: flex;

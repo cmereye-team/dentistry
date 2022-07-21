@@ -5,7 +5,7 @@
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
@@ -21,7 +21,7 @@
             <span>
 
               <ul>
-                <li>孕婦可以接受口腔檢查，但不宜在懷孕期間進行其他牙科治療。雖然牙科的X光<br>機幅射量低，但在非緊急的情況下並不會建議使用。有見及此，所有非緊急的牙科治療應推遲至分娩後才進行。</li>
+                <li>一般建議半年進行一次口腔檢查，減少引致各種口腔問題的機會。</li>
               </ul>
             </span>
           </div>

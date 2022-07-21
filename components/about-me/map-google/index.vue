@@ -465,7 +465,7 @@ export default {
   }
 
   .mapcontennt {
-    height: 69vw;
+    height: 73vw;
     width: 81vw;
     border: 1;
     background: #8CD1F8;
@@ -512,7 +512,7 @@ export default {
     }
 
     .week2 {
-      padding: 1vw 1.3vw 0 1.8vw;
+      padding: 1vw 3.3vw 0 1.8vw;
 
       position: relative;
       color: #fff;

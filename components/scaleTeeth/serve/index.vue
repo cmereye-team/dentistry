@@ -397,7 +397,7 @@ a {
 }
 
 .service_pic img {
-  max-width: 80px;
+  // max-width: 80px;
   // width: 5vw;
 }
 
@@ -625,8 +625,8 @@ a {
   }
 
   .service_pic img {
-    max-width: 80px;
-    width: 7vw;
+    // max-width: 80px;
+    width: 6vw;
   }
 
   .service_txt {

@@ -207,7 +207,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;
@@ -231,7 +231,7 @@ export default {
 
   .newsty {
     background: #ECF7FC;
-    border-radius: 0 0 17px 17px !important;
+    border-radius: 0 0 30px 30px !important;
 
   }
 
@@ -258,7 +258,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -282,13 +282,13 @@ export default {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
   }
 
@@ -297,7 +297,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -321,13 +321,13 @@ export default {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
   }
 
@@ -335,7 +335,7 @@ export default {
     li {
       font-size: 16px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
 
     strong {

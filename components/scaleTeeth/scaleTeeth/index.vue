@@ -111,7 +111,7 @@ export default {
 .texts {
   text-align: center;
   margin-top: 2vw;
-      margin-bottom: 9vw;
+      margin-bottom: 3vw;
   h2 {
     font-weight: 500;
     color: #79828D;
@@ -155,8 +155,8 @@ export default {
 
   .lists {
     display: flex;
-    margin: 0 18vw;
-    margin-top: 5vw;
+    margin: 0 8vw;
+    // margin-top: 5vw;
   }
 
   .tablesd {
@@ -241,7 +241,7 @@ export default {
     li {
       font-size: 16px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
 
     strong {

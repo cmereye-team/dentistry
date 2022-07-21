@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/therapy.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/therapy.png 1650w,
             ">

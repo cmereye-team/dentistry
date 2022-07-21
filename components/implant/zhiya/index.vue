@@ -194,15 +194,15 @@
         <div class="contents">
           <div class="gcond">
             <div class="gcon">
-              <div class="content">
+              <div class="content lefts">
                 <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                 <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
               </div>
-              <div class="content">
+              <div class="content lefts">
                 <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
                 <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
               </div>
-              <div class="content ">
+              <div class="content  lefts">
                 <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
                 <p>牙醫建議牙橋的材質，理想顏色、形狀和色澤</p>
               </div>
@@ -430,15 +430,19 @@ export default {
 
   .lists {
     display: flex;
-    margin: 0 18vw;
+    margin: 3vw 18vw;
   }
+  .texts{
+    
+    margin-top: 5vw;
 
+  }
   .tablesd {
     margin-left: 4vw;
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -460,13 +464,13 @@ export default {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
   }
 
@@ -474,7 +478,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;
@@ -495,7 +499,7 @@ export default {
     li {
       font-size: 16px;
       color: #79828D;
-      margin-left: 2vw;
+      margin-left: 1vw;
     }
 
     strong {
@@ -539,10 +543,11 @@ export default {
   }
 
   .left {
-    padding: 5vw 13vw 5vw 2vw !important;
-
+    padding: 5vw 8vw 5vw 11vw !important;
   }
-
+  .lefts {
+    padding: 5vw 0vw 5vw 11vw !important;
+  }
   .right {
     padding-left: 14vw !important;
   }
@@ -557,7 +562,7 @@ export default {
     }
 
     .content {
-      padding: 5vw 1vw;
+      padding: 5vw 11vw 5vw 1vw;
       display: flex;
       align-items: center;
 
@@ -589,7 +594,7 @@ export default {
     background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 66%;
+      width: 48%;
     }
 
   }
@@ -681,7 +686,7 @@ export default {
       display: flex;
 
       p {
-        padding-left: 4vw;
+            padding-left: 4.6vw;
         padding-top: 1vw;
         color: #9BA5B1;
         display: flex;
@@ -695,8 +700,8 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.3vw solid #9BD0F5;
-          height: 1vw;
+          border-left: 0.8vw solid #9BD0F5;
+          height: 2vw;
           display: inline-block;
           vertical-align: middle;
         }

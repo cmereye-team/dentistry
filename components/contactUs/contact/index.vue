@@ -25,8 +25,12 @@
       </el-form-item>
       <el-form-item label="診症選擇">
     <el-select v-model="ruleForm.region" placeholder="請選擇你的答案">
-      <el-option label="請選擇你的答案" value="shanghai"></el-option>
-      <el-option label="請選擇你的答案" value="beijing"></el-option>
+      <el-option 
+        v-for="item in selectList"
+        :key="item.id"
+        :label="item.itemName"
+        :value="item.itemName"
+      ></el-option>
     </el-select>
   </el-form-item>
   </el-form>
@@ -51,6 +55,22 @@
 export default {
   data() {
     return {
+      selectList:[
+        { itemName: '植牙', id:1},
+        { itemName: '根管治療(杜牙根)', id:2},
+        { itemName: 'Invisalign(隱形牙箍)', id:3},
+        { itemName: '瓷貼片', id:4},
+        { itemName: '牙齒美白', id:5},
+        { itemName: '全瓷牙冠及全鋯牙冠', id:6},
+        { itemName: '拔牙及智慧齒拔除', id:7},
+        { itemName: '牙周病治療', id:8},
+        { itemName: '全口牙托及局部牙托', id:9},
+        { itemName: '矯齒', id:10},
+        { itemName: '補牙', id:11},
+        { itemName: '一般口腔檢查', id:12},
+        { itemName: '兒童牙科保健及治療', id:13},
+        
+        ],
       radio: '1',
        ruleForm: {
           name: '',

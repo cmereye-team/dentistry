@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/filling.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/filling.png 1650w,
             ">

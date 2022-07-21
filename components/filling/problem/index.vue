@@ -5,7 +5,7 @@
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
@@ -21,9 +21,9 @@
             <span>
 
               <ul>
-                <li>
-                  在洗牙後幾天內感到輕微酸痛，甚至有牙齦出血的情況，是由於牙齦在洗牙前<br>出現發炎情況，因此在清除口中細菌時，會引起牙齦紅腫及充血。只要繼續注<br>意口腔衛生，口腔不適及牙齦出血的現象就會逐漸消失，牙齦亦會回復健康。
-                </li>
+                <li>補牙後，牙齒變得敏感或感到酸痛，有以下幾個原因：</li>
+                <li>1、蛀牙位置較深，接近神經。</li>
+                <li>2、填補的範圍較大，當填補的材料聚合時出現收縮這些情況通常在一至兩週後慢慢消失。</li>
               </ul>
             </span>
           </div>
@@ -42,7 +42,7 @@
             <span>
               <ul>
                 <li>
-                  一般醫生會按蛀牙區域進行補牙。補牙時間不單取決於蛀牙的面積大小，還需<br>減低治療後的不適感,以及避免因咀嚼而令影響補牙的穩定性。因此，不同程度<br>的蛀牙需時不同，需要按流程分開完成。
+                 補牙會先磨走蛀牙部分，再補上填補材料，但填補材料一樣也會黏附牙菌斑，因此，補牙後不代表一定不會再蛀牙，需要更注重牙齒清潔才是上策。
                 </li>
               </ul>
             </span>
@@ -61,7 +61,7 @@
             <i class="title2"></i>
             <span>
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
+                <li>一般醫生會按蛀牙區域進行補牙。補牙時間不單取決於蛀牙的面積大小，還需減低治療後的不適感,以及避免因咀嚼而令影響補牙的穩定性。因此，不同程度的蛀牙需時不同，需要按流程分開完成。</li>
               </ul>
             </span>
           </div>
@@ -79,7 +79,7 @@
             <i class="title2"></i>
             <span>
               <ul>
-                <li>由於牙根消炎需時，中間過程或要多次替換消炎藥，因此通常要複診2至4次，<br>每次相距1-2星期，當中或會因不同的牙齒狀況而有所不同。</li>
+                <li>醫生可用儀器把舊有的水銀物料磨走，再補上與牙齒顏色相近的補牙物料。</li>
               </ul>
             </span>
           </div>

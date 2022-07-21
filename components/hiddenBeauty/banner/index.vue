@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1650w,
             ">
@@ -21,7 +21,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png 1650w,
             ">

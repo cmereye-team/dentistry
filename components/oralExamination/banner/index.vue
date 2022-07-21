@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png 1650w,
             ">

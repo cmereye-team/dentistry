@@ -127,7 +127,7 @@ export default {
     }
   }
   .porcelain—cons{
-    padding: 2vw 12vw;
+    padding: 2vw 5vw;
     .porcelain{
       display: flex;
       justify-content: center;
@@ -458,7 +458,7 @@ export default {
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 5vw;
         color: #9BA5B1;
 
         &:before {

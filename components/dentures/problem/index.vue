@@ -5,7 +5,7 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
               <el-collapse-item  name="1">
                   <template slot="title"  >
@@ -20,7 +20,7 @@
                      <i class="title2"></i>
                    <span>
                     <ul>
-                      <li>牙托需要每日清潔及浸洗。1. 先假牙清潔劑清洗牙托2. 以假牙清潔片溶劑浸<br>泡牙托清毒切勿過度刷洗牙托，以免在牙托表面形成凹槽，令細菌積聚。</li>
+                      <li>牙槽骨會因長時間承受牙托的壓力而慢慢收縮，以致影響牙托。因此，當牙托開始有鬆動，便需調整或更換新的牙托。</li>
                       
                     </ul>
                     </span>
@@ -31,7 +31,7 @@
                     <div class="contents"  >
                     <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
                     <i class="title1"></i>
-                    <p :class="judgeActive('2')!==-1? 'p2':'p1'">甚麼情況需要更換牙托？</p> 
+                    <p :class="judgeActive('2')!==-1? 'p2':'p1'">如何清潔牙托？</p> 
                     </div>
                       <i :class="judgeActive('2')!==-1? 'downArrow2':'downArrow1'"></i>
                   </template>
@@ -40,7 +40,9 @@
                    <span>
                    
                     <ul>
-                        <li>牙托需要每日清潔及浸洗。1. 先假牙清潔劑清洗牙托2. 以假牙清潔片溶劑浸<br>泡牙托清毒切勿過度刷洗牙托，以免在牙托表面形成凹槽，令細菌積聚。</li>
+                        <li>牙托需要每日清潔及浸洗。</li>
+                        <li>1. 先假牙清潔劑清洗牙托。</li>
+                        <li>2. 以假牙清潔片溶劑浸泡牙托清毒切勿過度刷洗牙托，以免在牙托表面形成凹槽，令細菌積聚。</li>
                     </ul>
                     </span>
                   </div>
@@ -57,11 +59,8 @@
                   <div class="discon">
                      <i class="title2"></i>
                    <span>
-                   
                      <ul>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>牙托有可拆式及固定式，亦有全口及局部的設計。每種牙托以不同物料而成，性質及成本皆不一樣。客人應與醫生討論，選擇適合的牙托。</li>
                     </ul>
                     </span>
                   </div>
@@ -80,9 +79,7 @@
                    <span>
                    
                      <ul>
-                      <li>2. 沒有定期口腔檢查及洗牙</li>
-                      <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                      <li>4. 長期服用藥物人士</li>
+                      <li>客人應注意牙托及牙齒的清潔，定期檢查確定牙托是否合適，以及會否造成口腔損傷等。如牙托開始鬆動，便有需要調較或換新的牙托。</li>
                     </ul>
                     </span>
                   </div>

@@ -2,7 +2,7 @@
   <div class="section vedio_box md:font-black">
     <div class="flex justify-center texts">
       <h2>牙齒健康</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="vedio_slider" v-if="screenWidth > 768">
       <div v-swiper:mySwiper="swiperOption" class="swiperWrap ">
@@ -20,9 +20,9 @@
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
 
         <div class="swiper-button-prev flex items-center justify-center"> <img
-            src="@/asset/image/about-me/debtistry-health/L.png" alt=""> </div>
+            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/L.png" alt=""> </div>
         <div class="swiper-button-next flex items-center justify-center"> <img
-            src="@/asset/image/about-me/debtistry-health/R.png" alt=""></div>
+            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/R.png" alt=""></div>
 
       </div>
 
@@ -43,9 +43,9 @@
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
 
         <div class="swiper-button-prev flex items-center justify-center"> <img
-            src="@/asset/image/about-me/debtistry-health/L.png" alt=""> </div>
+            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/L.png" alt=""> </div>
         <div class="swiper-button-next flex items-center justify-center"> <img
-            src="@/asset/image/about-me/debtistry-health/R.png" alt=""></div>
+            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/R.png" alt=""></div>
 
       </div>
 
@@ -59,12 +59,12 @@ export default {
     return {
       screenWidth: '',
       banners: [
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup01.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup02.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup01.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
-        { src: require("@/asset/image/about-me/debtistry-health/Maskgroup02.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup01.png", link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup.png", link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup02.png", link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' },
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup01.png", link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup.png", link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup02.png", link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
 
       ],
       swiperOptions: {
@@ -170,7 +170,7 @@ export default {
   .date{
     height: 5vw ;
     width: 5vw ;
-    background: url(~@/asset/image/about-me/debtistry-health/Group56.svg) no-repeat;
+    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Group56.svg) no-repeat;
     background-size:100%,100%;
     }
 
@@ -185,30 +185,30 @@ export default {
    .date{
     height: 5vw ;
     width: 5vw ;
-    background: url(~@/asset/image/about-me/debtistry-health/date.svg) no-repeat;
+    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/date.svg) no-repeat;
     background-size:100%,100%;
     }
 }
 
 
-  .swiper-button-prev[data-v-7464405a] {
-    left: 0;
-    top: 10vw;
+  ::v-deep .swiper-button-prev {
+    left: 0 !important;
+    top: 10vw !important;
   }
 
-  .swiper-button-next[data-v-7464405a] {
-    right: 0;
-    top: 10vw;
+  ::v-deep .swiper-button-next {
+    right: 0 !important;
+    top: 10vw !important;
   }
 
-  .swiper-button-prev img[data-v-7464405a],
-  .swiper-button-next img[data-v-7464405a] {
+  .swiper-button-prev img,
+  .swiper-button-next img {
     width: 1.3vw;
   }
 
-  .swiperWrap .swiper-slide img[data-v-7464405a] {
-    width: 76%;
-    height: 100%;
+  ::v-deep .swiperWrap .swiper-slide img {
+    width: 76% !important;
+    height: 100% !important;
   }
 
   .section {
@@ -334,7 +334,7 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
-  .swiperWrap .swiper-slide-active[data-v-7464405a]{
+  ::v-deep .swiperWrap .swiper-slide-active{
   .des{
     color: #57B2F3;
   }
@@ -344,7 +344,7 @@ export default {
    .date{
     height: 10vw ;
     width: 10vw ;
-    background: url(~@/asset/image/about-me/debtistry-health/date.svg) no-repeat;
+    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/date.svg) no-repeat;
     background-size:100%,100%;
     }
 }
@@ -359,7 +359,7 @@ export default {
   .date{
     height: 10vw;
     width: 10vw;
-    background: url(~@/asset/image/about-me/debtistry-health/Group56.svg) no-repeat;
+    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Group56.svg) no-repeat;
     background-size:100%,100%;
     }
   .texts {
@@ -370,7 +370,7 @@ export default {
     width: 90vw;
     margin: 0 !important;
 }
-.swiperWrap[data-v-7464405a] {
+::v-deep .swiperWrap {
     margin: 0 !important;
 
 }

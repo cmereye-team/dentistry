@@ -9,7 +9,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
             ">
@@ -31,10 +31,12 @@
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
             ">
+            <div class="title">提供全方位牙科服務</div>
+            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
     </div>
     <div class="carousel-item">
       <img src=" https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg "
@@ -42,10 +44,12 @@
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
             ">
+            <div class="title">提供全方位牙科服務</div>
+            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
     </div>
     </div>
     <!-- 指示符 -->
@@ -203,6 +207,7 @@ export default {
     text-align: -webkit-center;
 
     img {
+      width: 90%;
       border-radius: 80px 80px 80px 80px;
     }
   }

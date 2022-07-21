@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
-        <h2>植牙常見問題</h2>
+        <h2>美白牙齒常見問題</h2>
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
             <!-- <img src="@/asset/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
               <el-collapse-item  name="1">
                   <template slot="title"  >
@@ -20,10 +20,7 @@
                      <i class="title2"></i>
                    <span>
                     <ul>
-                      <li>1. 減少吃含有大量色素的食品，如咖哩、茶、咖啡、白酒及紅酒等</li>
-                      <li>2. 減少吸煙或戒煙</li>
-                      <li>3. 早晚刷牙</li>
-                      <li>4. 定期洗牙</li>
+                      <li>接受牙齒美白後，效果最長可維持3年。如有吸煙習慣、飲用過量紅酒，茶或咖啡等習慣亦容易令色素積聚，大大縮短美白能維持的時間。</li>
                     </ul>
                     </span>
                   </div>
@@ -64,10 +61,7 @@
                    <span>
                    
                      <ul>
-                      <li>1. 減少吃含有大量色素的食品，如咖哩、茶、咖啡、白酒及紅酒等</li>
-                      <li>2. 減少吸煙或戒煙</li>
-                      <li>3. 早晚刷牙</li>
-                      <li>4. 定期洗牙</li>
+                      <li>多年的科學研究已能證明牙齒美白屬安全的療程。在接受療程前，牙醫會先檢查牙齒及口腔狀況，確定客人適合接受牙齒美白療程。</li>
                     </ul>
                     </span>
                   </div>

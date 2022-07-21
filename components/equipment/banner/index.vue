@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1650w,
             ">

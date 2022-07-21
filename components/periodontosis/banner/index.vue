@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 750w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png 1650w,
             ">

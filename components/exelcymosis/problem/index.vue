@@ -5,7 +5,7 @@
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
@@ -20,7 +20,7 @@
             <i class="title2"></i>
             <span>
               <ul>
-                <li>拔牙當天可暫停刷牙，第二天可恢復刷牙程序，但應注意力度，避免觸碰到傷口，造成滲血。</li>
+                <li>需確保麻醉藥的藥力完全散退，以及傷口完全止血，一般建議拔牙後４小時後才可開始進食</li>
               </ul>
             </span>
           </div>
@@ -58,9 +58,10 @@
             <span>
 
               <ul>
-                <li>2. 沒有定期口腔檢查及洗牙</li>
-                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                <li>4. 長期服用藥物人士</li>
+                <li>一般在智慧齒有機會引起其他口腔及牙齒問題，才會建議進行拔牙手術：</li>
+                <li>1. 智慧齒旁的牙肉經常發炎腫痛</li>
+                <li>2. 智慧齒橫生或斜生</li>
+                <li>3. 智慧齒或附近牙齒出現蛀牙或裂縫</li>
               </ul>
             </span>
           </div>
@@ -79,9 +80,7 @@
             <span>
 
               <ul>
-                <li>2. 沒有定期口腔檢查及洗牙</li>
-                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                <li>4. 長期服用藥物人士</li>
+                <li>進行手術時，醫生會先在拔牙位置注射局部麻醉藥，大大減低不適感。手術後應按時服用醫生處方的止痛藥，處理手術後的腫痛不適。</li>
               </ul>
             </span>
           </div>
@@ -100,9 +99,7 @@
             <span>
 
               <ul>
-                <li>2. 沒有定期口腔檢查及洗牙</li>
-                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                <li>4. 長期服用藥物人士</li>
+                <li>拔智慧齒前必須先照X光，必要時或要額外進行電腦掃瞄，了解牙根及神經線的位置，衡量風險，計劃拔智慧齒的方式。</li>
               </ul>
             </span>
           </div>
@@ -121,9 +118,7 @@
             <span>
 
               <ul>
-                <li>2. 沒有定期口腔檢查及洗牙</li>
-                <li>3. 全身性疾病患者（如：AIDS、糖尿病等）</li>
-                <li>4. 長期服用藥物人士</li>
+                <li>智慧齒生長於口腔內最後的位置，更有橫生、斜生的情況，拔除時有可能要翻起牙齦。為避免神經線受損，醫生亦有可能將智慧齒分成數個部分，再逐一清除，因此比一般拔牙程序複雜。</li>
               </ul>
             </span>
           </div>

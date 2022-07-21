@@ -109,8 +109,8 @@
                 </tr>
               </table>
               <table class="tablesd">
-                <tr style="height: 2vw;">
-                  <th>固定式假牙</th>
+                <tr style="height: 2vw; ">
+                  <th style="background-color: #009CDC !important;"><img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/Invisalign_logo.svg"  alt=""></th>
                 </tr>
                 <tr>
                   <td>
@@ -151,7 +151,7 @@
               </table>
               <table class="tablesd">
                 <tr style="height: 2vw;">
-                  <th>其他隱形牙箍品牌</th>
+                  <th style=" background: #ECF7FC; color: #57B2F3; " >其他隱形牙箍品牌</th>
                 </tr>
                 <tr>
                   <td>
@@ -390,7 +390,7 @@ p {
     font-size: 17px;
 
     ul {
-      list-style-type: disc;
+      list-style-type: none;
       margin: 0;
       font-weight: 500;
       font-size: 17px;
@@ -428,7 +428,7 @@ p {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;
@@ -482,51 +482,51 @@ p {
     margin-top: 5vw;
   }
 
-  .tablesd {
-    margin-left: 4vw;
-    color: #57B2F3;
-    background-color: #fff;
-    border: 3px solid #9BD0F5;
-    border-radius: 20px;
-    border-collapse: separate;
-    border-spacing: 0;
-    box-shadow: 13px 15px 0 #a2d4f7;
-    border-spacing: 0;
-    width: 28%;
-    height: 25vw;
-    font-weight: 550;
-    letter-spacing: 0.1vw;
-    font-size: 17px;
+  // .tablesd {
+  //   margin-left: 4vw;
+  //   color: #57B2F3;
+  //   background-color: #fff;
+  //   border: 3px solid #9BD0F5;
+  //   border-radius: 30px;
+  //   border-collapse: separate;
+  //   border-spacing: 0;
+  //   box-shadow: 13px 15px 0 #a2d4f7;
+  //   border-spacing: 0;
+  //   width: 28%;
+  //   height: 25vw;
+  //   font-weight: 550;
+  //   letter-spacing: 0.1vw;
+  //   font-size: 17px;
 
-    ul {
-      list-style-type: disc;
-      text-align: left;
-      margin: 0;
-      font-weight: 500;
-      font-size: 17px;
-      padding: 0 4.5vw;
-    }
+  //   ul {
+  //     list-style-type: none;
+  //     text-align: left;
+  //     margin: 0;
+  //     font-weight: 500;
+  //     font-size: 17px;
+  //     padding: 0 4.5vw;
+  //   }
 
-    th {
-      text-align: center;
-      color: #fff;
-      background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
-    }
+  //   th {
+  //     text-align: center;
+  //     color: #fff;
+  //     background-color: #57B2F3;
+  //     border-radius: 17px 17px 0 0;
+  //   }
 
-    .thd {
-      color: #57B2F3;
-      background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
-    }
-  }
+  //   .thd {
+  //     color: #57B2F3;
+  //     background-color: #ECF7FC;
+  //     border-radius: 20px 20px 0 0;
+  //   }
+  // }
 
   .tablesed {
     margin-left: 4vw;
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -550,13 +550,13 @@ p {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
   }
 
@@ -854,7 +854,7 @@ p {
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -866,7 +866,7 @@ p {
     font-size: 17px;
 
     ul {
-      list-style-type: disc;
+      list-style-type: none;
       margin: 0;
       font-weight: 500;
       font-size: 17px;
@@ -881,17 +881,17 @@ p {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
       color: #57B2F3;
       background-color: #ECF7FC;
-      border-radius: 20px 20px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     td:nth-child(3) {
-      border-radius: 0 0 20px 20px;
+      border-radius: 0 0 30px 30px;
     }
   }
 
@@ -899,7 +899,7 @@ p {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;

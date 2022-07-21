@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg 1650w,
             ">

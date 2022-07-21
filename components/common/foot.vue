@@ -10,7 +10,7 @@
             <img src="https://static.cmereye.com/static/lkximg/image/common/IG.svg" alt="">
           </li>
           <li>
-            <img src="https://static.cmereye.com/static/lkximg/image/common/yt.svg" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/common/YT.svg" alt="">
           </li>
         </ul>
       </div>

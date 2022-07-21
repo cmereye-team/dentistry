@@ -10,7 +10,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 750w,
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg 1024w,
+            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg 1650w,
             ">
@@ -151,9 +151,9 @@ export default {
       width: 100vw;
       left:0;
       top:45%;
-      font-weight: 600;
+      font-weight: 500;
       color: #79828D;
-      font-size: 30px;
+      font-size: 39px;
     }
   }
   .carousel-inner img[data-v-703b804a] {

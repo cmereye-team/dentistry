@@ -1,11 +1,11 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2">
     <div class="flex justify-center texts">
-      <h2>植牙常見問題</h2>
+      <h2>瓷貼片常見問題</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange">
+      <el-collapse v-model="activeNames" @change="handleChange" accordion>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">
@@ -20,7 +20,7 @@
             <i class="title2"></i>
             <span>
               <ul>
-                <li>視乎病人如何使用瓷貼片及其口腔清潔狀況而定，若病人有定期進行口腔檢查及<br>洗牙，一般可使用頗長的時間。</li>
+                <li>瓷貼片主要是為了美化牙齒，大多客人選擇以瓷貼片修復形狀或牙色不平均的牙齒。多建議同時期處理約6顆牙齒的範圍，遲至理想效果及色澤。</li>
               </ul>
             </span>
           </div>
@@ -58,7 +58,7 @@
             <span>
 
               <ul>
-                <li>視乎病人如何使用瓷貼片及其口腔清潔狀況而定，若病人有定期進行口腔檢查及<br>洗牙，一般可使用頗長的時間。</li>
+                <li>瓷貼片不需任何特別護理。只要注意口腔衛生習慣，定期進行口腔檢查及洗牙，就能好好保護瓷貼片。</li>
 
               </ul>
             </span>

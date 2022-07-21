@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light ">
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
-      <img src="https://static.cmereye.com/static/lkximg/image/common/logo.svg" alt="">
+      <img src="https://static.cmereye.com/static/lkximg/image/common/Logo.svg" alt="">
     </a>
     <div><a class="nav-link engmb" href="#" >ENG</a></div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
@@ -11,6 +11,9 @@
     </button>
     <div class="collapse navbar-collapse pcshow" id="navbarNavDropdown">
       <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link " href="/">首頁</a>
+        </li>
         <li class="nav-item">
           <a class="nav-link " href="/aboutMe">關於我們</a>
         </li>
@@ -90,7 +93,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="#">
+                    <a href="/whitening">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png" title="牙齒美白" alt="牙齒美白" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">牙齒美白</p>
@@ -272,12 +275,12 @@
             <li><a class="dropdown-item" href="#">牙齒美白</a></li>
             <li><a class="dropdown-item" href="/yacrown">全瓷牙冠及全鋯牙冠</a></li>
             <li><a class="dropdown-item" href="#">拔牙及智慧齒脫除</a></li>
-            <li><a class="dropdown-item" href="/periodontosis">牙周病治療</a></li>
+            <li><a class="dropdown-item" href="#">牙周病治療</a></li>
             <li><a class="dropdown-item" href="/dentures">全口牙托及局部牙托</a></li>
-            <li><a class="dropdown-item" href="#">矯齒 action</a></li>
+            <li><a class="dropdown-item" href="/toothStraighten">矯齒 action</a></li>
             <li><a class="dropdown-item" href="/scaleTeeth">洗牙</a></li>
             <li><a class="dropdown-item" href="/filling">補牙</a></li>
-            <li><a class="dropdown-item" href="/oralExamination">一般口腔檢查</a></li>
+            <li><a class="dropdown-item" href="#">一般口腔檢查</a></li>
             <li><a class="dropdown-item" href="/healthcare">兒童牙科保健及治療</a></li>
           </ul>
            
@@ -304,9 +307,16 @@
 </div>
 </template>
 <style lang="scss" scoped>
-
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  .navbar-expand-lg .navbar-nav .nav-link{
+    padding-right: 0;
+  }
+}
 //pc
 @media only screen and (min-width: 768px) {
+  .navbar-nav {
+    letter-spacing: 0.1vw;
+  }
   .mbshow{
     display: none !important;
   }
@@ -352,25 +362,25 @@
   overflow: hidden;
   position: relative;
   transition: all .3s ease-in-out;
-  box-shadow: 0 0 15px lightgray;
+  // box-shadow: 0 0 15px lightgray;
   border-radius: 1.071rem;
   cursor: pointer;
 }
 
-.service_box .service_item .service_hover:before {
-  position: absolute;
-  content: "";
-  width: 400px;
-  height: 40px;
-  background: rgba(255, 255, 255, 0.3);
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  transform: rotate(-45deg) translateY(-232px) translateX(-55px);
-  ;
-  transition: all .3s ease-in;
-}
+// .service_box .service_item .service_hover:before {
+//   position: absolute;
+//   content: "";
+//   width: 400px;
+//   height: 40px;
+//   background: rgba(255, 255, 255, 0.3);
+//   left: 0;
+//   top: 0;
+//   bottom: 0;
+//   margin: auto;
+//   transform: rotate(-45deg) translateY(-232px) translateX(-55px);
+//   ;
+//   transition: all .3s ease-in;
+// }
 
 .service_box .service_item:hover .service_hover:before {
   transform: rotate(-45deg) translateY(115px) translateX(-55px);
@@ -378,10 +388,9 @@
 }
   .service_box .service_item:hover .service_hover {
   background: #9BD0F5;
-
   border-radius: 1.071rem;
-  box-shadow: 0 5px 15px lightgray;
-  transform: translate(2px, -2px);
+  // box-shadow: 0 5px 15px lightgray;
+  // transform: translate(2px, -2px);
 }
 .service_box .service_item .service_pic .service_txt{
   background-color: #b3d7ff;
@@ -418,6 +427,7 @@
     flex-flow: column;
     justify-content: center;
     margin-top: 4vw;
+    // font-weight: 500 !important;
 }
 .service_box .row[data-v-47af9056] {
     padding-right: 15px;
@@ -489,17 +499,20 @@ a{
       color: #57B2F3;
     }
     .nar{
+      
       .navbar-brand{
         img{
+          width: 18vw;
           padding-left: 2vw;
         }
       }
       ul{
         li{
-          padding: 0 1.3vw;
-          font-weight: 550;
+            padding: 0 1vw;
+            font-weight: 500;
           a{
             color: #505050;
+            font-weight: 500;
           }
         }
       }
@@ -507,11 +520,20 @@ a{
   
 //mb
 @media only screen and (max-width: 768px) {
+    .nar{
+      .navbar-brand{
+        img{
+          width: 42vw;
+          padding-left: 2vw;
+        }
+      }
+      }
   .pcshow{
     display: none;
   }
    .engmb{
-    margin-left: 20vw;
+    display: block !important;
+    margin-left: 19.4vw;
     color: #00477B !important;
 
   }
@@ -534,7 +556,7 @@ a{
     // padding-bottom: 11.5rem;
 }
   .navbar-light .navbar-toggler-icon {
-    background-image: url('https://static.cmereye.com/static/lkximg/image/banner/BurgerBtn.png') no-repeat !important;
+    background: url('https://static.cmereye.com/static/lkximg/image/banner/BurgerBtn.png') no-repeat !important;
 }
 .dropdown-menu {
   border:0px;
