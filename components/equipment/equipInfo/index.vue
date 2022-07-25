@@ -6,7 +6,7 @@
       <p style="color:#57B2F3">牙齒健康</p>
     </div>
     <div class="flex justify-center selectEqu">
-      <el-select v-model="value" placeholder="请选择">
+      <el-select v-model="value" placeholder="请选择" @change="selectLei">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
         </el-option>
       </el-select>
@@ -15,138 +15,102 @@
         </el-option>
       </el-select>
     </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post01pic.png" alt="">
+    <div class="info" v-for="item in list">
+      <img class="pic" :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url" alt="">
       <div class="dateinfo">
       <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
-      <div class="content">
-        <h2>護齒食物你要知 #堅果 </h2>
-        <p>食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減低蛀牙機會🌰加上堅果含有豐富嘅鈣質、磷，呢兩個元素都對牙齒和牙齦健康好有益㗎😗</p>
-        <p>不過記得進食堅果份量要適中，唔好最後因為食得太多堅硬食物令到牙齒磨損喇！🙌</p>
-        <p class="label">護齒心得</p>
+      <div class="content" >
+        <h2 v-html="item.title.rendered"></h2>
+        <p v-html="item.content.rendered"></p>
+        <!-- <p>食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減低蛀牙機會🌰加上堅果含有豐富嘅鈣質、磷，呢兩個元素都對牙齒和牙齦健康好有益㗎😗</p> -->
+        <!-- <p>不過記得進食堅果份量要適中，唔好最後因為食得太多堅硬食物令到牙齒磨損喇！🙌</p> -->
+        <!-- <p class="label">護齒心得</p> -->
+        <div style="display: flex;">
+        <div v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]"  style=" margin: 0 0.5vw;">
+        <p class="label">{{lab.name}}</p>
+        </div>
+        </div>
       </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post02pic.png" alt="">
-      <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+      <div class="date">
+        <span class="linesy">{{item.datas}}</span>
+        <span>{{item.month}}</span>
       </div>
-      <div class="content">
-        <h2>漱口水可以取代牙刷及牙線？ </h2>
-        <p>聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉？</p>
-        <p>👩‍⚕️💥漱口水嘅作用係清潔口腔💦牙刷可以清走牙齒上嘅牙菌斑及食物殘渣；牙線係清潔牙縫及牙齦位置，單靠漱口水係不足以清潔到牙齒㗎💢</p>
-        <p>市面上有好多漱口水選擇，記得睇清楚功能及成份，了解自己需要先選購🧐每日再配合正確嘅刷牙及牙線使用方式，維持牙齒及口腔清潔💪</p>
-        <p class="label">護齒心得</p>
-        <p class="label">補牙</p>
-      </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post03pic.png" alt="">
-      <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-      </div>
-      <div class="content yagao">
-        <h2>牙膏的秘密 </h2>
-        <p>相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆其實吞咗少少牙膏一般都冇咩太大影響👌但如果當中嘅成份，如三氯沙、氟化物、色素等濃度太高，就對人體有害喇🙌</p>
-        <p>💡 牙膏應該點樣揀？<br>想揀支適合自己嘅牙膏，一定要了解牙膏嘅成份有咩作用🤔</p>
-        <p>🔍預防蛀牙<br>可揀含氟濃度多於>1000ppm、木醣醇成份嘅牙膏</p>
-        <p>🔍敏感牙齒<br>選擇有硝酸鉀、氯化鍶嘅抗敏成份，以及含較細嘅研磨劑顆粒</p>
-        <p>🔍牙周病牙膏<br>揀選含有殺菌或抗菌劑，例如IPMP、氯化十六烷基吡啶、異丙基甲基酚、鹽酸氯己定等成份牙膏，有助消滅牙周病菌</p>
-        <p>買牙膏前先諗諗自己想要咩功能，睇清楚成份內容，咁就可以做個精明清費者啦😉</p>
-        <p class="label">護齒心得</p>
-        <p class="label">牙周病治療</p>
-      </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post04pic.png" alt="">
-      <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-      </div>
-      <div class="content yagao">
-        <h2>懷孕媽媽牙齒健康 #母親節 </h2>
-        <p>母親節快樂💝可能大家都聽過坊間流傳，懷孕中嘅媽媽會被BB不斷吸收鈣質，令媽媽牙齒鈣質流失而甩牙🤰🏻 其實BB並唔會直接大量吸收媽媽牙齒鈣質👶🏻部份孕婦會發生甩牙情況，其實亦有不同因素導致：</p>
-        <p>🔍口味改變<br>懷孕時變得鐘意食甜度高嘅食物，增加蛀牙、牙周病機會，所以甩牙風險上升🦷</p>
-        <p>🔍進食次數<br>孕婦較容易感到餓，當進食次數增加，令口腔清潔難度上升，從而增加蛀牙機率📈</p>
-        <p>🔍荷爾蒙變化<br>荷爾蒙於不同孕期會產生不同變化，令牙齦組織因血液循環豐富而更敏感，有機會出現牙齦腫或姙娠型牙齦瘤情況🤔</p>
-        <p>備做媽媽嘅你，平時要關注BB同自己健康外，都要好好注意牙齒清潔，最好每3個月就要洗牙喇！</p>
-      </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/equipment/post05pic.png" alt="">
-      <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-      </div>
-      <div class="content">
-        <h2>勞動節 勤刷牙 </h2>
-        <p>今日勞動節，不如勤力啲刷牙，做好牙齒清潔🦷✨</p>
-        <p>刷牙要用正確方式，次數亦同樣重要💡記得每日早晚各一次，如果午飯後能夠刷多一次就更完美🥳</p>
-        <p>不過謹記用餐30分鐘後先刷，因為進食完嘅口腔PH值會呈酸性狀態，即刻刷會令牙齒受損㗎🏻‍♀️</p>
-        <p>不如由今日開始，養成潔齒好習慣啦😉</p>
-      </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+      <!-- <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
     </div>
      <el-pagination
-    layout="prev, pager, next"
-    :total="100">
+        layout="prev, pager, next"
+        @current-change="handleCurrentChange"
+         :current-page="currentPage"
+        :page-size="pagesize"
+        :total="total">
   </el-pagination>
   </div>
 </template>
 <script>
+import { getList } from '@/api/index.js'
+import { get } from 'http'
+
 export default {
   data() {
     return {
-      options: [{
-        value: '護齒心得',
+      options: [
+        {
+        value: 0,
+        label: '所有類別'
+      }, 
+      {
+        value: '3',
         label: '護齒心得'
       }, {
-        value: '植牙',
+        value: '12',
         label: '植牙'
       }, {
-        value: 'Invisalign 隱適美',
+        value: '13',
         label: 'Invisalign 隱適美'
       }, {
-        value: '牙齒美白',
+        value: '8',
         label: '牙齒美白'
       }, {
-        value: '根管治療（杜牙根）',
+        value: '9',
         label: '根管治療（杜牙根）'
       },
       {
-        value: '牙周病治療',
+        value: '14',
         label: '牙周病治療'
       },
       {
-        value: '拔牙及智慧齒脫除',
+        value: '15',
         label: '拔牙及智慧齒脫除'
       },
       {
-        value: '全瓷牙冠及全鋯牙冠',
+        value: '16',
         label: '全瓷牙冠及全鋯牙冠'
       },
       {
-        value: '全口牙托及局部牙托',
+        value: '17',
         label: '全口牙托及局部牙托'
       },
       {
-        value: '矯齒',
+        value: '18',
         label: '矯齒'
       },{
-        value: '補牙',
+        value: '4',
         label: '補牙'
       },{
-        value: '一般口腔檢查',
+        value: '19',
         label: '一般口腔檢查'
       },{
-        value: '兒童牙科保健及治療',
+        value: '20',
         label: '兒童牙科保健及治療'
       }],
       value: '所有類別',
-      options1: [{
+      options1: [
+        {
+        value: '0',
+        label: '所有月份'
+      },
+        {
         value: '一月',
         label: '一月'
       }, {
@@ -183,10 +147,104 @@ export default {
         value: '十二月',
         label: '十二月'
       },],
-      value1: '所有月份'
+      value1: '所有月份',
+      list:[],
+      total:'',
+      pagesize: 5,
+      currentPage: 1,
     }
   },
   mounted() {
+    this.getTotal()
+    this.getListDs()
+    
+  },
+  methods:{
+    selectLei(value){
+        // console.log('value========',value);
+      if(value === 0){
+        // console.log('121');
+        this.getListDs()
+        this.getTotal()
+      }else{
+        getList({'tags': value}).then((res=>{ this.total =  res.data.length}))
+        getList({'_embed':true,'per_page': this.pagesize, 'page':this.currentPage, 'tags': value}).then((res=>{
+          this.list = res.data
+          this.list.forEach((item, index) => {
+          if(item.date.slice(5, 7) === '07'){
+            item.month = 'July'
+          } else if(item.date.slice(5, 7) === '01'){
+            item.month = 'Jan'
+          }else if(item.date.slice(5, 7) === '02'){
+            item.month = 'Feb'            
+          }else if(item.date.slice(5, 7) === '03'){
+            item.month = 'Mar'           
+          }else if(item.date.slice(5, 7) === '04'){
+            item.month = 'Apr'           
+          }else if(item.date.slice(5, 7) === '05'){
+            item.month = 'May'            
+          }else if(item.date.slice(5, 7) === '06'){
+            item.month = 'June'            
+          }else if(item.date.slice(5, 7) === '08'){
+            item.month = 'August'            
+          }else if(item.date.slice(5, 7) === '09'){
+            item.month = 'Sep'           
+          }else if(item.date.slice(5, 7) === '10'){
+            item.month = 'Oct'            
+          }else if(item.date.slice(5, 7) === '11'){
+            item.month = 'Nov'            
+          }else if(item.date.slice(5, 7) === '12'){
+            item.month = 'Dec'            
+          }
+          item.datas = item.date.slice(8, 10)
+        });
+          
+          }))
+      }
+     
+    },
+    getTotal(){
+      getList().then((res=>{ this.total =  res.data.length}))
+    },
+     getListDs(){
+      getList({'_embed':true,'per_page': this.pagesize, 'page':this.currentPage}).then((res=>{
+        this.list = res.data
+        this.list.forEach((item, index) => {
+          if(item.date.slice(5, 7) === '07'){
+            item.month = 'July'
+          } else if(item.date.slice(5, 7) === '01'){
+            item.month = 'Jan'
+          }else if(item.date.slice(5, 7) === '02'){
+            item.month = 'Feb'            
+          }else if(item.date.slice(5, 7) === '03'){
+            item.month = 'Mar'           
+          }else if(item.date.slice(5, 7) === '04'){
+            item.month = 'Apr'           
+          }else if(item.date.slice(5, 7) === '05'){
+            item.month = 'May'            
+          }else if(item.date.slice(5, 7) === '06'){
+            item.month = 'June'            
+          }else if(item.date.slice(5, 7) === '08'){
+            item.month = 'August'            
+          }else if(item.date.slice(5, 7) === '09'){
+            item.month = 'Sep'           
+          }else if(item.date.slice(5, 7) === '10'){
+            item.month = 'Oct'            
+          }else if(item.date.slice(5, 7) === '11'){
+            item.month = 'Nov'            
+          }else if(item.date.slice(5, 7) === '12'){
+            item.month = 'Dec'            
+          }
+          item.datas = item.date.slice(8, 10)
+        });
+        console.log(this.list);
+      }))
+    },
+    handleCurrentChange (currentPage) {
+      this.currentPage = currentPage;
+      this.getListDs()
+      // console.log('点击第几页===', this.currentPage); 
+    }
   }
 }
 </script>
@@ -383,6 +441,20 @@ export default {
     .date {
       width: 6vw;
       height: 6vw;
+      background-color: #9BD0F5;
+      border-radius: 50%;
+      margin: 1vw;  
+      display: flex;
+      text-align: center;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: center;
+      flex-direction: column;
+      .linesy{
+        font-size: 32px;
+        border-bottom: 3px solid #FFF;
+        margin: 0 1vw;
+      }
     }
 .yagao{
       margin-top: 1.5vw !important;
@@ -391,11 +463,12 @@ export default {
       display: inline-block;
       margin-top: 4vw;
       margin-left: 3vw;
+      width: 44vw;
       .label{
         display: inline-block;
         border: 1px solid #57B2F3;
         border-radius: 60px;
-        width: 8vw;
+        width: 7vw;
         text-align: center;
         background-color: #fff;
         padding: 0.5vw;
