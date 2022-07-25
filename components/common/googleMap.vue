@@ -32,16 +32,15 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1" id="addresd">地址</p>
             <p class="address2">中環畢打街1-3號中建大廈11樓1102室</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五<br> 上午9:30 - 下午6:30</p>
             <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -59,16 +58,15 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1 " id="addresd">地址</p>
             <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五<br> 上午9:30 - 下午6:00</p>
             <p class="week2">星期六<br> 上午9:30 - 下午1:00<br>星期日及公眾假期休息</p>
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -87,16 +85,15 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1 " id="addresd">地址</p>
             <p class="address2">灣仔莊士敦道197號廣亞大樓地下</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五<br> 上午9:30 - 下午7:00</p>
             <p class="week2">星期六<br> 上午9:30 - 下午5:00<br>星期日及公眾假期休息</p>
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -125,17 +122,16 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1" id="addresd">地址</p>
             <p class="address2">尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期二: <br> 上午9:00 - 下午7:00<br> 
             星期三至星期五: <br> 上午9:00 - 下午6:00</p>
             <p class="week2">星期六<br> 上午9:00 - 下午5:00<br>星期日及公眾假期休息</p>
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -153,16 +149,15 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1 " id="addresd">地址</p>
             <p class="address2">鑽石山龍蟠街3號荷里活廣場一樓116A舖</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期六:<br> 上午10:00 - 下午7:00<br>星期日及公眾假期休息</p>
             <!-- <p class="week2">星期日及公眾假期休息</p> -->
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -181,17 +176,16 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1 " id="addresd">地址</p>
             <p class="address2">觀塘開源道79號鱷魚恤中心16樓1601室</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五: <br>上午9:30 - 下午6:30 <br>
             星期六: 上午9:30 - 下午5:30<br>星期日及公眾假期: 休息</p>
             <!-- <p class="week2">星期日及公眾假期休息</p> -->
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -220,16 +214,15 @@
         </div>
         <div>
           <div class="mapcontennt">
+            <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1" id="addresd">地址</p>
             <p class="address2">沙田正街11-17號偉華中心2樓1C-1F號舖</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Vector.svg" alt="">
-            <p class="address1">查詢熱線</p>
-            <p class="address2">36202428</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五: <br> 上午9:30 - 下午6:30</p>
             <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+            </div>
           </div>
           <div class="button">
             <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
@@ -407,13 +400,13 @@ export default {
     display: block;
     position: absolute;
     left: -59px;
-    top: 181px;
+    top: 95px;
     border-width: 30px;
     border-style: dashed solid dashed dashed;
     border-color: transparent #8CD1F8 transparent transparent;
   }
   .mapcontennt {
-    height: 22vw;
+    height: 18vw;
     width: 29vw;
     border: 1;
     background: #8CD1F8;
@@ -421,6 +414,9 @@ export default {
     margin-left: 8vw;
     margin-top: 2vw;
     position: relative;
+    .addressMap{
+      padding: 1vw;
+    }
     .addrescoin {
       padding: 0.8vw 1.3vw 0 1.3vw;
       position: absolute;
@@ -620,7 +616,7 @@ export default {
   }
 
   .mapcontennt {
-    height: 73vw;
+    height: 65vw;
     width: 81vw;
     border: 1;
     background: #8CD1F8;
@@ -635,7 +631,9 @@ export default {
       margin-bottom: 0.5vw;
       margin: 2vw 0 0 2vw;
     }
-
+.addressMap{
+      padding: 1vw;
+    }
     .address1 {
       padding: 0.8vw 1.3vw 0 7.8vw;
       color: white;
