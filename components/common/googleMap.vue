@@ -1,5 +1,6 @@
 <template>
-  <div class="section vedio_box md:font-black">
+  <div class="
+ vedio_box md:font-black">
     <div class="flex justify-center texts">
       <h2>診所地址</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -38,13 +39,14 @@
             <p class="address2">中環畢打街1-3號中建大廈11樓1102室</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:30</p>
-            <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:30<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:30</p>
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true" target="_blank">Google 地圖</a>
+             <a  class="link_more"  href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
@@ -64,13 +66,15 @@
             <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:00</p>
-            <p class="week2">星期六<br> 上午9:30 - 下午1:00<br>星期日及公眾假期休息</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:00<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
+            <p class="week2">星期六<br> 上午9:30 - 下午1:00</p>
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/5ZgB51H2MZErvHNj8" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/40/Klt" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -91,13 +95,15 @@
             <p class="address2">灣仔莊士敦道197號廣亞大樓地下</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五<br> 上午9:30 - 下午7:00</p>
-            <p class="week2">星期六<br> 上午9:30 - 下午5:00<br>星期日及公眾假期休息</p>
+            <p class="week">星期一至星期五<br> 上午9:30 - 下午7:00<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:00</p>
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href=" https://goo.gl/maps/s236tLRsiUEGMPzZ9" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/6f/uosf" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -129,13 +135,15 @@
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期二: <br> 上午9:00 - 下午7:00<br> 
-            星期三至星期五: <br> 上午9:00 - 下午6:00</p>
-            <p class="week2">星期六<br> 上午9:00 - 下午5:00<br>星期日及公眾假期休息</p>
+            星期三至星期五: <br> 上午9:00 - 下午6:00 <br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
+            <p class="week2">星期六<br> 上午9:00 - 下午5:00</p>
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
@@ -156,12 +164,14 @@
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期六:<br> 上午10:00 - 下午7:00<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
             <!-- <p class="week2">星期日及公眾假期休息</p> -->
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/1zu6o9DuUuePjVb48" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/49/Zbdc" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -183,13 +193,14 @@
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五: <br>上午9:30 - 下午6:30 <br>
-            星期六: 上午9:30 - 下午5:30<br>星期日及公眾假期: 休息</p>
+            星期六: 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
             <!-- <p class="week2">星期日及公眾假期休息</p> -->
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true" target="_blank">Google 地圖</a>
+            <a  class="link_more"  href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -220,13 +231,15 @@
             <p class="address2">沙田正街11-17號偉華中心2樓1C-1F號舖</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五: <br> 上午9:30 - 下午6:30</p>
-            <p class="week2">星期六<br> 上午9:30 - 下午5:30<br>星期日及公眾假期休息</p>
+            <p class="week">星期一至星期五: <br> 上午9:30 - 下午6:30<br>星期日及公眾假期休息</p>
+            <div class="clear"></div>
+            <p class="week2">星期六<br> 上午9:30 - 下午5:30</p>
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true" target="_blank">Google 地圖</a>
+            <a  class="link_more"  href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
+            
           </div>
         </div>
       </div> 
@@ -326,6 +339,13 @@ export default {
     text-align: center;
   }
 }
+a{
+  text-decoration: none;
+  color: #57B2F3;
+  &:hover {
+      animation: 3s ease-in 1s 2 reverse both paused slidein;
+    }
+}
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
   .mapcontennt{
     z-index: -1;
@@ -393,6 +413,7 @@ export default {
 
   .addmap {
     display: flex;
+    justify-content: center;
   }
 .mapcontennt::before {
     //这里就是小三角了
@@ -406,7 +427,7 @@ export default {
     border-color: transparent #8CD1F8 transparent transparent;
   }
   .mapcontennt {
-    height: 18vw;
+    height: 21vw;
     width: 29vw;
     border: 1;
     background: #8CD1F8;
@@ -515,7 +536,10 @@ export default {
       width: 6vw;
     }
   }
-
+.vedio_box{
+    padding-top: 60px;
+    padding-bottom: 154px;
+  }
   .adress {
     ul {
       padding: 0;
@@ -554,19 +578,31 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+  .vedio_box{
+    padding-bottom: 69px;
+  }
   .actives{
         background: #57B2F3 !important;
         border-radius: 100% !important;
       }
   #addresd{
-        padding: 2.5vw 1.3vw 0 6.8vw;
+        // padding: 2.5vw 1.3vw 0 6.8vw;
       }
-  #map {
-    // height: 55vw;
-    width: 92%;
-    // border: 1px solid;
-    // border-radius: 10px 10px 10px 10px;
-    box-shadow: 9px 9px 5px #8CD1F8;
+  // #map {
+  //   // height: 55vw;
+  //   width: 92%;
+  //   // border: 1px solid;
+  //   // border-radius: 10px 10px 10px 10px;
+  //   box-shadow: 9px 9px 5px #8CD1F8;
+  // }
+  #map{
+    img{
+    border-radius: 30px 30px 30px 30px;
+    // height: 28vw;
+    width: 88vw;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 13px 13px 0px #8cd1f8;
+    }
   }
    @keyframes slidein {
     0% {
@@ -580,14 +616,14 @@ export default {
   }
   .mapcontennt::before {
     //这里就是小三角了
-  content: "";
+     content: "";
     display: block;
     position: absolute;
-     left: -58px;
-    top: 103px;
-    border-width: 30px;
-    border-style: dashed solid dashed dashed;
-    border-color: transparent #8CD1F8 transparent transparent;
+    left: 140px;
+    top: -45px;
+    border-width: 25px;
+    border-style: solid solid dashed dashed;
+    border-color: transparent transparent #8CD1F8 transparent;
   }
 
   .button {
@@ -622,7 +658,8 @@ export default {
     background: #8CD1F8;
     border-radius: 16px 16px 16px 16px;
     margin-left: 3vw;
-    margin-top: 6vw;
+    margin-top: 13vw !important;
+    margin: 0 auto;
     position: relative;
     .addrescoin {
       padding: 1vw 1.3vw 0 1.3vw;

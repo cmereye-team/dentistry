@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -26,8 +26,245 @@
           <p>有多種製作牙冠的物料，包括：金屬、全鋯及全瓷。每種物料各有優點，可讓患者按需要選擇。</p>
           <p style="color: #57B2F3;">以下為你分析全瓷牙冠及全鋯牙冠的優缺點：</p>
         </div>
-        <div class="box">
-          <div class="card">
+        <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow" >
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide box ">
+            <div class="table-box py-5" id="move_div">
+               <table class="tables">
+                <tr>
+                  <td>優點</td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">缺點</td>
+                </tr>
+              </table>
+              <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th>金屬牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>耐用度高，適合需要咬合力較強的後牙</li>
+                      <li>損耗度與真牙非常接近</li>
+                      <li>堅固穩定，不用大幅度磨小牙齒，可保留大部分原牙</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>金屬顏色，不適合用於前牙，影響外觀</li>
+                      <li>價格較為昂貴</li>
+                      <li>有致癌疑慮</li>
+                      <li>較容易發炎或出現過敏</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="swiper-slide box swiper-slideB">
+            <div class=" table-box py-5">
+              <table class="tablesd tableKao">
+                <tr style="height: 3vw;">
+                  <th class="thd">烤瓷合金牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li style="padding: 3.4vw 0;">內層金屬，外層陶瓷，可以選擇外層顏色，較為美觀</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>由於有內外兩層，相對較厚，需磨掉較多牙齒</li>
+                      <li>牙套顏色不夠自然</li>
+                      <li>牙套邊緣會顯出金屬黑影，影響外觀</li>
+                      <li>表層陶瓷較金屬容易剝落或斷裂</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="swiper-slide box swiper-slideB">
+            <div class="py-5 box-a">
+               <table class="tablesd tablesdB">
+                <tr style="height: 3vw;">
+                  <th>全鋯牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>耐用度高，咬合力與金屬牙冠相近</li>
+                      <li>自然，不影響美觀</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>較全瓷牙冠厚，需磨掉較多牙齒</li>
+                      <br>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="swiper-slide box swiper-slideC">
+            <div class="py-5">
+              <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th class="thd">全瓷牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>仿真度最高，透光度高，顏色相似，自然</li>
+                      <li>適合用於前牙，外觀與真牙相似，不影響美觀</li>
+                      <li>可根據需要的堅固度，選擇不同強度的物料</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li style="padding: 3.4vw 0 ;">比金屬牙套的強度較低</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+        <!-- <div id="table" class="carousel mbshow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item box active ">
+                <div class="table-box py-5" id="move_div">
+                  <table class="tables">
+                <tr>
+                  <td>優點</td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">缺點</td>
+                </tr>
+              </table>
+              <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th>金屬牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>耐用度高，適合需要咬合力較強的後牙</li>
+                      <li>損耗度與真牙非常接近</li>
+                      <li>堅固穩定，不用大幅度磨小牙齒，可保留大部分原牙</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>金屬顏色，不適合用於前牙，影響外觀</li>
+                      <li>價格較為昂貴</li>
+                      <li>有致癌疑慮</li>
+                      <li>較容易發炎或出現過敏</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+                </div>
+              </div>
+              <div class="carousel-item box  py-5">
+                <div class="table-box py-5" id="move_div">
+                  <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th class="thd">烤瓷合金牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li style="padding: 3.4vw 0;">內層金屬，外層陶瓷，可以選擇外層顏色，較為美觀</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>由於有內外兩層，相對較厚，需磨掉較多牙齒</li>
+                      <li>牙套顏色不夠自然</li>
+                      <li>牙套邊緣會顯出金屬黑影，影響外觀</li>
+                      <li>表層陶瓷較金屬容易剝落或斷裂</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+                </div>
+                 
+            </div>
+            <div class="carousel-item box py-5">
+              <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th>全鋯牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>耐用度高，咬合力與金屬牙冠相近</li>
+                      <li>自然，不影響美觀</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li>較全瓷牙冠厚，需磨掉較多牙齒</li>
+                      <br>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <div class="carousel-item box py-5">
+              <table class="tablesd">
+                <tr style="height: 3vw;">
+                  <th class="thd">全瓷牙冠</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>仿真度最高，透光度高，顏色相似，自然</li>
+                      <li>適合用於前牙，外觀與真牙相似，不影響美觀</li>
+                      <li>可根據需要的堅固度，選擇不同強度的物料</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td class="newsty">
+                    <ul>
+                      <li style="padding: 3.4vw 0 ;">比金屬牙套的強度較低</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#table" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#table" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#table" data-bs-slide-to="2" ></button>
+              <button type="button" data-bs-target="#table" data-bs-slide-to="3"></button>
+            </div>
+          </div> -->
+        <div class="box pcshow">
+          <div class="card" @click="drawBegin(judgeActive)">
             <div class="table-box">
               <table class="tables">
                 <tr>
@@ -136,6 +373,29 @@
 export default {
   data() {
     return {
+      swiperOptions: {
+            // centeredSlides: true,
+            // spaceBetween: -10,
+            // speed: 1500,
+            slidesPerView: "1.1",
+            pagination: {
+              el: '.swiper-pagination',
+              dynamicBullets: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next", //下一页dom节点
+              prevEl: ".swiper-button-prev", //前一页dom节点
+            },
+            on: {
+              slideChange() {
+                console.log('onSlideChangeEnd', this);
+              },
+              tap() {
+                console.log('onTap', this);
+              }
+            }
+          },
+      judgeActive: 1,
       list: [{
         id: 0,
         title: '智慧齒脫除'
@@ -156,12 +416,20 @@ export default {
 
   },
   methods: {
+     drawBegin (e){
+      if( e === 1){
+      this.judgeActive = 2
+      }else{
+      this.judgeActive = 1
+      }
+      },
     handleClick(index) {
       // console.log(index);
       this.currentIndex = index
       console.log('测试===========', this.currentIndex);
     }
   }
+  
 }
 
 </script>
@@ -196,6 +464,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .mbshow{
+    display: none;
+  }
   .card {
     border: 0px solid rgba(0, 0, 0, .125);
   }
@@ -635,7 +906,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -696,6 +967,19 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  ::v-deep .swiper-pagination-bullet-active{
+    background-color: #57B2F3;
+    width: 15px ;
+    height: 15px ;
+}
+::v-deep .swiper-pagination-bullet{
+  width: 15px ;
+  height: 15px ;
+   background-color:#9BD0F5;
+}
+  .pcshow{
+    display: none; 
+  }
   .newsty {
     background: #ECF7FC;
     border-radius: 0 0 9px 9px !important;
@@ -707,13 +991,16 @@ export default {
   }
 
   .box {
-    height: 506px;
+    // height: 480px;
     // background: #eee;
     // padding: 10px 0;
     white-space: pre-line;
     /* 禁止超出自动换行 */
-    overflow-y: auto;
+    // overflow-y: auto;
     /* 横向滑动 */
+    .box-a{
+      // margin: 0 4vw;
+    }
   }
 
   /*隐藏下面的滚动条*/
@@ -784,8 +1071,9 @@ export default {
   .table-box {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    margin: 2vw 4vw;
+    // justify-content: center;
+    margin: 0vw 4vw;
+    width: 100%;
   }
 
   .lists {
@@ -1036,12 +1324,12 @@ export default {
     margin-bottom: -4rem;
   }
 
-  .active {
-    float: inherit;
-    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
-    // background-clip:content-box;
-    background-clip: padding-box;
-  }
+  // .active {
+  //   float: inherit;
+  //   border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+  //   // background-clip:content-box;
+  //   background-clip: padding-box;
+  // }
 
   .Advantage {
     display: flex;
@@ -1271,6 +1559,7 @@ export default {
   // }
 
   p {
+    padding: 1vw;
     padding-top: 1vw;
     color: #9BA5B1;
   }
@@ -1295,5 +1584,11 @@ export default {
     margin-top: 5vw;
     background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
   }
+::v-deep .carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #57B2F3;
+  width: 14px;
+  height: 14px;
+}
 }
 </style>

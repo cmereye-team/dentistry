@@ -5,7 +5,14 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/DentalCare.jpg "
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png" 
+        title="牙齒健康" 
+        alt="牙齒健康" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"/>
+
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/DentalCare.jpg "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 750w,
@@ -13,7 +20,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1650w,
-            ">
+            "> -->
       <div class="title">
         牙齒健康
       </div>
@@ -44,12 +51,27 @@
 </template>
 
 <script>
+import { getList } from '@/api/index.js'
 export default {
   data() {
     return {
     }
   },
   mounted() {
+    this.bannerWebImg()
+    this.bannerMbImg()
+  },
+  methods: {
+     bannerWebImg(){
+        getList({ '_embed': true, 'categories': 24 }).then((res => {       
+        // console.log(res);
+      }))
+    },
+    bannerMbImg(){
+      getList({ '_embed': true, 'categories': 23 }).then((res => {       
+        console.log(res);
+      }))
+    },
   }
 }
 </script>

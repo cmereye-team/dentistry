@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -17,7 +17,7 @@
               <ul>
                 <li>作為家長的你，可能好多人都會時刻關注自己小朋友的身體健康，但在小朋友的口腔健康上，大多數人可能都會認為等待小朋友就讀小一時，參加由政府提供的牙科保健就已經足夠。其實等待小朋友6歲才開始檢查牙齒，可能已經太遲。因為好多小朋友都喜歡食糖或甜食，又不喜歡刷牙，大大增加患上蛀牙的風險。</li>
                 <li>小朋友擁有第一隻牙開始，就可以定期檢查牙齒。定期進行牙科保健，從小了解保持口腔健康的知識和重要性，家長們亦可以緊貼小朋友的牙齒發育進度，及早發現兒童牙齒的潛在問題，作出針對性治療。</li>
-                <li>除左身體健康，小朋友的口腔健康同樣重要，家長可定期找合資格牙醫為孩子進行牙科檢查及諮詢。</li>
+                <li>除了身體健康，小朋友的口腔健康同樣重要，家長可定期找合資格牙醫為孩子進行牙科檢查及諮詢。</li>
               </ul>
             </div>
           </li>
@@ -32,18 +32,18 @@
               <div class="h"></div>
               <div class="porcelain—cons">
                 <div class="porcelain">
-                  <p>及早教育小朋友保護牙齒</p> &nbsp;&nbsp;&nbsp;&nbsp;  
+                  <p>及早教育小朋友保護牙齒都好,</p> &nbsp;  
                   <p style="color: #9BD0F5; font-weight:600">預防蛀牙及其他口腔疾病</p>
                 </div>
                 <br>
                 <div class="porcelain">
-                  <p>緊貼小朋友牙齒發育進度</p> &nbsp;&nbsp;&nbsp;&nbsp;  
+                  <p>緊貼小朋友牙齒發育進度,</p> &nbsp;  
                   <p style="color: #9BD0F5; font-weight:600">及早作出針對性治療</p>
                 </div>
                 <br>
                 <div class="porcelain">
-                  <p>把握小朋友矯齒黃金期</p> &nbsp;&nbsp;&nbsp;&nbsp;  
-                  <p style="color: #9BD0F5; font-weight:600">大大提高改善牙齒排列、面部輪廓、咬字發音等問題嘅成功率</p>
+                  <p>把握小朋友矯齒黃金期,</p> &nbsp;  
+                  <p style="color: #9BD0F5; font-weight:600">大大提高改善牙齒排列、面部輪廓、咬字發音等問題的成功率</p>
                 </div>
               </div>
               <div  class="quote">
@@ -429,7 +429,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -483,7 +483,7 @@ export default {
 //md
 @media only screen and (max-width: 768px) {
   .cons-box{
-    margin: 2vw;
+    margin: 2vw 5.2vw;
   }
     .h{
     width: 25%;

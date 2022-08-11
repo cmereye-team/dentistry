@@ -5,31 +5,23 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg">
+         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg " 
+                srcset="https://static.cmereye.com/static/lkximg/image/banner/MbContactUs.jpg 400w, 
+                https://static.cmereye.com/static/lkximg/image/banner/MbContactUs.jpg 640w, 
+                https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg "
+                title="聯絡我們" 
+                alt="聯絡我們" 
+                src="https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg"/>
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/ContactUs.jpg"> -->
                 <div class="title">
         聯絡我們
       </div>
       </div>
-    </div>
-    <!-- 指示符 -->
-
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
-    <!-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div> -->
-     
+    </div>     
   </div>
-  <div>
+  <div class="comContent ">
     <div class="meun">
-      <p>首頁</p>
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">聯絡我們</p>
     </div>
@@ -157,7 +149,7 @@ export default {
     }
   }
     .meun {
-      padding-top: 2vw;
+      // padding-top: 2vw;
     padding-left: 6vw;
     display: flex;
   }

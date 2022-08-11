@@ -4,16 +4,11 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg"> -->
-         <img src=" https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg 1650w,
-            ">
+      <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/Mbzhiya.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg " 
+        title="植牙" 
+        alt="植牙" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/zhiya.jpg "/>
           <div class="title">
         植牙
       </div>

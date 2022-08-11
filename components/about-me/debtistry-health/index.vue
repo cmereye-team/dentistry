@@ -2,76 +2,91 @@
   <div class="section vedio_box md:font-black">
     <div class="flex justify-center texts">
       <h2>牙齒健康</h2>
-      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
+      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="vedio_slider" v-if="screenWidth > 768">
-      <div v-swiper:mySwiper="swiperOption" class="swiperWrap ">
+      <div 
+          v-swiper:mySwiper="swiperOption"
+          v-if="banners.length"
+          class="swiperWrap ">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(banner, index) in banners" :key="index">
-            <img :src="banner.src">
-            <div class="dates">
-              <div class="date"></div>
+          <div class="swiper-slide" v-for="(item, index) in banners" :key="index">
+            <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
+            <div class="dateinfo">
+              <div class="dates">
+              <span class="linesy">{{item.datas}}</span>
+              <span>{{item.month}}</span>
             </div>
+            </div>
+            <!-- <div class="dates">
+              <div class="date"></div>
+            </div> -->
             <!-- <img class="date" src="" alt=""> -->
-            <p class="des">{{ banner.des }}</p>
-            <p class="content">{{ banner.content }}</p>
+            <p class="des" v-html="item.title.rendered"></p>
+            <p class="content" v-html="item.content.rendered"></p>
           </div>
         </div>
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
 
         <div class="swiper-button-prev flex items-center justify-center"> <img
-            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/L.png" alt=""> </div>
+            src="@/asset/image/about-me/debtistry-health/L.png" alt=""> </div>
         <div class="swiper-button-next flex items-center justify-center"> <img
-            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/R.png" alt=""></div>
+            src="@/asset/image/about-me/debtistry-health/R.png" alt=""></div>
 
       </div>
 
-      <nuxt-link class="link_more" to="">查看更多</nuxt-link>
+      <nuxt-link class="link_more" to="/oral-health-information">查看更多</nuxt-link>
     </div>
     <div class="vedio_slider" v-else>
-      <div v-swiper:mySwiper="swiperOptions" class="swiperWrap ">
+      <div v-swiper:mySwiper="swiperOptions" class="swiperWrap " v-if="banners.length">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(banner, index) in banners" :key="index">
-            <img :src="banner.src">
-            <p class="des">{{ banner.des }}</p>
-            <div class="dates">
-              <div class="date"></div>
+          <div class="swiper-slide" v-for="(item, index) in banners" :key="index">
+            <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
+             <div class="dateinfo">
+              <div class="dates">
+              <span class="linesy">{{item.datas}}</span>
+              <span>{{item.month}}</span>
             </div>
-            <p class="content">{{ banner.content }}</p>
+            </div>
+            <p class="des" v-html="item.title.rendered"></p>
+           
+            <p class="content" v-html="item.content.rendered"></p>
+            <!-- <p class="des">{{ banner.des }}</p>
+            <p class="content">{{ banner.content }}</p> -->
           </div>
         </div>
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
 
         <div class="swiper-button-prev flex items-center justify-center"> <img
-            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/L.png" alt=""> </div>
+            src="@/asset/image/about-me/debtistry-health/L.png" alt=""> </div>
         <div class="swiper-button-next flex items-center justify-center"> <img
-            src="https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/R.png" alt=""></div>
-
+            src="@/asset/image/about-me/debtistry-health/R.png" alt=""></div>
       </div>
-
-      <nuxt-link class="link_more" to="">查看更多</nuxt-link>
+      <nuxt-link class="link_more" to="/oral-health-information">查看更多</nuxt-link>
     </div>
   </div>
 </template>
 <script>
+import { getList } from '@/api/index.js'
+
 export default {
   data() {
     return {
       screenWidth: '',
       banners: [
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup01.png", link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup.png", link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup02.png", link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' },
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup01.png", link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup.png", link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
-        { src: "https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Maskgroup02.png", link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup01.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup02.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup01.png"), link: "", des: '漱口水可以取代牙刷及牙線？ ', content: '聽講漱口水可以清除口腔細菌🤔直接用咪可以唔使刷牙同用牙線囉......' },
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup.png"), link: "", des: '護齒食物你要知 #堅果  ', content: '食啲碳水化合物量低嘅堅果（例如腰果、花生、胡桃、杏仁）有助減......' },
+        // { src: require("@/asset/image/about-me/debtistry-health/Maskgroup02.png"), link: "", des: '牙膏的秘密 ', content: '相信大家都試過刷牙嘅時候唔小心吞咗啲牙膏，擔心過食咗落肚會有咩影響😆......' }
 
       ],
       swiperOptions: {
             loop: true,
             centeredSlides: true,
             spaceBetween: 20,
-            slidesPerView: "2",
+            slidesPerView: "1.5",
             pagination: {
               el: '.swiper-pagination',
               dynamicBullets: true
@@ -126,6 +141,7 @@ export default {
         },
       },
       created() {
+        this.getlistds()
         if (process.client) {
           this.screenWidth = document.body.clientWidth
           window.onresize = () => {
@@ -134,15 +150,52 @@ export default {
             })
           }
         }
-
+      
       },
       mounted() {
+        
         console.log(this.screenWidth);
        },
-      methods: {}
+      methods: {
+      getlistds(){
+         getList({'_embed':true,'categories': 21 }).then((res=>{ 
+          this.banners = res.data
+          this.banners.forEach((item, index) => {
+          if(item.date.slice(5, 7) === '07'){
+            item.month = 'July'
+          } else if(item.date.slice(5, 7) === '01'){
+            item.month = 'Jan'
+          }else if(item.date.slice(5, 7) === '02'){
+            item.month = 'Feb'            
+          }else if(item.date.slice(5, 7) === '03'){
+            item.month = 'Mar'           
+          }else if(item.date.slice(5, 7) === '04'){
+            item.month = 'Apr'           
+          }else if(item.date.slice(5, 7) === '05'){
+            item.month = 'May'            
+          }else if(item.date.slice(5, 7) === '06'){
+            item.month = 'June'            
+          }else if(item.date.slice(5, 7) === '08'){
+            item.month = 'August'            
+          }else if(item.date.slice(5, 7) === '09'){
+            item.month = 'Sep'           
+          }else if(item.date.slice(5, 7) === '10'){
+            item.month = 'Oct'            
+          }else if(item.date.slice(5, 7) === '11'){
+            item.month = 'Nov'            
+          }else if(item.date.slice(5, 7) === '12'){
+            item.month = 'Dec'            
+          }
+          item.datas = item.date.slice(8, 10)
+        });
+        console.log('this.banners===',JSON.parse(JSON.stringify(this.banners)));
+         }))
+        }
+        }
     };
 </script>
 <style lang="scss" scoped>
+ 
 .texts {
   text-align: center;
 
@@ -159,23 +212,40 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
-  .dates{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    left: 11vw;
-    top: 17vw;
-    z-index: 1;
+ ::v-deep .dateinfo{
+    display: flex !important;
+    justify-content: center  !important;
+    position: absolute  !important;
+    left: 9vw  !important;
+    top: 15vw  !important;
+  }
+   .dates{
+      width: 6vw;
+      height: 6vw;
+      background-color: #9BD0F5;
+      border-radius: 50%;
+      margin: 1vw;  
+      display: flex;
+      text-align: center;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: center;
+      flex-direction: column;
+    .linesy{
+        font-size: 27px;
+        border-bottom: 3px solid #FFF;
+        margin: 0 1vw;
+      }
   }
   .date{
     height: 5vw ;
     width: 5vw ;
-    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Group56.svg) no-repeat;
+    background: url(~@/asset/image/about-me/debtistry-health/Group56.svg) no-repeat;
     background-size:100%,100%;
     }
 
 
-.swiperWrap .swiper-slide-active[data-v-7464405a]{
+.swiperWrap .swiper-slide-active{
   .des{
     color: #57B2F3;
   }
@@ -185,13 +255,13 @@ export default {
    .date{
     height: 5vw ;
     width: 5vw ;
-    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/date.svg) no-repeat;
+    background: url(~@/asset/image/about-me/debtistry-health/date.svg) no-repeat;
     background-size:100%,100%;
     }
 }
 
 
-  ::v-deep .swiper-button-prev {
+::v-deep .swiper-button-prev {
     left: 0 !important;
     top: 10vw !important;
   }
@@ -201,15 +271,15 @@ export default {
     top: 10vw !important;
   }
 
-  .swiper-button-prev img,
-  .swiper-button-next img {
-    width: 1.3vw;
+  ::v-deep  .swiper-button-prev img,
+  ::v-deep  .swiper-button-next img{
+    width: 1.3vw !important;
   }
 
-  ::v-deep .swiperWrap .swiper-slide img {
-    width: 76% !important;
-    height: 100% !important;
-  }
+  //  ::v-deep .swiperWrap .swiper-slide img {
+  //   width: 76% !important;
+  //   height: 100% !important;
+  // }
 
   .section {
     width: 100%;
@@ -267,13 +337,13 @@ export default {
     margin: 0vw auto;
 
     .swiper-slide {
-      color: #c4c4c4;
+      color: #57B2F3;
       text-align: center;
       letter-spacing: 0.2vw;
 
       // font-size: 1.1vw;
       img {
-        width: 100%;
+        width: 76% ;
         height: 100%;
         border-radius: 10px;
         border-radius: 10px;
@@ -286,7 +356,7 @@ export default {
         padding-left: 3vw;
         &:after{
           content: "";
-          border-bottom: 0.2vw solid #9BA5B1;
+          border-bottom: 0.2vw solid #57B2F3;
           // margin-right: 1vw;
           width: 2vw;
           display: block;
@@ -295,6 +365,7 @@ export default {
       }
 
       .content {
+            color: #9BD0F5;
         font-size: 18px;
         text-align: left;
         padding-left: 3vw;
@@ -334,7 +405,32 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
-  ::v-deep .swiperWrap .swiper-slide-active{
+     .dates{
+      width: 15vw;
+      height: 15vw;
+      background-color: #9BD0F5;
+      border-radius: 50%;
+      margin: 1vw;  
+      display: flex;
+      text-align: center;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: center;
+      flex-direction: column;
+    .linesy{
+        font-size: 20px;
+        border-bottom: 3px solid #FFF;
+        margin: 0 1vw;
+      }
+  }
+  .dateinfo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: -3vw;
+    top: -5vw;
+  }
+  .swiperWrap .swiper-slide-active[data-v-7464405a]{
   .des{
     color: #57B2F3;
   }
@@ -344,7 +440,7 @@ export default {
    .date{
     height: 10vw ;
     width: 10vw ;
-    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/date.svg) no-repeat;
+    background: url(~@/asset/image/about-me/debtistry-health/date.svg) no-repeat;
     background-size:100%,100%;
     }
 }
@@ -352,14 +448,14 @@ export default {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 20vw;
-    top: 42vw;
+    left: 28vw;
+    top: 61vw !important; 
     z-index: 1;
   }
   .date{
     height: 10vw;
     width: 10vw;
-    background: url(https://static.cmereye.com/static/lkximg/image/about-me/debtistry-health/Group56.svg) no-repeat;
+    background: url(~@/asset/image/about-me/debtistry-health/Group56.svg) no-repeat;
     background-size:100%,100%;
     }
   .texts {
@@ -370,7 +466,7 @@ export default {
     width: 90vw;
     margin: 0 !important;
 }
-::v-deep .swiperWrap {
+.swiperWrap[data-v-7464405a] {
     margin: 0 !important;
 
 }
@@ -380,17 +476,18 @@ export default {
     width: 2vw;
     width: 2.5vw;
     height: 2.5vw;
+    
 
   }
 
   .swiper-button-prev {
-    left: 12vw;
-    top: 20vw;
+    left: 9vw;
+    top: 32vw;
   }
 
   .swiper-button-next {
-    right: 16vw;
-    top: 20vw;
+    right: 13vw;
+    top: 32vw;
 }
 
   .vedio_slider {
@@ -422,7 +519,7 @@ export default {
     margin: 0vw auto;
 
     .swiper-slide {
-      color: #c4c4c4;
+      color: #57B2F3;
       text-align: center;
       letter-spacing: 0.2vw;
 
@@ -460,7 +557,8 @@ export default {
     }
 
     100% {
-      background: linear-gradient(94.37deg, #81dbec 12.08%, #4570b6 92.9%);
+      // background: linear-gradient(94.37deg, #81dbec 12.08%, #4570b6 92.9%);
+      background: #57B2F3;
       color: white;
     }
   }

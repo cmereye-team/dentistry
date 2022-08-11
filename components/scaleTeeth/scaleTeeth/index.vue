@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -60,7 +60,7 @@
             </div>
           </div>
         </div>
-      <div class="lists pcshow-list">
+      <!-- <div class="lists pcshow-list">
             <div class="list_disd">
               <strong>療程後注意事項</strong>
               <div class="list_cons">
@@ -72,7 +72,7 @@
               <li>如發現臨時補牙物料脫落，須盡快見牙醫，以免唾液中的細菌滲入牙齒髓腔</li>
               </div>
             </div>
-          </div>
+          </div> -->
     </div>
     </div>
   </di>
@@ -266,7 +266,7 @@ export default {
   }
 
   .video {
-    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
+    // background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
     margin: 132px 8vw;
   }
 
@@ -416,7 +416,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -594,12 +594,12 @@ export default {
     padding-bottom: 24vw;
     padding-right: 2vw;
     ul {
-      padding-top: 1vw;
+      padding: 3vw;
       list-style-type: none;
 
       li {
         color: #9BA5B1;
-
+        padding: 2vw 0;
       }
     }
   }

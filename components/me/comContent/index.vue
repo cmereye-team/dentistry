@@ -1,7 +1,7 @@
 <template>
-   <div class="bg-white py-5 pb-0 py-xs-2">
+   <div class="bg-white comContent  pb-0 py-xs-2">
     <div class="meun">
-      <p>首頁</p>
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">關於我們</p>
     </div>
@@ -9,10 +9,10 @@
         <h2>公司簡介</h2>
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
         <h3>希瑪牙科</h3>
-        <p class="serve_con" >
+        <p class="serve_cons" >
           為香港希瑪眼科醫療控股有限公司<br>
           （股份代號：3309）旗下的牙科中心，<br>
-          分佈港九新界，位於中環、尖沙咀、銅鑼灣﹑灣仔、沙田﹑鑽石山及觀塘。
+          分佈港九新界，位於中環、尖沙咀、銅鑼灣、灣仔、沙田、鑽石山及觀塘。
         </p>
     </div>
      <div class="city">
@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 .textsd{
    text-align: center;
-   margin: 8vw 0;
+  //  margin: 8vw 0;
     .ya{
          color:#57B2F3;
          margin-bottom:0.5vw;
@@ -75,6 +75,10 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .textsd{
+   margin: 8vw 0;
+
+  }
   .meun{
     padding-left:6vw;
     display: flex;
@@ -92,6 +96,7 @@ export default {
     img{
       margin:5vw;
       width: 92%;
+      height: 92%;
     }
   }
     h3{
@@ -100,15 +105,15 @@ export default {
     font-weight: 600;
 
   }
- .serve_con{
-
-    text-align: center;
-    padding: 2vw;
-    color: #57B2F3;
+ .serve_cons{
+        text-align: center;
+        padding: 2vw;
+        color: #57B2F3;
 }
 }
 //pc
 @media only screen and (min-width: 768px) {
+  
   .yas{
     padding-top: 5vw;
     margin-bottom: 0.5vw;
@@ -133,12 +138,18 @@ export default {
       color: #57B2F3;
        padding-top:5vw;
       }
-    .serve_con{
+    .serve_cons{
     text-align: center;
     color: #57B2F3;
     }
 }
 </style>
 <style lang="scss" >
+//pc
+@media only screen and (min-width: 768px) {
+.comContent{
+        margin-top: 56px !important;
+  }
+}
 
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class=" comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -42,13 +42,13 @@
       </div>
       <div class="box box_center">
         <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel02.png" alt="">
-        <h3>收集牙齒資料</h3>
-        <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
+        <h3>訂制矯齒計劃</h3>
+        <p>牙醫會與廠商方面溝通，為你建立專屬的3D矯齒治療方案。</p>
       </div>
       <div class="box">
         <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel03.png" alt="">
-        <h3>收集牙齒資料</h3>
-        <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
+        <h3>訂製牙套並開始療程</h3>
+        <p>廠商用3D電腦雷射列印科技製成一系列訂製牙箍，寄送至牙醫診所。我們會聯絡客人安排到診進行試戴並評估效果。客人需要每6至8星期複診，與牙醫跟進矯齒進度及取得新牙箍。</p>
       </div>
       </div>
       
@@ -446,7 +446,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -647,6 +647,9 @@ export default {
     margin-top: 9vw;
     padding-left: 5vw;
     text-align: left;
+    p{
+      padding: 4vw;
+    }
   }
 
   .list_dis {
@@ -659,10 +662,10 @@ export default {
     ul {
       padding-top: 1vw;
       list-style-type: none;
-
+      padding: 4vw;
       li {
         color: #9BA5B1;
-
+        padding: 1vw 0;
       }
     }
   }

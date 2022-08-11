@@ -5,7 +5,13 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/therapy.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/therapy.png "
+         <img data-cfsrc=" https://static.cmereye.com/static/lkximg/image/banner/therapy.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 400w, https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 640w,  https://static.cmereye.com/static/lkximg/image/banner/therapy.png" 
+        title="根管治療（杜牙根）" 
+        alt="根管治療（杜牙根）" 
+        src=" https://static.cmereye.com/static/lkximg/image/banner/therapy.png"/>
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/therapy.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 750w,
@@ -13,7 +19,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/therapyMbpng.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/therapy.png 1650w,
-            ">
+            "> -->
           <div class="title">
         根管治療（杜牙根）
       </div>

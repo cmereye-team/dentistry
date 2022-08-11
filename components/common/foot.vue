@@ -4,22 +4,34 @@
       <div>
         <ul>
           <li>
-            <img src="https://static.cmereye.com/static/lkximg/image/common/FB.svg" alt="">
+            <a href="https://www.facebook.com/dental.cmer/">
+              <img src="https://static.cmereye.com/static/lkximg/image/common/FB.svg" alt="">
+            </a>
           </li>
           <li>
+             <a href="https://www.instagram.com/cmerdental/">
             <img src="https://static.cmereye.com/static/lkximg/image/common/IG.svg" alt="">
+            </a>
           </li>
           <li>
+             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos">
             <img src="https://static.cmereye.com/static/lkximg/image/common/YT.svg" alt="">
+            </a>
+
           </li>
         </ul>
       </div>
       <div class="copyright">
-        <span>私隱政策</span>
+        <span>
+          <nuxt-link to="/policy#A1">私隱政策</nuxt-link>
+        </span>
         &nbsp;
         &nbsp;
         &nbsp;
-        <span>免責條款</span>
+        <span >
+          <!-- <nuxt-link to="/policy#A2">免責條款</nuxt-link> -->
+          <a href="/policy#A2">免責條款</a>
+          </span>
       </div>
       <div class="copyright long" >©2022 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
       
@@ -33,10 +45,23 @@ export default {
     };
   },
   created() { },
-  methods: {}
-};
+  methods: {
+  //   policy(){
+  //     this.$router.push({
+  //           path:"/policy",
+  //           query:{
+            	
+  //           }
+  //       })
+  //   }
+   }
+}
 </script>
 <style lang="scss" scoped>
+a {
+    color: #57B2F3;
+    text-decoration: none;
+} 
 @media only screen and (min-width: 768px) {
 .section {
   ul {
@@ -75,6 +100,7 @@ export default {
       }
     }
     .copyright {
+      cursor:pointer;
       display: flex;
       justify-content: center;
       font-size: 0.9vw;

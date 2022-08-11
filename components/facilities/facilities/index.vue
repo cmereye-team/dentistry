@@ -1,11 +1,11 @@
 <template>
-   <div class="bg-white py-5 pb-0 py-xs-2">
+   <div class="bg-white comContent pb-0 py-xs-2">
     <div class="meun">
-      <p>首頁</p>
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">診所設備</p>
     </div>
-    <div class="flex justify-center texts">
+    <div class="flex justify-center  texts">
         <h2>診所設備</h2>
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
     </div>
@@ -13,7 +13,7 @@
       <div class="Machine MacOne">
       <div class="dec"><h3>CBCT錐狀射束<br>電腦斷層掃描</h3></div>
       <img src="https://static.cmereye.com/static/lkximg/image/facilities/Machine01.png" alt=""  >
-      <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對療</p>
+      <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對性治療</p>
     </div>
      <div class="Machine">
       <div class="dec"><h3>CEREC</h3></div><br>
@@ -23,7 +23,7 @@
      <div class="Machine">
       <div class="dec"><h3>Class B 高壓滅菌器<br>及高溫消毒儀器</h3></div>
       <img src="https://static.cmereye.com/static/lkximg/image/facilities/Machine03.png" alt=""  >
-      <p>CBCT的輻射量較低，大約20秒的單次旋轉已能拍攝出立體的牙齒結構影像，精準呈現出牙齒狀態，提供針對療</p>
+      <p>牙科儀器在使用後，會先以高溫消毒儀器清洗，放入消毒袋，再使用符合Class B標準的高壓滅菌器徹底消毒。</p>
     </div>
     </div> 
     </div>
@@ -76,9 +76,9 @@ export default {
   .facilities{
     justify-content: center;
     text-align: center;
-    clip-path: ellipse(100% 54% at 51% 54%);
-    background: radial-gradient(108vw 68vw at  bottom ,transparent 50%,#ECF7FC 50%) !important;
-    height: 410vw;
+    clip-path: ellipse(151% 53% at 50% 54%);
+    background: radial-gradient(134vw 68vw at bottom, transparent 50%, #ECF7FC 50%) !important;
+    height: 429vw;
     .MacOne{
       padding-top:26vw !important;
       margin-top: 0 !important;

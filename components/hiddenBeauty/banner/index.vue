@@ -5,7 +5,11 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png"> -->
-        <img class="bannImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
+        src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png"
+        class="bannImg"/>
+        <!-- <img class="bannImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 750w,
@@ -13,7 +17,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1650w,
-            ">
+            "> -->
           <div class="title">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png"> -->
         <img class="iconImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png "

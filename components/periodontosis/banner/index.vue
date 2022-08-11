@@ -5,7 +5,13 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png "
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png " 
+        title="牙周病治療" 
+        alt="牙周病治療" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png "/>
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 750w,
@@ -13,7 +19,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosisMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/periodontosis.png 1650w,
-            ">
+            "> -->
           <div class="title">
         牙周病治療
       </div>

@@ -4,7 +4,11 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/OurTeam.jpg">
+                <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/OurTeam.jpg " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/MbOurTeam.png 400w, https://static.cmereye.com/static/lkximg/image/banner/MbOurTeam.png 640w, https://static.cmereye.com/static/lkximg/image/banner/OurTeam.jpg " 
+        title="我們的團隊" 
+        alt="我們的團隊" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/OurTeam.jpg"/>
             <div class="title">
         我們的團隊
       </div>
@@ -87,7 +91,7 @@ export default {
       height: 53vw;
       width: 100vw;
       left:0;
-      top:36%;
+      top:39%;
       font-weight: 600;
       color: #79828D;
       font-size: 24px;
@@ -104,7 +108,7 @@ export default {
     text-align: -webkit-center;
 
     img {
-      height: 46vw;
+      height: 51vw;
       // height: 100%;
       width: 90%;
       border-radius: 30px 30px 30px 30px;

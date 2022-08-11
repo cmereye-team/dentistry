@@ -5,7 +5,13 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png "
+      <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png " 
+        title="一般口腔檢查" 
+        alt="一般口腔檢查" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png "/>
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 750w,
@@ -13,7 +19,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExaminationMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/oralExamination.png 1650w,
-            ">
+            "> -->
           <div class="title">
         一般口腔檢查
       </div>

@@ -32,7 +32,26 @@ export default {
     zhiya,
     foot,
     problem
+    },
+    mounted(){
+       document.getElementsByTagName("body")[0].className="body-implant";
+    },
+    head() {
+    return {
+      title: '植牙 | 牙科服務 | 希瑪牙科中心',
+      meta: [{
+        hid: 'description',
+        name: 'description',
+        content: '植牙，俗稱為「種牙」，是處理缺牙的一種治療方法。牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。'
+      },
+      {
+        hid: 'keywords',
+        name: 'keywords',
+        content: '植牙 植牙過程 植牙的原因 植牙與假牙分別 植牙常見問題'
+      },
+      ]
     }
+  }
   
 }
 </script>

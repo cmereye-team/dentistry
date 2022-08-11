@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class=" comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -13,8 +13,8 @@
         <li class="bac-box">
           <div  class="list_con">
             <img src="https://static.cmereye.com/static/lkximg/image/whitening/apple.png" alt="">
-            <h3>想擁有更亮白的牙齒，</h3>
-            <p>可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
+            <!-- <h3>想擁有更亮白的牙齒，</h3> -->
+            <p>想擁有更亮白的牙齒，可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
             <div class="listcons" >
             <div class="list_d" >
             <strong>激光牙齒美白</strong>
@@ -77,7 +77,7 @@
             <div class="gcon">
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                <p>牙齒表面均勻塗上激光專用美白劑</p>
+                <p>在牙齒表面均勻塗上激光專用美白劑</p>
               </div>
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
@@ -89,7 +89,7 @@
               </div>
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/whitening/9.svg" height="50vw" width="50vw" alt="">
-                <p>療程完成後，清以牙齒專用色階進行對色，比對療程前後效果除美白劑與牙齦保護劑</p>
+                <p>以牙齒專用色階進行對色，比對療程前後效果</p>
               </div>
             </div>
           </div>
@@ -106,9 +106,10 @@
             <div class="list_disd">
               <strong>療程後注意事項</strong>
               <div class="list_cons">
-              <li>避免進食太硬的食物</li>
-              <li>需定期覆診，檢查植牙的狀況</li>
-              <li>需要徹底清潔牙齒，避免植體發炎，導致植體鬆動</li>
+              <li>1星期內避免進食刺激性食物及飲品</li>
+              <li>3星期內避免進食色素較多的食物及飲品</li>
+              <li>養成健康生活習慣，盡量避免吸煙</li>
+              <li>早晚刷牙，進食後清潔口腔，保持口腔清潔衛生</li>
               </div>
             </div>
           </div>
@@ -153,15 +154,15 @@
             <div class="gcon">
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                <p>牙齒表面均勻塗上激光專用美白劑</p>
+                <p>在牙齒表面均勻塗上藍光專用美白劑</p>
               </div>
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
-                <p>以藍光燈開始照射牙齒，整個過程大概需要照射照2-3次</p>
+                <p>以藍光燈開始照射牙齒，整個過程大概需要照射2-3次</p>
               </div>
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/whitening/8.svg" height="50vw" width="50vw" alt="">
-                <p>療程完成後，清除美白劑與牙齦保護劑-3次</p>
+                <p>療程完成後，清除美白劑與牙齦保護劑</p>
               </div>
               <div class="content right">
                 <img src="https://static.cmereye.com/static/lkximg/image/whitening/9.svg" height="50vw" width="50vw" alt="">
@@ -180,9 +181,10 @@
             <div class="list_disd">
               <strong>療程後注意事項</strong>
               <div class="list_cons">
-              <li>避免進食太硬的食物</li>
-              <li>需定期覆診，檢查植牙的狀況</li>
-              <li>需要徹底清潔牙齒，避免植體發炎，導致植體鬆動</li>
+              <li>1星期內避免進食刺激性食物及飲品</li>
+              <li>3星期內避免進食色素較多的食物及飲品</li>
+              <li>養成健康生活習慣，盡量避免吸煙</li>
+              <li>早晚刷牙，進食後清潔口腔，保持口腔清潔衛生</li>
               </div>
             </div>
           </div>
@@ -390,6 +392,7 @@ export default {
   }
   }
   .list_cons{
+
     margin: 2vw 0;
   }
   .video{
@@ -538,7 +541,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -600,6 +603,7 @@ export default {
     padding: 5vw 5vw;
   }
   .list_d{
+    margin: 8vw 5vw;
     display: grid;
     justify-items: start;
     strong {
@@ -607,12 +611,13 @@ export default {
     }
     span{
       text-align: left;
-      padding: 1vw 4vw;
+      padding: 2vw 0vw;
       color: #9BA5B1;
     }
   }
   .list_con{
     text-align: center;
+   
     h3{
       padding-top: 4vw;
       color: #57B2F3;
@@ -669,7 +674,9 @@ export default {
     margin-top: 15vw;
 
     img {
+      margin-top: 5vw;
       width: 126%;
+      height: 100%;
     }
 
   }
@@ -692,6 +699,7 @@ export default {
 
    .list_cons {
     margin: 2vw 0;
+    color: #79828D;
   }
 
   .video {
@@ -764,7 +772,7 @@ export default {
     }
   }
 .bac-box {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 17%, #ECF7FC 0);
   }
   // li {
   //   background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);

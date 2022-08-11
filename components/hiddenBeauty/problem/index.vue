@@ -19,7 +19,6 @@
           <div class="discon">
             <i class="title2"></i>
             <span>
-
               <ul>
                 <li>療程時間需視乎你的矯齒複雜程度，平均需1年至1年半，複雜個案則可能需2年或以上，而最快約3個月左右可見矯齒效果。</li>
               </ul>
@@ -38,9 +37,10 @@
           <div class="discon">
             <i class="title2"></i>
             <span>
-
               <ul>
-                <li>隱適美療程並沒有特別的年齡限制，只要有足夠牙齒數量及經牙醫評估你的狀況合適就可以。兒童為最理想的矯齒黃金期，由於兒童的骨質較軟，令移動速度及效果較好。家長可考慮於小童7歲左右的換牙階段，找牙醫作檢查及評估，及早針對牙冠及早期矯正需要。</li>
+                <li>隱適美療程並沒有特別的年齡限制，只要有足夠牙齒數量及經牙醫評估你的狀況合適就可以。</li>
+                <li>兒童為最理想的矯齒黃金期，由於兒童的骨質較軟，令移動速度及效果較好。家長可考慮於小</li>
+                <li>童7歲左右的換牙階段，找牙醫作檢查及評估，及早針對牙冠及早期矯正需要。</li>
               </ul>
             </span>
           </div>
@@ -59,8 +59,8 @@
             <span>
 
               <ul>
-                <li>隱適美牙箍以漸進緩和的矯正力道移動你的牙齒，相比其他矯正療程引起的痛楚較低。而某些使用者會於剛戴上新牙箍數天內或會感到緊繃的感覺，此為牙齒移動的跡象，不適感亦會於數天後消失。</li>
-
+                <li>隱適美牙箍以漸進緩和的矯正力道移動你的牙齒，相比其他矯正療程引起的痛楚較低。</li>
+                <li>而某些使用者會於剛戴上新牙箍數天內或會感到緊繃的感覺，此為牙齒移動的跡象，不適感亦會於數天後消失。</li>
               </ul>
             </span>
           </div>
@@ -77,10 +77,9 @@
           <div class="discon">
             <i class="title2"></i>
             <span>
-
               <ul>
-                <li>隱適美的全方位矯齒療程可解決輕微至複雜的矯齒個案，包括開咬、深咬、錯咬、倒及、哨牙等較複雜的牙齒問題。隱適美‧易（Invisalign Go）矯齒療程主要處理較輕微至中度的牙齒問題，適合想於較短時間內改善牙縫、牙齒擠擁等牙齒排列問題，價格亦較為優惠。</li>
-
+                <li>隱適美的全方位矯齒療程可解決輕微至複雜的矯齒個案，包括開咬、深咬、錯咬、倒及、哨牙等較複雜的牙齒問題。</li>
+                <li>隱適美‧易（Invisalign Go）矯齒療程主要處理較輕微至中度的牙齒問題，適合想於較短時間內改善牙縫、牙齒擠擁等牙齒排列問題，價格亦較為優惠。</li>
               </ul>
             </span>
           </div>
@@ -98,7 +97,8 @@
             <i class="title2"></i>
             <span>
               <ul>
-                <li>Invisalign First 矯齒牙箍採用已獲專利的SmartTrack材料，並且得到美國FDA認證其安全性。Invisalign First更根據兒童的短小牙齒進行優化，使用相應附件，提供隱定力度。牙箍亦可加上藍色依從性顯示點，方便檢查及監察牙箍佩戴時間，達致最佳療程效果。</li>
+                <li>Invisalign First 矯齒牙箍採用已獲專利的SmartTrack材料，並且得到美國FDA認證其安全性。</li>
+                <li>Invisalign First更根據兒童的短小牙齒進行優化，使用相應附件，提供穩定力度。牙箍亦可加上藍色依從性顯示點，方便檢查及監察牙箍佩戴時間，達致最佳療程效果。</li>
               </ul>
             </span>
           </div>
@@ -152,6 +152,7 @@ p {
   height: 82px;
   padding: 0 2vw;
   justify-content: space-between;
+  line-height: 24px;
 }
 ::v-deep .el-collapse-item__header.is-active{
   background-color: #ECF7FC;
@@ -171,8 +172,11 @@ p {
 .contents{
   display: flex;
   align-items: center;
+  width: fit-content;
   p{
     color: #79828D;
+         width: 87%;
+        text-align: -webkit-left;
   }
   span{
     color: #9BA5B1;
@@ -188,7 +192,7 @@ p {
    span{
     color: #9BA5B1;
     font-size: 16px;
-
+    width: 84%;
   }
 }
 .title1{
@@ -250,6 +254,7 @@ p {
 
     p {
       color: #79828D;
+     
     }
 
     span {
@@ -306,5 +311,10 @@ p {
   }
 
 
+}
+</style>
+<style lang="scss">
+.coll-box .discon{
+  margin-top: 5vw;
 }
 </style>

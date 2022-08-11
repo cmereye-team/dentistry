@@ -4,16 +4,15 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
+              <div class="carousel-item active titleImg">
+                <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/News.jpg " 
+                srcset="https://static.cmereye.com/static/lkximg/image/banner/MbNews.jpg 400w, 
+                https://static.cmereye.com/static/lkximg/image/banner/MbNews.jpg 640w, 
+                https://static.cmereye.com/static/lkximg/image/banner/News.jpg "
+                title="最新消息" 
+                alt="最新消息" 
+                src="https://static.cmereye.com/static/lkximg/image/banner/News.jpg"/>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/News.jpg"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/News.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/NewsMb.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/News.jpg 1650w,
-            ">
                 <div class="title">
         最新消息
       </div>
@@ -40,16 +39,37 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
     </div> -->
   </div>
+  </div>
 
 </template>
-
 <script>
+import { getList } from '@/api/index.js'
+
 export default {
   data() {
     return {
+      WebImgUrl:'',
+      MbImgUrl:''
     }
   },
   mounted() {
+     this.bannerWebImg()
+    this.bannerMbImg()
+  },
+  methods: {
+     bannerWebImg(){
+        getList({ '_embed': true, 'categories': 24 }).then((res => {       
+       this.WebImgUrl = res.data[0]._embedded[Object.keys(res.data[0]._embedded)[1]][0].source_url
+       console.log(this.WebImgUrl);
+
+      }))
+    },
+    bannerMbImg(){
+      getList({ '_embed': true, 'categories': 23 }).then((res => {       
+        console.log(res.data[0].link);
+        this.MbImgUrl = res.data[0]._embedded[Object.keys(res.data[0]._embedded)[1]][0].source_url
+      }))
+    },
   }
 }
 </script>

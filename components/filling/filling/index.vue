@@ -1,7 +1,9 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p>
+        <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
+      </p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -30,23 +32,28 @@
             <div class="gcond">
               <div class="gcon">
                 <div class="content ">
-                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw"
+                    alt="">
                   <p>清除牙齒蛀壞及脆弱的部分 </p>
                 </div>
                 <div class="content ">
-                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw"
+                    alt="">
                   <p>用專用的清潔消毒劑清潔牙齒表面，吹乾後，塗上黏固劑</p>
                 </div>
                 <div class="content ">
-                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw"
+                    alt="">
                   <p>填補牙洞及修補缺損部分</p>
                 </div>
                 <div class="content ">
-                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw"
+                    alt="">
                   <p>穩固填充物</p>
                 </div>
                 <div class="content ">
-                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
+                  <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw"
+                    alt="">
                   <p>牙齒修形及拋光（如蛀牙的程度深，或需要使用麻醉劑）</p>
                 </div>
               </div>
@@ -67,9 +74,91 @@
           <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <p class="serve_con">補牙材料主要分為複合樹脂（俗稱瓷粉）及銀汞合金（俗稱銀粉）兩種。<br>複合樹脂是現時最常用的材料。由於銀汞合金氧化後會變成銀黑色，因此較少被選用。</p>
         </div>
-        <div class="boxs">
+        <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow">
+          <div class="swiper-wrapper ">
+            <div class="swiper-slide box py-2">
+              <div class="table-box " id="move_div">
+                <table class="tables">
+                  <tr>
+                    <td>特性</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>優點</td>
+                  </tr>
+                  <tr>
+                    <td>缺點</td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 3vw;">
+                    <th>複合樹脂</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li style="padding:0.4vw">多用於修復牙齒的形狀</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>美觀，接近牙齒天然的顏色與牙釉質有較強的粘合力</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li style="padding:0.4vw">強度比銀汞合金稍弱</li>
+                      </ul>
+                    </td>
+
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="swiper-slide box swiper-slideB">
+              <div class="py-2">
+                <table class="tablesd">
+                  <tr style="height: 3vw;">
+                    <th class="thd">銀汞合金</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li style="padding:0.4vw">多用於修補小臼齒或大臼齒的蛀牙</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>堅固，可承受較強的咬合力耐用，不易磨損</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li style="padding:0.4vw">氧化後會變銀黑色，欠美觀</li>
+                      </ul>
+                    </td>
+
+                  </tr>
+                </table>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+
+
+        <div class="boxs pcshow">
           <div class="box">
-            <div class="card">
+            <div class="card" @click="drawBegin(judgeActive)">
               <div class="table-box">
                 <table class="tables">
                   <tr>
@@ -148,6 +237,27 @@
 export default {
   data() {
     return {
+      swiperOptions: {
+        // centeredSlides: true,
+        // spaceBetween: 36,
+        slidesPerView: "1.1",
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next", //下一页dom节点
+          prevEl: ".swiper-button-prev", //前一页dom节点
+        },
+        on: {
+          slideChange() {
+            console.log('onSlideChangeEnd', this);
+          },
+          tap() {
+            console.log('onTap', this);
+          }
+        }
+      },
       list: [{
         id: 0,
         title: '植牙過程'
@@ -157,6 +267,7 @@ export default {
         title: '固定式牙橋過程'
       }
       ],
+      judgeActive: 1,
       currentIndex: 0,   // 当前点击的tab的索引
     }
   },
@@ -164,6 +275,13 @@ export default {
 
   },
   methods: {
+    drawBegin(e) {
+      if (e === 1) {
+        this.judgeActive = 2
+      } else {
+        this.judgeActive = 1
+      }
+    },
     handleClick(index) {
       // console.log(index);
       this.currentIndex = index
@@ -175,6 +293,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+::v-deep .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  border: 0 !important;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #9BD0F5;
+  background-clip: padding-box;
+  border: 0;
+  margin-top: 1rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  border-radius: 100%;
+  transition: opacity .6s ease;
+}
+
+::v-deep .carousel-indicators {
+  position: inherit;
+}
+
+::v-deep .carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #57B2F3;
+  width: 14px;
+  height: 14px;
+}
+
 .texts {
   text-align: center;
   margin-top: 2vw;
@@ -192,17 +343,23 @@ export default {
 
 .serve_con {
   color: #79828D;
-  margin-top: 2vw;
+  margin: 2vw;
   // margin-bottom: 2vw;
   font-size: 18px;
 }
 
 //pc
 @media only screen and (min-width: 768px) {
-  .card{
-    border: 0px solid rgba(0,0,0,.125);
+  .mbshow {
+    display: none;
+
+  }
+
+  .card {
+    border: 0px solid rgba(0, 0, 0, .125);
     background-color: rgba(255, 255, 255, 0);
   }
+
   .tables {
     color: #57B2F3;
     background-color: #fff;
@@ -243,6 +400,7 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin: 0 3vw;
     padding-top: 5vw;
     padding-bottom: 10vw;
   }
@@ -513,7 +671,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -567,15 +725,35 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .swiper-slideB{margin-left: -4vw;}
+  .body-fillings .table-box .tablesd{margin-left: 1vw !important;}
+.body-fillings .swiper-container{padding-bottom: 8vw;}
+.body-fillings .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{padding: 6vw 0 !important;}
+  ::v-deep .swiper-pagination-bullet-active {
+    background-color: #57B2F3;
+    width: 15px;
+    height: 15px;
+  }
+
+  ::v-deep .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #9BD0F5;
+  }
+
+  .pcshow {
+    display: none !important;
+  }
+
   .box {
-    height: 498px;
+    // height: 408px;
     // background: #eee;
     // padding: 10px 0;
     white-space: pre-line;
     /* 禁止超出自动换行 */
-    overflow-y: auto;
+    // overflow-y: auto;
     /* 横向滑动 */
-    margin: 0 0 0 8vw;
+    // margin: 0 0 0 8vw;
   }
 
   /*隐藏下面的滚动条*/
@@ -772,6 +950,7 @@ export default {
 
     }
   }
+
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
     margin-top: 132px;
@@ -891,7 +1070,7 @@ export default {
     padding-right: 2vw;
 
     ul {
-      padding-top: 1vw;
+      padding: 4vw;
       list-style-type: none;
 
       li {
@@ -947,14 +1126,15 @@ export default {
   .table-box {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
+    // justify-content: center;
+    margin: 0 3vw;
     padding-bottom: 10vw;
   }
 
   .lists {
     display: flex;
-    margin: 0 6vw;
-    margin-top: 10vw;
+    margin: 22vw 6vw;
+    margin-top: 12vw;
   }
 
   .meun {

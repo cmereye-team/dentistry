@@ -4,7 +4,12 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg" >
-        <img  src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg">
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/MbAboutus.png 400w, https://static.cmereye.com/static/lkximg/image/banner/MbAboutus.png 640w, https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg " 
+        title="關於我們" 
+        alt="關於我們" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg"/>
+        <!-- <img  src="https://static.cmereye.com/static/lkximg/image/banner/Maskgroup.jpg"> -->
         <div class="title">
         關於我們
       </div>
@@ -59,7 +64,7 @@ export default {
       width: 100vw;
       left:0;
       top:45%;
-      font-weight: 500;
+      font-weight: 600;
       color: #79828D;
       font-size: 24px;
     }

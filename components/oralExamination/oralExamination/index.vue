@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -573,12 +573,12 @@ export default {
     padding-bottom: 24vw;
     padding-right: 2vw;
     ul {
-      padding-top: 1vw;
+      padding: 4vw;
       list-style-type: none;
 
       li {
         color: #9BA5B1;
-
+        padding: 2vw 0;
       }
     }
   }

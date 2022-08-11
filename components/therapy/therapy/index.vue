@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class=" comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -10,16 +10,16 @@
     <div class="step">
       <div class="list">
         <ul class="step_list items-center ">
-          <li>
+          <div class="yagen">
             <img src="https://static.cmereye.com/static/lkximg/image/therapy/apple.png" alt="">
             <div class="list_con">
               <strong>根管治療（杜牙根）</strong>
-              <p>
+              <p >
                 根管治療（杜牙根）是治療嚴重蛀牙或牙根受細菌感染的手術，當蛀牙菌的感染深入牙髓，以致牙齒內的神經發炎，便需要以杜牙根手術徹底清除感染的部分。
               </p>
             </div>
             <div class="list_dis">
-              <strong>根管治療（杜牙根）的原因</strong>
+              <strong style="padding: 0;">根管治療（杜牙根）的原因</strong>
               <ul>
                 <li>切除受感染的牙髓神經，解決牙痛問題</li>
                 <li>防止牙髓感染蔓延至牙周組織和牙槽骨，導致更嚴重的口腔問題</li>
@@ -27,7 +27,7 @@
                 <li>牙齒被蛀蝕得太深、撞斷或嚴重磨耗，需徹底清除牙髓內的感染，解決牙髓壞死、化膿等問題</li>
               </ul>
             </div>
-          </li>
+          </div>
         </ul>
       </div>
       <div class="video">
@@ -418,7 +418,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -432,7 +432,7 @@ export default {
       padding: 0 2vw;
     }
 
-    li {
+    .yagen {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
@@ -445,7 +445,9 @@ export default {
         color: #9BA5B1;
         display: flex;
       }
-
+      ul{
+        list-style-type: disc;
+      }
       strong {
         padding-left: 4vw;
         color: #9BA5B1;
@@ -577,6 +579,9 @@ export default {
     margin-top: 9vw;
     padding-left: 5vw;
     text-align: left;
+    p{
+      padding: 4vw;
+    }
   }
 
   .list_dis {
@@ -587,8 +592,8 @@ export default {
     padding-bottom: 24vw;
     padding-right: 2vw;
     ul {
-      padding-top: 1vw;
-      list-style-type: none;
+          list-style-type: disc;
+    padding: 3vw 8vw;
 
       li {
         color: #9BA5B1;
@@ -621,7 +626,7 @@ export default {
   }
 
   .list_cons {
-    margin: 2vw 0;
+    margin: 5vw 2vw;
   }
 
   .icons{

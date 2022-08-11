@@ -5,7 +5,15 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png "
+
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png" 
+        title="拔牙及智慧齒脫除" 
+        alt="拔牙及智慧齒脫除" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png"/>
+
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 750w,
@@ -13,7 +21,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosisMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/exelcymosis.png 1650w,
-            ">
+            "> -->
           <div class="title">
         拔牙及智慧齒脫除
       </div>

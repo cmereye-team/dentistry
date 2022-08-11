@@ -5,7 +5,12 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/filling.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/filling.png "
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/filling.png " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/filling.png " 
+        title="補牙" 
+        alt="補牙" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/filling.png "/>
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/filling.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 750w,
@@ -13,7 +18,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/fillingMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/filling.png 1650w,
-            ">
+            "> -->
           <div class="title">
         補牙
       </div>

@@ -4,7 +4,7 @@
       <h2>服務理念</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
     </div>
-    <div class="list" >
+    <div class="list">
       <ul class="step_list flex justify-between items-center ">
         <li v-for="(stepItem, index) in serContentList" :key="index" cals>
           <img :src="stepItem.src" alt="">
@@ -18,7 +18,7 @@
 <script>
 export default {
   data() {
-    return {   
+    return {
       serContentList: [
         { src: require("@/asset/image/about-me/service-concept/Pic01.png"), link: "", des: '全面口腔照顧', content: '中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。' },
         { src: require("@/asset/image/about-me/service-concept/Pic021.png"), link: "", des: '整體分析牙齒及口腔狀況', content: '進行治療前，牙科醫生會先整體分析客人的口腔健康狀況，了解其病歷，根據實際情況制定嚴格且針對性的治療方案。' },
@@ -33,7 +33,7 @@ export default {
       }
     }
   },
- 
+
 }
 
 </script>
@@ -68,6 +68,7 @@ export default {
       margin-bottom: 2vw;
       padding: 0 2vw;
     }
+
     li {
       text-align: left;
       color: #fff;
@@ -82,7 +83,8 @@ export default {
       strong {
         padding-left: 4vw;
         font-weight: 400;
-            font-size: 22px;
+        font-size: 22px;
+
         &:before {
           content: "";
           margin-left: 15px;
@@ -103,6 +105,10 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+  .step.section .step_list li {
+    padding: 40px 5vw;
+  }
+
   ul {
     padding: 0;
 

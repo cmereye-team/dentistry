@@ -87,11 +87,124 @@
         <h2>為何選擇隱適美療程?</h2>
         <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
-      <div class="boxs">
-        <div class="box">
-          <div class="card">
-            <div class="table-box">
+      <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide box">
+            <div class="table-box py-5" id="move_div">
               <table class="tables">
+                <tr>
+                  <td>舒適度</td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>療程跟進</td>
+                </tr>
+                <tr>
+                  <td>數據支援</td>
+                </tr>
+                <tr style=" background: #ECF7FC; ">
+                  <td>可處理療程</td>
+                </tr>
+                <tr>
+                  <td>預測技術</td>
+                </tr>
+              </table>
+              <table class="tablesd">
+                <tr style="height: 2vw; ">
+                  <th style="background-color: #009CDC !important;"><img
+                      src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/Invisalign_logo.svg" alt=""></th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="teshu">
+                      <li>物料為具專利的復合層物料製造牙箍以U型剪裁貼合牙齦，舒適度最佳</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>由註冊及持續接手培訓的隱適美牙醫看診及制定療程每4-8星期回診，定期跟進矯齒效果及進度</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>收集及擁有來自全球隱適美使用者資料庫，超過1,200萬大數據不斷更新及調整矯正技術，提高成效及舒適度</li>
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>可處理輕微、中度至複雜的矯齒個案</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>牙箍內附有SmartForce專利附件粒粒，預測及精準配合牙齒移動需要，同步將不同牙齒的牙冠和牙腳正確移動</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="swiper-slide box swiper-slideB">
+            <div class="py-5">
+              <table class="tablesd">
+                <tr style="height: 12vw !important; ">
+                  <th style=" background: #ECF7FC; color: #57B2F3; ">其他隱形牙箍品牌</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul style="margin: 1.5vw 0;">
+                      <li>使用無乳膠或醫用塑料牙箍剪裁較為平面，舒適度欠佳，有機會令牙齦受感染</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>獲註冊牙醫最少3次看診，只有註冊牙醫初次面診，甚至沒有註冊牙醫看診及跟進</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>未有收集資料庫或使用者數據甚少</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul style="margin: 0.6vw 0;">
+                      <li>只可處理輕微至中度複雜個案</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>未有使用附件或預測精準度低</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <!-- <div id="tableA" class="carousel mbshow" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item box active ">
+                <div class="table-box py-5" id="move_div">
+                <table class="tables">
                 <tr>
                   <td>舒適度</td>
                 </tr>
@@ -149,9 +262,123 @@
                   </td>
                 </tr>
               </table>
-              <table class="tablesd">
+                </div>
+              </div>
+              <div class="carousel-item box py-5">
+               <table class="tablesd">
                 <tr style="height: 2vw;">
                   <th style=" background: #ECF7FC; color: #57B2F3; " >其他隱形牙箍品牌</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul style="margin: 1.5vw 0;">
+                      <li>使用無乳膠或醫用塑料牙箍剪裁較為平面，舒適度欠佳，有機會令牙齦受感染</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>獲註冊牙醫最少3次看診，只有註冊牙醫初次面診，甚至沒有註冊牙醫看診及跟進</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>未有收集資料庫或使用者數據甚少</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul style="margin: 0.6vw 0;">
+                      <li>只可處理輕微至中度複雜個案</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>未有使用附件或預測精準度低</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </div>
+            </div>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#table" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#table" data-bs-slide-to="1"></button>
+              
+            </div>
+          </div> -->
+      <div class="boxs pcshow">
+        <div class="box">
+          <div class="card">
+            <div class="table-box" @click="drawBegin(judgeActive)">
+              <table class="tables">
+                <tr>
+                  <td>舒適度</td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>療程跟進</td>
+                </tr>
+                <tr>
+                  <td>數據支援</td>
+                </tr>
+                <tr style=" background: #ECF7FC; ">
+                  <td>可處理療程</td>
+                </tr>
+                <tr>
+                  <td>預測技術</td>
+                </tr>
+              </table>
+              <table class="tablesd">
+                <tr>
+                  <th style="background-color: #009CDC !important;"><img
+                      src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/Invisalign_logo.svg" alt=""></th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul class="teshu">
+                      <li>物料為具專利的復合層物料製造牙箍以U型剪裁貼合牙齦，舒適度最佳</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>由註冊及持續接手培訓的隱適美牙醫看診及制定療程每4-8星期回診，定期跟進矯齒效果及進度</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>收集及擁有來自全球隱適美使用者資料庫，超過1,200萬大數據不斷更新及調整矯正技術，提高成效及舒適度</li>
+                    </ul>
+                  </td>
+                </tr>
+
+                <tr style=" background: #ECF7FC">
+                  <td>
+                    <ul>
+                      <li>可處理輕微、中度至複雜的矯齒個案</li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>牙箍內附有SmartForce專利附件粒粒，預測及精準配合牙齒移動需要，同步將不同牙齒的牙冠和牙腳正確移動</li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+              <table class="tablesd">
+                <tr style="height: 2.6vw;">
+                  <th style=" background: #ECF7FC; color: #57B2F3; ">其他隱形牙箍品牌</th>
                 </tr>
                 <tr>
                   <td>
@@ -202,13 +429,75 @@
 export default {
   data() {
     return {
+      swiperOptions: {
+        // centeredSlides: true,
+        // spaceBetween: 36,
+        slidesPerView: "1.1",
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next", //下一页dom节点
+          prevEl: ".swiper-button-prev", //前一页dom节点
+        },
+        on: {
+          slideChange() {
+            console.log('onSlideChangeEnd', this);
+          },
+          tap() {
+            console.log('onTap', this);
+          }
+        }
+      },
+      judgeActive: 1
     }
   },
   methods: {
+    drawBegin(e) {
+      if (e === 1) {
+        this.judgeActive = 2
+      } else {
+        this.judgeActive = 1
+      }
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
+::v-deep .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  border: 0 !important;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #9BD0F5;
+  background-clip: padding-box;
+  border: 0;
+  margin-top: 1rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  border-radius: 100%;
+  transition: opacity .6s ease;
+}
+
+::v-deep .carousel-indicators {
+  position: inherit;
+}
+
+::v-deep .carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #57B2F3;
+  width: 14px;
+  height: 14px;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -228,15 +517,27 @@ p {
 }
 
 @media only screen and (max-width: 768px) {
-  
-  .coll-end{
+  ::v-deep .swiper-pagination-bullet-active {
+    background-color: #57B2F3;
+    width: 15px;
+    height: 15px;
+  }
+
+  ::v-deep .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #9BD0F5;
+  }
+
+  .pcshow {
+    display: none !important;
+  }
+
+  .coll-end {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    width: 50%;  
-  }
-  .pcshow {
-    display: none !important;
+    width: 50%;
   }
 
   .py-5 {
@@ -253,14 +554,14 @@ p {
   }
 
   .box {
-    height: 735px;
+    // height: 832px;
     // background: #eee;
     // padding: 10px 0;
     white-space: pre-line;
     /* 禁止超出自动换行 */
-    overflow-y: auto;
+    // overflow-y: auto;
     /* 横向滑动 */
-    margin: 0 0 0 8vw;
+    // margin: 0 0 0 8vw;
   }
 
   /*隐藏下面的滚动条*/
@@ -313,7 +614,7 @@ p {
   .boxs {
     display: block;
     text-align: center;
-    margin: 8vw 0;
+    // margin: 8vw 0;
   }
 
   .icons {
@@ -389,13 +690,20 @@ p {
     letter-spacing: 0.1vw;
     font-size: 17px;
 
+    tr {
+      height: 38vw;
+
+    }
+
     ul {
       list-style-type: none;
       margin: 0;
+      padding: 0 2vw;
       font-weight: 500;
       font-size: 17px;
       margin: 2vw 0;
       width: 56vw;
+      text-align: left;
     }
 
     td {
@@ -434,14 +742,16 @@ p {
     border-spacing: 1;
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
-    width: 7%;
-    height: 153vw;
+    height: 191vw;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
     word-wrap: break-word;
     word-break: break-all;
-    width: 25vw;
+
+    ul {
+      padding: 0;
+    }
 
     // td:last-of-type(0){
     //   background-color: #79828D;
@@ -449,7 +759,7 @@ p {
     //   }
     tr {
       text-align: center;
-
+      height: 16vw;
 
     }
   }
@@ -472,8 +782,9 @@ p {
   .table-box {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    padding-bottom: 10vw;
+    padding: 0 4vw;
+    // justify-content: center;
+    // padding-bottom: 10vw;
   }
 
   .lists {
@@ -659,7 +970,7 @@ p {
 
   .active {
     float: inherit;
-    border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
+    // border: 10px solid hsla(204, 68%, 65%, 0.3) !important;
     // background-clip:content-box;
     background-clip: padding-box;
   }
@@ -795,6 +1106,7 @@ p {
   .coll-box {
     display: flex;
     padding: 2vw;
+
     img {
       // width: 60%;
     }
@@ -804,10 +1116,12 @@ p {
       padding-top: 1vw;
     }
   }
-  .mbshow{
+
+  .mbshow {
     text-align: center;
-    padding: 6vw 2vw ;
-    img{
+    padding: 6vw 2vw;
+
+    img {
       width: 90%;
     }
   }
@@ -825,11 +1139,11 @@ p {
 
   .texts {
     padding-top: 9rem !important;
-    
+
   }
 
   td {
-    height: 10vw;
+    height: 11vw;
   }
 
   .table-box {
@@ -850,6 +1164,7 @@ p {
   }
 
   .tablesd {
+
     margin-left: 4vw;
     color: #57B2F3;
     background-color: #fff;
@@ -859,8 +1174,8 @@ p {
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
-    width: 16%;
-    height: 35vw;
+    // width: 16%;
+    // height: 35vw;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
@@ -871,6 +1186,11 @@ p {
       font-weight: 500;
       font-size: 17px;
       margin: 2vw 0;
+      padding: 0;
+    }
+
+    li {
+      padding: 0 1vw;
     }
 
     .teshu {
@@ -905,8 +1225,8 @@ p {
     border-spacing: 1;
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
-    width: 7%;
-    height: 30vw;
+    // width: 7%;
+    // height: 30vw;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
@@ -924,7 +1244,8 @@ p {
 
   .coll-box-center {
     width: 100% !important;
-    img{
+
+    img {
       padding: 0 2vw;
     }
   }

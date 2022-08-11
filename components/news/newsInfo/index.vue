@@ -1,24 +1,44 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2">
+  <div class="bg-white comContent pb-0 py-xs-2">
     <div class="meun">
-      <p>首頁</p>
+      <p>
+        <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
+      </p>
       <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">牙齒健康</p>
+      <p style="color:#57B2F3">最新消息</p>
     </div>
-    <div class="flex justify-center selectEqu">
-      <el-select v-model="value" placeholder="请选择">
+    <div v-if="isShow" class="flex justify-center selectEqu">
+      <el-select v-model="value" placeholder="请选择" @change="selectLei">
         <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
         </el-option>
       </el-select>
       <el-select v-model="value1" placeholder="请选择">
-        <el-option v-for="item in options1" :key="item.value" :label="item.label" :value="item.value">
+        <el-option v-for="item in options1" :key="item.value" :label="item.label" >
         </el-option>
       </el-select>
     </div>
-    <div class="info">
+    <div v-else>
+      <div class="Top20_ProblemAnalysis">
+        <div class="rightNav">
+          <ul class="tab-nav">
+            <li v-for="(i, index) in navList" :key="index">
+              <div class="nav" @click="openNav(index, i.list.length)">
+                <div><i>{{ i.title }}</i><img src="https://static.cmereye.com/static/lkximg/image/equipment/Polygon.svg"
+                    alt=""></div>
+              </div>
+              <div class="nav-n-box">
+                <div class="nav-n" v-for="(n, index) in i.list" :key="index" @click="handleClick(n)">{{ n.label }}
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="info">
       <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post01pic.png" alt="">
       <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+        <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
       </div>
       <div class="content yagao">
         <h2>睇牙都可以用消費劵? </h2>
@@ -30,58 +50,117 @@
         <p>想了解更多支付方式，歡迎向我哋查詢💬</p>
       </div>
       <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post02pic.png" alt="">
+    </div> -->
+ <div class="info" v-for="item in list">
+      <img class="pic" :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url" alt="">
       <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+        <!-- <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
+        <div class="date01">
+          <span class="linesy">{{ item.datas }}</span>
+          <span>{{ item.month }}</span>
+        </div>
       </div>
       <div class="content">
-        <h2>復活節連假休診通知</h2>
-        <p>預祝大家復活節快樂🗿</p>
-        <p>復活節連假期間所有牙科診所都會休息💡4月19號正常營業，千祈唔好摸門釘呀😉</p>
+        <h2 v-html="item.title.rendered"></h2>
+        <p v-html="item.content.rendered"></p>
+        <div style="display: flex;">
+          <div v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]" style=" margin: 0 0.5vw;">
+            <p class="label">{{ lab.name }}</p>
+          </div>
+        </div>
       </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
-    </div>
-    <div class="info">
-      <img class="pic" src="https://static.cmereye.com/static/lkximg/image/news/post03pic.png" alt="">
-      <div class="dateinfo">
-      <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+      <div class="date">
+        <span class="linesy">{{ item.datas }}</span>
+        <span>{{ item.month }}</span>
       </div>
-      <div class="content yagao">
-        <h2>希瑪牙科接受消費券支付方式</h2>
-        <p>想用消費券睇牙？緊係冇問題啦👌我哋大部份嘅牙科診所都接受消費券支付方式，無論你做邊種牙科療程，都可以用㗎😉</p>
-        <p>想嚟睇牙嘅你，記得預先向診所預約喇🦷🙌</p>
-        <p>接受AlipayHK支付寶及WeChat Pay HK微信支付方式：</p>
-        <p>🟢灣仔莊士敦道197號廣亞大樓地下</p>
-        <p>🔵尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</p>
-        <p>🟢觀塘開源道79號鱷魚恤中心16樓1601室</p>
-        <p>🔵沙田正街11-17號偉華中心2樓1C-1F號舖</p>
-        <p>🟢觀塘開源道79號鱷魚恤中心16樓1601室</p>
-        <p>接受八達通支付方式：</p>
-        <p>🟠觀塘開源道79號鱷魚恤中心16樓1601室</p>
-        <p>🟠沙田正街11-17號偉華中心2樓1C-1F號舖</p>
-        <p>想了解更多支付方式，歡迎向我哋或分店查詢💬</p>
-      </div>
-      <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
+      <!-- <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
     </div>
   </div>
 </template>
 <script>
+import { getList } from '@/api/index.js'
 export default {
+  watch: {
+    screenWidth: {
+      handler: function (val, oldVal) {
+        console.log('val========', val);
+        if (val < 768) {
+          console.log('屏幕宽度小于768px')
+          this.isShow = false
+        } else {
+          this.isShow = true
+          console.log('屏幕宽度大于768px')
+        }
+      },
+      immediate: true
+    },
+  },
   data() {
     return {
-      options: [{
-        value: '消費券付款',
+      navList: [
+        {
+          title: '所有類別',
+          name: 'BusinessIntroduction',
+          list: [
+            {
+          value: '0',
+          label: '所有類別'
+        },
+        {
+        value: '26',
         label: '消費券付款'
       }, {
-        value: '新店開幕',
+        value: '6',
         label: '新店開幕'
       }, {
-        value: '營業時間安排',
+        value: '27',
         label: '營業時間安排'
-      }],
-      value: '所有類別',
+      }
+          ],
+        },
+        {
+          title: '所有月份',
+          list: [
+            {
+              label: '一月',
+            },
+            {
+              label: '二月',
+            },
+            {
+              label: '三月',
+            },
+            {
+              label: '四月',
+            },
+            {
+              label: '五月',
+            },
+
+            {
+              label: '六月',
+            },
+            {
+              label: '七月',
+            },
+            {
+              label: '八月',
+            },
+            {
+              label: '九月',
+            },
+            {
+              label: '十月',
+            },
+            {
+              label: '十一月',
+            }, {
+              label: '十二月',
+            },
+          ],
+
+        }
+      ],
       options1: [{
         value: '一月',
         label: '一月'
@@ -119,35 +198,293 @@ export default {
         value: '十二月',
         label: '十二月'
       },],
-      value1: '所有月份'
+      value1: '所有月份',
+      screenWidth: '',
+      isShow: true,
+      options: [{
+        value: '0',
+        label: '所有類別'
+      },{
+        value: '26',
+        label: '消費券付款'
+      }, {
+        value: '6',
+        label: '新店開幕'
+      }, {
+        value: '27',
+        label: '營業時間安排'
+      }],
+      value: '所有類別',
+      list: []
     }
   },
   mounted() {
+    this.getListDs()
+    if (process.client) {
+      this.screenWidth = document.body.clientWidth
+      window.onresize = () => {
+        return (() => {
+          this.screenWidth = document.body.clientWidth
+        })
+      }
+    }
+  },
+  methods: {
+    selectLei(value) {
+          console.log('value========', value);
+          this.selectVal = value
+          if (value === '0') {
+            this.getListDs()
+          } else {
+              getList({ '_embed': true,  'tags': this.selectVal, 'categories': 25 }).then((res => {
+                this.list = res.data
+                this.addMonth(this.list)
+                console.log(this.list);
+              }))
+            
+          }
+
+        },
+       
+    handleClick(value) {
+      let nav = document.querySelectorAll('.nav'); //获取父级菜单栏，以便添加选中样式
+      let items = document.querySelectorAll('.nav-n-box'); //获取容纳子级菜单栏的容器，以便动态设置高度，实现下拉效果
+      for (let i = 0; i < nav.length; i++) {
+          items[i].style.height = '0rem';
+        }
+      this.selectLei(value.value)
+    },
+    openNav(index, num, value) {
+      let _this = this;
+      let nav = document.querySelectorAll('.nav'); //获取父级菜单栏，以便添加选中样式
+      let items = document.querySelectorAll('.nav-n-box'); //获取容纳子级菜单栏的容器，以便动态设置高度，实现下拉效果
+
+      //-----------------可注释部分开始------注释后则不是手风琴效果------------------
+      // 遍历菜单栏，移除所有选中后的样式   添加此段可实现手风琴效果，注释则实现多展示效果
+      for (let i = 0; i < nav.length; i++) {
+        if (
+          items[i].style.height == '' ||
+          items[i].style.height == '0rem' ||
+          nav[index].classList.contains('nav-n-box-active') //判断标签内是否含有该class属性，以布尔值类型返回
+        ) {
+          let height = items[index].style.height;
+          items[index].style.height = height;
+
+        } else {
+          items[i].style.height = '0rem';
+
+        }
+        nav[i].classList.remove('nav-n-box-active');
+
+      }
+      //-----------------可注释部分结束------------------------
+
+      //根据子菜单栏的高度判断，是否展开菜单栏，若有进行遍历操作，那么每次点击某个菜单栏的时候 height 都为 0
+      if (items[index].style.height == '' || items[index].style.height == '0rem') {
+        //num 为子菜单栏的个数，根据子菜单栏确定容器的高度
+        items[index].style.height = num * 3 + 'rem';
+        console.log('num', num);
+        //添加右箭头旋转样式
+        nav[index].classList.add('nav-n-box-active');
+
+      } else {
+        items[index].style.height = '0rem';
+        //移除右箭头旋转样式
+        nav[index].classList.remove('nav-n-box-active');
+
+      }
+      //------------------------------------------
+
+    },
+    getListDs() {
+      getList({ '_embed': true, 'categories': 25 }).then((res => {
+        this.list = res.data
+        this.addMonth(this.list)
+        console.log(this.list);
+      }))
+    },
+    addMonth(value){
+      value.forEach((item, index) => {
+          if (item.date.slice(5, 7) === '07') {
+            item.month = 'July'
+          } else if (item.date.slice(5, 7) === '01') {
+            item.month = 'Jan'
+          } else if (item.date.slice(5, 7) === '02') {
+            item.month = 'Feb'
+          } else if (item.date.slice(5, 7) === '03') {
+            item.month = 'Mar'
+          } else if (item.date.slice(5, 7) === '04') {
+            item.month = 'Apr'
+          } else if (item.date.slice(5, 7) === '05') {
+            item.month = 'May'
+          } else if (item.date.slice(5, 7) === '06') {
+            item.month = 'June'
+          } else if (item.date.slice(5, 7) === '08') {
+            item.month = 'August'
+          } else if (item.date.slice(5, 7) === '09') {
+            item.month = 'Sep'
+          } else if (item.date.slice(5, 7) === '10') {
+            item.month = 'Oct'
+          } else if (item.date.slice(5, 7) === '11') {
+            item.month = 'Nov'
+          } else if (item.date.slice(5, 7) === '12') {
+            item.month = 'Dec'
+          }
+          item.datas = item.date.slice(8, 10)
+        });
+        return value
+    },
   }
 }
+
 </script>
 <style lang="scss" scoped>
+.Top20_ProblemAnalysis {
+  width: 100%;
+  // height: calc(100vh - 160px);
+  position: relative;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+
+  .rightNav {
+
+    .tab-nav {
+      padding: 0rem;
+      list-style: none;
+      border-top: 1px solid #C2C7CD;
+
+      li {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        cursor: pointer;
+        user-select: none;
+        border-bottom: 1px solid#C2C7CD;
+
+        .nav {
+          padding: 1rem 0;
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          flex-direction: row;
+
+          i {
+            font-style: normal;
+            transition: 0.3s;
+            color: #79828D;
+            padding: 0 2vw 0 5vw;
+          }
+
+          span {
+            display: inline-block;
+            width: 100%;
+            text-align: left;
+            color: #808080;
+            font-size: 1rem;
+            margin-left: 1rem;
+          }
+        }
+
+        .nav-n-box {
+          transition: 0.3s;
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+
+          .nav-n {
+            width: 100%;
+            font-size: 0.88rem;
+            color: #808080;
+            height: 3rem;
+            text-align: left;
+            padding-left: 2rem;
+            line-height: 3rem;
+            transition: 0.3s;
+
+            &:hover {
+              background: #ECF7FC;
+              color: 79828D;
+              opacity: 0.5;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //点击后右箭头的反转效果
+  .nav-n-box-active {
+    #right-btn {
+      transform: rotate(90deg) !important;
+    }
+  }
+}
 
 //mb
 @media only screen and (max-width: 768px) {
+  .label {
+    display: inline-block;
+    border: 1px solid #57B2F3;
+    border-radius: 60px;
+    width: 21vw;
+    text-align: center;
+    background-color: #fff;
+    padding: 0.5vw;
+  }
+ .date {
+      width: 6vw;
+      height: 6vw;
+      display: none;
+    }
 
- .dateinfo{
+    .date01 {
+      width: 21vw;
+      height: 21vw;
+      background-color: #9BD0F5;
+      border-radius: 50%;
+      margin: 1vw;
+      display: flex;
+      text-align: center;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: center;
+      flex-direction: column;
+
+      .linesy {
+        font-size: 27px;
+        border-bottom: 3px solid #FFF;
+        margin: 0 3vw;
+      }
+    }
+
+    .yagao {
+      margin-top: 8.5vw !important;
+    }
+  .dateinfo {
     display: flex;
     justify-content: center;
     position: absolute;
-    left: 32vw;
-    top: 71vw;
+    left: 33vw;
+    top: 73vw;
+
     .date2 {
       width: 14vw;
       height: 14vw;
     }
   }
+
   .el-pagination {
-    text-align: center;}
-   .meun {
+    text-align: center;
+  }
+
+  .meun {
     padding-left: 6vw;
     display: flex;
   }
+
   .selectEqu {
     text-align: end;
     justify-content: end;
@@ -165,12 +502,14 @@ export default {
     background-color: #ECF7FC;
     margin: 3vw 9vw 3vw 9vw;
     position: relative;
+
     img {
       width: 25vw;
       height: 25vw;
       margin: 1vw;
     }
-    .pic{
+
+    .pic {
       width: 80vw;
       height: 80vw;
       margin: auto;
@@ -180,17 +519,19 @@ export default {
     .date {
       width: 6vw;
       height: 6vw;
-      display:none;
-      
+      display: none;
+
     }
-.yagao{
+
+    .yagao {
       margin-top: 8.5vw !important;
-      }
+    }
+
     .content {
       display: inline-block;
       margin-top: 7vw;
       margin-left: 3vw;
-      
+
       h2 {
         padding: 0;
         text-align: left;
@@ -198,6 +539,7 @@ export default {
         justify-content: left;
         color: #57B2F3;
         font-weight: 600;
+
         &:before {
           content: "";
           border-left: 1vw solid #9BD0F5;
@@ -205,21 +547,21 @@ export default {
           height: 4vw;
           display: inline-block;
           vertical-align: middle;
+        }
+      }
+
+      p {
+        color: #57B2F3;
       }
     }
-
-    p {
-      color: #57B2F3;
-    }
   }
-}
 
 
 }
 
 //pc
 @media only screen and (min-width: 768px) {
-    ::v-deep .el-input__inner {
+  ::v-deep .el-input__inner {
     -webkit-appearance: none;
     background-color: #FFF;
     border-radius: 4px;
@@ -232,12 +574,14 @@ export default {
     line-height: 40px;
     outline: 0;
     padding: 0 15px;
-    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
     width: 16vw;
-}
-  .dateinfo{
+  }
+
+  .dateinfo {
     display: none;
   }
+
   .meun {
     padding-left: 6vw;
     display: flex;
@@ -267,25 +611,54 @@ export default {
       height: 25vw;
       margin: 1vw;
     }
-    .pic{
+
+    .pic {
       width: 25vw;
       height: 25vw;
       margin: auto;
       padding: 1vw;
     }
 
-    .date {
+     .date {
       width: 6vw;
       height: 6vw;
-    }
-.yagao{
-      margin-top: 1.5vw !important;
+      background-color: #9BD0F5;
+      border-radius: 50%;
+      margin: 1vw;
+      display: flex;
+      text-align: center;
+      color: #FFF;
+      font-weight: 600;
+      justify-content: center;
+      flex-direction: column;
+
+      .linesy {
+        font-size: 32px;
+        border-bottom: 3px solid #FFF;
+        margin: 0 1vw;
       }
+    }
+
+    .yagao {
+      margin-top: 1.5vw !important;
+    }
+
     .content {
       display: inline-block;
       margin-top: 4vw;
       margin-left: 3vw;
-      
+      width: 44vw;
+
+      .label {
+        display: inline-block;
+        border: 1px solid #57B2F3;
+        border-radius: 60px;
+        width: 7vw;
+        text-align: center;
+        background-color: #fff;
+        padding: 0.5vw;
+      }
+
       h2 {
         padding: 0;
         text-align: left;
@@ -293,6 +666,7 @@ export default {
         justify-content: left;
         color: #57B2F3;
         font-weight: 600;
+
         &:before {
           content: "";
           border-left: 1vw solid #9BD0F5;
@@ -300,14 +674,14 @@ export default {
           height: 4vw;
           display: inline-block;
           vertical-align: middle;
+        }
+      }
+
+      p {
+        color: #57B2F3;
       }
     }
-
-    p {
-      color: #57B2F3;
-    }
   }
-}
 }
 </style>
 <style lang="scss" >

@@ -166,6 +166,7 @@ p {
 .contents p{
   color: #79828D;
     font-size: 18px;
+    line-height: 23px;
 }
    ::v-deep .el-collapse-item__arrow{
   display: none;
@@ -206,13 +207,14 @@ p {
 .discon{
   margin: 1vw 0 0 0;
   display: flex;
+  
   ul{
     padding-left: 0.2vw;
   }
    span{
     color: #9BA5B1;
     font-size: 16px;
-
+    width: 84%;
   }
 }
 .title1{

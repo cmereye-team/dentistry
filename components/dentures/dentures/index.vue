@@ -1,28 +1,31 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p>
+        <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
+      </p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">全口牙托及局部牙托</p>
     </div>
-    <div class="step">
+
+    <div class="step ">
       <div class="list">
         <ul class="step_list items-center ">
           <li>
             <div class="list_con">
-              <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
-              <h3> 牙托即活動式假牙，</h3>
-              <p>分為局部及全口牙托兩種，可改善缺牙的影響。牙托底部有金屬鉤讓牙托能固定在真牙上，代替缺去的牙齒。活動式假牙可自行配戴，適合缺齒較多的人士使用。</p>
+              <img src="https://static.cmereye.com/static/lkximg/image/dentures/apple.png" alt="">
+              <!-- <h3> 牙托即活動式假牙，</h3> -->
+              <p>牙托即活動式假牙，分為局部及全口牙托兩種，可改善缺牙的影響。牙托底部有金屬鉤讓牙托能固定在真牙上，代替缺去的牙齒。活動式假牙可自行配戴，適合缺齒較多的人士使用。</p>
               <div class="cons">
                 <div class="list_d">
-                  <strong>牙齦炎如何形成？</strong>
+                  <strong>局部牙托</strong>
                   <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup1.png" alt="">
                   <span>局部牙托適用於口腔內尚有健康牙齒的人士，一般以金屬支架或金屬勾設計，以健康牙齒固定牙托，方便自行配戴。</span>
                 </div>
                 <div class="list_d">
-                  <strong>牙周病如何形成？</strong>
+                  <strong>全口牙托&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup2.png" alt="">
                   <span>全口牙托適用於所有牙齒已脫落的人士，利用口中黏膜和齒槽骨脊固定，可自行配戴。但全口牙托的咬合感與真牙相差甚大，需以口腔內肌肉及舌頭動作等移動假牙，容易產生不適，需要時間適應。</span>
                 </div>
@@ -46,114 +49,467 @@
           <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
           <p>固定式假牙與活動式假牙各有其優缺點及適用的情況，通常會經由牙醫評估口內缺牙的情況及剩下牙齒的狀況，再進一步進行全面的考量及建議。</p>
         </div>
-        <div class="boxs">
-          <p style="color: #57B2F3;">以下為你分析全瓷牙冠及全鋯牙冠的優缺點：</p>
-        <div class="box">
-          <div class="card">
-          <div class="table-box">
-            <table class="tables">
-              <tr>
-                <td>適用人士</td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td>物料</td>
-              </tr>
-              <tr>
-                <td>優點</td>
-              </tr>
-              <tr style=" background: #ECF7FC; ">
-                <td style="border-radius:  0 0 30px 30px;">缺點</td>
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 2vw;">
-                <th>固定式假牙</th>
-              </tr>
-              <tr style="background: #ECF7FC;text-align: center;">
-                <td style="height: 2vw !important">牙套</td>
-              </tr>
-              <tr>
-                <td>
-                  <ul class="teshu">
-                    <li>牙根健康</li>
-                    <li>牙齒損耗範圍太大</li>
-                    <li>已接受杜牙根治療</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td>
-                  <ul>
-                    <li>全金屬、全鋯、全瓷</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>保留真牙牙根</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td style="border-radius:  0 0 30px 30px;">
-                  <ul>
-                    <li>需修磨牙齒</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
-            <table class="tablesd">
-              <tr style="height: 2vw;">
-                <th>固定式假牙</th>
-              </tr>
-              <tr style="height: 2vw; background: #9BD0F5;text-align: center; color: #fff;">
-                <td style="height: 2vw !important">牙橋</td>
-              </tr>
-              <tr>
-                <td>
-                  <ul style="margin: 1.5vw 0;">
-                    <li>缺牙兩旁尚有健康牙齒</li>
-                    <li>牙齒連牙根被全隻拔起</li>
+        <div class="boxs ">
+          <p style="color: #57B2F3;">以下為你分析固定式/活動式假牙的優缺點：</p>
+          <div class="box pcshow">
+            <div class="card" @click="drawBegin(judgeActive)">
+              <div class="table-box">
+                <table class="tables">
+                  <tr>
+                    <td>適用人士</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>物料</td>
+                  </tr>
+                  <tr>
+                    <td>優點</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC; ">
+                    <td style="border-radius:  0 0 30px 30px;">缺點</td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>固定式假牙</th>
+                  </tr>
+                  <tr style="background: #ECF7FC;text-align: center;">
+                    <td style="height: 2vw !important">牙套</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul class="teshu">
+                        <li>牙根健康</li>
+                        <li>牙齒損耗範圍太大</li>
+                        <li>已接受杜牙根治療</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>全金屬、全鋯、全瓷</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>保留真牙牙根</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul>
+                        <li>需修磨牙齒</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>固定式假牙</th>
+                  </tr>
+                  <tr style="height: 2vw; background: #9BD0F5;text-align: center; color: #fff;">
+                    <td style="height: 2vw !important">牙橋</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul style="margin: 1.5vw 0;">
+                        <li>缺牙兩旁尚有健康牙齒</li>
+                        <li>牙齒連牙根被全隻拔起</li>
 
-                  </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td>
-                  <ul>
-                    <li>全金屬、全鋯、全瓷</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <ul>
-                    <li>提高假牙穩定度</li>
-                  </ul>
-                </td>
-              </tr>
-              <tr style=" background: #ECF7FC">
-                <td style="border-radius:  0 0 30px 30px;">
-                  <ul style="margin: 0.6vw 0;">
-                    <li>需修磨兩側牙齒，若其中一顆牙齒出現問題，需重新製作整組牙橋</li>
-                  </ul>
-                </td>
-              </tr>
-            </table>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>全金屬、全鋯、全瓷</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>提高假牙穩定度</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul style="margin: 0.6vw 0;">
+                        <li>需修磨兩側牙齒，若其中一顆牙齒出現問題，需重新製作整組牙橋</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
 
+              </div>
+              <div class="table-box">
+                <table class="tables tableTo">
+                  <tr>
+                    <td>適用人士</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>物料</td>
+                  </tr>
+                  <tr>
+                    <td>優點</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC; ">
+                    <td style="border-radius:  0 0 30px 30px;">缺點</td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>活動式假牙</th>
+                  </tr>
+                  <tr style="background: #ECF7FC;text-align: center;">
+                    <td style="height: 2vw !important">局部牙托</td>
+                  </tr>
+                  <tr style="  height: 6vw;">
+                    <td>
+                      <ul class="teshu">
+                        <li>口腔內尚有健康牙齒</li>
+
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>金屬支架或金屬勾</li>
+                        <li>牙齒部分多由塑膠材料製造</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" height: 8vw; ">
+                    <td>
+                      <ul>
+                        <li>自由裝取</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul>
+                        <li>容易磨損口腔內璧，造成潰瘍及疼痛</li>
+                        <li>適應期較長</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>活動式假牙</th>
+                  </tr>
+                  <tr style="height: 2vw; background: #9BD0F5;text-align: center; color: #fff;">
+                    <td style="height: 2vw !important">全口牙托</td>
+                  </tr>
+                  <tr style="  height: 6vw;">
+                    <td>
+                      <ul style="margin: 1.5vw 0; ">
+                        <li>口腔內已沒有健康牙齒</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC;     height: 7vw; ">
+                    <td>
+                      <ul>
+                        <li>塑膠支架</li>
+                        <li>牙齒部分多由塑膠製造</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" height: 8vw; ">
+                    <td>
+                      <ul>
+                        <li>自由裝取</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC;  height: 8vw;">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul style="margin: 0.6vw 0;">
+                        <li>咬合感覺與真牙的感覺相差甚大，適應期長</li>
+                        <li>假牙容易晃動及移位</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
           </div>
-          </div>
-      </div>
         </div>
+        <div id="mySwiper-one">
+          <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow">
+            <div class="swiper-wrapper ">
+              <div class="swiper-slide box">
+                <div class="table-box py-5" id="move_div">
+                  <table class="tables">
+                    <tr>
+                      <td>適用人士</td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>物料</td>
+                    </tr>
+                    <tr>
+                      <td>優點</td>
+                    </tr>
+                    <tr style=" background: #ECF7FC; ">
+                      <td style="border-radius:  0 0 30px 30px;">缺點</td>
+                    </tr>
+                  </table>
+                  <table class="tablesd">
+                    <tr style="height: 2vw;">
+                      <th>固定式假牙</th>
+                    </tr>
+                    <tr style="background: #ECF7FC;text-align: center;">
+                      <td style="height: 2vw !important">牙套</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul class="teshu">
+                          <li>牙根健康</li>
+                          <li>牙齒損耗範圍太大</li>
+                          <li>已接受杜牙根治療</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>
+                        <ul>
+                          <li>全金屬、全鋯、全瓷</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>保留真牙牙根</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td style="border-radius:  0 0 30px 30px;">
+                        <ul>
+                          <li>需修磨牙齒</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="swiper-slide box swiper-slideB">
+                <div class="py-5">
+                  <table class="tablesd">
+                    <tr style="height: 2vw;">
+                      <th>固定式假牙</th>
+                    </tr>
+                    <tr style="height: 2vw; background: #9BD0F5;text-align: center; color: #fff;">
+                      <td style="height: 2vw !important">牙橋</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul style="margin: 1.5vw 12px;">
+                          <li>缺牙兩旁尚有健康牙齒</li>
+                          <li>牙齒連牙根被全隻拔起</li>
+
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td>
+                        <ul>
+                          <li>全金屬、全鋯、全瓷</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>提高假牙穩定度</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style=" background: #ECF7FC">
+                      <td style="border-radius:  0 0 30px 30px;">
+                        <ul style="margin: 0.6vw 0;">
+                          <li>需修磨兩側牙齒，若其中一顆牙齒出現問題，需重新製作整組牙橋</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div id="mySwiper-two">
+          <div v-swiper:mySwiper2="swiperOptionsTwo" class="swiperWrapTwo mbshow">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box">
+                <div class="table-box py-5" id="move_div">
+                  <table class="tables tableTo">
+                  <tr>
+                    <td>適用人士</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>物料</td>
+                  </tr>
+                  <tr>
+                    <td>優點</td>
+                  </tr>
+                  <tr style=" background: #ECF7FC; ">
+                    <td style="border-radius:  0 0 30px 30px;">缺點</td>
+                  </tr>
+                </table>
+                <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>活動式假牙</th>
+                  </tr>
+                  <tr style="background: #ECF7FC;text-align: center;">
+                    <td style="height: 2vw !important">局部牙托</td>
+                  </tr>
+                  <tr style="  height: 6vw;">
+                    <td>
+                      <ul class="teshu">
+                        <li>口腔內尚有健康牙齒</li>
+
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td>
+                      <ul>
+                        <li>金屬支架或金屬勾</li>
+                        <li>牙齒部分多由塑膠材料製造</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" height: 8vw; ">
+                    <td>
+                      <ul>
+                        <li>自由裝取</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul>
+                        <li>容易磨損口腔內璧，造成潰瘍及疼痛</li>
+                        <li>適應期較長</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                </div>
+              </div>
+              <div class="swiper-slide box swiper-slideB">
+                <div class="py-5">
+
+                  <table class="tablesd">
+                  <tr style="height: 2vw;">
+                    <th>活動式假牙</th>
+                  </tr>
+                  <tr style="height: 2vw; background: #9BD0F5;text-align: center; color: #fff;">
+                    <td style="height: 2vw !important">全口牙托</td>
+                  </tr>
+                  <tr style="  height: 6vw;">
+                    <td>
+                      <ul style="margin: 1.5vw 0; ">
+                        <li>口腔內已沒有健康牙齒</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC;     height: 7vw; ">
+                    <td>
+                      <ul>
+                        <li>塑膠支架</li>
+                        <li>牙齒部分多由塑膠製造</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" height: 8vw; ">
+                    <td>
+                      <ul>
+                        <li>自由裝取</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr style=" background: #ECF7FC;  height: 8vw;">
+                    <td style="border-radius:  0 0 30px 30px;">
+                      <ul style="margin: 0.6vw 0;">
+                        <li>咬合感覺與真牙的感覺相差甚大，適應期長</li>
+                        <li>假牙容易晃動及移位</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+                </div>
+               
+                </div>
+                
+              </div>
+               <div class="swiper-pagination swiper2" ></div>
+            </div>
+            
+          </div>
+        </div>
+
       </div>
-    </div>
+   
   </di>
 </template>
 <script>
 export default {
   data() {
     return {
+      swiperOptions: {
+        // centeredSlides: true,
+        // spaceBetween: 36,
+        slidesPerView: "1.1",
+        pagination: {
+          el: '.swiper-pagination',
+          dynamicBullets: true,
+        },
+        // navigation: {
+        //   nextEl: "#mySwiper-one .swiper-button-next", //下一页dom节点
+        //   prevEl: "#mySwiper-one .swiper-button-prev", //前一页dom节点
+        // },
+        on: {
+          slideChange() {
+            console.log('onSlideChangeEnd', this);
+          },
+          tap() {
+            console.log('onTap', this);
+          }
+        }
+      },
+      swiperOptionsTwo: {
+        // centeredSlides: true,
+        // spaceBetween: 36,
+        slidesPerView: "1.1",
+        pagination: {
+          el: '.swiper2',
+          dynamicBullets: true,
+        },
+        // navigation: {
+        //   nextEl: "#mySwiper-two .swiper-button-next", //下一页dom节点
+        //   prevEl: "#mySwiper-two .swiper-button-prev", //前一页dom节点
+        // },
+        on: {
+          slideChange() {
+            console.log('onSlideChangeEnd', this);
+          },
+          tap() {
+            console.log('onTap', this);
+          }
+        }
+      },
       list: [{
         id: 0,
         title: '牙根刮治(深層洗牙)'
@@ -168,12 +524,32 @@ export default {
       }
       ],
       currentIndex: 0,   // 当前点击的tab的索引
+      judgeActive: 1,
     }
   },
   computed: {
 
   },
   methods: {
+    drawBegin(e) {
+      if (e === 1) {
+        this.judgeActive = 2
+      } else {
+        this.judgeActive = 1
+      }
+      // this.$nextTick(() => {
+      //       // dom元素更新后执行，因此这里能正确打印更改之后的值
+      //       if (this.judgeActive === 2 ) {
+      //         this.judgeActive= 1
+      //       }
+      //   })
+      //   console.log(this.judgeActive);
+      // const objLeft = this.getOffsetLeft(document.getElementById("move_div"));//对象y位置
+      // const mouseX = event.clientX+document.body.scrollLeft;//鼠标x位置
+      // //计算点击的相对位置
+      // const objX = mouseX-objLeft;
+      // console.log(objX);
+    },
     handleClick(index) {
       // console.log(index);
       this.currentIndex = index
@@ -185,6 +561,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+::v-deep .carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  border: 0 !important;
+  flex: 0 1 auto;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #9BD0F5;
+  background-clip: padding-box;
+  border: 0;
+  margin-top: 1rem;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  border-radius: 100%;
+  transition: opacity .6s ease;
+}
+
+::v-deep .carousel-indicators {
+  position: inherit;
+}
+
+::v-deep .carousel-indicators .active {
+  opacity: 1 !important;
+  background-color: #57B2F3;
+  width: 14px;
+  height: 14px;
+}
+
 .texts {
   text-align: center;
   margin-top: 2vw;
@@ -209,9 +618,14 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
-    .card {
+  .mbshow {
+    display: none;
+  }
+
+  .card {
     border: 0px solid rgba(0, 0, 0, .125);
   }
+
   .cons {
     display: flex;
     margin: 3vw 0;
@@ -312,13 +726,17 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    margin: 2vw 0;
+    margin: 2vw 2vw;
     text-align: left !important;
   }
 
   .lists {
     display: flex;
     margin: 2vw 18vw;
+  }
+
+  .tableTo {
+    height: 31vw !important;
   }
 
   .tablesd {
@@ -633,15 +1051,34 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .swiper-slideB{
+    margin-left: -4.5vw;
+  }
+  ::v-deep .swiper-pagination-bullet-active {
+    background-color: #57B2F3;
+    width: 15px;
+    height: 15px;
+  }
+
+  ::v-deep .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background-color: #9BD0F5;
+  }
+
+  .pcshow {
+    display: none;
+  }
+
   .box {
-    height: 598px;
+    // height: 1189px;
     // background: #eee;
     // padding: 10px 0;
     white-space: pre-line;
     /* 禁止超出自动换行 */
-    overflow-y: auto;
+    // overflow-y: auto;
     /* 横向滑动 */
-    margin: 0 0 0 8vw;
+    // margin: 0 0 0 8vw;
   }
 
   /*隐藏下面的滚动条*/
@@ -661,6 +1098,7 @@ export default {
     border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 0.25rem;
   }
+
   .porcelain—con {
     // display: flex;
     text-align: center;
@@ -718,12 +1156,14 @@ export default {
       padding: 1vw 0;
     }
   }
-.py-5 {
-  margin-top: 8rem!important;
-}
+
+  // .py-5 {
+  //   margin-top: 8rem!important;
+  // }
   .list_d {
     padding: 3vw;
     text-align: left;
+    padding-bottom: 9vw !important;
 
     img {
       padding: 1vw 2vw !important;
@@ -757,9 +1197,10 @@ export default {
   .table-box {
     display: flex;
     align-items: flex-end;
-    justify-content: center;
-    margin: 2vw 0;
+    // justify-content: center;
+    margin: 2vw 2vw;
     text-align: left !important;
+    padding-bottom: 5vw;
   }
 
   .lists {
@@ -768,11 +1209,11 @@ export default {
   }
 
   .tablesd {
-    margin-left: 4vw;
+    margin-left: 3vw;
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
-    border-radius: 20px;
+    border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
     box-shadow: 13px 15px 0 #a2d4f7;
@@ -791,9 +1232,11 @@ export default {
       margin: 2vw 0;
       width: 50vw;
     }
- td {
+
+    td {
       height: 30vw !important;
     }
+
     .teshu {
       margin: 1vw 0;
     }
@@ -802,7 +1245,7 @@ export default {
       text-align: center;
       color: #fff;
       background-color: #57B2F3;
-      border-radius: 17px 17px 0 0;
+      border-radius: 30px 30px 0 0;
     }
 
     .thd {
@@ -820,7 +1263,7 @@ export default {
     color: #57B2F3;
     background-color: #fff;
     border: 2px solid #9BD0F5;
-    border-radius: 10px;
+    border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
     border-spacing: 1;
@@ -987,12 +1430,14 @@ export default {
       }
     }
   }
-  .texts{
-     p{
+
+  .texts {
+    p {
       color: #79828D;
       padding: 0vw 10vw;
-     }
+    }
   }
+
   .list_con {
     margin-top: 7vw;
     margin-bottom: 6vw;
@@ -1005,6 +1450,7 @@ export default {
     }
 
     p {
+
       color: #57B2F3 !important;
     }
 
@@ -1019,7 +1465,7 @@ export default {
     padding-left: 5vw;
 
     ul {
-      padding-top: 1vw;
+      padding: 4vw;
       list-style-type: disc;
 
       li {
@@ -1057,6 +1503,7 @@ export default {
 
 
       p {
+
         // padding-left: 4vw;
         padding-top: 1vw;
         color: #9BA5B1;
@@ -1068,7 +1515,7 @@ export default {
       }
 
       strong {
-      
+
         color: #9BA5B1;
         font-size: 23px;
         font-weight: 500;
@@ -1084,6 +1531,10 @@ export default {
         }
       }
     }
+  }
+
+  p {
+    padding: 1vw;
   }
 
   .list {

@@ -43,8 +43,8 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true" target="_blank">Google 地圖</a>
+             <a  class="link_more"  href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
@@ -69,8 +69,9 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/5ZgB51H2MZErvHNj8" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/40/Klt" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -96,8 +97,9 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href=" https://goo.gl/maps/s236tLRsiUEGMPzZ9" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/6f/uosf" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -134,8 +136,9 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
@@ -160,8 +163,9 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/1zu6o9DuUuePjVb48" aria-hidden="true" target="_blank">Google 地圖</a>
+            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
+            <a  class="link_more"  href="https://j.map.baidu.com/49/Zbdc" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -188,8 +192,8 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true" target="_blank">Google 地圖</a>
+            <a  class="link_more"  href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
 
         </div>
@@ -225,8 +229,9 @@
             </div>
           </div>
           <div class="button">
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <nuxt-link class="link_more" to="">百度地圖</nuxt-link>
+            <a  class="link_more"  href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true" target="_blank">Google 地圖</a>
+            <a  class="link_more"  href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
+            
           </div>
         </div>
       </div> 
@@ -325,6 +330,13 @@ export default {
   image {
     text-align: center;
   }
+}
+a{
+  text-decoration: none;
+  color: #57B2F3;
+  &:hover {
+      animation: 3s ease-in 1s 2 reverse both paused slidein;
+    }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
   .mapcontennt{
@@ -559,14 +571,23 @@ export default {
         border-radius: 100% !important;
       }
   #addresd{
-        padding: 2.5vw 1.3vw 0 6.8vw;
+        // padding: 2.5vw 1.3vw 0 6.8vw;
       }
-  #map {
-    // height: 55vw;
-    width: 92%;
-    // border: 1px solid;
-    // border-radius: 10px 10px 10px 10px;
-    box-shadow: 9px 9px 5px #8CD1F8;
+  // #map {
+  //   // height: 55vw;
+  //   width: 92%;
+  //   // border: 1px solid;
+  //   // border-radius: 10px 10px 10px 10px;
+  //   box-shadow: 9px 9px 5px #8CD1F8;
+  // }
+  #map{
+    img{
+    border-radius: 30px 30px 30px 30px;
+    // height: 28vw;
+    width: 88vw;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 13px 13px 0px #8cd1f8;
+    }
   }
    @keyframes slidein {
     0% {
@@ -580,14 +601,14 @@ export default {
   }
   .mapcontennt::before {
     //这里就是小三角了
-  content: "";
+     content: "";
     display: block;
     position: absolute;
-     left: -58px;
-    top: 103px;
-    border-width: 30px;
-    border-style: dashed solid dashed dashed;
-    border-color: transparent #8CD1F8 transparent transparent;
+    left: 140px;
+    top: -45px;
+    border-width: 25px;
+    border-style: solid solid dashed dashed;
+    border-color: transparent transparent #8CD1F8 transparent;
   }
 
   .button {
@@ -622,7 +643,8 @@ export default {
     background: #8CD1F8;
     border-radius: 16px 16px 16px 16px;
     margin-left: 3vw;
-    margin-top: 6vw;
+    margin-top: 13vw !important;
+    margin: 0 auto;
     position: relative;
     .addrescoin {
       padding: 1vw 1.3vw 0 1.3vw;

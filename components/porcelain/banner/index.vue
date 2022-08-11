@@ -5,7 +5,14 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/porcelain.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/porcelain.png "
+
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/porcelain.png " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/porcelain.png " 
+        title="瓷貼片" 
+        alt="瓷貼片" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/porcelain.png "/>
+        
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/porcelain.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 750w,
@@ -13,7 +20,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelainMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/porcelain.png 1650w,
-            ">
+            "> -->
           <div class="title">
         瓷貼片
       </div>

@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -121,6 +121,7 @@
                   <li>避免觸碰傷口上的凝固血塊，引致出血</li>
                   <li>避免食用堅硬和粗糙的食物</li>
                   <li>避免飲用含酒精飲品</li>
+                  <li>避免吃過冷或過熱的食物</li>
                   <li>避免大力漱口或吐痰</li>
                   <p>*拔牙後，傷口有機會出現腫脹，一般會數天後消退，可按醫生處方服藥或以冷敷消腫及紓緩不適。如傷口持續或大量出血，需盡快聯絡醫生，或視乎嚴重程度前往就近急症室求診。</p>
                 </div>
@@ -132,7 +133,7 @@
       <div v-else-if='currentIndex == 1 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG2.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -182,6 +183,7 @@
                   <li>避免觸碰傷口上的凝固血塊，引致出血</li>
                   <li>避免食用堅硬和粗糙的食物</li>
                   <li>避免飲用含酒精飲品</li>
+                  <li>避免吃過冷或過熱的食物</li>
                   <li>避免大力漱口或吐痰</li>
                   <p>*拔牙後，傷口有機會出現腫脹，一般會數天後消退，可按醫生處方服藥或以冷敷消腫及紓緩不適。如傷口持續或大量出血，需盡快聯絡醫生，或視乎嚴重程度前往就近急症室求診。</p>
                 </div>
@@ -193,7 +195,7 @@
       <div v-else-if='currentIndex == 2 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/AdvantageBG3.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -231,6 +233,7 @@
                   <li>避免觸碰傷口上的凝固血塊，引致出血</li>
                   <li>避免食用堅硬和粗糙的食物</li>
                   <li>避免飲用含酒精飲品</li>
+                  <li>避免吃過冷或過熱的食物</li>
                   <li>避免大力漱口或吐痰</li>
                   <p>*拔牙後，傷口有機會出現腫脹，一般會數天後消退，可按醫生處方服藥或以冷敷消腫及紓緩不適。如傷口持續或大量出血，需盡快聯絡醫生，或視乎嚴重程度前往就近急症室求診。</p>
                 </div>
@@ -257,7 +260,7 @@ export default {
       },
       {
         id: 2,
-        title: '非手術性\n脫牙'
+        title: '非手術性脫牙'
       }
       ],
       currentIndex: 0,   // 当前点击的tab的索引
@@ -553,7 +556,7 @@ export default {
     .content {
       padding: 2vw 1vw;
       display: flex;
-      align-items: center;
+      // align-items: center;
 
     }
 
@@ -653,7 +656,6 @@ export default {
     // width: 41vw;
     padding-left: 5vw;
     text-align: left !important;
-    ;
 
     strong {
       // padding-left: 4vw;
@@ -719,7 +721,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -823,7 +825,7 @@ export default {
     ul{
         color: #9BA5B1;
         list-style-type: disc;
-        padding: 6.5vw;
+        padding: 3.5vw 8vw;
     }
     strong {
       // padding-left: 4vw;
@@ -1011,7 +1013,7 @@ export default {
     }
 
     ul {
-      padding: 4vw;
+      padding: 4vw 8vw;
       list-style-type: disc;
 
       li {

@@ -46,7 +46,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/therapy">
+                    <a href="/rct">
                         <div class="service_pic"> <img class="imgya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
                             alt="根管治療（杜牙根）" /> </div>
                         <div class="service_txt">
@@ -61,7 +61,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/hiddenBeauty">
+                    <a href="/invisalign">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                             alt="Invisalign隱形牙箍" /> </div>
                         <div class="service_txt">
@@ -76,7 +76,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/porcelain">
+                    <a href="/veneers">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_0.png" title=" 瓷貼片"
                             alt=" 瓷貼片" /> </div>
                         <div class="service_txt">
@@ -93,7 +93,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/whitening">
+                    <a href="/teeth-whitening">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png" title="牙齒美白" alt="牙齒美白" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">牙齒美白</p>
@@ -107,7 +107,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/yacrown">
+                    <a href="/crowns-and-bridges">
                         <div class="service_pic"> <img class="quanci" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠" alt="全瓷牙冠及全鋯牙冠" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">全瓷牙冠<br>及全鋯牙冠</p>
@@ -121,7 +121,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/exelcymosis">
+                    <a href="/extractions-and-wisdom-teeth-extraction">
                         <div class="service_pic"> <img class="imgba" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除" alt="拔牙及智慧齒脫除" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">拔牙及智慧齒脫除</p>
@@ -135,7 +135,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/periodontosis">
+                    <a href="/periodontal-treatment">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame03.png" title="牙周病治療" alt="牙周病治療" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 "> 牙周病治療</p>
@@ -151,7 +151,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/dentures">
+                    <a href="/complete-and-partial-denture">
                         <div class="service_pic"><img class="allya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托" alt="全口牙托及局部牙托" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">全口牙托及<br>局部牙托</p>
@@ -165,7 +165,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/toothStraighten">
+                    <a href="/orthodontics">
                         <div class="service_pic"> <img class="quanci" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame04.png" title="矯齒" alt="矯齒" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">矯齒</p>
@@ -179,7 +179,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/scaleTeeth">
+                    <a href="/scaling-and-polishing">
                         <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_3.png" title="洗牙" alt="洗牙" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">洗牙</p>
@@ -193,7 +193,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/filling">
+                    <a href="/fillings">
                         <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_4.png" title="補牙" alt="補牙" />  </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 "> 補牙</p>
@@ -209,7 +209,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/oralExamination">
+                    <a href="/general-oral-examination">
                         <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_5.png" title="一般口腔檢查"  alt="一般口腔檢查" /></div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">一般口腔檢查</p>
@@ -223,7 +223,7 @@
               <div class="service_box">
                 <div class=" service_item" >
                   <div class="service_hover">
-                    <a href="/healthcare">
+                    <a href="/children-dentistry">
                         <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療" alt="兒童牙科保健及治療" /> </div>
                         <div class="service_txt">
                           <p class="fs-sm-16 ">兒童牙科<br>保健及治療</p>
@@ -241,7 +241,7 @@
           <a class="nav-link" href="/facilities">儀器及設備</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/equipment">健康資訊</a>
+          <a class="nav-link" href="/DentalCare">健康資訊</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/news">最新消息</a>
@@ -271,17 +271,17 @@
             <li><a class="dropdown-item" href="/implant">植牙</a></li>
             <li><a class="dropdown-item" href="#">根管治療（杜牙根）</a></li>
             <li><a class="dropdown-item" href="#">Invisalign 隱適美</a></li>
-            <li><a class="dropdown-item" href="/porcelain">瓷貼片</a></li>
+            <li><a class="dropdown-item" href="/veneers">瓷貼片</a></li>
             <li><a class="dropdown-item" href="#">牙齒美白</a></li>
-            <li><a class="dropdown-item" href="/yacrown">全瓷牙冠及全鋯牙冠</a></li>
+            <li><a class="dropdown-item" href="/crowns-and-bridges">全瓷牙冠及全鋯牙冠</a></li>
             <li><a class="dropdown-item" href="#">拔牙及智慧齒脫除</a></li>
             <li><a class="dropdown-item" href="#">牙周病治療</a></li>
-            <li><a class="dropdown-item" href="/dentures">全口牙托及局部牙托</a></li>
-            <li><a class="dropdown-item" href="/toothStraighten">矯齒 action</a></li>
-            <li><a class="dropdown-item" href="/scaleTeeth">洗牙</a></li>
-            <li><a class="dropdown-item" href="/filling">補牙</a></li>
+            <li><a class="dropdown-item" href="/complete-and-partial-denture">全口牙托及局部牙托</a></li>
+            <li><a class="dropdown-item" href="/orthodontics">矯齒 action</a></li>
+            <li><a class="dropdown-item" href="/scaling-and-polishing">洗牙</a></li>
+            <li><a class="dropdown-item" href="/fillings">補牙</a></li>
             <li><a class="dropdown-item" href="#">一般口腔檢查</a></li>
-            <li><a class="dropdown-item" href="/healthcare">兒童牙科保健及治療</a></li>
+            <li><a class="dropdown-item" href="/children-dentistry">兒童牙科保健及治療</a></li>
           </ul>
            
         </li>
@@ -289,7 +289,7 @@
           <a class="nav-link" href="/facilities">儀器及設備</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/equipment">健康資訊</a>
+          <a class="nav-link" href="/DentalCare">健康資訊</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/news">最新消息</a>

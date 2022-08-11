@@ -1,35 +1,23 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide " data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/dentures.png">
+        <div class="carousel-item active titleImg">
+                <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/dentures.jpg " 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/mbdentures.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbdentures.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/dentures.jpg " 
+        title="全口牙托及局部牙托" 
+        alt="全口牙托及局部牙托" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/dentures.jpg"/>
+        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/dentures.png"> -->
           <div class="title">
         全口牙托及局部牙托
       </div>
       </div>
-      <!-- <div class="carousel-item">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
-    </div> -->
-    </div>
-    <!-- 指示符 -->
+     
+    </div>    </div>
 
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
-    <!-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div> -->
   </div>
 
 </template>

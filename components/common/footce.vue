@@ -1,8 +1,8 @@
 <template>
 <div class="container">
   <div class="online footer">
-    <div>
-      <a id="zxzx" class="face-button d-block   ">
+    <div v-if="isShow">
+      <a id="zxzx" class="face-button d-block" href="https://api.whatsapp.com/send?phone=85236202428" aria-hidden="true" target="_blank">
             <div class="face-primary">
               <span class="icon"> <i class="fa fa-headphones ">
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
@@ -11,8 +11,28 @@
             </div>
           </a>
     </div>
-   <div>
-    <a class="face-button1 d-block">
+    <div v-else>
+      <a id="zxzx" class="face-button d-block web_app_a gtm_app" href="tel:85236202428 " aria-hidden="true" target="_blank">
+            <div class="face-primary">
+              <span class="icon"> <i class="fa fa-headphones ">
+                <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
+              </i></span>
+              電話預約
+            </div>
+          </a>
+    </div>
+   <div v-if="isShow">
+    <a class="face-button1 d-block" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+      <div class="face-primary">
+        <span class="icon"> <i class="fa  fa-volume-control-phone ">
+        <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
+        </i></span>
+        WhatApps<br>預約
+      </div>
+    </a>
+   </div>
+   <div v-else>
+     <a class="face-button1 d-block" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
       <div class="face-primary">
         <span class="icon"> <i class="fa  fa-volume-control-phone ">
         <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
@@ -26,7 +46,55 @@
 </div>
   
 </template>
+<script>
+export default {
+  data() {
+     return{
+      isShow: true,
+      screenWidth: ''
+     }
 
+  },
+  mounted(){
+    this.dynamicLoadCss(`https://www.cmerdental.com/css/vikim.css?parms=${new Date()}`)
+  },
+   created() {
+        if (process.client) {
+          this.screenWidth = document.body.clientWidth
+          window.onresize = () => {
+            return (() => {
+              this.screenWidth = document.body.clientWidth
+            })
+          }
+        }
+      
+      },
+      methods: {
+         dynamicLoadCss(url) {
+          let head = document.getElementsByTagName('head')[0];
+          let link = document.createElement('link');
+          link.type = 'text/css';
+          link.rel = 'stylesheet';
+          link.href = url;
+          head.appendChild(link);
+        }
+      },
+  watch: {
+        screenWidth: {
+          handler: function (val, oldVal) {
+            console.log('val========',val);
+            if (val < 768) {
+              console.log('屏幕宽度小于768px')
+              this.isShow = false
+            } else {
+              console.log('屏幕宽度大于768px')
+            }
+          },
+          immediate: true
+        },
+      }
+}
+</script>
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {

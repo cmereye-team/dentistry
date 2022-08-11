@@ -5,7 +5,12 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg "
+         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg" 
+        title="診所設備" 
+        alt="診所設備" 
+        src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"/>
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 750w,
@@ -13,7 +18,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg 1650w,
-            ">
+            "> -->
           <div class="title">
         診所設備
       </div>

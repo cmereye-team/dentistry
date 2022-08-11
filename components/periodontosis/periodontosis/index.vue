@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -13,8 +13,8 @@
           <li>
             <div class="list_con">
               <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
-              <h3> 牙周病屬慢性炎症，</h3>
-              <p>分為輕微的牙齦炎及嚴重的牙周炎兩種。會令牙齒鬆脫、移位，影響外貌及口腔健康。</p>
+              <!-- <h3> 牙周病屬慢性炎症，</h3> -->
+              <p>牙周病屬慢性炎症，分為輕微的牙齦炎及嚴重的牙周炎兩種。會令牙齒鬆脫、移位，影響外貌及口腔健康。</p>
               <div class="listcons">
                 <div class="list_d">
                   <strong>牙齦炎如何形成？</strong>
@@ -152,7 +152,7 @@
       <div v-else-if='currentIndex == 1 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG1.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -167,11 +167,11 @@
               <div class="gcon">
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
-                  <p>口腔檢查</p>
+                  <p>局部麻醉</p>
                 </div>
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
-                  <p>局部麻醉</p>
+                  <p>切開牙齦組織，分開牙齦組織與牙齒</p>
                 </div>
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
@@ -223,7 +223,7 @@
       <div v-else-if='currentIndex == 2 ? true : false'>
         <div class="boxs">
           <div class="Advantage">
-            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG3.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
               <ul>
                 <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""'
@@ -297,8 +297,8 @@
 
 
     </div>
-    </div>
-    </div>
+
+
   </di>
 </template>
 <script>
@@ -502,6 +502,9 @@ export default {
       background: #fff;
       text-align: center;
       justify-content: center;
+      .gcon{
+        margin: 1vw 0;
+      }
     }
   .contents {
 
@@ -514,7 +517,7 @@ export default {
     }
 
     .content {
-      padding: 3vw 1vw;
+      padding: 1vw;
       display: flex;
       align-items: center;
 
@@ -525,6 +528,7 @@ export default {
       font-size: 18px;
       padding-left: 1vw;
       margin-bottom: 0rem;
+     
     }
   }
 
@@ -628,7 +632,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -727,7 +731,7 @@ export default {
   }
   .contents {
     background-color: #fff;
-
+    
     .gcond {
       // display: flex;
       // margin: 0 auto;
@@ -751,6 +755,7 @@ export default {
       color:#57B2F3;
       font-weight: 500;
       font-size: 22px;
+      
     }
   }
   .porcelain—cons{
@@ -938,6 +943,7 @@ export default {
       font-size: 18px;
       padding-left: 1vw;
       margin-bottom: 0rem;
+   
     }
   }
 

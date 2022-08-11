@@ -1,7 +1,7 @@
 <template>
-  <di class="step section">
-    <div class="meun">
-      <p style="color:#79828D">首頁</p>
+  <di class="step comContent section">
+    <div class="comContent meun">
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
@@ -10,16 +10,16 @@
     <div class="step">
       <div class="list">
         <ul class="step_list items-center ">
-          <li>
+          <div class="cipian">
             <img src="https://static.cmereye.com/static/lkximg/image/porcelain/apple.png" alt="">
             <div class="list_con">
               <strong>瓷貼片</strong>
               <p>
-                植牙，俗稱為「種牙」，是處理缺牙的一種治療方法。牙醫瓷貼片有助改善牙齒的形狀、長度、外觀及顏色，達到牙齒整齊和美白的效果。把度身訂製的纖薄瓷貼片黏附於牙齒表層，效果自然，改善外觀。會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。
+                瓷貼片有助改善牙齒的形狀、長度、外觀及顏色，達到牙齒整齊和美白的效果。把度身訂製的纖薄瓷貼片黏附於牙齒表層，效果自然，改善外觀。
               </p>
             </div>
             <div class="list_dis">
-              <strong>適合使用瓷貼片的人士</strong>
+              <strong style="padding: 0;">適合使用瓷貼片的人士</strong>
               <ul>
                 <li>牙齒縫隙過大</li>
                 <li>牙齒排列不整齊</li>
@@ -29,7 +29,7 @@
                 <li>牙齒形狀不美觀（如：牙齒過小、牙齒表面有凹坑或凸起）</li>
               </ul>
             </div>
-          </li>
+          </div>
         </ul>
       </div>
       <div class="video">
@@ -42,37 +42,37 @@
               <div class="gcon">
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
-                  <p>醫生評估病人口腔及牙齦狀況，了解病人需求，解釋漂牙的程序及風險等</p>
+                  <p>醫生檢查牙齒及牙周健康，如存在口腔問題，必須先洗牙或接受牙周病治療後才能使用瓷貼片</p>
                 </div>
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw" alt="">
-                  <p>進行簡單清潔</p>
+                  <p>確定進行療程</p>
                 </div>
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
-                  <p>以牙齒專用色階進行對色，記錄療程前牙齒顏色的色號</p>
+                  <p>輕輕磨走牙齒表面的琺瑯質及把牙齒稍稍磨短</p>
                 </div>
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
-                  <p>套上口腔張口器及保護眼罩</p>
+                  <p>印製牙模及拍攝X光片</p>
                 </div>
               </div>
               <div class="gcon">
                 <div class="content right">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
-                  <p>在牙齦塗上牙齦保護劑，以免藍光及美白劑刺激牙齦</p>
+                  <p>設計及訂製瓷貼片，確保適合進行瓷牙貼片療程</p>
                 </div>
                 <div class="content right">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw" alt="">
-                  <p>牙齒表面均勻塗上激光專用美白劑</p>
+                  <p>把貼片粘到牙齒上</p>
                 </div>
                 <div class="content right">
                   <img src="https://static.cmereye.com/static/lkximg/image/whitening/7.svg" height="50vw" width="50vw" alt="">
-                  <p>以藍光燈開始照射牙齒，整個過程大概需要照射照2-3次</p>
+                  <p>檢查貼片粘合程度及顏色</p>
                 </div>
                 <div class="content right">
                   <img src="https://static.cmereye.com/static/lkximg/image/whitening/8.svg" height="50vw" width="50vw" alt="">
-                  <p>療程完成後，清除美白劑與牙齦保護劑-3次</p>
+                  <p>覆診，檢查牙齦狀況與貼片位置</p>
                 </div>
               </div>
             </div>
@@ -541,13 +541,15 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
   .step_list {
     // margin: 0 20vw;
-
+    ul{
+      list-style-type: disc;
+    }
     img {
       width: 22vw;
       height: 14vw;
@@ -555,7 +557,7 @@ export default {
       padding: 0 2vw;
     }
 
-    li {
+    .cipian {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
@@ -872,7 +874,7 @@ export default {
 
   .meun {
     padding-left: 6vw;
-    margin-top: 1vw;
+    // margin-top: 1vw;
     display: flex;
   }
 
@@ -886,11 +888,11 @@ export default {
       // padding: 0 2vw;
     }
 
-    li {
+    .cipian {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      // margin: 0 3vw;
       // display: flex;
 
       p {
@@ -916,7 +918,10 @@ export default {
       }
     }
   }
-
+ p {
+    padding: 1vw 1vw;
+    color: #9BA5B1;
+  }
   .list {
     margin-top: 5vw;
     background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);

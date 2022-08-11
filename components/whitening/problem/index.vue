@@ -148,7 +148,7 @@ p{
    span{
     color: #9BA5B1;
     font-size: 16px;
-
+    width: 84%;
   }
 }
 .title1{

@@ -1,66 +1,30 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide index_banner" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
-            ">
+   <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
+          srcset="https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" />
             <div class="title">提供全方位牙科服務</div>
-            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
-            <!-- <div class="title">提供全方位牙科服務</div> -->
-        <!-- <img 
-            src="https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg"
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1024w 
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 768w 
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 375w"    
-            sizes="(max-width: 376px) 375px, (max-width: 769px) 768px, 1024px" 
-            class="d-block"  > -->
+            <div class="contents">整體分析客人口腔， <br> 建議針對性的治療方案</div>
       </div>
       <div class="carousel-item">
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
-            ">
-            <div class="title">提供全方位牙科服務</div>
-            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
+        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+          srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg" />
+            <!-- <div class="title">提供全方位牙科服務</div>
+            <div class="contents">整體分析客人口腔，<br> 建議針對性的治療方案</div> -->
     </div>
     <div class="carousel-item">
-      <img src=" https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg 1650w,
-            ">
-            <div class="title">提供全方位牙科服務</div>
-            <div class="contents">整體分析客人口腔，<br> &nbsp;&nbsp;&nbsp;建議針對性的治療方案</div>
+      <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
+          srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
+            <!-- <div class="title">提供全方位牙科服務</div>
+            <div class="contents">整體分析客人口腔，<br> 建議針對性的治療方案</div> -->
     </div>
     </div>
-    <!-- 指示符 -->
-
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -119,55 +83,94 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
-    .contents{
-        position: absolute;
-        z-index: 2;
-        height: 58vw;
-        width: 43vw;
-        left: 8%;
-        top: 17%;
-        font-weight: 500;
-        color: #79828D;
-        font-size: 16px;
-    }
-  .title{
-      position: absolute;
-      z-index: 2;
-      height: 53vw;
-      width: 51vw;
-      left: 10%;
-      top: 9%;
-      font-weight: 500;
-      color: #79828D;
-      font-size: 22px;
-    }
-
-  .d-block {
-    display: block !important;
-    height: 83vw;
-    /* transform: scale(3,3); */
+ .index_banner {
+    position: relative;
   }
 
-  .carousel-inner {
-    margin-top: 16vw;
-    text-align: -webkit-center;
-
-    img {
-      height: 100%;
-      width: 90%;
-      border-radius: 30px 30px 30px 30px;
-    }
+ .index_banner::after {
+    animation: fade 3s ease-in-out alternate infinite;
+    animation-delay: -0.4s;
+    position: absolute;
+    content: 'scroll';
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    bottom: 5vw;
+    left: 2vw;
+    background: #ffffff;
+    z-index: 998;
+    padding: 2vw;
   }
 
-  .section {
-    width: 100%;
-    margin: 0;
+.index_banner::before {
+    animation: fadeline 3s ease-in-out alternate infinite;
+    animation-delay: -0.2s;
+    position: absolute;
+    content: '';
+    bottom: -22vw;
+    left: 9vw;
+    height: 55vw;
+    background-color: #C2C7CD;
+    width: 1px;
+    z-index: 99;
   }
 
-  .swiper-button-prev,
-  .swiper-button-next {
-    display: none;
+
+.contents {
+  position: absolute;
+  z-index: 2;
+  height: 58vw;
+  width: 100%;
+  left: -17%;
+  top: 17%;
+  font-weight: 500;
+  color: #79828D;
+  font-size: 16px;
+  text-align: left;
+}
+
+.title {
+  position: absolute;
+  z-index: 2;
+  height: 53vw;
+  width: 100%;
+  left: -10%;
+  top: 9%;
+  font-weight: 500;
+  color: #79828D;
+  font-size: 22px;
+}
+
+.d-block {
+  display: block !important;
+  height: 83vw;
+  /* transform: scale(3,3); */
+}
+
+.carousel-inner {
+  margin-top: 16vw;
+  text-align: -webkit-center;
+
+  img {
+    height: 100%;
+    width: 90%;
+    border-radius: 30px 30px 30px 30px;
   }
+}
+
+.section {
+  width: 100%;
+  margin: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none;
+}
 }
 
 //pc

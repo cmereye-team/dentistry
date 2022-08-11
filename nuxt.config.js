@@ -1,5 +1,6 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
   head: {
     title: 'dentistry',
     script: [
@@ -9,18 +10,20 @@ export default {
       }
     ],
     htmlAttrs: {
-      lang: 'en'
+      lang: 'zh-hk'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { name: 'viewport', content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0, user-scalable=0' }
     ],
     link: [
       { rel: 'stylesheet',  href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css'}
+      { rel: 'icon', type: 'image/x-icon', href: '/WebsiteIcon-03.png' },
+      { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css'},
+      { rel: 'stylesheet',type: 'text/css', href:'https://www.cmerdental.com/css/vikim.css'}
     ]
   },
 
@@ -31,7 +34,7 @@ export default {
     'asset/css/base-style.scss',
     'asset/css/tailwind.css',
     'swiper/dist/css/swiper.css',
-    'element-ui/lib/theme-chalk/index.css',
+    'element-ui/lib/theme-chalk/index.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

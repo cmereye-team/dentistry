@@ -5,7 +5,13 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png"> -->
-        <img src=" https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png "
+      <img data-cfsrc=" https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 640w,  https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png" 
+        title="洗牙" 
+        alt="洗牙" 
+        src=" https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png"/>
+
+        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 750w,
@@ -13,7 +19,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeethMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/scaleTeeth.png 1650w,
-            ">
+            "> -->
           <div class="title">
         洗牙
       </div>

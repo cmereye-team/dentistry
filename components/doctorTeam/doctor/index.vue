@@ -1,7 +1,7 @@
 <template>
-   <div class="bg-white py-5 pb-0 py-xs-2">
+   <div class="bg-white comContent py-xs-2">
     <div class="meun">
-      <p>首頁</p>
+      <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">我們的團隊</p>
     </div>
@@ -402,6 +402,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+
 .textsd{
    text-align: center;
     .ya{
@@ -427,61 +428,28 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
-
-  ::-webkit-scrollbar {
-    width: 20px;
-    height: 8px;
+  .texts{
+    text-align: center;
+    padding-top: 40px;
 }
-
-::-webkit-scrollbar-thumb {
-    border-radius: 12px;
-    border: 6px solid rgba(0, 0, 0, 0);
-    box-shadow: 8px 0 0 #9BD0F5 inset;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    box-shadow: 8px 0 0 #9BD0F5 inset;
-}
-
-   /* 设置滚动条的样式 */
-// ::-webkit-scrollbar {
-//   width:12px;
-// }
-// /* 滚动槽 */
-// ::-webkit-scrollbar-track {
-// -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-// border-radius:10px;
-// }
-// /* 滚动条滑块 */
-// ::-webkit-scrollbar-thumb {
-// border-radius:50px;
-// background:#9BD0F5;
-// height: 100px;    /* 滚动条滑块长度 */
-// padding-right: 1vw;
-// -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
-// }
-// ::-webkit-scrollbar-thumb:window-inactive {
-// background:rgba(255,0,0,0.4);
-// }
   .team{
-    margin: 5vw;
-    
+    margin: 0 5vw;
     justify-content: center;
   }
   .doctor{
     margin: 0 2vw;
     display: inline-block;
+    margin-bottom: 12vw;
     .name{
       display: flex;
     }
     .conts{
-      border: 1px solid #57B2F3;
-      border-radius: 1vw;
-      height: 32vw;
-      overflow:auto;
-      margin-top: 0.3vw;
-      width: 87vw;
-      color: #79828D;
+    border: 1px solid #57B2F3;
+    overflow: auto;
+    margin-top: 0.3vw;
+    width: 87vw;
+    color: #79828D;
+    border-radius: 15px;
     }
     img{
       width: 12vw;
@@ -494,11 +462,11 @@ export default {
     }
     p{
       margin-top: 0.4vw;
-      font-size: 24px;
+      font-size: 14px;
       font-weight: 800;
       color: #57B2F3;
       span{
-      font-size: 34px;
+      font-size: 24px;
       }
     }
   }
@@ -575,6 +543,7 @@ export default {
     display: inline-block;
     .name{
       display: flex;
+      align-items: baseline;
     }
     .conts{
       border: 1px solid #57B2F3;
@@ -586,8 +555,8 @@ export default {
       color: #79828D;
     }
     img{
-      width: 4vw;
-      margin-bottom: 1vw;
+      width: 3.5vw;
+      padding-bottom: 0.6vw;
     }
     ul{
       margin: 1vw;
@@ -595,9 +564,10 @@ export default {
     }
     p{
       margin-top: 0.4vw;
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
       color: #57B2F3;
+      margin-left: -17px;
       span{
       font-size: 34px;
       }

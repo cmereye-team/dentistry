@@ -5,7 +5,12 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png"> -->
-         <img src=" https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png "
+        <img data-cfsrc=" https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png" 
+        srcset="https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 640w,  https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png" 
+        title="矯齒" 
+        alt="矯齒" 
+        src=" https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png"/>
+         <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 400w,
             https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 750w,
@@ -13,7 +18,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 1024w,
             https://static.cmereye.com/static/lkximg/image/banner/toothStraightenMb.png 1125w,
             https://static.cmereye.com/static/lkximg/image/banner/toothStraighten.png 1650w,
-            ">
+            "> -->
           <div class="title">
         矯齒
       </div>
