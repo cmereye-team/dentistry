@@ -247,7 +247,7 @@ export default {
 
 .swiperWrap .swiper-slide-active{
   .des{
-    color: #57B2F3;
+  color: #57B2F3;
   }
   .content{
     color: #9BD0F5;
@@ -482,12 +482,12 @@ export default {
 
   .swiper-button-prev {
     left: 9vw;
-    top: 32vw;
+    top: 33vw;
   }
 
   .swiper-button-next {
     right: 13vw;
-    top: 32vw;
+    top: 33vw;
 }
 
   .vedio_slider {

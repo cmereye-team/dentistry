@@ -568,10 +568,10 @@ export default {
   .list_dis {
     margin-top: 9vw;
     // width: 41vw;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     text-align: left;
     padding-bottom: 24vw;
-    padding-right: 2vw;
+    // padding-right: 2vw;
     ul {
       padding: 4vw;
       list-style-type: none;

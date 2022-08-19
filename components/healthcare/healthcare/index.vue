@@ -11,7 +11,7 @@
       <div class="list">
         <ul class="step_list items-center ">
           <li>
-            <img src="https://static.cmereye.com/static/lkximg/image/oralExamination/apple.png" alt="">
+            <img src="https://static.cmereye.com/static/lkximg/image/healthcare/apple.png" alt="">
             <div class="list_dis">
               <strong>兒童牙科保健及治療</strong>
               <ul>
@@ -644,17 +644,17 @@ export default {
   .list_dis {
     margin-top: 9vw;
     // width: 41vw;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     text-align: left;
     padding-bottom: 24vw;
-    padding-right: 2vw;
+    // padding-right: 2vw;
     ul {
       padding-top: 1vw;
       list-style-type: none;
 
       li {
         color: #9BA5B1;
-        margin-top: 6vw;
+        margin-top: 4vw;
       }
     }
   }

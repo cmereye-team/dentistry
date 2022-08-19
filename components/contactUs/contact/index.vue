@@ -97,7 +97,7 @@
             </div>
           </div>
           <div class="button" >
-            <button class="link_more" type="submit" value="Submit" @click="submitButt">提交</button>
+            <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt">提交</button>
           </div>
         </el-form>
         <div style="display: none;">

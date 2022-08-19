@@ -9,7 +9,7 @@
     </div>
     <div v-if="isShow" class="flex justify-center selectEqu">
       <el-select v-model="value" placeholder="请选择" @change="selectLei">
-        <el-option v-for="item in options" :key="item.value" :label="item.label" :value="item.value">
+        <el-option v-for="item in options" :key="item.value" :id="item.label" :label="item.label" :value="item.value">
         </el-option>
       </el-select>
       <el-select v-model="value1" placeholder="请选择">
@@ -653,7 +653,7 @@ export default {
         display: inline-block;
         border: 1px solid #57B2F3;
         border-radius: 60px;
-        width: 7vw;
+    
         text-align: center;
         background-color: #fff;
         padding: 0.5vw;

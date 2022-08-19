@@ -111,7 +111,7 @@ export default {
 .texts {
   text-align: center;
   margin-top: 2vw;
-      margin-bottom: 3vw;
+      // margin-bottom: 3vw;
   h2 {
     font-weight: 500;
     color: #79828D;
@@ -589,10 +589,10 @@ export default {
   .list_dis {
     margin-top: 9vw;
     // width: 41vw;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     text-align: left;
     padding-bottom: 24vw;
-    padding-right: 2vw;
+    // padding-right: 2vw;
     ul {
       padding: 3vw;
       list-style-type: none;

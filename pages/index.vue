@@ -44,12 +44,10 @@ export default {
      document.getElementsByTagName("body")[0].className = "body-index";
   },
   created(){
-    
   },
   methods: {
-   
-  },
 
+},
   head() {
     return {
       title: '希瑪牙科中心 | 提供全方位牙科服務 | 診所分佈港九新界',

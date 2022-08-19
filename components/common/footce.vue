@@ -2,7 +2,7 @@
 <div class="container">
   <div class="online footer">
     <div v-if="isShow">
-      <a id="zxzx" class="face-button d-block" href="https://api.whatsapp.com/send?phone=85236202428" aria-hidden="true" target="_blank">
+      <a id="zxzx" class="face-button d-block phone" href="https://api.whatsapp.com/send?phone=85236202428" aria-hidden="true" target="_blank">
             <div class="face-primary">
               <span class="icon"> <i class="fa fa-headphones ">
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
@@ -12,7 +12,7 @@
           </a>
     </div>
     <div v-else>
-      <a id="zxzx" class="face-button d-block web_app_a gtm_app" href="tel:85236202428 " aria-hidden="true" target="_blank">
+      <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true" target="_blank">
             <div class="face-primary">
               <span class="icon"> <i class="fa fa-headphones ">
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
@@ -22,7 +22,7 @@
           </a>
     </div>
    <div v-if="isShow">
-    <a class="face-button1 d-block" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+    <a class="face-button1 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
       <div class="face-primary">
         <span class="icon"> <i class="fa  fa-volume-control-phone ">
         <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
@@ -32,7 +32,7 @@
     </a>
    </div>
    <div v-else>
-     <a class="face-button1 d-block" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+     <a class="face-button1 d-block webappMd" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
       <div class="face-primary">
         <span class="icon"> <i class="fa  fa-volume-control-phone ">
         <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
@@ -88,6 +88,7 @@ export default {
               this.isShow = false
             } else {
               console.log('屏幕宽度大于768px')
+              this.isShow = true
             }
           },
           immediate: true

@@ -23,6 +23,7 @@ import healthcare from "@/components/healthcare/healthcare/index.vue"
 
 
 export default {
+  
    components: { 
     menuBar,
     footce,

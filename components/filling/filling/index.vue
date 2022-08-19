@@ -725,6 +725,8 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+  .body-fillings .step.section .step_list{ padding: 0 5vw}
+.body-fillings .step.section .step_list li>img{display: block;width:100%;margin-bottom: 20px;padding: 0 !important;}
   .swiper-slideB{margin-left: -4vw;}
   .body-fillings .table-box .tablesd{margin-left: 1vw !important;}
 .body-fillings .swiper-container{padding-bottom: 8vw;}
@@ -1064,10 +1066,10 @@ export default {
   .list_dis {
     margin-top: 9vw;
     // width: 41vw;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     text-align: left;
     padding-bottom: 24vw;
-    padding-right: 2vw;
+    // padding-right: 2vw;
 
     ul {
       padding: 4vw;

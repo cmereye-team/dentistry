@@ -23,6 +23,7 @@ import problem from "@/components/dentures/problem/index.vue"
 import dentures from "@/components/dentures/dentures/index.vue"
 
 export default {
+  
    components: { 
     menuBar,
     footce,

@@ -21,6 +21,7 @@ import comContent from "@/components/me/comContent/index.vue"
 import ambient from "@/components/me/ambient/index.vue"
 import foot from "@/components/common/foot.vue"
 export default {
+  
    components: { 
     menuBar,
     footce,

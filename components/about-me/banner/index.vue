@@ -14,15 +14,11 @@
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg" />
-            <!-- <div class="title">提供全方位牙科服務</div>
-            <div class="contents">整體分析客人口腔，<br> 建議針對性的治療方案</div> -->
     </div>
     <div class="carousel-item">
       <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
-            <!-- <div class="title">提供全方位牙科服務</div>
-            <div class="contents">整體分析客人口腔，<br> 建議針對性的治療方案</div> -->
     </div>
     </div>
     <div class="carousel-indicators">
@@ -175,6 +171,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .index_banner{
+    margin-top: 10px;
+  }
   .carousel-item{
     text-align: center;
 
@@ -191,26 +190,28 @@ export default {
     font-size: 23px;
   }
   .title{
-      position: absolute;
-      z-index: 2;
-      height: 53vw;
-      width: 45vw;
-      left: 0;
-      top: 23%;
-      font-weight: 500;
-      color: #79828D;
-      font-size: 37px;
+    position: absolute;
+    z-index: 2;
+    height: 0;
+    top: 21%;
+    left: 13%;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 44px;
+    letter-spacing: 0.1em;
+    color: #79828d;
+    text-align: left;
     }
-  .carousel-inner img[data-v-703b804a] {
-    width: 90%;
-    border-radius: 80px 80px 80px 80px;
-  }
+  // .carousel-inner img[data-v-703b804a] {
+  //   width: 90%;
+  //   border-radius: 80px 80px 80px 80px;
+  // }
 
   .carousel-inner {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 95%;
       border-radius: 80px 80px 80px 80px;
     }
   }

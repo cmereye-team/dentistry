@@ -8,7 +8,7 @@
     <div class="adress">
       <ul>
         <li @click='addhandleClick(index)' v-for='(item, index) in addresslist'
-        :class='addcurrentIndex == index ? "actives" : ""' :key='item.id'>
+        :class='addcurrentIndex == index ? "actives" : ""' :id="item.id" :key='item.id'>
         {{ item.title }}</li>
         <!-- <li>九龍</li>
         <li>新界</li> -->
@@ -17,9 +17,9 @@
     <div v-if="addcurrentIndex === 0">
       <div class="tab flex justify-center" id="tab">
         <ul>
-          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
+          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab1" :id="item.id + 3" :key='item.id'
             v-for='(item, index) in list'>
-            <p>{{ item.title }}</p>
+            <p class="tab1" :id="item.id + 3" >{{ item.title }}</p>
           </li>
         </ul>
       </div>
@@ -112,9 +112,9 @@
     <div v-else-if="addcurrentIndex === 1">
       <div class="tab flex justify-center" id="tab">
         <ul>
-          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' :key='item.id'
+          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab2" :id="item.id + 6"  :key='item.id'
             v-for='(item, index) in list2'>
-            <p>{{ item.title }}</p>
+            <p class="tab2" :id="item.id + 6">{{ item.title }}</p>
           </li>
         </ul>
       </div>
@@ -209,9 +209,9 @@
     <div v-else-if="addcurrentIndex === 2">
       <div class="tab flex justify-center" id="tab">
         <ul>
-          <li @click='handleClick(index)' class="active" :key='item.id'
+          <li @click='handleClick(index)' class="active tab3" :id="item.id + 9"  :key='item.id'
             v-for='(item, index) in list3'>
-            <p>{{ item.title }}</p>
+            <p  :id="item.id + 9" class="tab3">{{ item.title }}</p>
           </li>
         </ul>
       </div>

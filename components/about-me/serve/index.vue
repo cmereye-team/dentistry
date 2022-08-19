@@ -9,7 +9,7 @@
         <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/implant">
+              <nuxt-link to="/implant" class="implant">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame.png" title="植牙"
                     alt="植牙" class="yas" /> </div>
                 <div class="service_txt">
@@ -20,7 +20,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/rct">
+              <nuxt-link to="/rct" class="rct">
                 <div class="service_pic"> <img class="imgya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
                     alt="根管治療（杜牙根）" /> </div>
                 <div class="service_txt">
@@ -31,7 +31,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/invisalign">
+              <nuxt-link to="/invisalign" class="invisalign">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
@@ -42,7 +42,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/veneers">
+              <nuxt-link to="/veneers" class="veneers">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_0.png" title=" 瓷貼片"
                     alt=" 瓷貼片" /> </div>
                 <div class="service_txt">
@@ -55,7 +55,7 @@
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/teeth-whitening">
+              <nuxt-link to="/teeth-whitening" class="teeth-whitening">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png" title="牙齒美白"
                     alt="牙齒美白" /> </div>
                 <div class="service_txt">
@@ -66,7 +66,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/crowns-and-bridges">
+              <nuxt-link to="/crowns-and-bridges" class="crowns-and-bridges">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
                     alt="全瓷牙冠及全鋯牙冠" /> </div>
                 <div class="service_txt">
@@ -77,7 +77,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/extractions-and-wisdom-teeth-extraction">
+              <nuxt-link to="/extractions-and-wisdom-teeth-extraction" class="extractions-and-wisdom-teeth-extraction">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除"
                     alt="拔牙及智慧齒脫除" /> </div>
                 <div class="service_txt">
@@ -88,7 +88,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/periodontal-treatment">
+              <nuxt-link to="/periodontal-treatment" class="periodontal-treatment">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame03.png" title="牙周病治療"
                     alt="牙周病治療" /> </div>
                 <div class="service_txt">
@@ -101,7 +101,7 @@
     <div class="service_box">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/complete-and-partial-denture">
+              <nuxt-link to="/complete-and-partial-denture" class="complete-and-partial-denture">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
                     alt="全口牙托及局部牙托" /> </div>
                 <div class="service_txt">
@@ -112,7 +112,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/orthodontics">
+              <nuxt-link to="/orthodontics"  class="orthodontics">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame04.png" title="矯齒"
                     alt="矯齒" /> </div>
                 <div class="service_txt">
@@ -123,7 +123,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/scaling-and-polishing">
+              <nuxt-link to="/scaling-and-polishing" class="scaling-and-polishing">
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_3.png" title="洗牙"
                     alt="洗牙" /> </div>
                 <div class="service_txt">
@@ -134,7 +134,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/fillings">
+              <nuxt-link to="/fillings" class="fillings">
                 <div class="service_pic"> <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_4.png" title="補牙"
                     alt="補牙" /> </div>
                 <div class="service_txt">
@@ -147,7 +147,7 @@
     <div class="service_box service_boxs">
       <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/general-oral-examination">
+              <nuxt-link to="/general-oral-examination" class="general-oral-examination">
                 <div class="service_pic"> <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_5.png" title="一般口腔檢查"
                     alt="一般口腔檢查" /> </div>
                 <div class="service_txt">
@@ -158,7 +158,7 @@
           </div>
           <div class=" service_item" data-wow-delay="0.3s">
             <div class="service_hover">
-              <nuxt-link to="/children-dentistry">
+              <nuxt-link to="/children-dentistry" class="children-dentistry">
                 <div class="service_pic"> <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
                     alt="兒童牙科保健及治療" /> </div>
                 <div class="service_txt">
@@ -213,21 +213,7 @@ a{
   // margin: auto;
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
-  .service_box {
-    padding-top: 2rem;
-  }
-  .service_box .service_item .service_hover{
-    height: 196px;
-  }
-  .service_pic img{
-    width: 8vw;
-  }
-  .yas{
-    width: 7vw !important;
-  }
-  
-}
+
 
 @media only screen and (max-width: 768px) {
   .service_box {
@@ -362,25 +348,6 @@ a{
   cursor: pointer;
 }
 
-// .service_box .service_item .service_hover:before {
-//   position: absolute;
-//   content: "";
-//   width: 400px;
-//   height: 40px;
-//   background: rgba(255, 255, 255, 0.3);
-//   left: 0;
-//   top: 0;
-//   bottom: 0;
-//   margin: auto;
-//   transform: rotate(-45deg) translateY(-232px) translateX(-55px);
-//   ;
-//   transition: all .3s ease-in;
-// }
-
-// .service_box .service_item:hover .service_hover:before {
-//   transform: rotate(-45deg) translateY(115px) translateX(-55px);
-//   ;
-// }
 
 @media only screen and (min-width: 100px) and (max-width: 991px) {
 
@@ -470,33 +437,6 @@ a{
   }
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1440px) {
-
-  .service_box .service_item .service_hover {
-    width: 15.2vw;
-  }
-
-  .service_box .service_item .service_hover .service_pic {
-    height: 10rem;
-    line-height: 10rem;
-    max-width: 8.571rem;
-    margin: 0 auto;
-  }
-
-  .service_box .service_item .service_hover .service_pic img {
-    max-width: 74%;
-  }
-
-  .service_box .service_item .service_hover .service_txt {
-    height: 5rem;
-  }
-
-  .service_box .service_item .service_hover .service_txt p {
-    font-size: 16px;
-    padding-bottom: 3rem;
-  }
-}
-
 @media only screen and (min-width: 1000px) and (max-width: 1250px) {
   .service_box .service_item .service_hover {
     width: 17vw;
@@ -578,5 +518,48 @@ a{
     padding-top: 0.2rem;
     font-weight: 540;
   }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+
+::v-deep .service_box .service_item .service_hover{
+    width: 158px;
+    height: 158px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.071rem;
+    cursor: pointer;
+}
+.service_box .service_item .service_pic{
+  line-height: 7rem;
+  height: auto;
+}
+.service_box p{
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  /* or 133% */
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #505050;
+}
+.serve_con{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 27vw;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #79828D;
+    padding: 0;
+    width: auto;
+    margin-top: 2vw;
+}
 }
 </style>

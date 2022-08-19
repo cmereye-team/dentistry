@@ -4,17 +4,17 @@
       <div>
         <ul>
           <li>
-            <a href="https://www.facebook.com/dental.cmer/">
+            <a href="https://www.facebook.com/dental.cmer/" class="Facebook">
               <img src="https://static.cmereye.com/static/lkximg/image/common/FB.svg" alt="">
             </a>
           </li>
           <li>
-             <a href="https://www.instagram.com/cmerdental/">
+             <a href="https://www.instagram.com/cmerdental/" class="IG">
             <img src="https://static.cmereye.com/static/lkximg/image/common/IG.svg" alt="">
             </a>
           </li>
           <li>
-             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos">
+             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos" class="Youtube">
             <img src="https://static.cmereye.com/static/lkximg/image/common/YT.svg" alt="">
             </a>
 

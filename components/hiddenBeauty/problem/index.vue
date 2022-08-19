@@ -314,7 +314,10 @@ p {
 }
 </style>
 <style lang="scss">
+@media only screen and (max-width: 768px) {
 .coll-box .discon{
   margin-top: 5vw;
 }
+}
+
 </style>

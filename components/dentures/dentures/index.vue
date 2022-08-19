@@ -24,7 +24,7 @@
                   <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup1.png" alt="">
                   <span>局部牙托適用於口腔內尚有健康牙齒的人士，一般以金屬支架或金屬勾設計，以健康牙齒固定牙托，方便自行配戴。</span>
                 </div>
-                <div class="list_d">
+                <div class="list_d quankou">
                   <strong>全口牙托&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong>
                   <img src="https://static.cmereye.com/static/lkximg/image/dentures/Maskgroup2.png" alt="">
                   <span>全口牙托適用於所有牙齒已脫落的人士，利用口中黏膜和齒槽骨脊固定，可自行配戴。但全口牙托的咬合感與真牙相差甚大，需以口腔內肌肉及舌頭動作等移動假牙，容易產生不適，需要時間適應。</span>
@@ -1051,6 +1051,7 @@ export default {
 
 //md
 @media only screen and (max-width: 768px) {
+
   .swiper-slideB{
     margin-left: -4.5vw;
   }
@@ -1160,11 +1161,14 @@ export default {
   // .py-5 {
   //   margin-top: 8rem!important;
   // }
+  .quankou{
+    padding-bottom: 86px !important;
+  }
   .list_d {
     padding: 3vw;
     text-align: left;
-    padding-bottom: 9vw !important;
-
+    padding-bottom: 9vw ;
+  
     img {
       padding: 1vw 2vw !important;
     }

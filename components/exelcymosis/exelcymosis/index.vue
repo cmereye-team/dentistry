@@ -825,7 +825,7 @@ export default {
     ul{
         color: #9BA5B1;
         list-style-type: disc;
-        padding: 3.5vw 8vw;
+        padding: 3.5vw 8vw 3.5vw 4vw;
     }
     strong {
       // padding-left: 4vw;
