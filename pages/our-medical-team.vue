@@ -16,7 +16,7 @@ import menuBar from "@/components/common/menuBar.vue";
 import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
-import Banner from "@/components/doctorTeam/Banner/index.vue"
+import Banner from "@/components/doctorTeam/banner/index.vue"
 import doctor from "@/components/doctorTeam/doctor/index.vue"
 export default {
    components: { 
