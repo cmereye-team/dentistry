@@ -1,6 +1,6 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide main-container" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
@@ -157,7 +157,7 @@ export default {
       z-index:2;
       height: 30vw;
       width: 100vw;
-      left:0;
+      left: 39% !important;
       top:45%;
       font-weight: 500;
       color: #79828D;
@@ -173,7 +173,7 @@ export default {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 100%;
       // border-radius: 80px 80px 80px 80px;
     }
   }

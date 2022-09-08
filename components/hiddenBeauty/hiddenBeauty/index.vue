@@ -1,6 +1,6 @@
 <template>
-  <di class="step comContent section">
-    <div class=" comContent meun">
+  <div class="step comContent section ">
+    <div class=" comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container">
           <li>
             <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/apple.png" alt="">
             <div class="list_con">
@@ -29,13 +29,14 @@
         </ul>
       </div>
       <div class="video pcshow" >
-        <div class="flex justify-center texts">
+        <div class="flex justify-center texts main-container">
           <h2 style="color: #ECF7FC;">隱適美流程</h2>
           <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div class="box_cruel">
         <img class="curve" src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/curve.svg" alt="">
-        <div class="box">
+        <div class="box_cruel main-container">
+          <div class="box">
         <img src="https://static.cmereye.com/static/lkximg/image/hiddenBeauty/cruel01.png" alt="">
         <h3>收集牙齒資料</h3>
         <p>與牙醫諮詢及溝通過後，專人會為你的牙齒進行拍照、X光片、口腔內掃瞄或牙模套印來建立你的牙齒資料，亦會透過詳細講解令你明白整個療程過程及效果。</p>
@@ -50,6 +51,8 @@
         <h3>訂製牙套並開始療程</h3>
         <p>廠商用3D電腦雷射列印科技製成一系列訂製牙箍，寄送至牙醫診所。我們會聯絡客人安排到診進行試戴並評估效果。客人需要每6至8星期複診，與牙醫跟進矯齒進度及取得新牙箍。</p>
       </div>
+        </div>
+        
       </div>
       
       </div>
@@ -84,7 +87,7 @@
       </div>
       </div>
     </div>
-  </di>
+  </div>
 </template>
 <script>
 export default {
@@ -119,7 +122,7 @@ export default {
 <style lang="scss" scoped>
 .texts {
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 33px;
   padding: 8vw;
   h2 {
     font-weight: 500;
@@ -141,6 +144,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .texts {
+    padding: 190px;
+  }
   ::v-deep ul {
       list-style-type: none !important;
     }
@@ -153,7 +159,7 @@ export default {
     .curve{
     position: absolute;
     width: 100%;
-
+    height: 366px;
     }
   }
   .box_center{
@@ -162,15 +168,17 @@ export default {
   .box{
     // display: flex;
     text-align: center;
-    margin: 2vw 5vw;
+    margin: 20px 55px;
     color: #fff;
     // z-index: 9999;
     position: inherit;
     h3{
       padding: 1vw 0;
+      font-size: 1.3rem;
     }
     p{
       text-align: left;
+      font-size: 1.1rem;
     }
   }
   .newsty {
@@ -301,8 +309,12 @@ export default {
     margin: 2vw 0;
   }
 .list_con {
-    margin-top: 9vw;
+  margin-top: 186px;
     width: 60vw !important;
+    strong{
+      padding-left: 0px !important;
+      font-size: 1.5rem;
+    }
   }
   .video {
     background-image:url('https://static.cmereye.com/static/lkximg/image/hiddenBeauty/Blueboard.png');
@@ -428,18 +440,22 @@ export default {
   
 
   .list_dis {
-    margin-top: 9vw;
+    margin-top: 186px;
+    padding-right: 10px;
     // width: 58vw;
-    padding-left: 5vw;
-
+    // padding-left: 5vw;
+    strong{
+      padding-left: 20px !important;
+      font-size: 1.5rem;
+    }
     ul {
       padding-top: 1vw;
       list-style-type: none;
-
+      padding-right: 10px;
       li {
         color: #9BA5B1;
-        padding: 1vw 0;
-
+        padding: 10px 0;
+        font-size: 1.1rem;
       }
     }
   }
@@ -448,30 +464,44 @@ export default {
     padding-left: 6vw;
     // margin-top: 1vw;
     display: flex;
+    p{
+      font-size: 1rem;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.1em;
+    }
   }
 
   .step_list {
     // margin: 0 20vw;
 
     img {
-      width: 22vw;
-      height: 14vw;
+      // width: 22vw;
+      // height: 14vw;
+      width: 362px;
       margin-bottom: 12vw;
-      padding: 0 2vw;
+      // padding: 0 2vw;
+    //   width: 369px;
+    // height: 242.95px;
     }
 
     li {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      // margin: 0 3vw;
       display: flex;
 
       p {
-        padding-left: 4.6vw;
+        // padding-left: 4.6vw;
         padding-top: 1vw;
         color: #9BA5B1;
         display: flex;
+        font-size: 1.1rem;
+        padding-left: 10px; 
       }
 
       strong {

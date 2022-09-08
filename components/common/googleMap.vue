@@ -1,6 +1,5 @@
 <template>
-  <div class="
- vedio_box md:font-black">
+  <div class="vedio_box md:font-black main-container">
     <div class="flex justify-center texts">
       <h2>診所地址</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -367,15 +366,13 @@ a{
   #map{
     img{
     border-radius: 30px 30px 30px 30px;
-    // height: 28vw;
-    width: 43vw;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 22px 22px 0px #8cd1f8;
     }
   }
   .button {
     display: flex;
-    margin-left: 7vw;
+    margin-left: 59px;
   }
 
   @keyframes slidein {
@@ -395,17 +392,19 @@ a{
       transition: all 0.5s;
       color: #57B2F3;
       text-decoration: none;
-      // font-weight: 600;
       display: block;
-      padding: 1vw;
-      margin: 0 auto;
-      width: 14vw;
-      letter-spacing: 0.2vw;
-      margin-top: 3vw;
-      margin-left: 13px;
+      padding: 15px;
+      margin: 0 auto; 
+      margin-top: 1vw;
       text-align: center;
-      font-size: 23px;
-
+      width: 167px;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+      letter-spacing: 0.1em;
     &:hover {
       animation: 3s ease-in 1s 2 reverse both paused slidein;
     }
@@ -414,6 +413,7 @@ a{
   .addmap {
     display: flex;
     justify-content: center;
+    padding-top: 48px;
   }
 .mapcontennt::before {
     //这里就是小三角了
@@ -427,26 +427,27 @@ a{
     border-color: transparent #8CD1F8 transparent transparent;
   }
   .mapcontennt {
-    height: 21vw;
-    width: 29vw;
+    height: 306px;
+    width: 434px;
     border: 1;
     background: #8CD1F8;
     border-radius: 30px 30px 30px 30px;
-    margin-left: 8vw;
-    margin-top: 2vw;
+    margin-left: 87px;
+    margin-top: 10px;
     position: relative;
     .addressMap{
-      padding: 1vw;
+      padding: 10px;
+      font-size: 1rem;
     }
     .addrescoin {
       padding: 0.8vw 1.3vw 0 1.3vw;
       position: absolute;
-      height: 2vw;
+      height: 40px;
       margin-bottom: 0.5vw;
     }
     
     .address1 {
-      padding: 0.8vw 1.3vw 0 2.8vw;
+      padding: 17px 58px 0px;
       color: white;
       margin-bottom: 0.5vw;
     }
@@ -470,11 +471,14 @@ a{
     .week {
       padding: 0 1.3vw 0 1.8vw;
       color: white;
-      position: absolute;
+      float: left;
     }
 .week1 {
           padding: 1vw 3.3vw 0 2.5vw;
-          color: white;
+          position: relative;
+          position: inherit !important;
+          color: #fff;
+          display: flex;
           
         }
     .week2 {
@@ -482,7 +486,7 @@ a{
       color: #fff;
       display: flex;
       // position: absolute;
-      margin-left: 15vw;
+      // width: max-content;
     }
 
     // p{
@@ -490,10 +494,11 @@ a{
     //   color:white
     // }
   }
-
+  .mapcontennt::after{display:  block;content:'';clear:both;}
+.mapcontennt .week::after{content: '';clear: both;}
   #map {
     // height: 28vw;
-    width: 43vw;
+    width: 673px;
     // border: 1px solid;
     border-radius: 10px 10px 10px 10px;
     // box-shadow: 15px 15px 5px #8CD1F8;
@@ -546,23 +551,28 @@ a{
       display: flex;
       text-align: center;
       justify-content: center;
+      margin-bottom: initial; 
 
       li {
-        // margin: 2vw 2vw;
-        // background: #9BD0F5;
-        // border-radius: 100%;
-        // height: 100px;
-        // width: 100px;
-        // line-height: 100px;
-        // color: white;
-        margin: 2vw 2vw;
-        background: #9BD0F5;
-        border-radius: 100%;
-        height: 90px;
-        width: 90px;
-        line-height: 90px;
-        color: white;
-        font-size: 20px;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 27px;
+          /* identical to box height */
+          letter-spacing: 0.1em;
+          height: 69px;
+          width: 69px;
+          color: white; 
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: center;
+          align-items: center;
+          margin: 29.375px;
+          background: #9BD0F5;
+          border-radius: 100%;
       }
       .actives{
         background: #57B2F3;
@@ -658,7 +668,7 @@ a{
     background: #8CD1F8;
     border-radius: 16px 16px 16px 16px;
     margin-left: 3vw;
-    margin-top: 13vw !important;
+    margin-top: 37px!important;
     margin: 0 auto;
     position: relative;
     .addrescoin {
@@ -669,7 +679,7 @@ a{
       margin: 2vw 0 0 2vw;
     }
 .addressMap{
-      padding: 1vw;
+      padding: 10px;
     }
     .address1 {
       padding: 0.8vw 1.3vw 0 7.8vw;

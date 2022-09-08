@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class="comContent meun">
+    <div class="comContent meun main-container">
       <p>
         <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
       </p>
@@ -12,7 +12,7 @@
 
     <div class="step ">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container">
           <li>
             <div class="list_con">
               <img src="https://static.cmereye.com/static/lkximg/image/dentures/apple.png" alt="">
@@ -43,7 +43,7 @@
           </li>
         </ul>
       </div>
-      <div class="bg-white py-5 pb-0 py-xs-2">
+      <div class="bg-white pb-0 py-xs-2 main-container">
         <div class="flex justify-center texts">
           <h2>固定式假牙、活動式假牙<br>點揀好？</h2>
           <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -596,7 +596,7 @@ export default {
 
 .texts {
   text-align: center;
-  margin-top: 2vw;
+  
 
   h2 {
     font-weight: 500;
@@ -618,6 +618,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .texts{
+    margin-top: 136px;
+  }
   .mbshow {
     display: none;
   }
@@ -694,7 +697,8 @@ export default {
     text-align: left;
 
     img {
-      padding: 1vw 2vw !important;
+      padding: 28px 28px 28px 17px!important;
+}
     }
 
     strong {
@@ -716,11 +720,18 @@ export default {
 
     span {
       display: block;
-      padding-left: 2vw;
-      padding-top: 1vw;
+      padding-left: 20px;
+      padding-top: 10px;
       color: #9BA5B1;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.1em;
     }
-  }
+
 
   .table-box {
     display: flex;
@@ -955,10 +966,10 @@ export default {
   }
 
   .list_con {
-    margin-top: 7vw;
-    margin-bottom: 6vw;
+    margin-top: 198px;
+    margin-bottom: 60px;
     // width: 41vw;
-    width: 63%;
+    width: 80%;
 
     h3 {
       margin-top: 1vw;
@@ -991,9 +1002,10 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
-    margin-top: 1vw;
+    padding-left: 146px;
+    // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
@@ -1018,7 +1030,8 @@ export default {
 
       p {
         // padding-left: 4vw;
-        padding-top: 1vw;
+        padding: 18px 104px;
+        font-size: 16px;
         color: #9BA5B1;
         display: flex;
         align-content: center;
@@ -1034,8 +1047,8 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.8vw solid #9BD0F5;
-          height: 2vw;
+          border-left: 14px solid #9BD0F5;
+          height: 44px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -1045,7 +1058,7 @@ export default {
 
   .list {
     // margin-top: 5vw;
-    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 341px, #ECF7FC 0);
   }
 }
 

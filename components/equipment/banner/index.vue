@@ -1,6 +1,6 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide  main-container" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
@@ -165,7 +165,7 @@ export default {
   .titleImg{
     position: relative;
     height: 30vw;
-    width: 100vw;
+    // width: 100vw;
     text-align: center;
      .title{
       position: absolute;

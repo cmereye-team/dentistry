@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2">
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
     <div class="flex justify-center texts">
       <h2> 根管治療（杜牙根）常見問題</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
@@ -106,6 +106,13 @@ export default {
   }
 }
 </script>
+<style lang="scss">
+  @media only screen and (min-width: 768px) and (max-width: 4096px) {
+    .el-collapse-item__header{
+      line-height: 23px !important;
+    }
+  }
+</style>
 <style lang="scss" scoped>
 p {
   margin-bottom: 0;

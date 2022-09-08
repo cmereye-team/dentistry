@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class=" comContent meun">
+    <div class=" comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-      <ul class="step_list items-center ">
+      <ul class="step_list items-center main-container">
         <li class="bac-box">
           <div  class="list_con">
             <img src="https://static.cmereye.com/static/lkximg/image/whitening/apple.png" alt="">
@@ -18,9 +18,9 @@
             <div class="listcons" >
             <div class="list_d" >
             <strong>激光牙齒美白</strong>
-            <span style="padding-right: 11vw;">激光美白是利用激光能量激活美白劑，將適量的過氧化氫（hydrogen peroxide，即是美白劑），透過氧化原理滲入象牙質，將色素分子打碎，排除沉澱的色素。相比其他美白牙齒的方式，激光美白屬較安全、快速、效果較持久及較亮白的方法。過程約 30分鐘，即時見效，可維持至少1年。</span>
+            <span>激光美白是利用激光能量激活美白劑，將適量的過氧化氫（hydrogen peroxide，即是美白劑），透過氧化原理滲入象牙質，將色素分子打碎，排除沉澱的色素。相比其他美白牙齒的方式，激光美白屬較安全、快速、效果較持久及較亮白的方法。過程約 30分鐘，即時見效，可維持至少1年。</span>
           </div>
-          <div class="list_d"  style="padding-right: 7vw;">
+          <div class="list_d">
             <strong>藍光牙齒美白</strong>
             <span>藍光美白是將專用美白溶液塗上牙齒表面，以藍光照射數次，進行氧化還原作用，達到美白的效果。過程約1小時，效果可維持約1年。</span>
           </div>
@@ -50,7 +50,7 @@
             </ul>
           </div>
         </div>
-        <div class="contents">
+        <div class="contents main-container">
           <div class="gcond">
             <div class="gcon">
               <div class="content left">
@@ -94,7 +94,7 @@
             </div>
           </div>
         </div>
-        <div class="video">
+        <div class="video main-container">
           <div class="video_con" v-loading="loading">
            <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/Rvh7T1pvqUM" title="【激光美白牙齒你要知】🦷✨" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
            <!-- <video width="100%" height="100%" controls="controls" src="https://youtu.be/loJSJebtxG8">
@@ -127,7 +127,7 @@
             </ul>
           </div>
         </div>
-        <div class="contents">
+        <div class="contents main-container">
           <div class="gcond">
             <div class="gcon">
               <div class="content left">
@@ -171,7 +171,7 @@
               </div>
           </div>
         </div>
-        <div class="videos">
+        <div class="videos main-container">
           <div class="video_con">
             <div class="cosn" ></div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/implant/vedio.png" alt=""> -->
@@ -283,6 +283,8 @@ export default {
     margin: 3vw 0;
   }
   .list_d{
+    width: 123%;
+    padding-right: 42px;
     text-align: left;
     strong {
     color: #9BA5B1;
@@ -300,10 +302,17 @@ export default {
     }
   }
     span{
-      display: block;
-      padding-left: 1vw;
-      padding-top: 1vw;
-      color: #9BA5B1;
+        padding-left: 10px;
+        padding-top: 14px;
+        color: #9BA5B1;
+        display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
     }
   }
   .table-box {
@@ -314,7 +323,7 @@ export default {
   }
   .lists{
     display: flex;
-    margin: 2vw 8vw;
+    padding: 50px 0 50px 130px;
   }
   .tablesd {
     margin-left: 4vw;
@@ -384,8 +393,8 @@ export default {
       content: "";
       margin-left: 15px;
       padding-left: 15px;
-      border-left: 0.8vw solid #9BD0F5;
-      height: 3vw;
+      border-left: 14px solid #9BD0F5;
+        height: 44px;
       display: inline-block;
       vertical-align: middle;
     }
@@ -397,12 +406,12 @@ export default {
   }
   .video{
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 0 8vw;
+    // margin: 0 8vw;
   }
   .videos{
     background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
     // background-color: #ECF7FC;
-    margin: 0 8vw;
+    // margin: 0 8vw;
     height: 26vw;
   }
   .video_con {
@@ -427,7 +436,7 @@ export default {
     .gcond {
       display: flex;
       margin: 0 auto;
-      width: 52%;
+      width: 68%;
     }
 
     .content {
@@ -463,7 +472,7 @@ export default {
     background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 48%;
+      width: 932px;
     }
 
   }
@@ -477,19 +486,19 @@ export default {
       display: flex;
 
       li {
-        padding: 2vw;
+        padding: 30px;
       }
 
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100px;
+        height: 75px;
         /* line-height: 94px; */
         align-self: center;
-        width: 100px;
+        width: 75px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 4vw;
+        margin: 1px 74px;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
@@ -498,8 +507,16 @@ export default {
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -540,9 +557,10 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
@@ -551,8 +569,9 @@ export default {
     img {
       // width: 32vw;
       // height: 24vw;
-      margin-bottom: 12vw;
-      padding: 0 2vw;
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
     }
 
     li {
@@ -564,22 +583,26 @@ export default {
       display: flex;
 
       p {
-        padding-left: 4vw;
-        padding-top: 1vw;
+        padding-top: 10px;
         color: #9BA5B1;
         display: flex;
+        font-size: 20px;
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 27px;
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
 
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.8vw solid #9BD0F5;
-          height: 2vw;
+          border-left: 11px solid #9BD0F5;
+          height: 35px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -589,7 +612,7 @@ export default {
 
   .list {
     // margin-top: 5vw;
-    background-image: linear-gradient(to bottom, #fff 33%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 305px, #ECF7FC 0);
   }
 }
 

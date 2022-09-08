@@ -7,9 +7,10 @@
       </div>
       <div class="form">
         <el-form :inline="true" label-position="top" :model="ruleForm"  ref="ruleForm" label-width="100px"
-          class="demo-form-inline wpcf7-form invalid"  id="msgForm"  target="frameName"
+          class="main-container demo-form-inline wpcf7-form invalid"  id="msgForm"  target="frameName"
           action="https://api.cmerdental.com/index.php/ces/#wpcf7-f128-p130-o1" method="post" novalidate="novalidate"
           data-status="invalid"  >
+          <div>
           <div style="display: none;"> <input type="hidden" name="_wpcf7" value="128"> <input type="hidden"
               name="_wpcf7_version" value="5.6.1"> <input type="hidden" name="_wpcf7_locale" value="zh_CN"> <input
               type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f128-p130-o1"> <input type="hidden"
@@ -32,6 +33,8 @@
               </el-radio-group>
             </el-form-item>
           </span>
+        </div>
+        <div>
           <span class="wpcf7-form-control-wrap" data-name="tel-813">
             <el-form-item label="電話號碼" prop="phone">
               <el-input type="tel" name="tel-813" value="" v-model="ruleForm.phone" placeholder="請輸入你的答案"
@@ -47,6 +50,7 @@
               <!-- <el-input v-model="ruleForm.address" name="your-email" placeholder="請輸入你的答案"></el-input> -->
             </el-form-item>
           </span>
+        </div>
           <span  class="wpcf7-form-control-wrap" data-name="menu-809">
             <el-form-item label="診症選擇">
             <el-select name="menu-809[]"  v-model="ruleForm.region"
@@ -316,7 +320,7 @@ a{
 
   .button {
     background: #9BD0F5;
-    padding-bottom: 15vw;
+    // padding-bottom: 15vw;
 
     .link_more {
       background: #fff;
@@ -344,10 +348,9 @@ a{
   }
 
   .radioInfo {
-        padding-left: 10vw;
     padding-bottom: 5vw;
     background: #9BD0F5;
-
+    padding-top: 50px;
     .radiocon {
       padding-bottom: 1vw;
 
@@ -384,7 +387,7 @@ a{
     }
 
     .el-form-item {
-      margin: 3vw 10vw;
+      margin: 30px 60px;
       width: 19vw;
     }
   }

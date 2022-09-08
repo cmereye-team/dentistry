@@ -62,7 +62,7 @@ export default {
     ],
     link: [
       { rel: 'stylesheet',  href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
-      { rel: 'icon', type: 'image/x-icon', href: '/WebsiteIcon-03.png' },
+      { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.svg' },
       { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css'},
       { rel: 'stylesheet',type: 'text/css', href:'https://www.cmerdental.com/css/vikim.css'}
     ]

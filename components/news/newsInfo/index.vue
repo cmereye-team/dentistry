@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white comContent pb-0 py-xs-2">
+  <div class="bg-white comContent pb-0 py-xs-2 main-container">
     <div class="meun">
       <p>
         <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
@@ -575,7 +575,7 @@ export default {
     outline: 0;
     padding: 0 15px;
     transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
-    width: 16vw;
+    // width: 16vw;
   }
 
   .dateinfo {
@@ -583,15 +583,16 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     display: flex;
+    font-size: 16px;
   }
 
   .selectEqu {
     display: flex;
     text-align: end;
     justify-content: end;
-    margin-right: 5vw;
+    // margin-right: 5vw;
   }
 
   .el-select {
@@ -604,7 +605,7 @@ export default {
     display: flex;
     border-radius: 30px 30px 30px 30px;
     background-color: #ECF7FC;
-    margin: 3vw 9vw 3vw 9vw;
+    margin: 35px;
 
     img {
       width: 25vw;
@@ -613,29 +614,38 @@ export default {
     }
 
     .pic {
-      width: 25vw;
-      height: 25vw;
+      width: 400px;
+      height: 400px;
       margin: auto;
-      padding: 1vw;
+      padding: 16px;
     }
 
-     .date {
-      width: 6vw;
-      height: 6vw;
+    .date {
+      width: 5.5vw;
+      height: 100px;
       background-color: #9BD0F5;
       border-radius: 50%;
-      margin: 1vw;
+      margin: 20px;
       display: flex;
       text-align: center;
       color: #FFF;
       font-weight: 600;
       justify-content: center;
       flex-direction: column;
-
+      span{
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 38px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.1em;
+      }
       .linesy {
         font-size: 32px;
         border-bottom: 3px solid #FFF;
-        margin: 0 1vw;
+        margin: 0 8px;
       }
     }
 
@@ -645,39 +655,52 @@ export default {
 
     .content {
       display: inline-block;
-      margin-top: 4vw;
-      margin-left: 3vw;
+      margin-top: 74px;
+      margin-left: 30px;
       width: 44vw;
 
       .label {
         display: inline-block;
         border: 1px solid #57B2F3;
         border-radius: 60px;
-    
+        width: fit-content;
         text-align: center;
         background-color: #fff;
-        padding: 0.5vw;
+        padding: 18px;
       }
 
       h2 {
         padding: 0;
         text-align: left;
-        margin-bottom: 2vw;
+        margin-bottom: 28px;
         justify-content: left;
         color: #57B2F3;
         font-weight: 600;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 30px;
+        line-height: 30px;
+        /* identical to box height */
+
+        letter-spacing: 0.1em;
 
         &:before {
           content: "";
-          border-left: 1vw solid #9BD0F5;
+          border-left: 15px solid #9BD0F5;
           margin-right: 1vw;
-          height: 4vw;
+          height: 50px;
           display: inline-block;
           vertical-align: middle;
         }
       }
 
       p {
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
         color: #57B2F3;
       }
     }

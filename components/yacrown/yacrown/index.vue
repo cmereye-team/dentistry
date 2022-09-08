@@ -1,6 +1,6 @@
 <template>
-  <di class="step comContent section">
-    <div class="comContent meun">
+  <di class="step comContent section ">
+    <div class="comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <div class="coin_box">
+        <div class="coin_box main-container">
           <div class="coin">
             <img src="https://static.cmereye.com/static/lkximg/image/yacrown/apple.png" alt="">
           </div>
@@ -19,7 +19,7 @@
           </div>
         </div>
       </div>
-      <div class="bg-white py-5 pb-0 py-xs-2">
+      <div class="bg-white py-5 pb-0 py-xs-2 main-container">
         <div class="flex justify-center texts">
           <h2>全瓷牙冠及全鋯牙冠<br>點揀好？</h2>
           <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -275,7 +275,7 @@
                 </tr>
               </table>
               <table class="tablesd">
-                <tr style="height: 3vw;">
+                <tr style="height: 57px;">
                   <th>金屬牙冠</th>
                 </tr>
                 <tr>
@@ -299,7 +299,7 @@
                 </tr>
               </table>
               <table class="tablesd">
-                <tr style="height: 3vw;">
+                <tr style="height: 57px;">
                   <th class="thd">烤瓷合金牙冠</th>
                 </tr>
                 <tr>
@@ -321,7 +321,7 @@
                 </tr>
               </table>
               <table class="tablesd">
-                <tr style="height: 3vw;">
+                <tr style="height: 57px;">
                   <th>全鋯牙冠</th>
                 </tr>
                 <tr>
@@ -342,7 +342,7 @@
                 </tr>
               </table>
               <table class="tablesd">
-                <tr style="height: 3vw;">
+                <tr style="height: 57px;">
                   <th class="thd">全瓷牙冠</th>
                 </tr>
                 <tr>
@@ -441,7 +441,8 @@ export default {
 
   p {
     color: #79828D;
-    padding: 1vw 0;
+    padding: 10px 0;
+    font-size: 16px;
   }
 
   h2 {
@@ -514,13 +515,18 @@ export default {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 7vw 0;
+    padding: 80px 0;
   }
 
   .coin {
     padding: 1vw 2vw;
     display: block;
     text-align: center;
+    img{
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
+    }
 
     p {
       color: #79828D;
@@ -626,7 +632,7 @@ export default {
 
     td {
       border-radius: 0 0 30px 30px;
-      height: 16vw !important;
+      height: 306px !important;
     }
   }
 
@@ -641,7 +647,7 @@ export default {
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
     width: 7%;
-    height: 32vw;
+    height: 620px;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
@@ -827,17 +833,23 @@ export default {
   }
 
   .list-dis {
-    margin-top: 8vw;
-    width: 34%;
-    // width: 41vw;
-    padding-left: 5vw;
+    margin-top: 179px;
+    width: 42%;
+    padding-left: 15px;
     text-align: left !important;
-    ;
 
     p {
-      color: #9BA5B1;
-      padding-top: 2vw;
-      padding-left: 1vw;
+        padding-left: 11px;
+        padding-top: 22px;
+        color: #9BA5B1;
+        display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
 
     }
 
@@ -905,9 +917,10 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
@@ -1027,7 +1040,7 @@ export default {
   }
 
   .texts {
-    margin-top: 13vw;
+    // margin-top: 13vw;
   }
 
   ::v-deep .Advanbutton {

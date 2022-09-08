@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent  section">
-    <div class="comContent meun">
+    <div class="comContent meun  main-container">
       <p>
         <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
       </p>
@@ -11,7 +11,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <div class="step_list items-center ">
+        <div class="step_list items-center main-container">
           <div class="bac-box">
             <img src="https://static.cmereye.com/static/lkximg/image/implant/Group1.png" alt="">
             <div class="list_con">
@@ -45,7 +45,7 @@
             </ul>
           </div>
         </div>
-        <div class="contents">
+        <div class="contents main-container">
           <div class="gcond">
             <div class="gcon">
               <div class=" left">
@@ -83,7 +83,7 @@
             </div>
           </div>
         </div>
-        <div class="video">
+        <div class="video main-container">
           <div class="video_con" v-loading="loading">
             <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/loJSJebtxG8"
               title="【拆解植牙全過程】#希小牙實驗室" frameborder="0"
@@ -192,7 +192,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 3vw;">
+                  <tr style="height: 47px;">
                     <th>優點</th>
                   </tr>
                   <tr>
@@ -222,7 +222,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 3vw;">
+                  <tr style="height: 47px;">
                     <th class="thd">缺點</th>
                   </tr>
                   <tr>
@@ -279,7 +279,7 @@
             </ul>
           </div>
         </div>
-        <div class="contents">
+        <div class="contents main-container">
           <div class="gcond">
             <div class="gcon">
               <div class="content lefts">
@@ -317,7 +317,7 @@
             </div>
           </div>
         </div>
-        <div class="videos">
+        <div class="videos main-container">
           <div class="video_con">
             <div class="cosn"></div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/implant/vedio.png" alt=""> -->
@@ -423,7 +423,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 3vw;">
+                  <tr style="height: 47px;">
                     <th>優點</th>
                   </tr>
                   <tr>
@@ -453,7 +453,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 3vw;">
+                  <tr style="height: 47px;">
                     <th class="thd">缺點</th>
                   </tr>
                   <tr>
@@ -673,15 +673,15 @@ export default {
   .cosn {
     background-color: #fff;
     width: 80%;
-    height: 6vw;
+    height: 100px;
   }
 
   .serve_con {
     color: #79828D;
-    margin-top: 2vw;
+    margin-top: 46px;
     // margin-bottom: 2vw;
     font-size: 18px;
-    padding: 0 16vw;
+    padding: 0 285px;
   }
 
   .video_con {
@@ -694,23 +694,22 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    padding-top: 32px;  
     // margin: 2vw 0;
 
   }
 
   .lists {
     display: flex;
-    margin: 3vw 18vw;
+    padding: 43px 342px;
   }
 
   .texts {
-
-    margin-top: 5vw;
-
+    margin-top: 80px;
   }
 
   .tablesd {
-    margin-left: 4vw;
+    margin-left: 30px;
     color: #57B2F3;
     background-color: #fff;
     border: 3px solid #9BD0F5;
@@ -720,7 +719,7 @@ export default {
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
     width: 20%;
-    height: 25vw;
+    height: 500px;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
@@ -757,7 +756,7 @@ export default {
     box-shadow: 13px 15px 0 #a2d4f7;
     border-spacing: 0;
     width: 7%;
-    height: 22vw;
+    height: 428px;
     font-weight: 550;
     letter-spacing: 0.1vw;
     font-size: 17px;
@@ -783,8 +782,8 @@ export default {
         content: "";
         margin-left: 15px;
         padding-left: 15px;
-        border-left: 0.8vw solid #9BD0F5;
-        height: 3vw;
+        border-left: 14px solid #9BD0F5;
+        height: 44px;
         display: inline-block;
         vertical-align: middle;
       }
@@ -792,18 +791,18 @@ export default {
   }
 
   .list_cons {
-    margin: 2vw 0;
+    margin: 20px 0;
   }
 
   .video {
-    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 0 8vw;
+    background-image: linear-gradient(to bottom, #fff 375px, #ECF7FC 0);
+    // margin: 0 8vw;
   }
 
   .videos {
     background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
     // background-color: #ECF7FC;
-    margin: 0 8vw;
+    // margin: 0 8vw;
 
   }
 
@@ -816,7 +815,7 @@ export default {
 
   .left {
     display: flex;
-    padding: 5vw 8vw 5vw 11vw !important;
+    padding: 30px 10px 70px 20px !important;
   }
 
   .lefts {
@@ -837,7 +836,7 @@ export default {
     }
 
     .content {
-      padding: 5vw 6vw 5vw 1vw;
+      padding: 30px 10px 56px 20px !important;
       display: flex;
       align-items: self-start;
 
@@ -869,7 +868,7 @@ export default {
     background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 48%;
+      width: 932px;
     }
 
   }
@@ -883,19 +882,19 @@ export default {
       display: flex;
 
       li {
-        padding: 2vw;
+        padding: 30px;
       }
 
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100px;
+        height: 75px;
         /* line-height: 94px; */
         align-self: center;
-        width: 100px;
+        width: 75px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 4vw;
+        margin: 1px 74px;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
@@ -904,8 +903,16 @@ export default {
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -913,12 +920,13 @@ export default {
   }
 
   .list_con {
-    margin-top: 7vw;
-    width: 41vw;
+    margin-top: 198px;
+    width: 42%;
+    // width: 41vw;
   }
 
   .list_dis {
-    margin-top: 7vw;
+    margin-top: 198px;
     // width: 41vw;
     padding-left: 5vw;
 
@@ -928,7 +936,13 @@ export default {
 
       li {
         color: #9BA5B1;
-
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
       }
     }
   }
@@ -940,19 +954,19 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
     // margin: 0 20vw;
 
     img {
-      width: 22vw;
-      height: 14vw;
-      margin-bottom: 12vw;
-      padding-left: 3vw;
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
     }
 
     .bac-box {
@@ -960,26 +974,39 @@ export default {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      // margin: 0 3vw;
       // display: flex;
 
       p {
-        padding-left: 4.6vw;
-        padding-top: 1vw;
+        padding-left: 40px;
+        padding-top: 14px;
         color: #9BA5B1;
         display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 27px;
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
 
+        letter-spacing: 0.1em;
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.8vw solid #9BD0F5;
-          height: 2vw;
+          border-left: 11px solid #9BD0F5;
+          height: 35px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -988,7 +1015,8 @@ export default {
   }
 
   .list {
-    margin-top: 5vw;
+    height: 472px;
+    margin-top: 82px;
     background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
   }
 }

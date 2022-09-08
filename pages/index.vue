@@ -1,14 +1,17 @@
 <template>
   <div id="lay">
-    <menuBar />
-    <Banner />
-    <footce />
-    <serve />
-    <serveConcept />
-    <debtistryHealth />
-    <mapGoogle />
-    <foot />
-
+    <div>
+      <menuBar />
+      <Banner />
+      <footce />
+      <serve />
+     
+      <serveConcept />
+      <debtistryHealth />
+      <mapGoogle />
+      <foot />
+    
+    </div>
   </div>
 </template>
 

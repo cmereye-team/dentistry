@@ -1,6 +1,6 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide main-container" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
@@ -141,7 +141,7 @@ export default {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 100%;
       // border-radius: 80px 80px 80px 80px;
     }
   }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-white py-5 pb-0 py-xs-2">
+    <div class="bg-white py-5 pb-0 py-xs-2 main-container">
       <div class="flex justify-center texts">
         <h2>隱適美適合我嗎?</h2>
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -83,13 +83,13 @@
       </div>
     </div>
     <div class="table-bg">
-      <div class="flex justify-center texts">
-        <h2>為何選擇隱適美療程?</h2>
+      <div class="flex justify-center texts main-container">
+        <h2 class="tableTitle">為何選擇隱適美療程?</h2>
         <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow">
         <div class="swiper-wrapper ">
-          <div class="swiper-slide box">
+          <div class="swiper-slide box ">
             <div class="table-box py-5" id="move_div">
               <table class="tables">
                 <tr>
@@ -315,7 +315,7 @@
           </div> -->
       <div class="boxs pcshow">
         <div class="box">
-          <div class="card">
+          <div class="card main-container">
             <div class="table-box" @click="drawBegin(judgeActive)">
               <table class="tables">
                 <tr>
@@ -570,6 +570,7 @@ p {
   }
 
   .card {
+  
     display: inline-block;
     /*行内块元素*/
     // line-height: 300px;
@@ -1135,11 +1136,15 @@ p {
   .card {
     background: rgba(255, 255, 255, 0);
     border: 0;
+    width: calc(100% - 120px);
   }
 
   .texts {
-    padding-top: 9rem !important;
-
+    font-size: 1.2rem ;
+    // padding-top: 9rem !important;
+    .tableTitle{
+      padding-top: 80px;
+    }
   }
 
   td {
@@ -1246,7 +1251,7 @@ p {
     width: 100% !important;
 
     img {
-      padding: 0 2vw;
+      padding: 0 6px;
     }
   }
 

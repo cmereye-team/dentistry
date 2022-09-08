@@ -1,6 +1,6 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide main-container" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
@@ -10,42 +10,12 @@
         title="診所設備" 
         alt="診所設備" 
         src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"/>
-        <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/facilitiesMb.jpg 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg 1650w,
-            "> -->
           <div class="title">
         診所設備
       </div>
       </div>
-      <!-- <div class="carousel-item">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
-    </div>
-    <div class="carousel-item">
-      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
-    </div> -->
-    </div>
-    <!-- 指示符 -->
-
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
-    <!-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div> -->
   </div>
-
+</div>
 </template>
 
 <script>
@@ -146,31 +116,23 @@ export default {
 @media only screen and (min-width: 768px) {
   .titleImg{
     position: relative;
-    height: 30vw;
-    width: 100vw;
     text-align: center;
     .title{
       position: absolute;
       z-index:2;
-      height: 30vw;
-      width: 100vw;
-      left:0;
+      left:45%;
       top:45%;
       font-weight: 500;
       color: #79828D;
       font-size: 39px;
     }
   }
-  .carousel-inner img[data-v-703b804a] {
-    width: 90%;
-    // border-radius: 80px 80px 80px 80px;
-  }
 
   .carousel-inner {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 100%;
       // border-radius: 80px 80px 80px 80px;
     }
   }

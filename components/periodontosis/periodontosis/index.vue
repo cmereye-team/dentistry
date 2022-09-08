@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class="comContent meun">
+    <div class="comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container">
           <li>
             <div class="list_con">
               <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/apple.png" alt="">
@@ -20,7 +20,7 @@
                   <strong>牙齦炎如何形成？</strong>
                   <span>牙齦及牙齒邊緣長期積聚牙菌膜，細菌會分泌毒素刺激牙齦，引致發炎。牙齦發炎時，牙肉會紅腫，刷牙時會流牙血，牙齒表面也會積聚十分粗糙的牙石。</span>
                 </div>
-                <div class="list_d">
+                <div class="list_d list_right">
                   <strong>牙周病如何形成？</strong>
                   <span>當牙齦炎情況持續，形成「牙周袋」，食物殘渣、牙菌膜和牙石等更易堆積在內，使牙周組織持續受破壞，而出現牙周炎。如牙齦邊緣滲出膿液，甚至長出牙瘡，牙齦和牙槽骨會慢慢萎縮，以致部分牙根外露，牙齒失去支撐，甚至脫落。</span>
                 </div>
@@ -38,7 +38,7 @@
           </li>
         </ul>
       </div>
-      <div class="bg-white py-5 pb-0 py-xs-2">
+      <div class="bg-white  pb-0 py-xs-2 main-container">
         <div class="flex justify-center texts">
           <h2>牙周病的症狀</h2>
           <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -89,7 +89,7 @@
         </div>
       </div>
       <div v-if='currentIndex == 0 ? true : false'>
-        <div class="boxs">
+        <div class="boxs main-container">
           <div class="Advantage">
             <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
@@ -101,7 +101,7 @@
               </ul>
             </div>
           </div>
-          <div class="contents">
+          <div class="contents main-container">
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
@@ -119,7 +119,7 @@
               </div>
             </div>
           </div>
-          <div class="video">
+          <div class="video ">
             <div class="cons-box">
               <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote.png" alt="">
               <div class="porcelain—con">
@@ -150,7 +150,7 @@
         </div>
       </div>
       <div v-else-if='currentIndex == 1 ? true : false'>
-        <div class="boxs">
+        <div class="boxs main-container">
           <div class="Advantage">
             <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG1.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
@@ -164,7 +164,7 @@
           </div>
           <div class="contents">
             <div class="gcond">
-              <div class="gcon">
+              <div class="gcon gcon_left_content">
                 <div class="content left">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw" alt="">
                   <p>局部麻醉</p>
@@ -221,7 +221,7 @@
         </div>
       </div>
       <div v-else-if='currentIndex == 2 ? true : false'>
-        <div class="boxs">
+        <div class="boxs main-container">
           <div class="Advantage">
             <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/AdvantageBG3.png" alt="">
             <div class="Advanbutton" style="box-sizing: content-box;">
@@ -274,7 +274,7 @@
                 <p>牙周病手術主要分成兩類，牙肉翻瓣手術及牙周再生手術，更深入地把發炎組織處理乾淨，防止發炎繼續惡化。</p>
               </div>
               <div  class="quote">
-                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt=""></img>
+                <img src="https://static.cmereye.com/static/lkximg/image/periodontosis/quote2.png" alt="">
               </div>
               
             </div>
@@ -338,7 +338,7 @@ export default {
 <style lang="scss" scoped>
 .texts {
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 148px;
 
   h2 {
     font-weight: 500;
@@ -362,7 +362,7 @@ export default {
 @media only screen and (min-width: 768px) {
   .listcons{
     display: flex;
-    margin: 3vw 0;
+    margin: 35px 0;
   }
   .porcelain—con{
     // display: flex;
@@ -375,10 +375,10 @@ export default {
     }
   }
   .porcelain—cons{
-    padding: 0 12vw;
+    padding: 0 95px;
     p{
       color:#9BA5B1;
-
+      font-size: 16px;
     }
   }
   .quote{
@@ -389,7 +389,7 @@ export default {
     align-items: center;
   }
   .boxs {
-    background-image: linear-gradient(to bottom, #fff 53%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 615px, #ECF7FC 0);
 
   }
 
@@ -405,7 +405,7 @@ export default {
   }
 
   .coin {
-    padding: 1vw 2vw;
+    padding: 10px 20px;
     display: block;
     text-align: center;
 
@@ -415,23 +415,32 @@ export default {
       padding: 1vw 0;
     }
   }
-
+  .list_right{
+      padding-left: 40px !important;
+    }
   .list_d {
-    padding-left: 3vw;
+    padding-left: 92px;
     text-align: left;
-
+    
     strong {
       color: #9BA5B1;
-      font-size: 24px;
       font-weight: 500;
       padding: 0vw !important;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 30px;
+      /* identical to box height */
+
+      letter-spacing: 0.1em;
 
       &:before {
         content: "";
         margin-left: 15px;
         padding-left: 15px;
-        border-left: 0.8vw solid #9BD0F5;
-        height: 6vw;
+        border-left: 14px solid #9BD0F5;
+        height: 44px;
         display: inline-block;
         vertical-align: middle;
       }
@@ -442,6 +451,13 @@ export default {
       padding-left: 0.7vw;
       padding-top: 1vw;
       color: #9BA5B1;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.1em;
     }
   }
 
@@ -465,7 +481,7 @@ export default {
 
   .video {
     // background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 2vw 22vw;
+    margin: 80px 212px;
     .cons-box{
       padding-bottom: 6vw;
     }
@@ -498,21 +514,26 @@ export default {
 .gconds {
       display: flex;
       margin: 0 auto;
-      width: 52%;
+      width: 65%;
       background: #fff;
       text-align: center;
       justify-content: center;
       .gcon{
         margin: 1vw 0;
+        
       }
+      
     }
+    .gcon_left_content{
+        width: 50%;
+      }
   .contents {
 
     // background-color: #fff;
     .gcond {
       display: flex;
       margin: 0 auto;
-      width: 52%;
+      width: 65%;
       background: #fff;
     }
 
@@ -550,7 +571,7 @@ export default {
     // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 48%;
+      width: 932px;
     }
 
   }
@@ -564,19 +585,19 @@ export default {
       display: flex;
 
       li {
-        padding: 2vw;
+        padding: 30px;
       }
 
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 80px;
+        height: 64px;
         /* line-height: 94px; */
         align-self: center;
-        width: 80px;
+        width: 64px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 2vw;
+        margin: 1px 42px;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
@@ -585,9 +606,16 @@ export default {
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
-          font-size: initial;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -595,10 +623,8 @@ export default {
   }
 
   .list_con {
-    margin-top: 7vw;
-    margin-bottom: 6vw;
-    // width: 41vw;
-    width: 63%;
+    margin-top: 198px;
+    width: 80%;
 
     h3 {
       margin-top: 1vw;
@@ -615,7 +641,7 @@ export default {
   }
 
   .list_dis {
-    margin-top: 7vw;
+    margin-top: 198px;
     // width: 41vw;
     padding-left: 5vw;
 
@@ -625,15 +651,23 @@ export default {
 
       li {
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
 
       }
     }
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
@@ -658,7 +692,8 @@ export default {
 
       p {
         // padding-left: 4vw;
-        padding-top: 1vw;
+        padding: 18px 104px;
+        font-size: 16px;
         color: #9BA5B1;
         display: flex;
         align-content: center;
@@ -676,8 +711,8 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.8vw solid #9BD0F5;
-          height: 2vw;
+          border-left: 14px solid #9BD0F5;
+          height: 44px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -687,7 +722,7 @@ export default {
 
   .list {
     // margin-top: 5vw;
-    background-image: linear-gradient(to bottom, #fff 33%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 341px, #ECF7FC 0);
   }
 }
 

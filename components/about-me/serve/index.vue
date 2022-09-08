@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2">
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
     <div class="flex justify-center texts">
         <h2>牙科服務</h2>
                 <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
@@ -24,7 +24,7 @@
                 <div class="service_pic"> <img class="imgya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
                     alt="根管治療（杜牙根）" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">根管治療（杜牙根）</p>
+                  <p class="fs-sm-16 setWith ">根管治療（杜牙根）</p>
                 </div>
               </nuxt-link>
             </div>
@@ -35,7 +35,7 @@
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">Invisalign 隱形牙箍</p>
+                  <p class="fs-sm-16 setWith">Invisalign 隱形牙箍</p>
                 </div>
               </nuxt-link>
             </div>
@@ -70,7 +70,7 @@
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
                     alt="全瓷牙冠及全鋯牙冠" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">全瓷牙冠及全鋯牙冠</p>
+                  <p class="fs-sm-16 setWith">全瓷牙冠及全鋯牙冠</p>
                 </div>
               </nuxt-link>
             </div>
@@ -105,7 +105,7 @@
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
                     alt="全口牙托及局部牙托" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">全口牙托及局部牙托</p>
+                  <p class="fs-sm-16 setWith">全口牙托及局部牙托</p>
                 </div>
               </nuxt-link>
             </div>
@@ -162,7 +162,7 @@
                 <div class="service_pic"> <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療"
                     alt="兒童牙科保健及治療" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">兒童牙科保健及治療</p>
+                  <p class="fs-sm-16 setWith">兒童牙科保健及治療</p>
                 </div>
               </nuxt-link>
             </div>
@@ -202,7 +202,7 @@ a{
 }
 .box{
   display: table;
-  margin: 5vw auto;
+  margin: 50px auto;
 }
 .service_box {
   // padding-top: 3.714rem;
@@ -310,7 +310,7 @@ a{
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 4096px) {
+@media only screen and (min-width: 768px) and (max-width: 7680px) {
 
   .service_pic img {
   max-width: 200px;
@@ -321,16 +321,21 @@ a{
     font-weight: 600;
   }
     .imgya{
-    margin-left: 1vw !important;
+    margin-left: 35px !important;
   }
   .serve_con{
-    width: 73vw;
     display: flex;
     text-align: center;
     justify-content: center;
-    padding-left: 31vw;
+    font-size: 1.5rem;
     color: #79828D;
-
+    padding-top: 17.72px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 0 200px;
   }
   .service_box .service_item {
     // margin-bottom: 3.571rem;
@@ -338,8 +343,8 @@ a{
 }
 
 .service_box .service_item .service_hover {
-  width: 218px;
-  height: 218px;
+  width: 173px;
+  height: 173px;
   overflow: hidden;
   position: relative;
   // transition: all .3s ease-in-out;
@@ -458,9 +463,15 @@ a{
 }
 
 @media only screen and (min-width: 768px) and (max-width: 4096px) {
+  .service_txt{
+    .setWith{
+      max-width: 106px;
+
+    }
+  }
   .service_box .service_item .service_pic {
-    height: 10rem;
-    line-height: 10rem;
+    height: 7rem;
+    line-height: 8rem;
   }
 }
 

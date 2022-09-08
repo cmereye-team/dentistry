@@ -1,15 +1,16 @@
 <template>
    <div class="bg-white comContent pb-0 py-xs-2">
-    <div class="meun">
+    <div class="meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">診所設備</p>
     </div>
-    <div class="flex justify-center  texts">
+    <div class="flex justify-center main-container texts">
         <h2>診所設備</h2>
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
     </div>
-    <div class="facilities">
+    <div class="facilities-bag">
+      <div class="facilities main-container">
       <div class="Machine MacOne">
       <div class="dec"><h3>CBCT錐狀射束<br>電腦斷層掃描</h3></div>
       <img src="https://static.cmereye.com/static/lkximg/image/facilities/Machine01.png" alt=""  >
@@ -26,6 +27,8 @@
       <p>牙科儀器在使用後，會先以高溫消毒儀器清洗，放入消毒袋，再使用符合Class B標準的高壓滅菌器徹底消毒。</p>
     </div>
     </div> 
+    </div>
+    
     </div>
 </template>
 <script>
@@ -134,21 +137,26 @@ export default {
   .meun{
     padding-left:6vw;
     display: flex;
+    font-size: 1rem;
+  }
+  .facilities-bag{
+    background: radial-gradient(129vw 21vw at bottom, transparent 50%, #ECF7FC 50%);
+  // background: #ECF7FC !important;
+    //  border-radius: 37% 37% 0 0;
+    height: 1000px;
+     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
+      clip-path: ellipse(100% 67% at 50% 70%);
   }
   .facilities{
     display: flex;
     justify-content: center;
     text-align: center;
-    background: #ECF7FC;
-    background: radial-gradient(129vw 28vw at bottom, transparent 50%, #ECF7FC 50%);
-  // background: #ECF7FC !important;
-    //  border-radius: 37% 37% 0 0;
-     height: 67vw;
-     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
-      clip-path: ellipse(100% 67% at 50% 70%);
+
+   
     .Machine{
-      margin-top:6vw;
-      padding:7vw;
+      // margin-top:6vw;
+      padding:70px;
+      padding-top: 150px;
       img{
         padding-top:1vw;
       }
@@ -157,9 +165,11 @@ export default {
       padding-top:1vw;
       color:#57B2F3;
       text-align: left;
+      font-size: 1.1rem;
     }
     h3{
       color:#57B2F3;
+      font-size: 0.9rem;
     }
     .dec{
       display:flex;

@@ -1,6 +1,5 @@
 <template>
 <div id="lay">
- 
   <menuBar/>
   <Banner/>
   <equipInfo/>

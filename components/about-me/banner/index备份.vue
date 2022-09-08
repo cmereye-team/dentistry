@@ -1,6 +1,6 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide index_banner main-container"  data-bs-ride="carousel">
+  <div id="demo" class="carousel slide index_banner" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -8,14 +8,14 @@
           srcset="https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" />
           <div class="title ispcshow">
-            <span class="ser-title">提供全方位牙科服務</span><br>
+            <span class="ser-title">提供全方位牙科服務</span><br><br><br>
             <span class="contents">整體分析客人口腔， <br> 建議針對性的治療方案</span>
           </div>
           <div class="title ismdshow">提供全方位牙科服務</div>
             <div class="contents ismdshow">
               整體分析客人口腔， <br> 建議針對性的治療方案</div>   
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg" />
@@ -24,7 +24,7 @@
       <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
-    </div>
+    </div> -->
     </div>
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -231,7 +231,7 @@ export default {
 
     img {
       width: 100%;
-      border-radius: 15px 15px 15px 15px;
+      border-radius: 80px 80px 80px 80px;
     }
   }
 
@@ -269,28 +269,5 @@ export default {
 }
 </style>
 <style lang="scss" >
-//pc
-@media only screen and (min-width: 768px) {
-.main-container{
-  max-width: 1440px !important;
-  margin: 0 auto;
-}
-.index_banner{
- 
-}
-#demo{
-  width: calc(100% - 120px);
-  margin-top: 10px !important;
-}
-.titleImg {
-  height: auto !important;
-  width: inherit !important;
-}
-.titleImg .title{
-  width: auto !important;
-  left: 43% !important;
-  top: 42% !important;
-}
-}
 
 </style>

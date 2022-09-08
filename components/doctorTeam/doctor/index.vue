@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-white comContent py-xs-2">
+   <div class="bg-white comContent py-xs-2 main-container">
     <div class="meun">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
@@ -499,7 +499,9 @@ export default {
 }
 //pc
 @media only screen and (min-width: 768px) {
-
+  .comContent{
+    width: calc(100% - 120px);
+  }
   ::-webkit-scrollbar {
     width: 20px;
     height: 8px;
@@ -550,7 +552,7 @@ export default {
       height: 11vw;
       overflow:auto;
       margin-top: 0.3vw;
-      width: 26vw;
+      width: 368px;
       color: #79828D;
     }
     img{
@@ -560,6 +562,7 @@ export default {
     ul{
       margin: 1vw;
       list-style-type: disc;
+      font-size: 1.2rem;
     }
     p{
       margin-top: 0.4vw;
@@ -567,6 +570,7 @@ export default {
       font-weight: 800;
       color: #57B2F3;
       margin-left: -17px;
+      letter-spacing: 0em;
       span{
       font-size: 34px;
       }

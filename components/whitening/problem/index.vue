@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2">
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
     <div class="flex justify-center texts">
         <h2>美白牙齒常見問題</h2>
         <img src="@/asset/image/about-me/serve/Vector.png" alt=""  >

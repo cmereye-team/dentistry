@@ -1,5 +1,5 @@
 <template>
-  <div class="section vedio_box md:font-black">
+  <div class="section vedio_box md:font-black main-container">
     <div class="flex justify-center texts">
       <h2>牙齒健康</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
@@ -10,7 +10,8 @@
           v-if="banners.length"
           class="swiperWrap ">
         <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(item, index) in banners" :key="index">
+          <div class="swiper-slide" v-for="(item, index) in banners" :key="index" >
+          <div style="position: relative;">
             <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
             <div class="dateinfo">
               <div class="dates">
@@ -18,10 +19,9 @@
               <span>{{item.month}}</span>
             </div>
             </div>
-            <!-- <div class="dates">
-              <div class="date"></div>
-            </div> -->
-            <!-- <img class="date" src="" alt=""> -->
+          </div>
+            
+            
             <p class="des" v-html="item.title.rendered"></p>
             <p class="content" v-html="item.content.rendered"></p>
           </div>
@@ -107,7 +107,7 @@ export default {
           swiperOption: {
             loop: true,
             centeredSlides: true,
-            spaceBetween: 20,
+            spaceBetween: 0,
             slidesPerView: "3",
             pagination: {
               el: '.swiper-pagination',
@@ -216,25 +216,44 @@ export default {
     display: flex !important;
     justify-content: center  !important;
     position: absolute  !important;
-    left: 9vw  !important;
-    top: 15vw  !important;
+    left: 42% !important;
+   bottom: -13px;
   }
    .dates{
-      width: 6vw;
-      height: 6vw;
+      width: 50px;
+      height: 50px;
       background-color: #9BD0F5;
-      border-radius: 50%;
-      margin: 1vw;  
+      border-radius: 50%; 
       display: flex;
       text-align: center;
       color: #FFF;
       font-weight: 600;
       justify-content: center;
       flex-direction: column;
+   
     .linesy{
-        font-size: 27px;
-        border-bottom: 3px solid #FFF;
-        margin: 0 1vw;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.1em;
+        border-bottom: 2px solid #FFF;
+        margin: 0 5px;
+      }
+      span{
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 15px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.1em;
       }
   }
   .date{
@@ -263,12 +282,12 @@ export default {
 
 ::v-deep .swiper-button-prev {
     left: 0 !important;
-    top: 10vw !important;
+    top: 141px !important;
   }
 
   ::v-deep .swiper-button-next {
     right: 0 !important;
-    top: 10vw !important;
+    top: 141px !important;
   }
 
   ::v-deep  .swiper-button-prev img,
@@ -288,9 +307,10 @@ export default {
 
   .swiper-button-prev,
   .swiper-button-next {
+    width: auto;
     background-image: none;
-    width: 2vw;
-    width: 2.5vw;
+    // width: 2vw;
+    // width: 2.5vw;
     height: 2.5vw;
 
     img {
@@ -312,20 +332,24 @@ export default {
     padding: 3vw 0;
 
     .link_more {
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* identical to box height */
+      width: 158px;
+      letter-spacing: 0.1em;
       border: 2px solid #57B2F3;
       border-radius: 40px 40px 40px 40px;
       transition: all 0.5s;
       color: #57B2F3;
       text-decoration: none;
-      // font-weight: 600;
       display: block;
-      padding: 1vw;
+      padding: 15px;
       margin: 0 auto;
-      width: 15vw;
-      letter-spacing: 0.2vw;
       margin-top: 3vw;
       text-align: center;
-      font-size: 26px;
       &:hover {
         animation: 3s ease-in 1s 2 reverse both paused slidein;
       }
@@ -333,8 +357,8 @@ export default {
   }
 
   .swiperWrap {
-    width: 80vw;
-    margin: 0vw auto;
+    // width: 70vw;
+    margin: 0vw 200px;
 
     .swiper-slide {
       color: #57B2F3;
@@ -343,17 +367,18 @@ export default {
 
       // font-size: 1.1vw;
       img {
-        width: 76% ;
+        width: 78% ;
         height: 100%;
         border-radius: 10px;
         border-radius: 10px;
-        margin-bottom: 3vw;
+        // margin-bottom: 3vw;
       }
 
       .des {
-        font-size: 24px;
+        font-size: 15px !important;
         text-align: left;
         padding-left: 3vw;
+        padding-top: 32px;
         &:after{
           content: "";
           border-bottom: 0.2vw solid #57B2F3;
@@ -365,10 +390,16 @@ export default {
       }
 
       .content {
-            color: #9BD0F5;
-        font-size: 18px;
+        color: #9BD0F5;
+        font-size: 13px;
         text-align: left;
         padding-left: 3vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
       }
     }
 
@@ -473,8 +504,6 @@ export default {
   .swiper-button-prev,
   .swiper-button-next {
     background-image: none;
-    width: 2vw;
-    width: 2.5vw;
     height: 2.5vw;
     
 

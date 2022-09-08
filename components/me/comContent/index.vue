@@ -1,5 +1,5 @@
 <template>
-   <div class="bg-white comContent  pb-0 py-xs-2">
+   <div class="bg-white comContent main-container pb-0 py-xs-2">
     <div class="meun">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
@@ -48,20 +48,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.textsd{
-   text-align: center;
-  //  margin: 8vw 0;
-    .ya{
-         color:#57B2F3;
-         margin-bottom:0.5vw;
-    }
-  h3{
-    padding:0;
-  }
-  image{
-    text-align: center;
-  }
-}
+
 .texts{
     text-align: center;
     h2{
@@ -77,11 +64,20 @@ export default {
 @media only screen and (max-width: 768px) {
   .textsd{
    margin: 8vw 0;
+   text-align: center;
+   h3{
+    padding: 0;
 
+   }
+   .ya{
+    color: #57B2F3;
+    margin-bottom: 0.5vw;
+   }
   }
   .meun{
     padding-left:6vw;
     display: flex;
+    
   }
   .ya_con{
     text-align: center;
@@ -113,25 +109,67 @@ export default {
 }
 //pc
 @media only screen and (min-width: 768px) {
-  
+  .textsd{
+   text-align: center;
+  //  margin: 8vw 0;
+    .ya{
+         color:#57B2F3;
+         margin-bottom:0.5vw;
+         font-size: 1.3rem;
+    }
+  h3{
+    padding:0;
+    font-size: 1.5rem;
+  }
+  image{
+    text-align: center;
+  }
+}
+  .texts{
+    h2{
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: #79828D;
+    margin-bottom: 0vw;
+  }
+    h3{
+      text-align: center;
+      color: #57B2F3;
+      font-size: 1.5rem;
+      padding-top: 80px;
+  }
+  }
+  .comContent{
+    width: calc(100% - 120px);
+  }
   .yas{
-    padding-top: 5vw;
-    margin-bottom: 0.5vw;
+    padding-top: 90px
   }
   .meun{
-    padding-left:6vw;
+    padding-left:100px;
     display: flex;
+    p{
+      font-size: 1rem;
+      font-family: 'Noto Sans CJK TC';
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      text-align: justify;
+      letter-spacing: 0.1em;
+
+    }
   }
   .ya_con{
     text-align: center;
     color: #9BA5B1;
+    font-size: 1.3rem;
   }
   .city{
     display: flex;
     text-align: center;
     justify-content: center;
     img{
-      padding:5vw;
+      padding: 150px;
     }
   }
     h3{
@@ -141,6 +179,7 @@ export default {
     .serve_cons{
     text-align: center;
     color: #57B2F3;
+    font-size: 1.3rem;
     }
 }
 </style>

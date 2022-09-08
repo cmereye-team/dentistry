@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class="comContent meun">
+    <div class="comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <div class="coin_box">
+        <div class="coin_box main-container">
           <div class="coin">
             <img src="https://static.cmereye.com/static/lkximg/image/exelcymosis/apple.png" alt="">
           </div>
@@ -48,7 +48,7 @@
           </li>
         </ul> -->
       </div>
-      <div class="bg-white py-5 pb-0 py-xs-2">
+      <div class="bg-white py-5 pb-0 py-xs-2 main-container">
         <div class="flex justify-center texts">
           <h2>智慧齒脫除</h2>
           <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -67,7 +67,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center texts">
+      <div class="flex justify-center texts  main-container">
         <h2>拔牙及智慧齒脫除過程</h2>
         <img class="icons" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
         <p>拔牙一般不需要進行手術，但若牙齒歪生或非常接近神經，則有機會需要進行手術式脫牙。</p>
@@ -85,7 +85,7 @@
               </ul>
             </div>
           </div>
-          <div class="contents">
+          <div class="contents  main-container">
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
@@ -111,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="video">
+          <div class="video main-container">
             <div class="lists">
               <div class="list_disd">
                 <strong>療程後注意事項</strong>
@@ -143,7 +143,7 @@
               </ul>
             </div>
           </div>
-          <div class="contents">
+          <div class="contents main-container">
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
@@ -173,7 +173,7 @@
               </div>
             </div>
           </div>
-          <div class="video">
+          <div class="video main-container">
             <div class="lists">
               <div class="list_disd">
                 <strong>療程後注意事項</strong>
@@ -205,7 +205,7 @@
               </ul>
             </div>
           </div>
-          <div class="contents">
+          <div class="contents main-container">
             <div class="gconds">
               <div class="gcon">
                 <div class="content ">
@@ -223,7 +223,7 @@
               </div>
             </div>
           </div>
-          <div class="video">
+          <div class="video main-container">
             <div class="lists">
               <div class="list_disd">
                 <strong>療程後注意事項</strong>
@@ -287,7 +287,8 @@ export default {
 
   p {
     color: #79828D;
-    padding: 3vw 0;
+    padding: 30px 0;
+    font-size: 16px;
   }
 
   h2 {
@@ -353,14 +354,18 @@ export default {
     display: flex;
     justify-content: center;
     text-align: center;
-    padding: 7vw 0;
+    padding: 100px 0;
   }
 
   .coin {
     padding: 1vw 2vw;
     display: block;
     text-align: center;
-
+    img{
+      padding: 0 20px;
+      // width: 414px;
+      // height: 272px;
+    }
     p {
       color: #79828D;
       font-size: 16px;
@@ -492,6 +497,7 @@ export default {
     p{
       color: #9BA5B1;
       padding: 2vw 0 4vw 0.5vw;
+      font-size: 16px;
     }
   }
 
@@ -501,8 +507,7 @@ export default {
 
   .video {
     // background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 2vw 16vw;
-
+    padding: 36px 0 0 223px;
     .cons-box {
       padding-bottom: 6vw;
     }
@@ -536,9 +541,9 @@ export default {
   .gconds {
     display: flex;
     margin: 0 auto;
-    width: 68%;
+    width: 67%;
     background: #fff;
-    padding-left: 8vw;
+    // padding-left: 8vw;
     // text-align: center;
     // justify-content: center;
   }
@@ -586,7 +591,7 @@ export default {
     // background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
 
     img {
-      width: 48%;
+      width: 932px;
     }
 
   }
@@ -600,30 +605,38 @@ export default {
       display: flex;
 
       li {
-        padding: 2vw;
+        padding: 30px;
       }
 
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 60px;
+        height: 64px;
         /* line-height: 94px; */
         align-self: center;
-        width: 60px;
+        width: 64px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 2vw;
+        margin: 1px 74px;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
         justify-content: center;
 
+
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
-          font-size: initial;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -651,10 +664,9 @@ export default {
   }
 
   .list-dis {
-    margin-top: 8vw;
-    width: 34%;
-    // width: 41vw;
-    padding-left: 5vw;
+    margin-top: 179px;
+    width: 42%;
+    padding-left: 15px;
     text-align: left !important;
 
     strong {
@@ -679,7 +691,7 @@ export default {
 
       li {
         color: #9BA5B1;
-
+        font-size: 20px;
       }
     }
   }
@@ -688,7 +700,7 @@ export default {
     margin-top: 1vw;
     width: 34%;
     // width: 41vw;
-    padding-left: 5vw;
+    // padding-left: 5vw;
     text-align: left !important;
     ;
 
@@ -714,15 +726,16 @@ export default {
 
       li {
         color: #9BA5B1;
-
+        font-size: 18px;
       }
     }
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
@@ -776,7 +789,7 @@ export default {
 
   .list {
     // margin-top: 5vw;
-    background-image: linear-gradient(to bottom, #fff 43%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 234px, #ECF7FC 0);
   }
 }
 

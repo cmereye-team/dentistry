@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class="comContent meun">
+    <div class="comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container ">
           <div class="cipian">
             <img src="https://static.cmereye.com/static/lkximg/image/porcelain/apple.png" alt="">
             <div class="list_con">
@@ -32,7 +32,7 @@
           </div>
         </ul>
       </div>
-      <div class="video">
+      <div class="video main-container">
 
         <div class="flex justify-center texts">
           <h2>瓷貼片治療過程</h2>
@@ -57,7 +57,7 @@
                   <p>印製牙模及拍攝X光片</p>
                 </div>
               </div>
-              <div class="gcon">
+              <div class="gcons">
                 <div class="content right">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw" alt="">
                   <p>設計及訂製瓷貼片，確保適合進行瓷牙貼片療程</p>
@@ -398,7 +398,7 @@ export default {
 
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 132px 8vw;
+    margin-top: 132px;
   }
 
   .videos {
@@ -439,6 +439,9 @@ export default {
       display: flex;
       margin: 0 auto;
       width: 100%;
+      .gcon{
+        width: 765px;
+      }
     }
 
     .content {
@@ -510,8 +513,16 @@ export default {
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -519,30 +530,40 @@ export default {
   }
 
   .list_con {
-    margin-top: 9vw;
-    width: 41vw;
+    margin-top: 198px;
+    width: 40%;
+    padding-bottom: 130px;
   }
 
   .list_dis {
-    margin-top: 9vw;
+    margin-top: 198px;
     // width: 41vw;
     padding-left: 5vw;
 
     ul {
-      padding-top: 1vw;
+      padding-top: 14px;
       list-style-type: none;
 
       li {
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
 
       }
     }
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 147px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
+
   }
 
   .step_list {
@@ -551,10 +572,9 @@ export default {
       list-style-type: disc;
     }
     img {
-      width: 22vw;
-      height: 14vw;
-      margin-bottom: 12vw;
-      padding: 0 2vw;
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
     }
 
     .cipian {
@@ -565,22 +585,33 @@ export default {
       display: flex;
 
       p {
-        padding-left: 4.6vw;
-        padding-top: 1vw;
+        padding-left: 40px;
+        padding-top: 14px;
         color: #9BA5B1;
         display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 27px;
         color: #9BA5B1;
-
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.6vw solid #9BD0F5;
-          height: 1.6vw;
+          border-left: 11px solid #9BD0F5;
+          height: 35px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -730,7 +761,7 @@ export default {
 
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin-top: 132px;
+    margin-top: 80px;
   }
 
   .videos {

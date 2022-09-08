@@ -1,6 +1,7 @@
 <template>
   <div class="ambient bg-white py-5 pb-0 py-xs-2">
-    <div class="flex justify-center texts">
+    <div class="main-container">
+      <div class="flex justify-center texts">
       <h2>中心環境</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
     </div>
@@ -117,12 +118,13 @@
         <button type="button" id="button4" data-bs-target="#demo2" data-bs-slide-to="4"></button>
         <button type="button" id="button5" data-bs-target="#demo2" data-bs-slide-to="5"></button>
         <button type="button" id="button6" data-bs-target="#demo2" data-bs-slide-to="6"></button>
-        <!-- <button type="button" id="button7" data-bs-target="#demo2" data-bs-slide-to="7"></button> -->
         <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button>
         <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button>
         <button type="button" id="button10" data-bs-target="#demo2" data-bs-slide-to="9"></button>
       </div>
     </div>
+    </div>
+    
   </div>
 
 </template>
@@ -457,23 +459,20 @@ export default {
 .comContent  .ya_con{font-weight: 400;font-size: 15px !important;line-height: 22px;text-align: center !important;letter-spacing: 0.1em; padding:0 5vw !important;}
 .comContent  .textsd:last-child .ya_con br{display: none;}    
 .comContent  .textsd:last-child .ya_con{margin-bottom: 80px ;}
-#demo2 .carousel-inner{margin-top: 40px;}
-#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100%) !important;margin: 5vw auto;}
+#demo2 .carousel-inner{margin-top: 40px;padding-bottom: 54px;}
+#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100%) !important;}
 #demo2 .border_corner{width: 28px !important;height: 28px !important;border-width: 3px !important;}
 .ambient{padding-left: 5vw;padding-right: 5vw;}
 #demo2 .border_corner.border_corner_left_top,#demo2 .border_corner.border_corner_left_bottom{left: 0 !important;}
 #demo2 .border_corner_right_top,#demo2 .border_corner_right_bottom{right: 0 !important;}
-#demo2  .carousel-about{    padding: 3vw 8vw; align-content: flex-start; display: flex !important;flex-wrap: wrap;justify-content: space-between;opacity: 1;margin-top: 10px;height: calc(17.5vw);overflow: hidden;background: unset !important;} 
-#demo2  .carousel-about>button{width: 13.5vw !important;height: 7.5vw !important;margin: 0;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
+
+#demo2  .carousel-about>button{width: calc(18%) !important;margin: 0;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
 #demo2  .carousel-about>button.active{ border-bottom: 6px solid #FFB7B7;}
 #demo2  .carousel-about>button:before{position: absolute;content: '';left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 100%;height: 100%;background: rgba(194, 199, 205, 0.7);}
 #demo2  .carousel-about .active:before{background: unset;}
-.ambient{background: radial-gradient(108vw 37vw at bottom,transparent 50%,#ecf7fc 0)!important;    padding-bottom: 28vw !important;height:auto !important;}
+.ambient{padding-bottom: 35vw !important;height:auto !important;}
 .about-us .adress{margin-top: 20px;}
-
-
 .texts{margin-top: 5vw;}
-
 
 
 .carousel-indicators [data-bs-target] {
@@ -485,14 +484,20 @@ export default {
     margin: 0 auto !important;
 }
   // [data-bs-target]           
-  ::v-deep .carousel-about {
+ .carousel-about {
     box-sizing: content-box;
+    height: 39px;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    opacity: 1;
+    margin-top: 10px;
+    background: unset !important;
+    flex-direction: row;
     flex: 0 1 auto;
-    // width: 0;
     height: 0;
-    margin-right: 0px;
-    margin-left: 0px;
-    // text-indent: -88px;
+    margin-right: 10% !important;
+    margin-left: 10% !important;
     cursor: pointer;
     // background-color: #C2C7CD;
     background-clip: padding-box;
@@ -500,9 +505,6 @@ export default {
     margin: 2rem 6rem;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    opacity: .5;
-    border-radius: 0% !important;
-    margin-right: 3%;
     transition: opacity .6s ease;
     background-color: #79828D;
 
@@ -600,7 +602,7 @@ export default {
 
   .main {
     position: relative;
-    width: 72%;
+    width: 50%;
   }
 
   .border_corner {
@@ -659,55 +661,6 @@ export default {
     margin: 0 3vw;
   }
 
-  ::v-deep .carousel-indicators {
-    /* position: absolute; */
-    /* right: 0; */
-    /* bottom: 0; */
-    /* left: 0; */
-    /* z-index: 2; */
-    /* justify-content: center; */
-    padding: 0;
-    margin-right: 15%;
-    /* margin-bottom: 1rem; */
-    /* margin-left: 15%; */
-    list-style: none;
-    word-wrap: break-word;
-    // width: 52%;
-    justify-content: center;
-    // margin-left: 21vw;
-    display: block !important;
-  }
-
-  // ::v-deep .carousel-indicators [data-bs-target] {
-  //   box-sizing: content-box;
-  //   flex: 0 1 auto;
-  //   width: 0 !important;
-  //   height: 0 !important;
-  //   margin-right: 8px;
-  //   margin-left: 8px;
-  //   text-indent: 0 !important;
-  //   cursor: pointer;
-  //   // background-color: #C2C7CD;
-  //   background-clip: padding-box;
-  //   border: 0;
-  //   margin: 3rem 10rem !important;
-  //   border-top: 10px solid transparent;
-  //   border-bottom: 10px solid transparent;
-  //   opacity: .5;
-  //   // border-radius: 100%;
-  //   margin-right: 4% !important;
-
-  //   img {
-  //     height: 105px;
-  //     width: 142px;
-  //   }
-
-  //   transition: opacity .6s ease;
-
-  //   button {
-  //     margin: 0 4vw;
-  //   }
-  // }
 
 
 

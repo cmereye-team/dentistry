@@ -1,25 +1,15 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="main-container carousel slide" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
-      <div class="carousel-item active titleImg">
+      <div class="carousel-item active titleImg" id="titleImg">
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png"> -->
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png" 
         srcset="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
         src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png"
         class="bannImg"/>
-        <!-- <img class="bannImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png "
-            srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 750w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 768w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1024w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeautyMb.png 1125w,
-            https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty.png 1650w,
-            "> -->
-          <div class="title">
-        <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png"> -->
+          <div class="title" id="title_img">
         <img class="iconImg" src=" https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty1.png "
             srcset="
             https://static.cmereye.com/static/lkximg/image/banner/hiddenBeauty2.png 400w,
@@ -31,27 +21,8 @@
             ">
       </div>
       </div>
-      <!-- <div class="carousel-item">
-        <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
+      
     </div>
-    <div class="carousel-item">
-      <img src="https://static.cmereye.com/static/lkximg/image/banner/equgroup.jpg">
-    </div> -->
-    </div>
-    <!-- 指示符 -->
-
-    <!-- 左右切换按钮 -->
-    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon"></span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-    <span class="carousel-control-next-icon"></span>
-  </button> -->
-    <!-- <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-    </div> -->
   </div>
 
 </template>
@@ -156,18 +127,25 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
-  .titleImg{
+  #demo{
     position: relative;
-    height: 30vw;
-    width: 100vw;
+    z-index: 0;
+    width: calc(100% - 120px);
+    max-width: 1800px;
+    // max-height: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    // margin-bottom: ;
+  }
+  #titleImg{
+    position: relative;
     text-align: center;
-    .title{
+    #title_img{
       position: absolute;
       z-index:2;
-      height: 30vw;
-      width: 100vw;
-      left:0;
-      top:38%;
+      width: 85% !important;
+      left: 9% !important;
+      top: 188px !important;
       font-weight: 500;
       color: #79828D;
       font-size: 39px;
@@ -176,16 +154,12 @@ export default {
       }
     }
   }
-  .carousel-inner img[data-v-703b804a] {
-    width: 90%;
-    // border-radius: 80px 80px 80px 80px;
-  }
 
   .carousel-inner {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 100%;
       // border-radius: 80px 80px 80px 80px;
     }
   }

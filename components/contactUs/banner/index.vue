@@ -1,7 +1,7 @@
 <template>
 <div>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+  <div id="demo" class="carousel slide main-container" data-bs-ride="carousel">
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
@@ -19,7 +19,7 @@
       </div>
     </div>     
   </div>
-  <div class="comContent ">
+  <div class="comContent main-container">
     <div class="meun">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
@@ -96,8 +96,10 @@ export default {
     }
   }
    .meun{
-    padding-left:6vw;
+    padding-left: 146px;
+    // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
   .d-block {
     display: block !important;
@@ -133,7 +135,7 @@ export default {
   .titleImg{
     position: relative;
     height: 30vw;
-    width: 100vw;
+    // width: 100vw;
     text-align: center;
 
      .title{
@@ -150,8 +152,10 @@ export default {
   }
     .meun {
       // padding-top: 2vw;
-    padding-left: 6vw;
+      padding-left: 146px;
+    // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
   .carousel-inner img[data-v-703b804a] {
     width: 90%;
@@ -162,7 +166,7 @@ export default {
     text-align: -webkit-center;
 
     img {
-      width: 90%;
+      width: 100%;
       // border-radius: 80px 80px 80px 80px;
     }
   }

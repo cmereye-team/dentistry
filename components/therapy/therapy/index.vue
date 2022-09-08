@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class=" comContent meun">
+    <div class=" comContent meun main-container">
       <p><nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
@@ -9,7 +9,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container">
           <div class="yagen">
             <img src="https://static.cmereye.com/static/lkximg/image/therapy/apple.png" alt="">
             <div class="list_con">
@@ -30,7 +30,7 @@
           </div>
         </ul>
       </div>
-      <div class="video">
+      <div class="video main-container">
 
         <div class="flex justify-center texts">
           <h2>根管治療（杜牙根）過程</h2>
@@ -118,7 +118,7 @@ export default {
 <style lang="scss" scoped>
 .texts {
   text-align: center;
-  margin-top: 2vw;
+  margin-top: 140px; 
 
   h2 {
     font-weight: 500;
@@ -275,7 +275,7 @@ export default {
 
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 132px 8vw;
+    // margin: 132px 8vw;
   }
 
   .videos {
@@ -396,14 +396,15 @@ export default {
   }
 
   .list_con {
-    margin-top: 9vw;
+    margin-top: 129px;
     width: 41vw;
+    padding-bottom: 100px;
   }
 
   .list_dis {
-    margin-top: 9vw;
+    margin-top: 129px;
     // width: 41vw;
-    padding-left: 5vw;
+    padding-left: 30px;
 
     ul {
       padding-top: 1vw;
@@ -417,8 +418,9 @@ export default {
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 147px;
     // margin-top: 1vw;
+    font-size: 16px;
     display: flex;
   }
 
@@ -426,10 +428,13 @@ export default {
     // margin: 0 20vw;
 
     img {
-      width: 22vw;
-      height: 14vw;
-      margin-bottom: 12vw;
-      padding: 0 2vw;
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
+      // width: 22vw;
+      // height: 14vw;
+      // margin-bottom: 12vw;
+      // padding: 0 2vw;
     }
 
     .yagen {
@@ -438,26 +443,46 @@ export default {
       // padding-left: 2vw;
       margin: 0 3vw;
       display: flex;
+     
 
       p {
-        padding-left: 4.5vw;
+        // padding-left: 4.5vw;
         padding-top: 1vw;
         color: #9BA5B1;
         display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        padding-left: 10px;
       }
       ul{
         list-style-type: disc;
+        li{
+          font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        }
       }
       strong {
-        padding-left: 4vw;
+        // padding-left: 4vw;
         color: #9BA5B1;
+        font-size: 18px;
+        font-weight: 700;
 
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.6vw solid #9BD0F5;
-          height: 1.6vw;
+          border-left: 11px solid #9BD0F5;
+          height: 35px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -466,16 +491,19 @@ export default {
   }
 
   .list {
-    margin-top: 5vw;
+    margin-top: 82px;
     background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
   }
 }
 
 //md
 @media only screen and (max-width: 768px) {
+  .texts {
+    margin-top: 18vw;
+  }
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin-top: 132px;
+    // margin-top: 132px;
   }
   .list {
     text-align: center;

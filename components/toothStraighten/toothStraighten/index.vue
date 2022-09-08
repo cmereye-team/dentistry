@@ -1,6 +1,6 @@
 <template>
   <di class="step comContent section">
-    <div class="comContent meun">
+    <div class="comContent meun main-container">
       <p>
         <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
       </p>
@@ -11,7 +11,7 @@
     </div>
     <div class="step">
       <div class="list">
-        <ul class="step_list items-center ">
+        <ul class="step_list items-center main-container">
           <div class="jiaochi">
             <img src="https://static.cmereye.com/static/lkximg/image/toothStraighten/apple.png" alt="">
             <div class="list_con">
@@ -31,7 +31,7 @@
           </div>
         </ul>
       </div>
-      <div class="video">
+      <div class="video main-container">
 
         <div class="flex justify-center texts">
           <h2>矯齒（箍牙）過程</h2>
@@ -542,8 +542,8 @@ export default {
   }
 
   .icons {
-    margin-bottom: 3.5vw;
-    margin-top: 0.5vw;
+    margin-bottom: 40px;
+    margin-top: 10px;
   }
 
   .newsty {
@@ -632,6 +632,7 @@ export default {
     background-clip: border-box;
     // border: 1px solid rgba(255, 255, 255, 0);
     border-radius: 0.25rem;
+    margin-top: 25px;
   }
 
   .tablesed {
@@ -702,8 +703,8 @@ export default {
   }
 
   .video {
-    background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin: 132px 8vw;
+    background-image: linear-gradient(to bottom, #fff 491px, #ECF7FC 0);
+    // margin: 132px 8vw;
   }
 
   .videos {
@@ -808,13 +809,13 @@ export default {
       .guoc {
         border: 10px solid rgba(255, 41, 41, 0);
         background-color: rgba(255, 255, 255, 0.8);
-        height: 100px;
+        height: 75px;
         /* line-height: 94px; */
         align-self: center;
-        width: 100px;
+        width: 75px;
         display: flex;
         border-radius: 100%;
-        margin: 1px 4vw;
+        margin: 1px 74px;
         text-align: center;
         flex-wrap: wrap;
         align-content: space-around;
@@ -823,8 +824,16 @@ export default {
         p {
           display: block;
           color: #57B2F3;
-          font-weight: bold;
           margin-bottom: 0rem;
+          font-family: 'Noto Sans CJK TC';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          letter-spacing: 0.1em;
           // font-size: 1.2rem;
         }
       }
@@ -832,12 +841,12 @@ export default {
   }
 
   .list_con {
-    margin-top: 9vw;
-    width: 41vw;
+    margin-top: 198px;
+    width: 42%;
   }
 
   .list_dis {
-    margin-top: 9vw;
+    margin-top: 198px;
     // width: 41vw;
     padding-left: 5vw;
 
@@ -847,6 +856,13 @@ export default {
 
       li {
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
 
       }
     }
@@ -854,24 +870,25 @@ export default {
 
   .texts {
     p {
-      padding: 0 5vw;
+      padding: 0 50px;
+      font-size: 18px;
     }
   }
 
   .meun {
-    padding-left: 6vw;
+    padding-left: 146px;
     // margin-top: 1vw;
     display: flex;
+    font-size: 16px;
   }
 
   .step_list {
     // margin: 0 20vw;
 
     img {
-      width: 22vw;
-      height: 14vw;
-      margin-bottom: 12vw;
-      padding: 0 2vw;
+      padding: 0 20px;
+      width: 414px;
+      height: 272px;
     }
 
     ul {
@@ -882,26 +899,37 @@ export default {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      // margin: 0 3vw;
       display: flex;
 
       p {
-        padding-left: 4.6vw;
-        padding-top: 1vw;
+        padding-left: 40px;
+        padding-top: 14px;
         color: #9BA5B1;
         display: flex;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17.5px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 27px;
         color: #9BA5B1;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 30px;
 
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.6vw solid #9BD0F5;
-          height: 1.6vw;
+          border-left: 11px solid #9BD0F5;
+          height: 35px;
           display: inline-block;
           vertical-align: middle;
         }
@@ -910,7 +938,8 @@ export default {
   }
 
   .list {
-    margin-top: 5vw;
+    height: 472px;
+    margin-top: 82px;
     background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
   }
 }
@@ -1299,7 +1328,7 @@ export default {
 
   .video {
     background-image: linear-gradient(to bottom, #fff 27%, #ECF7FC 0);
-    margin-top: 132px;
+    margin-top: 90px;
   }
 
   .videos {

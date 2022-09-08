@@ -1,19 +1,27 @@
 <template>
-  <di class="step section">
-    <div class="flex justify-center texts section">
-      <h2>服務理念</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
-    </div>
-    <div class="list">
-      <ul class="step_list flex justify-between items-center ">
-        <li v-for="(stepItem, index) in serContentList" :key="index" cals>
-          <img :src="stepItem.src" alt="">
-          <strong>{{ stepItem.des }}</strong>
-          <p>{{ stepItem.content }}</p>
-        </li>
-      </ul>
-    </div>
-  </di>
+<div>
+  <div class="step section main-container">
+      <div class="flex justify-center texts section">
+        <h2>服務理念</h2>
+        <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+      </div>
+     </div>
+     <div class="list">
+      <div class="main-container">
+            <ul class="step_list flex justify-between items-center ">
+                    <li v-for="(stepItem, index) in serContentList" :key="index" cals>
+                      <img  :src="stepItem.src" alt="">
+                      <strong>{{ stepItem.des }}</strong>
+                      <p>{{ stepItem.content }}</p>
+                    </li>
+                  </ul>
+      </div>
+     </div> 
+      
+</div>
+
+
+  
 </template>
 <script>
 export default {
@@ -64,7 +72,10 @@ export default {
     justify-content: center;
 
     img {
-      width: 26vw;
+      // width:auto;
+      // height:auto;
+      // max-width:100%;
+      // max-height:100%;
       margin-bottom: 2vw;
       padding: 0 2vw;
     }
@@ -73,24 +84,32 @@ export default {
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
-      margin: 0 3vw;
+      margin: 0 2vw;
 
       p {
-        padding-left: 4.5vw;
+        padding-left: 2.5vw;
         padding-top: 1vw;
+        font-family: 'Noto Sans CJK TC';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: justify;
+        letter-spacing: 0.1em;
+        padding-bottom: 37px;
       }
 
       strong {
-        padding-left: 4vw;
+        padding-left: 2vw;
         font-weight: 400;
-        font-size: 22px;
-
+        font-size: 19px;
+        
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 0.5vw solid #ECF7FC;
-          height: 1.5vw;
+          border-left: 8px solid #ECF7FC;
+          height: 30px;
           display: inline-block;
           vertical-align: middle;
         }

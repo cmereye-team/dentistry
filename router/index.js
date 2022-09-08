@@ -44,6 +44,11 @@
 
 },
 {
+  path: '/invisalign-new',
+  component: resolve('pages/invisalign-new'),
+
+},
+{
   path: '/veneers',
   component: resolve('pages/veneers'),
 

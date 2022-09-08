@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2">
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
     <div class="flex justify-center texts">
       <h2>Invisalign 隱適美常見問題</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
@@ -244,7 +244,7 @@ p {
   }
 
   .coll-box {
-    margin: 3vw auto;
+    margin: 30px auto;
     width: 60%;
   }
 
