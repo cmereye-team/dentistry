@@ -11,7 +11,7 @@ Vue.use(VueGtag, {
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
-  
+  target: 'static', // default is 'server'
   head: {
     title: 'dentistry',
     __dangerouslyDisableSanitizers: ['script'],
