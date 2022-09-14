@@ -45,6 +45,11 @@ export default {
       },
       {
         src:
+          "./plugins/ackee-vercl.js",
+        body:true
+      },
+      {
+        src:
           "./plugins/gtm.js",
         body:true
       },

@@ -482,8 +482,7 @@ export default {
   }
 .carousel-indicators{
     margin: 0 auto !important;
-}
-  // [data-bs-target]           
+}         
  .carousel-about {
     box-sizing: content-box;
     height: 39px;
