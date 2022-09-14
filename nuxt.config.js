@@ -36,6 +36,12 @@ export default {
       },
       {
         innerHTML: `
+        async src="https://ackee-vercl-monitoring-panel-uccy.vercel.app/tracker.js" data-ackee-server="https://ackee-vercl-monitoring-panel-uccy.vercel.app" data-ackee-domain-id="4de5a0a3-c191-4c42-842f-99d9c15e9c90"
+        `,
+        type: 'text/javascript',
+      },
+      {
+        innerHTML: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
@@ -43,11 +49,11 @@ export default {
         `,
         type: 'text/javascript',
       },
-      {
-        src:
-          "./plugins/ackee-vercl.js",
-        body:true
-      },
+      // {
+      //   src:
+      //     "./plugins/ackee-vercl.js",
+      //   body:true
+      // },
       {
         src:
           "./plugins/gtm.js",
