@@ -145,6 +145,9 @@ export default {
             }, {
               value: '20',
               label: '兒童牙科保健及治療'
+            },{
+              value: '29',
+              label: '瓷貼片'
             }
           ],
         },
@@ -245,7 +248,11 @@ export default {
         }, {
           value: '20',
           label: '兒童牙科保健及治療'
-        }],
+        },
+        {
+              value: '29',
+              label: '瓷貼片'
+            }],
       value: '所有類別',
       options1: [
         {
