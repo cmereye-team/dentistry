@@ -42,28 +42,6 @@
     <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>葉學韶</span> 醫生</p>
-      </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>愛丁堡皇家外科醫學院口腔外科學院員</li>
-          <li>香港大學牙醫碩士</li>
-          <li>澳紐皇家牙科醫學院院士</li>
-          <li>香港大學口腔頜面外科高級文憑</li>
-           <li>香港牙科醫學院院士(口腔頜面外科)專科</li>
-          <li>香港醫學專科學院院士(牙科)</li>
-          <li>英國皇家外科醫學院植齒學文憑</li>
-          <li>香港大學牙醫碩士(植齒學)</li>
-          <li>倫敦英皇學院臨床牙科碩士(固定及活動修復齒科)</li>
-        </ul>
-      </div>
-    </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
-      <div class="name">
-        <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>區舜韡</span> 醫生</p>
       </div>
       <div class="conts">
@@ -78,6 +56,8 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -113,9 +93,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>謝志聰</span> 醫生</p>
@@ -132,6 +110,9 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -162,9 +143,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>陳奕朗</span> 醫生</p>
@@ -176,6 +155,10 @@
         </ul>
       </div>
     </div>
+    </div>
+
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -200,9 +183,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>董雨菁</span> 醫生</p>
@@ -213,6 +194,10 @@
         </ul>
       </div>
     </div>
+    </div>
+
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -236,9 +221,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span></span> Dr. Khawaja Abrar Tahir</p>
@@ -250,6 +233,9 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -274,9 +260,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>李可晴</span> 醫生</p>
@@ -287,6 +271,9 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -312,9 +299,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>麥穎恒</span> 醫生</p>
@@ -325,6 +310,9 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -351,9 +339,7 @@
         </ul>
       </div>
     </div>
-    </div>
-    <div class="team">
-       <div class="doctor">
+    <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>戴柏全</span> 醫生</p>
@@ -364,6 +350,9 @@
         </ul>
       </div>
     </div>
+    </div>
+    <div class="team">
+       
      <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
@@ -537,7 +526,7 @@ export default {
   .team{
     margin: 5vw;
     display: flex;
-    justify-content: center;
+    justify-content: left;
   }
   .doctor{
     margin: 0 2vw;
