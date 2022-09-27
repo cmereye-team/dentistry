@@ -12,12 +12,17 @@
           </a>
     </div>
     <div v-else>
-      <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true" target="_blank">
-            <div class="face-primary">
-              <span class="icon"> <i class="fa fa-headphones ">
+      <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true" target="_blank"
+      style="line-height: 20px;">
+            <div class="face-primary" style="display: flex;">
+              <span class="icon" style="display: flex;align-items: center;padding-left: 18px;"> <i class="fa fa-headphones ">
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
               </i></span>
-              電話預約
+              <div style=" padding: 10px 0px 6px 14px;display: flex;flex-direction: column;align-items: flex-start;">
+                <span>電話預約</span>
+              <span >3620 2428</span>
+              </div>
+              
             </div>
           </a>
     </div>

@@ -374,6 +374,10 @@
                 <nuxt-link class="nav-link eng" to="#">ENG</nuxt-link>
                 <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
               </li>
+              <li class="nav-item">
+                  <a id="zxzx" class="nav-link yuyue" href="https://api.whatsapp.com/send?phone=85236202428" aria-hidden="true" target="_blank"
+                style="line-height: 20px;">立即預約 <span style="font-size: 20px;font-family:Noto Sans HK;">3620 2428</span></a>
+              </li>
       </ul>
     </div>
     
@@ -1025,6 +1029,11 @@ a {
 
 .eng {
   color: #00477B !important;
+  font-family: 'Helvetica';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+
 }
   .nav-fa{
      /* 粘性定位 ( IE 浏览器不生效 ) */
@@ -1108,7 +1117,23 @@ a {
   .dropdown-menu {
     border-radius: 1.25rem !important;
   }
+  .nav-item{
+    .yuyue{
+      background: #FFFFFF;
+      border: 1px solid #5BA8DE;
+      border-radius: 10px;
+      margin-left: 6px;
+      font-family: 'Noto Sans HK';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      /* identical to box height, or 125% */
 
+      letter-spacing: 0.1em;
+
+      color: #57B2F3;
+    }
+  }
   .nav-items {
     padding: 0 0.2vw !important;
   }
