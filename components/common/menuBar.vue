@@ -375,7 +375,7 @@
                 <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
               </li>
               <li class="nav-item">
-                  <a id="zxzx" class="nav-link yuyue" href="https://api.whatsapp.com/send?phone=85236202428" aria-hidden="true" target="_blank"
+                  <a id="zxzx" class="nav-link yuyue" href="tel:85236202428" aria-hidden="true" target="_blank"
                 style="line-height: 20px;">立即預約 <span style="font-size: 20px;font-family:Noto Sans HK;">3620 2428</span></a>
               </li>
       </ul>
