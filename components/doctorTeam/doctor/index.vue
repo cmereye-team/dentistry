@@ -10,21 +10,15 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt=""  >
     </div>
     <div class="team">
-       <div class="doctor">
+       <div class="doctor" v-for="item in doctorTeam">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
-        <p><span>姚本基</span> 醫生</p>
+        <p><span :class="item.title.rendered === 'Dr. Khawaja Abrar Tahir'?'en-doctor':''">{{item.title.rendered}}<i class="doctor-text" style="font-style:normal;margin-left:5px;font-size: 22px;">醫生</i> </span></p>
       </div>
-      <div class="conts">
-        <ul>
-          <li>香港大學牙醫學士</li>
-          <li>英國愛丁堡皇家外科醫學院牙科全科院員</li>
-          <li>香港牙醫學院院士(家庭牙醫學)專科</li>
-          <li>香港醫學專科學院院士(牙科) </li>
-        </ul>
+      <div class="conts" v-html="item.content.rendered">
       </div>
     </div>
-     <div class="doctor">
+     <!-- <div class="doctor">
       <div class="name">
         <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
         <p><span>柯明哲</span> 醫生</p>
@@ -53,8 +47,30 @@
         </ul>
       </div>
     </div>
+    <div class="doctor">
+      <div class="name">
+        <img src="https://static.cmereye.com/static/lkximg/image/doctorTeam/star.svg" alt="">
+        <p><span>陸嘉駿</span> 醫生</p>
+      </div>
+      <div class="conts">
+        <ul>
+          <li>香港大學牙醫學士</li>
+          <li>香港大學牙醫碩士(牙周病學)</li>
+          <li>香港大學牙周病學高級文憑</li>
+          <li>愛丁堡皇家外科醫學院牙齒修復學院員</li>
+          <li>香港牙科醫學院院士(牙周治療科)專科</li>
+          <li>香港醫學專科學院院士 (牙科)</li>
+          <li>澳紐皇家牙科醫學院院員(牙周治療科)</li>
+          <li>愛丁堡皇家外科醫學院植齒學文憑</li>
+          <li>愛丁堡皇家外科醫學院牙科院士</li>
+          <li>格拉斯哥皇家醫學院牙科院士</li>
+          <li>曼徹斯特大學理科碩士(牙齒修復美學)</li>
+        </ul>
+      </div>
+    </div> -->
+    
     </div>
-    <div class="team">
+    <!-- <div class="team">
      
     <div class="doctor">
       <div class="name">
@@ -348,17 +364,28 @@
         </ul>
       </div>
     </div>
-    </div>
+    </div> -->
  
   </div>
 </template>
 <script>
+import { getList } from '@/api/index.js'
 export default {
   data() {
     return {
+      doctorTeam:[]
     }
   },
   mounted() {
+    this.getDoctorList()
+  },
+  methods: {
+    getDoctorList() {
+      getList({'categories': 31, 'per_page': 100 }).then((res => {
+        this.doctorTeam = res.data
+        console.log(this.doctorTeam);
+      }))
+    },
   }
 }
 </script>
@@ -389,6 +416,15 @@ export default {
 }
 //mb
 @media only screen and (max-width: 768px) {
+  .en-doctor{
+    font-size: 15px !important;
+    .doctor-text{
+      display: none;
+    }
+  }
+  .doctor-text{
+    font-size: 14px !important;
+  }
   .texts{
     text-align: center;
     padding-top: 40px;
@@ -419,7 +455,7 @@ export default {
     }
     ul{
       margin: 1vw;
-      list-style-type: disc;
+      list-style-type: disc ;
     }
     p{
       margin-top: 0.4vw;
@@ -497,13 +533,22 @@ export default {
 // background:rgba(255,0,0,0.4);
 // }
   .team{
-    margin: 5vw;
     display: flex;
-    justify-content: left;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 38px;
+  }
+  .en-doctor{
+      font-size: 22px !important;
+      .doctor-text{
+        display: none;
+      }
   }
   .doctor{
-    margin: 0 2vw;
+    margin: 0 44px;
     display: inline-block;
+    margin-bottom: 54px;
     .name{
       display: flex;
       align-items: baseline;
@@ -516,16 +561,25 @@ export default {
       margin-top: 0.3vw;
       width: 368px;
       color: #79828D;
+      ::v-deep ul{
+        margin-top: 15px;
+        list-style-type: disc !important;
+        font-size: 1.2rem;
+      }
+      
     }
+    // ::v-deep .wp-container-1{
+    //     margin-top: 15px;
+    //     ul{
+    //       list-style-type: disc !important;
+    //       font-size: 1.2rem;
+    //     }
+    //   }
     img{
       width: 3.5vw;
       padding-bottom: 0.6vw;
     }
-    ul{
-      margin: 1vw;
-      list-style-type: disc;
-      font-size: 1.2rem;
-    }
+    
     p{
       margin-top: 0.4vw;
       font-size: 22px;
