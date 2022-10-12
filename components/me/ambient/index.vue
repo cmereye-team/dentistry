@@ -108,6 +108,48 @@
             <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/10.jpg">
           </div>
         </div>
+        <div class="carousel-item">
+          <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <img class="show" src="https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg">
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="main">
+            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_corner_right_top"></div>
+            <div class="border_corner border_corner_left_bottom"></div>
+            <div class="border_corner border_corner_right_bottom"></div>
+            <div  v-loading="loading">
+              <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/3Aa6VnRgQow"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            </div>
+            
+          </div>
+        </div>
 
       </div>
       <div class="carousel-indicators carousel-about">
@@ -121,6 +163,10 @@
         <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button>
         <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button>
         <button type="button" id="button10" data-bs-target="#demo2" data-bs-slide-to="9"></button>
+        <button type="button" id="button11" data-bs-target="#demo2" data-bs-slide-to="10"></button>
+        <button type="button" id="button12" data-bs-target="#demo2" data-bs-slide-to="11"></button>
+        <button type="button" id="button13" data-bs-target="#demo2" data-bs-slide-to="12"></button>
+        <button type="button" id="button14" data-bs-target="#demo2" data-bs-slide-to="13"></button>
       </div>
     </div>
     </div>
@@ -133,6 +179,7 @@
 export default {
   data() {
     return {
+      loading: false, //默认不显示loading
       banners: [
         { src: require("@/asset/image/me/BigPic.jpg") },
         { src: require("@/asset/image/me/BigPic.jpg") },
@@ -142,6 +189,26 @@ export default {
     }
   },
   mounted() {
+    this.iframeLoad();
+  },
+  methods: {
+    // 调用方法
+    iframeLoad() {
+      this.loading = true;
+      const iframe = this.$refs.Iframe;
+      // 兼容处理
+      if (iframe.attachEvent) {
+        // IE
+        iframe.attachEvent("onload", () => {
+          this.loading = false;
+        });
+      } else {
+        // 非IE
+        iframe.onload = () => {
+          this.loading = false;
+        };
+      }
+    },
   }
 }
 </script>
@@ -166,6 +233,11 @@ export default {
 
 //mb
 @media only screen and (max-width: 768px) {
+  .iframesty{
+  width: 100%;
+  height: 231px;
+  padding: 5vw 5vw;
+}
   .carousel-inner img {
     height: 92%;
     width: 76% !important;
@@ -348,6 +420,34 @@ export default {
       width: 102px;
       background-size:cover;
     }
+    #button11 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button12 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button13 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button14 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
   }
 
 
@@ -466,7 +566,7 @@ export default {
 #demo2 .border_corner.border_corner_left_top,#demo2 .border_corner.border_corner_left_bottom{left: 0 !important;}
 #demo2 .border_corner_right_top,#demo2 .border_corner_right_bottom{right: 0 !important;}
 
-#demo2  .carousel-about>button{width: calc(18%) !important;margin: 0;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
+#demo2  .carousel-about>button{width: calc(18%) !important; margin: 0 10px;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
 #demo2  .carousel-about>button.active{ border-bottom: 6px solid #FFB7B7;}
 #demo2  .carousel-about>button:before{position: absolute;content: '';left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 100%;height: 100%;background: rgba(194, 199, 205, 0.7);}
 #demo2  .carousel-about .active:before{background: unset;}
@@ -474,7 +574,11 @@ export default {
 .about-us .adress{margin-top: 20px;}
 .texts{margin-top: 5vw;}
 
-
+.iframesty{
+  width: 100%;
+  height: 497px;
+  padding: 2vw;
+}
 .carousel-indicators [data-bs-target] {
     border-radius: 0%;
     margin-left: 5px;
@@ -506,7 +610,7 @@ export default {
     border-bottom: 10px solid transparent;
     transition: opacity .6s ease;
     background-color: #79828D;
-
+    justify-content: flex-start;
     // background-image:url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
     // img {
     //   height: 92px;
@@ -591,6 +695,34 @@ export default {
       width: 102px;
       background-size:cover;
     }
+    #button11 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button12 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button13 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
+    #button14 {
+      background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
+      background-color: #79828D;
+      height: 102px;
+      width: 102px;
+      background-size:cover;
+    }
   }
 
 
@@ -649,7 +781,7 @@ export default {
   .ambient {
     position: relative;
     background: #ECF7FC;
-    background: radial-gradient(129vw 28vw at bottom, transparent 50%, #ECF7FC 50%);
+    background: radial-gradient(129vw 28vw at bottom, transparent 42%, #ECF7FC 42%);
     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
     clip-path: ellipse(100% 67% at 50% 70%);
     height: 80vw;
