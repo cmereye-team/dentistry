@@ -141,12 +141,12 @@
             <div class="border_corner border_corner_right_top"></div>
             <div class="border_corner border_corner_left_bottom"></div>
             <div class="border_corner border_corner_right_bottom"></div>
-            <div  v-loading="loading">
-              <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/3Aa6VnRgQow"
+   
+              <iframe v-loading="loading" class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/3Aa6VnRgQow"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
-            </div>
+         
             
           </div>
         </div>
@@ -560,7 +560,7 @@ export default {
 .comContent  .textsd:last-child .ya_con br{display: none;}    
 .comContent  .textsd:last-child .ya_con{margin-bottom: 80px ;}
 #demo2 .carousel-inner{margin-top: 40px;padding-bottom: 54px;}
-#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100%) !important;}
+#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100%) !important; height: 497px;}
 #demo2 .border_corner{width: 28px !important;height: 28px !important;border-width: 3px !important;}
 .ambient{padding-left: 5vw;padding-right: 5vw;}
 #demo2 .border_corner.border_corner_left_top,#demo2 .border_corner.border_corner_left_bottom{left: 0 !important;}
@@ -575,9 +575,9 @@ export default {
 .texts{margin-top: 5vw;}
 
 .iframesty{
-  width: 100%;
+  width: calc(100%);
   height: 497px;
-  padding: 2vw;
+  padding:  2vw;
 }
 .carousel-indicators [data-bs-target] {
     border-radius: 0%;
