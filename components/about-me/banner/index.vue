@@ -16,6 +16,11 @@
               整體分析客人口腔， <br> 建議針對性的治療方案</div>   
       </div>
       <div class="carousel-item">
+      <img data-cfsrc="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
+          srcset="https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 400w, https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 640w, https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png" />
+    </div>
+      <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg" />
@@ -25,11 +30,7 @@
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
     </div>
-    <div class="carousel-item">
-      <img data-cfsrc="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          srcset="https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 400w, https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 640w, https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png" />
-    </div>
+    
     </div>
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
