@@ -4,6 +4,13 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active">
+        <a href="https://smilepartner.cmermedical.com/">
+          <img data-cfsrc="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
+          srcset="https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 400w, https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 640w, https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png" />
+        </a>
+    </div>
+      <div class="carousel-item ">
    <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
           title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" />
@@ -15,11 +22,7 @@
             <div class="contents ismdshow">
               整體分析客人口腔， <br> 建議針對性的治療方案</div>   
       </div>
-      <div class="carousel-item">
-      <img data-cfsrc="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          srcset="https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 400w, https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 640w, https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png" />
-    </div>
+      
       <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
           srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
