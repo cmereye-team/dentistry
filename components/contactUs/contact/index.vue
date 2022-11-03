@@ -9,7 +9,7 @@
         <el-form :inline="true" label-position="top" :model="ruleForm"  ref="ruleForm" label-width="100px"
           class="main-container demo-form-inline wpcf7-form invalid"  id="msgForm"  target="frameName"
           action="https://api.cmerdental.com/index.php/ces/#wpcf7-f128-p130-o1" method="post" novalidate="novalidate"
-          data-status="invalid"  >
+          data-status="invalid" >
           <div>
           <div style="display: none;"> <input type="hidden" name="_wpcf7" value="128"> <input type="hidden"
               name="_wpcf7_version" value="5.6.1"> <input type="hidden" name="_wpcf7_locale" value="zh_CN"> <input
@@ -101,7 +101,8 @@
             </div>
           </div>
           <div class="button" >
-            <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt">提交</button>
+            <!-- @click="submitButt()" -->
+            <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt" >提交</button>
           </div>
         </el-form>
         <div style="display: none;">
@@ -166,6 +167,7 @@
 export default {
   data() {
     return {
+     
       selectList: [
         { itemName: '植牙', id: 1 },
         { itemName: '根管治療(杜牙根)', id: 2 },
@@ -230,9 +232,22 @@ export default {
       if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
       this.ruleForm.resource === ''){
         alert("請完善信息！");
+        // return false;
+      }else if(localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)){
+        this.ruleForm = {}      
+        alert("我们已经收到啦~请不要重复提交");
+        location.reload();
+        
+        // return false;
+        
+        
       }else{
         alert("提交成功！");
-       location.reload();
+        localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
+        location.reload();
+        // return true;
+        
+        
       }
     },
     clickitem(e) {
