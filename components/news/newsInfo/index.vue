@@ -62,8 +62,9 @@
       </div>
       <div class="content">
         <h2 v-html="item.title.rendered"></h2>
-        <p v-html="item.content.rendered"></p>
-        <div style="display: flex;">
+        <div  @click="showContent"><p :class="showitem === true ?'':'p_content_long'" v-html="item.content.rendered"></p></div>
+        
+        <div style="display: flex;" class="p_content_type">
           <div v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]" style=" margin: 0 0.5vw;">
             <p class="label">{{ lab.name }}</p>
           </div>
@@ -97,6 +98,7 @@ export default {
   },
   data() {
     return {
+      showitem:false,
       navList: [
         {
           title: '所有類別',
@@ -230,6 +232,10 @@ export default {
     }
   },
   methods: {
+    showContent(){
+      this.showitem = !this.showitem
+      console.log(this.showitem);
+    },
     selectLei(value) {
           console.log('value========', value);
           this.selectVal = value

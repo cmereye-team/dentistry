@@ -1,0 +1,399 @@
+/* 移动端	 */ 
+@media only screen and (max-width: 768px) {
+body {overflow-y: scroll;}
+body .section{width: unset !important;}
+
+/* naavbar	 */
+.navbar { margin-top: 30px;padding-top:0 !important;padding-bottom: 0 !important; }
+.navbar .container-fluid{align-items: flex-start;}
+.navbar .engmb{margin-left: 0 !important;margin-right: 14vw !important;font-size: 15px;margin-top: 8px;}
+.navbar .navbar-toggler{margin-top: 16px;right: 5vw !important;padding-right: 0 !important;}
+.navbar-brand{padding-top: 0 !important;z-index: 9999;}     
+  
+.navbar-toggler:focus,.navbar-toggler:active,.floatsty:focus{border: none !important;box-shadow: none !important;} 
+.navbar-nav{margin-top: 10vw;}
+.navbar-collapse.show .navbar-nav .nav-link{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 0.1em;color: #57B2F3;}
+.gnav{padding: 15vw 5vw !important;}
+.navbar-collapse.show .navbar-nav .nav-item,.navbar-collapse.collapsing .navbar-nav .nav-item,.gnav.action .navbar-nav .nav-item{padding: 15px 0 !important;border-bottom: 1px solid #C2C7CD;text-indent: 2em;}
+.navbar-collapse.show .navbar-nav .nav-item:last-child,.navbar-collapse.show .navbar-nav .nav-item:nth-last-child(2){border-bottom: none;}
+
+/* navbar  汉堡包 */
+.hamburglar{transform: translate(16px,-20px) scale(1) !important;} 
+.hamburglar .burger-container{display: flex;justify-content: flex-end;}
+.hamburglar .burger-container .burger-bun-top{width: 28px;} 
+.hamburglar .burger-container .burger-filling{width: 24px;top: 8px;} 
+.hamburglar .burger-container .burger-bun-bot{width: 21px;bottom: 8px;}
+.hamburglar.is-open .burger-filling{top: 12px;}
+.hamburglar.is-open .burger-bun-bot{bottom: 0;}
+.hamburglar .burger-bun-top,.hamburglar  .burger-filling,.hamburglar  .burger-bun-bot{height: 3px !important;background:  #00477B;}
+.hamburglar.is-open .burger-bun-top,.hamburglar.is-open .burger-filling,.hamburglar.is-open .burger-bun-bot{width: 34px;}
+
+/* index banner */
+@keyframes fade {from {transform: translateY(10px) rotate(90deg) scale(1);}to {transform: translateY(0px) rotate(90deg) scale(1.3);}}
+@keyframes fadeline {from {height: 55vw;}to {height: 0;}}
+#demo.index_banner .carousel-inner{margin-top: 30px !important;}
+#demo.index_banner .carousel-inner  .title{height: auto !important;left: 0 !important;top: 10% !important;text-align: left !important;padding-left: 14vw;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 20px;line-height: 30px;/* identical to box height */letter-spacing: 0.1em;}
+#demo.index_banner .carousel-inner  .contents{height: auto !important;left: 0 !important;top: 18% !important;text-align: left !important;padding-left: 14vw;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 15px;line-height: 22px;letter-spacing: 0.1em;color: #79828D;}
+/* 头部字体*/   
+.comContent .texts{ text-align: center;padding-top: 40px;}
+.texts{margin-bottom: 30px;}
+.section.vedio_box .texts{ margin-bottom: 40px; margin-left: 0 !important; margin-top: 0;}
+.section.vedio_box .texts h2{margin-top: 60px;}
+.vedio_box{margin-top:20px;}
+/* index */
+.serve_con{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify !important;letter-spacing: 0.1em;color: #79828D;}
+/* 首页牙科服务光圈效果  关闭*/
+.service_box .service_item:after{display: none;}
+.service_box {padding-left: 5vw;padding-right: 5vw;justify-content: space-between !important;}
+.service_box .service_item{margin: 0 !important;max-width: 42.5vw !important;}
+.service_box .service_item .service_hover{padding-bottom: 0 !important;height: 42.5vw !important;}
+.service_box p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500 !important;font-size: 15px !important;line-height: 20px;/* identical to box height, or 133% */text-align: center;letter-spacing: 0.1em !important;color: #505050;}
+.service_box:nth-child(1) .service_item:nth-child(2) .service_txt p{max-width: 90px;}
+.service_box:nth-child(1) .service_item:nth-child(3) .service_txt p{max-width: 90px;}
+.service_box:nth-child(2) .service_item:nth-child(2) .service_txt p{max-width: 90px;}
+.service_box:nth-child(3) .service_item:nth-child(1) .service_txt p{max-width: 90px;}
+.service_box:nth-child(4) .service_item:nth-child(2) .service_txt p{max-width: 90px;}
+.service_box .service_pic img{width: auto !important;}
+.service_box>a{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;height: 100%;flex-flow: column;}
+.service_box .service_item .service_pic{margin: 0 !important;height: unset !important;margin-bottom: 10px !important;}
+.service_box .service_item .service_txt{margin: 0 !important;height: unset !important;padding: 0 !important;}
+.step.section .step_list li:first-child{padding-top: 0 !important;}
+.step.section .step_list li>img{display: block;margin: auto;margin-bottom: 20px;padding: 0 !important;}
+
+.step.section .step_list li>strong{padding: 0 !important;margin: 0 !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 20px;line-height: 30px;/* identical to box height */letter-spacing: 0.1em;color: #FFFFFF;}
+.step.section .step_list li>strong:before{margin-left: 0 !important;margin-right: 10px;padding-left: 10px !important; border: none !important;height: 100% !important;display: inline !important;width: 10px;background: #ecf7fc;vertical-align: unset !important;}
+.step.section .step_list li>p{padding: 0 !important;margin-top: 20px;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;color: #FFFFFF;}
+
+/* 首页 牙齿健康 */
+.section.vedio_box .texts{margin-top: 0px;margin-bottom: 40px;margin-left: 0 !important;}
+.vedio_slider .link_more{max-width: 100% !important;width: 42.1vw !important; margin: 35px auto !important; padding: 15px 5px !important;background: #FFFFFF;border: 1px solid #57B2F3 !important;border-radius: 56px !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500 !important;font-size: 16px !important;line-height: 24px !important; letter-spacing: 0.1em !important;color: #57B2F3;}
+.vedio_slider .dates>span{font-weight: 500 !important;}
+.vedio_slider .dates .linesy{border-width: 1px !important;}      
+.vedio_slider .dates{bottom: 0 !important;}   
+.swiperWrap .swiper-slide .des{padding-left: 10px !important; position: relative; margin-top: 18px;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 15px;line-height: 22px;letter-spacing: 0.1em;color: #57B2F3;}
+.swiperWrap .swiper-slide .des:before{position: absolute;content: '';width: 30px;height:2px;bottom: -7px;background: #9BD0F5;left: 10px;}
+.swiperWrap .swiper-slide .content{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 13px !important;text-align: justify !important; line-height: 19px;text-align: justify;letter-spacing: 0.1em;}
+.swiperWrap .swiper-slide-active .content,.swiperWrap .swiper-slide-active .des{color: #9BD0F5;}
+
+
+.adress ul{justify-content: space-evenly !important;}
+.adress ul li{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 18px !important;line-height: 27px;/* identical to box height */text-align: center;letter-spacing: 0.1em;color: #FFFFFF;}
+#tab ul li p{font-size: 18px;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 18px;line-height: 27px;/* identical to box height */letter-spacing: 0.1em;}
+#tab ul li.active{border: none;margin-bottom: 16px; }
+#tab ul li.active p{position: relative;}
+#tab ul li.active p::after{position: absolute;content: '';width: 80%;height: 2px;background-color: #9BD0F5;border-radius: 2px;margin: auto;left: 0;right: 0;bottom: -3px;}
+
+.addmap #map{text-align: center;} 
+.addmap #map img{border-radius: 20px !important;}
+.addmap .mapcontennt:before{left: 36vw !important;margin: auto;}
+.addmap .button {justify-content: space-evenly;clear: both;}
+.addmap .button .link_more{width: 42.1vw !important;height: 12.6vw !important;margin: 0 !important;border-radius: 12.6vw !important;display: flex;align-items: center;justify-content: center;font-size: 16px !important;letter-spacing: 0.1em;border-width: 1px !important;font-weight: 500 !important;}
+.addmap .button .link_more:nth-child(1){background: #57B2F3;border: 1px solid #57B2F3; color: #ffffff !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px;line-height: 24px;/* identical to box height */letter-spacing: 0.1em;color: #FFFFFF;}
+.mapcontennt::after{display:  block;content:'';clear:both;}
+.mapcontennt .address1{margin-top: 10px !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;color: #FFFFFF;}
+.mapcontennt .address2{padding-left: 8vw !important; font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 13px;line-height: 19px;text-align: justify;letter-spacing: 0.1em;color: #FFFFFF;}
+.mapcontennt .week ,.mapcontennt  .week2{font-size: 13px ;line-height: 19px;} 
+.mapcontennt .week{    padding-left: 9.7vw !important;position: inherit !important ;float: left;}
+ 
+.mapcontennt .week::after{content: '';clear: both;}
+.mapcontennt .address2:after{padding: 7px 0 !important;}
+.mapcontennt .addrescoin{margin-top: 2.5vw !important;}
+.mapcontennt{height: auto !important ;padding-bottom: 15px !important;margin-bottom: 35px !important;}
+ 
+/* page--------------------- */
+
+/* 关于我们 */
+.titleImg{height: auto !important;}  
+.carousel{margin-top: 25px;}
+.carousel-inner .titleImg img{height: auto !important;border-radius: 12px !important;}  
+.titleImg .title{text-shadow: 0px 0px 10px #FFFFFF;top: 0 !important;bottom: 0;left: 0;right: 0; margin: auto;height: auto !important;width: auto !important;display: flex;align-items: center;justify-content: center;font-weight:600 !important;}
+.comContent .meun{margin-top: 30px;padding-left: 5vw !important;}    
+.comContent .meun p:first-child{border-bottom: 1px solid #79828D;padding: 4px 0;}             
+.comContent .meun p:nth-child(2){margin: 0 10px !important;padding: 3px 0;}
+.comContent .meun p:nth-child(3){border-bottom: 1px solid #57B2F3;padding: 3px 0;} 
+.comContent .meun p:nth-child(4){padding: 3px 10px !important;margin: 0 !important;} 
+.comContent   .texts h2{font-weight: 500 !important;}
+.comContent   .texts  .serve_cons{padding-top: 0 !important;}
+.comContent   .texts>h3{margin-bottom: 0 !important;}
+.city img{margin: 5vw 0 !important;width: 100% !important;}
+.comContent  .ya_con{font-weight: 400;font-size: 15px !important;line-height: 22px;text-align: center !important;letter-spacing: 0.1em; padding:0 5vw !important;}
+.comContent  .textsd:last-child .ya_con br{display: none;}    
+.comContent  .textsd:last-child .ya_con{margin-bottom: 80px ;}
+#demo2 .carousel-inner{margin-top: 40px;}
+#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100% - 10vw) !important;margin: 5vw auto;}
+#demo2 .border_corner{width: 28px !important;height: 28px !important;border-width: 3px !important;}
+.ambient{padding-left: 5vw;padding-right: 5vw;}
+#demo2 .border_corner.border_corner_left_top,#demo2 .border_corner.border_corner_left_bottom{left: 0 !important;}
+#demo2 .border_corner_right_top,#demo2 .border_corner_right_bottom{right: 0 !important;}
+#demo2  .carousel-about{display: flex !important;flex-wrap: wrap;justify-content: flex-start;opacity: 1;margin-top: 10px;height: calc(55.5vw + 50px);overflow: hidden;background: unset !important;} 
+#demo2  .carousel-about>button{width: 27.5vw !important;height: 18.5vw !important;margin: 0 0.9vw;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
+#demo2  .carousel-about>button.active{ border-bottom: 6px solid #FFB7B7;}
+#demo2  .carousel-about>button:before{position: absolute;content: '';left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 100%;height: 100%;background: rgba(194, 199, 205, 0.7);}
+#demo2  .carousel-about>button:nth-child(9):after{content: '+8';font-weight: 500;font-size: 25px;line-height: 37px;letter-spacing: 0.1em;color: #ffffff;text-align: right;position: absolute;width: 100%;z-index: 9;height: 100%;top: 0;bottom: 0;right: 0;left: 4vw;margin: auto auto; display: flex;align-items: center;justify-content: center;}
+#demo2  .carousel-about .active:before{background: unset;}
+#demo2  .carousel-about:hover{height: auto;overflow: unset;}
+#demo2  .carousel-about:hover button:nth-child(9)::after{display: none;opacity: 0;}
+.ambient{background: radial-gradient(108vw 37vw at bottom,transparent 50%,#ecf7fc 0)!important;    padding-bottom: 28vw !important;height:auto !important;}
+.about-us .adress{margin-top: 20px;}
+
+/* 我们的团队 */
+.doctor p{margin-bottom: 0;margin-top: 0 !important;margin-left: -10px;}
+.doctor .name{align-items: flex-end;}
+.doctor .name>img{margin-bottom: 13px !important;}
+.doctor .conts{padding: 20px 0;}
+.doctor .conts ul{margin: 0 !important;}
+.doctor .conts ul li{font-weight: 400;font-size: 15px;line-height: 25px;/* or 167% */letter-spacing: 0.1em;color: #79828D;}
+.body-our-medical-team .comContent .team:last-child{padding-bottom: 100px;}
+/* 诊所设备 */
+.body-facilities .comContent .texts{margin-bottom: 0;}
+.body-facilities .facilities{height: auto !important;padding-bottom: 40vw;}
+.body-facilities .facilities p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify !important;letter-spacing: 0.1em;color: #57B2F3;}
+/* 牙齿健康 */
+.Top20_ProblemAnalysis{margin-top: 28px;}
+
+.body-oral-health-information .info,.body-news .info{margin: 30px 5vw !important;border-radius: 20px !important;padding-bottom: 55px !important;}
+.body-oral-health-information .info .pic,.body-news .info .pic{width: 100% !important;height:  auto !important;border-radius: 20px !important;}
+.body-oral-health-information .info .content p,.body-oral-health-information .info .content>div,.body-news .info .content p,.body-news .info .content>div{display: none;}
+.body-oral-health-information .bg-white  .info:nth-child(3),.body-news .bg-white  .info:nth-child(3){padding-bottom: 10px !important;}
+.body-oral-health-information .bg-white  .info:nth-child(3) .content p,.body-news .bg-white  .info:nth-child(3) .content p{display: block;}
+.body-oral-health-information .bg-white  .info:nth-child(3) .content>div,.body-news .bg-white  .info:nth-child(3) .content>div{display: flex;}
+.body-oral-health-information .info .content h2,.body-news .info .content h2{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500 !important;font-size: 20px !important;line-height: 30px !important;/* identical to box height */letter-spacing: 0.1em !important;color: #57B2F3;}
+.body-oral-health-information .info:before,.body-oral-health-information .info::after,.body-news .info:before,.body-news .info::after{position: absolute;content: '▼';left: 0;right: 0;margin: auto;color: #57B2F3;text-align: center;}
+.body-oral-health-information .info:before,.body-news .info:before{bottom: 31px;}
+.body-oral-health-information .info::after,.body-news .info::after{bottom: 16px;}
+.body-oral-health-information .info:hover,.body-news .info:hover{padding-bottom: 10px !important;}
+.body-oral-health-information .info:hover .content p,.body-news .info:hover .content p {display: block !important;}
+.body-oral-health-information .info:hover .content>div,.body-news .info:hover .content>div{display: flex !important;}
+.body-oral-health-information .info:hover:before,.body-oral-health-information .info:hover::after,.body-oral-health-information .bg-white  .info:nth-child(3)::after,.body-oral-health-information .bg-white  .info:nth-child(3):before,.body-news .info:hover:before,.body-news .info:hover::after,.body-news .bg-white  .info:nth-child(3)::after,.body-news .bg-white  .info:nth-child(3):before{display: none;opacity: 0;}
+.body-oral-health-information .bg-white ,.body-news .bg-white{padding-bottom: 150px !important;}
+
+ 
+ 
+/* 联络我们 */
+/*.body-contact-us .form{    -webkit-clip-path: ellipse(131% 56% at 50% 56%) !important;clip-path: ellipse(131% 56% at 50% 56%) !important;}*/
+/*.body-contact-us .form>form{padding-left: 5vw !important;padding-right: 5vw !important; margin-left: 0 !important;margin-right: 0 !important;}*/
+/*.body-contact-us .form .el-form-item{margin-left: 0 !important;margin-right: 0 !important;}*/
+/*.body-contact-us .form .el-input__inner{width: 90vw !important;background: unset;color: #ffffff !important;border: none !important;padding: 0 !important;font-size: 16px;}*/
+/*.body-contact-us .form .el-input{border-bottom: 1px solid #FFFFFF !important;}*/
+/*.body-contact-us .form input::-webkit-input-placeholder{color: #ffffff;}*/
+/*.body-contact-us .form .el-form-item__label{font-size: 16px !important;padding-bottom: 0 !important;}*/
+/*.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before, .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before{display: none;}*/
+/*.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label::after, .el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:after{content: "*";color: #f56c6c;margin-left: 4px;}*/
+/*.body-contact-us .form .el-select .el-input .el-select__caret{position: relative;transform: unset !important;}*/
+/*.body-contact-us .form .el-select .el-input .el-select__caret::after{position: absolute;content: '▼';color: #ffffff;text-align: center;left: 0;right: 0;top: 0;bottom: 0;margin: auto;}*/
+/*.body-contact-us .form .radioInfo1{margin: 0 !important;display: block;margin-top: 30px !important;}*/
+/*.body-contact-us .form .radioInfo1 .el-radio{display: flex;}*/
+/*.body-contact-us .form  .radioInfo1 .el-radio .el-radio__label{text-align: justify !important;max-width: 90vw;word-break: break-word;white-space: normal;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 13px;line-height: 19px;text-align: justify;letter-spacing: 0.1em;color: #FFFFFF;}*/
+/*.body-contact-us .form  .radioInfo1 .el-radio .el-radio__label br{display: none;} */
+/*.body-contact-us .button .link_more{margin: 0 auto !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 0.1em;color: #57B2F3;*/
+/*height: 12vw  !important; width: 42.1vw !important; border-radius: 12vw !important;  font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px !important;line-height: 24px;letter-spacing: 0.1em;color: #57B2F3;margin-top: 30px !important;}*/
+/* 牙科服务 - 植牙 */
+.body-implant .bac-box {padding-top: 30px ;}
+.el-dialog{border-radius: 20px !important;background: #FFFFFF;box-shadow: 0px 0px 20px rgba(0, 71, 123, 0.5) !important;}
+.el-dialog .service_box{padding-left: 0 !important;padding-right: 0 !important;}
+.el-dialog .service_box .service_item{max-width: 39.5vw !important;}
+.el-dialog .service_box .service_item .service_hover{margin-bottom: 5vw !important;  height:39.5vw !important;} 
+.el-dialog .service_box .service_item .service_hover>a{display:flex;justify-content: center;align-items: center;flex-flow:column;height:100%;}
+.el-dialog__wrapper{background: rgba(87, 178, 243, 0.8);z-index: 9999 !important;}
+.el-dialog__headerbtn{font-size: 30px !important;top: -23px !important;}
+.el-dialog__headerbtn .el-dialog__close{background: #FFFFFF;border: 2px solid #57B2F3;width: 50px;height: 50px;    display: flex;align-items: center;justify-content: center;border-radius: 50%;/*box-shadow: 0px 0px 20px rgba(0, 71, 123, 0.5);*/color: #57B2F3 !important;}
+.body-implant .list_con{padding: 0 5vw !important;}
+.body-implant .list_con p{padding-left: 0;padding-right: 0;} 
+.body-implant .list_dis{padding: 0 5vw !important;}
+.body-implant .list_dis ul{padding: 4vw !important;}
+.body-implant .lists{margin: 0 ;padding: 40px 5vw;}
+.body-implant .serve_con{margin-top: 35px !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;/* Grey Deep */color: #79828D;}
+.body-implant .Advantage .Advanbutton{bottom: 8rem !important;} 
+.body-implant .Advanbutton ul .guoc.active{border: 10px solid #409eff38;padding: calc(2vw + 10px);}
+/* 牙科服务 - 植牙 lkx */
+.body-implant .tablesd{margin-left: 2vw;width: 78%;}
+.body-implant .swiper-slideB{margin-left: -2vw!important;}
+
+/* Invisalign 隱適美 */
+.body-invisalign .step_list {margin-top: 50px;}
+.body-invisalign .list_con{padding-left: 5vw;padding-right: 5vw;}
+.body-invisalign .list_con p,.list_dis ul{padding: 4vw 0 !important;text-align: justify;}
+.body-invisalign strong:before{margin-left: 0 !important;}
+.body-invisalign .list_dis{padding-left: 5vw !important;padding-right: 5vw !important;text-align: justify;}
+.body-invisalign p{text-align: justify;}
+.body-invisalign .box p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;color: #FFFFFF;}
+.body-invisalign .box .service_txt p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;color: #505050;align-items: center;text-align: center;}
+.body-invisalign .texts p{margin-top: 40px;}
+.body-invisalign .coll-box{margin-bottom: 30px;}
+.body-invisalign .coll-box p{text-align: center;}
+.body-invisalign .coll-box>div img{max-width: 70%;margin: auto;}
+.body-invisalign .coll-box>div p{margin-top: 6px;}
+.body-invisalign .el-collapse-item__header .contents .p1{text-align: -webkit-left !important;} 
+.body-invisalign .coll-box>div{    display: flex;flex-flow: column;}
+.body-invisalign .mbshow{margin-top: 0 !important;}
+/* Invisalign 隱適美 lkx*/
+.body-invisalign .tablesd{margin-left: 2vw;}
+.body-invisalign .swiper-slideB{margin-left:-2vw;}
+
+
+
+/* 牙齿美白 */
+.body-teeth-whitening .bac-box{margin-top: 30px;}
+.body-teeth-whitening .list_con p{padding: 3vw 5vw !important;}
+.body-teeth-whitening .list_d{margin: 8vw auto !important;padding: 0 5vw !important;}
+.body-teeth-whitening .list_d span:last-child{padding-right: 0 !important;text-align: justify;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;/* Grey Mid */color: #9BA5B1;}
+.body-teeth-whitening .list_con p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 700;font-size: 15px;line-height: 22px;text-align: center;letter-spacing: 0.1em;color: #57B2F3;}
+.contents .content img,.gcond .left img{width: 10.6vw;height: 10.6vw;}
+.contents .content p,.gcond .left p{width: 75vw;transform: translateY(15px);margin-left: 10px;} 
+.gcond .left p{transform: unset;}
+.body-teeth-whitening .discon{margin-top: 20px !important;}
+/* 根管治療（杜牙根） */
+.body-rct .list_con{padding-left: 5vw !important;padding-right: 5vw !important;}
+strong:before{margin-left: 0 !important;}
+.body-rct .list_con p{padding-left: 0 !important;padding-right: 0 !important;text-align: justify;}
+.body-rct .list_dis{padding-left: 5vw ;padding-right: 5vw;}
+.body-rct .list_dis ul{padding-left: 4vw !important;}
+
+/* .mbshow .el-button{border: ;} */
+.mbshow:after{width: 100% !important;top:0 !important;bottom: 0 !important;left: 0 !important;right: 0 !important;margin: auto !important;z-index: -1;}
+.mbshow:before{display: none !important;}
+/* 瓷贴片 */
+.body-veneers .cipian{margin-top: 40px;}
+.body-veneers .cipian>img{width: 100%;}
+.body-veneers .step_list.items-center{padding-left: 5vw;padding-right: 5vw;}
+.body-veneers .list_dis ul{margin-left: 5vw;}
+.body-veneers .step_list .cipian p{margin-top: 20px;}
+.body-veneers .el-collapse-item__content{padding-left: 7vw !important;margin-top: 20px;}
+      /* 全瓷牙冠及全鋯牙冠 */
+.body-crowns-and-bridges  .coin >img{width: 90vw; }
+ /* 全瓷牙冠及全鋯牙冠 lkx*/
+.body-crowns-and-bridges .swiper-container{margin: 5vw 0;}
+.body-crowns-and-bridges .tablesd{margin-left: 3vw;}
+.body-crowns-and-bridges .swiper-slideB{margin-left: -4vw;}
+.body-crowns-and-bridges .swiper-slideB .tablesd{width: 90%;}
+.body-crowns-and-bridges .swiper-slideB .tablesdB{margin-left:5vw}
+.body-crowns-and-bridges .swiper-slideC {margin-left:-4vw}
+.body-crowns-and-bridges .tableKao ul{list-style-type: disc;font-weight: 500;font-size: 17px;margin: 1vw 7vw;width: 88%;}
+
+
+.body-extractions-and-wisdom-teeth-extraction .list_dis{padding-left: 5vw !important;padding-right: 5vw !important;}
+.body-extractions-and-wisdom-teeth-extraction .list_dis ul{padding-left: 4vw !important;}
+.body-extractions-and-wisdom-teeth-extraction .video{padding-left: 5vw;padding-right: 5vw;}
+.body-extractions-and-wisdom-teeth-extraction .discon{margin-top: 20px;}
+.body-extractions-and-wisdom-teeth-extraction .list_cons{margin: 2vw -2vw;}
+.body-periodontal-treatment .list_con>img{margin-top: 35px;}
+.body-periodontal-treatment .listcons{padding-left: 5vw;padding-right: 5vw;padding-bottom: 50px;}
+.body-periodontal-treatment .list_d span {padding: 20px 0 !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;/* Grey Mid */color: #9BA5B1;}
+.body-periodontal-treatment .coin{width: 30vw !important;}
+
+
+ /* 矯齒  lkx*/
+.body-orthodontics .list{padding: 0 5vw;}
+.body-orthodontics .step_list{padding: 0;}
+.body-orthodontics .list_dis ul {padding: 5vw 4vw !important;}
+.body-orthodontics .jiaochi img{width: 100%;}
+.body-orthodontics .contents {margin: 0 5vw;}
+.body-orthodontics .discon{margin: 5vw 0 0 0;}
+.body-orthodontics .tablesd{width:67%}
+.body-orthodontics .swiper-wrapper{padding:10vw 0}
+.body-orthodontics  .swiper-container-horizontal>.swiper-pagination-bullets.swiper-pagination-bullets-dynamic{padding: 5vw 0;}
+.body-orthodontics .tablesd{margin-left: 2vw;}
+.body-orthodontics .swiper-slideB{margin-left: -2vw;}
+
+/*全口牙托及局部牙托 lkx */
+.body-complete-and-partial-denture .tablesd{width: 68%;}
+.body-complete-and-partial-denture  .table-box{margin: 0 5vw;}
+
+/*補牙 lkx */
+
+
+
+/* 牙科服务 带蓝色条 小标题 */
+.body-rct strong,.body-implant strong,.body-veneers .step_list .cipian strong{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 20px;line-height: 30px;/* identical to box height */letter-spacing: 0.1em;/* Grey Mid */color: #9BA5B1;}
+.body-implant .list_con p,.body-veneers .step_list .cipian p{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 400;font-size: 15px;line-height: 22px;text-align: justify;letter-spacing: 0.1em;/* Grey Mid */color: #9BA5B1;padding-left: 0 !important;padding-right: 0 !important;}
+/* 圆圈排序 **过程 123456 */
+.body-rct .contents,.body-veneers .contents{width: 90vw !important;padding-left: 5vw;padding-right: 5vw;}
+
+
+/* 洗牙*/
+.body-scaling-and-polishing .step.section .step_list{ padding: 0 5vw;}
+.body-scaling-and-polishing .step.section .step_list li>img{display: block;width:100%;margin-bottom: 20px;padding: 0 !important;}
+
+/*一般口腔檢查*/
+.body-general-oral-examination  .step_list{ padding: 0 5vw;}
+.body-general-oral-examination .step.section .step_list li>img{display: block;width:100%;margin-bottom: 20px;padding: 0 !important;}
+
+
+.body-children-dentistry .step.section .step_list{ padding: 0 5vw;}
+.body-children-dentistry .step.section .step_list li>img{display: block;width:100%;margin-bottom: 20px;padding: 0 !important;}
+
+
+
+
+
+
+/* foot */
+.footer>div a{border-radius:10px  10px  0px 0px !important;font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500 !important;font-size: 18px !important;letter-spacing: 0.1em !important;color: #FFFFFF;}
+
+ 
+
+   
+/* 移动端 end */
+
+
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 425px){
+.body-implant .video .swiper-wrapper  .swiper-slide:nth-child(1) .tables{width: 19%; margin-right: 14px;}
+.body-implant .video .swiper-wrapper   .swiper-slide:nth-child(1)  .tablesd{width:79%;}
+}
+@media only screen and (max-width: 375px) {
+.body-implant .video .swiper-wrapper  .swiper-slide:nth-child(1) .tablesd ul{margin: 1vw 0vw !important;    padding-left: 8vw;}
+.body-implant .video .swiper-wrapper  .swiper-slide:nth-child(1)  .tablesd{width:79%;}
+
+
+}
+/* pc端	 */ 
+@media only screen and (min-width: 768px){
+/* 首頁	 */
+.body-index .contents{ position: absolute;z-index: 2; height: 0;top: 33%;left: 13%;font-weight: 500;color: #79828d;text-align: left;}
+/* 牙周	 */ 
+.body-periodontal-treatment .discon span{width: fit-content;}
+/* 矯齒	 */ 
+.body-orthodontics .discon span{width: fit-content;}
+/* 洗牙*/
+.body-scaling-and-polishing .discon span{width: fit-content;}
+
+/* 隱適美*/
+.body-invisalign .coll-box{display: flex; justify-content: space-between;align-items: center;flex-wrap: nowrap;flex-direction: row;}
+.body-invisalign .pcshow .card{justify-content: center;position: relative;display: flex;flex-direction: row;min-width: 0;word-wrap: break-word;border-radius: 0.25rem;}
+.body-invisalign .pcshow .table-box{width:55%;}
+.body-invisalign .pcshow .tables{white-space: nowrap;color: #57B2F3;background-color: #fff; border: 2px solid #9BD0F5;border-radius: 30px;border-collapse: separate;box-shadow: 13px 15px 0 #a2d4f7;border-spacing: 0;font-weight: 550;letter-spacing: 0.1vw;font-size: 17px;}
+}
+
+/* ipad */
+@media screen and (max-width: 1000px) and (min-width: 625px) {
+body {overflow-y: scroll;}
+body .section{width: unset !important;}
+
+/* naavbar	 */
+/* .navbar { margin-top: 30px;padding-top:0 !important;padding-bottom: 0 !important; }
+.navbar .container-fluid{align-items: flex-start;}
+.navbar .engmb{margin-left: 0 !important;margin-right: 14vw !important;font-size: 15px;margin-top: 8px;}
+.navbar .navbar-toggler{margin-top: 16px;right: 5vw !important;padding-right: 0 !important;}
+.navbar-brand{padding-top: 0 !important;z-index: 9999;}     
+  
+.navbar-toggler:focus,.navbar-toggler:active,.floatsty:focus{border: none !important;box-shadow: none !important;} 
+.navbar-nav{margin-top: 10vw;}
+.navbar-collapse.show .navbar-nav .nav-link{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 0.1em;color: #57B2F3;}
+.gnav{padding: 15vw 5vw !important;}
+.navbar-collapse.show .navbar-nav .nav-item,.navbar-collapse.collapsing .navbar-nav .nav-item,.gnav.action .navbar-nav .nav-item{padding: 15px 0 !important;border-bottom: 1px solid #C2C7CD;text-indent: 2em;}
+.navbar-collapse.show .navbar-nav .nav-item:last-child,.navbar-collapse.show .navbar-nav .nav-item:nth-last-child(2){border-bottom: none;} */
+
+/* navbar  汉堡包 */
+/* .hamburglar{transform: translate(16px,-20px) scale(1) !important;} 
+.hamburglar .burger-container{display: flex;justify-content: flex-end;}
+.hamburglar .burger-container .burger-bun-top{width: 28px;} 
+.hamburglar .burger-container .burger-filling{width: 24px;top: 8px;} 
+.hamburglar .burger-container .burger-bun-bot{width: 21px;bottom: 8px;}
+.hamburglar.is-open .burger-filling{top: 12px;}
+.hamburglar.is-open .burger-bun-bot{bottom: 0;}
+.hamburglar .burger-bun-top,.hamburglar  .burger-filling,.hamburglar  .burger-bun-bot{height: 3px !important;background:  #00477B;}
+.hamburglar.is-open .burger-bun-top,.hamburglar.is-open .burger-filling,.hamburglar.is-open .burger-bun-bot{width: 34px;} */
+}

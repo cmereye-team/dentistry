@@ -46,7 +46,7 @@
       </div>
       <div class="content">
         <h2 v-html="item.title.rendered"></h2>
-        <p v-html="item.content.rendered"></p>
+        <div @click="showContent"><p :class="showitem === true ?'':'p_content_long'" v-html="item.content.rendered"></p></div>
         <div style="display: flex;">
           <div v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]" style=" margin: 0 0.5vw;">
             <p class="label">{{ lab.name }}</p>
@@ -86,6 +86,7 @@ export default {
   },
   data() {
     return {
+      showitem:false,
       selectVal: '',
       navtitle: '所有類別',
       navList: [
@@ -319,6 +320,10 @@ export default {
     }
   },
   methods: {
+    showContent(){
+      this.showitem = !this.showitem
+      console.log(this.showitem);
+    },
     init() {
       getList().then((res => {
 

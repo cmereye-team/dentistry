@@ -88,7 +88,8 @@ export default {
     'asset/css/base-style.scss',
     'asset/css/tailwind.css',
     'swiper/dist/css/swiper.css',
-    'element-ui/lib/theme-chalk/index.css'
+    'element-ui/lib/theme-chalk/index.css',
+    // 'asset/css/vikim.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
