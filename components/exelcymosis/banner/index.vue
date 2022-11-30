@@ -99,7 +99,7 @@ export default {
     border-color: #fff
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .titleImg{
     position: relative;
     height: 53vw;
@@ -146,7 +146,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .titleImg{
     position: relative;
     height: 30vw;

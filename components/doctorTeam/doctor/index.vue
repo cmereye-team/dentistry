@@ -70,7 +70,7 @@ export default {
   }
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .en-doctor{
     font-size: 15px !important;
     .doctor-text{
@@ -151,7 +151,7 @@ export default {
 }
 }
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .comContent{
     width: calc(100% - 120px);
   }

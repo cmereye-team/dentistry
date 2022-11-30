@@ -199,7 +199,7 @@ export default {
   }
 }
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   #map{
     img{
     border-radius: 30px 30px 30px 30px;
@@ -402,7 +402,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .actives{
         background: #57B2F3 !important;
         border-radius: 100% !important;

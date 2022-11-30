@@ -359,7 +359,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .listcons{
     display: flex;
     margin: 35px 0;
@@ -727,7 +727,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .py-5 {
     margin-top: 7rem !important;
     padding-top: 0rem!important;

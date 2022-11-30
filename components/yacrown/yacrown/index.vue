@@ -464,7 +464,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .mbshow{
     display: none;
   }
@@ -979,7 +979,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   ::v-deep .swiper-pagination-bullet-active{
     background-color: #57B2F3;
     width: 15px ;

@@ -1,5 +1,5 @@
 /* 移动端	 */ 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
 body {overflow-y: scroll;}
 body .section{width: unset !important;}
 
@@ -339,7 +339,7 @@ strong:before{margin-left: 0 !important;}
 }
 
 
-@media only screen and (max-width: 768px) and (min-width: 425px){
+@media only screen and (max-width: 760px) and (min-width: 425px){
 .body-implant .video .swiper-wrapper  .swiper-slide:nth-child(1) .tables{width: 19%; margin-right: 14px;}
 .body-implant .video .swiper-wrapper   .swiper-slide:nth-child(1)  .tablesd{width:79%;}
 }
@@ -350,7 +350,7 @@ strong:before{margin-left: 0 !important;}
 
 }
 /* pc端	 */ 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 760px){
 /* 首頁	 */
 .body-index .contents{ position: absolute;z-index: 2; height: 0;top: 33%;left: 13%;font-weight: 500;color: #79828d;text-align: left;}
 /* 牙周	 */ 

@@ -349,7 +349,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .mbshow {
     display: none;
 
@@ -748,7 +748,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .body-fillings .step.section .step_list{ padding: 0 5vw}
 .body-fillings .step.section .step_list li>img{display: block;width:100%;margin-bottom: 20px;padding: 0 !important;}
   .swiper-slideB{margin-left: -4vw;}

@@ -93,7 +93,7 @@ export default {
     border-color: #fff
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 740px) {
   .ispcshow{
     display: none;
   }
@@ -188,7 +188,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 740px) {
   .ismdshow{
     display: none;
   }
@@ -280,7 +280,7 @@ export default {
 </style>
 <style lang="scss" >
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 .main-container{
   max-width: 1440px !important;
   margin: 0 auto;

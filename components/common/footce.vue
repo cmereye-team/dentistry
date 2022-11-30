@@ -89,10 +89,10 @@ export default {
           handler: function (val, oldVal) {
             console.log('val========',val);
             if (val < 768) {
-              console.log('屏幕宽度小于768px')
+              console.log('屏幕宽度小于760px')
               this.isShow = false
             } else {
-              console.log('屏幕宽度大于768px')
+              console.log('屏幕宽度大于760px')
               this.isShow = true
             }
           },
@@ -103,7 +103,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .face-primary{
     img{
       // padding-left: 0.5vw;
@@ -185,7 +185,7 @@ export default {
   }
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .face-primary{
     .what{
       width:6vw

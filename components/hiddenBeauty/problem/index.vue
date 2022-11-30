@@ -142,7 +142,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   ::v-deep .el-collapse-item__arrow{
   display: none;
 }
@@ -218,7 +218,7 @@ p {
 }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 4096px) {
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
   ::v-deep .el-collapse-item__arrow {
     display: none;
   }
@@ -314,7 +314,7 @@ p {
 }
 </style>
 <style lang="scss">
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
 .coll-box .discon{
   margin-top: 5vw;
 }

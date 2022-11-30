@@ -132,9 +132,9 @@ export default {
         screenWidth: {
           handler: function (val, oldVal) {
             if (val < 768) {
-              console.log('屏幕宽度小于768px')
+              console.log('屏幕宽度小于760px')
             } else {
-              console.log('屏幕宽度大于768px')
+              console.log('屏幕宽度大于760px')
             }
           },
           immediate: true
@@ -211,7 +211,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
  ::v-deep .dateinfo{
     display: flex !important;
     justify-content: center  !important;
@@ -435,7 +435,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
      .dates{
       width: 15vw;
       height: 15vw;

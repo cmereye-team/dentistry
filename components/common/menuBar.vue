@@ -370,11 +370,11 @@
                 <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>
                 <!-- <a class="nav-link" href="/contactUs">聯絡我們</a> -->
               </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link eng" to="#">ENG</nuxt-link>
+              <li class="nav-item ipad-not-show">
+                <nuxt-link class="nav-link eng " to="#">ENG</nuxt-link>
                 <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
               </li>
-              <li class="nav-item">
+              <li class="nav-item ipad-not-show">
                   <a id="zxzx" class="nav-link yuyue" href="tel:85236202428" aria-hidden="true" target="_blank"
                 style="line-height: 20px;">立即預約 <span style="font-size: 20px;font-family:Noto Sans HK;">3620 2428</span></a>
               </li>
@@ -934,7 +934,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .service_box   {
     .service_item{
       .service_txt[data-v-47af9056]{
@@ -1206,7 +1206,7 @@ font-size: 15px;
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   //mb hamburglar
 
   $color: #fff; // icon color

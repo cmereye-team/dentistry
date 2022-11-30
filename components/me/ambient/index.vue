@@ -232,7 +232,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .iframesty{
   width: 100%;
   height: 231px;
@@ -542,7 +542,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 .titleImg{height: auto !important;}  
 .carousel{margin-top: 25px;}
 .carousel-inner .titleImg img{height: auto !important;border-radius: 12px !important;}  

@@ -62,7 +62,7 @@ a {
     color: #57B2F3;
     text-decoration: none;
 } 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 .section {
   ul {
     padding: 0;
@@ -113,7 +113,7 @@ a {
   }
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .section {
   ul {
     padding: 0;

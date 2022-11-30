@@ -62,7 +62,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 740px) {
   .step_list {
     // width: 80vw;
     padding-left: 0px;
@@ -123,7 +123,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 740px) {
   .step.section .step_list li {
     padding: 40px 5vw;
   }

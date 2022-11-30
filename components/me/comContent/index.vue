@@ -61,7 +61,7 @@ export default {
   }
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .textsd{
    margin: 8vw 0;
    text-align: center;
@@ -108,7 +108,7 @@ export default {
 }
 }
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .textsd{
    text-align: center;
   //  margin: 8vw 0;
@@ -185,7 +185,7 @@ export default {
 </style>
 <style lang="scss" >
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
 .comContent{
         margin-top: 56px !important;
   }

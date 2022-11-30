@@ -143,7 +143,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .texts {
     padding: 190px;
   }
@@ -528,7 +528,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .boximgs{
     z-index: 9999;
   }

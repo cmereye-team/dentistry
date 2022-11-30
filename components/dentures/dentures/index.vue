@@ -617,7 +617,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .texts{
     margin-top: 136px;
   }
@@ -1063,7 +1063,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
 
   .swiper-slideB{
     margin-left: -4.5vw;

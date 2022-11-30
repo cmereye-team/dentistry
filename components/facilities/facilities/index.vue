@@ -66,7 +66,7 @@ export default {
   }
 }
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .meun{
     padding-left:6vw;
     display: flex;
@@ -132,7 +132,7 @@ export default {
 
 }
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
  
   .meun{
     padding-left:6vw;

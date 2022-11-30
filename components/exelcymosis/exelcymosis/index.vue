@@ -310,7 +310,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .porcelain—con {
     // display: flex;
     text-align: center;
@@ -794,7 +794,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .video {
     background-color: #ECF7FC;
     padding: 5vw 0;

@@ -264,7 +264,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .mbshow{
     display: none !important;
   }
@@ -626,7 +626,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .pcshow{
     display: none;
   }

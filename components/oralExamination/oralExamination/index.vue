@@ -112,7 +112,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   .icons{
     margin-bottom: 3.5vw;
     margin-top: 0.5vw;
@@ -468,7 +468,7 @@ export default {
 }
 
 //md
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
  .pcshow-list{
     display: none !important;
   }

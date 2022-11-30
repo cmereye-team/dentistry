@@ -930,7 +930,7 @@
   </script>
   <style lang="scss" scoped>
   //pc
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 760px) {
     .service_box   {
       .service_item{
         .service_txt[data-v-47af9056]{
@@ -1165,7 +1165,7 @@
   }
   
   //mb
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 760px) {
     //mb hamburglar
   
     $color: #fff; // icon color

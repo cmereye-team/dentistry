@@ -137,7 +137,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   #map{
     border-radius: 30px 30px 30px 30px;
   }
@@ -323,7 +323,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   #addresd{
         padding: 2.5vw 1.3vw 0 6.8vw;
       }

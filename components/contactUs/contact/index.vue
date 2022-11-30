@@ -283,7 +283,7 @@ a{
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   ::v-deep .el-radio__label {
     padding-left: 10px;
     font-size: 1rem;
@@ -410,7 +410,7 @@ a{
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
 
 
 

@@ -104,7 +104,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
 
   .contents p{
   color: #79828D;
@@ -181,7 +181,7 @@ p {
 }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 4096px) {
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
   ::v-deep .el-collapse-item__arrow {
     display: none;
   }

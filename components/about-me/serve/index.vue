@@ -215,7 +215,7 @@ a{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .service_box {
     padding-top: 3rem;
   }
@@ -310,7 +310,7 @@ a{
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 7680px) {
+@media only screen and (min-width: 760px) and (max-width: 7680px) {
 
   .service_pic img {
   max-width: 200px;
@@ -462,7 +462,7 @@ a{
   color: #ffffff;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 4096px) {
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
   .service_txt{
     .setWith{
       max-width: 106px;
@@ -493,7 +493,7 @@ a{
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 4096px) {
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
   .service_box .service_item .service_txt {
     // padding: 0 3rem 2rem;
     display: flex;
@@ -503,7 +503,7 @@ a{
   }
 }
 
-@media only screen and (min-width: 100px) and (max-width: 768px) {
+@media only screen and (min-width: 100px) and (max-width: 760px) {
   .service_box .service_item .service_txt {
     width: 100%;
     padding-left: 5px;
@@ -523,7 +523,7 @@ a{
     letter-spacing: 1px;
 }
 
-@media only screen and (min-width: 100px) and (max-width: 768px) {
+@media only screen and (min-width: 100px) and (max-width: 760px) {
   .service_box p {
     font-size: 1rem;
     padding-top: 0.2rem;

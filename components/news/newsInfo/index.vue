@@ -86,11 +86,11 @@ export default {
       handler: function (val, oldVal) {
         console.log('val========', val);
         if (val < 768) {
-          console.log('屏幕宽度小于768px')
+          console.log('屏幕宽度小于760px')
           this.isShow = false
         } else {
           this.isShow = true
-          console.log('屏幕宽度大于768px')
+          console.log('屏幕宽度大于760px')
         }
       },
       immediate: true
@@ -430,7 +430,7 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760px) {
   .label {
     display: inline-block;
     border: 1px solid #57B2F3;
@@ -566,7 +566,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 760px) {
   ::v-deep .el-input__inner {
     -webkit-appearance: none;
     background-color: #FFF;
