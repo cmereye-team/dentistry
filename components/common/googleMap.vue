@@ -94,7 +94,8 @@
             <p class="address2">灣仔莊士敦道197號廣亞大樓地下</p>
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五<br> 上午9:30 - 下午7:00<br>星期日及公眾假期休息</p>
+            <p class="week">星期一至星期五: <br> 上午9:30 - 下午7:00<br> 
+            星期日: <br> 上午9:30 - 下午6:00 <br>公眾假期休息</p>
             <div class="clear"></div>
             <p class="week2">星期六<br> 上午9:30 - 下午5:00</p>
             </div>
@@ -428,7 +429,7 @@ a{
   }
   .mapcontennt {
     height: 306px;
-    width: 434px;
+    width: 500px;
     border: 1;
     background: #8CD1F8;
     border-radius: 30px 30px 30px 30px;
@@ -472,6 +473,7 @@ a{
       padding: 0 1.3vw 0 1.8vw;
       color: white;
       float: left;
+      font-size: 14px;
     }
 .week1 {
           padding: 1vw 3.3vw 0 2.5vw;
@@ -485,6 +487,7 @@ a{
       position: relative;
       color: #fff;
       display: flex;
+      font-size: 14px;
       // position: absolute;
       // width: max-content;
     }
