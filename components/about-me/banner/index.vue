@@ -5,9 +5,9 @@
     <div class="carousel-inner">
       <div class="carousel-item active">
         <a href="https://smilepartner.cmermedical.com/">
-          <img data-cfsrc="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          srcset="https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 400w, https://static.cmereye.com/imgs/2022/11/df53289d7bd88b1a.png 640w, https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/11/b5a6e3e7b00ee9d7.png" />
+          <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
+          srcset="https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 400w, https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 640w, https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
+          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg" />
         </a>
     </div>
       <div class="carousel-item ">
