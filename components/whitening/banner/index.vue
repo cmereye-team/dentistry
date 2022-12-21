@@ -4,15 +4,13 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/beauty.jpg " 
-        srcset="https://static.cmereye.com/static/lkximg/image/banner/Mbbeauty.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/Mbbeauty.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/beauty.jpg " 
+        <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg " 
+        srcset="https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 400w, https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 640w, https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg " 
         title="牙齒美白" 
         alt="牙齒美白" 
-        src="https://static.cmereye.com/static/lkximg/image/banner/beauty.jpg "/>
+        src="https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg "/>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/beauty.png"> -->
-          <div class="title">
-        牙齒美白
-      </div>
+      
       </div>
     </div>
   </div>
@@ -30,6 +28,9 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.carousel-inner{
+  border-radius: 20px;
+}
 ::v-deep .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
