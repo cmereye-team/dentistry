@@ -4,11 +4,11 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg " 
-        srcset="https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 400w, https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 640w, https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg " 
+        <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png" 
+        srcset="https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 400w, https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 640w, https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png" 
         title="牙齒美白" 
         alt="牙齒美白" 
-        src="https://static.cmereye.com/imgs/2022/12/aa36fc34e7c6395c.jpg "/>
+        src="https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png"/>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/beauty.png"> -->
       
       </div>
