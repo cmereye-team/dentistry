@@ -160,6 +160,11 @@
   component: resolve('pages/contact-us'),
 
 },
+{
+  path: '/policy',
+  component: resolve('pages/policy'),
+
+},
 
   // {
   //     path: '*',
