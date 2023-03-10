@@ -4,31 +4,34 @@
     <!-- 轮播图片 -->
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
-        <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png" 
-        srcset="https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 400w, https://static.cmereye.com/imgs/2022/12/f23136b3feb1bb24.jpg 640w, https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png" 
-        title="牙齒美白" 
-        alt="牙齒美白" 
-        src="https://static.cmereye.com/imgs/2022/12/27081e803a9b4ffd.png"/>
+        <img
+          data-cfsrc="https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg"
+          srcset="
+            https://static.cmereye.com/imgs/2023/03/0d92748d7ea7bd38.png 400w,
+            https://static.cmereye.com/imgs/2023/03/0d92748d7ea7bd38.png 640w,
+            https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg
+          "
+          title="牙齒美白"
+          alt="牙齒美白"
+          src="https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg"
+        />
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/beauty.png"> -->
-      <!-- shd -->
+        <!-- shd -->
       </div>
     </div>
   </div>
-
 </template>
 
 <script>
 export default {
   data() {
-    return {
-    }
+    return {};
   },
-  mounted() {
-  }
-}
+  mounted() {},
+};
 </script>
 <style lang="scss" scoped>
-.carousel-inner{
+.carousel-inner {
   border-radius: 20px;
 }
 ::v-deep .carousel-indicators [data-bs-target] {
@@ -41,16 +44,16 @@ export default {
   margin-left: 8px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #C2C7CD;
+  background-color: #c2c7cd;
   background-clip: padding-box;
   border: 0;
   margin-bottom: 2rem;
   margin-top: 1rem;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: .5;
+  opacity: 0.5;
   border-radius: 100%;
-  transition: opacity .6s ease;
+  transition: opacity 0.6s ease;
 }
 
 ::v-deep .carousel-indicators {
@@ -59,29 +62,29 @@ export default {
 
 ::v-deep .carousel-indicators .active {
   opacity: 1 !important;
-  background-color: #9BA5B1;
+  background-color: #9ba5b1;
   width: 14px;
   height: 14px;
 }
 ::v-deep .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.55);
-    border-color: #fff
+  color: rgba(0, 0, 0, 0.55);
+  border-color: #fff;
 }
 //mb
 @media only screen and (max-width: 760px) {
-  .titleImg{
+  .titleImg {
     position: relative;
     height: 53vw;
     width: 100vw;
-    .title{
+    .title {
       position: absolute;
-      z-index:2;
+      z-index: 2;
       height: 53vw;
       width: 100vw;
-      left:0;
-      top:45%;
+      left: 0;
+      top: 45%;
       font-weight: 600;
-      color: #79828D;
+      color: #79828d;
       font-size: 24px;
     }
   }
@@ -116,20 +119,20 @@ export default {
 
 //pc
 @media only screen and (min-width: 760px) {
-  .titleImg{
+  .titleImg {
     position: relative;
     height: 30vw;
     width: 100vw;
     text-align: center;
-    .title{
+    .title {
       position: absolute;
-      z-index:2;
+      z-index: 2;
       height: 30vw;
       width: 100vw;
-      left:0;
-      top:45%;
+      left: 0;
+      top: 45%;
       font-weight: 500;
-      color: #79828D;
+      color: #79828d;
       font-size: 39px;
     }
   }
@@ -180,6 +183,4 @@ export default {
   }
 }
 </style>
-<style lang="scss" >
-
-</style>
+<style lang="scss"></style>
