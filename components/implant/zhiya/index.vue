@@ -1,45 +1,104 @@
 <template>
-  <di class="step comContent  section">
-    <div class="comContent meun  main-container">
+  <di class="step comContent section">
+    <div class="comContent meun main-container">
       <p>
-        <nuxt-link style="color: #000; text-decoration: none;" to="/">首頁</nuxt-link>
+        <nuxt-link style="color: #000; text-decoration: none" to="/"
+          >首頁</nuxt-link
+        >
       </p>
-      <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">牙科服務</p>
-      <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">植牙</p>
+      <p style="margin: 0 0.5vw">></p>
+      <p style="color: #57b2f3">牙科服務</p>
+      <p style="margin: 0 0.5vw">></p>
+      <p style="color: #57b2f3">植牙</p>
     </div>
     <div class="step">
       <div class="list">
         <div class="step_list items-center main-container">
           <div class="bac-box">
-            <img src="https://static.cmereye.com/static/lkximg/image/implant/Group1.png" alt="">
-            <div class="list_con">
-              <strong>植牙</strong>
-              <p>植牙，俗稱為「種牙」，是處理缺牙的一種治療方法。牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。</p>
+            <img
+              src="https://static.cmereye.com/static/lkximg/image/implant/Group1.png"
+              alt=""
+            />
+            <div class="list_title">
+              <span>
+                <span class="title">植牙，俗稱為「種牙」，</span> <br />
+                植牙，俗稱為「種牙」，<br
+                  class="mbShow"
+                />是處理缺牙的一種治療方法。<br />
+                牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。
+              </span>
             </div>
-            <div class="list_dis">
-              <strong style="padding: 0;">常見植牙的原因</strong>
-              <ul>
-                <div>
-                  <li>傳統治療方法（牙套、牙橋及假牙托等）無法修復缺牙的情況</li>
-                  <li>缺牙影響儀容，嚴重甚至會令面部變形</li>
-                  <li>缺牙容易令牙齒移位，影響咬合、發音</li>
-                  <li>改善咀嚼問題，回復正常飲食</li>
-                </div>
 
-              </ul>
+            <div class="list_box">
+              <div class="list_con">
+                <strong>植牙品牌選擇指標</strong>
+                <p>
+                  <span class="span_title">品牌歷史、臨床研究支持</span>
+                  品牌歷史較悠久，有長期臨床應用及研究驗證，所用的植體零件穩定性、安全性都會令人更安心。
+                </p>
+                <p>
+                  <span class="span_title">普遍度</span>
+                  每個植牙品牌所用零件都不同。若植體零件有正常損耗需要維修或更換，選用市場上使用率較高的植牙品牌，會較容易找到相應零件作跟進處理。
+                </p>
+              </div>
+              <div class="list_dis">
+                <strong style="padding: 0">常見植牙的原因</strong>
+                <ul>
+                  <div>
+                    <li>
+                      傳統治療方法（牙套、牙橋及假牙托等）無法修復缺牙的情況
+                    </li>
+                    <li>缺牙影響儀容，嚴重甚至會令面部變形</li>
+                    <li>缺牙容易令牙齒移位，影響咬合、發音</li>
+                    <li>改善咀嚼問題，回復正常飲食</li>
+                  </div>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="main-container hezuo">
+          <p>合作品牌</p>
+          <div class="img_box">
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/5570126989dfe532.png"
+              alt=""
+            />
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/4d2a7a5362539dbc.png"
+              alt=""
+            />
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/7ab1c1384547d1cd.png"
+              alt=""
+            />
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/9c0bb60a3bddbc91.png"
+              alt=""
+            />
+            <img
+              src="https://static.cmereye.com/imgs/2023/03/d462a2ef6d03353c.png"
+              alt=""
+            />
+          </div>
+        </div>
       </div>
-      <div v-show='currentIndex == 0'>
+      <div v-show="currentIndex == 0">
         <div class="Advantage">
-          <img src="https://static.cmereye.com/static/lkximg/image/implant/Advantage.png" alt="">
-          <div class="Advanbutton" style="box-sizing: content-box;">
+          <img
+            src="https://static.cmereye.com/static/lkximg/image/implant/Advantage.png"
+            alt=""
+          />
+          <div class="Advanbutton" style="box-sizing: content-box">
             <ul>
-              <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
-                v-for='(item, index) in list' style="box-sizing: content-box;">
+              <li
+                @click="handleClick(index)"
+                class="guoc"
+                :class="currentIndex == index ? 'active' : ''"
+                :key="item.id"
+                v-for="(item, index) in list"
+                style="box-sizing: content-box"
+              >
                 <p>{{ item.title }}</p>
               </li>
             </ul>
@@ -48,36 +107,66 @@
         <div class="contents main-container">
           <div class="gcond">
             <div class="gcon">
-              <div class=" left">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>進行全面口腔檢查、X光或3D電腦掃描，確定植體的安裝位置，同時需確認患者的身體狀況及病歷</p>
+              <div class="left">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  進行全面口腔檢查、X光或3D電腦掃描，確定植體的安裝位置，同時需確認患者的身體狀況及病歷
+                </p>
               </div>
               <div class="num left">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw"
-                  alt="">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>注射麻醉藥</p>
               </div>
-              <div class=" left">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>翻開牙齦在適合安裝的位置鑽孔，植入植體，作為假牙的牙根，有需要時可以利用手術導航系統輔助植入理想位置，再縫合傷口</p>
+              <div class="left">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/3.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  翻開牙齦在適合安裝的位置鑽孔，植入植體，作為假牙的牙根，有需要時可以利用手術導航系統輔助植入理想位置，再縫合傷口
+                </p>
               </div>
             </div>
             <div class="gcon">
-              <div class="num content ">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw"
-                  alt="">
+              <div class="num content">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>2至3個月後，當牙骨與植體癒合，牙醫會安放癒合帽</p>
               </div>
               <div class="content">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>牙齦癒合後，再進行下一階段的療程進行掃描式印模，再由牙科技師製作義齒</p>
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  牙齦癒合後，再進行下一階段的療程進行掃描式印模，再由牙科技師製作義齒
+                </p>
               </div>
               <div class="content">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw"
-                  alt="">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/6.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>將義齒固定在植體上，補上缺去的牙齒</p>
               </div>
             </div>
@@ -85,25 +174,35 @@
         </div>
         <div class="video main-container">
           <div class="video_con" v-loading="loading">
-            <iframe class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/loJSJebtxG8"
-              title="【拆解植牙全過程】#希小牙實驗室" frameborder="0"
+            <iframe
+              class="iframesty"
+              ref="Iframe"
+              src="https://www.youtube.com/embed/loJSJebtxG8"
+              title="【拆解植牙全過程】#希小牙實驗室"
+              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
+              allowfullscreen
+            ></iframe>
           </div>
           <div class="flex justify-center texts">
             <h2>植牙、假牙點揀好？</h2>
-            <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
-            <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
+            <img
+              src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+              alt=""
+            />
+            <p class="serve_con">
+              想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。
+            </p>
           </div>
           <div v-swiper:mySwiper="swiperOptions" class="swiperWrap mbshow">
-            <div class="swiper-wrapper ">
+            <div class="swiper-wrapper">
               <div class="swiper-slide box">
                 <div class="table-box py-5" id="move_div">
                   <table class="tables">
                     <tr>
                       <td>植牙</td>
                     </tr>
-                    <tr style=" background: #ECF7FC">
+                    <tr style="background: #ecf7fc">
                       <td>固定假牙</td>
                     </tr>
                     <tr>
@@ -111,7 +210,7 @@
                     </tr>
                   </table>
                   <table class="tablesd">
-                    <tr style="height: 3vw;">
+                    <tr style="height: 3vw">
                       <th>優點</th>
                     </tr>
                     <tr>
@@ -122,7 +221,7 @@
                         </ul>
                       </td>
                     </tr>
-                    <tr style=" background: #ECF7FC">
+                    <tr style="background: #ecf7fc">
                       <td>
                         <ul>
                           <li>承托力較高，良好咀嚼力</li>
@@ -137,7 +236,6 @@
                           <li>代替缺牙，有助咀嚼功能</li>
                         </ul>
                       </td>
-
                     </tr>
                   </table>
                 </div>
@@ -145,46 +243,52 @@
               <div class="swiper-slide box swiper-slideB">
                 <div class="py-5">
                   <table class="tablesd tabledd">
-                    <tr style="height: 3vw;">
+                    <tr style="height: 3vw">
                       <th class="thd">缺點</th>
                     </tr>
                     <tr>
                       <td>
                         <ul>
-                          <li style="padding: 0.6vw;">療程較長</li>
+                          <li style="padding: 0.6vw">療程較長</li>
                         </ul>
                       </td>
                     </tr>
-                    <tr style=" background: #ECF7FC">
+                    <tr style="background: #ecf7fc">
                       <td>
                         <ul>
-                          <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
+                          <li style="padding: 0.6vw">
+                            需磨小牙齒及附近健康牙齒
+                          </li>
                         </ul>
                       </td>
                     </tr>
                     <tr>
                       <td>
                         <ul>
-                          <li>容易引致牙肉萎縮，<br>一段時間後需更換新牙托</li>
+                          <li>
+                            容易引致牙肉萎縮，<br />一段時間後需更換新牙托
+                          </li>
                         </ul>
                       </td>
-
                     </tr>
                   </table>
                 </div>
               </div>
-
             </div>
             <div class="swiper-pagination"></div>
           </div>
           <div class="box pcshow" id="notice">
             <div class="card">
-              <div class="table-box" id="move_div" @click="drawBegin(judgeActive)">
+              <div
+                class="table-box"
+                id="move_div"
+                @click="drawBegin(judgeActive)"
+              >
                 <table class="tables">
                   <tr>
                     <td>植牙</td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>固定假牙</td>
                   </tr>
                   <tr>
@@ -192,7 +296,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 47px;">
+                  <tr style="height: 47px">
                     <th>優點</th>
                   </tr>
                   <tr>
@@ -203,7 +307,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>
                       <ul>
                         <li>承托力較高，良好咀嚼力</li>
@@ -218,34 +322,32 @@
                         <li>代替缺牙，有助咀嚼功能</li>
                       </ul>
                     </td>
-
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 47px;">
+                  <tr style="height: 47px">
                     <th class="thd">缺點</th>
                   </tr>
                   <tr>
                     <td>
                       <ul>
-                        <li style="padding: 0.6vw;">療程較長</li>
+                        <li style="padding: 0.6vw">療程較長</li>
                       </ul>
                     </td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>
                       <ul>
-                        <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
+                        <li style="padding: 0.6vw">需磨小牙齒及附近健康牙齒</li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <ul>
-                        <li>容易引致牙肉萎縮，<br>一段時間後需更換新牙托</li>
+                        <li>容易引致牙肉萎縮，<br />一段時間後需更換新牙托</li>
                       </ul>
                     </td>
-
                   </tr>
                 </table>
               </div>
@@ -267,13 +369,22 @@
           </div>
         </div>
       </div>
-      <div v-show='currentIndex == 1'>
+      <div v-show="currentIndex == 1">
         <div class="Advantage">
-          <img src="https://static.cmereye.com/static/lkximg/image/implant/AdvantageBG.png" alt="">
-          <div class="Advanbutton" style="box-sizing: content-box;">
+          <img
+            src="https://static.cmereye.com/static/lkximg/image/implant/AdvantageBG.png"
+            alt=""
+          />
+          <div class="Advanbutton" style="box-sizing: content-box">
             <ul>
-              <li @click='handleClick(index)' class="guoc" :class='currentIndex == index ? "active" : ""' :key='item.id'
-                v-for='(item, index) in list' style="box-sizing: content-box;">
+              <li
+                @click="handleClick(index)"
+                class="guoc"
+                :class="currentIndex == index ? 'active' : ''"
+                :key="item.id"
+                v-for="(item, index) in list"
+                style="box-sizing: content-box"
+              >
                 <p>{{ item.title }}</p>
               </li>
             </ul>
@@ -283,36 +394,66 @@
           <div class="gcond">
             <div class="gcon">
               <div class="content lefts">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg" height="50vw" width="50vw"
-                  alt="">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num1.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>清理牙齒外觀，於相鄰牙齒上打磨出可以讓牙橋放置的空間</p>
               </div>
               <div class="content lefts">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg" height="50vw" width="50vw"
-                  alt="">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num2.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>進行牙齒印模，製作臨時牙橋</p>
               </div>
-              <div class="content  lefts">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw"
-                  alt="">
+              <div class="content lefts">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/3.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
                 <p>牙醫建議牙橋的材質，理想顏色、形狀和色澤</p>
               </div>
             </div>
             <div class="gcon">
-              <div class="content right" style="margin-bottom: 1.6rem;">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>取得病人共識後，牙醫會把牙齒印模及其他資料交給牙科技師訂製假牙</p>
+              <div class="content right" style="margin-bottom: 1.6rem">
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  取得病人共識後，牙醫會把牙齒印模及其他資料交給牙科技師訂製假牙
+                </p>
               </div>
               <div class="content right">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>牙橋訂製一般需要多個工作天，期間病人只能使用臨時牙橋。臨時牙橋只為保護牙齒，並不能照常進食</p>
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/num5.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  牙橋訂製一般需要多個工作天，期間病人只能使用臨時牙橋。臨時牙橋只為保護牙齒，並不能照常進食
+                </p>
               </div>
               <div class="content right">
-                <img src="https://static.cmereye.com/static/lkximg/image/implant/6.svg" height="50vw" width="50vw"
-                  alt="">
-                <p>成品製作完成後，牙醫會作最後微調，令牙橋與病人口腔有完全的密合度</p>
+                <img
+                  src="https://static.cmereye.com/static/lkximg/image/implant/6.svg"
+                  height="50vw"
+                  width="50vw"
+                  alt=""
+                />
+                <p>
+                  成品製作完成後，牙醫會作最後微調，令牙橋與病人口腔有完全的密合度
+                </p>
               </div>
             </div>
           </div>
@@ -322,87 +463,94 @@
             <div class="cosn"></div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/implant/vedio.png" alt=""> -->
           </div>
-          <div class="flex justify-center texts" style="padding-top: 1vw;">
+          <div class="flex justify-center texts" style="padding-top: 1vw">
             <h2>植牙、假牙點揀好？</h2>
-            <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
-            <p class="serve_con">想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。<br>想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。</p>
+            <img
+              src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+              alt=""
+            />
+            <p class="serve_con">
+              想解決缺牙問題，但又唔太了解，唔知揀邊種好？解決缺牙嘅方法可以分為「植牙」及「假牙」兩大類。<br />想知自己適合邊種方法？記住要諮詢牙科醫生嘅專業意見。
+            </p>
           </div>
           <div v-swiper:mySwiper2="swiperOptions2" class="swiperWrap mbshow">
-            <div class="swiper-wrapper ">
+            <div class="swiper-wrapper">
               <div class="swiper-slide box">
                 <div class="table-box py-5" id="move_div">
                   <table class="tables">
-                  <tr>
-                    <td>植牙</td>
-                  </tr>
-                  <tr style=" background: #ECF7FC">
-                    <td>固定假牙</td>
-                  </tr>
-                  <tr>
-                    <td>活動假牙</td>
-                  </tr>
-                </table>
-                <table class="tablesd">
-                  <tr style="height: 3vw;">
-                    <th>優點</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <ul>
-                        <li>效果堅固持久</li>
-                        <li>無需要磨細附近牙齒</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr style=" background: #ECF7FC">
-                    <td>
-                      <ul>
-                        <li>承托力較高，良好咀嚼力</li>
-                        <li>無須手術，簡便安全</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <ul>
-                        <li>容易配戴，方便清潔</li>
-                        <li>代替缺牙，有助咀嚼功能</li>
-                      </ul>
-                    </td>
-
-                  </tr>
-                </table>
+                    <tr>
+                      <td>植牙</td>
+                    </tr>
+                    <tr style="background: #ecf7fc">
+                      <td>固定假牙</td>
+                    </tr>
+                    <tr>
+                      <td>活動假牙</td>
+                    </tr>
+                  </table>
+                  <table class="tablesd">
+                    <tr style="height: 3vw">
+                      <th>優點</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>效果堅固持久</li>
+                          <li>無需要磨細附近牙齒</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style="background: #ecf7fc">
+                      <td>
+                        <ul>
+                          <li>承托力較高，良好咀嚼力</li>
+                          <li>無須手術，簡便安全</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>容易配戴，方便清潔</li>
+                          <li>代替缺牙，有助咀嚼功能</li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
               <div class="swiper-slide box swiper-slideB">
                 <div class="py-5">
-                 <table class="tablesd">
-                  <tr style="height: 3vw;">
-                    <th class="thd">缺點</th>
-                  </tr>
-                  <tr>
-                    <td>
-                      <ul>
-                        <li style="padding: 0.6vw;">療程較長</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr style=" background: #ECF7FC">
-                    <td>
-                      <ul>
-                        <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
-                      </ul>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <ul>
-                        <li>容易引致牙肉萎縮，<br>一段時間後需更換新牙托</li>
-                      </ul>
-                    </td>
-
-                  </tr>
-                </table>
+                  <table class="tablesd">
+                    <tr style="height: 3vw">
+                      <th class="thd">缺點</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li style="padding: 0.6vw">療程較長</li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr style="background: #ecf7fc">
+                      <td>
+                        <ul>
+                          <li style="padding: 0.6vw">
+                            需磨小牙齒及附近健康牙齒
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <ul>
+                          <li>
+                            容易引致牙肉萎縮，<br />一段時間後需更換新牙托
+                          </li>
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
                 </div>
               </div>
             </div>
@@ -410,12 +558,16 @@
           </div>
           <div class="box pcshow">
             <div class="card">
-              <div class="table-box" @touchmove="touchMove($event, item)" @click="drawBegin(judgeActive)">
+              <div
+                class="table-box"
+                @touchmove="touchMove($event, item)"
+                @click="drawBegin(judgeActive)"
+              >
                 <table class="tables">
                   <tr>
                     <td>植牙</td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>固定假牙</td>
                   </tr>
                   <tr>
@@ -423,7 +575,7 @@
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 47px;">
+                  <tr style="height: 47px">
                     <th>優點</th>
                   </tr>
                   <tr>
@@ -434,7 +586,7 @@
                       </ul>
                     </td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>
                       <ul>
                         <li>承托力較高，良好咀嚼力</li>
@@ -449,34 +601,32 @@
                         <li>代替缺牙，有助咀嚼功能</li>
                       </ul>
                     </td>
-
                   </tr>
                 </table>
                 <table class="tablesd">
-                  <tr style="height: 47px;">
+                  <tr style="height: 47px">
                     <th class="thd">缺點</th>
                   </tr>
                   <tr>
                     <td>
                       <ul>
-                        <li style="padding: 0.6vw;">療程較長</li>
+                        <li style="padding: 0.6vw">療程較長</li>
                       </ul>
                     </td>
                   </tr>
-                  <tr style=" background: #ECF7FC">
+                  <tr style="background: #ecf7fc">
                     <td>
                       <ul>
-                        <li style="padding: 0.6vw;">需磨小牙齒及附近健康牙齒</li>
+                        <li style="padding: 0.6vw">需磨小牙齒及附近健康牙齒</li>
                       </ul>
                     </td>
                   </tr>
                   <tr>
                     <td>
                       <ul>
-                        <li>容易引致牙肉萎縮，<br>一段時間後需更換新牙托</li>
+                        <li>容易引致牙肉萎縮，<br />一段時間後需更換新牙托</li>
                       </ul>
                     </td>
-
                   </tr>
                 </table>
               </div>
@@ -499,7 +649,6 @@
 </template>
 <script>
 export default {
-
   data() {
     return {
       swiperOptions: {
@@ -507,34 +656,34 @@ export default {
         // spaceBetween: 10,
         slidesPerView: "1.1",
         pagination: {
-          el: '.swiper-pagination',
+          el: ".swiper-pagination",
           dynamicBullets: true,
         },
         on: {
           slideChange() {
-            console.log('onSlideChangeEnd', this);
+            console.log("onSlideChangeEnd", this);
           },
           tap() {
-            console.log('onTap', this);
-          }
-        }
+            console.log("onTap", this);
+          },
+        },
       },
       swiperOptions2: {
         // centeredSlides: true,
         // spaceBetween: 10,
         slidesPerView: "1.1",
         pagination: {
-          el: '#swiper2',
+          el: "#swiper2",
           dynamicBullets: true,
         },
         on: {
           slideChange() {
-            console.log('onSlideChangeEnd', this);
+            console.log("onSlideChangeEnd", this);
           },
           tap() {
-            console.log('onTap', this);
-          }
-        }
+            console.log("onTap", this);
+          },
+        },
       },
       flags: false,
       position: { x: 0, y: 0, left: 0, top: 0 },
@@ -542,26 +691,24 @@ export default {
       left: 0,
       judgeActive: 1,
       loading: false, //默认不显示loading
-      list: [{
-        id: 0,
-        title: '植牙過程'
-      },
-      {
-        id: 1,
-        title: '固定式牙橋過程'
-      }
+      list: [
+        {
+          id: 0,
+          title: "植牙過程",
+        },
+        {
+          id: 1,
+          title: "固定式牙橋過程",
+        },
       ],
-      currentIndex: 0,   // 当前点击的tab的索引
-    }
+      currentIndex: 0, // 当前点击的tab的索引
+    };
   },
-  computed: {
-  },
+  computed: {},
   mounted() {
     this.iframeLoad();
-
   },
   methods: {
-
     // 手指在屏幕上移动
     touchMove(ev) {
       // 未到达500毫秒就移动则不触发长按，清空按时器
@@ -570,9 +717,9 @@ export default {
     },
     drawBegin(e) {
       if (e === 1) {
-        this.judgeActive = 2
+        this.judgeActive = 2;
       } else {
-        this.judgeActive = 1
+        this.judgeActive = 1;
       }
       // this.$nextTick(() => {
       //       // dom元素更新后执行，因此这里能正确打印更改之后的值
@@ -587,8 +734,9 @@ export default {
       // const objX = mouseX-objLeft;
       // console.log(objX);
     },
-    end() { // 拖动结束的操作
-      this.flags = false
+    end() {
+      // 拖动结束的操作
+      this.flags = false;
     },
     getOffsetLeft(obj) {
       let tmp = obj.offsetLeft;
@@ -618,12 +766,11 @@ export default {
     },
     handleClick(index) {
       // console.log(index);
-      this.currentIndex = index
-      console.log('测试===========', this.currentIndex);
-    }
-  }
-}
-
+      this.currentIndex = index;
+      console.log("测试===========", this.currentIndex);
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>
@@ -633,7 +780,7 @@ export default {
 
   h2 {
     font-weight: 500;
-    color: #79828D;
+    color: #79828d;
     margin-bottom: 0vw;
   }
 
@@ -643,22 +790,82 @@ export default {
 }
 
 .serve_con {
-  color: #79828D;
+  color: #79828d;
   margin-top: 2vw;
   // margin-bottom: 2vw;
   font-size: 18px;
 }
 
-
 //pc
 @media only screen and (min-width: 760px) {
+  .hezuo {
+    padding: 0 110px;
+    p {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-top: 20px;
+      color: #57b2f3;
+    }
+    .img_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        margin: 0 10px;
+      }
+    }
+    .img_box img:nth-child(3) {
+      margin-bottom: 10px;
+    }
+  }
+  .step_list .bac-box p {
+    display: flex;
+    flex-direction: column;
+  }
+  .list_title {
+    text-align: center;
+    margin-top: 32px;
+    .title {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.1em;
 
+      color: #57b2f3;
+    }
+    span {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      color: #57b2f3;
+    }
+  }
+  .list_box {
+    display: flex;
+    justify-content: center;
+  }
   .num {
     margin-bottom: 1.5rem;
   }
 
   .bac-box {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .mbshow {
@@ -667,7 +874,7 @@ export default {
 
   .iframesty {
     width: 80%;
-    height: 690px
+    height: 690px;
   }
 
   .cosn {
@@ -677,7 +884,7 @@ export default {
   }
 
   .serve_con {
-    color: #79828D;
+    color: #79828d;
     margin-top: 46px;
     // margin-bottom: 2vw;
     font-size: 18px;
@@ -694,9 +901,8 @@ export default {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    padding-top: 32px;  
+    padding-top: 32px;
     // margin: 2vw 0;
-
   }
 
   .lists {
@@ -710,9 +916,9 @@ export default {
 
   .tablesd {
     margin-left: 30px;
-    color: #57B2F3;
+    color: #57b2f3;
     background-color: #fff;
-    border: 3px solid #9BD0F5;
+    border: 3px solid #9bd0f5;
     border-radius: 32px;
     border-collapse: separate;
     border-spacing: 0;
@@ -734,21 +940,21 @@ export default {
     th {
       text-align: center;
       color: #fff;
-      background-color: #57B2F3;
+      background-color: #57b2f3;
       border-radius: 30px 30px 0 0;
     }
 
     .thd {
-      color: #57B2F3;
-      background-color: #ECF7FC;
+      color: #57b2f3;
+      background-color: #ecf7fc;
       border-radius: 30px 30px 0 0;
     }
   }
 
   .tables {
-    color: #57B2F3;
+    color: #57b2f3;
     background-color: #fff;
-    border: 2px solid #9BD0F5;
+    border: 2px solid #9bd0f5;
     border-radius: 30px;
     border-collapse: separate;
     border-spacing: 0;
@@ -769,12 +975,12 @@ export default {
   .list_disd {
     li {
       font-size: 16px;
-      color: #79828D;
+      color: #79828d;
       margin-left: 1vw;
     }
 
     strong {
-      color: #79828D;
+      color: #79828d;
       font-size: 24px;
       font-weight: 500;
 
@@ -782,7 +988,7 @@ export default {
         content: "";
         margin-left: 15px;
         padding-left: 15px;
-        border-left: 14px solid #9BD0F5;
+        border-left: 14px solid #9bd0f5;
         height: 44px;
         display: inline-block;
         vertical-align: middle;
@@ -795,15 +1001,14 @@ export default {
   }
 
   .video {
-    background-image: linear-gradient(to bottom, #fff 375px, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 375px, #ecf7fc 0);
     // margin: 0 8vw;
   }
 
   .videos {
-    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 0%, #ecf7fc 0);
     // background-color: #ECF7FC;
     // margin: 0 8vw;
-
   }
 
   .video_con {
@@ -839,11 +1044,10 @@ export default {
       padding: 30px 10px 56px 20px !important;
       display: flex;
       align-items: self-start;
-
     }
 
     p {
-      color: #79828D;
+      color: #79828d;
       font-size: 18px;
       padding-left: 1vw;
       margin-bottom: 0rem;
@@ -865,12 +1069,11 @@ export default {
     display: flex;
     justify-content: center;
     position: relative;
-    background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
+    background-image: linear-gradient(to top, #fff 37%, #ecf7fc 0);
 
     img {
       width: 932px;
     }
-
   }
 
   ::v-deep .Advanbutton {
@@ -902,9 +1105,9 @@ export default {
 
         p {
           display: block;
-          color: #57B2F3;
+          color: #57b2f3;
           margin-bottom: 0rem;
-          font-family: 'Noto Sans CJK TC';
+          font-family: "Noto Sans CJK TC";
           font-style: normal;
           font-weight: 700;
           font-size: 15px;
@@ -920,13 +1123,24 @@ export default {
   }
 
   .list_con {
-    margin-top: 198px;
+    margin-top: 80px;
     width: 42%;
+    .span_title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 27px;
+      letter-spacing: 0.1em;
+
+      /* Grey Mid */
+
+      color: #9ba5b1;
+    }
     // width: 41vw;
   }
 
   .list_dis {
-    margin-top: 198px;
+    margin-top: 80px;
     // width: 41vw;
     padding-left: 5vw;
 
@@ -935,8 +1149,8 @@ export default {
       list-style-type: disc;
 
       li {
-        color: #9BA5B1;
-        font-family: 'Noto Sans CJK TC';
+        color: #9ba5b1;
+        font-family: "Noto Sans CJK TC";
         font-style: normal;
         font-weight: 400;
         font-size: 17.5px;
@@ -970,7 +1184,6 @@ export default {
     }
 
     .bac-box {
-
       text-align: left;
       color: #fff;
       // padding-left: 2vw;
@@ -980,9 +1193,9 @@ export default {
       p {
         padding-left: 40px;
         padding-top: 14px;
-        color: #9BA5B1;
+        color: #9ba5b1;
         display: flex;
-        font-family: 'Noto Sans CJK TC';
+        font-family: "Noto Sans CJK TC";
         font-style: normal;
         font-weight: 400;
         font-size: 17.5px;
@@ -993,8 +1206,8 @@ export default {
 
       strong {
         padding-left: 27px;
-        color: #9BA5B1;
-        font-family: 'Noto Sans CJK TC';
+        color: #9ba5b1;
+        font-family: "Noto Sans CJK TC";
         font-style: normal;
         font-size: 20px;
         line-height: 30px;
@@ -1005,7 +1218,7 @@ export default {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 11px solid #9BD0F5;
+          border-left: 11px solid #9bd0f5;
           height: 35px;
           display: inline-block;
           vertical-align: middle;
@@ -1015,20 +1228,81 @@ export default {
   }
 
   .list {
-    height: 472px;
+    height: 980px;
     margin-top: 82px;
-    background-image: linear-gradient(to bottom, #fff 22%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 12%, #ecf7fc 0);
   }
 }
 
 //md
 @media only screen and (max-width: 760px) {
+  .hezuo {
+    background: #ecf7fc;
+    margin-top: 61px;
+    p {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 30px;
+      /* identical to box height */
+      text-align: center;
+      letter-spacing: 0.1em;
+      margin-top: 20px;
+      color: #57b2f3;
+    }
+    .img_box {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      /* flex-direction: column; */
+      /* width: 234px; */
+      justify-content: center;
+      img {
+        margin: 0 10px;
+      }
+    }
+    .img_box img:nth-child(3) {
+      margin-bottom: 10px;
+    }
+  }
+  .step_list .bac-box p {
+    display: flex;
+    flex-direction: column;
+  }
+  .list_title {
+    padding: 0 5vw !important;
+    text-align: center;
+    margin-top: 32px;
+    .title {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      color: #57b2f3;
+    }
+    span {
+      font-family: "Noto Sans CJK TC";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      letter-spacing: 0.1em;
+
+      color: #57b2f3;
+    }
+  }
   .swiper-container {
     margin-top: -37px;
   }
 
   ::v-deep .swiper-pagination-bullet-active {
-    background-color: #57B2F3;
+    background-color: #57b2f3;
     width: 15px;
     height: 15px;
   }
@@ -1036,7 +1310,7 @@ export default {
   ::v-deep .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
-    background-color: #9BD0F5;
+    background-color: #9bd0f5;
   }
 
   .pcshow {
@@ -1055,7 +1329,7 @@ export default {
 
   .iframesty {
     width: 100%;
-    height: 234px
+    height: 234px;
   }
 
   .box {
@@ -1124,7 +1398,7 @@ export default {
 
         p {
           display: block;
-          color: #57B2F3;
+          color: #57b2f3;
           font-weight: bold;
           margin-bottom: 0rem;
           // font-size: 1.2rem;
@@ -1148,9 +1422,9 @@ export default {
 
   .tablesd {
     margin-left: 4vw;
-    color: #57B2F3;
+    color: #57b2f3;
     background-color: #fff;
-    border: 3px solid #9BD0F5;
+    border: 3px solid #9bd0f5;
     border-radius: 20px;
     border-collapse: separate;
     border-spacing: 0;
@@ -1173,21 +1447,21 @@ export default {
     th {
       text-align: center;
       color: #fff;
-      background-color: #57B2F3;
+      background-color: #57b2f3;
       border-radius: 17px 17px 0 0;
     }
 
     .thd {
-      color: #57B2F3;
-      background-color: #ECF7FC;
+      color: #57b2f3;
+      background-color: #ecf7fc;
       border-radius: 20px 20px 0 0;
     }
   }
 
   .tables {
-    color: #57B2F3;
+    color: #57b2f3;
     background-color: #fff;
-    border: 2px solid #9BD0F5;
+    border: 2px solid #9bd0f5;
     border-radius: 10px;
     border-collapse: separate;
     border-spacing: 0;
@@ -1208,12 +1482,12 @@ export default {
   .list_disd {
     li {
       font-size: 16px;
-      color: #79828D;
+      color: #79828d;
       margin-left: 2vw;
     }
 
     strong {
-      color: #79828D;
+      color: #79828d;
       font-size: 24px;
       font-weight: 500;
 
@@ -1221,7 +1495,7 @@ export default {
         content: "";
         margin-left: 15px;
         padding-left: 15px;
-        border-left: 1.8vw solid #9BD0F5;
+        border-left: 1.8vw solid #9bd0f5;
         height: 7vw;
         display: inline-block;
         vertical-align: middle;
@@ -1234,15 +1508,14 @@ export default {
   }
 
   .video {
-    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 0%, #ecf7fc 0);
     // margin: 0 8vw;
   }
 
   .videos {
-    background-image: linear-gradient(to bottom, #fff 0%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 0%, #ecf7fc 0);
     // background-color: #ECF7FC;
     // margin: 0 8vw;
-
   }
 
   .video_con {
@@ -1270,11 +1543,10 @@ export default {
       padding: 5vw 1vw;
       display: flex;
       align-items: center;
-
     }
 
     p {
-      color: #79828D;
+      color: #79828d;
       font-size: 18px;
       padding-left: 1vw;
       margin-bottom: 0rem;
@@ -1297,15 +1569,14 @@ export default {
     display: flex;
     justify-content: center;
     position: relative;
-    background-image: linear-gradient(to top, #fff 37%, #ECF7FC 0);
-    margin-top: 15vw;
-
+    background-image: linear-gradient(to top, #fff 37%, #ecf7fc 0);
+    padding-top: 15vw !important;
+    margin: 0 !important;
     img {
       margin-top: 10vw;
       width: 126%;
       height: 100%;
     }
-
   }
 
   .list_con {
@@ -1318,7 +1589,7 @@ export default {
 
   .list_dis {
     li {
-      color: #9BA5B1;
+      color: #9ba5b1;
     }
 
     ul {
@@ -1343,7 +1614,7 @@ export default {
   }
 
   .bac-box {
-    background-image: linear-gradient(to bottom, #fff 30%, #ECF7FC 0);
+    background-image: linear-gradient(to bottom, #fff 15%, #ecf7fc 0);
 
     img {
       display: flex;
@@ -1357,20 +1628,20 @@ export default {
 
   p {
     padding: 1vw 1vw;
-    color: #9BA5B1;
+    color: #9ba5b1;
   }
 
   strong {
     padding-top: 2vw;
     // padding-left: 4vw;
-    color: #9BA5B1;
+    color: #9ba5b1;
   }
 
   strong:before {
     content: "";
     margin-left: 15px;
     padding-left: 15px;
-    border-left: 1.8vw solid #9BD0F5;
+    border-left: 1.8vw solid #9bd0f5;
     height: 7vw;
     display: inline-block;
     vertical-align: middle;

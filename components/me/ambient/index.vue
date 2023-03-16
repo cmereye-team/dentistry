@@ -110,7 +110,7 @@
         </div>
         <div class="carousel-item">
           <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
+            <div class="border_corner border_cor  ner_left_top"></div>
             <div class="border_corner border_corner_right_top"></div>
             <div class="border_corner border_corner_left_bottom"></div>
             <div class="border_corner border_corner_right_bottom"></div>
