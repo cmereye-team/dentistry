@@ -22,9 +22,7 @@
             <div class="list_title">
               <span>
                 <span class="title">植牙，俗稱為「種牙」，</span> <br />
-                植牙，俗稱為「種牙」，<br
-                  class="mbShow"
-                />是處理缺牙的一種治療方法。<br />
+                是處理缺牙的一種治療方法。<br />
                 牙醫會把植體植入病人的牙槽骨內，待骨整合後用以支撐上面的牙套。
               </span>
             </div>
