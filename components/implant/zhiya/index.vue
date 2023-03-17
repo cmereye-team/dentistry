@@ -1129,10 +1129,22 @@ export default {
       font-size: 18px;
       line-height: 27px;
       letter-spacing: 0.1em;
-
+      position: relative;
       /* Grey Mid */
 
       color: #9ba5b1;
+    }
+    .span_title::before {
+      content: "";
+      display: block;
+      width: 5px;
+      height: 5px;
+      background: #999999;
+      border-radius: 50%;
+      margin-right: 6px;
+      position: absolute;
+      top: 9px;
+      left: -12px;
     }
     // width: 41vw;
   }
@@ -1189,7 +1201,7 @@ export default {
       // display: flex;
 
       p {
-        padding-left: 40px;
+        padding-left: 57px;
         padding-top: 14px;
         color: #9ba5b1;
         display: flex;
@@ -1234,6 +1246,39 @@ export default {
 
 //md
 @media only screen and (max-width: 760px) {
+  .img_box img:nth-child(1) {
+    margin-bottom: 15px !important;
+  }
+  .img_box img:nth-child(3) {
+    margin-bottom: 15px !important;
+  }
+  .img_box img:nth-child(4) {
+    margin-bottom: 15px !important;
+  }
+  .span_title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0.1em;
+    position: relative;
+    /* Grey Mid */
+
+    color: #9ba5b1;
+  }
+  .span_title::before {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #999999;
+    border-radius: 50%;
+    margin-right: 6px;
+    position: absolute;
+    top: 9px;
+    left: -12px;
+  }
+
   .hezuo {
     background: #ecf7fc;
     margin-top: 61px;
@@ -1267,6 +1312,7 @@ export default {
   .step_list .bac-box p {
     display: flex;
     flex-direction: column;
+    margin-left: 13px;
   }
   .list_title {
     padding: 0 5vw !important;
