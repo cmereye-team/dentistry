@@ -22,7 +22,7 @@ export default {
       },
       {
         async: "async",
-        src:'https://www.googletagmanager.com/gtag/js?id=GT-5NPSM7'
+        src: 'https://www.googletagmanager.com/gtag/js?id=GT-5NPSM7'
       },
       {
         innerHTML: `
@@ -36,11 +36,11 @@ export default {
       },
       {
         async: "async",
-        src:'https://ackee-vercl-monitoring-panel-uccy.vercel.app/tracker.js',
-        'data-ackee-server':'https://ackee-vercl-monitoring-panel-uccy.vercel.app',
-        'data-ackee-domain-id':'4de5a0a3-c191-4c42-842f-99d9c15e9c90',
+        src: 'https://ackee-vercl-monitoring-panel-uccy.vercel.app/tracker.js',
+        'data-ackee-server': 'https://ackee-vercl-monitoring-panel-uccy.vercel.app',
+        'data-ackee-domain-id': '4de5a0a3-c191-4c42-842f-99d9c15e9c90',
         type: 'text/javascript',
-        body:true
+        body: true
       },
       {
         innerHTML: `
@@ -59,7 +59,7 @@ export default {
       {
         src:
           "./plugins/gtm.js",
-        body:true
+        body: true
       },
     ],
     htmlAttrs: {
@@ -67,7 +67,7 @@ export default {
     },
     meta: [
       { charset: 'utf-8' },
-      { name:"facebook-domain-verification", content:"jn1yymxpim2vt1z66kcb6pnr3xloyn"},
+      { name: "facebook-domain-verification", content: "jn1yymxpim2vt1z66kcb6pnr3xloyn" },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
@@ -75,10 +75,10 @@ export default {
       { name: 'google-site-verification', content: 'E_dAKmUzK5oAQ-MryRzmecGXd1UUlgIrF-K-q_jMQZs' }
     ],
     link: [
-      { rel: 'stylesheet',  href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.svg' },
-      { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css'},
-      { rel: 'stylesheet',type: 'text/css', href:'https://static.cmereye.com/static/css/cmerdental/vikim.css'}
+      { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://static.cmereye.com/static/css/cmerdental/vikim.css' }
     ]
   },
 
@@ -98,22 +98,22 @@ export default {
     { src: '~/plugins/tag.js', mode: 'client' },
     { src: "~/plugins/vue-swiper.js", ssr: false },
     '@/plugins/element-ui'
-    
+
   ],
   // Modules: https://go.nuxtjs.dev/config-modules  站点地图
   modules: [
     '@nuxtjs/sitemap',
   ],
-  sitemap:sitemap,
+  sitemap: sitemap,
   //重定向路由
   router: {
     extendRoutes: (routes, resolve) => {
-        // 清空Nuxt.js自动生成的路由
-        routes.splice(0);
-        // 重新将自定义路由配置设置进去
-        routes.push(...getRoutes(resolve));
+      // 清空Nuxt.js自动生成的路由
+      routes.splice(0);
+      // 重新将自定义路由配置设置进去
+      routes.push(...getRoutes(resolve));
     }
-},
+  },
 
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -122,10 +122,13 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
   ],
-
+  server: {
+    port: 3006, // default: 3000
+    host: "0.0.0.0", // default: localhost
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
-  }
+  } 
 }

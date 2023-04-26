@@ -6,59 +6,62 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
       </div>
       <div class="form">
-        <el-form :inline="true" label-position="top" :model="ruleForm" ref="ruleForm" label-width="100px"
-          class="main-container demo-form-inline wpcf7-form invalid" id="msgForm" target="frameName"
-          action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post"
-          novalidate="novalidate" data-status="invalid">
+        <el-form :inline="true" label-position="top" :model="ruleForm"  ref="ruleForm" label-width="100px"
+          class="main-container demo-form-inline wpcf7-form invalid"  id="msgForm"  target="frameName"
+          action="https://api.cmerdental.com/index.php/ces/#wpcf7-f128-p130-o1" method="post" novalidate="novalidate"
+          data-status="invalid" >
           <div>
-            <div style="display: none;">
-              <input type="hidden" name="pageUrl" value="128"> 
-            </div>
-            <el-form-item label="姓名" prop="name">
-              <span class="wpcf7-form-control-wrap" data-name="your-name">
-                <el-input v-model="ruleForm.name" type="text" placeholder="請輸入你的姓名" name="name" value="" size="40"
-                  class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" aria-required="true"
-                  aria-invalid="true" aria-describedby="wpcf7-f128-p130-o1-ve-your-name" /></span>
-            </el-form-item>
+          <div style="display: none;"> <input type="hidden" name="_wpcf7" value="128"> <input type="hidden"
+              name="_wpcf7_version" value="5.6.1"> <input type="hidden" name="_wpcf7_locale" value="zh_CN"> <input
+              type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f128-p130-o1"> <input type="hidden"
+              name="_wpcf7_container_post" value="130">
+            <input type="hidden" name="_wpcf7_posted_data_hash" value="">
+          </div>
+          <el-form-item label="姓名"  prop="name" >
+            <span class="wpcf7-form-control-wrap" data-name="your-name">
+              <el-input  v-model="ruleForm.name" type="text" placeholder="請輸入你的答案" name="your-name" value="" size="40"
+                class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required wpcf7-not-valid" aria-required="true"
+                aria-invalid="true" aria-describedby="wpcf7-f128-p130-o1-ve-your-name" /></span>
+          </el-form-item>
 
-            <span class="wpcf7-form-control-wrap" data-name="radio-511">
-              <el-form-item label="稱呼" prop="resource">
-                <el-radio-group v-model="ruleForm.resource">
-                  <el-radio name="sex" label="先生"></el-radio>
-                  <el-radio name="sex" label="女士"></el-radio>
-                  <el-radio name="sex" label="小姐"></el-radio>
-                </el-radio-group>
-              </el-form-item>
-            </span>
-          </div>
-          <div>
-            <span class="wpcf7-form-control-wrap" data-name="tel-813">
-              <el-form-item label="電話號碼" prop="phone">
-                <el-input type="tel" name="phone" value="" v-model="ruleForm.phone" placeholder="請輸入你的電話號碼"
-                  class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false" />
-                <!-- <el-input name="tel-813" v-model="ruleForm.phone" placeholder="請輸入你的答案"></el-input> -->
-              </el-form-item>
-            </span>
-            <span class="wpcf7-form-control-wrap" data-name="your-email">
-              <el-form-item label="電郵地址" prop="address">
-                <el-input v-model="ruleForm.address" type="email" name="email" value="" placeholder="請輸入你的郵電地址"
-                  class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-not-valid"
-                  aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f128-p130-o1-ve-your-email" />
-                <!-- <el-input v-model="ruleForm.address" name="your-email" placeholder="請輸入你的答案"></el-input> -->
-              </el-form-item>
-            </span>
-          </div>
-          <span class="wpcf7-form-control-wrap" data-name="menu-809">
-            <el-form-item label="診症選擇">
-              <el-select name="symptom" v-model="ruleForm.region" class="wpcf7-form-control wpcf7-select" id="Options"
-                aria-invalid="false" placeholder="請選擇你的症狀">
-                <!-- <el-option value="植牙">植牙</el-option> -->
-                <!-- <option value="根管治療(杜牙根)">根管治療(杜牙根)</option>
-              <option value="Invisalign(隱形牙箍)">Invisalign(隱形牙箍)</option> -->
-                <el-option v-for="item in selectList" :key="item.id" :label="item.itemName" :value="item.itemName" />
-              </el-select>
+          <span class="wpcf7-form-control-wrap" data-name="radio-511">
+            <el-form-item label="稱呼" prop="resource">
+              <el-radio-group v-model="ruleForm.resource">
+                <el-radio name="radio-511" label="先生"></el-radio>
+                <el-radio name="radio-511" label="女士"></el-radio>
+                <el-radio name="radio-511" label="小姐"></el-radio>
+              </el-radio-group>
             </el-form-item>
           </span>
+        </div>
+        <div>
+          <span class="wpcf7-form-control-wrap" data-name="tel-813">
+            <el-form-item label="電話號碼" prop="phone">
+              <el-input type="tel" name="tel-813" value="" v-model="ruleForm.phone" placeholder="請輸入你的答案"
+                class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel" aria-invalid="false"/>
+              <!-- <el-input name="tel-813" v-model="ruleForm.phone" placeholder="請輸入你的答案"></el-input> -->
+            </el-form-item>
+          </span>
+          <span class="wpcf7-form-control-wrap" data-name="your-email">
+            <el-form-item label="電郵地址" prop="address">
+              <el-input  v-model="ruleForm.address" type="email" name="your-email" value=""  placeholder="請輸入你的答案"
+                class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email wpcf7-not-valid"
+                aria-required="true" aria-invalid="true" aria-describedby="wpcf7-f128-p130-o1-ve-your-email"/>
+              <!-- <el-input v-model="ruleForm.address" name="your-email" placeholder="請輸入你的答案"></el-input> -->
+            </el-form-item>
+          </span>
+        </div>
+          <span  class="wpcf7-form-control-wrap" data-name="menu-809">
+            <el-form-item label="診症選擇">
+            <el-select name="menu-809[]"  v-model="ruleForm.region"
+              class="wpcf7-form-control wpcf7-select" id="Options" aria-invalid="false" placeholder="請輸入你的答案" >
+              <!-- <el-option value="植牙">植牙</el-option> -->
+              <!-- <option value="根管治療(杜牙根)">根管治療(杜牙根)</option>
+              <option value="Invisalign(隱形牙箍)">Invisalign(隱形牙箍)</option> -->
+                  <el-option v-for="item in selectList" :key="item.id" :label="item.itemName" :value="item.itemName"/>
+            </el-select>
+            </el-form-item>
+            </span>
           <!-- <span class="wpcf7-form-control-wrap" data-name="menu-685">
               <el-form-item label="診症選擇">
                 <el-select name="menu-685" v-model="ruleForm.region" placeholder="請輸入你的答案">
@@ -69,41 +72,41 @@
             </span> -->
           <div class="radioInfo">
             <div class="radiocon">
-              <el-radio v-model="radio" name="我已知曉内容皆保密處理" @click.native.prevent="clickitem(1)" :label="1">
+              <el-radio v-model="radio" @click.native.prevent="clickitem(1)" :label="1">
                 閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br>閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
               </el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio1" name="我已知曉同意收集個人資料及私隱" @click.native.prevent="clickitem(2)" :label="2">
+              <el-radio v-model="radio1" @click.native.prevent="clickitem(2)" :label="2">
                 本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio2" name=" 本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。" @click.native.prevent="clickitem(3)" :label="3">
+              <el-radio v-model="radio2" @click.native.prevent="clickitem(3)" :label="3">
                 本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br>折扣及其他優惠資訊。</el-radio>
             </div>
           </div>
           <div class="radioInfo1">
             <div class="radiocon">
-              <el-radio v-model="radio"  name="我已知曉内容皆保密處理"  @click.native.prevent="clickitem(1)" :label="1">
+              <el-radio v-model="radio" @click.native.prevent="clickitem(1)" :label="1">
                 閣下必須提前至少三個工作天進行網上預約；<br>網上提交表格並不等於預約成功，閣下將會在兩<br>個工作天內以電話或電郵收取預約確認通知；<br>閣下所提供的個人信息只會用於預約服務，<br>所有內容皆會保密處理。
               </el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio1" name="我已知曉同意收集個人資料及私隱" @click.native.prevent="clickitem(2)" :label="2">
+              <el-radio v-model="radio1" @click.native.prevent="clickitem(2)" :label="2">
                 本人已閱讀，明白及同意收集個人資料及<br><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio2"  name=" 本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。"  @click.native.prevent="clickitem(3)" :label="3">
+              <el-radio v-model="radio2" @click.native.prevent="clickitem(3)" :label="3">
                 本人願意日後收取希瑪醫療集團以及其關連<br>公司之產品資料及宣傳資訊。如選擇拒絕，本<br>人同時不會收到貴公司的任何禮品、折扣及其<br>他優惠資訊。</el-radio>
             </div>
           </div>
-          <div class="button">
+          <div class="button" >
             <!-- @click="submitButt()" -->
-            <button class="link_more submitButt" type="submit" value="Submit">提交</button>
+            <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt" >提交</button>
           </div>
         </el-form>
         <div style="display: none;">
-          <iframe src="" frameborder="0" name="frameName"></iframe>
+        <iframe src="" frameborder="0" name="frameName"></iframe>
         </div>
       </div>
 
@@ -164,7 +167,7 @@
 export default {
   data() {
     return {
-
+     
       selectList: [
         { itemName: '植牙', id: 1 },
         { itemName: '根管治療(杜牙根)', id: 2 },
@@ -225,28 +228,28 @@ export default {
   },
 
   methods: {
-    // submitButt(){
-    //   if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
-    //   this.ruleForm.resource === ''){
-    //     alert("請完善信息！");
-    //     // return false;
-    //   }else if(localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)){
-    //     this.ruleForm = {}      
-    //     alert("我们已经收到啦~请不要重复提交");
-    //     location.reload();
-
-    //     // return false;
-
-
-    //   }else{
-    //     alert("提交成功！");
-    //     localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-    //     location.reload();
-    //     // return true;
-
-
-    //   }
-    // },
+    submitButt(){
+      if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
+      this.ruleForm.resource === ''){
+        alert("請完善信息！");
+        // return false;
+      }else if(localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)){
+        this.ruleForm = {}      
+        alert("我们已经收到啦~请不要重复提交");
+        location.reload();
+        
+        // return false;
+        
+        
+      }else{
+        alert("提交成功！");
+        localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
+        location.reload();
+        // return true;
+        
+        
+      }
+    },
     clickitem(e) {
       console.log(e);
       console.log(this.radio, this.radio2, this.radio3);
@@ -262,10 +265,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-a {
+a{
   text-decoration: none;
 }
-
 .texts {
   text-align: center;
 
@@ -364,7 +366,6 @@ a {
     padding-bottom: 5vw;
     background: #9BD0F5;
     padding-top: 50px;
-
     .radiocon {
       padding-bottom: 1vw;
 
@@ -391,7 +392,7 @@ a {
     //     display: flex;
     //     justify-content: center;
     form {
-      margin: 9vw 2.5vw 5vw 8.5vw;
+     margin: 9vw 2.5vw 5vw 8.5vw;
     }
 
     .el-select {
@@ -457,7 +458,6 @@ a {
     padding-left: 10px;
     font-size: 14px;
   }
-
   .button {
     background: #9BD0F5;
     padding-bottom: 15vw;
@@ -476,7 +476,6 @@ a {
       letter-spacing: 0.2vw;
       text-align: center;
       border: 1px;
-
       &:hover {
         animation: 3s ease-in 1s 2 reverse both paused slidein;
       }
@@ -542,4 +541,5 @@ a {
 
 }
 </style>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>
