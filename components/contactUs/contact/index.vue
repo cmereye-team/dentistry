@@ -68,31 +68,31 @@
             </span> -->
           <div class="radioInfo">
             <div class="radiocon">
-              <el-radio v-model="radio" name="confidentiality" label="我已知曉内容皆保密處理">
+              <el-radio v-model="radio" name="confidentiality" value="我已知曉内容皆保密處理">
                 閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br>閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
               </el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio1" name="privary" label="我已知曉同意收集個人資料及私隱">
+              <el-radio v-model="radio1" name="privary" value="我已知曉同意收集個人資料及私隱">
                 本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio2" name="broadcast" label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+              <el-radio v-model="radio2" name="broadcast" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                 本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br>折扣及其他優惠資訊。</el-radio>
             </div>
           </div>
           <div class="radioInfo1">
             <div class="radiocon">
-              <el-radio v-model="radio" name="confidentiality" label="我已知曉内容皆保密處理">
+              <el-radio v-model="radio" name="confidentiality" value="我已知曉内容皆保密處理">
                 閣下必須提前至少三個工作天進行網上預約；<br>網上提交表格並不等於預約成功，閣下將會在兩<br>個工作天內以電話或電郵收取預約確認通知；<br>閣下所提供的個人信息只會用於預約服務，<br>所有內容皆會保密處理。
               </el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio1" name="privary" label="我已知曉同意收集個人資料及私隱">
+              <el-radio v-model="radio1" name="privary" value="我已知曉同意收集個人資料及私隱">
                 本人已閱讀，明白及同意收集個人資料及<br><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
             </div>
             <div class="radiocon">
-              <el-radio v-model="radio2" name="broadcast" label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+              <el-radio v-model="radio2" name="broadcast" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                 本人願意日後收取希瑪醫療集團以及其關連<br>公司之產品資料及宣傳資訊。如選擇拒絕，本<br>人同時不會收到貴公司的任何禮品、折扣及其<br>他優惠資訊。</el-radio>
             </div>
           </div>
