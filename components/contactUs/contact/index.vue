@@ -7,8 +7,7 @@
       </div>
       <div class="form">
         <el-form :inline="true" label-position="top" :model="ruleForm" ref="ruleForm" label-width="100px"
-          class="main-container demo-form-inline wpcf7-form invalid"
-          action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
+          class="main-container demo-form-inline wpcf7-form invalid" action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
           <div>
             <div style="display: none;">
               <input type="hidden" name="pageUrl" value="https://cmerdental.com/contact-us">
@@ -98,9 +97,11 @@
           </div>
           <div class="button">
             <!-- @click="submitButt()" -->
-            <button class="link_more submitButt" type="submit" value="Submit">提交</button>
+            <!-- <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt">提交</button> -->
+            <el-button class="link_more submitButt" type="submit" value="Submit" @click="submitButt">提交</el-button>
           </div>
         </el-form>
+        
         <div style="display: none;">
           <iframe src="" frameborder="0" name="frameName"></iframe>
         </div>
@@ -224,28 +225,30 @@ export default {
   },
 
   methods: {
-    // submitButt(){
-    //   if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
-    //   this.ruleForm.resource === ''){
-    //     alert("請完善信息！");
-    //     // return false;
-    //   }else if(localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)){
-    //     this.ruleForm = {}      
-    //     alert("我们已经收到啦~请不要重复提交");
-    //     location.reload();
+    submitButt(e){
+      // console.log(this.ruleForm,e)
+      // return
+      if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
+      this.ruleForm.resource === ''){
+        alert("請完善信息！");
+        // return false;
+      }else if(localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)){
+        this.ruleForm = {}      
+        alert("我们已经收到啦~请不要重复提交");
+        location.reload();
 
-    //     // return false;
-
-
-    //   }else{
-    //     alert("提交成功！");
-    //     localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-    //     location.reload();
-    //     // return true;
+        // return false;
 
 
-    //   }
-    // },
+      }else{
+        alert("提交成功！");
+        localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
+        location.reload();
+        // return true;
+
+
+      }
+    },
     // clickitem(e) {
     //   console.log(e);
     //   console.log(this.radio, this.radio2, this.radio3);
