@@ -7,8 +7,7 @@
       </div>
       <div class="form">
         <el-form :inline="true" label-position="top" :model="ruleForm" ref="ruleForm" label-width="100px"
-          class="main-container demo-form-inline wpcf7-form invalid"
-          action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
+          class="main-container demo-form-inline wpcf7-form invalid">
           <div>
             <div style="display: none;">
               <input type="hidden" name="pageUrl" value="https://cmerdental.com/contact-us">
@@ -98,8 +97,8 @@
           </div>
           <div class="button">
             <!-- @click="submitButt()" -->
-            <button class="link_more submitButt" type="submit" value="Submit">提交</button>
-            <!-- <el-button class="link_more submitButt" type="submit" value="Submit" @click="submitButt">提交</el-button> -->
+            <!-- <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt()">提交</button> -->
+            <div class="link_more submitButt" @click="submitButt">提交</div>
           </div>
         </el-form>
         
@@ -162,6 +161,7 @@
   </div>
 </template>
 <script>
+import { postFormData }from '@/api/index.js'
 export default {
   data() {
     return {
@@ -183,9 +183,9 @@ export default {
         { itemName: '兒童牙科保健及治療', id: 14 },
 
       ],
-      radio: '',
-      radio1: '',
-      radio2: '',
+      radio: true,
+      radio1: true,
+      radio2: true,
       ruleForm: {
         name: '',
         region: '',
@@ -242,9 +242,28 @@ export default {
 
 
       }else{
-        alert("提交成功！");
-        localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-        location.reload();
+        
+        let _params = {
+          pageUrl: 'https://cmerdental.com/contact-us',
+          name: this.ruleForm.name || '',
+          sex: this.ruleForm.resource || '',
+          phone: this.ruleForm.phone || '',
+          email: this.ruleForm.address || '',
+          symptom: this.ruleForm.region || '',
+          confidentiality: !this.radio ? '我已知曉内容皆保密處理' : '',
+          privary: !this.radio1 ? '我已知曉同意收集個人資料及私隱' : '',
+          broadcast: !this.radio2 ? '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。': ''
+        }
+        // console.log(_params)
+        postFormData(_params).then((res)=>{
+          // console.log(res)
+          alert("提交成功！");
+          localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
+          location.reload();
+        }).catch((err)=>{
+          alert("提交失败！");
+        })
+        // location.reload();
         // return true;
 
 
