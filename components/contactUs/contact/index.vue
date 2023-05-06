@@ -7,7 +7,8 @@
       </div>
       <div class="form">
         <el-form :inline="true" label-position="top" :model="ruleForm" ref="ruleForm" label-width="100px"
-          class="main-container demo-form-inline wpcf7-form invalid">
+          class="main-container demo-form-inline wpcf7-form invalid"
+          action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
           <div>
             <div style="display: none;">
               <input type="hidden" name="pageUrl" value="https://cmerdental.com/contact-us">
@@ -97,8 +98,8 @@
           </div>
           <div class="button">
             <!-- @click="submitButt()" -->
-            <!-- <button class="link_more submitButt" type="submit" value="Submit" @click="submitButt()">提交</button> -->
-            <div class="link_more submitButt" @click="submitButt">提交</div>
+            <button class="link_more submitButt" type="submit" value="Submit">提交</button>
+            <!-- <div class="link_more submitButt" @click="submitButt">提交</div> -->
           </div>
         </el-form>
         
