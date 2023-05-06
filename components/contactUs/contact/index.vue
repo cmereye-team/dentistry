@@ -98,8 +98,8 @@
           </div>
           <div class="button">
             <!-- @click="submitButt()" -->
-            <button class="link_more submitButt" type="submit" value="Submit">提交</button>
-            <!-- <div class="link_more submitButt" @click="submitButt">提交</div> -->
+            <button ref="submitButt" v-show="false" class="link_more submitButt" type="submit" value="Submit" @click="aa">提交</button>
+            <div class="link_more submitButt" @click="submitButt">提交</div>
           </div>
         </el-form>
         
@@ -162,7 +162,7 @@
   </div>
 </template>
 <script>
-import { postFormData }from '@/api/index.js'
+// import { postFormData }from '@/api/index.js'
 export default {
   data() {
     return {
@@ -227,9 +227,10 @@ export default {
   },
 
   methods: {
-    submitButt(e){
-      // console.log(this.ruleForm,e)
-      // return
+    aa(){
+      console.log('提交表单了')
+    },
+    submitButt(){
       if(this.ruleForm.name === '' || this.ruleForm.region === '' || this.ruleForm.phone === '' || this.ruleForm.address === '' ||
       this.ruleForm.resource === ''){
         alert("請完善信息！");
@@ -244,29 +245,12 @@ export default {
 
       }else{
         
-        let _params = {
-          pageUrl: 'https://cmerdental.com/contact-us',
-          name: this.ruleForm.name || '',
-          sex: this.ruleForm.resource || '',
-          phone: this.ruleForm.phone || '',
-          email: this.ruleForm.address || '',
-          symptom: this.ruleForm.region || '',
-          confidentiality: !this.radio ? '我已知曉内容皆保密處理' : '',
-          privary: !this.radio1 ? '我已知曉同意收集個人資料及私隱' : '',
-          broadcast: !this.radio2 ? '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。': ''
-        }
-        // console.log(_params)
-        postFormData(_params).then((res)=>{
-          // console.log(res)
-          alert("提交成功！");
-          localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-          location.reload();
-        }).catch((err)=>{
-          alert("提交失败！");
-        })
+        alert("提交成功！");
+        localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
+        this.$refs.submitButt.click()
         // location.reload();
-        // return true;
 
+        // return true;
 
       }
     },
@@ -372,7 +356,7 @@ a {
       width: 10vw;
       letter-spacing: 0.2vw;
       text-align: center;
-
+      cursor: pointer;
       &:hover {
         animation: 3s ease-in 1s 2 reverse both paused slidein;
       }
