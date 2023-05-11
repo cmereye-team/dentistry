@@ -1,7 +1,7 @@
 <template>
 <div id="lay">
   <menuBar/>
-  <Banner />
+  <!-- <Banner /> -->
   <footce/>
   <serve/>
   <mapGoogle/>
@@ -16,7 +16,7 @@ import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
 import serve from "@/components/about-me/serve/index.vue"
-import Banner from "@/components/service/banner/index.vue"
+// import Banner from "@/components/service/banner/index.vue"
 
 export default {
    components: { 
@@ -25,7 +25,7 @@ export default {
     serve,
     mapGoogle,
     foot,
-    Banner
+    // Banner
     },
      mounted(){
        document.getElementsByTagName("body")[0].className="body-service";
