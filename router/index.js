@@ -165,6 +165,11 @@
   component: resolve('pages/policy'),
 
 },
+{
+  path: '/service',
+  component: resolve('pages/service'),
+
+},
 
   // {
   //     path: '*',

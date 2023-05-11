@@ -20,7 +20,7 @@
               <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
             </li>
             <li class="nav-item dropdown">
-              <nuxt-link class="nav-link dropdown-toggle yaserve" to="#" id="navbarDropdownMenuLink" role="button"
+              <nuxt-link class="nav-link dropdown-toggle yaserve" to="/service" id="navbarDropdownMenuLink" role="button" @click.native="toServicePages"
                 data-bs-toggle="dropdown">牙科服務</nuxt-link>
                 <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
                 <ul class="dropdown-menu">
@@ -439,7 +439,7 @@
               <!-- <a class="nav-link" href="/doctorTeam">我們的團隊</a> -->
             </li>
             <li class="nav-item dropdown">
-              <nuxt-link class="nav-link dropdown-toggle yaserve" to="#" id="navbarDropdownMenuLink" role="button"
+              <nuxt-link class="nav-link dropdown-toggle yaserve" to="/service" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown">牙科服務</nuxt-link>
               <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
            牙科服務
@@ -814,7 +814,7 @@
                 <!-- <a class="nav-link" href="/doctorTeam">我們的團隊</a> -->
               </li>
               <li class="nav-item dropdown">
-                <nuxt-link class="nav-link dropdown-toggle" to="#" id="navbarDropdownMenuLink" role="button"
+                <nuxt-link class="nav-link dropdown-toggle" to="/service" id="navbarDropdownMenuLink" role="button"  
                   data-bs-toggle="dropdown">牙科服務</nuxt-link>
                 <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown">
            牙科服務
@@ -910,10 +910,12 @@ export default {
 
   },
   mounted(){
-    
   },
   methods: {
-    
+    toServicePages(){
+      // console.log(1)
+      this.$router.push('/service')
+    },
     chickHandle(){
       if(this.isClosed === 0){
         this.isClosed = 1
