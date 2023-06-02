@@ -64,7 +64,6 @@ export default {
 //pc
 @media only screen and (min-width: 740px) {
   .step_list {
-    // width: 80vw;
     padding-left: 0px;
     margin: 0 auto;
     text-align: center;
@@ -72,10 +71,6 @@ export default {
     justify-content: center;
     max-width: 780px;
     img {
-      // width:auto;
-      // height:auto;
-      // max-width:100%;
-      // max-height:100%;
       margin-bottom: 2vw;
       padding: 0 2vw;
     }
@@ -83,7 +78,6 @@ export default {
     li {
       text-align: left;
       color: #fff;
-      // padding-left: 2vw;
       margin: 0 2vw;
 
       p {
@@ -92,7 +86,7 @@ export default {
         font-family: "Noto Sans CJK TC";
         font-style: normal;
         font-weight: 400;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 22px;
         text-align: justify;
         letter-spacing: 0.1em;
@@ -100,19 +94,15 @@ export default {
       }
 
       strong {
-        padding-left: 2vw;
+        padding-left: 15px;
         font-weight: 400;
-        font-size: 19px;
-
-        &:before {
-          content: "";
-          margin-left: 15px;
-          padding-left: 15px;
-          border-left: 8px solid #ecf7fc;
-          height: 30px;
-          display: inline-block;
-          vertical-align: middle;
-        }
+        font-size: 33px;
+        margin-top: 17px;
+        border-left: 10px solid #ecf7fc;
+        margin-left: calc(2vw + 10px);
+        height: 40px;
+        line-height: 40px;
+        display: inline-block;
       }
     }
   }
@@ -144,23 +134,21 @@ export default {
   p {
     padding: 2vw 4vw 9vw 4vw;
     color: #fff;
+    font-size: 17px;
   }
 
   strong {
-    padding-top: 2vw;
+    margin-top: 17px;
     padding-left: 4vw;
     color: #fff;
     font-weight: 400;
+    font-size: 33px;
+    border-left: 10px solid #ecf7fc;
+    margin-left: calc(2vw + 10px);
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
   }
 
-  strong:before {
-    content: "";
-    margin-left: 15px;
-    padding-left: 15px;
-    border-left: 2vw solid #ecf7fc;
-    height: 6vw;
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 </style>

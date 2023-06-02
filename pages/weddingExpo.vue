@@ -22,7 +22,9 @@
                   <div class="title">激光美白原理</div>
                   <div class="text">激光牙齒美白是一種利用激光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。它的原理是利用激光能量的選擇性吸收，將激光能量聚焦在牙齒表面的色素沈積物上，使色素沈積物分解、氧化或蒸發，從而達到美白效果。具體有關激光牙齒美白會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
-                  <div class="btn">立即預約講座</div>
+                  <a href="https://api.whatsapp.com/send?phone=85295153927&text=激光美白原理">
+                    <div class="btn">立即預約講座</div>
+                  </a>
                 </div>
               </div>
               <div>
@@ -31,14 +33,16 @@
                   <div class="title">隱形牙箍矯正原理</div>
                   <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
-                  <div class="btn">立即預約講座</div>
+                  <a href="https://api.whatsapp.com/send?phone=85295153927&text=隱形牙箍矯正原理">
+                    <div class="btn">立即預約講座</div>
+                  </a>
                 </div>
               </div>
             </div>
       </div>
-      <div class="ad">
-        <div class="ad-title">*由即日起預約講座，每人可獲得7月婚展門票一張，數量有限。</div>
-        <div class="ad-in">
+      <div class="boxAd">
+        <div class="boxAd-title">*由即日起預約講座，每人可獲得7月婚展門票一張，數量有限。</div>
+        <div class="boxAd-in">
           <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
           srcset="https://static.cmereye.com/imgs/2023/06/a6c753b471c186b2.png 600w, https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
           title="牙科服務" alt="牙科服務" src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" />
@@ -107,7 +111,7 @@ export default {
     &-t{
         font-family: 'Noto Sans CJK TC';
         font-style: normal;
-        font-weight: 500;
+        font-weight: bold;
         font-size: 20px;
         line-height: 30px;
         text-align: center;
@@ -118,7 +122,7 @@ export default {
     h2{
         font-family: 'Noto Sans CJK TC';
         font-style: normal;
-        font-weight: 500;
+        font-weight: bold;
         font-size: 25px;
         line-height: 37px;
         text-align: center;
@@ -154,8 +158,8 @@ export default {
     h2{
       font-family: 'Noto Sans CJK TC';
       font-style: normal;
-      font-weight: 500;
-      font-size: 25px;
+      font-weight: bold;
+      font-size: 28px;
       line-height: 37px;
       text-align: center;
       letter-spacing: 0.1em;
@@ -176,6 +180,7 @@ export default {
       display: flex;
       padding: 10px;
       box-sizing: border-box;
+      align-items: center;
       &>div{
         &:first-child{
           margin-right: 55px;
@@ -188,11 +193,11 @@ export default {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 500;
-          font-size: 20px;
+          font-size: 24px;
           line-height: 30px;
           letter-spacing: 0.1em;
           color: #57B2F3;
-          margin-top: 50px;
+          margin-top: 0;
           border-left: 10px solid #9BD0F5;
           padding-left: 15px;
         }
@@ -200,7 +205,7 @@ export default {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 400;
-          font-size: 13px;
+          font-size: 16px;
           line-height: 19px;
           text-align: justify;
           letter-spacing: 0.1em;
@@ -212,7 +217,7 @@ export default {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 500;
-          font-size: 16px;
+          font-size: 18px;
           line-height: 24px;
           text-align: center;
           letter-spacing: 0.1em;
@@ -228,7 +233,7 @@ export default {
     }
   }
 }
-.ad{
+.boxAd{
   margin-top: 118px;
   margin-bottom: 145px;
   display: flex;
@@ -265,14 +270,14 @@ export default {
     }
     p{
       padding: 0 30px;
-      text-align: center !important;
+      text-align: justify !important;
     }
   }
   .lecture{
-    margin-top: 90px;
+    // margin-top: 90px;
     &-title{
       h2{
-        font-size: 20px;
+        font-size: 28px;
       }
     }
     &-in{
@@ -288,25 +293,26 @@ export default {
           flex-direction: column;
           align-items: center;
           &:first-child{
+            width: 100%;
             margin-right: 0;
             img{
               width: 100%;
             }
           }
           .title{
-            font-size: 18px;
-            margin-top: 20px;
+            font-size: 24px;
+            margin-top: 25px;
             width: 100%;
           }
           .text{
-            font-size: 13px;
-            margin-top: 10px;
+            font-size: 16px;
+            margin-top: 15px;
             padding-right: 0px;
             width: 100%;
           }
           .btn{
-            font-size: 14px;
-            padding: 5px 10px;
+            font-size: 20px;
+            padding: 10px 20px;
             margin: 20px auto 10px;
           }
         }
@@ -314,7 +320,7 @@ export default {
       }
     }
   }
-  .ad{
+  .boxAd{
     margin-top: 90px;
     margin-bottom: 120px;
     &-title{
