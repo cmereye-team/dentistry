@@ -170,6 +170,11 @@
   component: resolve('pages/service'),
 
 },
+{
+  path: '/weddingExpo',
+  component: resolve('pages/weddingExpo'),
+
+},
 
   // {
   //     path: '*',
