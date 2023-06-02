@@ -22,7 +22,7 @@
                   <div class="title">激光美白原理</div>
                   <div class="text">激光牙齒美白是一種利用激光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。它的原理是利用激光能量的選擇性吸收，將激光能量聚焦在牙齒表面的色素沈積物上，使色素沈積物分解、氧化或蒸發，從而達到美白效果。具體有關激光牙齒美白會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
-                  <a href="https://api.whatsapp.com/send?phone=85295153927&text=激光美白原理">
+                  <a href="https://bit.ly/3X0U0JH">
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>
@@ -33,7 +33,7 @@
                   <div class="title">隱形牙箍矯正原理</div>
                   <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
-                  <a href="https://api.whatsapp.com/send?phone=85295153927&text=隱形牙箍矯正原理">
+                  <a href="https://bit.ly/3X0U0JH">
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>

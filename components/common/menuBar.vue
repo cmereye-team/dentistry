@@ -19,6 +19,9 @@
             <li class="nav-item">
               <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
             </li>
+            <li class="nav-item">
+              <nuxt-link class="nav-link our-weddingExpo-team" to="/weddingExpo">婚展講座</nuxt-link>
+            </li>
             <li class="nav-item dropdown">
               <nuxt-link class="nav-link dropdown-toggle yaserve" to="/service" id="navbarDropdownMenuLink" role="button" @click.native="toServicePages"
                 data-bs-toggle="dropdown">牙科服務</nuxt-link>
@@ -1089,7 +1092,7 @@ font-size: 15px;
    .nav-link {
       color: #57B2F3;
       font-size: 18px;
-      padding: 0.7rem;
+      padding: 0.7rem 0.5rem;
 }
 .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}
 
