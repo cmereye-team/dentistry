@@ -2,6 +2,24 @@
 <div class="container">
   <div class="online footer">
     <div v-if="isShow">
+      <a class="face-button2 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+        <div class="face-primary">
+          <span class="icon"> <i class="fa  fa-volume-control-phone ">
+          <img class="what" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
+          </i></span>
+          婚展講座
+        </div>
+      </a>
+   </div>
+   <div v-else>
+      <a class="face-button3" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+        <div class="face-primary">
+          <img class="what" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
+          <span>婚展講座</span>
+        </div>
+      </a>
+   </div>
+    <div v-if="isShow">
       <a id="zxzx" class="face-button d-block phone" href="tel:85236202428" aria-hidden="true" target="_blank">
             <div class="face-primary">
               <span class="icon"> <i class="fa fa-headphones ">
@@ -20,9 +38,8 @@
               </i></span>
               <div style=" padding: 10px 0px 6px 14px;display: flex;flex-direction: column;align-items: flex-start;">
                 <span>電話預約</span>
-              <span >3620 2428</span>
+                <span >3620 2428</span>
               </div>
-              
             </div>
           </a>
     </div>
@@ -164,7 +181,32 @@ export default {
             margin-right: 8px;
             font-size: 18px; 
         }
+        .face-button2 {
+              width: 180px;
+            height: 60px;
+            display: inline-block;
+            font-size: 20px;
+            font-weight: 500;
+            text-align: center;
+            text-decoration: none;
+            overflow: hidden;
+            margin-bottom:10px;
+            // padding-right: 1vw;
+            // background: white;
+        }
 
+        .face-button2 .face-primary {
+            background-color: #FFB7B7;
+            color: #fff;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 101%;
+            height: 100%;
+            border-radius: 16px 0 0 16px;
+
+        }
         .face-button .face-primary {
             background-color: #9BD0F5;
             color: #fff;
@@ -203,6 +245,23 @@ export default {
   a{
     margin: 0;
     padding: 0 !important;
+  }
+  .face-button3{
+    width: 98px;
+    height: 98px;
+    position: fixed;
+    right: 30px;
+    bottom: 98px;
+    border-radius: 50% !important;
+    text-decoration: none;
+    background: #FFB7B7;
+  }
+  .face-button3 .face-primary{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 .face-button1 {
             width: 50%;

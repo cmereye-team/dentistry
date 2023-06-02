@@ -122,13 +122,16 @@ export default {
     padding: 0;
 
     img {
-      padding-left: 9vw;
-      padding-bottom: 6vw;
+      padding: 0 5vw !important;
+      // padding-left: 9vw;
+      // padding-bottom: 6vw;
+      
     }
   }
 
   li {
     background-image: linear-gradient(to bottom, #fff 30%, #9bd0f5 0);
+    margin-bottom: 14vw !important;
   }
 
   p {

@@ -3,6 +3,7 @@
     <div>
       <menuBar />
       <Banner />
+      <footce />
       <div class="context">
           <div class="context-t">每個閃爍時刻{{`\n`}}希瑪牙科為你送上美滿祝福</div>
           <h2>牙科服務</h2>
@@ -26,6 +27,7 @@
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>
+                <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/5e8915265e535cfc.jpg"></div>
               </div>
               <div>
                 <div><img src="https://static.cmereye.com/imgs/2023/06/08f42fac50ba942d.jpg" alt="" /></div>
@@ -37,6 +39,7 @@
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>
+                <div  class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/c258a5998a4b4694.jpg"></div>
               </div>
             </div>
       </div>
@@ -60,12 +63,14 @@
 import menuBar from "@/components/common/menuBar.vue";
 import Banner from "@/components/weddingExpo/banner/index.vue";
 import serveConcept from "@/components/weddingExpo/service-concept/index.vue"
+import footce from "@/components/common/footce.vue"
 import foot from "@/components/common/foot.vue"
 import dynamicLoadCss from "@/tools/cssLink.js"
 export default {
   components: {
     menuBar,
     Banner,
+    footce,
     serveConcept,
     foot
   },
@@ -151,6 +156,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   &-title{
     display: flex;
     flex-direction: column;
@@ -181,6 +187,7 @@ export default {
       padding: 10px;
       box-sizing: border-box;
       align-items: center;
+      position: relative;
       &>div{
         &:first-child{
           margin-right: 55px;
@@ -231,6 +238,15 @@ export default {
         // flex: 1;
       }
     }
+    .lecture-in-box{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      img{
+        border-radius: 50%;
+      }
+    }
+    
   }
 }
 .boxAd{
@@ -260,9 +276,12 @@ export default {
 }
 @media only screen and (max-width: 740px) {
   .context{
-    margin-top: 30px;
+    margin-top: 20px;
     &-t{
       font-size: 16px;
+      width: 100%;
+      text-align: left;
+      padding-left: 5vw;
     }
     h2{
       font-size: 20px;
@@ -284,8 +303,8 @@ export default {
       padding: 0 5vw;
       margin-top: 0;
       &>div{
-        margin-top: 20px;
-        padding: 20px;
+        margin-top: 40px;
+        padding: 10px;
         flex-direction: column;
         align-items: center;
         &>div{
@@ -301,7 +320,7 @@ export default {
           }
           .title{
             font-size: 24px;
-            margin-top: 25px;
+            margin-top: 45px;
             width: 100%;
           }
           .text{
@@ -313,21 +332,32 @@ export default {
           .btn{
             font-size: 20px;
             padding: 10px 20px;
-            margin: 20px auto 10px;
+            margin: 20px auto 0;
           }
         }
         
       }
+      .lecture-in-box{
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+        img{
+          border-radius: 50%;
+        }
+      }
     }
+    
   }
   .boxAd{
-    margin-top: 90px;
-    margin-bottom: 120px;
+    margin-top: 30px;
+    margin-bottom: 67px;
     &-title{
-      font-size: 12px;
+      padding: 0 5vw;
+      font-size: 15px;
     }
     &-in{
-      margin-top: 90px;
+      margin-top: 37px;
     }
   }
 }
