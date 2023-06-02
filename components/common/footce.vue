@@ -5,7 +5,7 @@
       <a class="face-button2 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
         <div class="face-primary">
           <span class="icon"> <i class="fa  fa-volume-control-phone ">
-          <img class="what" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
+          <img class="what1" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
           </i></span>
           婚展講座
         </div>
@@ -218,6 +218,9 @@ export default {
             height: 100%;
             border-radius: 16px 0 0 16px;
 
+        }
+        .what1{
+          padding-right: 0.5vw;
         }
 
 }

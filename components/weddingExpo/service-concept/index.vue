@@ -27,7 +27,7 @@ export default {
             "我們提供美容牙科治療，旨在改善牙齒的顏色和外觀，讓牙齒更加明亮和有吸引力。"
         },
         {
-          src: "https://static.cmereye.com/imgs/2023/06/f7e33159569b6f81.png",
+          src: "https://static.cmereye.com/imgs/2023/06/de4784e81e6c3b05.png",
           link: "",
           des: "隱形牙箍",
           content:
