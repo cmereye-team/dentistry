@@ -35,7 +35,7 @@
                   <div class="title">隱形牙箍矯正原理</div>
                   <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
-                  <a href="https://bit.ly/3X0U0JH">
+                  <a href="https://bit.ly/3qsegY7">
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>
