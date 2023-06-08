@@ -1,8 +1,8 @@
 <template>
 <div class="container">
   <div class="online footer">
-    <div v-if="isShow">
-      <a class="face-button2 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+    <div v-if="isShow && ($route.path !== '/weddingExpo')">
+      <a class="face-button2 d-block webapp" href="/weddingExpo" aria-hidden="true" target="_blank">
         <div class="face-primary">
           <span class="icon"> <i class="fa  fa-volume-control-phone ">
           <img class="what1" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
@@ -11,8 +11,8 @@
         </div>
       </a>
    </div>
-   <div v-else>
-      <a class="face-button3" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true" target="_blank">
+   <div v-if="!isShow && ($route.path !== '/weddingExpo')">
+      <a class="face-button3" href="/weddingExpo" aria-hidden="true" target="_blank">
         <div class="face-primary">
           <img class="what" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
           <span>婚展講座</span>
@@ -63,7 +63,37 @@
       </div>
     </a>
    </div>
-    
+   <div v-if="isShow">
+     <div class="face-button2 face-button4 d-block webapp">
+       <div class="face-primary">
+         <span class="icon"> <i class="fa  fa-volume-control-phone ">
+         <img class="what1" src="https://static.cmereye.com/imgs/2023/06/6abf097c810dcb7b.png" alt="">
+         </i></span>
+         WeChat
+       </div>
+       <div class="face-button4-img">
+         <img src="https://static.cmereye.com/imgs/2023/06/0e3459a98e20a0ba.png" alt="">
+       </div>
+     </div>
+   </div>
+   <div v-else>
+      <div class="face-button3 face-button4" @click="drawerBool = true">
+        <div class="face-primary">
+          <img class="what" src="https://static.cmereye.com/imgs/2023/06/6abf097c810dcb7b.png" alt="">
+          <span>WeChat</span>
+        </div>
+      </div>
+   </div>
+    <el-drawer
+      title="我是标题"
+      :visible.sync="drawerBool"
+      :direction="'btt'"
+      size="50%"
+      :with-header="false">
+      <div class="drawerImg">
+        <img src="https://static.cmereye.com/imgs/2023/06/b41f78d76531f6e5.jpg" alt="">
+      </div>
+    </el-drawer>
   </div>
 </div>
   
@@ -73,7 +103,8 @@ export default {
   data() {
      return{
       isShow: true,
-      screenWidth: ''
+      screenWidth: '',
+      drawerBool: false
      }
 
   },
@@ -207,6 +238,26 @@ export default {
             border-radius: 16px 0 0 16px;
 
         }
+        .face-button4 .face-primary{
+            background-color: #9BD0F5;
+        }
+        .face-button4{
+          position: relative;
+          overflow: visible;
+          cursor: pointer;
+        }
+        .face-button4-img{
+          position: absolute;
+          top: 50%;
+          left: -135%;
+          padding-right: 35%;
+          transform: translateY(-50%);
+          display: none;
+          z-index: 9999999999999;
+        }
+        .face-button4:hover .face-button4-img{
+          display: block;
+        }
         .face-button .face-primary {
             background-color: #9BD0F5;
             color: #fff;
@@ -250,11 +301,11 @@ export default {
     padding: 0 !important;
   }
   .face-button3{
-    width: 98px;
-    height: 98px;
+    width: 80px;
+    height: 80px;
     position: fixed;
-    right: 30px;
-    bottom: 98px;
+    right: 20px;
+    bottom: 170px;
     border-radius: 50% !important;
     text-decoration: none;
     background: #FFB7B7;
@@ -265,6 +316,26 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 15px;
+  }
+  .face-button4{
+    bottom: 80px;
+    background: #9BD0F5;
+  }
+  .face-button4 .face-primary img{
+    width: 34px;
+  }
+  .face-button4 .face-primary span{
+    color: #fff;
+  }
+  .drawerImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    img{
+      max-height: 100%;
+    }
   }
 .face-button1 {
             width: 50%;

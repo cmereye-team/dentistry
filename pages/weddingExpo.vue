@@ -21,7 +21,7 @@
                 <div><img src="https://static.cmereye.com/imgs/2023/06/13ae73ab533c2430.jpg" alt="" /></div>
                 <div>
                   <div class="title">激光美白原理</div>
-                  <div class="text">激光牙齒美白是一種利用激光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。它的原理是利用激光能量的選擇性吸收，將激光能量聚焦在牙齒表面的色素沈積物上，使色素沈積物分解、氧化或蒸發，從而達到美白效果。具體有關激光牙齒美白會在是次講座詳細講解。</div>
+                  <div class="text">激光牙齒美白是一種利用激光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。具體有關激光牙齒美白會在是次講座詳細講解。</div>
                   <div class="text">講座開始時間：有待公布敬請留意。</div>
                   <a href="https://bit.ly/3X0U0JH">
                     <div class="btn">立即預約講座</div>
@@ -322,9 +322,10 @@ export default {
             font-size: 24px;
             margin-top: 45px;
             width: 100%;
+            margin-bottom: 20px;
           }
           .text{
-            font-size: 16px;
+            font-size: 14px;
             margin-top: 15px;
             padding-right: 0px;
             width: 100%;
