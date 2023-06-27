@@ -95,7 +95,7 @@
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
             <p class="address1">營業時間</p>
             <p class="week">星期一至星期五: <br> 上午9:30 - 下午7:00<br> 
-            星期日: <br> 上午9:30 - 下午6:00 <br>公眾假期休息</p>
+            星期日及公眾假期休息</p>
             <div class="clear"></div>
             <p class="week2">星期六<br> 上午9:30 - 下午5:00</p>
             </div>
