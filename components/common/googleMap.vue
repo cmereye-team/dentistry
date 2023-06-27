@@ -75,7 +75,7 @@
             <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
             <a  class="link_more"  href="https://j.map.baidu.com/40/Klt" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
-
+ 
         </div>
       </div>
       <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
