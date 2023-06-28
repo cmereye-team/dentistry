@@ -27,7 +27,7 @@
                     <div class="btn">立即預約講座</div>
                   </a>
                 </div>
-                <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/5e8915265e535cfc.jpg"></div>
+                <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/c258a5998a4b4694.jpg"></div>
               </div>
               <div>
                 <div><img src="https://static.cmereye.com/imgs/2023/06/08f42fac50ba942d.jpg" alt="" /></div>
