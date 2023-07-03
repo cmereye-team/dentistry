@@ -5,55 +5,59 @@
       <Banner />
       <footce />
       <div class="context">
-          <div class="context-t">每個閃爍時刻{{`\n`}}希瑪牙科為你送上美滿祝福</div>
-          <h2>牙科服務</h2>
-          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
-          <p class="serve_con">希瑪牙科提供全方位牙科及美容牙科服務, 由洗牙, 補牙, 牙齒美白等治療, 幫助客人回復自信笑容。根據客人的實際口腔健康狀況, 制定嚴格且針對性的治療。同時, 我們亦注重口腔衛生教育, 希望透過推廣牙齒健康的重要性, 提高大眾對口腔護理的關注。</p>
+        <div class="context-t">每個閃爍時刻{{ `\n` }}希瑪牙科為你送上美滿祝福</div>
+        <h2>牙科服務</h2>
+        <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+        <p class="serve_con">希瑪牙科提供全方位牙科及美容牙科服務, 由洗牙, 補牙, 牙齒美白等治療, 幫助客人回復自信笑容。根據客人的實際口腔健康狀況, 制定嚴格且針對性的治療。同時, 我們亦注重口腔衛生教育,
+          希望透過推廣牙齒健康的重要性, 提高大眾對口腔護理的關注。</p>
       </div>
       <serveConcept />
       <div class="lecture">
-            <div class="lecture-title">
-                <h2>講座</h2>
-                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+        <div class="lecture-title">
+          <h2>講座</h2>
+          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+        </div>
+        <div class="lecture-in">
+          <div>
+            <div><img src="https://static.cmereye.com/imgs/2023/07/d59751cd588d41be.jpg" alt="" /></div>
+            <div>
+              <div class="title">美白原理</div>
+              <div class="text">牙齒美白是一種利用激光或藍光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。具體有關牙齒美白會在是次講座詳細講解。</div>
+              <div class="text">講座開始時間：2:30pm</div>
+              <a href="https://bit.ly/3X0U0JH">
+                <div class="btn">立即預約講座</div>
+              </a>
             </div>
-            <div class="lecture-in">
-              <div>
-                <div><img src="https://static.cmereye.com/imgs/2023/06/13ae73ab533c2430.jpg" alt="" /></div>
-                <div>
-                  <div class="title">激光美白原理</div>
-                  <div class="text">激光牙齒美白是一種利用激光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。具體有關激光牙齒美白會在是次講座詳細講解。</div>
-                  <div class="text">講座開始時間：2:30pm</div>
-                  <a href="https://bit.ly/3X0U0JH">
-                    <div class="btn">立即預約講座</div>
-                  </a>
-                </div>
-                <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/c258a5998a4b4694.jpg"></div>
-              </div>
-              <div>
-                <div><img src="https://static.cmereye.com/imgs/2023/06/6e1352692f382e1d.jpg" alt="" /></div>
-                <div>
-                  <div class="title">隱形牙箍矯正原理</div>
-                  <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
-                  <div class="text">講座開始時間：6:30pm</div>
-                  <a href="https://bit.ly/3qsegY7">
-                    <div class="btn">立即預約講座</div>
-                  </a>
-                </div>
-                <div  class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/632136f9b72d854a.png"></div>
-              </div>
+            <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/c258a5998a4b4694.jpg"></div>
+          </div>
+          <div>
+            <div><img src="https://static.cmereye.com/imgs/2023/06/6e1352692f382e1d.jpg" alt="" /></div>
+            <div>
+              <div class="title">隱形牙箍矯正原理</div>
+              <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
+              <div class="text">講座開始時間：6:30pm</div>
+              <a href="https://bit.ly/3qsegY7">
+                <div class="btn">立即預約講座</div>
+              </a>
             </div>
+            <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/632136f9b72d854a.png"></div>
+          </div>
+        </div>
       </div>
       <div class="boxAd">
         <div class="boxAd-title">*由即日起預約講座，每人可獲得7月婚展門票一張，數量有限。</div>
         <div class="boxAd-in">
-          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
-          srcset="https://static.cmereye.com/imgs/2023/06/a6c753b471c186b2.png 600w, https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
-          title="牙科服務" alt="牙科服務" src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" />
+          <!-- <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
+            srcset="https://static.cmereye.com/imgs/2023/06/a6c753b471c186b2.png 600w, https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
+            title="牙科服務" alt="牙科服務" src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" /> -->
+          <img src="https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg" srcset="https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 400w, 
+          https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 640w, 
+          https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg" title="牙科服務" alt="牙科服務">
           <!-- <img src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" /> -->
         </div>
       </div>
       <foot />
-    
+
     </div>
   </div>
 </template>
@@ -74,20 +78,20 @@ export default {
     serveConcept,
     foot
   },
-  data(){
-    return{
-      head:'',
-      link:''
+  data() {
+    return {
+      head: '',
+      link: ''
     }
   },
   mounted() {
-     document.getElementsByTagName("body")[0].className = "body-index";
+    document.getElementsByTagName("body")[0].className = "body-index";
   },
-  created(){
+  created() {
   },
   methods: {
 
-},
+  },
   head() {
     return {
       title: '婚展禮遇 | 希瑪牙科中心',
@@ -108,60 +112,65 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.context{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 58px;
-    &-t{
-        font-family: 'Noto Sans CJK TC';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #79828D;
-        white-space: pre-wrap;
-    }
-    h2{
-        font-family: 'Noto Sans CJK TC';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 25px;
-        line-height: 37px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #79828D;
-        margin-top: 61px;
-        margin-bottom: 0;
-    }
-    p{
-        font-family: 'Noto Sans CJK TC';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 22px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #79828D;
-        width: 100%;
-        max-width: 587px;
-        margin-top: 17.72px;
-    }
-   
+.context {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 58px;
+
+  &-t {
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #79828D;
+    white-space: pre-wrap;
+  }
+
+  h2 {
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #79828D;
+    margin-top: 61px;
+    margin-bottom: 0;
+  }
+
+  p {
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #79828D;
+    width: 100%;
+    max-width: 587px;
+    margin-top: 17.72px;
+  }
+
 }
-.lecture{
+
+.lecture {
   margin-top: 117px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  &-title{
+
+  &-title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    h2{
+
+    h2 {
       font-family: 'Noto Sans CJK TC';
       font-style: normal;
       font-weight: bold;
@@ -173,13 +182,15 @@ export default {
       margin-bottom: 0;
     }
   }
-  &-in{
+
+  &-in {
     margin-top: 19.72px;
     width: 100%;
     max-width: 980px;
     display: flex;
     flex-direction: column;
-    &>div{
+
+    &>div {
       margin-top: 40px;
       background: #ECF7FC;
       border-radius: 20px;
@@ -188,15 +199,19 @@ export default {
       box-sizing: border-box;
       align-items: center;
       position: relative;
-      &>div{
-        &:first-child{
+
+      &>div {
+        &:first-child {
           margin-right: 55px;
-          img{
+
+          img {
             border-radius: 15px;
           }
+
           filter: drop-shadow(0px 0px 4.2766px rgba(155, 208, 245, 0.53));
         }
-        .title{
+
+        .title {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 500;
@@ -208,7 +223,8 @@ export default {
           border-left: 10px solid #9BD0F5;
           padding-left: 15px;
         }
-        .text{
+
+        .text {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 400;
@@ -220,7 +236,8 @@ export default {
           padding-right: 70px;
           margin-top: 22.62px;
         }
-        .btn{
+
+        .btn {
           font-family: 'Noto Sans CJK TC';
           font-style: normal;
           font-weight: 500;
@@ -235,27 +252,32 @@ export default {
           margin-top: 25px;
           padding: 10px 20px;
         }
+
         // flex: 1;
       }
     }
-    .lecture-in-box{
+
+    .lecture-in-box {
       position: absolute;
       top: 10px;
       right: 10px;
-      img{
+
+      img {
         border-radius: 50%;
       }
     }
-    
+
   }
 }
-.boxAd{
+
+.boxAd {
   margin-top: 118px;
   margin-bottom: 145px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  &-title{
+
+  &-title {
     font-family: 'Noto Sans CJK TC';
     font-style: normal;
     font-weight: 400;
@@ -265,101 +287,121 @@ export default {
     letter-spacing: 0.1em;
     color: #79828D;
   }
-  &-in{
+
+  &-in {
     margin-top: 118px;
     width: 100%;
     max-width: 1020px;
-    img{
+
+    img {
       width: 100%;
     }
   }
 }
+
 @media only screen and (max-width: 740px) {
-  .context{
+  .context {
     margin-top: 20px;
-    &-t{
+
+    &-t {
       font-size: 16px;
       width: 100%;
       text-align: left;
       padding-left: 5vw;
     }
-    h2{
+
+    h2 {
       font-size: 20px;
       margin-top: 40px;
     }
-    p{
+
+    p {
       padding: 0 30px;
       text-align: justify !important;
     }
   }
-  .lecture{
+
+  .lecture {
+
     // margin-top: 90px;
-    &-title{
-      h2{
+    &-title {
+      h2 {
         font-size: 28px;
       }
     }
-    &-in{
+
+    &-in {
       padding: 0 5vw;
       margin-top: 0;
-      &>div{
+
+      &>div {
         margin-top: 40px;
         padding: 10px;
         flex-direction: column;
         align-items: center;
-        &>div{
+
+        &>div {
           display: flex;
           flex-direction: column;
           align-items: center;
-          &:first-child{
+
+          &:first-child {
             width: 100%;
             margin-right: 0;
-            img{
+
+            img {
               width: 100%;
             }
           }
-          .title{
+
+          .title {
             font-size: 24px;
             margin-top: 45px;
             width: 100%;
             margin-bottom: 20px;
           }
-          .text{
+
+          .text {
             font-size: 14px;
             margin-top: 15px;
             padding-right: 0px;
             width: 100%;
           }
-          .btn{
+
+          .btn {
             font-size: 20px;
             padding: 10px 20px;
             margin: 20px auto 0;
           }
         }
-        
+
       }
-      .lecture-in-box{
+
+      .lecture-in-box {
         position: absolute;
         top: 300px;
         left: 50%;
         transform: translateX(-50%);
-        img{
+
+        img {
           border-radius: 50%;
         }
       }
     }
-    
+
   }
-  .boxAd{
+
+  .boxAd {
     margin-top: 30px;
     margin-bottom: 67px;
-    &-title{
+
+    &-title {
       padding: 0 5vw;
       font-size: 15px;
     }
-    &-in{
+
+    &-in {
       margin-top: 37px;
     }
   }
-}
-</style>
+}</style>
