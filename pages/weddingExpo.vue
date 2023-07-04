@@ -28,7 +28,10 @@
                 <div class="btn">立即預約講座</div>
               </a>
             </div>
-            <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/c258a5998a4b4694.jpg"></div>
+            <div class="lecture-in-box">
+              <img src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png" alt="">
+              <img src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png">
+            </div>
           </div>
           <div>
             <div><img src="https://static.cmereye.com/imgs/2023/06/6e1352692f382e1d.jpg" alt="" /></div>
@@ -40,7 +43,10 @@
                 <div class="btn">立即預約講座</div>
               </a>
             </div>
-            <div class="lecture-in-box"><img src="https://static.cmereye.com/imgs/2023/06/632136f9b72d854a.png"></div>
+            <div class="lecture-in-box">
+              <img src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png" alt="">
+              <img src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png">
+            </div>
           </div>
         </div>
       </div>
@@ -404,4 +410,5 @@ export default {
       margin-top: 37px;
     }
   }
-}</style>
+}
+</style>
