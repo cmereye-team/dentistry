@@ -1,7 +1,7 @@
 <template>
 <div class="container">
   <div class="online footer">
-    <div v-if="isShow && ($route.path !== '/weddingExpo')">
+    <!-- <div v-if="isShow && ($route.path !== '/weddingExpo')">
       <a class="face-button2 d-block webapp" href="/weddingExpo" aria-hidden="true" target="_blank">
         <div class="face-primary">
           <span class="icon"> <i class="fa  fa-volume-control-phone ">
@@ -10,15 +10,15 @@
           婚展講座
         </div>
       </a>
-   </div>
-   <div v-if="!isShow && ($route.path !== '/weddingExpo')">
+   </div> -->
+   <!-- <div v-if="!isShow && ($route.path !== '/weddingExpo')">
       <a class="face-button3" href="/weddingExpo" aria-hidden="true" target="_blank">
         <div class="face-primary">
           <img class="what" src="https://static.cmereye.com/imgs/2023/06/e0d212c1cfc43966.png" alt="">
           <span>婚展講座</span>
         </div>
       </a>
-   </div>
+   </div> -->
     <div v-if="isShow">
       <a id="zxzx" class="face-button d-block phone" href="tel:85236202428" aria-hidden="true" target="_blank">
             <div class="face-primary">

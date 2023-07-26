@@ -19,9 +19,9 @@
               <li class="nav-item">
                 <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link our-weddingExpo-team" to="/weddingExpo">婚展講座</nuxt-link>
-              </li>
+              </li> -->
               <li class="nav-item dropdown">
                 <nuxt-link class="nav-link dropdown-toggle yaserve" to="#" id="navbarDropdownMenuLink" role="button"
                   data-bs-toggle="dropdown">牙科服務</nuxt-link>
