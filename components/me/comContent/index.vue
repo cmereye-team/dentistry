@@ -15,9 +15,6 @@
         分佈港九新界，位於中環、尖沙咀、銅鑼灣、灣仔、沙田、鑽石山及觀塘。
       </p>
     </div>
-    <div class="awards">
-      <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
-    </div>
     <div class="city">
       <img src="https://static.cmereye.com/static/lkximg/image/me/CitySkyline.png" alt="">
     </div>
@@ -29,6 +26,9 @@
         由洗牙、補牙，牙齒美白等治療，<br>
         幫助客人回復自信笑容。
       </p>
+    </div>
+    <div class="awards">
+      <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
     </div>
     <div class="textsd" style="padding-top:1vw">
       <p class="ya yas">
