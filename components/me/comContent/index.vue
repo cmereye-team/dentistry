@@ -139,7 +139,7 @@ export default {
     justify-content: center;
 
     &>img {
-      width: 72%;
+      width: 65%;
     }
   }
 
