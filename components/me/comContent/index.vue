@@ -101,7 +101,7 @@ export default {
     justify-content: center;
 
     &>img {
-      width: 80%;
+      width: 75%;
     }
   }
 
@@ -139,7 +139,7 @@ export default {
     justify-content: center;
 
     &>img {
-      width: 80%;
+      width: 72%;
     }
   }
 
