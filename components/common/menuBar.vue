@@ -16,9 +16,9 @@
             <li class="nav-item">
               <nuxt-link class="nav-link about-us" to="/about-us">關於我們</nuxt-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <nuxt-link class="nav-link our-weddingExpo-team" to="/weddingExpo">婚展講座</nuxt-link>
             </li> -->
@@ -437,10 +437,10 @@
               <nuxt-link class="nav-link about-us" to="/about-us">關於我們</nuxt-link>
               <!-- <a class="nav-link " href="/aboutMe">關於我們</a> -->
             </li>
-            <li class="nav-item">
-              <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
+            <!-- <li class="nav-item"> -->
+              <!-- <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link> -->
               <!-- <a class="nav-link" href="/doctorTeam">我們的團隊</a> -->
-            </li>
+            <!-- </li> -->
             <li class="nav-item dropdown">
               <nuxt-link class="nav-link dropdown-toggle yaserve" to="/service" id="navbarDropdownMenuLink" role="button"
                 data-bs-toggle="dropdown">牙科服務</nuxt-link>
@@ -812,10 +812,10 @@
                 <nuxt-link class="nav-link" to="/about-us">關於我們</nuxt-link>
                 <!-- <a class="nav-link " href="/aboutMe">關於我們</a> -->
               </li>
-              <li class="nav-item">
-                <nuxt-link class="nav-link" to="/our-medical-team">我們的團隊</nuxt-link>
+              <!-- <li class="nav-item"> -->
+                <!-- <nuxt-link class="nav-link" to="/our-medical-team">我們的團隊</nuxt-link> -->
                 <!-- <a class="nav-link" href="/doctorTeam">我們的團隊</a> -->
-              </li>
+              <!-- </li> -->
               <li class="nav-item dropdown">
                 <nuxt-link class="nav-link dropdown-toggle" to="/service" id="navbarDropdownMenuLink" role="button"  
                   data-bs-toggle="dropdown">牙科服務</nuxt-link>

@@ -23,11 +23,11 @@
   component: resolve('pages/about-us'),
   chunkName: 'pages/about-us',
 },
-{
-  path: '/our-medical-team',
-  component: resolve('pages/our-medical-team'),
+// {
+  // path: '/our-medical-team',
+  // component: resolve('pages/our-medical-team'),
 
-},
+// },
 {
   path: '/implant',
   component: resolve('pages/implant'),
