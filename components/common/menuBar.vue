@@ -373,10 +373,9 @@
                 <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>
                 <!-- <a class="nav-link" href="/contactUs">聯絡我們</a> -->
               </li>
-              <li class="nav-item ipad-not-show">
+              <!-- <li class="nav-item ipad-not-show">
                 <nuxt-link class="nav-link eng " to="#">ENG</nuxt-link>
-                <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
-              </li>
+              </li> -->
               <li class="nav-item ipad-not-show">
                   <a id="zxzx" class="nav-link yuyue" href="tel:85236202428" aria-hidden="true" target="_blank"
                 style="line-height: 20px;">立即預約 <span style="font-size: 20px;font-family:Noto Sans HK;">3620 2428</span></a>
@@ -394,7 +393,7 @@
         <nuxt-link class="navbar-brand" to="/">
           <img src="https://static.cmereye.com/static/lkximg/image/common/Logo.svg" alt="">
         </nuxt-link>
-        <div><a class="nav-link engmb" href="#">ENG</a></div>
+        <!-- <div><a class="nav-link engmb" href="#">ENG</a></div> -->
         <button class="navbar-toggler floatsty" type="button" @click="floatsty" data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown">
           <!-- <span class="navbar-toggler-icon"></span> -->
@@ -795,10 +794,9 @@
               <nuxt-link class="nav-link contact-us" to="/contact-us">聯絡我們</nuxt-link>
               <!-- <a class="nav-link" href="/contactUs">聯絡我們</a> -->
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <nuxt-link class="nav-link eng" to="#">ENG</nuxt-link>
-              <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
-            </li>
+            </li> -->
           </ul>
         </div>
         <div class="gnav" :class="action === 1 ? 'action' : ''">
@@ -886,10 +884,9 @@
                 <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>
                 <!-- <a class="nav-link" href="/contactUs">聯絡我們</a> -->
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link eng" to="#">ENG</nuxt-link>
-                <!-- <a class="nav-link eng" href="/contactUs" >ENG</a> -->
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
