@@ -51,7 +51,7 @@
       </div>
       <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div> -->
- <div class="info" v-for="item in list">
+ <div class="info" v-for="(item,listIndex) in list" :key="listIndex">
       <img class="pic" :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url" alt="">
       <div class="dateinfo">
         <!-- <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
@@ -65,7 +65,7 @@
         <div  @click="showContent"><p :class="showitem === true ?'':'p_content_long'" v-html="item.content.rendered"></p></div>
         
         <div style="display: flex;" class="p_content_type">
-          <div v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]" style=" margin: 0 0.5vw;">
+          <div v-for="(lab,labIndex) in item._embedded[Object.keys(item._embedded)[2]][1]" :key="labIndex" style=" margin: 0 0.5vw;">
             <p class="label">{{ lab.name }}</p>
           </div>
         </div>
@@ -567,8 +567,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 760px) {
-  ::v-deep .el-input__inner {
+  :deep(.el-input__inner) {
     -webkit-appearance: none;
+    appearance: none;
     background-color: #FFF;
     border-radius: 4px;
     border: 1px solid #DCDFE6;

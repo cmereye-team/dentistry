@@ -59,7 +59,7 @@
         </div>
       </div>
     </div>
-    <div class="info" v-for="item in list">
+    <div class="info" v-for="(item,listIndex) in list" :key="listIndex">
       <img
         class="pic"
         :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url"
@@ -82,7 +82,8 @@
         </div>
         <div style="display: flex">
           <div
-            v-for="lab in item._embedded[Object.keys(item._embedded)[2]][1]"
+            v-for="(lab,labIndex) in item._embedded[Object.keys(item._embedded)[2]][1]"
+            :key="labIndex"
             style="margin: 0 0.5vw"
           >
             <p class="label">{{ lab.name }}</p>
@@ -113,13 +114,13 @@ export default {
   watch: {
     screenWidth: {
       handler: function (val, oldVal) {
-        console.log("val========", val);
+        // console.log("val========", val);
         if (val < 768) {
-          console.log("屏幕宽度小于760px");
+          // console.log("屏幕宽度小于760px");
           this.isShow = false;
         } else {
           this.isShow = true;
-          console.log("屏幕宽度大于760px");
+          // console.log("屏幕宽度大于760px");
         }
       },
       immediate: true,
@@ -427,7 +428,7 @@ export default {
         } else {
           items[i].style.height = "0rem";
         }
-        console.log(nav[i]);
+        // console.log(nav[i]);
         nav[i].classList.remove("nav-n-box-active");
       }
       //-----------------可注释部分结束------------------------
@@ -439,7 +440,7 @@ export default {
       ) {
         //num 为子菜单栏的个数，根据子菜单栏确定容器的高度
         items[index].style.height = num * 3 + "rem";
-        console.log("num", num);
+        // console.log("num", num);
         //添加右箭头旋转样式
         nav[index].classList.add("nav-n-box-active");
       } else {
@@ -450,7 +451,7 @@ export default {
       //------------------------------------------
     },
     selectLei(value) {
-      console.log("value========", value);
+      // console.log("value========", value);
       this.selectVal = value;
       if (value === 0) {
         // console.log('121');
@@ -462,9 +463,9 @@ export default {
           console.log(this.totalNum);
           const arr = this.totalNum.filter((item) => item.month === value);
           this.total = this.totalNum.length;
-          console.log(this.total);
+          // console.log(this.total);
           this.list = arr;
-          console.log(this.list);
+          // console.log(this.list);
         } else {
           getList({ tags: value }).then((res) => {
             this.total = res.data.length;
@@ -485,7 +486,7 @@ export default {
     },
     getTotal() {
       getList({ _embed: true, categories: 1, per_page: 100 }).then((res) => {
-        console.log("getTotal", res);
+        // console.log("getTotal", res);
         this.totalNum = res.data;
         // console.log('测试1====================',this.totalNum)
         this.addMonth(this.totalNum);
@@ -799,6 +800,7 @@ export default {
 
   ::v-deep .el-input__inner {
     -webkit-appearance: none;
+    appearance: none;
     background-color: #fff;
     border-radius: 4px;
     border: 1px solid #dcdfe6;

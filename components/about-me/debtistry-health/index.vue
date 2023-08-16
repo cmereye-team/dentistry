@@ -188,7 +188,7 @@ export default {
           }
           item.datas = item.date.slice(8, 10)
         });
-        console.log('this.banners===',JSON.parse(JSON.stringify(this.banners)));
+        // console.log('this.banners===',JSON.parse(JSON.stringify(this.banners)));
          }))
         }
         }
