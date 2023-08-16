@@ -2001,9 +2001,6 @@ $scale: 1; // icon scale 68/68 default
     border-bottom: 1px solid #C2C7CD;
   }
 
-  .navbar-collapse {
-    // height: 303vw;
-  }
 
   .navbar-light .navbar-nav .nav-link {
     color: #57B2F3 !important;
