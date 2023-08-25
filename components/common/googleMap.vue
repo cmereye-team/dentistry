@@ -14,15 +14,15 @@
       </ul>
     </div>
     <div v-if="addcurrentIndex === 0">
-      <div class="tab flex justify-center" id="tab">
+      <!-- <div class="tab flex justify-center" id="tab">
         <ul>
           <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab1" :id="item.id + 3" :key='item.id'
             v-for='(item, index) in list'>
             <p class="tab1" :id="item.id + 3" >{{ item.title }}</p>
           </li>
         </ul>
-      </div>
-      <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
+      </div> -->
+      <div class="justify-center addmap">
         <div id="map">
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" >
@@ -49,7 +49,7 @@
           </div>
         </div>
       </div>
-      <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
+      <div class="justify-center addmap">
         <div id="map">
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_銅鑼灣.jpg" width="100%" >
@@ -78,7 +78,7 @@
  
         </div>
       </div>
-      <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
+      <div class="justify-center addmap">
       <div id="map">
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_灣仔.jpg" width="100%">
@@ -110,15 +110,15 @@
       </div>
     </div>
     <div v-else-if="addcurrentIndex === 1">
-      <div class="tab flex justify-center" id="tab">
+      <!-- <div class="tab flex justify-center" id="tab">
         <ul>
           <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab2" :id="item.id + 6"  :key='item.id'
             v-for='(item, index) in list2'>
             <p class="tab2" :id="item.id + 6">{{ item.title }}</p>
           </li>
         </ul>
-      </div>
-      <div v-if='currentIndex == 0 ? true : false' class="justify-center addmap">
+      </div> -->
+      <div class="justify-center addmap">
         <div id="map">
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" >
@@ -147,7 +147,7 @@
           </div>
         </div>
       </div>
-      <div v-if='currentIndex == 1 ? true : false' class="justify-center addmap">
+      <div class="justify-center addmap">
         <div id="map">
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_鑽石山.jpg" width="100%" >
@@ -176,7 +176,7 @@
 
         </div>
       </div>
-      <div v-if='currentIndex == 2 ? true : false' class="justify-center addmap">
+      <div class="justify-center addmap">
       <div id="map">
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg" width="100%">
@@ -207,14 +207,14 @@
       </div>
     </div>
     <div v-else-if="addcurrentIndex === 2">
-      <div class="tab flex justify-center" id="tab">
+      <!-- <div class="tab flex justify-center" id="tab">
         <ul>
           <li @click='handleClick(index)' class="active tab3" :id="item.id + 9"  :key='item.id'
             v-for='(item, index) in list3'>
             <p  :id="item.id + 9" class="tab3">{{ item.title }}</p>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div class="justify-center addmap">
         <div id="map">
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
@@ -576,6 +576,7 @@ a{
           margin: 29.375px;
           background: #9BD0F5;
           border-radius: 100%;
+          cursor: pointer;
       }
       .actives{
         background: #57B2F3;

@@ -86,7 +86,7 @@
             :key="labIndex"
             style="margin: 0 0.5vw"
           >
-            <p class="label">{{ lab.name }}</p>
+            <p class="label" style="cursor: pointer;" @click="toTagLink(item.link)">{{ lab.name }}</p>
           </div>
         </div>
       </div>
@@ -506,6 +506,9 @@ export default {
         // console.log(this.list);
       });
     },
+    toTagLink(a){
+      location.href = a
+    },
     addMonth(value) {
       value.forEach((item, index) => {
         if (item.date.slice(5, 7) === "07") {
@@ -722,6 +725,7 @@ export default {
 
     .yagao {
       margin-top: 8.5vw !important;
+      
     }
 
     .content {
