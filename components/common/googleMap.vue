@@ -24,6 +24,7 @@
       </div> -->
       <div class="justify-center addmap">
         <div id="map">
+          <div class="map-title">中環</div>
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" >
           <!-- <iframe width="100%" height="100%"
@@ -51,6 +52,7 @@
       </div>
       <div class="justify-center addmap">
         <div id="map">
+          <div class="map-title">銅鑼灣</div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_銅鑼灣.jpg" width="100%" >
           <!-- <iframe width="100%" height="100%"
@@ -80,6 +82,7 @@
       </div>
       <div class="justify-center addmap">
       <div id="map">
+        <div class="map-title">灣仔</div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_灣仔.jpg" width="100%">
           <!-- <iframe width="100%" height="100%"
@@ -120,6 +123,7 @@
       </div> -->
       <div class="justify-center addmap">
         <div id="map">
+          <div class="map-title">尖沙咀</div>
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" >
           <!-- <iframe width="100%" height="100%"
@@ -149,6 +153,7 @@
       </div>
       <div class="justify-center addmap">
         <div id="map">
+          <div class="map-title">鑽石山</div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_鑽石山.jpg" width="100%" >
           <!-- <iframe width="100%" height="100%"
@@ -178,6 +183,7 @@
       </div>
       <div class="justify-center addmap">
       <div id="map">
+        <div class="map-title">觀塘</div>
             <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
             <img src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg" width="100%">
           <!-- <iframe width="100%" height="100%"
@@ -217,6 +223,7 @@
       </div> -->
       <div class="justify-center addmap">
         <div id="map">
+          <div class="map-title">沙田</div>
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img src="https://static.cmereye.com/static/lkximg/map/materials_沙田.jpg" width="100%" >
           <!-- <iframe width="100%" height="100%"
@@ -365,6 +372,37 @@ a{
 //pc
 @media only screen and (min-width: 760px) {
   #map{
+    position: relative;
+    .map-title{
+      position: absolute;
+      left: 10%;
+      top: -50px;
+      width: 25%;
+      color: #fff;
+      background: #8cd1f8;
+      height: 50px;
+      line-height:50px;
+      border-radius: 15px 15px 0 0;
+      text-align: center;
+      &::before{
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: -20px;
+        bottom: 0;
+        background: radial-gradient(at 0% 0%, #fff 70%, #8cd1f8 40%);
+      }
+      &::after{
+        content: '';
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        right: -20px;
+        bottom: 0;
+        background: radial-gradient(at 100% 0%, #fff 70%, #8cd1f8 40%);
+      }
+    }
     img{
     border-radius: 30px 30px 30px 30px;
     border-radius: 10px 10px 10px 10px;
@@ -414,7 +452,7 @@ a{
   .addmap {
     display: flex;
     justify-content: center;
-    padding-top: 48px;
+    padding-top: 148px;
   }
 .mapcontennt::before {
     //这里就是小三角了
@@ -609,7 +647,42 @@ a{
   //   // border-radius: 10px 10px 10px 10px;
   //   box-shadow: 9px 9px 5px #8CD1F8;
   // }
+  .addmap{
+    padding-top: 70px;
+  }
   #map{
+    position: relative;
+    .map-title{
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: -40px;
+      width: 25%;
+      color: #fff;
+      background: #8cd1f8;
+      height: 40px;
+      line-height: 40px;
+      border-radius: 15px 15px 0 0;
+      text-align: center;
+      &::before{
+        content: '';
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        left: -18px;
+        bottom: 0;
+        background: radial-gradient(at 0% 0%, #fff 70%, #8cd1f8 40%);
+      }
+      &::after{
+        content: '';
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        right: -18px;
+        bottom: 0;
+        background: radial-gradient(at 100% 0%, #fff 70%, #8cd1f8 40%);
+      }
+    }
     img{
     border-radius: 30px 30px 30px 30px;
     // height: 28vw;

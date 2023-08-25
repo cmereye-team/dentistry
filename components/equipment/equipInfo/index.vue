@@ -1,4 +1,5 @@
 <template>
+  <div>
   <div class="bg-white comContent main-container pb-0 py-xs-2">
     <div class="meun">
       <p>
@@ -105,10 +106,16 @@
     >
     </el-pagination>
   </div>
+  <div class="detailIframe" :style="{width:conShow?'100%':0,height:conShow?'100%':0,opacity:conShow?1:0}">
+    <div class="web-view">
+      <iframe class="web-view-in" :src="detailLink" frameborder="0"></iframe>
+      <div class="web-view-btn" @click="conShow = false" v-show="conShow">关闭</div>
+    </div>
+  </div>
+  </div>
 </template>
 <script>
 import { getList } from "@/api/index.js";
-import { get } from "http";
 
 export default {
   watch: {
@@ -128,6 +135,8 @@ export default {
   },
   data() {
     return {
+      conShow:false,
+      detailLink: '',
       showitem: false,
       selectVal: "",
       navtitle: "所有類別",
@@ -479,7 +488,7 @@ export default {
           }).then((res) => {
             this.list = res.data;
             this.addMonth(this.list);
-            console.log(this.list);
+            // console.log(this.list);
           });
         }
       }
@@ -507,7 +516,9 @@ export default {
       });
     },
     toTagLink(a){
-      location.href = a
+      // location.href = a
+      this.detailLink = a
+      this.conShow = true
     },
     addMonth(value) {
       value.forEach((item, index) => {
@@ -631,7 +642,28 @@ export default {
     }
   }
 }
-
+.web-view{
+  width: 60%;
+  height: 80%;
+  padding: 20px;
+  background: #9bd0f5;
+  transition: all .3s;
+  border-radius: 10px;
+  &-in{
+    width: 100%;
+    height: calc(100% - 40px);
+    display: block;
+  }
+  &-btn{
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 60px;
+  }
+}
 //mb
 @media only screen and (max-width: 760px) {
   .label {
@@ -756,6 +788,33 @@ export default {
       }
     }
   }
+  .web-view{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    &-in{
+      height: calc(100% - 30px);
+    }
+    &-btn{
+      height: 30px;
+      line-height: 40px;
+      font-size: 20px;
+    }
+  }
+}
+.detailIframe{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.3);
+  z-index: 99999;
+  transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 //pc
@@ -949,6 +1008,7 @@ export default {
       }
     }
   }
+  
 }
 </style>
 <style lang="scss"></style>
