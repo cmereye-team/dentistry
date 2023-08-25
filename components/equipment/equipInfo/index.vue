@@ -31,6 +31,12 @@
         </el-option>
       </el-select>
     </div>
+    <!-- <div class="tag" v-if="tagLists.length">
+      <div class="tag-in" v-for="(tag,tagIndex) in tagLists" :key="tagIndex">
+        <span>{{tag.name}}</span>
+        <span>x</span>
+      </div>
+    </div> -->
     <div v-else>
       <div class="Top20_ProblemAnalysis">
         <div class="rightNav">
@@ -60,7 +66,8 @@
         </div>
       </div>
     </div>
-    <div class="info" v-for="(item,listIndex) in list" :key="listIndex">
+    <div class="loadingBox" >
+    <div class="info" v-for="(item,listIndex) in list" :key="listIndex" v-loading="listsLoading">
       <img
         class="pic"
         :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url"
@@ -87,7 +94,7 @@
             :key="labIndex"
             style="margin: 0 0.5vw"
           >
-            <p class="label" style="cursor: pointer;" @click="toTagLink(item.link)">{{ lab.name }}</p>
+            <p class="label" style="cursor: pointer;" @click="toTagLink(lab.id)">{{ lab.name }}</p>
           </div>
         </div>
       </div>
@@ -96,6 +103,7 @@
         <span>{{ item.month }}</span>
       </div>
       <!-- <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
+    </div>
     </div>
     <el-pagination
       layout="prev, pager, next"
@@ -106,12 +114,12 @@
     >
     </el-pagination>
   </div>
-  <div class="detailIframe" :style="{width:conShow?'100%':0,height:conShow?'100%':0,opacity:conShow?1:0}">
+  <!-- <div class="detailIframe" :style="{width:conShow?'100%':0,height:conShow?'100%':0,opacity:conShow?1:0}">
     <div class="web-view">
       <iframe class="web-view-in" :src="detailLink" frameborder="0"></iframe>
       <div class="web-view-btn" @click="conShow = false" v-show="conShow">关闭</div>
     </div>
-  </div>
+  </div> -->
   </div>
 </template>
 <script>
@@ -135,8 +143,7 @@ export default {
   },
   data() {
     return {
-      conShow:false,
-      detailLink: '',
+      tagLists: [],
       showitem: false,
       selectVal: "",
       navtitle: "所有類別",
@@ -384,6 +391,7 @@ export default {
       currentPage: 1,
       totalNum: [],
       titleIndex: "",
+      listsLoading: false
     };
   },
   mounted() {
@@ -476,6 +484,8 @@ export default {
           this.list = arr;
           // console.log(this.list);
         } else {
+          this.listsLoading = true
+          // this.list = []
           getList({ tags: value }).then((res) => {
             this.total = res.data.length;
           });
@@ -489,7 +499,10 @@ export default {
             this.list = res.data;
             this.addMonth(this.list);
             // console.log(this.list);
-          });
+            this.listsLoading = false
+          }).catch(err=>{
+            this.listsLoading = false
+          })
         }
       }
     },
@@ -504,6 +517,8 @@ export default {
       });
     },
     getListDs() {
+      // this.list = []
+      this.listsLoading = true
       getList({
         _embed: true,
         per_page: this.pagesize,
@@ -513,12 +528,17 @@ export default {
         this.list = res.data;
         this.addMonth(this.list);
         // console.log(this.list);
-      });
+        this.listsLoading = false
+      }).catch(err=>{
+        this.listsLoading = false
+      })
     },
     toTagLink(a){
       // location.href = a
-      this.detailLink = a
-      this.conShow = true
+      // this.detailLink = a
+      // this.conShow = true
+      this.value = String(a)
+      this.selectLei(a)
     },
     addMonth(value) {
       value.forEach((item, index) => {
@@ -560,6 +580,9 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.loadingBox{
+  min-height: 50vh;
+}
 .Top20_ProblemAnalysis {
   width: 100%;
   // height: calc(100vh - 160px);

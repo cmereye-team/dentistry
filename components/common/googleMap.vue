@@ -384,6 +384,8 @@ a{
       line-height:50px;
       border-radius: 15px 15px 0 0;
       text-align: center;
+      font-size: 18px;
+      font-weight: 500;
       &::before{
         content: '';
         width: 20px;
@@ -648,14 +650,17 @@ a{
   //   box-shadow: 9px 9px 5px #8CD1F8;
   // }
   .addmap{
-    padding-top: 70px;
+    padding-top: 130px;
+    &:nth-of-type(1){
+      padding-top: 70px;
+    }
   }
   #map{
     position: relative;
     .map-title{
       position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+      left: 20%;
+      // transform: translateX(-50%);
       top: -40px;
       width: 25%;
       color: #fff;
