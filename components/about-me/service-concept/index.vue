@@ -1,49 +1,61 @@
 <template>
-<div>
-  <div class="step section main-container">
+  <div>
+    <div class="step section main-container">
       <div class="flex justify-center texts section">
         <h2>服務理念</h2>
-        <img src="@/asset/image/about-me/serve/Vector.png" alt="">
+        <img src="@/asset/image/about-me/serve/Vector.png" alt="" />
       </div>
-     </div>
-     <div class="list">
+    </div>
+    <div class="list">
       <div class="main-container">
-            <ul class="step_list flex justify-between items-center ">
-                    <li v-for="(stepItem, index) in serContentList" :key="index" cals>
-                      <img  :src="stepItem.src" alt="">
-                      <strong>{{ stepItem.des }}</strong>
-                      <p>{{ stepItem.content }}</p>
-                    </li>
-                  </ul>
+        <ul class="step_list flex justify-between items-center">
+          <li v-for="(stepItem, index) in serContentList" :key="index" cals>
+            <img :src="stepItem.src" alt="" />
+            <strong>{{ stepItem.des }}</strong>
+            <p>{{ stepItem.content }}</p>
+          </li>
+        </ul>
       </div>
-     </div> 
-      
-</div>
-
-
-  
+    </div>
+  </div>
 </template>
 <script>
 export default {
   data() {
     return {
       serContentList: [
-        { src: require("@/asset/image/about-me/service-concept/Pic01.png"), link: "", des: '全面口腔照顧', content: '中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。' },
-        { src: require("@/asset/image/about-me/service-concept/Pic021.png"), link: "", des: '整體分析牙齒及口腔狀況', content: '進行治療前，牙科醫生會先整體分析客人的口腔健康狀況，了解其病歷，根據實際情況制定嚴格且針對性的治療方案。' },
-        { src: require("@/asset/image/about-me/service-concept/Pic03.png"), link: "", des: '注重感染控制措施', content: '中心使用高溫消毒儀器及最高規格的高壓滅菌器，確保徹底洗淨及消毒牙科用具。每週亦會進行一次生物監測及驗證，確保機器運作正常。' },
+        {
+          src: require("@/asset/image/about-me/service-concept/Pic01.png"),
+          link: "",
+          des: "全面口腔照顧",
+          content:
+            "中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。",
+        },
+        {
+          src: require("@/asset/image/about-me/service-concept/Pic021.png"),
+          link: "",
+          des: "整體分析牙齒及口腔狀況",
+          content:
+            "進行治療前，牙科醫生會先整體分析客人的口腔健康狀況，了解其病歷，根據實際情況制定嚴格且針對性的治療方案。",
+        },
+        {
+          src: require("@/asset/image/about-me/service-concept/Pic03.png"),
+          link: "",
+          des: "注重感染控制措施",
+          content:
+            "中心使用高溫消毒儀器及最高規格的高壓滅菌器，確保徹底洗淨及消毒牙科用具。每週亦會進行一次生物監測及驗證，確保機器運作正常。",
+        },
       ],
-    }
+    };
   },
   computed: {
     clientHeight: {
       get() {
-        return this.$store.getters.windowHeight
-      }
-    }
+        return this.$store.getters.windowHeight;
+      },
+    },
   },
-
-}
-
+};
 </script>
 
 <style lang="scss" scoped>
@@ -52,7 +64,7 @@ export default {
 
   h2 {
     font-weight: 300;
-    color: #79828D;
+    color: #79828d;
     margin-bottom: 0vw;
   }
 
@@ -89,7 +101,7 @@ export default {
       p {
         padding-left: 2.5vw;
         padding-top: 1vw;
-        font-family: 'Noto Sans CJK TC';
+        font-family: "Noto Sans CJK TC";
         font-style: normal;
         font-weight: 400;
         font-size: 15px;
@@ -103,12 +115,12 @@ export default {
         padding-left: 2vw;
         font-weight: 400;
         font-size: 19px;
-        
+
         &:before {
           content: "";
           margin-left: 15px;
           padding-left: 15px;
-          border-left: 8px solid #ECF7FC;
+          border-left: 8px solid #ecf7fc;
           height: 30px;
           display: inline-block;
           vertical-align: middle;
@@ -118,7 +130,7 @@ export default {
   }
 
   .list {
-    background-image: linear-gradient(to bottom, #fff 30%, #9BD0F5 0);
+    background-image: linear-gradient(to bottom, #fff 30%, #9bd0f5 0);
   }
 }
 
@@ -138,7 +150,7 @@ export default {
   }
 
   li {
-    background-image: linear-gradient(to bottom, #fff 30%, #9BD0F5 0);
+    background-image: linear-gradient(to bottom, #fff 30%, #9bd0f5 0);
   }
 
   p {
@@ -157,7 +169,7 @@ export default {
     content: "";
     margin-left: 15px;
     padding-left: 15px;
-    border-left: 2vw solid #ECF7FC;
+    border-left: 2vw solid #ecf7fc;
     height: 6vw;
     display: inline-block;
     vertical-align: middle;
