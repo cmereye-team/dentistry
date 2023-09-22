@@ -12,7 +12,7 @@
       <ul class="step_list items-center main-container">
         <li class="bac-box">
           <div  class="list_con">
-            <img src="https://static.cmereye.com/static/lkximg/image/whitening/apple.png" alt="">
+            <img src="https://static.cmereye.com/imgs/2023/09/73f8adeddaa6d6af.png" alt="">
             <!-- <h3>想擁有更亮白的牙齒，</h3> -->
             <p>想擁有更亮白的牙齒，可以考慮進行美白牙齒療程。美白牙齒療程能夠有效地把外在和內在的牙漬清除，令牙齒更加亮白。診所提供藍光美白牙齒及激光美白牙齒服務，助你建立閃亮笑容。</p>
             <div class="listcons" >

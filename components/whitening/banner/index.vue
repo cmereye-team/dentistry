@@ -5,15 +5,15 @@
     <div class="carousel-inner">
       <div class="carousel-item active titleImg">
         <img
-          data-cfsrc="https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg"
+          data-cfsrc="https://static.cmereye.com/imgs/2023/09/c4a285c6f0cdf5f9.png"
           srcset="
-            https://static.cmereye.com/imgs/2023/03/0d92748d7ea7bd38.png 400w,
-            https://static.cmereye.com/imgs/2023/03/0d92748d7ea7bd38.png 640w,
-            https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg
+            https://static.cmereye.com/imgs/2023/09/d6869dca311773bb.png 400w,
+            https://static.cmereye.com/imgs/2023/09/d6869dca311773bb.png 640w,
+            https://static.cmereye.com/imgs/2023/09/c4a285c6f0cdf5f9.png
           "
           title="牙齒美白"
           alt="牙齒美白"
-          src="https://static.cmereye.com/imgs/2023/03/1450f4ea946c0311.jpg"
+          src="https://static.cmereye.com/imgs/2023/09/c4a285c6f0cdf5f9.png"
         />
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/beauty.png"> -->
         <!-- shd -->
