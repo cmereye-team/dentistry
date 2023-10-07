@@ -1,4 +1,4 @@
-<template>
+                        <template>
 <div class=" nav-fa">
   <div class="nav-fu main-container">
     <div class="pcshow  header scroll-active">
@@ -17,7 +17,7 @@
               <nuxt-link class="nav-link about-us" to="/about-us">關於我們</nuxt-link>
             </li>
             <!-- <li class="nav-item">
-              <nuxt-link class="nav-link our-medical-team" to="/our-medical-team">我們的團隊</nuxt-link>
+              <nuxt-link class="nav-link our-medical-team" to="/qour-medical-team">我們的團隊</nuxt-link>
             </li> -->
             <!-- <li class="nav-item">
               <nuxt-link class="nav-link our-weddingExpo-team" to="/weddingExpo">婚展講座</nuxt-link>

@@ -47,12 +47,12 @@
                 </div>
                 <div class="content ">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/3.svg" height="50vw" width="50vw" alt="">
-                  <p>利用牙科用浮石粉拋光打磨或特製混合物料高速噴洗牙齒表面，去除牙漬及保持牙齒平滑</p>
+                  <p>拋光打磨牙齒表面，去除一般牙漬及保持牙齒平滑</p>
                 </div>
-                 <div class="content ">
+                 <!-- <div class="content ">
                   <img src="https://static.cmereye.com/static/lkximg/image/implant/num4.svg" height="50vw" width="50vw" alt="">
                   <p>利用氟化物鞏固琺瑯質，強化牙齒</p>
-                </div>
+                </div> -->
                 <div class="content nofitext">
                   <p>*由於洗牙時會觸碰到牙肉的發炎位置，因此可能會導致牙齦出血或輕微痺痛感。特別是一些從未或相隔很久沒有洗牙的人士，不適感一般會在洗牙後的2至3天後逐漸消失（患有敏感牙齒或牙周病的人士或需更長時間）。如情況持續出現，應立即聯絡醫護人員。</p>
                 </div>

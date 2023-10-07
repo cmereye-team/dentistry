@@ -1,59 +1,113 @@
 <template>
   <!-- 轮播 -->
-  <div id="demo" class="carousel slide index_banner main-container"  data-bs-ride="carousel">
+  <div
+    id="demo"
+    class="carousel slide index_banner main-container"
+    data-bs-ride="carousel"
+  >
     <!-- 轮播图片 -->
     <div class="carousel-inner">
-      <div class="carousel-item active">
+      <!-- <div class="carousel-item active">
         <a href="https://smilepartner.cmermedical.com/">
-          <img data-cfsrc="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
-          srcset="https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 400w, https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 640w, https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg" />
+          <img
+            data-cfsrc="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
+            srcset="
+              https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 400w,
+              https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 640w,
+              https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg
+            "
+            title="提供全方位牙科服務"
+            alt="提供全方位牙科服務"
+            src="https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg"
+          />
         </a>
-    </div>
-      <div class="carousel-item ">
-   <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
-          srcset="https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" />
-          <div class="title ispcshow">
-            <span class="ser-title">提供全方位牙科服務</span><br>
-            <span class="contents">整體分析客人口腔， <br> 建議針對性的治療方案</span>
-          </div>
-          <div class="title ismdshow">提供全方位牙科服務</div>
-            <div class="contents ismdshow">
-              整體分析客人口腔， <br> 建議針對性的治療方案</div>   
+      </div> -->
+      <div class="carousel-item active">
+        <img
+          data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
+          srcset="
+            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w,
+            https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg
+          "
+          title="提供全方位牙科服務"
+          alt="提供全方位牙科服務"
+          src="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg"
+        />
+        <div class="title ispcshow">
+          <span class="ser-title">提供全方位牙科服務</span><br />
+          <span class="contents"
+            >整體分析客人口腔， <br />
+            建議針對性的治療方案</span
+          >
+        </div>
+        <div class="title ismdshow">提供全方位牙科服務</div>
+        <div class="contents ismdshow">
+          整體分析客人口腔， <br />
+          建議針對性的治療方案
+        </div>
       </div>
-      
+
       <div class="carousel-item">
-        <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
-          srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg" />
-    </div>
-    <div class="carousel-item">
-      <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
-          srcset="https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
-          title="提供全方位牙科服務" alt="提供全方位牙科服務" src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
-    </div>
-    
+        <img
+          data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+          srcset="
+            https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w,
+            https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg
+          "
+          title="提供全方位牙科服務"
+          alt="提供全方位牙科服務"
+          src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+        />
+      </div>
+      <div class="carousel-item">
+        <img
+          data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
+          srcset="
+            https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w,
+            https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w,
+            https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg
+          "
+          title="提供全方位牙科服務"
+          alt="提供全方位牙科服務"
+          src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg"
+        />
+      </div>
     </div>
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="0"
+        class="active"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="1"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="2"
+      ></button>
+      <button
+        type="button"
+        data-bs-target="#demo"
+        data-bs-slide-to="3"
+      ></button>
     </div>
   </div>
-
 </template>
 
 <script>
 export default {
   data() {
-    return {
-    }
+    return {};
   },
-  mounted() {
-  }
-}
+  mounted() {},
+};
 </script>
 <style lang="scss" scoped>
 ::v-deep .carousel-indicators [data-bs-target] {
@@ -66,16 +120,16 @@ export default {
   margin-left: 8px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #C2C7CD;
+  background-color: #c2c7cd;
   background-clip: padding-box;
   border: 0;
   margin-bottom: 2rem;
   margin-top: 1rem;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
-  opacity: .5;
+  opacity: 0.5;
   border-radius: 100%;
-  transition: opacity .6s ease;
+  transition: opacity 0.6s ease;
 }
 
 ::v-deep .carousel-indicators {
@@ -84,29 +138,29 @@ export default {
 
 ::v-deep .carousel-indicators .active {
   opacity: 1 !important;
-  background-color: #9BA5B1;
+  background-color: #9ba5b1;
   width: 14px;
   height: 14px;
 }
 ::v-deep .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.55);
-    border-color: #fff
+  color: rgba(0, 0, 0, 0.55);
+  border-color: #fff;
 }
 //mb
 @media only screen and (max-width: 740px) {
-  .ispcshow{
+  .ispcshow {
     display: none;
   }
- .index_banner {
+  .index_banner {
     position: relative;
   }
 
- .index_banner::after {
+  .index_banner::after {
     animation: fade 3s ease-in-out alternate infinite;
     animation-delay: -0.4s;
     position: absolute;
-    content: 'scroll';
-    font-family: 'Helvetica';
+    content: "scroll";
+    font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -120,86 +174,85 @@ export default {
     padding: 2vw;
   }
 
-.index_banner::before {
+  .index_banner::before {
     animation: fadeline 3s ease-in-out alternate infinite;
     animation-delay: -0.2s;
     position: absolute;
-    content: '';
+    content: "";
     bottom: -22vw;
     left: 9vw;
     height: 55vw;
-    background-color: #C2C7CD;
+    background-color: #c2c7cd;
     width: 1px;
     z-index: 99;
   }
 
-
-.contents {
-  position: absolute;
-  z-index: 2;
-  height: 58vw;
-  width: 100%;
-  left: -17%;
-  top: 17%;
-  font-weight: 500;
-  color: #79828D;
-  font-size: 16px;
-  text-align: left;
-}
-
-.title {
-  position: absolute;
-  z-index: 2;
-  height: 53vw;
-  width: 100%;
-  left: -10%;
-  top: 9%;
-  font-weight: 500;
-  color: #79828D;
-  font-size: 22px;
-}
-
-.d-block {
-  display: block !important;
-  height: 83vw;
-  /* transform: scale(3,3); */
-}
-
-.carousel-inner {
-  margin-top: 16vw;
-  text-align: -webkit-center;
-
-  img {
-    height: 100%;
-    width: 90%;
-    border-radius: 30px 30px 30px 30px;
+  .contents {
+    position: absolute;
+    z-index: 2;
+    height: 58vw;
+    width: 100%;
+    left: -17%;
+    top: 17%;
+    font-weight: 500;
+    color: #79828d;
+    font-size: 16px;
+    text-align: left;
   }
-}
 
-.section {
-  width: 100%;
-  margin: 0;
-}
+  .title {
+    position: absolute;
+    z-index: 2;
+    height: 53vw;
+    width: 100%;
+    left: -10%;
+    top: 9%;
+    font-weight: 500;
+    color: #79828d;
+    font-size: 22px;
+  }
 
-.swiper-button-prev,
-.swiper-button-next {
-  display: none;
-}
+  .d-block {
+    display: block !important;
+    height: 83vw;
+    /* transform: scale(3,3); */
+  }
+
+  .carousel-inner {
+    margin-top: 16vw;
+    text-align: -webkit-center;
+
+    img {
+      height: 100%;
+      width: 90%;
+      border-radius: 30px 30px 30px 30px;
+    }
+  }
+
+  .section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 //pc
 @media only screen and (min-width: 740px) {
-  .ismdshow{
+  .ismdshow {
     display: none;
   }
-  .ser-title{
-     font-weight: 600;
+  .ser-title {
+    font-weight: 600;
     font-size: 30px;
     line-height: 44px;
     letter-spacing: 0.1em;
     color: #79828d;
   }
-  #demo{
+  #demo {
     position: relative;
     z-index: 0;
     width: calc(100% - 120px);
@@ -209,28 +262,26 @@ export default {
     margin-right: auto;
     // margin-bottom: ;
   }
-  .index_banner{
+  .index_banner {
     margin-top: 10px;
   }
-  .carousel-item{
+  .carousel-item {
     text-align: center;
-
   }
-  .contents{
-    
+  .contents {
     font-weight: 500;
-    color: #79828D;
+    color: #79828d;
     font-size: 23px;
   }
-  .title{
+  .title {
     position: absolute;
     z-index: 2;
     height: 0;
     top: 24%;
     left: 8%;
-   
+
     text-align: left;
-    }
+  }
   // .carousel-inner img[data-v-703b804a] {
   //   width: 90%;
   //   border-radius: 80px 80px 80px 80px;
@@ -281,26 +332,24 @@ export default {
 <style lang="scss" >
 //pc
 @media only screen and (min-width: 760px) {
-.main-container{
-  max-width: 1440px !important;
-  margin: 0 auto;
+  .main-container {
+    max-width: 1440px !important;
+    margin: 0 auto;
+  }
+  .index_banner {
+  }
+  #demo {
+    width: calc(100% - 120px);
+    margin-top: 10px !important;
+  }
+  .titleImg {
+    height: auto !important;
+    width: inherit !important;
+  }
+  .titleImg .title {
+    width: auto !important;
+    left: 43% !important;
+    top: 42% !important;
+  }
 }
-.index_banner{
- 
-}
-#demo{
-  width: calc(100% - 120px);
-  margin-top: 10px !important;
-}
-.titleImg {
-  height: auto !important;
-  width: inherit !important;
-}
-.titleImg .title{
-  width: auto !important;
-  left: 43% !important;
-  top: 42% !important;
-}
-}
-
 </style>
