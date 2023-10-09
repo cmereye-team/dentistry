@@ -4,6 +4,7 @@
     id="demo"
     class="carousel slide index_banner main-container"
     data-bs-ride="carousel"
+    data-touch="true"
   >
     <!-- 轮播图片 -->
     <div class="carousel-inner">
@@ -92,11 +93,11 @@
         data-bs-target="#demo"
         data-bs-slide-to="2"
       ></button>
-      <button
+      <!-- <button
         type="button"
         data-bs-target="#demo"
         data-bs-slide-to="3"
-      ></button>
+      ></button> -->
     </div>
   </div>
 </template>
@@ -110,6 +111,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.dddddd {
+  width: 80%;
+  background: #00000080;
+  height: 300px;
+}
 ::v-deep .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
