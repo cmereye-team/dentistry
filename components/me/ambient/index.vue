@@ -160,10 +160,10 @@
         <button type="button" id="button4" data-bs-target="#demo2" data-bs-slide-to="4"></button>
         <button type="button" id="button5" data-bs-target="#demo2" data-bs-slide-to="5"></button>
         <button type="button" id="button6" data-bs-target="#demo2" data-bs-slide-to="6"></button>
-        <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button>
+        <!-- <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button> -->
         <!-- <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button> -->
         <!-- <button type="button" id="button10" data-bs-target="#demo2" data-bs-slide-to="9"></button> -->
-        <!-- <button type="button" id="button11" data-bs-target="#demo2" data-bs-slide-to="10"></button> -->
+        <button type="button" id="button11" data-bs-target="#demo2" data-bs-slide-to="10"></button>
         <button type="button" id="button12" data-bs-target="#demo2" data-bs-slide-to="11"></button>
         <button type="button" id="button13" data-bs-target="#demo2" data-bs-slide-to="12"></button>
         <button type="button" id="button14" data-bs-target="#demo2" data-bs-slide-to="13"></button>
