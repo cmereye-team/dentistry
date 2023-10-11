@@ -4,7 +4,7 @@
   <menuBar/>
   <Banner/>
   <oralExamination/>
-  <footced/>
+  <footce/>
   <problem/>
   <serve/>
   <mapGoogle/>
@@ -15,7 +15,7 @@
 
 <script>
 import menuBar from "@/components/common/menuBar.vue";
-import footced from "@/components/common/footced.vue"
+import footce from "@/components/common/footce.vue"
 import mapGoogle from "@/components/common/googleMap.vue"
 import foot from "@/components/common/foot.vue"
 import Banner from "@/components/oralExamination/banner/index.vue"
@@ -26,7 +26,7 @@ import problem from "@/components/oralExamination/problem/index.vue"
 export default {
    components: { 
     menuBar,
-    footced,
+    footce,
     Banner,
     serve,
     mapGoogle,
