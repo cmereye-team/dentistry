@@ -72,7 +72,7 @@
          WeChat
        </div>
        <div class="face-button4-img">
-         <img src="https://static.cmereye.com/imgs/2023/06/0e3459a98e20a0ba.png" alt="">
+         <img src="https://static.cmereye.com/imgs/2023/10/5506a80d21a79029.png" alt="">
        </div>
      </div>
    </div>
@@ -91,7 +91,7 @@
       size="50%"
       :with-header="false">
       <div class="drawerImg">
-        <img src="https://static.cmereye.com/imgs/2023/06/b41f78d76531f6e5.jpg" alt="">
+        <img src="https://static.cmereye.com/imgs/2023/10/a7833e634c739f73.png" alt="">
       </div>
     </el-drawer>
   </div>
