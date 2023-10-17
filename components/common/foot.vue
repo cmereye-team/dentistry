@@ -25,7 +25,7 @@
               class="Youtube"
             >
               <img
-                src="https://static.cmereye.com/static/lkximg/image/common/YT.svg"
+                src="https://static.cmereye.com/imgs/2023/10/66ea0bd7da8f4df8.png"
                 alt=""
               />
             </a>
