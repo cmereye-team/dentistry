@@ -51,15 +51,15 @@
 
       <div class="carousel-item">
         <img
-          data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+          data-cfsrc="https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png"
           srcset="
-            https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 400w,
-            https://static.cmereye.com/static/lkximg/image/banner/mbBanner2.jpg 640w,
-            https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg
+            https://static.cmereye.com/imgs/2023/10/0d8116d9eaa77470.png 400w,
+            https://static.cmereye.com/imgs/2023/10/0d8116d9eaa77470.png 640w,
+            https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png
           "
           title="提供全方位牙科服務"
           alt="提供全方位牙科服務"
-          src="https://static.cmereye.com/static/lkximg/image/banner/banner2.jpg"
+          src="https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png"
         />
       </div>
       <div class="carousel-item">
