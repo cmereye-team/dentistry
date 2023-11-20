@@ -6,6 +6,7 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
       </div>
       <div class="form">
+        <div class="text-form">立即預約牙科服務，展現自信笑容！</div>
         <a class="btn-form" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -426,11 +427,15 @@ a {
       }
 
     }
-
+    .text-form {
+      margin-top: 9vw;
+      text-align: center;
+      color: #fff;
+    }
     .btn-form {
       width: fit-content;
       text-decoration: none;
-      margin: 9vw auto 0;
+      margin: 5vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
