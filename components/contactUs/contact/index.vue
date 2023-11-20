@@ -479,10 +479,15 @@ a {
 
 //mb
 @media only screen and (max-width: 760px) {
+  .text-form {
+      margin-top: 20vw;
+      text-align: center;
+      color: #fff;
+    }
   .btn-form {
       width: fit-content;
       text-decoration: none;
-      margin: 20vw auto 0;
+      margin: 10vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
