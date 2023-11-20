@@ -486,25 +486,25 @@ a {
       border-radius: 99px;
       padding: 8px 55px;
     }
-    .btn-form:hover {
-      width: fit-content;
-      text-decoration: none;
-      margin: 9vw auto 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #57B2F3;
-      background: #fff;
-      border-radius: 99px;
-      padding: 8px 55px;
-    }
-    .btn-form:hover {
-      svg {
-        path {
-          fill: #57B2F3 !important;
-        }
-      }
-    }
+    // .btn-form:hover {
+    //   width: fit-content;
+    //   text-decoration: none;
+    //   margin: 9vw auto 0;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   color: #57B2F3;
+    //   background: #fff;
+    //   border-radius: 99px;
+    //   padding: 8px 55px;
+    // }
+    // .btn-form:hover {
+    //   svg {
+    //     path {
+    //       fill: #57B2F3 !important;
+    //     }
+    //   }
+    // }
   ::v-deep .el-input__inner {
     border: 2px solid #fff;
     border-radius: 10px;
