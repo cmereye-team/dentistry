@@ -27,7 +27,7 @@
         <span class="icon"> <i class="fa  fa-volume-control-phone ">
         <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
         </i></span>
-        WhatApps預約
+        WhatsApp預約
       </div>
     </a>
    </div>
