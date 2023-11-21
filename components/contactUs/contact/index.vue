@@ -440,7 +440,7 @@ a {
     .btn-form {
       width: fit-content;
       text-decoration: none;
-      margin: 3vw auto 0;
+      margin: 1vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -452,7 +452,7 @@ a {
     .btn-form:hover {
       width: fit-content;
       text-decoration: none;
-      margin: 3vw auto 0;
+      margin: 1vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
