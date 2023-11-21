@@ -431,6 +431,8 @@ a {
       margin-top: 9vw;
       text-align: center;
       color: #fff;
+      font-size: 2.2rem;
+      font-weight: 600;
     }
     .btn-form {
       width: fit-content;
