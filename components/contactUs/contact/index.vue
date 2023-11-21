@@ -417,7 +417,7 @@ a {
     //     justify-content: center;
 
     form {
-      margin: 5vw auto;
+      margin: 2vw auto;
 
       &>div:nth-child(1) {
         display: flex;
@@ -431,7 +431,7 @@ a {
 
     }
     .text-form {
-      margin-top: 9vw;
+      margin-top: 5vw;
       text-align: center;
       color: #fff;
       font-size: 2.2rem;
@@ -440,7 +440,7 @@ a {
     .btn-form {
       width: fit-content;
       text-decoration: none;
-      margin: 5vw auto 0;
+      margin: 3vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -452,7 +452,7 @@ a {
     .btn-form:hover {
       width: fit-content;
       text-decoration: none;
-      margin: 9vw auto 0;
+      margin: 3vw auto 0;
       display: flex;
       justify-content: center;
       align-items: center;
