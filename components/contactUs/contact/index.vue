@@ -485,6 +485,8 @@ a {
       margin-top: 20vw;
       text-align: center;
       color: #fff;
+      font-size: 25px;    
+      font-weight: 300;
     }
   .btn-form {
       width: fit-content;
