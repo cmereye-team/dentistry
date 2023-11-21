@@ -6,7 +6,7 @@
         <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
       </div>
       <div class="form">
-        <div class="text-form">立即預約牙科服務，展現自信笑容！</div>
+        <div class="text-form">立即預約牙科服務，<br class="mbShow" />展現自信笑容！</div>
         <a class="btn-form" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -304,6 +304,9 @@ a {
 
 //pc
 @media only screen and (min-width: 760px) {
+  .mbShow {
+    display: none !important;
+  }
   ::v-deep .el-radio__label {
     padding-left: 10px;
     font-size: 1rem;
@@ -624,7 +627,7 @@ a {
   .form {
     left: -10%;
     // border-radius: 36% 36% 0 0;
-    clip-path: ellipse(100% 54% at 51% 54%);
+    clip-path: ellipse(110% 54% at 51% 54%);
     // background: radial-gradient(108vw 68vw at bottom, transparent 50%, #9BD0F5 50%) !important;
     background-color: #9bd0f5;
     display: grid;
