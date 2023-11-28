@@ -1,13 +1,13 @@
 <template>
-<div id="lay">
-  <menuBar/>
-  <!-- <Banner /> -->
-  <footce/>
-  <serve/>
-  <mapGoogle/>
-  <foot/>
-  
-</div>
+  <div id="lay">
+    <menuBar />
+    <!-- <Banner /> -->
+    <footce />
+    <serve />
+    <mapGoogle />
+    <foot />
+
+  </div>
 </template>
 
 <script>
@@ -19,18 +19,18 @@ import serve from "@/components/about-me/serve/index.vue"
 // import Banner from "@/components/service/banner/index.vue"
 
 export default {
-   components: { 
+  components: {
     menuBar,
     footce,
     serve,
     mapGoogle,
     foot,
     // Banner
-    },
-     mounted(){
-       document.getElementsByTagName("body")[0].className="body-service";
-    },
-     head() {
+  },
+  mounted() {
+    document.getElementsByTagName("body")[0].className = "body-service";
+  },
+  head() {
     return {
       title: '牙科服務 | 希瑪牙科中心',
       meta: [{
@@ -46,9 +46,7 @@ export default {
       ]
     }
   }
-  
+
 }
 </script>
-<style>
- 
-</style>
+<style></style>
