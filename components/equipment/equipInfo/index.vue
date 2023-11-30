@@ -90,7 +90,7 @@
         </div>
         <div style="display: flex">
           <div
-            v-for="(lab,labIndex) in item._embedded[Object.keys(item._embedded)[2]][1]"
+            v-for="(lab,labIndex) in (item._embedded[Object.keys(item._embedded)[2]] && item._embedded[Object.keys(item._embedded)[2]][1])"
             :key="labIndex"
             style="margin: 0 0.5vw"
           >
@@ -110,7 +110,7 @@
       @current-change="handleCurrentChange"
       :current-page="currentPage"
       :page-size="pagesize"
-      :total="total"
+      :total="total || 0"
     >
     </el-pagination>
   </div>
@@ -786,8 +786,10 @@ export default {
     .content {
       display: inline-block;
       margin-top: 7vw;
-      margin-left: 3vw;
-
+      // margin-left: 3vw;
+      padding: 0 3vw;
+      max-width: 100%;
+      overflow: hidden;
       h2 {
         padding: 0;
         text-align: left;
@@ -808,6 +810,7 @@ export default {
 
       p {
         color: #57b2f3;
+        max-width: 100%;
       }
     }
   }
