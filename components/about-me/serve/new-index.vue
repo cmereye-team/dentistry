@@ -1,0 +1,819 @@
+<template>
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
+    <div class="flex justify-center texts">
+      <h2>牙科服務</h2>
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+      <p class="serve_con">
+        中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助客人回復自信笑容。
+      </p>
+    </div>
+    <div class="box">
+      <div class="service_box">
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/implant" class="implant">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame.png" title="植牙" alt="植牙"
+                  class="yas" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">植牙</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/rct" class="rct">
+              <div class="service_pic">
+                <img class="imgya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png"
+                  title="根管治療（杜牙根）" alt="根管治療（杜牙根）" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16 setWith">根管治療（杜牙根）</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/periodontal-treatment" class="periodontal-treatment">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame03.png" title="牙周病治療"
+                  alt="牙周病治療" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">牙周病治療</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/extractions-and-wisdom-teeth-extraction" class="extractions-and-wisdom-teeth-extraction">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除"
+                  alt="拔牙及智慧齒脫除" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">拔牙及智慧齒脫除</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <div class="service_box">
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/scaling-and-polishing" class="scaling-and-polishing">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_3.png" title="洗牙"
+                  alt="洗牙" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">洗牙</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/fillings" class="fillings">
+              <div class="service_pic">
+                <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_4.png"
+                  title="補牙" alt="補牙" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">補牙</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/general-oral-examination" class="general-oral-examination">
+              <div class="service_pic">
+                <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_5.png"
+                  title="一般口腔檢查" alt="一般口腔檢查" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">一般口腔檢查</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/children-dentistry" class="children-dentistry">
+              <div class="service_pic">
+                <img class="buya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png"
+                  title="兒童牙科保健及治療" alt="兒童牙科保健及治療" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16 setWith">兒童牙科保健及治療</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="service_box">
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/veneers" class="veneers">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_0.png" title=" 瓷貼片"
+                  alt=" 瓷貼片" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">瓷貼片</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/orthodontics" class="orthodontics">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame04.png" title="矯齒"
+                  alt="矯齒" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">矯齒</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/invisalign" class="invisalign">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
+                  alt="Invisalign隱形牙箍" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16 setWith">Invisalign 隱形牙箍</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/teeth-whitening" class="teeth-whitening">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png" title="牙齒美白"
+                  alt="牙齒美白" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">牙齒美白</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <div class="service_box service_boxs">
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/crowns-and-bridges" class="crowns-and-bridges">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠"
+                  alt="全瓷牙冠及全鋯牙冠" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16 setWith">全瓷牙冠及全鋯牙冠</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+        <div class="service_item" data-wow-delay="0.3s">
+          <div class="service_hover">
+            <nuxt-link to="/complete-and-partial-denture" class="complete-and-partial-denture">
+              <div class="service_pic">
+                <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托"
+                  alt="全口牙托及局部牙托" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16 setWith">全口牙托及局部牙托</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="service_box_line service_box1">
+        <div>高階牙科</div>
+        <div>
+          <div v-for="(item, index) in adDentistry" :key="index">
+            <nuxt-link :to="item.link">
+              <div class="service_pic">
+                <img :src="item.img" :title="item.name" :alt="item.name" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">{{ item.name }}</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <div class="service_box_line service_box2">
+        <div>基本牙科</div>
+        <div>
+          <div v-for="(item, index) in basicDentistry" :key="index">
+            <nuxt-link :to="item.link">
+              <div class="service_pic">
+                <img :src="item.img" :title="item.name" :alt="item.name" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">{{ item.name }}</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <div class="service_box_line service_box3">
+        <div>美容牙科</div>
+        <div>
+          <div v-for="(item, index) in cosmeticDentistry " :key="index">
+            <nuxt-link :to="item.link">
+              <div class="service_pic">
+                <img :src="item.img" :title="item.name" :alt="item.name" />
+              </div>
+              <div class="service_txt">
+                <p class="fs-sm-16">{{ item.name }}</p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  data() {
+    return {
+      adDentistry: [
+        {
+          link: '/implant',
+          name: '微創植牙/種植牙',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame.png'
+        },
+        {
+          link: '/rct',
+          name: '根管治療(杜牙根)',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png'
+        },
+        {
+          link: '/periodontal-treatment',
+          name: '牙周病治療',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame03.png'
+        },
+        {
+          link: '/extractions-and-wisdom-teeth-extraction',
+          name: '拔牙及剝智慧齒',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame02.png'
+        }
+      ],
+      basicDentistry: [
+        {
+          link: '/scaling-and-polishing',
+          name: '洗牙',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_3.png'
+        },
+        {
+          link: '/fillings',
+          name: '補牙',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_4.png'
+        },
+        {
+          link: '/general-oral-examination',
+          name: '一般口腔檢查',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_5.png'
+        },
+        {
+          link: '/children-dentistry',
+          name: '兒童牙科',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png'
+        }
+      ],
+      cosmeticDentistry: [
+        {
+          link: '/veneers',
+          name: '全瓷貼片',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_0.png'
+        },
+        {
+          link: '/orthodontics',
+          name: '矯齒',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame04.png'
+        },
+        {
+          link: '/invisalign',
+          name: '隱形牙箍',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png'
+        },
+        {
+          link: '/teeth-whitening',
+          name: '美白牙齒',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png'
+        },
+        {
+          link: '/crowns-and-bridges',
+          name: '全瓷牙冠/全鋯牙冠',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png'
+        },
+        {
+          link: '/complete-and-partial-denture',
+          name: '全口牙托/局部牙托',
+          img: 'https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png'
+        },
+      ]
+    }
+  },
+}
+</script>
+<style lang="scss" scoped>
+.texts {
+  text-align: center;
+
+  h2 {
+    font-weight: 500;
+    color: #79828d;
+    margin-bottom: 0vw;
+  }
+
+  image {
+    text-align: center;
+  }
+}
+
+.service_box .service_item .service_hover {
+  width: 100%;
+  height: auto;
+  padding-bottom: 1rem;
+  z-index: 999;
+  background: #ecf7fc;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.service_pic img {
+  // max-width: 80px;
+  // width: 5vw;
+}
+
+.box {
+  display: table;
+  margin: 50px auto;
+}
+
+.service_box {
+  // padding-top: 3.714rem;
+  // padding-bottom: 3.571rem;
+  display: flex;
+  justify-content: left;
+  // max-width: 800px;
+  // margin: auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .service_box {
+    padding-top: 3rem;
+  }
+}
+
+.service_box .service_item {
+  text-align: center;
+  // display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  margin: 1vw;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  .imgya {
+    margin-left: 7vw !important;
+  }
+
+  .yas {
+    width: 16vw !important;
+  }
+
+  .service_pic img {
+    // max-width: 80px;
+    width: 22vw;
+  }
+
+  .box {
+    margin: 0;
+  }
+
+  .service_txt {
+    color: #505050;
+    font-weight: 600;
+  }
+
+  .service_box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-top: 0 !important;
+  }
+
+  ::v-deep .service_box .service_item {
+    flex: 1 0 36.333333% !important;
+    // max-width: 44.333333% !important;
+    margin-bottom: 1.428rem !important;
+    padding-right: 0 !important;
+    // margin: 1vw;
+  }
+
+  ::v-deep .service_box .service_item .service_pic {
+    width: 55% !important;
+    text-align: center !important;
+    margin: auto !important;
+    height: 19vw !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 6vw !important;
+  }
+
+  ::v-deep .service_box .service_item .service_txt {
+    width: 100% !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    height: 8vw !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-flow: column !important;
+    justify-content: center !important;
+    margin-top: 4vw !important;
+  }
+
+  ::v-deep .service_box .row {
+    padding-right: 15px;
+    justify-content: center;
+  }
+
+  .service_box .row {
+    padding-right: 15px;
+  }
+
+  .serve_con {
+    text-align: left;
+    padding: 5vw;
+    color: #79828d;
+  }
+
+  .service_box .service_item {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin-bottom: 1.428rem;
+    padding-right: 0;
+  }
+
+  .service_box .service_item img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 7680px) {
+  .service_pic img {
+    max-width: 200px;
+    // width: 6vw;
+  }
+
+  .service_txt {
+    color: #505050;
+    font-weight: 600;
+  }
+
+  .imgya {
+    margin-left: 35px !important;
+  }
+
+  .serve_con {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #79828d;
+    padding-top: 17.72px;
+    font-family: "Noto Sans CJK TC";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    margin: 0 200px;
+  }
+
+  .service_box .service_item {
+    // margin-bottom: 3.571rem;
+  }
+}
+
+.service_box .service_item .service_hover {
+  width: 173px;
+  height: 173px;
+  overflow: hidden;
+  position: relative;
+  // transition: all .3s ease-in-out;
+  // box-shadow: 0 0 15px lightgray;
+  border-radius: 1.071rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  .service_box .service_item .service_hover {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .service_box .service_item {
+    position: relative;
+  }
+
+  .service_box .service_item:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto auto;
+    border-radius: 20px;
+    width: 97%;
+    height: 108%;
+    margin-left: 9.5px;
+    z-index: 0 !important;
+    background: linear-gradient(120deg,
+        rgba(0, 123, 255, 0) 20%,
+        rgba(0, 123, 255, 0.25),
+        rgba(255, 255, 255, 0),
+        #b3d7ff,
+        rgba(255, 255, 255, 0),
+        #4777d8,
+        rgba(0, 123, 255, 0.25),
+        rgba(0, 123, 255, 0.5),
+        rgba(0, 123, 255, 0.25),
+        rgba(255, 255, 255, 0));
+    background-size: 482%;
+    filter: blur(0px);
+    transition: 1s;
+    animation: animate 8s linear alternate
+      /*,opacity 3s linear   alternate*/
+    ;
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0%;
+    }
+
+    50% {
+      background-position: 100%;
+    }
+
+    75% {
+      background-position: 75%;
+    }
+
+    100% {
+      background-position: 0%;
+    }
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.5;
+    }
+
+    75% {
+      opacity: 0.3;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  .service_box .service_item .service_hover {
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    z-index: 1 !important;
+    background: #ecf7fc;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .service_box .service_item .service_hover {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1250px) {
+  .service_box .service_item .service_hover {
+    width: 17vw;
+  }
+}
+
+.service_box .service_item:hover .service_hover {
+  background: #9bd0f5;
+
+  border-radius: 1.071rem;
+  // box-shadow: 0 5px 15px lightgray;
+  // transform: translate(2px, -2px);
+}
+
+.service_box .service_item .service_pic .service_txt {
+  background-color: #b3d7ff;
+}
+
+.service_box .service_item:hover .service_hover p {
+  color: #ffffff;
+}
+
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
+  .service_txt {
+    .setWith {
+      max-width: 106px;
+    }
+  }
+
+  .service_box .service_item .service_pic {
+    height: 7rem;
+    line-height: 8rem;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 991px) {
+  .service_box .service_item .service_pic {
+    width: 55%;
+    text-align: center;
+    margin: auto;
+    height: 19vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .service_box .service_item .service_pic img {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (min-width: 760px) and (max-width: 4096px) {
+  .service_box .service_item .service_txt {
+    // padding: 0 3rem 2rem;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 760px) {
+  .service_box .service_item .service_txt {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 10vw;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+.service_box p {
+  color: #505050;
+  font-size: 1.2rem;
+  font-weight: 540;
+  letter-spacing: 1px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 760px) {
+  .service_box p {
+    font-size: 1rem;
+    padding-top: 0.2rem;
+    font-weight: 540;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
+  ::v-deep .service_box .service_item .service_hover {
+    width: 158px;
+    height: 158px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.071rem;
+    cursor: pointer;
+  }
+
+  .service_box .service_item .service_pic {
+    line-height: 7rem;
+    height: auto;
+  }
+
+  .service_box p {
+    font-family: "Noto Sans CJK TC";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    /* or 133% */
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #505050;
+  }
+
+  .serve_con {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0 27vw;
+    font-family: "Noto Sans CJK TC";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #79828d;
+    padding: 0;
+    width: auto;
+    margin-top: 2vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    .service_item {
+      position: relative;
+    }
+
+    .service_item::before {
+      content: "";
+      background: url(https://static.cmereye.com/imgs/2023/09/5e0622e07d917d49.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      content: "";
+      height: 27px;
+      position: absolute;
+      right: 6%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 13px;
+    }
+  }
+
+
+}
+
+@media screen and (min-width: 768px) {
+  .service_box_line {
+    display: flex;
+
+    &>div:nth-child(1) {
+      flex: 1;
+    }
+
+    &>div:nth-child(2) {
+      flex: 4;
+      display: grid;
+      grid-template-rows: auto auto; /* 两行，自适应内容高度 */
+      grid-template-columns: repeat(4, 1fr); /* 四列，每列平均分配剩余空间 */
+      max-width: 1220px;
+      &>div {
+        flex: 1;
+        width: 220px;
+        margin: 0 15px;
+      }
+    }
+  }
+  .service_box1 {
+    padding-top: 19px;
+    border-top: 1px solid #EBEBEB;
+  }
+}
+</style>
