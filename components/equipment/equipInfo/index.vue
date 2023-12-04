@@ -496,10 +496,10 @@ export default {
             tags: this.selectVal,
             categories: 1,
           }).then((res) => {
-            this.list = res.data;
-            this.addMonth(this.list);
-            // console.log(this.list);
-            this.listsLoading = false
+              this.list = res.data;
+              this.addMonth(this.list);
+              // console.log(this.list);
+              this.listsLoading = false
           }).catch(err=>{
             this.listsLoading = false
           })
@@ -525,10 +525,18 @@ export default {
         page: this.currentPage,
         categories: 1,
       }).then((res) => {
-        this.list = res.data;
-        this.addMonth(this.list);
-        // console.log(this.list);
-        this.listsLoading = false
+        if (this.currentPage > 1) {
+              this.list = res.data;
+              this.addMonth(this.list);
+              // console.log(this.list);
+              this.listsLoading = false
+              window.scrollTo(0, 0);
+            } else {
+              this.list = res.data;
+              this.addMonth(this.list);
+              // console.log(this.list);
+              this.listsLoading = false
+            }
       }).catch(err=>{
         this.listsLoading = false
       })
