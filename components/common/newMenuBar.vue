@@ -388,8 +388,21 @@
           </div>
         </nav>
       </div>
+      <div class="toTop" @click="toPageTop">
+        <div class="arrowTop" :style="{ display: toTopType ? 'none' : 'block' }"></div>
+        <img class="ya" :style="{ top: toTopType ? '40%' : '50%' }"
+          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-654.3nyt17vc48m0.png"
+          alt="">
+        <div class="toTopline">
+          <span :style="{ height: toTopType ? '10px' : '0px' }"></span>
+          <span :style="{ height: toTopType ? '20px' : '0px' }"></span>
+          <span :style="{ height: toTopType ? '15px' : '0px' }"></span>
+        </div>
+        <img class="pageTop"
+          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-10.13h8v2f2dmkg.png"
+          alt="">
+      </div>
     </div>
-
     <div class="nar sticky-sm-top sticky-top home-content mbshow" style="width=90%">
       <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -800,13 +813,28 @@ export default {
     return {
       action: 0,
       isClosed: 0,
+      toTopType: false,
+      // showToBack: false,
+      screenHeight: null,
+      top: null,
     };
   },
   computed: {},
-  mounted() { },
+  mounted() {
+    this.toPageTop()
+    this.screenHeight = document.documentElement.clientHeight;
+    // window.addEventListener('scroll', function () {
+    //   var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    //   this.screenHeight = document.documentElement.clientHeight;
+    //   if (scrollTop > this.screenHeight) {
+    //     this.showToBack = true;
+    //   } else {
+    //     this.showToBack = false;
+    //   }
+    // });
+  },
   methods: {
     toServicePages() {
-      // console.log(1)
       this.$router.push("/service");
     },
     chickHandle() {
@@ -824,6 +852,24 @@ export default {
       }
       console.log(this.action);
     },
+    toPageTop() {
+      this.screenHeight = document.documentElement.clientHeight;
+      this.top = document.documentElement.scrollTop || document.body.scrollTop;
+      this.toTopType = true
+      if (this.top > this.screenHeight) {
+        setTimeout(() => {
+          const timeTop = setInterval(() => {
+            document.body.scrollTop = document.documentElement.scrollTop = this.top -= 50;
+            if (this.top <= 0) {
+              clearInterval(timeTop);
+              this.toTopType = false
+            }
+          }, 10);
+        }, 50)
+      } else {
+        this.toTopType = false;
+      }
+    }
   },
 };
 </script>
@@ -1116,6 +1162,78 @@ export default {
 
   .service_box .service_item:hover .service_hover p {
     color: #ffffff;
+  }
+
+
+
+
+  .toTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    .arrowTop {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #fff;
+      border-right: none;
+      border-bottom: none;
+      transform: translateX(-50%) rotate(45deg);
+      transform-origin: center center;
+      transition: all .7s;
+    }
+
+    .ya {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .7s;
+    }
+
+    .toTopline {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 15px;
+
+      span {
+        width: 3px;
+        height: 0;
+        background: #fff;
+        transition: all .7s;
+        display: block;
+      }
+    }
+
+    .pageTop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: toTopRoto 5s linear infinite;
+    }
+  }
+
+  @keyframes toTopRoto {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }
 
