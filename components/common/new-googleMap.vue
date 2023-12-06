@@ -2,399 +2,533 @@
   <div class="vedio_box md:font-black main-container">
     <div class="flex justify-center texts">
       <h2>診所地址</h2>
-      <img
-        src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
-        alt=""
-      />
+      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
     </div>
+
     <div class="adress">
       <ul>
-        <li
-          @click="addhandleClick(index)"
-          v-for="(item, index) in addresslist"
-          :class="addcurrentIndex == index ? 'actives' : ''"
-          :id="item.id"
-          :key="item.id"
-        >
+        <li @click="addhandleClick(index)" v-for="(item, index) in addresslist"
+          :class="addcurrentIndex == index ? 'actives' : ''" :id="item.id" :key="item.id">
           {{ item.title }}
         </li>
-        <!-- <li>九龍</li>
-        <li>新界</li> -->
       </ul>
     </div>
-    <div v-if="addcurrentIndex === 0">
-      <!-- <div class="tab flex justify-center" id="tab">
-        <ul>
-          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab1" :id="item.id + 3" :key='item.id'
-            v-for='(item, index) in list'>
-            <p class="tab1" :id="item.id + 3" >{{ item.title }}</p>
-          </li>
-        </ul>
-      </div> -->
+    <div v-if="showAllMap">
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">中環</div>
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
-          <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg"
-            width="100%"
-          />
-          <!-- <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
-            <div class="addressMap">
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg"
-                alt=""
-              />
-              <p class="address1" id="addresd">地址</p>
-              <p class="address2">中環畢打街1-3號中建大廈11樓1102室</p>
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg"
-                alt=""
-              />
-              <p class="address1">營業時間</p>
-              <p class="week">
-                星期一至星期五<br />
-                上午9:30 - 下午6:30<br />星期日及公眾假期休息
-              </p>
-              <div class="clear"></div>
-              <p class="week2">
-                星期六<br />
-                上午9:30 - 下午5:30
-              </p>
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>中環畢打街1-3號中建大廈11樓1102室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>中環地鐵站G出口（鄰近置地廣場）</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="button">
-            <a
-              class="link_more"
-              href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9"
-              aria-hidden="true"
-              target="_blank"
-              >Google 地圖</a
-            >
-            <a
-              class="link_more"
-              href="https://j.map.baidu.com/e7/6Wx"
-              aria-hidden="true"
-              target="_blank"
-              >百度地圖</a
-            >
+            <a class="link_more google_map" href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
-      <!-- <div class="justify-center addmap">
-        <div id="map">
-          <div class="map-title">銅鑼灣</div>
-            <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
-            <img src="https://static.cmereye.com/static/lkximg/map/materials_銅鑼灣.jpg" width="100%" >
-          <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-          <div class="mapcontennt">
-            <div class="addressMap">
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
-            <p class="address1 " id="addresd">地址</p>
-            <p class="address2">銅鑼灣軒尼詩道555號東角中心11樓1112室</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
-            <p class="address1">營業時間</p>
-            <p class="week">星期一至星期五<br> 上午9:30 - 下午6:00<br>星期日及公眾假期休息</p>
-            <div class="clear"></div>
-            <p class="week2">星期六<br> 上午9:30 - 下午1:00</p>
-            </div>
-          </div>
-          <div class="button">
-            <a  class="link_more"  href="https://goo.gl/maps/5ZgB51H2MZErvHNj8" aria-hidden="true" target="_blank">Google 地圖</a>
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <a  class="link_more"  href="https://j.map.baidu.com/40/Klt" aria-hidden="true" target="_blank">百度地圖</a>
-          </div>
-        </div>
-      </div> -->
-      <!-- <div class="justify-center addmap">
-        <div id="map">
-          <div class="map-title">灣仔</div>
-          <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%">
-          <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_灣仔.jpg"
-            width="100%"
-          />
-          <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-          <div class="mapcontennt">
-            <div class="addressMap">
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg"
-                alt=""
-              />
-              <p class="address1" id="addresd">地址</p>
-              <p class="address2">灣仔莊士敦道197號廣亞大樓地下</p>
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg"
-                alt=""
-              />
-              <p class="address1">營業時間</p>
-              <p class="week">
-                星期一至星期五: <br />
-                上午9:30 - 下午7:00<br />
-                星期日及公眾假期休息
-              </p>
-              <div class="clear"></div>
-              <p class="week2">
-                星期六<br />
-                上午9:30 - 下午5:00
-              </p>
-            </div>
-          </div>
-          <div class="button">
-            <a
-              class="link_more"
-              href=" https://goo.gl/maps/s236tLRsiUEGMPzZ9"
-              aria-hidden="true"
-              target="_blank"
-              >Google 地圖</a
-            >
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <a
-              class="link_more"
-              href="https://j.map.baidu.com/6f/uosf"
-              aria-hidden="true"
-              target="_blank"
-              >百度地圖</a
-            >
-          </div>
-        </div>
-      </div> -->
-    </div>
-    <div v-else-if="addcurrentIndex === 1">
-      <!-- <div class="tab flex justify-center" id="tab">
-        <ul>
-          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab2" :id="item.id + 6"  :key='item.id'
-            v-for='(item, index) in list2'>
-            <p class="tab2" :id="item.id + 6">{{ item.title }}</p>
-          </li>
-        </ul>
-      </div> -->
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">尖沙咀</div>
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
-          <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg"
-            width="100%"
-          />
-          <!-- <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
-            <div class="addressMap">
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg"
-                alt=""
-              />
-              <p class="address1" id="addresd">地址</p>
-              <p class="address2">
-                尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室
-              </p>
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg"
-                alt=""
-              />
-              <p class="address1">營業時間</p>
-              <p class="week">
-                星期一至星期二: <br />
-                上午9:00 - 下午7:00<br />
-                星期三至星期五: <br />
-                上午9:00 - 下午6:00 <br />星期日及公眾假期休息
-              </p>
-              <div class="clear"></div>
-              <p class="week2">
-                星期六<br />
-                上午9:00 - 下午5:00
-              </p>
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>尖沙咀地鐵站J出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期二</span><span>星期三至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:00 － 19:00</span><span>09:00 － 18:00</span><span>09:00 － 17:00</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="button">
-            <a
-              class="link_more"
-              href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA"
-              aria-hidden="true"
-              target="_blank"
-              >Google 地圖</a
-            >
-            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
-            <a
-              class="link_more"
-              href="https://j.map.baidu.com/8f/37s"
-              aria-hidden="true"
-              target="_blank"
-              >百度地圖</a
-            >
+            <a class="link_more google_map" href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
-      <!-- <div class="justify-center addmap">
-        <div id="map">
-          <div class="map-title">鑽石山</div>
-            <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" >
-            <img src="https://static.cmereye.com/static/lkximg/map/materials_鑽石山.jpg" width="100%" >
-          <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div>
-          <div class="mapcontennt">
-            <div class="addressMap">
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
-            <p class="address1 " id="addresd">地址</p>
-            <p class="address2">鑽石山龍蟠街3號荷里活廣場一樓116A舖</p>
-            <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg" alt="">
-            <p class="address1">營業時間</p>
-            <p class="week">星期一至星期六:<br> 上午10:00 - 下午7:00<br>星期日及公眾假期休息</p>
-            <div class="clear"></div>
-            <p class="week2">星期日及公眾假期休息</p>
-            </div>
-          </div>
-          <div class="button">
-            <a  class="link_more"  href="https://goo.gl/maps/1zu6o9DuUuePjVb48" aria-hidden="true" target="_blank">Google 地圖</a>
-            <nuxt-link class="link_more" to="">Google 地圖</nuxt-link>
-            <a  class="link_more"  href="https://j.map.baidu.com/49/Zbdc" aria-hidden="true" target="_blank">百度地圖</a>
-          </div>
-        </div>
-      </div> -->
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">觀塘</div>
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%"> -->
-          <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg"
-            width="100%"
-          />
-          <!-- <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
-            <div class="addressMap">
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg"
-                alt=""
-              />
-              <p class="address1" id="addresd">地址</p>
-              <p class="address2">觀塘開源道79號鱷魚恤中心16樓1601室</p>
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg"
-                alt=""
-              />
-              <p class="address1">營業時間</p>
-              <p class="week">
-                星期一至星期五: <br />上午9:30 - 下午6:30 <br />
-                星期六: 上午9:30 - 下午5:30<br />星期日及公眾假期休息
-              </p>
-              <div class="clear"></div>
-              <!-- <p class="week2">星期日及公眾假期休息</p> -->
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>觀塘開源道79號鱷魚恤中心16樓1601室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>觀塘地鐵站B3出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="button">
-            <a
-              class="link_more"
-              href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7"
-              aria-hidden="true"
-              target="_blank"
-              >Google 地圖</a
-            >
-            <a
-              class="link_more"
-              href="https://j.map.baidu.com/f2/Vgzc"
-              aria-hidden="true"
-              target="_blank"
-              >百度地圖</a
-            >
+            <a class="link_more google_map" href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
+          </div>
+        </div>
+      </div>
+      <div class="justify-center addmap">
+        <div id="map">
+          <div class="map-title">沙田</div>
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_沙田.jpg" width="100%" />
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>沙田正街11-17號偉華中心2樓1C-1F號舖</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>沙田地鐵站A3出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a class="link_more google_map" href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
     </div>
-    <div v-else-if="addcurrentIndex === 2">
-      <!-- <div class="tab flex justify-center" id="tab">
-        <ul>
-          <li @click='handleClick(index)' class="active tab3" :id="item.id + 9"  :key='item.id'
-            v-for='(item, index) in list3'>
-            <p  :id="item.id + 9" class="tab3">{{ item.title }}</p>
-          </li>
-        </ul>
-      </div> -->
+    <div v-if="addcurrentIndex === 0 && showAllMap == false">
       <div class="justify-center addmap">
         <div id="map">
-          <div class="map-title">沙田</div>
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
-          <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_沙田.jpg"
-            width="100%"
-          />
-          <!-- <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+          <div class="map-title">中環</div>
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
-            <div class="addressMap">
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg"
-                alt=""
-              />
-              <p class="address1" id="addresd">地址</p>
-              <p class="address2">沙田正街11-17號偉華中心2樓1C-1F號舖</p>
-              <img
-                class="addrescoin"
-                src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Group 65.svg"
-                alt=""
-              />
-              <p class="address1">營業時間</p>
-              <p class="week">
-                星期一至星期五: <br />
-                上午9:30 - 下午6:30<br />星期日及公眾假期休息
-              </p>
-              <div class="clear"></div>
-              <p class="week2">
-                星期六<br />
-                上午9:30 - 下午5:30
-              </p>
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>中環畢打街1-3號中建大廈11樓1102室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>中環地鐵站G出口（鄰近置地廣場）</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="button">
-            <a
-              class="link_more"
-              href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9"
-              aria-hidden="true"
-              target="_blank"
-              >Google 地圖</a
-            >
-            <a
-              class="link_more"
-              href="https://j.map.baidu.com/8f/jisf"
-              aria-hidden="true"
-              target="_blank"
-              >百度地圖</a
-            >
+            <a class="link_more google_map" href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else-if="addcurrentIndex === 1 && showAllMap == false">
+      <div class="justify-center addmap">
+        <div id="map">
+          <div class="map-title">尖沙咀</div>
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" />
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>尖沙咀梳士巴利道18-24號K11 ATELIER辦公大樓1906室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>尖沙咀地鐵站J出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期二</span><span>星期三至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:00 － 19:00</span><span>09:00 － 18:00</span><span>09:00 － 17:00</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a class="link_more google_map" href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
+          </div>
+        </div>
+      </div>
+      <div class="justify-center addmap">
+        <div id="map">
+          <div class="map-title">觀塘</div>
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_觀塘.jpg" width="100%" />
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>觀塘開源道79號鱷魚恤中心16樓1601室</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>觀塘地鐵站B3出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a class="link_more google_map" href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div v-else-if="addcurrentIndex === 2 && showAllMap == false">
+      <div class="justify-center addmap">
+        <div id="map">
+          <div class="map-title">沙田</div>
+          <img src="https://static.cmereye.com/static/lkximg/map/materials_沙田.jpg" width="100%" />
+        </div>
+        <div>
+          <div class="mapcontennt">
+            <div class="map_style">
+              <div>
+                <div><img
+                    src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
+                <div>沙田正街11-17號偉華中心2樓1C-1F號舖</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="none">
+                    <g clip-path="url(#clip0_145_117)">
+                      <path
+                        d="M9.36885 0H4.63064C4.30284 0 4.03711 0.259022 4.03711 0.578543V1.79773C4.03711 2.11725 4.30284 2.37627 4.63064 2.37627H9.36885C9.69664 2.37627 9.96238 2.11725 9.96238 1.79773V0.578543C9.96238 0.259022 9.69664 0 9.36885 0Z"
+                        fill="white" />
+                      <path
+                        d="M10.3449 0.921726H3.65505C2.39085 0.921726 1.36475 1.92192 1.36475 3.15418V9.67504C1.36475 10.9073 2.39085 11.9075 3.65505 11.9075H10.3449C11.6091 11.9075 12.6352 10.9073 12.6352 9.67504V3.15091C12.6352 1.91865 11.6091 0.918457 10.3449 0.918457V0.921726ZM3.89313 9.86789C3.49409 9.86789 3.17217 9.5541 3.17217 9.16514C3.17217 8.77618 3.49409 8.46239 3.89313 8.46239C4.29217 8.46239 4.61409 8.77618 4.61409 9.16514C4.61409 9.5541 4.29217 9.86789 3.89313 9.86789ZM10.1101 9.86789C9.71109 9.86789 9.38918 9.5541 9.38918 9.16514C9.38918 8.77618 9.71109 8.46239 10.1101 8.46239C10.5092 8.46239 10.8311 8.77618 10.8311 9.16514C10.8311 9.5541 10.5092 9.86789 10.1101 9.86789ZM10.9485 5.61217C10.9485 6.08939 10.5528 6.47508 10.0632 6.47508H3.91325C3.42367 6.47508 3.02798 6.08939 3.02798 5.61217V3.39606C3.02798 2.91884 3.42367 2.53315 3.91325 2.53315H10.0598C10.5494 2.53315 10.9451 2.91884 10.9451 3.39606V5.61217H10.9485Z"
+                        fill="white" />
+                      <path d="M0 16.9837L3.31641 12.1724H3.75234L1.19713 17.0001L0 16.9837Z" fill="white" />
+                      <path d="M13.9999 16.9837L10.6835 12.1724H10.2476L12.8028 17.0001L13.9999 16.9837Z" fill="white" />
+                      <path d="M11.2502 13.5058H2.90723L3.24256 12.8521H10.66L11.2502 13.5058Z" fill="white" />
+                      <path d="M12.464 15.6894H1.8374L2.17273 15.0356H12.1287L12.464 15.6894Z" fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_145_117">
+                        <rect width="14" height="17" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+                <div>沙田地鐵站A3出口</div>
+              </div>
+              <div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+<circle cx="8.29493" cy="8.86182" r="7.79493" stroke="white"/>
+<path d="M8.74658 9.20769L8.74658 3.67773" stroke="white" stroke-linecap="round"/>
+<path d="M8.74651 9.20748L12.6175 11.6269" stroke="white" stroke-linecap="round"/>
+</svg>
+                </div>
+                <div>
+                  <div>
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                  </div>
+                  <div>
+                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button">
+            <a class="link_more google_map" href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true"
+              target="_blank">Google
+              地圖</a>
+            <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
       </div>
@@ -458,22 +592,12 @@ export default {
       ],
       currentIndex: 0, // 当前点击的tab的索引
       addcurrentIndex: 0, // 当前点击的tab的索引
+      showAllMap: true,
     };
   },
   created() {},
 
   methods: {
-    // initMap() {
-    //   var googleMap = new google.maps.Map(document.getElementById("map"), {
-    //       center: {lat: 40, lng: 116},	//地图初始化中心点
-    //       mapTypeId: google.maps.MapTypeId.ROADMAP,//地图类型（地图、地形图、卫星图 三种可选）
-    //       disableDefaultUI: false,	//是否彻底停用默认用户界面
-    //       zoomControl: false,			//是否显示右下角放大、缩小按钮
-    //       mapTypeControl: false,		//是否显示左上角地图类型选择框
-    //       scaleControl: false,		//是否右下角显示地图比例尺
-    //       zoom: 13				   //地图缩放级别（放大、缩小也是修改此选项）
-    //   });
-    // };
 
     handleClick(index) {
       // console.log(index);
@@ -482,6 +606,7 @@ export default {
     addhandleClick(index) {
       console.log(index);
       this.addcurrentIndex = index;
+      this.showAllMap = false;
     },
   },
 };
@@ -500,17 +625,21 @@ export default {
     text-align: center;
   }
 }
+
 a {
   text-decoration: none;
   color: #57b2f3;
+
   &:hover {
     animation: 3s ease-in 1s 2 reverse both paused slidein;
   }
 }
+
 @media only screen and (min-width: 1000px) and (max-width: 1440px) {
   .mapcontennt {
     z-index: -1;
   }
+
   .mapcontennt::before {
     //这里就是小三角了
     content: "";
@@ -523,10 +652,67 @@ a {
     border-color: transparent #8cd1f8 transparent transparent;
   }
 }
+
 //pc
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
+  .map_style {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+
+    &>div {
+      display: flex;
+
+      &>div:nth-child(1) {
+        flex: 1;
+        width: 17px;
+        height: 17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>svg,
+        &>img {
+          width: 100%;
+        }
+      }
+
+      &>div:nth-child(2) {
+        flex: 9;
+        color: #FFF;
+        text-align: justify;
+        font-family: Noto Sans;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 1.5px;
+      }
+    }
+
+    &>div:nth-child(2) {
+      margin: 20px 0;
+    }
+
+    &>div:nth-child(3) {
+      &>div:nth-child(2) {
+        display: flex;
+
+        &>div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &>div:nth-child(1) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
   #map {
     position: relative;
+
     .map-title {
       position: absolute;
       left: 10%;
@@ -540,6 +726,7 @@ a {
       text-align: center;
       font-size: 18px;
       font-weight: 500;
+
       &::before {
         content: "";
         width: 20px;
@@ -549,6 +736,7 @@ a {
         bottom: 0;
         background: radial-gradient(at 0% 0%, #fff 70%, #8cd1f8 40%);
       }
+
       &::after {
         content: "";
         width: 20px;
@@ -559,12 +747,14 @@ a {
         background: radial-gradient(at 100% 0%, #fff 70%, #8cd1f8 40%);
       }
     }
+
     img {
       border-radius: 30px 30px 30px 30px;
       border-radius: 10px 10px 10px 10px;
       box-shadow: 22px 22px 0px #8cd1f8;
     }
   }
+
   .button {
     display: flex;
     margin-left: 59px;
@@ -600,16 +790,41 @@ a {
     line-height: 24px;
     /* identical to box height */
     letter-spacing: 0.1em;
+
     &:hover {
       animation: 3s ease-in 1s 2 reverse both paused slidein;
     }
   }
 
+  .button {
+    &>a:nth-child(1) {
+      border-radius: 100px;
+      border: 1px solid #57B2F3;
+      background: #57B2F3;
+      color: #FFF;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .google_map:hover {
+    border: 1px solid #57B2F3 !important;
+    background: #fff !important;
+    color: #57B2F3 !important;
+  }
+
+
   .addmap {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 148px;
   }
+
   .mapcontennt::before {
     //这里就是小三角了
     content: "";
@@ -621,19 +836,21 @@ a {
     border-style: dashed solid dashed dashed;
     border-color: transparent #8cd1f8 transparent transparent;
   }
+
   .mapcontennt {
-    height: 306px;
-    width: 500px;
-    border: 1;
     background: #8cd1f8;
     border-radius: 30px 30px 30px 30px;
     margin-left: 87px;
     margin-top: 10px;
     position: relative;
+    padding: 24px 30px;
+    max-width: 400px;
+
     .addressMap {
       padding: 10px;
       font-size: 1rem;
     }
+
     .addrescoin {
       padding: 0.8vw 1.3vw 0 1.3vw;
       position: absolute;
@@ -669,6 +886,7 @@ a {
       float: left;
       font-size: 14px;
     }
+
     .week1 {
       padding: 1vw 3.3vw 0 2.5vw;
       position: relative;
@@ -676,6 +894,7 @@ a {
       color: #fff;
       display: flex;
     }
+
     .week2 {
       position: relative;
       color: #fff;
@@ -690,15 +909,18 @@ a {
     //   color:white
     // }
   }
+
   .mapcontennt::after {
     display: block;
     content: "";
     clear: both;
   }
+
   .mapcontennt .week::after {
     content: "";
     clear: both;
   }
+
   #map {
     // height: 28vw;
     width: 673px;
@@ -744,10 +966,12 @@ a {
       width: 6vw;
     }
   }
+
   .vedio_box {
     padding-top: 60px;
     padding-bottom: 154px;
   }
+
   .adress {
     ul {
       padding: 0;
@@ -778,10 +1002,12 @@ a {
         border-radius: 100%;
         cursor: pointer;
       }
+
       .actives {
         background: #57b2f3;
         border-radius: 100%;
       }
+
       // li:nth-of-type(1) {
       //   background: #57B2F3;
       //   border-radius: 100%;
@@ -791,17 +1017,75 @@ a {
 }
 
 //mb
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+  .map_style {
+    display: flex;
+    flex-direction: column;
+    min-width: 20rem;
+    padding: 1.25rem 0.9375rem;
+
+    &>div {
+      display: flex;
+
+      &>div:nth-child(1) {
+        flex: 1;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &>svg {
+          width: 100%;
+        }
+      }
+
+      &>div:nth-child(2) {
+        flex: 9;
+        color: #FFF;
+        text-align: justify;
+        font-family: Noto Sans;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.3px;
+      }
+    }
+
+    &>div:nth-child(2) {
+      margin: 20px 0;
+    }
+
+    &>div:nth-child(3) {
+      &>div:nth-child(2) {
+        display: flex;
+
+        &>div {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &>div:nth-child(1) {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
   .vedio_box {
     padding-bottom: 69px;
   }
+
   .actives {
     background: #57b2f3 !important;
     border-radius: 100% !important;
   }
+
   #addresd {
     // padding: 2.5vw 1.3vw 0 6.8vw;
   }
+
   // #map {
   //   // height: 55vw;
   //   width: 92%;
@@ -811,12 +1095,15 @@ a {
   // }
   .addmap {
     padding-top: 130px;
+
     &:nth-of-type(1) {
       padding-top: 70px;
     }
   }
+
   #map {
     position: relative;
+
     .map-title {
       position: absolute;
       left: 20%;
@@ -829,6 +1116,7 @@ a {
       line-height: 40px;
       border-radius: 15px 15px 0 0;
       text-align: center;
+
       &::before {
         content: "";
         width: 18px;
@@ -838,6 +1126,7 @@ a {
         bottom: 0;
         background: radial-gradient(at 0% 0%, #fff 70%, #8cd1f8 40%);
       }
+
       &::after {
         content: "";
         width: 18px;
@@ -848,6 +1137,7 @@ a {
         background: radial-gradient(at 100% 0%, #fff 70%, #8cd1f8 40%);
       }
     }
+
     img {
       border-radius: 30px 30px 30px 30px;
       // height: 28vw;
@@ -856,6 +1146,7 @@ a {
       box-shadow: 13px 13px 0px #8cd1f8;
     }
   }
+
   @keyframes slidein {
     0% {
       // background: linear-gradient(94.37deg, #4570b6 12.08%, #81dbec 92.9%);
@@ -866,6 +1157,7 @@ a {
       color: white;
     }
   }
+
   .mapcontennt::before {
     //这里就是小三角了
     content: "";
@@ -913,99 +1205,116 @@ a {
     margin-top: 37px !important;
     margin: 0 auto;
     position: relative;
-    .addrescoin {
-      padding: 1vw 1.3vw 0 1.3vw;
-      position: absolute;
-      height: 6vw;
-      margin-bottom: 0.5vw;
-      margin: 2vw 0 0 2vw;
-    }
-    .addressMap {
-      padding: 10px;
-    }
-    .address1 {
-      padding: 0.8vw 1.3vw 0 7.8vw;
-      color: white;
-      margin-bottom: 0.5vw;
-      margin: 2vw 0 0 2vw;
-    }
-
-    .address2 {
-      padding: 0 1.3vw 0 1.3vw;
-      color: white;
-      margin-bottom: 0.5vw;
-      margin: 2vw 0 0 2vw;
-    }
-
-    .address2::after {
-      content: "";
-      width: 100%;
-      height: 1px;
-      display: block;
-      margin: 0 auto;
-      border-bottom: 2px solid #fff;
-      padding: 4px;
-    }
-
-    .week {
-      padding: 1vw 3.3vw 0 2.5vw;
-      color: white;
-      position: absolute;
-    }
-    .week1 {
-      padding: 1vw 3.3vw 0 2.5vw;
-      color: white;
-    }
-    .week2 {
-      padding: 1vw 3.3vw 0 1.8vw;
-
-      position: relative;
-      color: #fff;
-      display: flex;
-      // position: absolute;
-      margin-left: 40vw;
-    }
-
-    // p{
-    //   padding: 0.8vw 1.3vw;
-    //   color:white
-    // }
   }
 
-  .active {
-    //  background-color: #F3FCFE;
-    height: 7vw;
-    color: #57b2f3 !important;
-    border-bottom: 2px solid #57b2f3;
-    display: block;
-  }
+  // .mapcontennt {
+  //   height: 65vw;
+  //   width: 81vw;
+  //   border: 1;
+  //   background: #8cd1f8;
+  //   border-radius: 16px 16px 16px 16px;
+  //   margin-left: 3vw;
+  //   margin-top: 37px !important;
+  //   margin: 0 auto;
+  //   position: relative;
 
-  .tab {
-    display: flex;
-    justify-content: center;
+  //   // .addrescoin {
+  //   //   padding: 1vw 1.3vw 0 1.3vw;
+  //   //   position: absolute;
+  //   //   height: 6vw;
+  //   //   margin-bottom: 0.5vw;
+  //   //   margin: 2vw 0 0 2vw;
+  //   // }
 
-    ul {
-      margin: 0;
-      padding: 0;
-      height: 50px;
-      display: contents;
-      // position: absolute;
-    }
+  //   .addressMap {
+  //     padding: 10px;
+  //   }
 
-    li {
-      cursor: pointer;
-      box-sizing: border-box;
-      list-style: none;
-      text-align: center;
-      float: left;
-      margin: 1vw;
-      color: #c2c7cd;
+  //   .address1 {
+  //     padding: 0.8vw 1.3vw 0 7.8vw;
+  //     color: white;
+  //     margin-bottom: 0.5vw;
+  //     margin: 2vw 0 0 2vw;
+  //   }
 
-      // border-bottom: 2px solid linear-gradient(#81dbec,#4570b6 );
-      // border-image: -webkit-linear-gradient(60deg, #81dbec, #4570b6) 1 2;
-      width: 17vw;
-    }
-  }
+  //   .address2 {
+  //     padding: 0 1.3vw 0 1.3vw;
+  //     color: white;
+  //     margin-bottom: 0.5vw;
+  //     margin: 2vw 0 0 2vw;
+  //   }
+
+  //   .address2::after {
+  //     content: "";
+  //     width: 100%;
+  //     height: 1px;
+  //     display: block;
+  //     margin: 0 auto;
+  //     border-bottom: 2px solid #fff;
+  //     padding: 4px;
+  //   }
+
+  //   .week {
+  //     padding: 1vw 3.3vw 0 2.5vw;
+  //     color: white;
+  //     position: absolute;
+  //   }
+
+  //   .week1 {
+  //     padding: 1vw 3.3vw 0 2.5vw;
+  //     color: white;
+  //   }
+
+  //   .week2 {
+  //     padding: 1vw 3.3vw 0 1.8vw;
+
+  //     position: relative;
+  //     color: #fff;
+  //     display: flex;
+  //     // position: absolute;
+  //     margin-left: 40vw;
+  //   }
+
+  //   // p{
+  //   //   padding: 0.8vw 1.3vw;
+  //   //   color:white
+  //   // }
+  // }
+
+  // .active {
+  //   //  background-color: #F3FCFE;
+  //   height: 7vw;
+  //   color: #57b2f3 !important;
+  //   border-bottom: 2px solid #57b2f3;
+  //   display: block;
+  // }
+
+  // .tab {
+  //   display: flex;
+  //   justify-content: center;
+
+  //   ul {
+  //     margin: 0;
+  //     padding: 0;
+  //     height: 50px;
+  //     display: contents;
+  //     // position: absolute;
+  //   }
+
+  //   li {
+  //     cursor: pointer;
+  //     box-sizing: border-box;
+  //     list-style: none;
+  //     text-align: center;
+  //     float: left;
+  //     margin: 1vw;
+  //     color: #c2c7cd;
+
+  //     // border-bottom: 2px solid linear-gradient(#81dbec,#4570b6 );
+  //     // border-image: -webkit-linear-gradient(60deg, #81dbec, #4570b6) 1 2;
+  //     width: 17vw;
+  //   }
+  // }
 
   .adress {
     ul {
@@ -1026,5 +1335,4 @@ a {
       }
     }
   }
-}
-</style>
+}</style>

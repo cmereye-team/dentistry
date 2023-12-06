@@ -614,7 +614,7 @@ a {
 
   .form {
     // border-radius: 36% 36% 0 0;
-    clip-path: ellipse(110% 54% at 51% 54%);
+    clip-path: ellipse(140% 54% at 51% 54%);
     // background: radial-gradient(108vw 68vw at bottom, transparent 50%, #9BD0F5 50%) !important;
     background-color: #97c8ed;
     display: grid;

@@ -164,6 +164,10 @@ const getRoutes = resolve => [
 
   },
   {
+    path: '/new-contact-us',
+    component: resolve('pages/new-contact-us'),
+  },
+  {
     path: '/policy',
     component: resolve('pages/policy'),
 

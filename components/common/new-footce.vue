@@ -303,6 +303,7 @@ export default {
       // padding: 22px 0 14px;
       width: 0;
       padding: 0;
+      transition: all 0.5s ease-in-out;
 
       &>div:nth-child(1) {
         display: none;
