@@ -20,6 +20,16 @@
         </a>
       </div> -->
       <div class="carousel-item active">
+        <img
+          data-cfsrc="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png"
+          srcset="
+            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1073.2b1hd6addkw0.png 400w,
+            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1073.2b1hd6addkw0.png 640w,
+            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png
+          " title="提供全方位牙科服務" alt="提供全方位牙科服務"
+          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png">
+      </div>
+      <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" srcset="
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w,
@@ -37,16 +47,7 @@
           建議針對性的治療方案
         </div>
       </div>
-      <div class="carousel-item">
-        <img
-          data-cfsrc="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png"
-          srcset="
-            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1073.2b1hd6addkw0.png 400w,
-            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1073.2b1hd6addkw0.png 640w,
-            https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png
-          " title="提供全方位牙科服務" alt="提供全方位牙科服務"
-          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png">
-      </div>
+
       <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png" srcset="
             https://static.cmereye.com/imgs/2023/10/0d8116d9eaa77470.png 400w,
@@ -256,6 +257,7 @@ export default {
 
   .carousel-item {
     text-align: center;
+
     &>img {
       min-height: 671px;
     }
