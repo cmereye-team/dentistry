@@ -19,7 +19,7 @@
           />
         </a>
       </div> -->
-      <!-- <div class="carousel-item active">
+      <div class="carousel-item active">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" srcset="
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w,
@@ -36,8 +36,8 @@
           整體分析客人口腔， <br />
           建議針對性的治療方案
         </div>
-      </div> -->
-      <div class="carousel-item active">
+      </div>
+      <div class="carousel-item">
         <img
           data-cfsrc="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png"
           srcset="
@@ -47,7 +47,7 @@
           " title="提供全方位牙科服務" alt="提供全方位牙科服務"
           src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png">
       </div>
-      <!-- <div class="carousel-item">
+      <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png" srcset="
             https://static.cmereye.com/imgs/2023/10/0d8116d9eaa77470.png 400w,
             https://static.cmereye.com/imgs/2023/10/0d8116d9eaa77470.png 640w,
@@ -61,12 +61,13 @@
             https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg
           " title="提供全方位牙科服務" alt="提供全方位牙科服務"
           src="https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg" />
-      </div> -->
+      </div>
     </div>
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button> -->
-      <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> -->
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
       <!-- <button
         type="button"
         data-bs-target="#demo"
@@ -255,6 +256,9 @@ export default {
 
   .carousel-item {
     text-align: center;
+    &>img {
+      min-height: 671px;
+    }
   }
 
   .contents {
