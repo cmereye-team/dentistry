@@ -60,6 +60,14 @@
           <div class="tel_pc">
             <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-4.1tvtfq5l99c0.png"
               alt="">
+            <div>
+              <div><span>電話預約:</span><span> 3620 2428</span></div>
+              <div><svg xmlns="http://www.w3.org/2000/svg" width="41" height="38" viewBox="0 0 41 38" fill="none">
+                  <path
+                    d="M7.89237 0.646751C9.48619 0.238417 10.2633 1.30532 10.8561 2.83328C11.7386 5.11204 12.7002 7.36449 13.6617 9.60374C13.8449 9.94259 13.9251 10.3276 13.8923 10.7114C13.8595 11.0952 13.7153 11.4611 13.4773 11.764C12.687 12.8177 11.923 13.8979 11.0932 14.9121C10.8447 15.1692 10.6951 15.5059 10.671 15.8627C10.6469 16.2195 10.7498 16.5733 10.9615 16.8616C14.0076 22.1506 18.7651 26.2438 24.4497 28.4661C24.7805 28.6402 25.1633 28.688 25.5268 28.6008C25.8903 28.5136 26.2096 28.2972 26.4255 27.992C27.4002 26.767 28.4276 25.5814 29.3628 24.3301C29.5429 23.986 29.8503 23.726 30.2194 23.6054C30.5885 23.4848 30.9902 23.5133 31.3386 23.6847C34.1575 25.0019 36.9499 26.3191 39.7292 27.7153C39.8915 27.8271 40.0267 27.9739 40.1247 28.1449C40.2227 28.3159 40.2812 28.5067 40.2956 28.7032C40.4435 30.0751 40.2063 31.461 39.6107 32.7057C39.0151 33.9504 38.0847 35.0047 36.9236 35.7503C35.4434 36.7071 33.7685 37.3217 32.0208 37.5496C30.2731 37.7774 28.4966 37.6128 26.8206 37.0675C17.89 34.578 11.1064 29.1643 5.65313 21.8011C3.5541 19.2843 1.96982 16.3798 0.990216 13.2524C0.420903 11.4336 0.332796 9.49826 0.734487 7.63524C1.13618 5.77223 2.01394 4.04517 3.28215 2.62256C4.71791 0.857504 5.25796 0.620406 7.89237 0.646751Z"
+                    fill="white" />
+                </svg></div>
+            </div>
           </div>
         </nuxt-link>
       </div>
@@ -89,6 +97,19 @@
         <div class="weChat_pc">
           <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-11.2ushoad5pbq0.png"
             alt="">
+          <div>
+            <div>
+              <div>WeChat預約</div>
+              <div><img
+                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-11.2ushoad5pbq0.png"
+                  alt="WeChat預約"></div>
+            </div>
+            <div>
+              <img
+                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Screenshot-2023-11-29-at-5.54-1.7gfv4xeapy80.png"
+                alt="WeChat Qr">
+            </div>
+          </div>
         </div>
       </div>
       <div v-else>
@@ -225,6 +246,135 @@ export default {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+  }
+
+  .tel_pc {
+    &>div:nth-child(2) {
+      position: absolute;
+      right: 120%;
+
+      width: 0;
+      padding: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 176.28px;
+      background: #57B2F3;
+      display: flex;
+      // width: 400px;
+      // padding: 21.5px 30px;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.5s ease-in-out;
+
+      &>div:nth-child(1) {
+        color: #FFF;
+        font-family: Noto Sans TC;
+        // font-size: 28px;
+        font-size: 0;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        &>span:nth-child(1) {
+          text-align: right;
+
+          letter-spacing: 2.8px;
+        }
+
+        &>span:nth-child(2) {
+          letter-spacing: 0.28px;
+        }
+      }
+
+      &>div:nth-child(2) {
+        opacity: 0;
+      }
+    }
+  }
+
+  .weChat_pc {
+    &>div:nth-child(2) {
+      position: absolute;
+      right: 120%;
+      border-radius: 42.307px;
+      background: #57B2F3;
+      // width: 410px;
+      // padding: 22px 0 14px;
+      width: 0;
+      padding: 0;
+
+      &>div:nth-child(1) {
+        display: none;
+        padding-right: 20px;
+        color: #FFF;
+        text-align: right;
+        font-family: Noto Sans TC;
+        font-size: 0;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 0;
+        /* 125.914% */
+        letter-spacing: 2.8px;
+
+        &>div:nth-child(2) {
+          display: none;
+          margin-left: 10px;
+        }
+      }
+
+      &>div:nth-child(2) {
+        display: none;
+        &>img {
+          width: 0;
+        }
+      }
+    }
+  }
+
+  .weChat_pc:hover {
+    &>div:nth-child(2) {
+      width: 410px;
+      padding: 22px 10px 14px;
+      transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      &>div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 28px;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        &>div:nth-child(2) {
+          display: block;
+        }
+      }
+      &>div:nth-child(2) {
+        margin: 0 auto;
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+        &>img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .tel_pc:hover {
+    &>div:nth-child(2) {
+      width: 400px;
+      padding: 21.5px 26px;
+      transition: all .3s ease-in-out;
+
+      &>div:nth-child(1) {
+        font-size: 28px;
+        transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      }
+
+      &>div:nth-child(2) {
+        opacity: 1;
+        transition: all 0.2s ease-out;
+      }
+    }
   }
 
   .face-primary {
@@ -240,6 +390,7 @@ export default {
     margin-right: auto;
     bottom: 16vw;
     z-index: 999;
+    padding-right: 30px;
 
     a {
       margin: 0;
@@ -473,4 +624,5 @@ export default {
     border-radius: 18px 18px 0 0;
     // background: white;
   }
-}</style>
+}
+</style>
