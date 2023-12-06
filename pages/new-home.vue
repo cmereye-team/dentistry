@@ -5,9 +5,11 @@
       <Banner />
       <footce />
       <serve />
+      <dentalExplain />
       <serveConcept />
       <debtistryHealth />
       <mapGoogle />
+      <registration />
       <foot />
     </div>
   </div>
@@ -16,21 +18,25 @@
 <script>
 import menuBar from "@/components/common/newMenuBar.vue";
 import Banner from "@/components/about-me/banner/new-index.vue";
-import serve from "@/components/about-me/serve/new-index.vue"
-import serveConcept from "@/components/about-me/service-concept/index.vue"
+import serve from "@/components/about-me/serve/new-index.vue";
+import dentalExplain from '@/components/home/index.vue';
+import serveConcept from "@/components/about-me/service-concept/new-index.vue"
 import footce from "@/components/common/new-footce.vue"
-import debtistryHealth from "@/components/about-me/debtistry-health/index.vue"
-import mapGoogle from "@/components/common/googleMap.vue"
-import foot from "@/components/common/foot.vue"
+import debtistryHealth from "@/components/about-me/debtistry-health/new-index.vue"
+import mapGoogle from "@/components/common/new-googleMap.vue"
+import registration from "@/components/common/new-registration-form.vue" 
+import foot from "@/components/common/new-foot.vue"
 export default {
   components: {
     menuBar,
     Banner,
     serve,
+    dentalExplain,
     serveConcept,
     footce,
     debtistryHealth,
     mapGoogle,
+    registration,
     foot
   },
   data() {

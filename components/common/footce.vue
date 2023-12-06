@@ -37,7 +37,7 @@
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
               </i></span>
               <div style=" padding: 10px 0px 6px 14px;display: flex;flex-direction: column;align-items: flex-start;">
-                <span>電話預約</span>
+                <span>電話1預約</span>
                 <span >3620 2428</span>
               </div>
             </div>

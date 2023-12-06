@@ -1,15 +1,35 @@
 <template>
   <div class="container">
     <div class="online footer">
-      <div v-if="isShow">
-        <a id="zxzx" class="face-button d-block phone" href="tel:85236202428" aria-hidden="true" target="_blank">
+      <div v-if="isShow" class="pc">
+        <!-- <a id="zxzx" class="face-button d-block phone" href="tel:85236202428" aria-hidden="true" target="_blank">
           <div class="face-primary">
             <span class="icon"> <i class="fa fa-headphones ">
                 <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
               </i></span>
             電話預約
           </div>
-        </a>
+        </a> -->
+        <nuxt-link to="https://api.whatsapp.com/send?phone=85295128192">
+          <div class="whatsapp_pc">
+            <div>
+              <img
+                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1008.60fyrl2mk7o0.png"
+                alt="">
+            </div>
+            <div>
+              <div>
+                <div>立即</div>
+                <div>預約</div>
+              </div>
+              <div>
+                <img
+                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/whatsapp-logo-whatsapp-logo-transparent-whatsapp-icon-transparent-free-free-png-1.4v2ehchogae0.png"
+                  alt="">
+              </div>
+            </div>
+          </div>
+        </nuxt-link>
       </div>
       <div v-else>
         <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true"
@@ -27,7 +47,7 @@
         </a>
       </div>
       <div v-if="isShow">
-        <a class="face-button1 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
+        <!-- <a class="face-button1 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
           target="_blank">
           <div class="face-primary">
             <span class="icon"> <i class="fa  fa-volume-control-phone ">
@@ -35,7 +55,13 @@
               </i></span>
             WhatsApp<br>預約
           </div>
-        </a>
+        </a> -->
+        <nuxt-link to="tel:85236202428">
+          <div class="tel_pc">
+            <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-4.1tvtfq5l99c0.png"
+              alt="">
+          </div>
+        </nuxt-link>
       </div>
       <div v-else>
         <a class="face-button1 d-block webappMd" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
@@ -49,7 +75,7 @@
         </a>
       </div>
       <div v-if="isShow">
-        <div class="face-button2 face-button4 d-block webapp">
+        <!-- <div class="face-button2 face-button4 d-block webapp">
           <div class="face-primary">
             <span class="icon"> <i class="fa  fa-volume-control-phone ">
                 <img class="what1" src="https://static.cmereye.com/imgs/2023/06/6abf097c810dcb7b.png" alt="">
@@ -59,6 +85,10 @@
           <div class="face-button4-img">
             <img src="https://static.cmereye.com/imgs/2023/10/5506a80d21a79029.png" alt="">
           </div>
+        </div> -->
+        <div class="weChat_pc">
+          <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-11.2ushoad5pbq0.png"
+            alt="">
         </div>
       </div>
       <div v-else>
@@ -131,6 +161,72 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 760px) {
+  .online {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>div:nth-child(2) {
+      margin: 1.5rem 0 1.125rem;
+    }
+  }
+
+  .pc {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .whatsapp_pc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &>div:nth-child(2) {
+      display: flex;
+      align-items: flex-end;
+      min-width: 220px;
+      position: relative;
+      border-radius: 100px;
+      background: #57B2F3;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+      &>div:nth-child(1) {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        color: #FFF;
+        text-align: center;
+        font-family: Noto Sans TC;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 2.6px;
+        padding: 4px 4px;
+      }
+
+      &>div:nth-child(2) {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+    }
+  }
+
+  .tel_pc,
+  .weChat_pc {
+    width: 83px;
+    height: 83px;
+    background: #57B2F3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
   .face-primary {
     img {
       // padding-left: 0.5vw;
