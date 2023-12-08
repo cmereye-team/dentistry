@@ -1221,6 +1221,78 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
+  .toTop {
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    .arrowTop {
+      position: absolute;
+      top: 18px;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border: 2px solid #fff;
+      border-right: none;
+      border-bottom: none;
+      transform: translateX(-50%) rotate(45deg);
+      transform-origin: center center;
+      transition: all .7s;
+    }
+
+    .ya {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all .7s;
+    }
+
+    .toTopline {
+      position: absolute;
+      top: 65%;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: space-between;
+      width: 15px;
+
+      span {
+        width: 3px;
+        height: 0;
+        background: #fff;
+        transition: all .7s;
+        display: block;
+      }
+    }
+
+    .pageTop {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      animation: toTopRoto 5s linear infinite;
+    }
+  }
+
+  @keyframes toTopRoto {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  ::v-deep .el-backtop {
+    background: transparent;
+    box-shadow: none;
+  }
   //mb hamburglar
 
   $color: #fff; // icon color

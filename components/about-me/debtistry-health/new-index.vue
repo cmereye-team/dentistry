@@ -1,7 +1,7 @@
 <template>
   <div class="section vedio_box md:font-black main-container">
     <div class="flex justify-center texts">
-      <h2>牙齒健康</h2>
+      <h2>健康資訊</h2>
       <img src="@/asset/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="vedio_slider" v-if="screenWidth > 768">
@@ -216,6 +216,9 @@ export default {
 
 //pc
 @media only screen and (min-width: 760px) {
+  h2 {
+    margin-bottom:0 !important
+  }
   ::v-deep .dateinfo {
     display: flex !important;
     justify-content: center !important;

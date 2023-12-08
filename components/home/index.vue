@@ -6,11 +6,12 @@
       <div class="dental_style_content">
         <div>
           <div class="pc_banner">
-            <InnerSlider :SliderImgList="bannerList" :isCmerdental="true" />
+            <InnerSlider :SliderImgList="SliderImgList" />
           </div>
           <div>
-            <span>希瑪牙科</span>
-            <span>CMER Dental</span>
+            <!-- <span>希瑪牙科</span>
+            <span>CMER Dental</span> -->
+            <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/希瑪牙科-CMER-Dental.2v34i3lms0w0.png" alt="">
           </div>
         </div>
         <div>
@@ -233,6 +234,28 @@ export default {
   data() {
     return {
       screenWidth: '',
+      SliderImgList: [
+        {
+          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (3).jpg",
+          type: 2,
+        },
+        {
+          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (1).jpg",
+          type: 2,
+        },
+        {
+          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (2).jpg",
+          type: 2,
+        },
+        {
+          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (4).jpg",
+          type: 2,
+        },
+        {
+          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (5).jpg",
+          type: 2,
+        },
+      ],
       bannerList: [
         {
           link: "/business/smile-partner",
