@@ -66,6 +66,10 @@ export default {
     border-radius: 100%;
     background: #57B2F3;
   }
+  ::v-deep .el-carousel__container {
+    width: 503px;
+    height: 281px;
+  }
 
 //   .swiper-pagination {
 //     position: absolute;
