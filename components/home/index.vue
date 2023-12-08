@@ -11,7 +11,7 @@
           <div>
             <!-- <span>希瑪牙科</span>
             <span>CMER Dental</span> -->
-            <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/希瑪牙科-CMER-Dental.2v34i3lms0w0.png" alt="">
+            <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1144.5ra0gnoft6g0.png" alt="">
           </div>
         </div>
         <div>
@@ -379,7 +379,7 @@ export default {
       // margin: auto;
       // margin-top: 20px;
       max-width: 503px;
-      max-height: 281px;
+      max-height: 321px;
       border-radius: 25px;
       overflow: hidden;
     }

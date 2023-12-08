@@ -1224,7 +1224,7 @@ export default {
   .toTop {
     position: fixed;
     bottom: 80px;
-    right: 30px;
+    right: 10px;
     width: 100px;
     height: 100px;
     cursor: pointer;
@@ -1250,6 +1250,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all .7s;
+      width: fit-content !important;
     }
 
     .toTopline {

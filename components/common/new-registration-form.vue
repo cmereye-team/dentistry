@@ -194,22 +194,23 @@ a {
   text-decoration: none;
 }
 
-.texts {
-  text-align: center;
-
-  h2 {
-    font-weight: 300;
-    color: #79828d;
-    margin-bottom: 0vw;
-  }
-
-  image {
-    text-align: center;
-  }
-}
 
 //pc
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
+  .texts {
+    text-align: center;
+
+    h2 {
+      font-weight: 600 !important;
+      color: #79828d;
+      margin-bottom: 0vw;
+    }
+
+    image {
+      text-align: center;
+    }
+  }
+
   .mbShow {
     display: none !important;
   }
@@ -256,6 +257,7 @@ a {
     position: absolute;
     right: -20px;
   }
+
   ::v-deep .el-form {
     &>div:nth-child(3) {
       &>div:nth-child(2) {
@@ -263,6 +265,7 @@ a {
           &>input {
             border-radius: 0 10px 10px 0;
           }
+
           &>div:nth-child(1) {
             &>div:nth-child(1) {
               &>div:nth-child(1) {
@@ -516,7 +519,20 @@ a {
 }
 
 //mb
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 767px) {
+  .texts {
+    text-align: center;
+
+    h2 {
+      font-weight: 600 !important;
+      color: #79828d;
+      margin-bottom: 0vw;
+    }
+
+    image {
+      text-align: center;
+    }
+  }
   .text-form {
     margin-top: 20vw;
     text-align: center;
@@ -814,5 +830,6 @@ a {
     left: 0;
     z-index: 1;
   }
-}</style>
+}
+</style>
 <style lang="scss" scoped></style>
