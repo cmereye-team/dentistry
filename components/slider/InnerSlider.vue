@@ -230,7 +230,7 @@ export default {
   height: 2.5vw;
   padding: 0 1vw;
   border-radius: 0 10px 0 0;
-  display: flex;
+  display: none;
   align-items: center;
 }
 
