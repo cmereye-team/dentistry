@@ -515,7 +515,77 @@ export default {
     display: none;
   }
 
+  .serve_btn {
+    width: fit-content;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 90px auto 0;
+
+  }
+
+  .serve_btn {
+    position: relative;
+    text-decoration: none;
+
+    &>div:nth-child(1) {
+      position: absolute;
+      top: -80%;
+      right: -12%;
+    }
+  }
+
+  .bp-btn .btn_pc_style {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .btn_pc_style {
+    &>div {
+      display: flex;
+    }
+  }
+
+  .bp-btn .btn_pc_style .btn1,
   .btn2 {
+    box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
+    border-radius: 40px;
+    padding: 6px 45px;
+    background: #FFD333;
+    cursor: pointer;
+    top: 0;
+    color: #FFF;
+    font-family: 'Noto Sans CJK TC';
+    font-size: 18.7px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.466px;
+
+    &>div:nth-child(1) {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .bp-btn .btn_pc_style .btn2 {
+    color: #79828D;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: btnAnim .9s linear;
+    animation-fill-mode: forwards;
+    width: max-content;
     display: none;
   }
 
@@ -524,7 +594,54 @@ export default {
     align-items: center;
 
     &>div:nth-child(1) {
-      margin-right: .375rem;
+      width: 24px;
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .serve_btn {
+    &>div:nth-child(1) {
+      width: 54px;
+      top: -110%;
+      right: -10%;
+
+      &>svg {
+        width: 100%;
+      }
+    }
+  }
+
+  .bp-btn .btn_pc_style:hover {
+    .btn1 {
+      color: #79828D;
+
+      path {
+        fill: #79828D;
+      }
+    }
+
+    .btn2 {
+      display: flex;
+      animation: btnAnim .9s linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+
+  @keyframes btnAnim {
+    0% {
+      clip-path: polygon(-10% 0, 0 0, -10% 100%, -20% 100%);
+    }
+
+    50% {
+      clip-path: polygon(50% 0, 60% 0, 50% 100%, 40% 100%);
+    }
+
+    100% {
+      clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
     }
   }
 
@@ -589,5 +706,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>

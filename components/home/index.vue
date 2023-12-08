@@ -452,7 +452,7 @@ export default {
       font-family: "Noto Sans CJK TC";
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 300;
       line-height: normal;
       letter-spacing: 1.6px;
     }
@@ -464,7 +464,7 @@ export default {
     font-family: "Noto Sans CJK TC";
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     letter-spacing: 1.6px;
     padding: 0 3.85rem;
