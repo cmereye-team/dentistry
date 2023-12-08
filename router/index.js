@@ -123,6 +123,10 @@ const getRoutes = resolve => [
 
   },
   {
+    path:'/new-scaling-and-polishing',
+    component: resolve('pages/new-scaling-and-polishing'),
+  },
+  {
     path: '/fillings',
     component: resolve('pages/fillings'),
 

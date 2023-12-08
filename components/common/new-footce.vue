@@ -10,7 +10,7 @@
             電話預約
           </div>
         </a> -->
-        <nuxt-link to="https://api.whatsapp.com/send?phone=85295128192">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=85295128192">
           <div class="whatsapp_pc">
             <div>
               <img
@@ -29,7 +29,7 @@
               </div>
             </div>
           </div>
-        </nuxt-link>
+        </a>
       </div>
       <div v-else>
         <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true"
@@ -56,7 +56,7 @@
             WhatsApp<br>預約
           </div>
         </a> -->
-        <nuxt-link to="tel:85236202428">
+        <a target="_blank" href="tel:85236202428">
           <div class="tel_pc">
             <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-4.1tvtfq5l99c0.png"
               alt="">
@@ -69,7 +69,7 @@
                 </svg></div>
             </div>
           </div>
-        </nuxt-link>
+        </a>
       </div>
       <div v-else>
         <a class="face-button1 d-block webappMd" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
@@ -231,7 +231,7 @@ export default {
         position: absolute;
         left: 50%;
         bottom: 0;
-        transform: translateX(-50%);
+        transform: translateX(-55%);
       }
     }
   }

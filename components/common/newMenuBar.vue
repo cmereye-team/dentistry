@@ -388,20 +388,6 @@
           </div>
         </nav>
       </div>
-      <div class="toTop" @click="toPageTop">
-        <div class="arrowTop" :style="{ display: toTopType ? 'none' : 'block' }"></div>
-        <img class="ya" :style="{ top: toTopType ? '40%' : '50%' }"
-          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-654.3nyt17vc48m0.png"
-          alt="">
-        <div class="toTopline">
-          <span :style="{ height: toTopType ? '10px' : '0px' }"></span>
-          <span :style="{ height: toTopType ? '20px' : '0px' }"></span>
-          <span :style="{ height: toTopType ? '15px' : '0px' }"></span>
-        </div>
-        <img class="pageTop"
-          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-10.13h8v2f2dmkg.png"
-          alt="">
-      </div>
     </div>
     <div class="nar sticky-sm-top sticky-top home-content mbshow" style="width=90%">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -805,6 +791,22 @@
         </div>
       </nav>
     </div>
+    <el-backtop>
+      <div class="toTop" @click="toPageTop">
+        <div class="arrowTop" :style="{ display: toTopType ? 'none' : 'block' }"></div>
+        <img class="ya" :style="{ top: toTopType ? '40%' : '50%' }"
+          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-654.3nyt17vc48m0.png"
+          alt="">
+        <div class="toTopline">
+          <span :style="{ height: toTopType ? '10px' : '0px' }"></span>
+          <span :style="{ height: toTopType ? '20px' : '0px' }"></span>
+          <span :style="{ height: toTopType ? '15px' : '0px' }"></span>
+        </div>
+        <img class="pageTop"
+          src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-10.13h8v2f2dmkg.png"
+          alt="">
+      </div>
+    </el-backtop>
   </div>
 </template>
 <script>
@@ -814,24 +816,10 @@ export default {
       action: 0,
       isClosed: 0,
       toTopType: false,
-      // showToBack: false,
-      screenHeight: null,
-      top: null,
     };
   },
   computed: {},
   mounted() {
-    this.toPageTop()
-    this.screenHeight = document.documentElement.clientHeight;
-    // window.addEventListener('scroll', function () {
-    //   var scrollTop = window.scrollY || document.documentElement.scrollTop;
-    //   this.screenHeight = document.documentElement.clientHeight;
-    //   if (scrollTop > this.screenHeight) {
-    //     this.showToBack = true;
-    //   } else {
-    //     this.showToBack = false;
-    //   }
-    // });
   },
   methods: {
     toServicePages() {
@@ -853,22 +841,10 @@ export default {
       console.log(this.action);
     },
     toPageTop() {
-      this.screenHeight = document.documentElement.clientHeight;
-      this.top = document.documentElement.scrollTop || document.body.scrollTop;
       this.toTopType = true
-      if (this.top > this.screenHeight) {
-        setTimeout(() => {
-          const timeTop = setInterval(() => {
-            document.body.scrollTop = document.documentElement.scrollTop = this.top -= 50;
-            if (this.top <= 0) {
-              clearInterval(timeTop);
-              this.toTopType = false
-            }
-          }, 10);
-        }, 50)
-      } else {
-        this.toTopType = false;
-      }
+      setTimeout(() => {
+        this.toTopType = false
+      }, 500)
     }
   },
 };
@@ -876,6 +852,11 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 760px) {
+  ::v-deep .el-backtop {
+    background: transparent;
+    box-shadow: 0 0 0 transparent;
+  }
+
   .service_box {
     .service_item {
       .service_txt[data-v-47af9056] {
