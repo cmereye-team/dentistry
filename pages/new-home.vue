@@ -1,5 +1,8 @@
 <template>
   <div id="new-home">
+    <div class="mbShow marquee">
+      <div>首次洗牙包全口 <span>X-Ray</span> 檢查</div>
+    </div>
     <div>
       <menuBar />
       <Banner />
@@ -24,7 +27,7 @@ import serveConcept from "@/components/about-me/service-concept/new-index.vue"
 import footce from "@/components/common/new-footce.vue"
 import debtistryHealth from "@/components/about-me/debtistry-health/new-index.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
-import registration from "@/components/common/new-registration-form.vue" 
+import registration from "@/components/common/new-registration-form.vue"
 import foot from "@/components/common/new-foot.vue"
 export default {
   components: {
@@ -72,4 +75,53 @@ export default {
 
 }
 </script>
-<style></style>
+<style lang="scss" scoped>
+@media screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  @keyframes scroll {
+    from {
+      transform: translate(300px, 0)
+    }
+
+    to {
+      transform: translate(-300px, 0)
+    }
+  }
+
+  .marquee {
+    background: #57B2F3;
+    width: 100%;
+    padding: 6px 0;
+    margin-bottom: 5px;
+
+    &>div {
+      color: #FFF;
+      text-align: center;
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      animation: scroll 5s linear 0s infinite;
+
+      &>span {
+        color: #FFD333;
+        font-family: Noto Sans TC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+      }
+    }
+
+  }
+
+}
+</style>

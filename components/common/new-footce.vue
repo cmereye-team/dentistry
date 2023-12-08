@@ -2,19 +2,11 @@
   <div class="container">
     <div class="online footer">
       <div v-if="isShow" class="pc">
-        <!-- <a id="zxzx" class="face-button d-block phone" href="tel:85236202428" aria-hidden="true" target="_blank">
-          <div class="face-primary">
-            <span class="icon"> <i class="fa fa-headphones ">
-                <img src="https://static.cmereye.com/static/lkximg/image/footce/phone.png" alt="">
-              </i></span>
-            電話預約
-          </div>
-        </a> -->
         <a target="_blank" href="https://api.whatsapp.com/send?phone=85295128192">
           <div class="whatsapp_pc">
             <div>
               <img
-                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1008.60fyrl2mk7o0.png"
+                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-10081.2vvogt7bnx40.png"
                 alt="">
             </div>
             <div>
@@ -47,15 +39,6 @@
         </a>
       </div>
       <div v-if="isShow">
-        <!-- <a class="face-button1 d-block webapp" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
-          target="_blank">
-          <div class="face-primary">
-            <span class="icon"> <i class="fa  fa-volume-control-phone ">
-                <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
-              </i></span>
-            WhatsApp<br>預約
-          </div>
-        </a> -->
         <a target="_blank" href="tel:85236202428">
           <div class="tel_pc">
             <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-4.1tvtfq5l99c0.png"
@@ -83,17 +66,6 @@
         </a>
       </div>
       <div v-if="isShow">
-        <!-- <div class="face-button2 face-button4 d-block webapp">
-          <div class="face-primary">
-            <span class="icon"> <i class="fa  fa-volume-control-phone ">
-                <img class="what1" src="https://static.cmereye.com/imgs/2023/06/6abf097c810dcb7b.png" alt="">
-              </i></span>
-            WeChat
-          </div>
-          <div class="face-button4-img">
-            <img src="https://static.cmereye.com/imgs/2023/10/5506a80d21a79029.png" alt="">
-          </div>
-        </div> -->
         <div class="weChat_pc">
           <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-11.2ushoad5pbq0.png"
             alt="">
@@ -202,6 +174,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    &>div:nth-child(1) {
+      position: relative;
+      bottom: -30px;
+      right: 10px;
+    }
 
     &>div:nth-child(2) {
       display: flex;
@@ -215,7 +194,7 @@ export default {
       &>div:nth-child(1) {
         display: flex;
         width: 100%;
-        justify-content: space-around;
+        justify-content: space-between;
         color: #FFF;
         text-align: center;
         font-family: Noto Sans TC;
@@ -224,7 +203,7 @@ export default {
         font-weight: 700;
         line-height: normal;
         letter-spacing: 2.6px;
-        padding: 4px 4px;
+        padding: 6.5px 22px;
       }
 
       &>div:nth-child(2) {
@@ -326,6 +305,7 @@ export default {
 
       &>div:nth-child(2) {
         display: none;
+
         &>img {
           width: 0;
         }
@@ -335,24 +315,28 @@ export default {
 
   .weChat_pc:hover {
     &>div:nth-child(2) {
-      width: 410px;
+      width: 310px;
       padding: 22px 10px 14px;
       transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
       &>div:nth-child(1) {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: 28px;
+        font-size: 20px;
         transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
         &>div:nth-child(2) {
           display: block;
         }
       }
+
       &>div:nth-child(2) {
         margin: 0 auto;
         margin-top: 18px;
         display: flex;
         justify-content: center;
+
         &>img {
           width: 100%;
         }
@@ -625,5 +609,4 @@ export default {
     border-radius: 18px 18px 0 0;
     // background: white;
   }
-}
-</style>
+}</style>

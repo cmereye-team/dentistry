@@ -542,12 +542,12 @@ export default {
   }
 
   .swiper-button-prev {
-    left: 9vw;
+    left:11vw;
     top: 33vw;
   }
 
   .swiper-button-next {
-    right: 13vw;
+    right: 11vw;
     top: 33vw;
   }
 

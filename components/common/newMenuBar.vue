@@ -390,7 +390,7 @@
       </div>
     </div>
     <div class="nar sticky-sm-top sticky-top home-content mbshow" style="width=90%">
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar_pc navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <nuxt-link class="navbar-brand" to="/">
             <img src="https://static.cmereye.com/static/loffee/logo/bulelogo.svg" alt="" />
@@ -816,6 +816,7 @@ export default {
       action: 0,
       isClosed: 0,
       toTopType: false,
+      announcement: true, // 公告 true 开启 false 关闭
     };
   },
   computed: {},
@@ -1001,15 +1002,15 @@ export default {
     border-radius: 16px;
   }
 
-  .navbar>.container,
-  .navbar>.container-fluid,
-  .navbar>.container-lg,
-  .navbar>.container-md,
-  .navbar>.container-sm,
-  .navbar>.container-xl,
-  .navbar>.container-xxl {
-    display: block;
-  }
+  // .navbar>.container,
+  // .navbar>.container-fluid,
+  // .navbar>.container-lg,
+  // .navbar>.container-md,
+  // .navbar>.container-sm,
+  // .navbar>.container-xl,
+  // .navbar>.container-xxl {
+  //   display: block;
+  // }
 
   .navbar-expand-lg .navbar-collapse {
     display: inline-block;
@@ -1773,6 +1774,9 @@ export default {
       }
     }
   }
+  .navbar_pc {
+    margin: 5px auto;
+  }
 
   .pcshow {
     display: none;
@@ -1795,15 +1799,15 @@ export default {
     z-index: 1020;
   }
 
-  .navbar {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0.5rem;
-    // padding-bottom: 11.5rem;
-  }
+  // .navbar {
+  //   position: relative;
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   align-items: center;
+  //   justify-content: space-between;
+  //   padding-top: 0.5rem;
+  //   // padding-bottom: 11.5rem;
+  // }
 
   .navbar-light .navbar-toggler-icon {
     background: url("https://static.cmereye.com/static/lkximg/image/banner/BurgerBtn.png") no-repeat !important;

@@ -592,7 +592,7 @@ export default {
       ],
       currentIndex: 0, // 当前点击的tab的索引
       addcurrentIndex: 0, // 当前点击的tab的索引
-      showAllMap: true,
+      showAllMap: false,
     };
   },
   created() {},

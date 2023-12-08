@@ -5,10 +5,8 @@
       </div>
       <div class="dental_style_content">
         <div>
-          <div>
-            <img
-              src="https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Screenshot-2023-11-28-at-5.30-1.6bndf362a6o0.png"
-              alt="">
+          <div class="pc_banner">
+            <InnerSlider :SliderImgList="bannerList" :isCmerdental="true" />
           </div>
           <div>
             <span>希瑪牙科</span>
@@ -228,11 +226,39 @@
   </div>
 </template>
 <script>
+import InnerSlider from "@/components/slider/InnerSlider";
 export default {
+  components: { InnerSlider },
   name: 'AboutMe',
   data() {
     return {
-      screenWidth: ''
+      screenWidth: '',
+      bannerList: [
+        {
+          link: "/business/smile-partner",
+          url: "https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg",
+          srcset:
+            "https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 400w, https://static.cmereye.com/imgs/2022/12/4862d5cd0d6f8019.jpg 640w, https://static.cmereye.com/imgs/2022/12/1ad5167149def6b3.jpg",
+          type: 2,
+          isBanner: "banner",
+        },
+        {
+          link: "javascript:void(0);",
+          url: "https://static.cmereye.com/imgs/2023/11/948bfe304b453c0c.png",
+          srcset:
+            "https://static.cmereye.com/imgs/2023/11/0d8116d9eaa77470.png 400w, https://static.cmereye.com/imgs/2023/11/0d8116d9eaa77470.png 640w, https://static.cmereye.com/imgs/2023/11/948bfe304b453c0c.png",
+          type: 2,
+          isBanner: "banner",
+        },
+        {
+          link: "javascript:void(0);",
+          url: "https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg",
+          srcset:
+            "https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 400w, https://static.cmereye.com/static/lkximg/image/banner/mbBanner3.jpg 640w, https://static.cmereye.com/static/lkximg/image/banner/banner3.jpg",
+          type: 2,
+          isBanner: "banner",
+        },
+      ]
     }
   },
   mounted() {
@@ -283,6 +309,8 @@ export default {
         display: flex;
         flex: 5;
         justify-content: flex-end;
+        z-index: 1;
+        position: relative;
 
         // align-items: center;
         &>div:nth-child(2) {
@@ -297,8 +325,9 @@ export default {
           letter-spacing: 4.221px;
           text-shadow: 5px 5px 0px #fff;
           position: absolute;
-          top: -90px;
+          top: -80px;
           left: 170px;
+          z-index: 10;
         }
       }
 
@@ -309,10 +338,10 @@ export default {
         align-items: center;
         color: #79828D;
         text-align: justify;
-        font-family: Noto Sans;
+        font-family: "Noto Sans CJK TC";
         font-size: 20px;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 300;
         line-height: normal;
         letter-spacing: 2px;
 
@@ -321,6 +350,15 @@ export default {
           max-width: 339px;
         }
       }
+    }
+
+    .pc_banner {
+      // margin: auto;
+      // margin-top: 20px;
+      max-width: 503px;
+      max-height: 281px;
+      border-radius: 25px;
+      overflow: hidden;
     }
   }
 
@@ -331,10 +369,10 @@ export default {
     margin: auto;
     margin-top: 97px;
     color: #79828D;
-    font-family: Noto Sans;
+    font-family: "Noto Sans CJK TC";
     font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 300;
     line-height: normal;
     letter-spacing: 2px;
 
@@ -349,6 +387,7 @@ export default {
   .dental {
     margin-bottom: 3.625rem;
   }
+
   .dental_style {
     display: flex;
     flex-direction: column;
@@ -410,7 +449,7 @@ export default {
       max-width: 8.875rem;
       color: #79828D;
       text-align: justify;
-      font-family: Noto Sans;
+      font-family: "Noto Sans CJK TC";
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -422,7 +461,7 @@ export default {
   .dental_con {
     color: #79828D;
 
-    font-family: Noto Sans;
+    font-family: "Noto Sans CJK TC";
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -434,4 +473,14 @@ export default {
       margin: 1.25rem auto;
     }
   }
-}</style>
+
+  .pc_banner {
+    margin: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 15px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}
+</style>

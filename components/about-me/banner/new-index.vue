@@ -29,7 +29,7 @@
           " title="提供全方位牙科服務" alt="提供全方位牙科服務"
           src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1072.6el4fj3f0kc0.png">
       </div>
-      <div class="carousel-item">
+      <!-- <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/ban_pixta.jpg" srcset="
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 400w,
             https://static.cmereye.com/static/lkximg/image/banner/pixta_phone.jpg 640w,
@@ -46,7 +46,7 @@
           整體分析客人口腔， <br />
           建議針對性的治療方案
         </div>
-      </div>
+      </div> -->
 
       <div class="carousel-item">
         <img data-cfsrc="https://static.cmereye.com/imgs/2023/10/948bfe304b453c0c.png" srcset="
@@ -68,7 +68,7 @@
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
       <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <!-- <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button> -->
       <!-- <button
         type="button"
         data-bs-target="#demo"
@@ -103,7 +103,7 @@ export default {
   margin-left: 8px;
   text-indent: -999px;
   cursor: pointer;
-  background-color: #c2c7cd;
+  background-color: #9BD0F5;
   background-clip: padding-box;
   border: 0;
   margin-bottom: 2rem;
@@ -114,14 +114,16 @@ export default {
   border-radius: 100%;
   transition: opacity 0.6s ease;
 }
-
+.carousel-indicators {
+  align-items: center;
+}
 ::v-deep .carousel-indicators {
   position: inherit;
 }
 
 ::v-deep .carousel-indicators .active {
   opacity: 1 !important;
-  background-color: #9ba5b1;
+  background-color: #57B2F3;
   width: 14px;
   height: 14px;
 }
@@ -257,9 +259,10 @@ export default {
 
   .carousel-item {
     text-align: center;
-
+    overflow: hidden;
+    max-height: 632px;
     &>img {
-      min-height: 671px;
+      height: 100%;
     }
   }
 

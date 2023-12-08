@@ -29,7 +29,7 @@
                   </el-select>
                 </el-input>
               </el-form-item>
-              <el-form-item prop="email" label="邮箱">
+              <el-form-item prop="email" label="電郵地址">
                 <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址"></el-input>
               </el-form-item>
               <el-form-item prop="serve" label="診症服務"><span>（可選多於一項）</span>
@@ -256,13 +256,21 @@ a {
     position: absolute;
     right: -20px;
   }
-
   ::v-deep .el-form {
     &>div:nth-child(3) {
       &>div:nth-child(2) {
         &>div:nth-child(1) {
           &>input {
             border-radius: 0 10px 10px 0;
+          }
+          &>div:nth-child(1) {
+            &>div:nth-child(1) {
+              &>div:nth-child(1) {
+                input {
+                  color: #86c1e8;
+                }
+              }
+            }
           }
         }
       }
@@ -719,7 +727,7 @@ a {
     }
 
     .el-form-item {
-      margin: 3vw 12vw;
+      margin: 3vw 10vw;
       // width: 19vw;
     }
   }
@@ -745,12 +753,14 @@ a {
   ::v-deep .el-checkbox-group {
     display: flex;
     flex-wrap: wrap;
+
     &>label {
       min-width: 140px;
       width: 140px;
     }
+
     &>label:nth-child(odd) {
-      margin-right: 40px;
+      margin-right: 30px;
     }
 
     &>label:nth-child(even) {
@@ -772,6 +782,7 @@ a {
   ::v-deep .el-checkbox__inner {
     border-radius: 50%;
   }
+
   .form-btn {
     margin: 5rem auto 3.875rem;
     color: #FFF;
