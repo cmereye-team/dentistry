@@ -23,7 +23,7 @@
           </div>
         </a>
       </div>
-      <div v-else>
+      <!-- <div v-else>
         <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true"
           target="_blank" style="line-height: 20px;">
           <div class="face-primary" style="display: flex;">
@@ -37,7 +37,7 @@
             </div>
           </div>
         </a>
-      </div>
+      </div> -->
       <div v-if="isShow">
         <a target="_blank" href="tel:85236202428">
           <div class="tel_pc">
@@ -54,17 +54,17 @@
           </div>
         </a>
       </div>
-      <div v-else>
+      <!-- <div v-else>
         <a class="face-button1 d-block webappMd" href="https://api.whatsapp.com/send?phone=85295128192" aria-hidden="true"
           target="_blank">
           <div class="face-primary">
             <span class="icon"> <i class="fa  fa-volume-control-phone ">
                 <img class="what" src="https://static.cmereye.com/static/lkximg/image/footce/yuyue.png" alt="">
               </i></span>
-            WhatsApp預約
+            WhatsApp預約1
           </div>
         </a>
-      </div>
+      </div> -->
       <div v-if="isShow">
         <div class="weChat_pc">
           <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-11.2ushoad5pbq0.png"
@@ -84,7 +84,7 @@
           </div>
         </div>
       </div>
-      <div v-else>
+      <!-- <div v-else>
         <div class="face-button3 face-button4" @click="drawerBool = true">
           <div class="face-primary">
             <img class="what" src="https://static.cmereye.com/imgs/2023/06/6abf097c810dcb7b.png" alt="">
@@ -96,7 +96,7 @@
         <div class="drawerImg">
           <img src="https://static.cmereye.com/imgs/2023/10/a7833e634c739f73.png" alt="">
         </div>
-      </el-drawer>
+      </el-drawer> -->
     </div>
   </div>
 </template>
@@ -106,7 +106,7 @@ export default {
     return {
       isShow: true,
       screenWidth: '',
-      drawerBool: false
+      // drawerBool: false
     }
 
   },
@@ -115,6 +115,7 @@ export default {
   },
   created() {
     if (process.client) {
+      console.log(process,'process.client');
       this.screenWidth = document.body.clientWidth
       window.onresize = () => {
         return (() => {
