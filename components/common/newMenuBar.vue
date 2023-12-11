@@ -398,16 +398,18 @@
           <nuxt-link class="navbar-brand" to="/">
             <img src="https://static.cmereye.com/static/loffee/logo/bulelogo.svg" alt="" />
           </nuxt-link>
-          <!-- <div><a class="nav-link engmb" href="#">ENG</a></div> -->
           <button class="navbar-toggler floatsty" type="button" @click="floatsty" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+            <svg v-if="action === 0" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
               <rect x="0.75" y="0.75" width="29.5" height="29.5" stroke="#57B2F3" stroke-width="1.5" />
               <path d="M8 15H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
               <path d="M8 10H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
               <path d="M8 20H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
             </svg>
+            <span v-else class="close-icon">
+              <i></i><i></i>
+            </span>
           </button>
           <div class="collapse navbar-collapse pcshow" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -1853,6 +1855,7 @@ export default {
     background-color: #fff;
     overflow-y: scroll;
     z-index: 999;
+    height: 100vh;
   }
 
   .floatsty {
@@ -1863,7 +1866,26 @@ export default {
     border: 0;
     padding: 10px 20px 20px 20px;
   }
-
+  .close-icon {
+    position: relative;
+    i {
+      width: 20px;
+      height: 1px;
+      background: #57B2F3;
+      display: inline-block;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      right: 20px;
+    }
+    i:nth-child(1) {
+      transform: rotate(45deg);
+    }
+    i:nth-child(2) {
+      transform: rotate(-45deg);
+    }
+  }
   .nar {
     .navbar-brand {
       img {
