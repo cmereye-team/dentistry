@@ -3,7 +3,7 @@
     <div class="main_footer pcShow">
       <div class="section">
         <div>
-          <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-164.3y24zpt530i0.png"
+          <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png"
             alt="logo">
         </div>
         <div>
@@ -12,15 +12,15 @@
           </div>
           <div class="media_icon">
             <a href="https://www.facebook.com/dental.cmer/" class="Facebook">
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/FB.4xxhsc37sr40.png"
+              <img src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png"
                 alt="" />
             </a>
             <a href="https://www.instagram.com/cmerdental/" class="IG">
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/IG.3oathk4ir360.png"
+              <img src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png"
                 alt="" />
             </a>
             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos" class="Youtube">
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/YT.c1r0wg7k1cg.png"
+              <img src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png"
                 alt="" />
             </a>
           </div>
@@ -46,7 +46,7 @@
     </div>
     <div class="main_footer mbShow">
       <div>
-        <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-164.3y24zpt530i0.png"
+        <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png"
           alt="logo">
       </div>
       <div>
@@ -54,15 +54,15 @@
       </div>
       <div>
         <div>
-          <nuxt-link to="https://www.facebook.com/dental.cmer/"><img
-              src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/FB.4xxhsc37sr40.png"
-              alt="" /></nuxt-link>
-          <nuxt-link to="https://www.instagram.com/cmerdental/"><img
-              src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/IG.3oathk4ir360.png"
-              alt="" /></nuxt-link>
-          <nuxt-link to="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos"><img
-              src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/YT.c1r0wg7k1cg.png"
-              alt="" /></nuxt-link>
+          <a target="_blank" href="https://www.facebook.com/dental.cmer/"><img
+              src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png"
+              alt="" /></a>
+          <a  target="_blank" href="https://www.instagram.com/cmerdental/"><img
+              src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png"
+              alt="" /></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos"><img
+              src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png"
+              alt="" /></a>
         </div>
         <div>
           <nuxt-link to="/policy#A1">隱私政策</nuxt-link>

@@ -11,7 +11,7 @@
           <div>
             <!-- <span>希瑪牙科</span>
             <span>CMER Dental</span> -->
-            <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1144.5ra0gnoft6g0.png" alt="">
+            <img src="https://static.cmereye.com/imgs/2023/12/b3082a5c64b21247.png" alt="希瑪牙科">
           </div>
         </div>
         <div>
@@ -117,8 +117,7 @@
             <InnerSlider :SliderImgList="SliderImgList" />
           </div>
           <div>
-            <span>希瑪牙科</span>
-            <span>CMER Dental</span>
+            <img src="https://static.cmereye.com/imgs/2023/12/e1245ed0f2269d02.png" alt="希瑪牙科">
           </div>
         </div>
       </div>
