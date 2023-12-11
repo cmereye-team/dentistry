@@ -316,7 +316,7 @@ export default {
 
   .weChat_pc:hover {
     &>div:nth-child(2) {
-      width: 310px;
+      width: 230px;
       padding: 22px 10px 14px;
       transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
