@@ -46,8 +46,8 @@ export default {
   data() {
     return {
       bannerImg: {
-        link: 'https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1125.559vbfu94hg0.png',
-        linkAll: ' https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1132.3xzodhh0ygg0.png 400w,  https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1132.3xzodhh0ygg0.png 640w, https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1125.559vbfu94hg0.png',
+        link: 'https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
+        linkAll: 'https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 400w,  https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
         title: '',
         alt: '',
       }

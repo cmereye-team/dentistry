@@ -1,7 +1,8 @@
 <template>
   <div id="lay">
     <menuBar />
-    <Banner />
+    <bannerInsidePage :bannerImg="bannerImg" />
+    <!-- <Banner /> -->
     <footce />
     <mapGoogle />
     <!-- <contact /> -->
@@ -16,7 +17,8 @@ import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import Banner from "@/components/about-me/banner/new-index.vue";
-import registration from "@/components/common/new-registration-form.vue" 
+import registration from "@/components/common/new-registration-form.vue"
+import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
 // import contact from "@/components/contactUs/contact/index.vue"
 
 
@@ -25,10 +27,21 @@ export default {
     menuBar,
     footce,
     Banner,
+    bannerInsidePage,
     registration,
     mapGoogle,
     foot,
     // contact
+  },
+  data() {
+    return {
+      bannerImg: {
+        link: 'https://static.cmereye.com/imgs/2023/12/ff8021e333488af6.jpg',
+        linkAll: 'https://static.cmereye.com/imgs/2023/12/d1ed47b94ad059c7.jpg 400w,  https://static.cmereye.com/imgs/2023/12/d1ed47b94ad059c7.jpg 640w, https://static.cmereye.com/imgs/2023/12/ff8021e333488af6.jpg',
+        title: '',
+        alt: '',
+      }
+    }
   },
   mounted() {
     document.getElementsByTagName("body")[0].className = "body-contact-us";
