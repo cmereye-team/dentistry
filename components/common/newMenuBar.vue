@@ -390,6 +390,9 @@
       </div>
     </div>
     <div class="nar sticky-sm-top sticky-top home-content mbshow" style="width=90%">
+      <div class="mbShow marquee">
+        <div>首次洗牙包全口 <span>X-Ray</span> 檢查</div>
+      </div>
       <nav class="navbar_pc navbar-expand-lg navbar-light">
         <div class="container-fluid">
           <nuxt-link class="navbar-brand" to="/">
@@ -1221,6 +1224,46 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
+  @keyframes scroll {
+    from {
+      transform: translate(300px, 0)
+    }
+
+    to {
+      transform: translate(-300px, 0)
+    }
+  }
+
+  .marquee {
+    background: #57B2F3;
+    width: 100%;
+    padding: 6px 0;
+    margin-bottom: 5px;
+    overflow: hidden;
+
+    &>div {
+      color: #FFF;
+      text-align: center;
+      font-family: Noto Sans TC;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.9px;
+      animation: scroll 5s linear 0s infinite;
+
+      &>span {
+        color: #FFD333;
+        font-family: Noto Sans TC;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.9px;
+      }
+    }
+  }
+
   .toTop {
     position: fixed;
     bottom: 80px;
@@ -1229,6 +1272,7 @@ export default {
     height: 100px;
     cursor: pointer;
     transition: all 0.5s;
+    z-index: 99;
 
     .arrowTop {
       position: absolute;
@@ -1290,10 +1334,13 @@ export default {
       transform: rotate(360deg);
     }
   }
+
   ::v-deep .el-backtop {
     background: transparent;
     box-shadow: none;
+    z-index: 99;
   }
+
   //mb hamburglar
 
   $color: #fff; // icon color
@@ -1847,6 +1894,7 @@ export default {
       }
     }
   }
+
   .navbar_pc {
     margin: 5px auto;
   }

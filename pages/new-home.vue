@@ -1,8 +1,5 @@
 <template>
   <div id="new-home">
-    <div class="mbShow marquee">
-      <div>首次洗牙包全口 <span>X-Ray</span> 檢查</div>
-    </div>
     <div>
       <menuBar />
       <Banner />
