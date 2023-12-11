@@ -769,6 +769,7 @@ a {
   ::v-deep .el-checkbox-group {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     &>label {
       min-width: 140px;
@@ -776,7 +777,7 @@ a {
     }
 
     &>label:nth-child(odd) {
-      margin-right: 30px;
+      margin-right: 15px;
     }
 
     &>label:nth-child(even) {
