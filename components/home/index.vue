@@ -111,14 +111,10 @@
     <div v-else>
       <div class="dental_style">
         <div class="dental_style_bg">
-          <div></div>
-          <div></div>
         </div>
         <div>
           <div>
-            <img
-              src="https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Screenshot-2023-11-28-at-5.30-1.6bndf362a6o0.png"
-              alt="">
+            <InnerSlider :SliderImgList="SliderImgList" />
           </div>
           <div>
             <span>希瑪牙科</span>
@@ -415,7 +411,7 @@ export default {
     display: flex;
     flex-direction: column;
     position: relative;
-    justify-content: center;
+    justify-content: flex-end;
 
     &>div:nth-child(1) {
       background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Rectangle-131.19gs7xjywscg.png');
@@ -429,7 +425,8 @@ export default {
       position: absolute;
       display: flex;
       flex-direction: column-reverse;
-      align-items: center;
+      width: 100%;
+      margin-bottom: 1.25rem;
 
       &>div:nth-child(1) {
         display: flex;
@@ -452,8 +449,9 @@ export default {
         flex-direction: column;
         text-shadow: 3px 3px 0px #fff;
         position: absolute;
-        top: -30%;
+        top: -25%;
         left: 5%;
+        z-index: 99;
 
         &>span:nth-child(2) {
           font-family: 'Fredoka';
