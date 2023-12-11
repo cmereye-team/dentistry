@@ -286,7 +286,7 @@ export default {
       transition: all 0.5s ease-in-out;
 
       &>div:nth-child(1) {
-        display: none;
+        display: block;
         padding-right: 20px;
         color: #FFF;
         text-align: right;
@@ -324,7 +324,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: 20px;
+        font-size: 16px;
         transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
         &>div:nth-child(2) {
