@@ -9,6 +9,7 @@
             </div>
             <div>
               <div class="des">{{ stepItem.des }}</div>
+              <hr />
               <div class="p-content">
                 <span>
                   {{ stepItem.content }}
@@ -206,28 +207,28 @@ export default {
     return {
       serContentList: [
         {
-          src: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-1027.62suaucvwtw0.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/54f23b7cc0ffc844.png',
           link: "",
           des: "優質服務",
           content:
             "我們經驗豐富的牙科團隊，根據每位客人的口腔健康狀況，並細心聆聽他們的需求，度身訂造最合適的治療方案，見證無數個人口腔健康的轉變。",
         },
         {
-          src: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-1029.3b5p6mt9d9k0.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/673cc1d21b7ae3d4.png',
           link: "",
           des: "舒適環境",
           content:
             "中環診所分店融入日系簡約淡雅風格，淺木色傢俱與柔和裝潢，打破傳統候診環境，營造舒適溫馨的感覺。",
         },
         {
-          src: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-1028.5v7lqwcjoh00.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/6152dc2145350b79.png',
           link: "",
           des: "先進設備",
           content:
             "配備先進的牙科醫療設備，為客人提供更精準的牙科診斷及治療。",
         },
         {
-          src: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-1030.7ii7dzgrr280.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/95d36b83b7d52bab.png',
           link: "",
           des: "嚴格規範",
           content:
@@ -236,28 +237,28 @@ export default {
       ],
       serContentListMb: [
         {
-          src: 'https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/d2111.5y3kydf0nhs0.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/53f1f786ed9750b6.png',
           link: "",
           des: "優質服務",
           content:
             "我們經驗豐富的牙科團隊，根據每位客人的口腔健康狀況，並細心聆聽他們的需求，度身訂造最合適的治療方案，見證無數個人口腔健康的轉變。",
         },
         {
-          src: 'https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/d2333.74bguq6n4ro.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/5ac75bec785a1454.png',
           link: "",
           des: "舒適環境",
           content:
             "中環診所分店融入日系簡約淡雅風格，淺木色傢俱與柔和裝潢，打破傳統候診環境，營造舒適溫馨的感覺。",
         },
         {
-          src: 'https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/d2444.ns9cmb4ntnk.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/7a689c1313aa8838.png',
           link: "",
           des: "先進設備",
           content:
             "配備先進的牙科醫療設備，為客人提供更精準的牙科診斷及治療。",
         },
         {
-          src: 'https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/d2555.5cerg8c5z7k0.png',
+          src: 'https://static.cmereye.com/imgs/2023/12/58b13f122f969a0c.png',
           link: "",
           des: "嚴格規範",
           content:
@@ -323,6 +324,27 @@ export default {
 
       &>div:nth-child(2) {
         width: 100%;
+        position: relative;
+      }
+
+      hr {
+        position: absolute;
+        color: #8e8e8e;
+        margin: 0;
+        width: 500%;
+        height: 2px;
+        right: 0;
+      }
+
+      hr::after {
+        content: '';
+        width: 55px;
+        height: 2px;
+        background: #57B2F3;
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        z-index: 10;
       }
 
       .p-content {
@@ -355,19 +377,6 @@ export default {
         letter-spacing: 5px;
         position: relative;
         padding-bottom: 20px;
-        border-bottom: 1px solid #DBDBDB;
-
-
-        &:before {
-          content: "";
-          position: absolute;
-          bottom: -1px;
-          left: 0;
-          right: auto;
-          width: 30px;
-          height: 1px;
-          background: #299DF0;
-        }
       }
     }
 
@@ -385,15 +394,45 @@ export default {
           text-align: right;
         }
 
-        .des::before {
-          left: auto;
-          right: 0;
-        }
-
         .p-content {
           justify-content: flex-end;
         }
       }
+    }
+
+    li:nth-child(even) {
+
+      &>div:nth-child(2) {
+        hr {
+          position: absolute;
+          color: #8e8e8e;
+          margin: 0;
+          width: 500%;
+          right: 0;
+          left: 0;
+        }
+
+        hr::after {
+          content: none;
+        }
+
+        hr::before {
+          content: '';
+          width: 55px;
+          height: 2px;
+          background: #57B2F3;
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          z-index: 10;
+        }
+      }
+    }
+
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(4) {
+      margin-top: -100px;
     }
   }
 
@@ -651,6 +690,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 3.5rem;
 
     &>div {
       margin-top: 3.5rem;
@@ -666,7 +706,7 @@ export default {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 3.5rem;
+        // padding-bottom: 3.5rem;
 
         &>div:nth-child(1) {
           margin-bottom: 1.875rem;

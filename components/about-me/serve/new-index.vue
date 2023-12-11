@@ -17,7 +17,7 @@
                 <img :src="item.img" />
               </div>
               <div class="service_txt">
-                <p class="fs-sm-16" v-html="item.name"></p>
+                <p class="fs-sm-16" v-html="item.name" :class="`p_style_${index}`"></p>
               </div>
             </nuxt-link>
           </div>
@@ -232,76 +232,76 @@ export default {
         {
           link: '/implant',
           name: '微創植牙/種植牙',
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Frame.10gcf4ha6gps.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/57732f633a997d95.png'
         },
         {
           link: '/rct',
           name: `根管治療<span class="pcShow">/</span><br class="mbShow" />(杜牙根)`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-8.5d83rtdd4v80.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/298de7f7370976ab.png'
         },
         {
           link: '/periodontal-treatment',
           name: `牙周病治療`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/sasdasdd-a.1kkg6a37najk.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/bc1c1cdd16eb124a.png'
         },
         {
           link: '/extractions-and-wisdom-teeth-extraction',
           name: `拔牙及剝智慧齒`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Frame1.c8g2c2bfe3k.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/bf496ebdf0a60544.png'
         }
       ],
       basicDentistry: [
         {
           link: '/scaling-and-polishing',
           name: `洗牙`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-10.4jtf439h9o80.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/0543183b780abdfe.png'
         },
         {
           link: '/fillings',
           name: `補牙`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-9.501iar2097w0.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/c4ec73cc3358570e.png'
         },
         {
           link: '/general-oral-examination',
           name: `一般口腔檢查`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-7.1euutyid9rfk.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/fe2fc699dee06320.png'
         },
         {
           link: '/children-dentistry',
           name: `兒童牙科`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-13.5k608cesyck0.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/c8e2ae1c0b80dbf8.png'
         }
       ],
       cosmeticDentistry: [
         {
           link: '/veneers',
           name: `全瓷貼片`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-12.7drdbrh01ow0.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/207351d3afe0d62e.png'
         },
         {
           link: '/orthodontics',
           name: `矯齒`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/dsdsaa.5pqa5rexpt00.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/588c65469ac643fc.png'
         },
         {
           link: '/invisalign',
           name: `隱形牙箍`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-1016.gptu24a61p4.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/578230be8392aa70.png'
         },
         {
           link: '/teeth-whitening',
           name: `美白牙齒`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-6.2cj589ol2nfo.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/cdc53cbef72b0392.png'
         },
         {
           link: '/crowns-and-bridges',
           name: `全瓷牙冠<span class="pcShow">/</span><br class="mbShow" />全鋯牙冠`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/deds6.5dx0kzbqgyc0.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/eacf82fc433bf385.png'
         },
         {
           link: '/complete-and-partial-denture',
           name: `全口牙托<span class="pcShow">/</span><br class="mbShow" />局部牙托`,
-          img: 'https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/dentistry/Group-11.3wpzh44xqfs.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/1ecf290d714a0367.png'
         },
       ]
     }
@@ -348,6 +348,10 @@ a {
 }
 
 @media only screen and (max-width: 760px) {
+  .pcShow {
+    display: none;
+  }
+
   .service_box {
     padding-top: 3rem;
   }
@@ -793,7 +797,7 @@ a {
     }
 
     &>div:nth-child(2) {
-      padding: 1.375rem 1.25rem;
+      padding: 1.375rem 0;
       display: grid;
       grid-template-rows: auto auto;
       grid-template-columns: repeat(2, 1fr);
@@ -950,6 +954,12 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .p_style_1 {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+  }
+
   .mbShow {
     display: none;
   }

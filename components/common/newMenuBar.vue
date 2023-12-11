@@ -402,34 +402,12 @@
           <button class="navbar-toggler floatsty" type="button" @click="floatsty" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown">
             <!-- <span class="navbar-toggler-icon"></span> -->
-            <div id="hamburger" class="hamburglar" :class="isClosed === 1 ? 'is-open' : ''" @click="chickHandle">
-              <div class="burger-icon">
-                <div class="burger-container">
-                  <span class="burger-bun-top"></span>
-                  <span class="burger-filling"></span>
-                  <span class="burger-bun-bot"></span>
-                </div>
-              </div>
-              <!-- svg ring containter -->
-              <div class="burger-ring">
-                <svg class="svg-ring">
-                  <path class="path" fill="none" stroke="#00477B" stroke-miterlimit="10" stroke-width="3"
-                    d="M 34 2 C 16.3 2 2 16.3 2 34 s 14.3 32 32 32 s 32 -14.3 32 -32 S 51.7 2 34 2" />
-                </svg>
-              </div>
-              <!-- the masked path that animates the fill to the ring -->
-              <svg width="0" height="0">
-                <mask id="mask">
-                  <path xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ff0000" stroke-miterlimit="10"
-                    stroke-width="4" d="M 34 2 c 11.6 0 21.8 6.2 27.4 15.5 c 2.9 4.8 5 16.5 -9.4 16.5 h -4" />
-                </mask>
-              </svg>
-              <div class="path-burger">
-                <div class="animate-path">
-                  <div class="path-rotation"></div>
-                </div>
-              </div>
-            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+              <rect x="0.75" y="0.75" width="29.5" height="29.5" stroke="#57B2F3" stroke-width="1.5" />
+              <path d="M8 15H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M8 10H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M8 20H22" stroke="#57B2F3" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
           </button>
           <div class="collapse navbar-collapse pcshow" id="navbarNavDropdown">
             <ul class="navbar-nav">
@@ -1268,15 +1246,15 @@ export default {
     position: fixed;
     bottom: 80px;
     right: 10px;
-    width: 100px;
-    height: 100px;
+    width: 64px;
+    height: 64px;
     cursor: pointer;
     transition: all 0.5s;
     z-index: 99;
 
     .arrowTop {
       position: absolute;
-      top: 18px;
+      top: 10px;
       left: 50%;
       width: 8px;
       height: 8px;
@@ -1294,7 +1272,7 @@ export default {
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all .7s;
-      width: fit-content !important;
+      width: 22px !important;
     }
 
     .toTopline {
@@ -1883,6 +1861,7 @@ export default {
     position: fixed;
     z-index: 9999;
     border: 0;
+    padding: 10px 20px 20px 20px;
   }
 
   .nar {

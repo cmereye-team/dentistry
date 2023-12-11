@@ -239,6 +239,7 @@ a {
   }
 
   .main_footer {
+    overflow: hidden;
     padding: 3.75rem 2.375rem 7.5rem;
     background: #e8f6fb;
     position: relative;
