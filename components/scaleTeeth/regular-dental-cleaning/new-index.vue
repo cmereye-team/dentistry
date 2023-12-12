@@ -202,6 +202,7 @@ export default {
     margin: 90px auto;
     display: flex;
     width: 100%;
+    padding: 0 70px;
 
     &>div {
       flex: 1;

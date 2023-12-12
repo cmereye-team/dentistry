@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="bg-white py-5 pb-0 py-xs-2 ">
-      <div class="why_significance isArrowQuestion">定期洗牙為何重要？</div>
+      <div class="why_significance">洗牙常見問題</div>
       <div class="coll-box">
         <el-collapse v-model="activeNames" accordion>
           <el-collapse-item name="1">
