@@ -50,7 +50,7 @@ export default {
     return {
       bannerImg: {
         link: 'https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
-        linkAll: 'https://static.cmereye.com/imgs/2023/12/14b53ed47b8298cc.png 400w,  https://static.cmereye.com/imgs/2023/12/14b53ed47b8298cc.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
+        linkAll: 'https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 400w,  https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
         title: '',
         alt: '',
       }

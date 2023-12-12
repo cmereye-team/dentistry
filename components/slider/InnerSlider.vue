@@ -14,7 +14,7 @@
       <div class="swiper-pagination"></div>
     </div> -->
     <el-carousel indicator-position="outside">
-      <el-carousel-item v-for="item in SliderImgList" :key="item">
+      <el-carousel-item v-for="item in SliderImgList" :key="item.link">
         <div v-if="item.type === 2">
           <a :href="item.link">
             <img class="w-full img_item" :src="item.url" :srcset="item.srcset" /></a>

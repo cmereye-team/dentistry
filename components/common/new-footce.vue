@@ -567,6 +567,7 @@ export default {
     height: 80px;
     display: flex;
     margin: 110px 0 0 0;
+    padding: 0 20px;
 
     &>a {
       flex: 1;

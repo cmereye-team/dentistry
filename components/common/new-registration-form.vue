@@ -15,15 +15,16 @@
                 <el-input v-model="ruleForm.name" placeholder="請輸入你的姓名" name="name"></el-input>
               </el-form-item>
               <el-form-item prop="region" label="稱呼">
-                <el-radio-group v-model="ruleForm.region"  name="appellation">
-                  <el-radio label="先生"></el-radio>
-                  <el-radio label="女士"></el-radio>
-                  <el-radio label="小姐"></el-radio>
+                <el-radio-group v-model="ruleForm.region">
+                  <el-radio name="sex" label="先生"></el-radio>
+                  <el-radio name="sex" label="女士"></el-radio>
+                  <el-radio name="sex" label="小姐"></el-radio>
                 </el-radio-group>
               </el-form-item>
               <el-form-item prop="phone" label="電話號碼">
-                <el-input placeholder="請輸入你的電話號碼" v-model="ruleForm.phone"  name="phone" class="input-with-select">
-                  <el-select style="max-width:100px" v-model="ruleForm.beforePhone" slot="prepend" placeholder="请选择">
+                <el-input placeholder="請輸入你的電話號碼" v-model="ruleForm.phone" name="phone" class="input-with-select">
+                  <el-select style="max-width:100px" v-model="ruleForm.beforePhone" name="beforePhone" slot="prepend"
+                    placeholder="请选择">
                     <el-option label="+852" value="1"></el-option>
                     <el-option label="+853" value="2"></el-option>
                     <el-option label="+86" value="3"></el-option>
@@ -33,52 +34,74 @@
               <el-form-item label="電郵地址">
                 <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址" name="email"></el-input>
               </el-form-item>
-              <el-form-item prop="serve" label="診症服務" name="serve"><span>（可選多於一項）</span>
+              <el-form-item prop="serve" label="診症服務"><span>（可選多於一項）</span>
                 <el-checkbox-group v-model="ruleForm.serve">
-                  <el-checkbox v-for="city in selectList" :label="city.itemName" :key="city.id">{{ city.itemName
+                  <el-checkbox v-for="city in selectList" name="serve" :label="city.itemName" :key="city.id">{{
+                    city.itemName
                   }}</el-checkbox>
                 </el-checkbox-group>
               </el-form-item>
-              <el-form-item prop="source" label="閣下從什麼途徑得知我們？" name="source">
+              <el-form-item prop="source" label="閣下從什麼途徑得知我們？">
                 <el-radio-group v-model="ruleForm.source">
-                  <el-radio v-for="(item) in selectSource" :key="item.id" :label="item.name"></el-radio>
+                  <el-radio v-for="(item) in selectSource" name="source" :key="item.id" :label="item.name"></el-radio>
                 </el-radio-group>
               </el-form-item>
               <div class="radioInfo">
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
+                  <el-radio v-model="radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
                     閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br />閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
+                  <el-radio v-model="radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
                     本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+                  <el-radio v-model="radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                     本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio>
                 </div>
               </div>
               <div class="radioInfo1">
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
+                  <el-radio v-model="radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
                     閣下必須提前至少三個工作天進行網上預約；<br />網上提交表格並不等於預約成功，閣下將會在兩<br />個工作天內以電話或電郵收取預約確認通知；<br />閣下所提供的個人信息只會用於預約服務，<br />所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
+                  <el-radio v-model="radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
                     本人已閱讀，明白及同意收集個人資料及<br /><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+                  <el-radio v-model="radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                     本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio>
                 </div>
               </div>
               <el-form-item>
-                <!-- <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button> -->
-                <div class="form-btn" @click="submitForm('ruleForm')">提交</div>
+                <!-- <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提交</el-button> -->
+                <!-- <div class="form-btn" @click="submitForm('ruleForm')">提交</div> -->
+                <a class="serve_btn bp-btn" @click="submitForm('ruleForm')">
+                  <div><img src="https://static.cmereye.com/imgs/2023/12/4c7b51a900c5d922.png" alt=""></div>
+                  <div class="btn_pc_style">
+                    <div class="btn1">
+                      <div>
+
+                      </div>
+                      <div>提交</div>
+                    </div>
+                    <div class="btn2">
+                      <div>
+                      </div>
+                      <div>提交</div>
+                    </div>
+                  </div>
+                </a>
                 <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
               </el-form-item>
+              <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
+                提交
+              </button>
+
+              <input type="text" name="pageUrl" v-show="false" v-model="pageUrl">
             </el-form>
           </div>
         </div>
@@ -120,6 +143,9 @@ export default {
           name: '其他', id: '4'
         },
       ],
+      radio: true,
+      radio1: true,
+      radio2: true,
       ruleForm: {
         name: "",
         region: "",
@@ -127,9 +153,6 @@ export default {
         phone: "",
         serve: [],
         source: '',
-        radio: true,
-        radio1: true,
-        radio2: true,
       },
       rules: {
         name: [
@@ -144,16 +167,22 @@ export default {
         phone: [{ required: true, message: "請輸入你的電話號碼", trigger: "blur" }],
         serve: [{ required: true, message: "請至少選擇一個症狀", trigger: "change" }],
       },
+      pageUrl: ''
     };
   },
   created() { },
-
+  mounted() {
+    this.pageUrl = window.location.href;
+  },
   methods: {
+    aa() {
+      console.log("提交表单了");
+    },
     // submitForm(formName) {
     //   this.$refs[formName].validate((valid) => {
     //     if (valid) {
     //       console.log(this.ruleForm, 'submit!');
-          
+
     //     } else {
     //       console.log('error submit!!');
     //       return false;
@@ -167,12 +196,9 @@ export default {
         this.ruleForm.region === "" ||
         this.ruleForm.phone === "" ||
         this.ruleForm.serve === "" ||
-        this.ruleForm.source === "" ||
-        this.ruleForm.radio == true ||
-        this.ruleForm.radio1 == true ||
-        this.ruleForm.radio2 == true
+        this.ruleForm.source === ""
       ) {
-        console.log(this.ruleForm,'P175');
+        console.log(this.ruleForm, 'P175');
         alert("請完善信息！");
       } else if (
         localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)
@@ -183,7 +209,7 @@ export default {
       } else {
         alert("提交成功！");
         localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-        // this.$refs.submitForm.click();
+        this.$refs.submitButt.click();
       }
     },
 
@@ -198,6 +224,111 @@ a {
 
 //pc
 @media only screen and (min-width: 768px) {
+  .serve_btn {
+    width: fit-content;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 90px auto 0;
+
+  }
+
+  .serve_btn {
+    position: relative;
+    text-decoration: none;
+
+    &>div:nth-child(1) {
+      position: absolute;
+      top: -120%;
+      right: 55%;
+    }
+  }
+
+  .bp-btn .btn_pc_style {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  .btn_pc_style {
+    &>div {
+      display: flex;
+    }
+  }
+
+  .bp-btn .btn_pc_style .btn1,
+  .btn2 {
+    box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
+    border-radius: 40px;
+    padding: 8px 92px 12px;
+    background: #FFD333;
+    cursor: pointer;
+    top: 0;
+    color: #FFF;
+    font-family: 'Noto Sans CJK TC';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.92px;
+
+    &>div:nth-child(1) {
+      margin-right: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .bp-btn .btn_pc_style .btn2 {
+    color: #79828D;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    animation: btnAnim .9s linear;
+    animation-fill-mode: forwards;
+    width: max-content;
+    display: none;
+  }
+
+  .bp-btn .btn_pc_style:hover {
+    .btn1 {
+      color: #79828D;
+
+      path {
+        fill: #79828D;
+      }
+    }
+
+    .btn2 {
+      display: flex;
+      animation: btnAnim .9s linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+
+  @keyframes btnAnim {
+    0% {
+      clip-path: polygon(-10% 0, 0 0, -10% 100%, -20% 100%);
+    }
+
+    50% {
+      clip-path: polygon(50% 0, 60% 0, 50% 100%, 40% 100%);
+    }
+
+    100% {
+      clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
+    }
+  }
+
   .texts {
     text-align: center;
 
