@@ -439,6 +439,7 @@ export default {
   .list {
     background-image: linear-gradient(to bottom, #fff 0%, #E3F3FA 0);
     margin-bottom: 127px;
+    overflow: hidden;
   }
 
 
