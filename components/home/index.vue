@@ -388,7 +388,7 @@ export default {
   .dental_con {
     width: 775px;
     margin: auto;
-    margin-top: 97px;
+    margin-top: 75px;
     color: #79828D;
     font-family: "Noto Sans CJK TC";
     font-size: 20px;
@@ -398,7 +398,7 @@ export default {
     letter-spacing: 2px;
 
     &>div:nth-child(2) {
-      margin: 40px 0;
+      margin: 75px 0;
     }
 
   }

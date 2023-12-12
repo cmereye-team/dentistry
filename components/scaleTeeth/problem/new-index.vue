@@ -265,6 +265,7 @@ export default {
       grid-gap: 1.25rem;
       margin-top: 3.75rem;
       &>div{
+        max-width: 9.875rem;
         &>div:nth-child(2) {
           margin-top: 0.5rem;
           color: #79828D;
@@ -274,6 +275,9 @@ export default {
           font-style: normal;
           font-weight: 500;
           line-height: 160%; /* 25.6px */
+        }
+        &>img {
+          width: 100%;
         }
       }
     }
@@ -364,13 +368,15 @@ export default {
   }
 
   .discon {
+    margin: 0;
     // margin: 1vw 0 0 0;
     display: flex;
     justify-content: flex-end;
 
-    // ul {
-    //   padding-left: 0.2vw;
-    // }
+    ul {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
 
     span {
       color: #9BA5B1;

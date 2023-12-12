@@ -36,32 +36,32 @@
           <div>
             <div><span>1</span></div>
             <div>
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Ve1ctor.77qgcdatx440.png"
-                alt="">
+              <img src="https://static.cmereye.com/imgs/2023/12/6769c2cd162a065e.png"
+                alt="清除牙結石及牙菌膜">
             </div>
             <div>利用超聲波震動儀器，清除牙結石及牙菌膜。</div>
           </div>
           <div>
             <div><span>2</span></div>
             <div>
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Ve2ctor.1mkiwbs2z5eo.png"
-                alt="">
+              <img src="https://static.cmereye.com/imgs/2023/12/152aee531c736d95.png"
+                alt="利用刮牙石器去除牙結石">
             </div>
             <div>利用刮牙石器去除牙結石。</div>
           </div>
           <div>
             <div><span>3</span></div>
             <div>
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Vec3tor.28bidvgpf3fo.png"
-                alt="">
+              <img src="https://static.cmereye.com/imgs/2023/12/5b7618e6a93618fd.png"
+                alt="拋光打磨牙齒表面">
             </div>
             <div>拋光打磨牙齒表面，去除牙漬及強化牙齒外層，避免藏污納垢，減低患上牙周病的風險。</div>
           </div>
           <div>
             <div><span>4</span></div>
             <div>
-              <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Vec5tor.2wimdsdxpka0.png"
-                alt="">
+              <img src="https://static.cmereye.com/imgs/2023/12/d9e8d5230cea810c.png"
+                alt="塗上牙面氟化物助鞏固琺瑯質">
             </div>
             <div>塗上牙面氟化物助鞏固琺瑯質。</div>
           </div>
@@ -71,14 +71,14 @@
             <div>
               <div>
                 <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Rectangle-466.3mw0f4x703u0.png"
-                  alt="">
+                  src="https://static.cmereye.com/imgs/2023/12/d52e23aad557311a.png"
+                  alt="清除牙結石及牙菌膜">
               </div>
               <div>
                 <div>
                   <img
-                    src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/image-20.3hyz1iy9gdy0.png"
-                    alt="">
+                    src="https://static.cmereye.com/imgs/2023/12/779289004a2dc385.png"
+                    alt="1">
                 </div>
                 <div>利用超聲波震動儀器，清除牙結石及牙菌膜。</div>
               </div>
@@ -88,14 +88,14 @@
             <div>
               <div>
                 <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Rectangle-4663.lyaecvm269o.png"
-                  alt="">
+                  src="https://static.cmereye.com/imgs/2023/12/65e2d3775437a3f1.png"
+                  alt="利用刮牙石器去除牙結石">
               </div>
               <div>
                 <div>
                   <img
-                    src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/image-220.5wr8i6mu8a80.png"
-                    alt="">
+                    src="https://static.cmereye.com/imgs/2023/12/cc37d29b318c00b6.png"
+                    alt="2">
                 </div>
                 <div>利用刮牙石器去除牙結石。</div>
               </div>
@@ -106,13 +106,13 @@
               <div>
                 <img
                   src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Rectangle-4664.1jk46fmwo6e8.png"
-                  alt="">
+                  alt="拋光打磨牙齒表面">
               </div>
               <div>
                 <div>
                   <img
-                    src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/image-230.6kfjgpo59cc0.png"
-                    alt="">
+                    src="https://static.cmereye.com/imgs/2023/12/7fcf92c3e62095c0.png"
+                    alt="3">
                 </div>
                 <div>拋光打磨牙齒表面，去除牙漬及強化牙齒外層，避免藏污納垢，減低患上牙周病的風險。</div>
               </div>
@@ -122,14 +122,14 @@
             <div>
               <div>
                 <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Rectangle-4667.3mskct53qgs0.png"
-                  alt="">
+                  src="https://static.cmereye.com/imgs/2023/12/c5ea9b912f7946e9.png"
+                  alt="塗上牙面氟化物助鞏固琺瑯質">
               </div>
               <div>
                 <div>
                   <img
-                    src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/image-240.6c2c7po7njw0.png"
-                    alt="">
+                    src="https://static.cmereye.com/imgs/2023/12/83564b132e80b07f.png"
+                    alt="4">
                 </div>
                 <div>塗上牙面氟化物助鞏固琺瑯質。</div>
               </div>
