@@ -2,12 +2,12 @@
  * 路由的配置数据
  * */
 const getRoutes = resolve => [
+  // {
+  //   path: '/',
+  //   component: resolve('pages/index'),
+  // },
   {
     path: '/',
-    component: resolve('pages/index'),
-  },
-  {
-    path: '/new',
     component: resolve('pages/new-home'),
   },
   {
@@ -79,18 +79,18 @@ const getRoutes = resolve => [
     component: resolve('pages/implant'),
     chunkName: 'pages/implant',
   },
-  {
-    path: '/contact',
-    redirect: '/contact-us',
-    component: resolve('pages/contact-us'),
-    chunkName: 'pages/contact-us',
-  },
-  {
-    path: '/contact_ENG',
-    redirect: '/contact-us',
-    component: resolve('pages/contact-us'),
-    chunkName: 'pages/contact-us',
-  },
+  // {
+  //   path: '/contact',
+  //   redirect: '/contact-us',
+  //   component: resolve('pages/contact-us'),
+  //   chunkName: 'pages/contact-us',
+  // },
+  // {
+  //   path: '/contact_ENG',
+  //   redirect: '/contact-us',
+  //   component: resolve('pages/contact-us'),
+  //   chunkName: 'pages/contact-us',
+  // },
   {
     path: '/crowns-and-bridges',
     component: resolve('pages/crowns-and-bridges'),
@@ -117,13 +117,13 @@ const getRoutes = resolve => [
     component: resolve('pages/orthodontics'),
 
   },
-  {
-    path: '/scaling-and-polishing',
-    component: resolve('pages/scaling-and-polishing'),
+  // {
+  //   path: '/scaling-and-polishing',
+  //   component: resolve('pages/scaling-and-polishing'),
 
-  },
+  // },
   {
-    path:'/new-scaling-and-polishing',
+    path:'/scaling-and-polishing',
     component: resolve('pages/new-scaling-and-polishing'),
   },
   {
@@ -162,13 +162,13 @@ const getRoutes = resolve => [
     component: resolve('pages/news'),
 
   },
+  // {
+  //   path: '/contact-us',
+  //   component: resolve('pages/contact-us'),
+
+  // },
   {
     path: '/contact-us',
-    component: resolve('pages/contact-us'),
-
-  },
-  {
-    path: '/new-contact-us',
     component: resolve('pages/new-contact-us'),
   },
   {

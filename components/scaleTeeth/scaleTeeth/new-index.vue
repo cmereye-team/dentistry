@@ -268,6 +268,14 @@ export default {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          color: #79828D;
+          text-align: center;
+          font-family: Noto Sans TC;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1.8px;
 
           &>span {
             text-align: center;

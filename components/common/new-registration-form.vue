@@ -9,19 +9,20 @@
         <div class="form-table">
           <div class="text-form">立即預約牙科服務，<br class="mbShow" />展現自信笑容！</div>
           <div class="table-message">
-            <el-form label-position="top" label-width="80px" ref="ruleForm" :model="ruleForm" :rules="rules">
+            <el-form label-position="top" label-width="80px" ref="ruleForm" :model="ruleForm" :rules="rules"
+              action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
               <el-form-item prop="name" label="姓名">
-                <el-input v-model="ruleForm.name" placeholder="請輸入你的姓名"></el-input>
+                <el-input v-model="ruleForm.name" placeholder="請輸入你的姓名" name="name"></el-input>
               </el-form-item>
               <el-form-item prop="region" label="稱呼">
-                <el-radio-group v-model="ruleForm.region">
+                <el-radio-group v-model="ruleForm.region"  name="appellation">
                   <el-radio label="先生"></el-radio>
                   <el-radio label="女士"></el-radio>
                   <el-radio label="小姐"></el-radio>
                 </el-radio-group>
               </el-form-item>
               <el-form-item prop="phone" label="電話號碼">
-                <el-input placeholder="請輸入你的電話號碼" v-model="ruleForm.phone" class="input-with-select">
+                <el-input placeholder="請輸入你的電話號碼" v-model="ruleForm.phone"  name="phone" class="input-with-select">
                   <el-select style="max-width:100px" v-model="ruleForm.beforePhone" slot="prepend" placeholder="请选择">
                     <el-option label="+852" value="1"></el-option>
                     <el-option label="+853" value="2"></el-option>
@@ -30,46 +31,46 @@
                 </el-input>
               </el-form-item>
               <el-form-item label="電郵地址">
-                <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址"></el-input>
+                <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址" name="email"></el-input>
               </el-form-item>
-              <el-form-item prop="serve" label="診症服務"><span>（可選多於一項）</span>
+              <el-form-item prop="serve" label="診症服務" name="serve"><span>（可選多於一項）</span>
                 <el-checkbox-group v-model="ruleForm.serve">
                   <el-checkbox v-for="city in selectList" :label="city.itemName" :key="city.id">{{ city.itemName
                   }}</el-checkbox>
                 </el-checkbox-group>
               </el-form-item>
-              <el-form-item prop="source" label="閣下從什麼途徑得知我們？">
+              <el-form-item prop="source" label="閣下從什麼途徑得知我們？" name="source">
                 <el-radio-group v-model="ruleForm.source">
                   <el-radio v-for="(item) in selectSource" :key="item.id" :label="item.name"></el-radio>
                 </el-radio-group>
               </el-form-item>
               <div class="radioInfo">
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio" name="confidentiality" value="我已知曉内容皆保密處理">
+                  <el-radio v-model="ruleForm.radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
                     閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br />閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio1" name="privary" value="我已知曉同意收集個人資料及私隱">
+                  <el-radio v-model="ruleForm.radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
                     本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio2" name="broadcast" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+                  <el-radio v-model="ruleForm.radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                     本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio>
                 </div>
               </div>
               <div class="radioInfo1">
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio" name="confidentiality" value="我已知曉内容皆保密處理">
+                  <el-radio v-model="ruleForm.radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
                     閣下必須提前至少三個工作天進行網上預約；<br />網上提交表格並不等於預約成功，閣下將會在兩<br />個工作天內以電話或電郵收取預約確認通知；<br />閣下所提供的個人信息只會用於預約服務，<br />所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio1" name="privary" value="我已知曉同意收集個人資料及私隱">
+                  <el-radio v-model="ruleForm.radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
                     本人已閱讀，明白及同意收集個人資料及<br /><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="ruleForm.radio2" name="broadcast" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+                  <el-radio v-model="ruleForm.radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
                     本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio>
                 </div>
               </div>
@@ -126,9 +127,9 @@ export default {
         phone: "",
         serve: [],
         source: '',
-        radio: false,
-        radio1: false,
-        radio2: false,
+        radio: true,
+        radio1: true,
+        radio2: true,
       },
       rules: {
         name: [
@@ -148,26 +149,30 @@ export default {
   created() { },
 
   methods: {
-    aa() {
-      console.log("提交表单了");
-    },
-    submitForm(formName) {
-      this.$refs[formName].validate((valid) => {
-        if (valid) {
-          console.log(this.ruleForm, 'submit!');
-          this.$refs[formName].resetFields(); // 重置表单 
-        } else {
-          console.log('error submit!!');
-          return false;
-        }
-      });
-    },
-    submitButt() {
+    // submitForm(formName) {
+    //   this.$refs[formName].validate((valid) => {
+    //     if (valid) {
+    //       console.log(this.ruleForm, 'submit!');
+          
+    //     } else {
+    //       console.log('error submit!!');
+    //       return false;
+    //     }
+    //   });
+    // },
+    // this.$refs[formName].resetFields(); // 重置表单 
+    submitForm() {
       if (
         this.ruleForm.name === "" ||
         this.ruleForm.region === "" ||
-        this.ruleForm.phone === ""
+        this.ruleForm.phone === "" ||
+        this.ruleForm.serve === "" ||
+        this.ruleForm.source === "" ||
+        this.ruleForm.radio == true ||
+        this.ruleForm.radio1 == true ||
+        this.ruleForm.radio2 == true
       ) {
+        console.log(this.ruleForm,'P175');
         alert("請完善信息！");
       } else if (
         localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)
@@ -178,7 +183,7 @@ export default {
       } else {
         alert("提交成功！");
         localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-        this.$refs.submitButt.click();
+        // this.$refs.submitForm.click();
       }
     },
 
@@ -529,6 +534,7 @@ a {
       text-align: center;
     }
   }
+
   .text-form {
     margin-top: 20vw;
     text-align: center;
