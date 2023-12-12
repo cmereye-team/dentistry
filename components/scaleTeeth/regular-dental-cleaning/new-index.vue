@@ -9,7 +9,7 @@
               alt="預防牙周疾病">
           </div>
           <div>預防牙周疾病</div>
-          <div>定期洗牙有效預防牙齦炎和牙周炎。這些疾病常由牙菌膜長期積聚而引起，如不及時清除，會導致牙齦紅腫流血、牙齒鬆脫等問題。</div>
+          <div>定期洗牙有效預防牙齦炎和牙<br class="pcShow" />周炎。這些疾病常由牙菌膜長<br class="pcShow" />期積聚而引起，如不及時清<br class="pcShow" />除，會導致牙齦紅腫流血、牙<br class="pcShow" />齒鬆脫等問題。</div>
         </div>
         <div>
           <div>
@@ -17,7 +17,7 @@
               alt="防止蛀牙">
           </div>
           <div>防止蛀牙</div>
-          <div>口腔中的細菌和食物殘渣是引起蛀牙的主要原因。定期洗牙可清除牙齒表面的牙菌膜和牙結石，減少蛀牙的風險。</div>
+          <div>口腔中的細菌和食物殘渣是引<br class="pcShow" />起蛀牙的主要原因。定期洗牙<br class="pcShow" />可清除牙齒表面的牙菌膜和牙<br class="pcShow" />結石，減少蛀牙的風險。</div>
         </div>
         <div>
           <div>
@@ -25,7 +25,7 @@
               alt="改善口氣及牙色">
           </div>
           <div>改善口氣及牙色</div>
-          <div>牙菌膜的積聚為口臭的罪魁禍首。定期洗牙可清除口腔中的細菌，以保持口氣清新。</div>
+          <div>牙菌膜的積聚為口臭的罪魁<br class="pcShow" />禍首。定期洗牙可清除口腔<br class="pcShow" />中的細菌，以保持口氣清新。</div>
         </div>
       </div>
     </div>
@@ -226,6 +226,7 @@ export default {
         font-weight: 500;
         line-height: 160%;
         max-width: 290px;
+        text-wrap: nowrap;
         /* 28.8px */
       }
     }
@@ -233,6 +234,7 @@ export default {
 
   .procedure {
     background: #ECF7FC;
+    margin-top: 54px;
     padding: 90px 0;
   }
 
@@ -362,6 +364,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .procedure {
+    margin-top: 54px;
+  }
   .pcShow {
     display: none;
   }
