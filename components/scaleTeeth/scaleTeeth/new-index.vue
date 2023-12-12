@@ -117,7 +117,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Fredoka:wght@700&display=swap');
 //pc
 @media only screen and (min-width: 768px) {
   ::v-deep .el-slider__button {
