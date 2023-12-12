@@ -145,7 +145,8 @@ export default {
     return {
       isShow: true,
       screenWidth: '',
-      drawerBool: false
+      drawerBool: false,
+      // documentIsShow: false
     }
 
   },
@@ -153,6 +154,15 @@ export default {
     this.dynamicLoadCss(`https://www.cmerdental.com/css/vikim.css?parms=${new Date()}`)
   },
   created() {
+
+    // var interval = setInterval(function () {
+    //   console.log(0, document.readyState);
+    // if (document.readyState === 'complete') {
+    // console.log(1, document.readyState);
+    // this.documentIsShow = true
+    // clearInterval(interval);
+    // }
+    // }, 100);
     if (process.client) {
       console.log(process, 'process.client');
       this.screenWidth = document.body.clientWidth
@@ -792,14 +802,17 @@ export default {
       }
     }
   }
+
   .drawerImgHeight {
     animation: heightH .2s linear;
   }
+
   @keyframes heightH {
     0% {
       height: 0;
       padding: 0;
     }
+
     100% {
       padding: 80px 0;
       height: 453px;
@@ -842,4 +855,5 @@ export default {
     border-radius: 18px 18px 0 0;
     // background: white;
   }
-}</style>
+}
+</style>
