@@ -45,7 +45,7 @@
               <span>
                 <ul>
                   <li>
-                    口腔的細菌、食物殘渣及口水會在牙齒表面、牙縫及牙齦間形成牙菌膜。若牙菌膜未能仔細清除，便會積聚鈣成牙石。因此建議至少每半年洗牙一次，保持口腔衛生。
+                    牙石主要是由口腔內的細菌、食物殘渣以及口水相互作用而形成的，它們會在牙齒表面、牙能和牙齦間形成一層牙菌膜。若未能仔細清除，牙菌膜會逐漸被鈣化成牙石。牙醫建讓每半年至一年洗牙一次，以保持口腔衛生。
                   </li>
                 </ul>
               </span>
@@ -62,7 +62,7 @@
               <span>
                 <ul>
                   <li>
-                    在洗牙後幾天內感到輕微酸痛，甚至有牙齦出血的情況，是由於牙齦在洗牙前出現發炎情況，因此在清除口中細菌時，會引起牙齦紅腫及充血。只要繼續注意口腔衛生，口腔不適及牙齦出血的現象就會逐漸消失，牙齦亦會回復健康。
+                    如牙眼感到不適，應及早幣詢牙醫的建議。若被判斷牙眼發炎是由牙菌斑和牙結石引起的，可透過洗牙清除口腔堆積物，以緩解發炎症狀。
                   </li>
                 </ul>
               </span>
@@ -79,7 +79,7 @@
               <span>
                 <ul>
                   <li>
-                    口腔的細菌、食物殘渣及口水會在牙齒表面、牙縫及牙齦間形成牙菌膜。若牙菌膜未能仔細清除，便會積聚鈣成牙石。因此建議至少每半年洗牙一次，保持口腔衛生。
+                    琺瑯質硬度為人體最堅硬的組織。洗牙過程中，主要利用超音波震邀原理，將堆積的牙結石震落及清除，不會對琺瑯質構成傷害。
                   </li>
                 </ul>
               </span>
@@ -96,7 +96,7 @@
               <span>
                 <ul>
                   <li>
-                    口腔的細菌、食物殘渣及口水會在牙齒表面、牙縫及牙齦間形成牙菌膜。若牙菌膜未能仔細清除，便會積聚鈣成牙石。因此建議至少每半年洗牙一次，保持口腔衛生。
+                    嚴重牙周病患者可能會有牙齒鬆脫的問題。長期累積的牙結石令牙齦反覆發炎，導致牙齦萎縮、齒槽骨被吸收，當牙結石被清除後，牙齒才會鬆脫。
                   </li>
                 </ul>
               </span>
@@ -113,7 +113,7 @@
               <span>
                 <ul>
                   <li>
-                    口腔的細菌、食物殘渣及口水會在牙齒表面、牙縫及牙齦間形成牙菌膜。若牙菌膜未能仔細清除，便會積聚鈣成牙石。因此建議至少每半年洗牙一次，保持口腔衛生。
+                    洗牙並不會令牙齒雙白，主要將堆積在牙齒上的牙結石清除乾淨，如牙齒因飲食或者吸煙導致塑色，又或者本身颜色偏黄。如想美白牙齒，可考慮進行激光或藍光美白牙齒療程，詳情請諮詢牙醫的意見。
                   </li>
                 </ul>
               </span>
@@ -130,7 +130,7 @@
               <span>
                 <ul>
                   <li>
-                    口腔的細菌、食物殘渣及口水會在牙齒表面、牙縫及牙齦間形成牙菌膜。若牙菌膜未能仔細清除，便會積聚鈣成牙石。因此建議至少每半年洗牙一次，保持口腔衛生。
+                    洗牙後出現牙齒敏感或牙縫雙大，主要由於牙菌膜和牙結石被清除後，牙根皙時暴簬，增加對冷熱刺激的敏感度。同時，受感染的牙肉會逐漸消腫，使牙縫變得明顯。牙齒敏感情況一般在洗牙後數天內緩解，期間應避免進食冷熱刺激食物。若敏感症狀持續，建議尋求牙醫的協助。
                   </li>
                 </ul>
               </span>
@@ -241,14 +241,17 @@ export default {
 
   .discon {
     margin: 0 !important;
+
     li {
       margin-left: 60px;
     }
+
     ul {
       margin-bottom: 0 !important;
     }
   }
-  ::v-deep .el-collapse-item__content{
+
+  ::v-deep .el-collapse-item__content {
     padding-bottom: 20px !important;
   }
 }
@@ -257,6 +260,7 @@ export default {
   ::v-deep .el-collapse-item__header.is-active {
     background: transparent !important;
   }
+
   .attention {
     &>div:nth-child(2) {
       display: grid;
@@ -264,8 +268,10 @@ export default {
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1.25rem;
       margin-top: 3.75rem;
-      &>div{
+
+      &>div {
         max-width: 9.875rem;
+
         &>div:nth-child(2) {
           margin-top: 0.5rem;
           color: #79828D;
@@ -274,14 +280,17 @@ export default {
           font-size: 1rem;
           font-style: normal;
           font-weight: 500;
-          line-height: 160%; /* 25.6px */
+          line-height: 160%;
+          /* 25.6px */
         }
+
         &>img {
           width: 100%;
         }
       }
     }
   }
+
   .mb_attention {
     padding: 0 1.25rem;
     margin-bottom: 3.4375rem;
@@ -341,14 +350,18 @@ export default {
     padding-left: 2vw;
     // background-color: #DFDFDF;
   }
+
   ::v-deep .el-collapse {
     &>div:last-child {
-      .p1,.p2 {
+
+      .p1,
+      .p2 {
         line-height: 1.2;
         max-width: 83%;
       }
     }
   }
+
   .coll-box {
     padding: 3vw;
     width: 100%;
@@ -411,6 +424,7 @@ export default {
     background-image: url(https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1018+.55g66fshwgc0.png);
     margin-right: 1.25rem;
   }
+
   .downArrow2 {
     display: inline-block;
     width: 2.25rem;
@@ -513,4 +527,5 @@ export default {
     background-image: url(https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1018.77gibtpj4xw0.png);
     // transform: rotate(-180deg);
   }
-}</style>
+}
+</style>

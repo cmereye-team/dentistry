@@ -182,6 +182,7 @@ export default {
     letter-spacing: 2.5px;
     position: relative;
     padding-bottom: 15px;
+    padding-left: 5px;
   }
 
   .why_significance::after {
