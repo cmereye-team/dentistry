@@ -1,7 +1,7 @@
 <template>
   <div class="main-container mb_attention">
     <div class="attention">
-      <div class="why_significance">洗牙後要注意什麼？</div>
+      <div class="why_significance isArrowQuestion">洗牙後要注意什麼？</div>
       <div>
         <div>
           <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-12125.4y1j4bj5n7c0.png"
@@ -31,7 +31,7 @@
       </div>
     </div>
     <div class="bg-white py-5 pb-0 py-xs-2 ">
-      <div class="why_significance">定期洗牙為何重要？</div>
+      <div class="why_significance isArrowQuestion">定期洗牙為何重要？</div>
       <div class="coll-box">
         <el-collapse v-model="activeNames" accordion>
           <el-collapse-item name="1">
@@ -208,9 +208,12 @@ export default {
     line-height: normal;
     letter-spacing: 2.5px;
     position: relative;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
+  .isArrowQuestion {
+    padding-left: 20px;
 
+  }
   .why_significance::after {
     content: '';
     background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Vector.5u4eydocd6c0.png');

@@ -1,7 +1,7 @@
 <template>
   <div class="Regular_dental_cleaning">
     <div class="main-container why_wash">
-      <div class="why_significance">定期洗牙為何重要？</div>
+      <div class="why_significance isArrowQuestion">定期洗牙為何重要？</div>
       <div class="benefit">
         <div>
           <div>
@@ -182,9 +182,10 @@ export default {
     letter-spacing: 2.5px;
     position: relative;
     padding-bottom: 15px;
-    padding-left: 5px;
   }
-
+  .isArrowQuestion {
+    padding-left: 20px;
+  }
   .why_significance::after {
     content: '';
     background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Vector.5u4eydocd6c0.png');
