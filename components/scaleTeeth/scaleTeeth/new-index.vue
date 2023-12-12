@@ -279,17 +279,13 @@ export default {
     }
 
     &>div:nth-child(1)::after {
-      content: '?';
+      content: '';
+      background: url(https://static.cmereye.com/imgs/2023/12/96ad361562700793.png);
       position: absolute;
-      color: #57B2F3;
-      text-align: center;
-      font-family: 'Fredoka';
-      font-size: 128.164px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      // letter-spacing: 12.816px;
-      top: -20%;
+      top: -10%;
+      width: 61px;
+      height: 98px;
+      background-repeat: no-repeat;
     }
   }
 
@@ -453,6 +449,7 @@ export default {
       height: 55px;
     }
   }
+
   .interval-text {
     display: flex;
     justify-content: flex-end;
@@ -467,6 +464,7 @@ export default {
       right: -10px;
     }
   }
+
   .pcShow {
     display: none;
   }
@@ -533,16 +531,13 @@ export default {
     }
 
     &>div:nth-child(1)::after {
-      content: '?';
+      content: '';
+      background: url('https://static.cmereye.com/imgs/2023/12/ac8ad218b507e3ae.png');
+      background-repeat: no-repeat;
+      width: 35px;
+      height: 55px;
       position: absolute;
-      color: #57B2F3;
-      text-align: center;
-      font-family: 'Fredoka';
-      font-size: 70.772px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      top: -20%;
+      top: -10%;
       left: 50%;
       transform: translateX(-50%);
     }
