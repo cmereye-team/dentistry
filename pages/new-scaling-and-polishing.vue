@@ -14,6 +14,7 @@
         立即預約洗牙
       </div>
     </a>
+    <registration />
     <foot />
   </div>
 </template>
@@ -29,6 +30,7 @@ import scaleTeeth from "@/components/scaleTeeth/scaleTeeth/new-index.vue"
 import regularDentalCleaning from "@/components/scaleTeeth/regular-dental-cleaning/new-index.vue";
 import problem from "@/components/scaleTeeth/problem/new-index.vue"
 import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
+import registration from "@/components/common/new-registration-form.vue"
 
 export default {
   components: {
@@ -41,6 +43,7 @@ export default {
     mapGoogle,
     scaleTeeth,
     foot,
+    registration,
     problem
   },
   data() {

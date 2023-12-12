@@ -171,7 +171,8 @@ export default {
       margin: 56px auto 90px;
 
       &>div {
-        flex: 1;
+        // flex: 1;
+        width: calc(100% / 3);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -191,8 +192,8 @@ export default {
         }
       }
 
-      &>div:nth-child(2) {
-        margin: 50px 100px 0;
+      &>div:nth-child(4) {
+        margin-left: 15%;
       }
     }
   }
@@ -239,9 +240,16 @@ export default {
   }
 
   .discon {
+    margin: 0 !important;
     li {
       margin-left: 60px;
     }
+    ul {
+      margin-bottom: 0 !important;
+    }
+  }
+  ::v-deep .el-collapse-item__content{
+    padding-bottom: 20px !important;
   }
 }
 
@@ -356,13 +364,13 @@ export default {
   }
 
   .discon {
-    margin: 1vw 0 0 0;
+    // margin: 1vw 0 0 0;
     display: flex;
     justify-content: flex-end;
 
-    ul {
-      padding-left: 0.2vw;
-    }
+    // ul {
+    //   padding-left: 0.2vw;
+    // }
 
     span {
       color: #9BA5B1;

@@ -29,7 +29,7 @@
                   </el-select>
                 </el-input>
               </el-form-item>
-              <el-form-item prop="email" label="電郵地址">
+              <el-form-item label="電郵地址">
                 <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址"></el-input>
               </el-form-item>
               <el-form-item prop="serve" label="診症服務"><span>（可選多於一項）</span>
@@ -142,10 +142,6 @@ export default {
         source: [{ required: true, message: "請選擇一個來源", trigger: "change" }],
         phone: [{ required: true, message: "請輸入你的電話號碼", trigger: "blur" }],
         serve: [{ required: true, message: "請至少選擇一個症狀", trigger: "change" }],
-        email: [
-          { required: true, message: '请输入邮箱地址', trigger: 'blur' },
-          { type: 'email', message: '请输入正确的邮箱地址', trigger: 'blur' }
-        ]
       },
     };
   },

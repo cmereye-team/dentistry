@@ -248,7 +248,12 @@ export default {
           link: '/extractions-and-wisdom-teeth-extraction',
           name: `拔牙及剝智慧齒`,
           img: 'https://static.cmereye.com/imgs/2023/12/bf496ebdf0a60544.png'
-        }
+        },
+        {
+          link: '/complete-and-partial-denture',
+          name: `全口牙托<span class="pcShow">/</span><br class="mbShow" />局部牙托`,
+          img: 'https://static.cmereye.com/imgs/2023/12/1ecf290d714a0367.png'
+        },
       ],
       basicDentistry: [
         {
@@ -298,11 +303,7 @@ export default {
           name: `全瓷牙冠<span class="pcShow">/</span><br class="mbShow" />全鋯牙冠`,
           img: 'https://static.cmereye.com/imgs/2023/12/eacf82fc433bf385.png'
         },
-        {
-          link: '/complete-and-partial-denture',
-          name: `全口牙托<span class="pcShow">/</span><br class="mbShow" />局部牙托`,
-          img: 'https://static.cmereye.com/imgs/2023/12/1ecf290d714a0367.png'
-        },
+
       ]
     }
   },

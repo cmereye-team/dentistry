@@ -215,9 +215,9 @@
       </div>
     </div>
     <div class="dental_con  main-container">
-      <div>希瑪牙科隸屬於主板上市公司「香港希瑪眼科集團」（股份代號：03309），為大眾提供基本牙科、美容牙科及高階牙科服務。 </div>
-      <div>自2021年成立以來，始終堅守以客人需求為導向的服務理念，致力於提供符合國際標準的牙科診療服務。 </div>
-      <div>結合客人口腔健康狀況，制定安全且可靠的治療方案，同時強調口腔保健教育，鼓勵大眾瞭解牙齒健康的重要性，提升對口腔護理的關注。</div>
+      <div>希瑪牙科隸屬於主板上市公司「香港希瑪眼科集團」（股份代號：03309），<br class="pcShow" />為大眾提供基本牙科、美容牙科及高階牙科服務。 </div>
+      <div>自2021年成立以來，始終堅守以客人需求為導向的服務理念，致力於提供符合<br class="pcShow" />國際標準的牙科診療服務。 </div>
+      <div>結合客人口腔健康狀況，制定安全且可靠的治療方案，同時強調口腔保健教育，<br class="pcShow" />鼓勵大眾瞭解牙齒健康的重要性，提升對口腔護理的關注。</div>
     </div>
   </div>
 </template>
@@ -288,6 +288,9 @@ export default {
 <style lang="scss" scoped>
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Fredoka:wght@700&display=swap');
 @media screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
   .dental {
     display: flex;
     flex-direction: column;
@@ -383,7 +386,7 @@ export default {
 
 
   .dental_con {
-    width: 613px;
+    width: 775px;
     margin: auto;
     margin-top: 97px;
     color: #79828D;
@@ -395,13 +398,16 @@ export default {
     letter-spacing: 2px;
 
     &>div:nth-child(2) {
-      margin: 20px 0;
+      margin: 40px 0;
     }
 
   }
 }
 
 @media screen and (max-width: 768px) {
+  .pcShow {
+    display: none;
+  }
   .dental {
     margin-bottom: 3.625rem;
   }
