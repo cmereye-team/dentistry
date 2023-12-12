@@ -10,9 +10,6 @@
     <div class="tootWash_head">
       <div class="habit main-container">
         <div>
-          <span>?</span>
-        </div>
-        <div>
           <div>您有定期洗牙的習慣嗎？</div>
           <div>
             <div>
@@ -129,85 +126,18 @@ export default {
     margin: auto;
 
     &>div:nth-child(1) {
-      width: 150px;
-      height: 75px;
-      border-radius: 75px 75px 0 0;
-      background: #ECF7FC;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      &>span {
-        color: #57B2F3;
-        text-align: center;
-        font-family: Fredoka;
-        font-size: 128.164px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        letter-spacing: 12.816px;
-        position: relative;
-        top: -15px;
-      }
-
-      &>span::before {
-        content: '';
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        bottom: 16%;
-        left: -87%;
-        border-radius: 0 0 30px 0;
-        background: #fff;
-      }
-
-      &>span::after {
-        content: '';
-        width: 30px;
-        height: 30px;
-        display: inline-block;
-        position: absolute;
-        bottom: 16%;
-        right: -87%;
-        border-radius: 0 0 0 30px;
-        background: #fff;
-        z-index: 5;
-      }
-    }
-
-    &>div:nth-child(1)::before {
-      content: '';
-      width: 30px;
-      height: 30px;
-      border-radius: 0 0 0 0;
-      position: absolute;
-      background: #ECF7FC;
-      bottom: -10%;
-      left: -10%;
-    }
-
-    &>div:nth-child(1)::after {
-      content: '';
-      width: 30px;
-      height: 30px;
-      border-radius: 0 0 0 0;
-      position: absolute;
-      background: #ECF7FC;
-      bottom: -10%;
-      right: -10%;
-    }
-
-    &>div:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100%;
       padding: 22px 60px;
       border-radius: 25px;
-      background: #ECF7FC;
       position: relative;
+      background: url(https://static.cmereye.com/imgs/2023/12/4f250806067a7930.png);
+      background-repeat: no-repeat;
+      height: 313px;
+      width: 100%;
+      background-size: 100% 100%;
+      justify-content: flex-end;
 
       &>div:nth-child(1) {
         color: #79828D;
@@ -251,19 +181,18 @@ export default {
       }
     }
 
-    &>div:nth-child(2)::before {
-      content: '1';
+    &>div:nth-child(1)::after {
+      content: '?';
+      position: absolute;
       color: #57B2F3;
       text-align: center;
-      font-family: Fredoka;
-      font-size: 75px;
+      font-family: 'Fredoka';
+      font-size: 128.164px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      letter-spacing: 7.5px;
-      position: absolute;
-      right: 18%;
-      top: -5%;
+      // letter-spacing: 12.816px;
+      top: -20%;
     }
   }
 
@@ -387,24 +316,17 @@ export default {
     height: 12.875rem;
     background-size: 100% 100%;
     margin: 0 1.25rem 3.75rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 0 10px 0;
+    position: relative;
 
     &>div:nth-child(1) {
-      color: #57B2F3;
-      text-align: center;
-      font-family: Fredoka;
-      font-size: 4.423rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: .4423rem;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
 
-      &>span {
-        position: relative;
-        top: -1.875rem;
-      }
-    }
-
-    &>div:nth-child(2) {
       &>div:nth-child(1) {
         color: #79828D;
         text-align: center;
@@ -448,6 +370,21 @@ export default {
           }
         }
       }
+    }
+
+    &>div:nth-child(1)::after {
+      content: '?';
+      position: absolute;
+      color: #57B2F3;
+      text-align: center;
+      font-family: 'Fredoka';
+      font-size: 70.772px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -535,6 +472,7 @@ export default {
       }
     }
   }
+
   .toothWash {
     max-width: 100%;
     display: flex;
@@ -545,7 +483,7 @@ export default {
     text-decoration: none;
     position: relative;
 
-    &>div{
+    &>div {
       color: #FFF;
       font-family: Noto Sans;
       font-size: 18px;
@@ -553,13 +491,14 @@ export default {
       font-weight: 700;
       line-height: normal;
       letter-spacing: 1.44px;
-      background:#FFD333;
+      background: #FFD333;
       padding: 8px 76px;
       width: fit-content;
       border-radius: 100px;
       margin: auto;
     }
   }
+
   .toothWash {
     &>div::before {
       content: '';
