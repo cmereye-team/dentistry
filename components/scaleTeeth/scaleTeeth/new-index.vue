@@ -7,23 +7,26 @@
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">洗牙</p>
     </div>
+    <!-- <div class="main-container">
+      <el-slider
+        :class="[several == 25 ? 'sliderElement2' : '', several == 50 ? 'sliderElement3' : '', several == 75 ? 'sliderElement4' : '', several == 100 ? 'sliderElement5' : '']"
+        @change="handleSliderChange" @input="handleSliderInput" :show-tooltip="false" v-model="value2" :step="25"
+        show-stops>
+      </el-slider>
+    </div> -->
     <div class="tootWash_head">
       <div class="habit main-container">
         <div>
           <div>您有定期洗牙的習慣嗎？</div>
-          <div>
+          <!-- <div>
             <div>
               <div>
-                <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/just-that-one--02-1.7a9xdgdl9lc0.png"
-                  alt="洗牙頻次">
+                <img src="https://static.cmereye.com/imgs/2023/12/6ee295d9a8618fc5.png" alt="洗牙頻次">
               </div>
             </div>
             <div>
               <div>
-                <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/20231205_洗牙page-websigte-elements-1.78wp0s35fvc0.png"
-                  alt="每半年 一次">
+                <img src="https://static.cmereye.com/imgs/2023/12/d9a7b9cf060fd37c.png" alt="每半年 一次">
               </div>
               <div>
                 <span>每半年</span><span>一次</span>
@@ -31,28 +34,34 @@
             </div>
             <div>
               <div>
-                <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/20231205_洗牙page-websigte-elements-2.8gnx1mmudh0.png"
-                  alt="半年至一年 一次">
+                <img src="https://static.cmereye.com/imgs/2023/12/8417940214d1c693.png" alt="半年至一年 一次">
               </div>
               <div><span>半年至一年</span><span>一次</span></div>
             </div>
             <div>
               <div>
-                <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/20231205_洗牙psage-websigte-elements-03-1.mgi633wlfhs.png"
-                  alt="一年或以上 一次">
+                <img src="https://static.cmereye.com/imgs/2023/12/c0ffaf5df39c49e7.png" alt="一年或以上 一次">
               </div>
               <div><span>一年或以上</span><span>一次</span></div>
             </div>
             <div>
               <div>
-                <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/20231205_洗牙page-websigte-elements-4.5jfwvvbq3dk0.png"
-                  alt="不定期 或甚少">
+                <img src="https://static.cmereye.com/imgs/2023/12/d537ba02defb29c5.png" alt="不定期 或甚少">
               </div>
               <div><span>不定期</span><span>或甚少</span></div>
             </div>
+          </div> -->
+          <el-slider
+            :class="[several == 25 ? 'sliderElement2' : '', several == 50 ? 'sliderElement3' : '', several == 75 ? 'sliderElement4' : '', several == 100 ? 'sliderElement5' : '']"
+            @change="handleSliderChange" @input="handleSliderInput" :show-tooltip="false" v-model="value2" :step="25"
+            show-stops>
+          </el-slider>
+          <div class="interval-text">
+            <div></div>
+            <div><span>每半年</span><span>一次</span></div>
+            <div><span>半年至一年</span><span>一次</span></div>
+            <div><span>一年或以上</span><span>一次</span></div>
+            <div><span>不定期</span><span>或甚少</span></div>
           </div>
         </div>
       </div>
@@ -86,6 +95,8 @@ export default {
   data() {
     return {
       currentIndex: 0,   // 当前点击的tab的索引
+      value2: 0,
+      several: 0,
     }
   },
   computed: {
@@ -93,6 +104,12 @@ export default {
   methods: {
     handleClick(index) {
       this.currentIndex = index
+    },
+    handleSliderChange() {
+      this.value2 = 0
+    },
+    handleSliderInput(value) {
+      this.several = value
     }
   }
 }
@@ -103,6 +120,79 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@500&family=Fredoka:wght@700&display=swap');
 //pc
 @media only screen and (min-width: 768px) {
+  ::v-deep .el-slider__button {
+    background: url(https://static.cmereye.com/imgs/2023/12/6ee295d9a8618fc5.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 88px;
+    height: 92px;
+    position: relative;
+    top: -100%;
+    left: -50%;
+    border: none;
+  }
+  ::v-deep .el-slider__button::before {
+    content: '';
+    background: url(https://static.cmereye.com/imgs/2023/12/9056fc7cae15b59c.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 51px;
+    display: inline-block;
+    position: absolute;
+    top: -40%;
+    left: -20%;
+  }
+
+  .sliderElement2 {
+    ::v-deep .el-slider__button {
+      background: url(https://static.cmereye.com/imgs/2023/12/d9a7b9cf060fd37c.png);
+    }
+    ::v-deep .el-slider__button::before  {
+      content: none;
+    }
+  }
+
+  .sliderElement3 {
+    ::v-deep .el-slider__button {
+      background: url(https://static.cmereye.com/imgs/2023/12/8417940214d1c693.png);
+    }
+    ::v-deep .el-slider__button::before  {
+      content: none;
+    }
+  }
+
+  .sliderElement4 {
+    ::v-deep .el-slider__button {
+      background: url(https://static.cmereye.com/imgs/2023/12/c0ffaf5df39c49e7.png);
+    }
+    ::v-deep .el-slider__button::before  {
+      content: none;
+    }
+  }
+
+  .sliderElement5 {
+    ::v-deep .el-slider__button {
+      background: url(https://static.cmereye.com/imgs/2023/12/d537ba02defb29c5.png);
+    }
+    ::v-deep .el-slider__button::before  {
+      content: none;
+    }
+  }
+  .interval-text {
+    &>div:nth-child(2) {
+      position: relative;
+      right: 4%;
+    }
+    &>div:nth-child(4) {
+      position: relative;
+      right: -3%;
+    }
+    &>div:nth-child(5) {
+      position: relative;
+      right: -5%;
+    }
+  }
   .mbShow {
     display: none;
   }
@@ -148,13 +238,22 @@ export default {
         font-weight: 500;
         line-height: normal;
         letter-spacing: 2.5px;
-        margin-bottom: 13px;
+        margin-bottom: 40px;
       }
 
       &>div:nth-child(2) {
         display: flex;
         align-items: flex-start;
         width: 100%;
+        margin: 0 40px;
+        padding: 0 30px;
+      }
+
+      &>div:nth-child(3) {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 20px;
 
         &>div {
           flex: 1;
@@ -162,23 +261,12 @@ export default {
           flex-direction: column;
           justify-content: center;
 
-          &>div:nth-child(1) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-
-          &>div:nth-child(2) {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          &>span {
+            text-align: center;
           }
         }
       }
 
-      &>div:nth-child(even) {
-        margin: 0 40px;
-      }
     }
 
     &>div:nth-child(1)::after {
