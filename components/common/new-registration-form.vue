@@ -670,8 +670,8 @@ a {
     margin-top: 20vw;
     text-align: center;
     color: #fff;
-    font-size: 25px;
-    font-weight: 300;
+    font-size: 1.5625rem;
+    font-weight: 600;
   }
 
   ::v-deep .el-input__inner {
@@ -877,6 +877,7 @@ a {
 
     .el-form-item {
       margin: 3vw 10vw;
+      padding: 3.75vw 0;
       // width: 19vw;
     }
   }

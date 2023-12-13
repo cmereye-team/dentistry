@@ -618,14 +618,14 @@ export default {
         border-radius: 50%;
         top: 22%;
         left: 6%;
-        animation: roundW 10s linear infinite;
+        // animation: roundW 10s linear infinite;
       }
 
       &>div:nth-child(2) {
         display: flex;
         position: absolute;
         top: -55%;
-        animation: breathe 10s linear infinite;
+        animation: breathe 5s linear infinite;
 
         &>div:nth-child(1) {
           position: relative;
@@ -642,7 +642,7 @@ export default {
           position: relative;
           left: -3%;
           z-index: 5;
-          animation: widthW 10s linear infinite;
+          animation: widthW 5s linear infinite;
 
           img {
             width: 100%;
@@ -668,22 +668,22 @@ export default {
       }
     }
 
-    @keyframes roundW {
-      0% {
-        opacity: 0;
-        width: 0;
-      }
+    // @keyframes roundW {
+    //   0% {
+    //     opacity: 0;
+    //     width: 0;
+    //   }
 
-      30% {
-        width: 15px;
-        opacity: 1;
-      }
+    //   30% {
+    //     width: 15px;
+    //     opacity: 1;
+    //   }
 
-      100% {
-        width: 15px;
-        opacity: 1;
-      }
-    }
+    //   100% {
+    //     width: 15px;
+    //     opacity: 1;
+    //   }
+    // }
 
     @keyframes widthW {
       0% {
