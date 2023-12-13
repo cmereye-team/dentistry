@@ -808,8 +808,8 @@ a {
       &>div {
         border-radius: 1.25rem;
         background: #ECF7FC;
-        width: 9.875rem;
-        height: 9.875rem;
+        width: 42.1333vw;
+        height: 42.1333vw;
 
         &>a {
           display: flex;

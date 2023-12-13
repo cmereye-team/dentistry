@@ -273,7 +273,7 @@ export default {
       margin-top: 3.75rem;
 
       &>div {
-        max-width: 9.875rem;
+        max-width: 42.1333vw;
 
         &>div:nth-child(2) {
           margin-top: 0.5rem;

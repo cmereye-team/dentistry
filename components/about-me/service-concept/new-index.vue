@@ -700,6 +700,10 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 89.333vw;
+        &>img {
+          width: 100%;
+        }
       }
 
       &>div:nth-child(2) {
