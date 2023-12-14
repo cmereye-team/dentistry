@@ -110,6 +110,9 @@ export default {
 
 <style  scoped lang='scss'>
 @media screen and (min-width: 768px) {
+  .mbShow {
+    display: none !important;
+  }
   .video-brand-attention {
     margin: 90px auto;
   }
