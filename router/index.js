@@ -37,6 +37,11 @@ const getRoutes = resolve => [
 
   },
   {
+    path: '/new-implant',
+    component: resolve('pages/new-implant'),
+
+  },
+  {
     path: '/rct',
     component: resolve('pages/rct'),
 

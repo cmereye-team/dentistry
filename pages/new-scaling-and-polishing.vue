@@ -21,16 +21,16 @@
 
 <script>
 import menuBar from "@/components/common/newMenuBar.vue";
-import footce from "@/components/common/new-footce.vue"
+import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
 import mapGoogle from "@/components/common/new-googleMap.vue"
+import footce from "@/components/common/new-footce.vue"
+import registration from "@/components/common/new-registration-form.vue"
 import foot from "@/components/common/new-foot.vue"
 import Banner from "@/components/about-me/banner/new-index.vue";
 import serve from "@/components/about-me/serve/new-index.vue";
 import scaleTeeth from "@/components/scaleTeeth/scaleTeeth/new-index.vue"
 import regularDentalCleaning from "@/components/scaleTeeth/regular-dental-cleaning/new-index.vue";
 import problem from "@/components/scaleTeeth/problem/new-index.vue"
-import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
-import registration from "@/components/common/new-registration-form.vue"
 
 export default {
   components: {

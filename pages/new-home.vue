@@ -16,13 +16,13 @@
 </template>
 
 <script>
-import menuBar from "@/components/common/newMenuBar.vue";
 import Banner from "@/components/about-me/banner/new-index.vue";
 import serve from "@/components/about-me/serve/new-index.vue";
 import dentalExplain from '@/components/home/index.vue';
 import serveConcept from "@/components/about-me/service-concept/new-index.vue"
-import footce from "@/components/common/new-footce.vue"
 import debtistryHealth from "@/components/about-me/debtistry-health/new-index.vue"
+import menuBar from "@/components/common/newMenuBar.vue";
+import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import registration from "@/components/common/new-registration-form.vue"
 import foot from "@/components/common/new-foot.vue"

@@ -106,7 +106,7 @@ export default {
       },
       swiperOption: {
         loop: true,
-        centeredSlides: true,
+        // centeredSlides: true,
         spaceBetween: 22,
         slidesPerView: "3",
         pagination: {
