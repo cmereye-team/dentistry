@@ -292,6 +292,20 @@ export default {
           position: absolute;
           transform: rotate(180deg) translateX(20%);
         }
+
+        &>div:nth-child(3) {
+          border-radius: 0px 0px 6px 6px;
+          background: #F2F2F2;
+          max-width: 180px;
+          padding: 26px 25px 20px;
+          color: #79828D;
+          font-family: Noto Sans TC;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1.6px;
+        }
       }
 
       &>div::before {
