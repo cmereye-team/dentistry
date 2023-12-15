@@ -8,8 +8,8 @@
 export default {
   props: {
     bannerImg: {
-      type: String,
-      default: ''
+      type: Object,
+      default: ()=>{}
     }
   }
 }

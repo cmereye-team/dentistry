@@ -63,7 +63,9 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約及諮詢',
       isShowSvg: false,
+      mb:'',
       paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       stepList: [
         {
@@ -119,7 +121,11 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {},
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 

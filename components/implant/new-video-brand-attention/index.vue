@@ -51,7 +51,8 @@
         </div>
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :newSvg="newSvg" />
+    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" />
   </div>
 </template>
 
@@ -67,7 +68,9 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約植牙',
       isShowSvg: false,
+      mb:'',
       paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
       newSvg:'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       attentionList: [
         {
@@ -105,7 +108,11 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {},
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 
@@ -152,7 +159,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 100px 80px;
+    padding: 50px 150px 80px;
 
     &>div {
       width: 33.33333%;
@@ -193,7 +200,7 @@ export default {
   }
 
   .attention {
-    padding: 50px 50px 0;
+    padding: 50px 150px 0;
     display: flex;
     flex-wrap: wrap;
 

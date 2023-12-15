@@ -143,7 +143,7 @@
         </svg>
       </div>
       <div class="btn_pc_style">
-        <div class="btn1" :style="{ padding: paddingSize, padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
+        <div class="btn1" :style="{ padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
           <div v-if="isShowSvg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
               <path
@@ -156,7 +156,7 @@
           </div>
           <div>{{ linkText }}</div>
         </div>
-        <div class="btn2" :style="{ padding: paddingSize, padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
+        <div class="btn2" :style="{ padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
           <div v-if="isShowSvg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
               <path
@@ -357,7 +357,7 @@ export default {
 
       display: flex;
       align-items: center;
-      padding: .375rem 2.5rem .5rem 2.8125rem;
+      // padding: .375rem 2.5rem .5rem 2.8125rem;
       background: #FFD333;
       border-radius: 4.625rem;
       color: #FFF;
