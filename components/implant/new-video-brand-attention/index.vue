@@ -298,7 +298,7 @@ export default {
       &>div:nth-child(2) {
         color: #57B2F3;
         font-family: Noto Sans TC;
-        font-size: 25px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: 160%;
