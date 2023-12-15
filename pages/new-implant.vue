@@ -11,6 +11,7 @@
     <collapseTemplate />
     <!-- <problem /> -->
     <mapGoogle />
+    <registration />
     <foot />
   </div>
 </template>
@@ -22,6 +23,7 @@ import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import newBtn from '@/components/common/new-btn.vue';
+import registration from "@/components/common/new-registration-form.vue"
 import zhiya from "@/components/implant/zhiya/new-index.vue"
 import agomphiasisYouth from '@/components/implant/agomphiasis-youth/index.vue';
 import newStep from '@/components/implant/new-step/index.vue';
@@ -46,7 +48,8 @@ export default {
     newStep,
     newDifference,
     newVideoBrandAttention,
-    collapseTemplate
+    collapseTemplate,
+    registration
   },
   mounted() {
     document.getElementsByTagName("body")[0].className = "body-implant";

@@ -44,7 +44,10 @@ const getRoutes = resolve => [
   {
     path: '/rct',
     component: resolve('pages/rct'),
-
+  },
+  {
+    path: '/new-rct',
+    component: resolve('pages/new-rct'),
   },
   {
     path: '/invisalign',
