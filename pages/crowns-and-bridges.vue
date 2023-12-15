@@ -1,14 +1,14 @@
 <template>
-<div id="lay">
- 
-  <menuBar/>
-  <Banner/>
-  <yacrown/>
-  <footce/>
-  <serve/>
-  <mapGoogle/>
-  <foot/>
-</div>
+  <div id="lay">
+
+    <menuBar />
+    <Banner />
+    <yacrown />
+    <footce />
+    <serve />
+    <mapGoogle />
+    <foot />
+  </div>
 </template>
 
 <script>
@@ -21,7 +21,7 @@ import serve from "@/components/yacrown/serve/index.vue"
 import yacrown from "@/components/yacrown/yacrown/index.vue"
 
 export default {
-   components: { 
+  components: {
     menuBar,
     footce,
     Banner,
@@ -29,11 +29,11 @@ export default {
     mapGoogle,
     yacrown,
     foot
-    },
-    mounted(){
-       document.getElementsByTagName("body")[0].className="body-crowns-and-bridges";
-    },
-       head() {
+  },
+  mounted() {
+    document.getElementsByTagName("body")[0].className = "body-crowns-and-bridges";
+  },
+  head() {
     return {
       title: '全瓷牙冠及全鋯牙冠 | 牙科服務 | 希瑪牙科中心',
       meta: [{
@@ -49,9 +49,6 @@ export default {
       ]
     }
   }
-  
 }
 </script>
-<style>
- 
-</style>
+<style></style>
