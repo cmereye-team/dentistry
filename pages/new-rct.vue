@@ -3,6 +3,7 @@
     <menuBar />
     <bannerInsidePage :bannerImg="bannerImg" />
     <therapy />
+    <stepConditionAttention />
     <footce />
     <problem />
     <mapGoogle />
@@ -18,8 +19,9 @@ import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import registration from "@/components/common/new-registration-form.vue"
 import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
-import therapy from "@/components/therapy/therapy/index.vue"
-import problem from "@/components/therapy/problem/index.vue"
+import stepConditionAttention from '@/components/therapy/step-condition-attention/index.vue';
+import therapy from "@/components/therapy/therapy/new-index.vue"
+import problem from "@/components/therapy/problem/new-index.vue"
 
 export default {
   components: {
@@ -30,7 +32,8 @@ export default {
     therapy,
     foot,
     problem,
-    registration
+    registration,
+    stepConditionAttention
   },
   data() {
     return {

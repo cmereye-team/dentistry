@@ -65,6 +65,9 @@ export default {
 
 <style  scoped lang='scss'>
 @media screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -235,6 +238,9 @@ export default {
 }
 
 @media screen and(max-width: 767px) {
+  .pcShow {
+    display: none!important;
+  }
   .style_pc_bg {
     background: url('https://static.cmereye.com/imgs/2023/12/1c109050ec0e7db4.png');
     background-repeat: no-repeat;

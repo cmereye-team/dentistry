@@ -18,7 +18,7 @@ export default {
 @media screen and (min-width: 768px) {
   .element_banner {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 10px auto;
 
     &>img {
       width: 100%;

@@ -94,7 +94,7 @@ export default {
     display: none !important;
   }
   .difference {
-    margin-top: 20px;
+    margin-top: 80px;
 
     &>div:nth-child(1) {
       display: flex;

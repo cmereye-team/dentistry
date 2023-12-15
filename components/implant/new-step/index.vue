@@ -78,6 +78,9 @@ export default {
 
 <style  scoped lang='scss'>
 @media screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
   .new-step {
     margin-top: 90px;
   }
@@ -236,6 +239,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
   .new-step-content {
     background: #ecf7fc;
   }
