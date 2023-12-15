@@ -35,8 +35,8 @@
         <div>
           若牙髓持續遭受感染，未加以治療，根管鈣化會逐漸惡化，使受感染或壞死的牙髓組織難<br class="pcShow" />以徹底清除，導致細菌繼續繁殖，造成感染擴散至形成牙瘡。
         </div>
-        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize"
-          :newSvg="newSvg" />
+        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" />
       </div>
     </div>
     <div class="attention main-container">
@@ -63,7 +63,9 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約及諮詢',
       isShowSvg: false,
+      mb:'',
       paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       stepList: [
         {
@@ -119,7 +121,11 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {},
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 

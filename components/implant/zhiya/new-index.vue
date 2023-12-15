@@ -16,7 +16,8 @@
       <div>
         <img src="https://static.cmereye.com/imgs/2023/12/f686533c6de00f5b.png" alt="">
       </div>
-      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="'mb'" :paddingSizeMb="paddingSizeMb" />
+      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" />
     </div>
   </div>
 </template>
@@ -30,11 +31,12 @@ export default {
   },
   data() {
     return {
-      linkHref:'https://api.whatsapp.com/send?phone=85295128192',
-      linkText:'立即預約諮詢',
-      isShowSvg:false,
-      paddingSize:'10px 100px',
-      paddingSizeMb:'',
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: '立即預約諮詢',
+      isShowSvg: false,
+      mb:'',
+      paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
       layoutPageScr: 'https://static.cmereye.com/imgs/2023/12/70eea8dd19da2a0d.png',
       layoutPageText: {
         text1: `植牙屬口腔頜面手術，把鈦金屬植體穩固地植入牙槽骨，作為假牙、牙橋或牙托的支撐，以填補缺牙部分。`,
@@ -64,6 +66,8 @@ export default {
   },
   computed: {},
   mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
   },
   methods: {
   },
@@ -130,15 +134,19 @@ export default {
   .pcShow {
     display: none !important;
   }
+
   .meun {
     padding-left: 6vw;
     display: flex;
   }
+
   .agomphosis {
     margin-top: 3.75rem;
+
     &>div:nth-child(2) {
       width: 335px;
       margin: 45px auto 0;
+
       &>img {
         width: 100%;
       }

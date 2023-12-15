@@ -60,7 +60,8 @@
         牙齒狀況因人而異，建議尋求牙科醫生的評估及諮詢，以確定是否適合進行該項療程。
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" />
+    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" />
   </div>
 </template>
 
@@ -76,10 +77,16 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約植牙',
       isShowSvg: false,
+      mb:'',
       paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
     };
   },
-  methods: {}
+  methods: {},
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 

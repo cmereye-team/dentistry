@@ -188,7 +188,7 @@ export default {
     display: flex;
 
     ul {
-      padding-left: 0.2vw;
+      padding-left: 0;
     }
 
     span {
@@ -226,7 +226,7 @@ export default {
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
-    padding: 5px 0 20px 100px;
+    padding: 5px 0 20px 105px;
   }
 
   ::v-deep .el-collapse-item__header.is-active {

@@ -40,7 +40,8 @@
         </div>
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" />
+    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" />
   </div>
 </template>
 
@@ -56,10 +57,16 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約諮詢',
       isShowSvg: false,
+      mb:'',
       paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
     };
   },
-  methods: {}
+  methods: {},
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 
