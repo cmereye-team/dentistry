@@ -10,11 +10,11 @@
       <div class="why_significance">我們的優勢</div>
       <div class="advantage">
         <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/12/30ce2b31529c4fa8.png" alt=""></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/12/01c7952f1fcc0a0a.png" alt=""></div>
           <div>選材講究</div>
         </div>
         <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/12/01c7952f1fcc0a0a.png" alt=""></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/12/30ce2b31529c4fa8.png" alt=""></div>
           <div>自選牙冠</div>
         </div>
         <div>
@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" />
+    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :newSvg="newSvg" />
   </div>
 </template>
 
@@ -68,37 +68,38 @@ export default {
       linkText: '立即預約植牙',
       isShowSvg: false,
       paddingSize: '10px 100px',
+      newSvg:'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       attentionList: [
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/306fb1c32c27a3f0.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d7eccec962e22b96.png',
           text: '注意口腔清潔'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d27481b6ddba0ab1.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/3f5becf27a40c2b8.png',
           text: '按時服用藥物'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/3f5becf27a40c2b8.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d27481b6ddba0ab1.png',
           text: '避免劇烈運動'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d7eccec962e22b96.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/306fb1c32c27a3f0.png',
           text: '避免吸煙和飲酒'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d819fb511aaa30c8.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/2d5283c8b60c8ea7.png',
           text: '定期覆診檢查'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/281de148c2badc67.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/196b133ae3e46f37.png',
           text: '充足睡眠與休息'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/196b133ae3e46f37.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/d819fb511aaa30c8.png',
           text: '進食流質食物'
         },
         {
-          imgSrc: 'https://static.cmereye.com/imgs/2023/12/2d5283c8b60c8ea7.png',
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/281de148c2badc67.png',
           text: '忌吃堅硬食物'
         },
       ]

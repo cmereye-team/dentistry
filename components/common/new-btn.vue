@@ -1,7 +1,10 @@
 <template>
   <div>
     <a class="serve_btn bp-btn" :href="linkHref" target="_blank">
-      <div>
+      <div v-if="newSvg" class="img_absolute">
+        <img :src="newSvg" alt="">
+      </div>
+      <div v-else>
         <svg xmlns="http://www.w3.org/2000/svg" width="78" height="88" viewBox="0 0 78 88" fill="none">
           <g filter="url(#filter0_d_162_825)">
             <path
@@ -140,7 +143,7 @@
         </svg>
       </div>
       <div class="btn_pc_style">
-        <div class="btn1" :style="{ padding: paddingSize, padding: mb == 'mb' ? paddingSizeMb : '' }">
+        <div class="btn1" :style="{ padding: paddingSize, padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
           <div v-if="isShowSvg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
               <path
@@ -194,6 +197,9 @@ export default {
     mb: {
       type: String,
     },
+    newSvg: {
+      type: String,
+    }
   },
   data() {
     return {
@@ -209,6 +215,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and(min-width: 768px) {
+  .img_absolute {
+    position: absolute;
+    right: 15% !important;
+    top: -97% !important;
+  }
+
   .serve_btn {
     width: fit-content;
     display: inline-block;
@@ -319,6 +331,7 @@ export default {
   a {
     text-decoration: none;
   }
+
   .serve_btn {
     display: flex;
     position: relative;
