@@ -77,9 +77,7 @@
                   alt="WeChat預約"></div>
             </div>
             <div>
-              <img
-                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Screenshot-2023-11-29-at-5.54-1.7gfv4xeapy80.png"
-                alt="WeChat Qr">
+              <img src="https://static.cmereye.com/imgs/2023/12/ebabc616c066fb70.jpg" alt="WeChat Qr">
             </div>
           </div>
         </div>
@@ -346,6 +344,7 @@ export default {
         line-height: 0;
         /* 125.914% */
         letter-spacing: 2.8px;
+        line-height: 35.256px; 
 
         &>div:nth-child(2) {
           display: none;
@@ -365,7 +364,7 @@ export default {
 
   .weChat_pc:hover {
     &>div:nth-child(2) {
-      width: 230px;
+      width: 405px;
       padding: 22px 10px 14px;
       transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
@@ -373,7 +372,7 @@ export default {
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        font-size: 16px;
+        font-size: 28px;
         transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
         &>div:nth-child(2) {
@@ -386,6 +385,8 @@ export default {
         margin-top: 18px;
         display: flex;
         justify-content: center;
+        border-radius: 46px;
+        overflow: hidden;
 
         &>img {
           width: 100%;
