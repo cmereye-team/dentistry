@@ -8,17 +8,19 @@
       <div v-swiper:mySwiper="swiperOption" v-if="banners.length" class="swiperWrap ">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item, index) in banners" :key="index">
-            <div style="position: relative;">
-              <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
-              <div class="dateinfo">
-                <div class="dates">
-                  <span class="linesy">{{ item.datas }}</span>
-                  <span>{{ item.month }}</span>
+            <nuxt-link to="/oral-health-information">
+              <div style="position: relative;">
+                <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
+                <div class="dateinfo">
+                  <div class="dates">
+                    <span class="linesy">{{ item.datas }}</span>
+                    <span>{{ item.month }}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="des" v-html="item.title.rendered"></div>
-            <div class="content" v-html="item.content.rendered"></div>
+              <div class="des" v-html="item.title.rendered"></div>
+              <div class="content" v-html="item.content.rendered"></div>
+            </nuxt-link>
           </div>
         </div>
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
@@ -42,17 +44,19 @@
       <div v-swiper:mySwiper="swiperOptions" class="swiperWrap " v-if="banners.length">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item, index) in banners" :key="index">
-            <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
-            <div class="dateinfo">
-              <div class="dates">
-                <span class="linesy">{{ item.datas }}</span>
-                <span>{{ item.month }}</span>
+            <nuxt-link to="/oral-health-information">
+              <img :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url">
+              <div class="dateinfo">
+                <div class="dates">
+                  <span class="linesy">{{ item.datas }}</span>
+                  <span>{{ item.month }}</span>
+                </div>
               </div>
-            </div>
-            <div class="des" v-html="item.title.rendered"></div>
-            <div class="content" v-html="item.content.rendered"></div>
-            <!-- <p class="des">{{ banner.des }}</p>
+              <div class="des" v-html="item.title.rendered"></div>
+              <div class="content" v-html="item.content.rendered"></div>
+              <!-- <p class="des">{{ banner.des }}</p>
             <p class="content">{{ banner.content }}</p> -->
+            </nuxt-link>
           </div>
         </div>
         <!-- <div class="swiper-pagination swiper-pagination-bullets"></div> -->
@@ -160,6 +164,7 @@ export default {
     getlistds() {
       getList({ '_embed': true, 'categories': 21 }).then((res => {
         this.banners = res.data
+        console.log(res.data, 'P9989')
         this.banners.forEach((item, index) => {
           if (item.date.slice(5, 7) === '07') {
             item.month = 'July'
@@ -216,9 +221,16 @@ export default {
 
 //pc
 @media only screen and (min-width: 760px) {
-  h2 {
-    margin-bottom:0 !important
+  .swiper-slide {
+    a {
+      text-decoration: none;
+    }
   }
+
+  h2 {
+    margin-bottom: 0 !important
+  }
+
   ::v-deep .dateinfo {
     display: flex !important;
     justify-content: center !important;
@@ -460,6 +472,11 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
+  .swiper-slide {
+    a {
+      text-decoration: none;
+    }
+  }
   .dates {
     width: 15vw;
     height: 15vw;
@@ -545,7 +562,7 @@ export default {
   }
 
   .swiper-button-prev {
-    left:11vw;
+    left: 11vw;
     top: 33vw;
   }
 
@@ -616,6 +633,7 @@ export default {
         line-height: normal;
         letter-spacing: 0.0938rem;
       }
+
       .des::before {
         content: none;
       }
