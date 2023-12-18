@@ -331,6 +331,7 @@ export default {
           font-weight: 500;
           line-height: normal;
           letter-spacing: 1.6px;
+          display: none;
         }
       }
 
@@ -346,7 +347,20 @@ export default {
         right: 17%;
         top: 7%;
       }
+      &>div:hover {
+        &>div:nth-child(3) {
+          display: block;
+          transition: all 1s ease-in-out;
+        }
 
+        &>div:nth-child(2)::before {
+          bottom: -25px;
+          z-index: 15;
+          right: 9px;
+          transition: all .3s ease-in-out;
+          transform: rotate(0) translateX(20%);
+        }
+      }
       &>div:nth-child(odd):before {
         content: '';
         background: url(https://static.cmereye.com/imgs/2023/12/c17f345e54c1db56.png);
