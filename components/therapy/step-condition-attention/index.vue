@@ -51,7 +51,7 @@
             <div>細菌侵蝕至牙髓，引起內部組織發炎、<br />感染，導致細胞壞死或化膿等問題。</div>
           </div>
         </div>
-        <div class="mb-condition-text">
+        <div class="condition-text">
           若牙髓持續遭受感染，未加以治療，<br class="mbShow" />根管鈣化會逐漸惡化，使受感染或壞死<br class="mbShow" />的牙髓組織難<br
             class="pcShow" />以徹底清除，導致細菌<br class="mbShow" />繼續繁殖，造成感染擴散至形成牙瘡。
         </div>
@@ -372,6 +372,20 @@ export default {
       }
     }
   }
+  .condition-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #79828D;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+  }
 
   .attention {
     margin: 90px auto;
@@ -641,7 +655,7 @@ export default {
     }
   }
 
-  .mb-condition-text {
+  .condition-text {
     margin-top: 45px;
     color: #79828D;
     text-align: center;
