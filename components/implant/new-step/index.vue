@@ -317,6 +317,7 @@ export default {
           right: 0;
           position: absolute;
           transform: rotate(180deg) translateX(20%);
+          animation: identifier 1s ease-in-out infinite;
         }
 
         &>div:nth-child(3) {
@@ -359,6 +360,7 @@ export default {
           right: 9px;
           transition: all .3s ease-in-out;
           transform: rotate(0) translateX(20%);
+          animation: identifier2 1s ease-in-out infinite;
         }
       }
       &>div:nth-child(odd):before {
@@ -422,5 +424,31 @@ export default {
     bottom: 0;
     right: 50%;
     transform: translateX(50%);
+  }
+
+  @keyframes identifier {
+    0% {
+      transform: rotate(195deg);
+    }
+    25% {
+      transform: rotate(180deg);
+    }
+    50% {
+      transform: rotate(165deg);
+    }
+    75% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(195deg);
+    }
+  }
+  @keyframes identifier2 {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
 }</style>
