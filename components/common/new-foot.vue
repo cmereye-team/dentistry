@@ -152,6 +152,7 @@ a {
       transform: rotate(-5deg);
       position: relative;
       z-index: 10;
+      top: -20px;
     }
   }
 
@@ -240,10 +241,9 @@ a {
 
   .main_footer {
     overflow: hidden;
-    padding: 3.75rem 2.375rem 7.5rem;
+    padding: 3.75rem 2.375rem 13.5rem;
     background: #e8f6fb;
     position: relative;
-    margin-bottom: 50px;
 
     &>div:nth-child(1) {
       width: 11.0625rem;
@@ -338,19 +338,20 @@ a {
       transform: rotate(-5deg);
       position: relative;
       z-index: 10;
-      top: -10px;
+      top: -50px;
+      right: -10px;
     }
   }
 
   .main_footer::after {
     content: "";
-    background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-977.3jmn4sfz0z00.png');
+    background: url('https://static.cmereye.com/imgs/2023/12/eac68ef91ffba77f.png');
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 22.125rem;
+    width: 100vw;
     display: inline-block;
-    height: 11.6875rem;
+    height: 16.5rem;
     position: absolute;
     bottom: 0;
     right: 0;

@@ -86,7 +86,7 @@ export default {
   }
 
   .new-step {
-    margin-top: 90px;
+    margin: 90px auto 120px;
   }
 
   .new-step-content {

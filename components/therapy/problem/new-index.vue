@@ -1,8 +1,8 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2 main-container">
     <div class="why_significance">為何要杜牙根？</div>
-    <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange" accordion>
+    <div class="coll-box collapse-mb">
+      <el-collapse v-model="activeNames" accordion>
         <el-collapse-item name="1">
           <template slot="title">
             <div class="contents">
@@ -81,6 +81,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media only screen and (max-width: 767px) {
+  .collapse-mb {
+    margin-top: 42px;
+  }
+
   .contents p {
     color: #79828D;
     font-size: 16px;
@@ -99,7 +103,7 @@ export default {
   }
 
   ::v-deep .el-collapse-item__header.is-active {
-    background-color: #ECF7FC;
+    background-color: transparent;
 
   }
 
@@ -119,53 +123,54 @@ export default {
     display: flex;
     align-items: center;
 
-    p {
-      color: #79828D;
+    &>i {
+      margin-right: 20px;
     }
 
-    span {
-      color: #9BA5B1;
-
+    &>div {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6px;
     }
   }
 
   .discon {
     margin: 1vw 0 0 0;
     display: flex;
+    flex-direction: column;
+    padding-left: 75px;
 
-    ul {
-      padding-left: 0.2vw;
+    &>div {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.3px;
     }
-
-    span {
-      color: #9BA5B1;
-      font-size: 16px;
-      width: 84%;
-    }
-  }
-
-  .title1 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(~@/asset/image/implant/Q.png);
-    background-repeat: no-repeat;
-  }
-
-  .title2 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(~@/asset/image/implant/A.png);
-    background-repeat: no-repeat;
-    color: #fff;
   }
 
   .downArrow1 {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url(~@/asset/image/implant/+.png);
+    width: 36px;
+    height: 36px;
+    transition: all 0.3s;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/e5a7910bb0b35fd3.png);
+    background-size: 100% 100%;
+  }
+
+  .downArrow2 {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/72c48c3a0df2d2fa.png);
+    background-size: 100% 100%;
+    transition: all 0.3s;
   }
 
   .why_significance {
@@ -195,6 +200,7 @@ export default {
 }
 
 @media only screen and (min-width: 768px) {
+
   .el-collapse-item__header {
     line-height: 23px !important;
   }

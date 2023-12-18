@@ -141,14 +141,14 @@ export default {
 
   .video-img::after {
     content: '';
-    background: url(https://static.cmereye.com/imgs/2023/12/311e771588f97823.png);
+    background: url(https://static.cmereye.com/imgs/2023/12/f6bb149bc136a178.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 159px;
-    height: 195px;
+    width: 256px;
+    height: 256px;
     position: absolute;
-    bottom: -5%;
-    right: -15%;
+    bottom: -12%;
+    right: -23%;
   }
 
   .advantage-bg {
@@ -270,7 +270,23 @@ export default {
       }
     }
   }
+  .video-img {
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+  }
 
+  .video-img::after {
+    content: '';
+    background: url(https://static.cmereye.com/imgs/2023/12/f6bb149bc136a178.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 128px;
+    height: 128px;
+    position: absolute;
+    bottom: -22%;
+    right: -20%;
+  }
   .advantage-bg {
     margin: 61px auto;
   }

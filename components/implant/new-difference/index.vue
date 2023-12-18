@@ -2,7 +2,7 @@
   <div class="difference main-container">
     <div>
       <div><img src="https://static.cmereye.com/imgs/2023/12/2ab9e67e5d330aa1.png" alt=""></div>
-      <div class="why_significance">一圖看清植牙技術大不同</div>
+      <div class="why_significance">植牙技術大不同</div>
       <div><img src="https://static.cmereye.com/imgs/2023/12/ef653ce36852312e.png" alt=""></div>
     </div>
     <div>
@@ -61,7 +61,7 @@
       </div>
     </div>
     <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" />
+      :paddingSizeMb="paddingSizeMb" />
   </div>
 </template>
 
@@ -77,7 +77,7 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約植牙',
       isShowSvg: false,
-      mb:'',
+      mb: '',
       paddingSize: '10px 100px',
       paddingSizeMb: '6px 74px',
     };
@@ -100,13 +100,30 @@ export default {
   .mbShow {
     display: none !important;
   }
+
   .difference {
-    margin-top: 80px;
+    margin: 90px auto 90px;
 
     &>div:nth-child(1) {
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-left: 50px;
+
+      &>div:nth-child(1) {
+        position: relative;
+      }
+
+      &>div:nth-child(1)::before {
+        content: '';
+        background: url(https://static.cmereye.com/imgs/2023/12/e25aeb8b53b368bf.png);
+        width: 134px;
+        height: 84px;
+        display: inline-block;
+        position: absolute;
+        top: -44%;
+        left: -20%;
+      }
 
       &>div:nth-child(2) {
         margin: 0 20px;
@@ -305,6 +322,7 @@ export default {
   .pcShow {
     display: none !important;
   }
+
   .difference {
     margin: 61px auto;
 
@@ -315,17 +333,30 @@ export default {
 
       &>div:nth-child(1),
       &>div:nth-child(3) {
-        width: 50px;
+        width: 70px;
+        position: relative;
 
         &>img {
           width: 100%;
         }
       }
 
+      &>div:nth-child(1)::before {
+        content: '';
+        background: url(https://static.cmereye.com/imgs/2023/12/7b9d8b20ed574055.png);
+        width: 79px;
+        height: 49px;
+        display: inline-block;
+        position: absolute;
+        top: -40%;
+        left: -20%;
+      }
+
       &>div:nth-child(2) {
+        margin: 0 7.5px;
         font-size: 22px;
         letter-spacing: 1px;
-        padding: 0 5px;
+        // padding: 0 5px;
       }
     }
 
@@ -421,15 +452,17 @@ export default {
   }
 
   .row-four {
-    &>div{
+    &>div {
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     ul {
       list-style-type: disc;
       padding: 5px 0;
     }
+
     li::marker {
       font-size: 0;
     }
@@ -524,5 +557,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>
