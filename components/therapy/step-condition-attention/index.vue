@@ -1,7 +1,7 @@
 <template>
   <div class="step-condition-attention">
     <div class="step main-container">
-      <div class="why_significance isArrowQuestion">為何要杜牙根？</div>
+      <div class="why_significance isArrowQuestion">杜牙根是如何進行的？</div>
       <div>
         <div v-for="item in stepList" :key="item.id">
           <div>{{ item.id }}</div>

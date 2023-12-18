@@ -343,8 +343,8 @@ export default {
         background-repeat: no-repeat;
         position: absolute;
         transform: rotate(80deg);
-        right: 20%;
-        top: 10%;
+        right: 17%;
+        top: 7%;
       }
 
       &>div:nth-child(odd):before {
@@ -356,8 +356,8 @@ export default {
         background-repeat: no-repeat;
         position: absolute;
         transform: rotate(350deg);
-        right: 40%;
-        top: 10%;
+        right: 43%;
+        top: 7%;
       }
 
       &>div:first-child::before {

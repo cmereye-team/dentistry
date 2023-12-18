@@ -243,6 +243,7 @@ a {
     padding: 3.75rem 2.375rem 7.5rem;
     background: #e8f6fb;
     position: relative;
+    margin-bottom: 50px;
 
     &>div:nth-child(1) {
       width: 11.0625rem;
