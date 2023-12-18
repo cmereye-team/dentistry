@@ -952,14 +952,16 @@ export default {
 
     .pic {
       width: 400px;
-      height: 400px;
+      height: auto;
       margin: auto;
       padding: 16px;
     }
 
     .date {
       width: 5.5vw;
-      height: 100px;
+      height: 5.5vw;
+      max-width: 5.5vw;
+      min-width: 5.5vw;
       background-color: #9bd0f5;
       border-radius: 50%;
       margin: 20px;
