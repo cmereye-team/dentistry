@@ -168,6 +168,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .newBtn {
+    margin-top: -60px;
+  }
   .radices_dentis {
     margin: 90px auto 60px;
     padding: 0 20px;

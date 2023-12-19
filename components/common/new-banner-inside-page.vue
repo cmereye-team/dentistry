@@ -30,7 +30,7 @@ export default {
   .element_banner {
     &>img {
       width: 100%;
-      padding: 10px 20px;
+      padding: 10px 20px 0;
     }
   }
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-5 pb-0 py-xs-2 main-container">
+  <div class="bg-white py-5 pb-0 py-xs-2 main-container mb-padding">
     <div class="why_significance">為何要杜牙根？</div>
     <div class="coll-box collapse-mb">
       <el-collapse v-model="activeNames" accordion>
@@ -83,6 +83,9 @@ export default {
 @media only screen and (max-width: 767px) {
   .collapse-mb {
     margin-top: 42px;
+  }
+  .mb-padding {
+    padding-top: 0 !important;
   }
 
   .contents p {
@@ -224,7 +227,7 @@ export default {
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
-    padding-left: 100px;
+    padding-left: 102px;
     // background-color: #DFDFDF;
   }
 

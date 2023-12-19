@@ -147,7 +147,7 @@ export default {
       right: 0;
       bottom: 0;
       z-index: 1;
-      bottom: 52%;
+      bottom: 49.5%;
     }
 
     .content {

@@ -209,6 +209,17 @@ export default {
           font-weight: 700;
           line-height: 160%;
         }
+
+        &>div:nth-child(3) {
+          margin-top: 15px;
+          color: #57B2F3;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 160%;
+        }
       }
 
       &>div::after {
@@ -345,7 +356,7 @@ export default {
         width: 229px;
         height: 240px;
         position: absolute;
-        bottom: 28%;
+        bottom: 30%;
         right: 9%;
       }
 
@@ -356,7 +367,7 @@ export default {
         width: 229px;
         height: 240px;
         position: absolute;
-        bottom: 0;
+        bottom: 4%;
         right: 9%;
       }
 
@@ -372,6 +383,7 @@ export default {
       }
     }
   }
+
   .condition-text {
     display: flex;
     flex-direction: column;

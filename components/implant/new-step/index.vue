@@ -231,6 +231,10 @@ export default {
     }
   }
 
+  // @keyframes triangle {
+
+  // }
+
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -348,6 +352,7 @@ export default {
         right: 17%;
         top: 7%;
       }
+
       &>div:hover {
         &>div:nth-child(3) {
           display: block;
@@ -363,6 +368,7 @@ export default {
           animation: identifier2 1s ease-in-out infinite;
         }
       }
+
       &>div:nth-child(odd):before {
         content: '';
         background: url(https://static.cmereye.com/imgs/2023/12/c17f345e54c1db56.png);
@@ -430,23 +436,29 @@ export default {
     0% {
       transform: rotate(195deg);
     }
+
     25% {
       transform: rotate(180deg);
     }
+
     50% {
       transform: rotate(165deg);
     }
+
     75% {
       transform: rotate(180deg);
     }
+
     100% {
       transform: rotate(195deg);
     }
   }
+
   @keyframes identifier2 {
     0% {
       transform: rotate(0);
     }
+
     100% {
       transform: rotate(0);
     }
