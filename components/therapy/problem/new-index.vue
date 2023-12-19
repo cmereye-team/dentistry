@@ -145,7 +145,7 @@ export default {
     margin: 1vw 0 0 0;
     display: flex;
     flex-direction: column;
-    padding-left: 75px;
+    padding-left: 77px;
 
     &>div {
       color: #79828D;

@@ -4,36 +4,37 @@
     <div class="new-step-content">
       <div class="main-container step_five">
         <div>
-          <div>
+          <div @click="boxShow(1)" :class="[showOne ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/779289004a2dc385.png" alt=""> </div>
             <div>訂立客製化方案</div>
             <!-- 点击方案 @click="boxShow(1)" -->
-            <div>
+            <div v-if="showOne">
               進行全面口腔檢查、X光或電腦斷層掃描，牙醫會為客人進行詳細的術前評估，透過了解其病歷及口腔健康狀況，選擇最合適的植體，並確定最佳的植入位置與角度。
             </div>
           </div>
-          <div>
+          <div @click="boxShow(2)" :class="[showTwo ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/cc37d29b318c00b6.png" alt=""> </div>
             <div>植入植體</div>
-            <div>牙醫會先為客人進行麻醉，翻開牙齦，並在齒槽骨的準確位置及角度進行鑽孔，並將植體植入。</div>
+            <div v-if="showTwo">牙醫會先為客人進行麻醉，翻開牙齦，並在齒槽骨的準確位置及角度進行鑽孔，並將植體植入。</div>
           </div>
-          <div>
+          <div @click="boxShow(3)" :class="[showThree ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/7fcf92c3e62095c0.png" alt=""> </div>
             <div>等待癒合</div>
-            <div>植體大約需3至6個月時間與牙槽骨緊密結合。確保癒合狀況良好後，牙醫會根據客人的實際情況，裝上臨時牙冠、牙橋或假牙。視乎情況，最快可即日裝上。</div>
+            <div v-if="showThree">植體大約需3至6個月時間與牙槽骨緊密結合。確保癒合狀況良好後，牙醫會根據客人的實際情況，裝上臨時牙冠、牙橋或假牙。視乎情況，最快可即日裝上。</div>
           </div>
-          <div>
+          <div @click="boxShow(4)" :class="[showFour ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/83564b132e80b07f.png" alt=""> </div>
             <div>完成植牙</div>
-            <div>確認植體穩定固定在顎骨後，牙醫會裝上客人已選好的牙冠、牙橋或假牙，並同時對牙齒進行細微調整。</div>
+            <div v-if="showFour">確認植體穩定固定在顎骨後，牙醫會裝上客人已選好的牙冠、牙橋或假牙，並同時對牙齒進行細微調整。</div>
           </div>
-          <div>
+          <div @click="boxShow(5)" :class="[showFive ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/8356d77dc6c08847.png" alt=""> </div>
             <div>定期覆診</div>
-            <div>接受植牙手術後，需定期與牙科醫生跟進狀況，以確保植牙得到適當的保養。</div>
+            <div v-if="showFive">接受植牙手術後，需定期與牙科醫生跟進狀況，以確保植牙得到適當的保養。</div>
           </div>
         </div>
         <div>牙齒狀況因人而異，建議尋求<br class="mbShow" />牙科醫生的評估及諮詢，<br class="mbShow" />以確定是否適合進行該項療程。</div>
+        <div v-if="showBoxBg" class="showBoxBg" @click="handShowBoxBg"></div>
       </div>
     </div>
 
@@ -45,36 +46,50 @@ export default {
   name: 'new-step',
   data() {
     return {
+      showBoxBg: false,
       // 点击方案 showOne -> showFive
-      // showOne: false,
-      // showTwo: false,
-      // showThree: false,
-      // showFour: false,
-      // showFive: false,
+      showOne: false,
+      showTwo: false,
+      showThree: false,
+      showFour: false,
+      showFive: false,
     };
   },
   methods: {
     // 点击方案
-    // boxShow(index) {
-    //   switch (index) {
-    //     case 1:
-    //       this.showOne = this.showOne === true ? false : true;
-    //       break;
-    //     case 2:
-    //       this.showTwo = this.showTwo === true ? false : true;
-    //       break;
-    //     case 3:
-    //       this.showThree = this.showThree === true ? false : true;
-    //       break;
-    //     case 4:
-    //       this.showFour = this.showFour === true ? false : true;
-    //       break;
-    //     case 5:
-    //       this.showFive = this.showFive === true ? false : true;
-    //       break;
-    //     default:
-    //   }
-    // }
+    boxShow(index) {
+      switch (index) {
+        case 1:
+          this.showOne = this.showOne === true ? false : true;
+          this.showBoxBg = this.showOne === true ? true : false;
+          break;
+        case 2:
+          this.showTwo = this.showTwo === true ? false : true;
+          this.showBoxBg = this.showTwo === true ? true : false;
+          break;
+        case 3:
+          this.showThree = this.showThree === true ? false : true;
+          this.showBoxBg = this.showThree === true ? true : false;
+          break;
+        case 4:
+          this.showFour = this.showFour === true ? false : true;
+          this.showBoxBg = this.showFour === true ? true : false;
+          break;
+        case 5:
+          this.showFive = this.showFive === true ? false : true;
+          this.showBoxBg = this.showFive === true ? true : false;
+          break;
+        default:
+      }
+    },
+    handShowBoxBg() {
+      this.showBoxBg = false;
+      this.showOne = false;
+      this.showTwo = false;
+      this.showThree = false;
+      this.showFour = false;
+      this.showFive = false;
+    }
   }
 }
 </script>
@@ -87,6 +102,17 @@ export default {
 
   .new-step {
     margin: 90px auto 120px;
+    position: relative;
+  }
+
+  .showBoxBg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 628px;
+    background: rgba(236, 247, 252, 0.80);
+    z-index: 50;
   }
 
   .new-step-content {
@@ -130,6 +156,8 @@ export default {
         &>div:nth-child(2)::before {
           content: '';
           background: url(https://static.cmereye.com/imgs/2023/12/fcb2453a34f6841a.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
           width: 22px;
           height: 19px;
           display: inline-block;
@@ -165,24 +193,61 @@ export default {
           letter-spacing: 1.8px;
           top: 100%;
           cursor: pointer;
-          z-index: 10;
+          z-index: 99;
         }
       }
 
-      &>div:hover {
+      .hoverThreeBox {
         &>div:nth-child(3) {
           display: block;
           transition: all 1s ease-in-out;
         }
 
         &>div:nth-child(2)::before {
-          bottom: -25px;
-          z-index: 15;
-          right: 9px;
-          transition: all .3s ease-in-out;
-          transform: rotate(0) translateX(20%);
+          content: '';
+          animation: triangle1 .3s;
+        }
+
+        &>div:nth-child(3)::before {
+          background: url(https://static.cmereye.com/imgs/2023/12/fcb2453a34f6841a.png);
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          width: 22px;
+          height: 19px;
+          content: '';
+          top: 5px;
+          z-index: 99;
+          right: 5px;
+          display: inline-block;
+          position: absolute;
+          animation: triangle .5s;
         }
       }
+
+      // &>div:hover {
+      //   &>div:nth-child(3) {
+      //     display: block;
+      //     transition: all 1s ease-in-out;
+      //   }
+      //   &>div:nth-child(2)::before {
+      //     content: '';
+      //     animation: triangle1 .3s;
+      //   }
+      //   &>div:nth-child(3)::before {
+      //     background: url(https://static.cmereye.com/imgs/2023/12/fcb2453a34f6841a.png);
+      //     background-size: 100% 100%;
+      //     background-repeat: no-repeat;
+      //     width: 22px;
+      //     height: 19px;
+      //     content: '';
+      //     top: 5px;
+      //     z-index: 99;
+      //     right: 5px;
+      //     display: inline-block;
+      //     position: absolute;
+      //     animation: triangle .5s;
+      //   }
+      // }
 
       &>div:nth-child(odd)::after {
         position: absolute;
@@ -231,9 +296,30 @@ export default {
     }
   }
 
-  // @keyframes triangle {
+  @keyframes triangle {
+    0% {
+      height: 0;
+    }
 
-  // }
+    100% {
+      height: 22px;
+    }
+  }
+
+  @keyframes triangle1 {
+    0% {
+      height: 22px;
+    }
+
+    75% {
+      height: 0;
+    }
+
+    100% {
+      height: 0;
+      content: none;
+    }
+  }
 
   .why_significance {
     color: #79828D;
