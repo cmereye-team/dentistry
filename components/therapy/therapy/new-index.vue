@@ -204,7 +204,7 @@ export default {
   }
 
   ::v-deep .interval {
-    margin-top: 50px;
+    margin-top: 50px !important;
     &>div:nth-child(2) {
       &>div:nth-child(1) {
         position: relative;
