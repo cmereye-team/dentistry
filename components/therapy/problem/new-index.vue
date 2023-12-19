@@ -222,18 +222,20 @@ export default {
 
   ::v-deep .el-collapse-item__header.is-active {
     background-color: transparent;
+    padding: 0 35px;
   }
 
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
-    padding-left: 102px;
+    // padding-left: 117px;
+    padding: 0 100px;
     // background-color: #DFDFDF;
   }
 
   .coll-box {
     margin: 3vw auto;
-    width: 60%;
+    width: 846px;
   }
 
   .contents {
@@ -320,7 +322,6 @@ export default {
 
   .isArrowQuestion {
     padding-left: 20px;
-
   }
 
   .why_significance::after {
