@@ -293,11 +293,11 @@ export default {
     background: url(https://static.cmereye.com/imgs/2023/12/f6bb149bc136a178.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    width: 128px;
-    height: 128px;
+    width: 88px;
+    height: 88px;
     position: absolute;
     bottom: -22%;
-    right: -20%;
+    right: -15%;
   }
   .advantage-bg {
     margin: 61px auto;
@@ -373,6 +373,7 @@ export default {
     margin-top: 25px;
     display: flex;
     flex-wrap: wrap;
+    padding: 0 10px;
 
     &>div {
       flex: 5;

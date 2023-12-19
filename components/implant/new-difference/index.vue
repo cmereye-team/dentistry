@@ -1,7 +1,17 @@
 <template>
   <div class="difference main-container">
     <div>
-      <div><img src="https://static.cmereye.com/imgs/2023/12/2ab9e67e5d330aa1.png" alt=""></div>
+      <div class="mb-relative">
+        <img src="https://static.cmereye.com/imgs/2023/12/2ab9e67e5d330aa1.png" alt="">
+        <div class="mbShow mb-svg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="77" height="43" viewBox="0 0 77 43" fill="none">
+            <path
+              d="M74.6879 24.3407L34.2355 35.1796L30.7638 42.4492L24.1224 37.8894L8.1733 42.1628C7.19188 42.4258 6.18052 41.842 5.91639 40.8562L0.477825 20.5587C0.213693 19.5729 0.795639 18.5622 1.77908 18.2987L68.2937 0.476593C69.2751 0.213627 70.2864 0.79743 70.5506 1.78321L75.9891 22.0807C76.2527 23.0645 75.6713 24.0772 74.6879 24.3407Z"
+              fill="#57B2F3" />
+          </svg>
+          <div class="mb-text">一圖看清</div>
+        </div>
+      </div>
       <div class="why_significance">植牙技術大不同</div>
       <div><img src="https://static.cmereye.com/imgs/2023/12/ef653ce36852312e.png" alt=""></div>
     </div>
@@ -319,6 +329,31 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .mb-relative {
+    position: relative;
+  }
+
+  .mb-svg {
+    position: absolute;
+    top: -40%;
+    left: -20%;
+
+    .mb-text {
+      position: absolute;
+      top: 30%;
+      left: 15%;
+      transform: rotate(-15deg);
+      text-align: center;
+      color: var(--White, #FFF);
+      font-family: Noto Sans;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.99px;
+    }
+  }
+
   .pcShow {
     display: none !important;
   }
@@ -387,7 +422,7 @@ export default {
   .cell {
     display: table-cell;
     border: 1px solid #57B2F3;
-    padding: 5px 10px;
+    padding: 5px 15px;
     text-align: center;
   }
 
@@ -406,7 +441,6 @@ export default {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-      padding-right: 5px;
       color: #57B2F3;
       text-align: center;
       font-family: Noto Sans;
@@ -414,40 +448,47 @@ export default {
       font-style: normal;
       font-weight: 500;
       line-height: normal;
+      min-width: 52px;
+      padding: 0 11px 0 0;
     }
 
     &>div:nth-child(2) {
       color: #79828D;
       font-family: Noto Sans;
-      font-size: 12px;
+      font-size: 13px;
       font-style: normal;
       font-weight: 500;
       line-height: 18px;
       /* 138.462% */
       letter-spacing: 1.04px;
+      padding: 5px 11px;
     }
 
     &>div:nth-child(3) {
       color: #79828D;
       font-family: Noto Sans;
-      font-size: 12px;
+      font-size: 13px;
       font-style: normal;
       font-weight: 600;
       line-height: 18px;
       /* 138.462% */
       letter-spacing: 1.04px;
+      padding: 5px 11px;
+      min-width: 95px;
     }
 
     &>div:nth-child(4) {
       font-family: Cubic;
       color: #000EE8;
-      font-size: 12px;
+      font-size: 13px;
       font-style: normal;
       font-weight: 400;
       line-height: 18px;
       /* 138.462% */
       letter-spacing: 1.04px;
       background: #F0F9FD;
+      padding: 5px 11px;
+      min-width: 115px;
     }
   }
 
@@ -465,6 +506,10 @@ export default {
 
     li::marker {
       font-size: 0;
+    }
+
+    li::before {
+      content: '•';
     }
   }
 
@@ -497,6 +542,7 @@ export default {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
+      position: relative;
     }
 
     &>div:nth-child(3)::after {
@@ -506,10 +552,10 @@ export default {
       background-size: 100% 100%;
       display: inline-block;
       position: absolute;
-      top: -45%;
+      top: -75%;
       width: 41px;
       height: 36px;
-      right: 5%;
+      right: -10%;
     }
 
     &>div:nth-child(4) {
@@ -557,4 +603,5 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}</style>
+}
+</style>
