@@ -150,7 +150,7 @@ export default {
     width: 256px;
     height: 256px;
     position: absolute;
-    bottom: -12%;
+    bottom: -15%;
     right: -23%;
   }
 

@@ -236,7 +236,7 @@ export default {
         },
         {
           link: '/rct',
-          name: `根管治療<span class="pcShow">/</span><br class="mbShow" />(杜牙根)`,
+          name: `根管治療 (杜牙根)`,
           img: 'https://static.cmereye.com/imgs/2023/12/298de7f7370976ab.png'
         },
         {
