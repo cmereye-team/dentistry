@@ -2,8 +2,11 @@
   <div class="video-brand-attention">
     <div class="video">
       <div class="why_significance">植牙技術動畫</div>
-      <div class="video-img main-container">
-        <img src="https://static.cmereye.com/imgs/2023/12/36111ace870cac6b.png" alt="">
+      <div class="pcShow video-img main-container">
+        <iframe width="744" height="418" src="https://www.youtube.com/embed/xX_R8poOb9w?si=I8D__j3RTjfOv7Kt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="mbShow video-img main-container">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xX_R8poOb9w?si=I8D__j3RTjfOv7Kt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
     </div>
     <div class="advantage-bg main-container">
@@ -257,6 +260,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
   .video {
     background: #ECF7FC;
     padding: 60px 0;
@@ -271,9 +277,15 @@ export default {
     }
   }
   .video-img {
-    margin-top: 50px;
+    margin: 50px auto 0;
     position: relative;
     cursor: pointer;
+    width: 299px;
+    height: 168px;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .video-img::after {
