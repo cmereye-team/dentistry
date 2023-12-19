@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white py-5 pb-0 py-xs-2 main-container mb-padding">
-    <div class="why_significance">為何要杜牙根？</div>
+    <div class="why_significance">杜牙根常見問題</div>
     <div class="coll-box collapse-mb">
       <el-collapse v-model="activeNames" accordion>
         <el-collapse-item name="1">
