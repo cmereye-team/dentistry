@@ -152,7 +152,11 @@ export default {
       }
     }
   }
-
+  ::v-deep .interval  {
+    &>div:nth-child(1) {
+      bottom: 51.5%;
+    }
+  }
   .why_significance {
     color: #79828D;
     text-align: center;

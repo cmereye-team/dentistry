@@ -349,7 +349,7 @@ export default {
     padding-left: 55px;
     color: #79828D;
     font-family: Noto Sans;
-    font-size: 13px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;

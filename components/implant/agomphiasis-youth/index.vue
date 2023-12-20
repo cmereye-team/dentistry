@@ -252,7 +252,7 @@ export default {
     background: url('https://static.cmereye.com/imgs/2023/12/1c109050ec0e7db4.png');
     background-repeat: no-repeat;
     width: 100%;
-    height: 458px;
+    height: 490px;
     background-size: 100% 100%;
     display: flex;
     flex-direction: column;

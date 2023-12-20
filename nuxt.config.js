@@ -90,6 +90,7 @@ export default {
     'asset/css/tailwind.css',
     'swiper/dist/css/swiper.css',
     'element-ui/lib/theme-chalk/index.css',
+    'animate.css/animate.min.css'
     // 'asset/css/vikim.css'
   ],
 

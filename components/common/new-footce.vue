@@ -109,7 +109,7 @@
             <div>(852) 3620 2428</div>
           </a>
           <a target="_blank" href="https://api.whatsapp.com/send?phone=85295128192">
-            <div><img src="https://static.cmereye.com/imgs/2023/12/a23c2d545cd7e307.png" alt="WhatsApp"></div>
+            <div><img src="https://static.cmereye.com/imgs/2023/12/c32e745891c022d2.png" alt="WhatsApp"></div>
             <div>
               <div><img src="https://static.cmereye.com/imgs/2023/12/0649e51a337f3d8d.png" alt=""></div>
               <div><img src="https://static.cmereye.com/imgs/2023/12/6f3af11132d1e765.png" alt=""></div>
@@ -617,8 +617,8 @@ export default {
         display: inline-block;
         position: absolute;
         border-radius: 50%;
-        top: 22%;
-        left: 6%;
+        top: 25%;
+        left: 13%;
         // animation: roundW 10s linear infinite;
       }
 

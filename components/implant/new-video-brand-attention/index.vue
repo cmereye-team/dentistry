@@ -162,7 +162,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 50px 150px 80px;
+    padding: 50px 235px 80px;
 
     &>div {
       width: 33.33333%;
@@ -203,7 +203,7 @@ export default {
   }
 
   .attention {
-    padding: 50px 150px 0;
+    padding: 50px 200px 0;
     display: flex;
     flex-wrap: wrap;
 
