@@ -154,11 +154,11 @@ export default {
   }
   ::v-deep .interval  {
     &>div:nth-child(1) {
-      bottom: 300px;
+      bottom: 300px !important;
     }
     .content {
       &>div:nth-child(1){
-        margin-top: 65px;
+        margin-top: 65px !important;
       }
     }
   }
