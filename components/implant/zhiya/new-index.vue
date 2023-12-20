@@ -154,7 +154,12 @@ export default {
   }
   ::v-deep .interval  {
     &>div:nth-child(1) {
-      bottom: 51.5%;
+      bottom: 300px;
+    }
+    .content {
+      &>div:nth-child(1){
+        margin-top: 65px;
+      }
     }
   }
   .why_significance {

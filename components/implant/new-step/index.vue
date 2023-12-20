@@ -8,31 +8,31 @@
             <div> <img src="https://static.cmereye.com/imgs/2023/12/779289004a2dc385.png" alt=""> </div>
             <div>訂立客製化方案</div>
             <!-- 点击方案 @click="boxShow(1)" -->
-            <div v-if="showOne" class="animate__animated animate__bounce">
+            <div v-if="showOne">
               進行全面口腔檢查、X光或電腦斷層掃描，牙醫會為客人進行詳細的術前評估，透過了解其病歷及口腔健康狀況，選擇最合適的植體，並確定最佳的植入位置與角度。
             </div>
           </div>
           <div @click="boxShow(2)" :class="[showTwo ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/cc37d29b318c00b6.png" alt=""> </div>
             <div>植入植體</div>
-            <div v-if="showTwo" class="animate__animated animate__bounce">牙醫會先為客人進行麻醉，翻開牙齦，並在齒槽骨的準確位置及角度進行鑽孔，並將植體植入。</div>
+            <div v-if="showTwo">牙醫會先為客人進行麻醉，翻開牙齦，並在齒槽骨的準確位置及角度進行鑽孔，並將植體植入。</div>
           </div>
           <div @click="boxShow(3)" :class="[showThree ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/7fcf92c3e62095c0.png" alt=""> </div>
             <div>等待癒合</div>
-            <div v-if="showThree" class="animate__animated animate__bounce">
+            <div v-if="showThree">
               植體大約需3至6個月時間與牙槽骨緊密結合。確保癒合狀況良好後，牙醫會根據客人的實際情況，裝上臨時牙冠、牙橋或假牙。視乎情況，最快可即日裝上。</div>
           </div>
           <div @click="boxShow(4)" :class="[showFour ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/83564b132e80b07f.png" alt=""> </div>
             <div>完成植牙</div>
-            <div v-if="showFour" class="animate__animated animate__bounce">確認植體穩定固定在顎骨後，牙醫會裝上客人已選好的牙冠、牙橋或假牙，並同時對牙齒進行細微調整。
+            <div v-if="showFour">確認植體穩定固定在顎骨後，牙醫會裝上客人已選好的牙冠、牙橋或假牙，並同時對牙齒進行細微調整。
             </div>
           </div>
           <div @click="boxShow(5)" :class="[showFive ? 'hoverThreeBox' : '']">
             <div> <img src="https://static.cmereye.com/imgs/2023/12/8356d77dc6c08847.png" alt=""> </div>
             <div>定期覆診</div>
-            <div v-if="showFive" class="animate__animated animate__bounce">接受植牙手術後，需定期與牙科醫生跟進狀況，以確保植牙得到適當的保養。</div>
+            <div v-if="showFive">接受植牙手術後，需定期與牙科醫生跟進狀況，以確保植牙得到適當的保養。</div>
           </div>
         </div>
         <div>牙齒狀況因人而異，建議尋求<br class="mbShow" />牙科醫生的評估及諮詢，<br class="mbShow" />以確定是否適合進行該項療程。</div>
@@ -167,6 +167,7 @@ export default {
           right: 0;
           position: absolute;
           transform: rotate(180deg) translateX(20%);
+          animation: jump 1s ease infinite;
         }
 
         &>div:nth-child(2)::after {
@@ -196,6 +197,30 @@ export default {
           top: 100%;
           cursor: pointer;
           z-index: 99;
+        }
+      }
+
+      &>div:nth-child(2) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.1s ease infinite;
+        }
+      }
+
+      &>div:nth-child(3) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.2s ease infinite;
+        }
+      }
+
+      &>div:nth-child(4) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.3s ease infinite;
+        }
+      }
+
+      &>div:nth-child(5) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.4s ease infinite;
         }
       }
 
@@ -323,6 +348,28 @@ export default {
     }
   }
 
+  @keyframes jump {
+    0% {
+      height: 0;
+      bottom: 0px;
+    }
+
+    30% {
+      height: 19px;
+      bottom: 10px;
+    }
+
+    70% {
+      height: 19px;
+      bottom: 15px;
+    }
+
+    70% {
+      height: 19px;
+      bottom: 5px;
+    }
+  }
+
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -410,7 +457,7 @@ export default {
           right: 0;
           position: absolute;
           transform: rotate(180deg) translateX(20%);
-          animation: identifier 1s ease-in-out infinite;
+          animation: jump 1s ease-in-out infinite;
         }
 
         &>div:nth-child(3) {
@@ -426,6 +473,30 @@ export default {
           line-height: normal;
           letter-spacing: 1.6px;
           display: none;
+        }
+      }
+
+      &>div:nth-child(2) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.1s ease infinite;
+        }
+      }
+
+      &>div:nth-child(3) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.2s ease infinite;
+        }
+      }
+
+      &>div:nth-child(4) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.3s ease infinite;
+        }
+      }
+
+      &>div:nth-child(5) {
+        &>div:nth-child(2)::before {
+          animation: jump 1.4s ease infinite;
         }
       }
 
@@ -456,7 +527,7 @@ export default {
           right: 9px;
           transition: all .3s ease-in-out;
           transform: rotate(0) translateX(20%);
-          animation: identifier2 1s ease-in-out infinite;
+          animation: none !important;
         }
       }
 
@@ -509,6 +580,28 @@ export default {
       font-weight: 500;
       line-height: normal;
       letter-spacing: 1.6px;
+    }
+  }
+
+  @keyframes jump {
+    0% {
+      height: 0;
+      bottom: 0px;
+    }
+
+    30% {
+      height: 19px;
+      bottom: 10px;
+    }
+
+    70% {
+      height: 19px;
+      bottom: 15px;
+    }
+
+    70% {
+      height: 19px;
+      bottom: 5px;
     }
   }
 
@@ -578,4 +671,5 @@ export default {
       transform: rotate(0);
     }
   }
-}</style>
+}
+</style>

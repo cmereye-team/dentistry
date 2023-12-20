@@ -144,7 +144,7 @@ export default {
   .why_significance {
     color: #79828D;
     text-align: center;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans CJK TC';
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
@@ -169,7 +169,7 @@ export default {
   .assess {
     color: #79828D;
     text-align: center;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans CJK TC';
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
@@ -220,7 +220,7 @@ export default {
       align-items: center;
       padding-right: 15px;
       color: #57B2F3;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 18px;
       font-style: normal;
       font-weight: 500;
@@ -230,7 +230,7 @@ export default {
 
     &>div:nth-child(2) {
       color: #79828D;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 16px;
       font-style: normal;
       font-weight: 500;
@@ -240,7 +240,7 @@ export default {
 
     &>div:nth-child(3) {
       color: #79828D;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 20px;
       font-style: normal;
       font-weight: 600;
@@ -282,7 +282,7 @@ export default {
 
     &>div:nth-child(2) {
       color: #FFF;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 18px;
       font-weight: 700;
       letter-spacing: 1.44px;
@@ -290,7 +290,7 @@ export default {
 
     &>div:nth-child(3) {
       color: #FFF;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 24px;
       font-weight: 700;
       letter-spacing: 1.92px;
@@ -345,7 +345,7 @@ export default {
       transform: rotate(-15deg);
       text-align: center;
       color: var(--White, #FFF);
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 12px;
       font-style: normal;
       font-weight: 500;
@@ -443,7 +443,7 @@ export default {
       align-items: center;
       color: #57B2F3;
       text-align: center;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 14px;
       font-style: normal;
       font-weight: 500;
@@ -454,7 +454,7 @@ export default {
 
     &>div:nth-child(2) {
       color: #79828D;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 13px;
       font-style: normal;
       font-weight: 500;
@@ -466,7 +466,7 @@ export default {
 
     &>div:nth-child(3) {
       color: #79828D;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 13px;
       font-style: normal;
       font-weight: 600;
@@ -528,7 +528,7 @@ export default {
 
     &>div:nth-child(2) {
       color: #FFF;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 15px;
       font-style: normal;
       font-weight: 700;
@@ -537,7 +537,7 @@ export default {
 
     &>div:nth-child(3) {
       color: #FFF;
-      font-family: Noto Sans;
+      font-family: 'Noto Sans CJK TC';
       font-size: 15px;
       font-style: normal;
       font-weight: 700;
@@ -582,7 +582,7 @@ export default {
   .why_significance {
     color: #79828D;
     text-align: center;
-    font-family: Noto Sans;
+    font-family: 'Noto Sans CJK TC';
     font-size: 1.5625rem;
     font-style: normal;
     font-weight: 500;

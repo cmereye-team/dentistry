@@ -716,6 +716,7 @@ export default {
     z-index: 50;
     padding: 0;
     overflow-y: hidden;
+    z-index: 999;
     // display: flex;
     // justify-content: center;
   }
