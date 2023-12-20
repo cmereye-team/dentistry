@@ -62,7 +62,10 @@ const getRoutes = resolve => [
   {
     path: '/veneers',
     component: resolve('pages/veneers'),
-
+  },
+  {
+    path: '/new-veneers',
+    component: resolve('pages/new-veneers'),
   },
   {
     path: '/teeth-whitening',

@@ -130,7 +130,7 @@ export default {
       justify-content: space-around;
       align-items: flex-end;
       min-height: 200px;
-      padding: 80px 0 50px;
+      padding: 65px 0 50px;
 
       &>div {
         position: relative;
