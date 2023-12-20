@@ -22,7 +22,7 @@ import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import porcelain from "@/components/porcelain/porcelain/new-index.vue"
 import superiorityCaseStep from '@/components/porcelain/superiority-case-step/new-index.vue';
-import problem from "@/components/porcelain/problem/index.vue"
+import problem from "@/components/porcelain/problem/new-index.vue"
 
 export default {
   components: {

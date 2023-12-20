@@ -15,19 +15,53 @@
       </div>
     </div>
     <div class="case">
-      <div class="main-container"></div>
+      <div class="main-container">
+        <div class="why_significance">成功案例</div>
+        <div>
+          <div><img src="https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png" alt=""></div>
+          <div><img src="https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png" alt=""></div>
+        </div>
+      </div>
     </div>
     <div class="main-container step">
       <div class="why_significance">全瓷貼片五步曲</div>
+      <div>
+        <div v-for="item in stepList" :key="item.id">
+          <div>{{ item.id }}</div>
+          <div>
+            <img :src="item.imgSrc" alt="">
+          </div>
+          <div>{{ item.title }}</div>
+          <div>{{ item.content }}</div>
+        </div>
+      </div>
+      <div>
+        療程時間和程序因個人牙齒狀況而異，<br class="mbShow" />建議於療程前先諮詢<br class="pcShow" />牙醫的意見，<br class="mbShow" />以了解個人需求。
+      </div>
+      <div>
+        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import newBtn from '@/components/common/new-btn.vue';
 export default {
+  components: {
+    newBtn
+  },
   name: 'superiority-case-step',
   data() {
     return {
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: '立即預約及諮詢',
+      isShowSvg: false,
+      mb: '',
+      paddingSize: '10px 88px',
+      paddingSizeMb: '6px 74px',
+      newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       superiorityList: [
         {
           title: '即日定制',
@@ -49,6 +83,38 @@ export default {
           title: '專屬微笑線設計',
           content: '引用先進技術，創造獨一無二的微笑曲線，符合黃金比例美學，無阻展現自信笑容'
         }
+      ],
+      stepList: [
+        {
+          id: 1,
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/142749bf037eee93.png',
+          title: '術前諮詢',
+          content: '檢查客人的口腔健康狀況，確保牙齒和牙周健康，塑造符合客人期望的牙齒形狀及顏色。'
+        },
+        {
+          id: 2,
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/ff783fb4971ca5bc.png',
+          title: '打磨牙面',
+          content: '輕輕磨去牙齒表面的琺瑯質。'
+        },
+        {
+          id: 3,
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/f2eced45c3943a76.png',
+          title: '印製牙模及拍攝X-Ray',
+          content: '印製牙模，以度身設計及訂製專屬瓷牙貼片。'
+        },
+        {
+          id: 4,
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/323c625a547644dc.png',
+          title: '裝配貼片',
+          content: '把牙貼片黏附在牙齒外側面，檢查黏合程度和顏色。'
+        },
+        {
+          id: 5,
+          imgSrc: 'https://static.cmereye.com/imgs/2023/12/32e6ecc0d9c4355b.png',
+          title: '定期追蹤',
+          content: '裝上貼片後，需如真牙般對待。為確保其最佳狀態，建議按照牙醫的指示，定期覆診檢查及保養，以延長貼片壽命。'
+        },
       ]
     };
   },
@@ -58,6 +124,10 @@ export default {
 
 <style  scoped lang='scss'>
 @media screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
+
   .superiority-case-step {
     margin-top: 109px;
   }
@@ -65,21 +135,160 @@ export default {
   .superiority {
     &>div:nth-child(2) {
       display: flex;
+      justify-content: center;
+      margin-top: 10px;
+      margin-bottom: 102px;
 
       &>div:nth-child(1) {
-        flex: 1;
         display: flex;
         justify-content: flex-end;
-        
+        align-items: center;
+
       }
+
       &>div:nth-child(2) {
-        flex: 1;
+        padding-left: 70px;
+
+        &>div {
+          max-width: 310px;
+          margin-top: 40px;
+
+          &>div:nth-child(1) {
+            color: #57B2F3;
+            font-family: Noto Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 1.44px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #EBEBEB;
+            position: relative;
+          }
+
+          &>div:nth-child(1)::before {
+            content: '';
+            display: inline-block;
+            width: 30px;
+            height: 1px;
+            position: absolute;
+            bottom: -1px;
+            background: #299DF0;
+          }
+
+          &>div:nth-child(2) {
+            color: #79828D;
+            font-family: Noto Sans;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.44px;
+          }
+        }
+
+        &>div:nth-child(even) {
+          &>div:nth-child(1) {
+            color: #FFB7B7;
+          }
+
+          &>div:nth-child(1)::before {
+            background: #FF8585;
+          }
+        }
       }
     }
   }
 
   .case {
     background: #ECF7FC;
+    padding: 109px 0;
+
+    &>div {
+      &>div:nth-child(2) {
+        margin-top: 67px;
+        display: flex;
+        justify-content: center;
+
+        &>div {
+          margin: 0 28px;
+        }
+      }
+    }
+  }
+
+  .step {
+    margin-top: 158px;
+
+    &>div:nth-child(2) {
+      display: flex;
+      justify-content: center;
+      margin-top: 55px;
+
+      &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 24px;
+
+        &>div:nth-child(1) {
+          border-radius: 50%;
+          background: #57B2F3;
+          width: 31px;
+          height: 31px;
+          color: #FFF;
+          font-family: Yuanti TC;
+          font-size: 19.709px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+          letter-spacing: 0;
+          text-align: center;
+        }
+
+        &>div:nth-child(2) {
+          margin-top: 41px;
+          margin-bottom: 19px;
+        }
+
+        &>div:nth-child(3) {
+          color: #57B2F3;
+          text-align: center;
+          font-family: Noto Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 160%;
+          letter-spacing: 0;
+        }
+
+        &>div:nth-child(4) {
+          margin-top: 11px;
+          max-width: 141px;
+          color: #79828D;
+          font-family: Noto Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 160%;
+        }
+      }
+    }
+
+    &>div:nth-child(3) {
+      margin-top: 20px;
+      color: #79828D;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.8px;
+    }
+  }
+  ::v-deep .serve_btn {
+    margin-top: 82px;
   }
 
   .why_significance {
@@ -109,6 +318,10 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
+
   .why_significance {
     color: #79828D;
     text-align: center;
