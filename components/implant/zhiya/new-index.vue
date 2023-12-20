@@ -154,7 +154,7 @@ export default {
   }
   ::v-deep .interval  {
     &>div:nth-child(1) {
-      bottom: 300px !important;
+      bottom: 305px !important;
     }
     .content {
       &>div:nth-child(1){
