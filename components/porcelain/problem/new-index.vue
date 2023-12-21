@@ -69,6 +69,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media only screen and (max-width: 767px) {
+  .qoa {
+    &>div:nth-child(2) {
+      margin-top: 42px;
+      margin-bottom: 61px;
+    }
+  }
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -108,13 +114,13 @@ export default {
 
   ::v-deep .el-collapse-item__header.is-active {
     background-color: transparent;
-
   }
 
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
     padding-left: 2vw;
+    margin-top: 0 !important;
   }
 
   .coll-box {
@@ -122,11 +128,58 @@ export default {
     width: 100%;
   }
 
+  .contents {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+
+    &>i {
+      margin-right: 20px;
+    }
+
+    &>div {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.5px;
+    }
+  }
+
+  .discon {
+    color: #79828D;
+    font-family: Noto Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.3px;
+    padding-left: 37px;
+    padding-right: 5px;
+    margin-top: 0;
+  }
+
   .downArrow1 {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    transition: all 0.3s;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/e5a7910bb0b35fd3.png);
+    background-size: 100% 100%;
+  }
+
+  .downArrow2 {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/72c48c3a0df2d2fa.png);
+    background-size: 100% 100%;
+    transition: all 0.3s;
   }
 }
 
@@ -234,5 +287,4 @@ export default {
     transition: all 0.3s;
     background-image: url(https://static.cmereye.com/imgs/2023/12/72c48c3a0df2d2fa.png);
   }
-}
-</style>
+}</style>

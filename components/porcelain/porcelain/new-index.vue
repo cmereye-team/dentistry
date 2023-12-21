@@ -25,7 +25,7 @@
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
             :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" />
         </div>
-        <div>
+        <div class="pcShow">
           <img src="https://static.cmereye.com/imgs/2023/12/69ef54f26b6fbfc4.png" alt="">
           <img src="https://static.cmereye.com/imgs/2023/12/106b0ad7f3fd7fa0.png" alt="">
         </div>
@@ -47,7 +47,7 @@ export default {
       isShowSvg: false,
       mb: '',
       paddingSize: '10px 88px',
-      paddingSizeMb: '6px 74px',
+      paddingSizeMb: '6px 64px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       allCeramicList: [
         {
@@ -81,7 +81,11 @@ export default {
 
   },
   methods: {
-  }
+  },
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 
 </script>
@@ -237,6 +241,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  ::v-deep .img_absolute {
+    right: 18% !important;
+  }
   .all-ceramic-one {
     margin-top: 101px;
     padding: 0 20px;
@@ -257,10 +264,10 @@ export default {
       font-family: Noto Sans;
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       letter-spacing: 1.6px;
-      padding: 0 20px;
+      padding: 0 15px;
       text-align: center;
     }
   }
