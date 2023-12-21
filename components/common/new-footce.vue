@@ -129,7 +129,7 @@
           <div class="drawerImg" v-if="drawerBool" @click="drawerBool = false">
             <div :class="[drawerBool ? 'drawerImgHeight' : '']">
               <div @click="drawerBool = false"><span></span><span></span></div>
-              <div><img src="https://static.cmereye.com/imgs/2023/10/a7833e634c739f73.png" alt=""></div>
+              <div><img src="https://static.cmereye.com/imgs/2023/12/ebabc616c066fb70.jpg" alt=""></div>
             </div>
           </div>
         </div>
@@ -344,7 +344,7 @@ export default {
         line-height: 0;
         /* 125.914% */
         letter-spacing: 2.8px;
-        line-height: 35.256px; 
+        line-height: 35.256px;
 
         &>div:nth-child(2) {
           display: none;
@@ -802,6 +802,15 @@ export default {
       &>div:nth-child(2) {
         display: flex;
         justify-content: center;
+        width: 70%;
+        margin: auto;
+        border: 10px solid #57B2F3;
+        border-radius: 10px;
+
+        &>img {
+          width: 100%;
+          border-radius: 10px;
+        }
       }
     }
   }

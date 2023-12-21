@@ -19,7 +19,7 @@
       <div class="table">
         <div class="row row-one">
           <div class="cell"></div>
-          <div class="cell">傳統植牙</div>
+          <div class="cell" style="border-left: 1px solid #57B2F3;">傳統植牙</div>
           <div class="cell header-three">微創植牙</div>
           <div class="cell">All-on-4 全口植牙</div>
         </div>
@@ -27,7 +27,7 @@
           <div class="cell">原理</div>
           <div class="cell">在牙槽骨中植入植體，<br class="pcShow" />待穩固結合後，<br class="pcShow" />再安裝牙冠</div>
           <div class="cell">將切口最小化，從而把植體植入牙槽骨中</div>
-          <div class="cell">利用特殊力學設計，讓力量平均分散支撐整排牙齒，在四顆植體上固定正式牙橋</div>
+          <div class="cell mb-pseudo-two">利用特殊力學設計，讓力量平均分散支撐整排牙齒，在四顆植體上固定正式牙橋</div>
         </div>
         <div class="row">
           <div class="cell cell-row-one">適用<br class="pcShow" />對象</div>
@@ -63,7 +63,7 @@
           <div class="cell">缺點</div>
           <div class="cell">拔牙後須待數個月傷口癒合期</div>
           <div class="cell"></div>
-          <div class="cell">術後需更加注意保養</div>
+          <div class="cell mb-pseudo">術後需更加注意保養</div>
         </div>
       </div>
       <div class="assess pcShow">
@@ -462,7 +462,7 @@ export default {
       line-height: 18px;
       /* 138.462% */
       letter-spacing: 1.04px;
-      padding: 5px 11px;
+      padding: 5px 10px;
     }
 
     &>div:nth-child(3) {
@@ -474,7 +474,7 @@ export default {
       line-height: 18px;
       /* 138.462% */
       letter-spacing: 1.04px;
-      padding: 5px 11px;
+      padding: 5px 10px;
       min-width: 95px;
     }
 
@@ -488,13 +488,15 @@ export default {
       /* 138.462% */
       letter-spacing: 1.04px;
       background: #F0F9FD;
-      padding: 5px 11px;
+      padding: 5px 10px;
       min-width: 115px;
     }
   }
+
   .cell-row-one {
     padding: 0 11px 0 0 !important;
   }
+
   .row-four {
     &>div {
       display: flex;
@@ -529,8 +531,9 @@ export default {
       font-style: normal;
       line-height: normal;
     }
+
     &>div:nth-child(1) {
-      border:none;
+      border-right: 1px solid #57B2F3;
     }
 
     &>div:nth-child(2) {
@@ -586,6 +589,66 @@ export default {
     }
   }
 
+  .mb-pseudo {
+    position: relative;
+  }
+
+  .mb-pseudo::before {
+    content: '';
+    background: #fff;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    bottom: -1px;
+    left: -1px;
+    border-top: 1px solid #57B2F3;
+    border-right: 1px solid #57B2F3;
+  }
+
+  .mb-pseudo::after {
+    content: '';
+    background: #fff;
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    bottom: -1px;
+    right: -1px;
+    border-top: 1px solid #57B2F3;
+    border-left: 1px solid #57B2F3;
+  }
+
+  .mb-pseudo-two {
+    position: relative;
+  }
+
+  .mb-pseudo-two::before {
+    content: '';
+    background: #fff;
+    width: 4.5px;
+    height: 3.5px;
+    position: absolute;
+    display: inline-block;
+    top: -1px;
+    left: -1px;
+    border-right: 1px solid #57B2F3;
+    border-bottom: 1px solid #57B2F3;
+  }
+
+  .mb-pseudo-two::after {
+    content: '';
+    background: #fff;
+    width: 4px;
+    height: 3px;
+    position: absolute;
+    display: inline-block;
+    top: -1px;
+    right: -1px;
+    border-left: 1px solid #57B2F3;
+    border-bottom: 1px solid #57B2F3;
+  }
+
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -610,5 +673,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>
