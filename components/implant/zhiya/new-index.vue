@@ -164,6 +164,11 @@ export default {
       &>div:nth-child(1) {
         margin-top: 25px !important;
       }
+
+      &>div:nth-child(2) {
+        position: absolute !important;
+        top: -15% !important;
+      }
     }
   }
 
@@ -191,4 +196,5 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}</style>
+}
+</style>
