@@ -31,13 +31,12 @@ const getRoutes = resolve => [
   // component: resolve('pages/our-medical-team'),
 
   // },
+  // {
+  //   path: '/implant',
+  //   component: resolve('pages/implant'),
+  // },
   {
     path: '/implant',
-    component: resolve('pages/implant'),
-
-  },
-  {
-    path: '/new-implant',
     component: resolve('pages/new-implant'),
 
   },
