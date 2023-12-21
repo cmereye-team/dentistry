@@ -141,7 +141,9 @@ export default {
   .mbShow {
     display: none;
   }
-
+  ::v-deep .mbShow {
+    display: none;
+  }
   .superiority-case-step {
     margin-top: 109px;
   }
