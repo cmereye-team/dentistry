@@ -34,7 +34,7 @@ export default {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約諮詢',
       isShowSvg: false,
-      mb:'',
+      mb: '',
       paddingSize: '10px 100px',
       paddingSizeMb: '6px 74px',
       layoutPageScr: 'https://static.cmereye.com/imgs/2023/12/70eea8dd19da2a0d.png',
@@ -152,16 +152,21 @@ export default {
       }
     }
   }
-  ::v-deep .interval  {
+
+  ::v-deep .interval {
+    margin-top: 162px !important;
+
     &>div:nth-child(1) {
-      bottom: 305px !important;
+      position: initial !important;
     }
+
     .content {
-      &>div:nth-child(1){
-        margin-top: 65px !important;
+      &>div:nth-child(1) {
+        margin-top: 25px !important;
       }
     }
   }
+
   .why_significance {
     color: #79828D;
     text-align: center;
