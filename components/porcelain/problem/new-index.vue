@@ -6,60 +6,47 @@
         <el-collapse-item name="1">
           <template slot="title">
             <div class="contents">
-              <i class="title1"></i>
-              <p :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">甚麼情況才需要瓷貼片？</p>
+              <i :class="judgeActive('1') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+              <div :class="judgeActive('1') !== -1 ? 'p2' : 'p1'">全瓷貼片一定要磨牙嗎？</div>
             </div>
-            <i :class="judgeActive('1') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
           <div class="discon">
-            <i class="title2"></i>
-            <span>
-              <ul>
-                <li>瓷貼片主要是為了美化牙齒，大多客人選擇以瓷貼片修復形狀或牙色不平均的牙齒。多建議同時期處理約6顆牙齒的範圍，達至理想效果及色澤。</li>
-              </ul>
-            </span>
+            進行瓷貼片療程前，需進行輕微磨牙處理，以確保其穩定性和美觀度。這個過程盡量保留牙齒結構，追求效果自然。
           </div>
         </el-collapse-item>
         <el-collapse-item name="2">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
-              <i class="title1"></i>
-              <p :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">瓷貼片的壽命有多長？</p>
+              <i :class="judgeActive('2') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+              <div :class="judgeActive('2') !== -1 ? 'p2' : 'p1'">全瓷貼片會造成牙齒敏感嗎？</div>
             </div>
-            <i :class="judgeActive('2') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
           <div class="discon">
-            <i class="title2"></i>
-            <span>
-
-              <ul>
-                <li>視乎病人如何使用瓷貼片及其口腔清潔狀況而定，若病人有定期進行口腔檢查及<br>洗牙，一般可使用頗長的時間。</li>
-              </ul>
-            </span>
+            術後牙齒可能會變得敏感，屬正常現象，一般會在短時間內逐漸消退，並慢慢適應新環境。
           </div>
         </el-collapse-item>
         <el-collapse-item name="3">
           <template slot="title">
             <div class="contents">
-              <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt=""> -->
-              <i class="title1"></i>
-              <p :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">如何護理瓷貼片？</p>
+              <i :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+              <div :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">全瓷貼片容易脫落嗎？</div>
             </div>
-            <i :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
           </template>
           <div class="discon">
-            <i class="title2"></i>
-            <span>
-
-              <ul>
-                <li>瓷貼片不需任何特別護理。只要注意口腔衛生習慣，定期進行口腔檢查及洗牙，就能好好保護瓷貼片。</li>
-
-              </ul>
-            </span>
+            裝上瓷貼片後，需注意保持良好的口腔清潔習慣，避免進食堅硬食物，並定期覆診檢查，確保瓷貼片的穩固性和壽命，以減低其脫落風險。
           </div>
         </el-collapse-item>
-
+        <el-collapse-item name="4">
+          <template slot="title">
+            <div class="contents">
+              <i :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
+              <div :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">全瓷貼片實際效果跟期望有落差嗎？</div>
+            </div>
+          </template>
+          <div class="discon">
+            透過數位模擬技術，提前展示清晰的術後預覽，並製作實體模擬貼片供客人試戴。
+          </div>
+        </el-collapse-item>
       </el-collapse>
     </div>
   </div>
@@ -107,11 +94,6 @@ export default {
     transform: translateX(50%);
   }
 
-  .contents p {
-    color: #79828D;
-    font-size: 18px;
-  }
-
   ::v-deep .el-collapse-item__arrow {
     display: none;
   }
@@ -125,7 +107,7 @@ export default {
   }
 
   ::v-deep .el-collapse-item__header.is-active {
-    background-color: #ECF7FC;
+    background-color: transparent;
 
   }
 
@@ -133,58 +115,11 @@ export default {
     font-weight: 400;
     font-size: 19px;
     padding-left: 2vw;
-    // background-color: #DFDFDF;
   }
 
   .coll-box {
     padding: 3vw;
     width: 100%;
-  }
-
-  .contents {
-    display: flex;
-    align-items: center;
-
-    p {
-      color: #79828D;
-    }
-
-    span {
-      color: #9BA5B1;
-
-    }
-  }
-
-  .discon {
-    margin: 1vw 0 0 0;
-    display: flex;
-
-    ul {
-      padding-left: 0.2vw;
-    }
-
-    span {
-      color: #9BA5B1;
-      font-size: 16px;
-      width: 84%;
-    }
-  }
-
-  .title1 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png);
-    background-repeat: no-repeat;
-  }
-
-  .title2 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
-    background-repeat: no-repeat;
-    color: #fff;
   }
 
   .downArrow1 {
@@ -199,6 +134,7 @@ export default {
   .qoa {
     margin-top: 109px;
   }
+
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -223,6 +159,7 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
+
   ::v-deep .el-collapse-item__arrow {
     display: none;
   }
@@ -256,62 +193,46 @@ export default {
     display: flex;
     align-items: center;
 
-    p {
-      color: #79828D;
+    &>i {
+      margin-right: 20px;
     }
 
-    span {
-      color: #9BA5B1;
-
+    &>div {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 21px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2.1px;
     }
   }
 
   .discon {
-    margin: 1vw 0 0 0;
-    display: flex;
-
-    ul {
-      padding-left: 0.2vw;
-    }
-
-    span {
-      color: #9BA5B1;
-      font-size: 16px;
-
-    }
-  }
-
-  .title1 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/Q.png);
-    background-repeat: no-repeat;
-  }
-
-  .title2 {
-    display: inline-block;
-    width: 40px;
-    height: 25px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/A.png);
-    background-repeat: no-repeat;
-    color: #fff;
+    padding-left: 64px;
+    color: #79828D;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.6px;
   }
 
   .downArrow1 {
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
+    width: 44px;
+    height: 44px;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/e5a7910bb0b35fd3.png);
+    transition: all 0.3s;
   }
 
   .downArrow2 {
-    // display: inline-block;
-    // width: 12px;
-    // height: 12px;
-    // background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
-    // transform: rotate(-180deg);
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    transition: all 0.3s;
+    background-image: url(https://static.cmereye.com/imgs/2023/12/72c48c3a0df2d2fa.png);
   }
-
-
-}</style>
+}
+</style>

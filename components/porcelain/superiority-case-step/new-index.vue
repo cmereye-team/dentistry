@@ -136,7 +136,7 @@ export default {
     &>div:nth-child(2) {
       display: flex;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 50px;
       margin-bottom: 102px;
 
       &>div:nth-child(1) {
@@ -177,6 +177,7 @@ export default {
           }
 
           &>div:nth-child(2) {
+            margin-top: 12px;
             color: #79828D;
             font-family: Noto Sans;
             font-size: 18px;
@@ -185,6 +186,9 @@ export default {
             line-height: normal;
             letter-spacing: 1.44px;
           }
+        }
+        &>div:first-child {
+          margin-top: 0;
         }
 
         &>div:nth-child(even) {

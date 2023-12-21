@@ -1,6 +1,6 @@
 <template>
   <div class="step">
-    <div class="menu main-container">
+    <div class="menu main-container pcShow">
       <p><nuxt-link style="color: #000;text-decoration: none" to="/">首頁</nuxt-link></p>
       <p style="margin:0 0.5vw">></p>
       <p><nuxt-link to="/service" style="color: #000;text-decoration: none">牙科服務</nuxt-link></p>
@@ -13,7 +13,7 @@
         <div>為常見的美容牙科技術。以度身訂造牙貼片，匠心設計以貼合每個人獨特的牙齒形狀，效仿自然牙齒的質感和色澤，且堅固耐用，媲美牙齒琺瑯質。</div>
       </div>
       <div class="all-ceramic-two">
-        <div class="why_significance isArrowQuestion">哪種牙齒狀況下適合做全瓷貼片？</div>
+        <div class="why_significance isArrowQuestion">哪種牙齒狀況下<br class="mbShow" />適合做全瓷貼片？</div>
         <div><span>塑造</span><span class="text-color">專屬</span><span>你的微笑曲線</span></div>
         <div>
           <div v-for="(item, index) in allCeramicList" :key="index">
@@ -237,6 +237,92 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .all-ceramic-one {
+    margin-top: 101px;
+    padding: 0 20px;
+
+    &>div:nth-child(1) {
+      color: #57B2F3;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2.2px;
+    }
+
+    &>div:nth-child(2) {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+
+  .all-ceramic-two {
+    margin-top: 61px;
+    padding: 0 20px;
+
+    &>div:nth-child(2) {
+      margin-top: 20px;
+      color: #79828D;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 1.6px;
+
+      .text-color {
+        color: #57B2F3;
+        font-family: Noto Sans;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2.5px;
+      }
+    }
+
+    &>div:nth-child(3) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 41px;
+
+        &>div:nth-child(1) {
+          width: 42.1333vw;
+
+          &>img {
+            width: 100%;
+          }
+        }
+
+        &>div:nth-child(2) {
+          margin: 10px auto 4px;
+          color: #57B2F3;
+          font-family: Noto Sans TC;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 160%;
+        }
+      }
+    }
+  }
+
   .pcShow {
     display: none;
   }

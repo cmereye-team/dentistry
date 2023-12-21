@@ -30,7 +30,7 @@
           <div class="cell">利用特殊力學設計，讓力量平均分散支撐整排牙齒，在四顆植體上固定正式牙橋</div>
         </div>
         <div class="row">
-          <div class="cell">適用<br class="pcShow" />對象</div>
+          <div class="cell cell-row-one">適用<br class="pcShow" />對象</div>
           <div class="cell">單顆或多顆缺牙</div>
           <div class="cell">單顆或多顆缺牙， 且骨量充足</div>
           <div class="cell">大範圍或全口缺牙</div>
@@ -421,7 +421,8 @@ export default {
 
   .cell {
     display: table-cell;
-    border: 1px solid #57B2F3;
+    border-right: 1px solid #57B2F3;
+    border-bottom: 1px solid #57B2F3;
     padding: 5px 15px;
     text-align: center;
   }
@@ -449,7 +450,7 @@ export default {
       font-weight: 500;
       line-height: normal;
       min-width: 52px;
-      padding: 0 11px 0 0;
+      padding: 0 16px 0 0;
     }
 
     &>div:nth-child(2) {
@@ -491,7 +492,9 @@ export default {
       min-width: 115px;
     }
   }
-
+  .cell-row-one {
+    padding: 0 11px 0 0 !important;
+  }
   .row-four {
     &>div {
       display: flex;
@@ -515,6 +518,7 @@ export default {
 
   .row-one {
     &>div {
+      border-bottom: 1px solid #57B2F3;
       padding: 5px 0;
       display: flex;
       justify-content: center;
@@ -524,6 +528,9 @@ export default {
       border-left: 1px solid #fff;
       font-style: normal;
       line-height: normal;
+    }
+    &>div:nth-child(1) {
+      border:none;
     }
 
     &>div:nth-child(2) {
