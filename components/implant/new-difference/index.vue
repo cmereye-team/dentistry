@@ -507,6 +507,7 @@ export default {
     ul {
       list-style-type: disc;
       padding: 5px 0;
+      margin-bottom: 0px;
     }
 
     li::marker {

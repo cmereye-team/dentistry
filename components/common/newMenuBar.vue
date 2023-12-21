@@ -1173,9 +1173,9 @@ export default {
       width: 15px;
 
       span {
-        width: 3px;
+        width: 2px;
         height: 0;
-        background: #fff;
+        background: #57B2F3;
         transition: all .7s;
         display: block;
       }
@@ -1287,9 +1287,10 @@ export default {
       width: 15px;
 
       span {
-        width: 3px;
+        width: 2px;
+        border-radius: 1px;
         height: 0;
-        background: #fff;
+        background: #57B2F3;
         transition: all .7s;
         display: block;
       }
@@ -1318,7 +1319,7 @@ export default {
   ::v-deep .el-backtop {
     background: transparent;
     box-shadow: none;
-    z-index: 99;
+    z-index: 99999;
   }
 
   //mb hamburglar

@@ -143,37 +143,37 @@ export default {
     position: relative;
   }
 
-  .index_banner::after {
-    animation: fade 3s ease-in-out alternate infinite;
-    animation-delay: -0.4s;
-    position: absolute;
-    content: "scroll";
-    font-family: "Helvetica";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 17px;
-    letter-spacing: 0.1em;
-    color: #000000;
-    bottom: 5vw;
-    left: 2vw;
-    background: #ffffff;
-    z-index: 998;
-    padding: 2vw;
-  }
+  // .index_banner::after {
+  //   animation: fade 3s ease-in-out alternate infinite;
+  //   animation-delay: -0.4s;
+  //   position: absolute;
+  //   content: "scroll";
+  //   font-family: "Helvetica";
+  //   font-style: normal;
+  //   font-weight: 400;
+  //   font-size: 15px;
+  //   line-height: 17px;
+  //   letter-spacing: 0.1em;
+  //   color: #000000;
+  //   bottom: 5vw;
+  //   left: 2vw;
+  //   background: #ffffff;
+  //   z-index: 998;
+  //   padding: 2vw;
+  // }
 
-  .index_banner::before {
-    animation: fadeline 3s ease-in-out alternate infinite;
-    animation-delay: -0.2s;
-    position: absolute;
-    content: "";
-    bottom: -22vw;
-    left: 9vw;
-    height: 55vw;
-    background-color: #c2c7cd;
-    width: 1px;
-    z-index: 99;
-  }
+  // .index_banner::before {
+  //   animation: fadeline 3s ease-in-out alternate infinite;
+  //   animation-delay: -0.2s;
+  //   position: absolute;
+  //   content: "";
+  //   bottom: -22vw;
+  //   left: 9vw;
+  //   height: 55vw;
+  //   background-color: #c2c7cd;
+  //   width: 1px;
+  //   z-index: 99;
+  // }
 
   .contents {
     position: absolute;
