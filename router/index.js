@@ -189,7 +189,10 @@ const getRoutes = resolve => [
   {
     path: '/service',
     component: resolve('pages/service'),
-
+  },
+  {
+    path: '/new-service',
+    component: resolve('pages/new-service'),
   },
   // {
   // path: '/weddingExpo',

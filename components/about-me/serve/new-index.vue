@@ -3,9 +3,11 @@
     <div class="flex justify-center texts">
       <h2>牙科服務</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
-      <p class="serve_con">
+      <p class="serve_con" v-if="isServePage !== true">
         點擊以下圖示，了解更多牙科資訊
       </p>
+      <div v-if="isServePage" class="serve_page">中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、<br
+          class="pcShow" />全口修復及各種牙科治療，幫助客人回復自信笑容。</div>
     </div>
     <div class="mb-padding">
       <div class="service_box_line service_box1">
@@ -226,6 +228,11 @@
 </template>
 <script>
 export default {
+  props: {
+    isServePage: {
+      type: Boolean,
+    },
+  },
   data() {
     return {
       scrollY: 0,
@@ -311,11 +318,11 @@ export default {
     }
   },
   methods: {
-    getScrollY(){
+    getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      if(this.scrollY > 1750 || this.scrollY < 1600){
+      if (this.scrollY > 1750 || this.scrollY < 1600) {
         this.isShow = true;
-      }else{
+      } else {
         this.isShow = false;
       }
     }
@@ -968,6 +975,31 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .serve_page {
+    color: #79828D;
+    text-align: center;
+    font-family: Noto Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2px;
+    margin-top: 45px;
+  }
+
+  .texts {
+    h2 {
+      color: #79828D;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 2.5px;
+    }
+  }
+
   .p_style_1 {
     display: flex;
     align-items: flex-end;
@@ -980,6 +1012,7 @@ a {
 
   .serve-top {
     margin-top: 3rem;
+    margin-bottom: 60px;
   }
 
   @keyframes btnAnim {
