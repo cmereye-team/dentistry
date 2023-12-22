@@ -1925,7 +1925,7 @@ export default {
   }
 
   .navbar_pc {
-    margin: 5px auto;
+    margin: 30px auto;
   }
 
   .pcshow {

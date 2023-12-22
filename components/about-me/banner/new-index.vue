@@ -134,13 +134,18 @@ export default {
 }
 
 //mb
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 767px) {
   .ispcshow {
     display: none;
   }
-
+  .carousel {
+    margin-top: 0 !important;
+}
   .index_banner {
     position: relative;
+    .carousel-inner {
+      margin-top: 0px !important;
+    }
   }
 
   // .index_banner::after {
@@ -229,7 +234,7 @@ export default {
 }
 
 //pc
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 768px) {
   .ismdshow {
     display: none;
   }
