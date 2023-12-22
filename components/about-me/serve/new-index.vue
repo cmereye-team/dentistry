@@ -228,6 +228,9 @@
 export default {
   data() {
     return {
+      scrollY: 0,
+      scrollYNum: 0,
+      isHoverAnimate: false,
       adDentistry: [
         {
           link: '/implant',
@@ -305,6 +308,16 @@ export default {
         },
 
       ]
+    }
+  },
+  methods: {
+    getScrollY(){
+      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      if(this.scrollY > 1750 || this.scrollY < 1600){
+        this.isShow = true;
+      }else{
+        this.isShow = false;
+      }
     }
   },
 }
@@ -1211,4 +1224,5 @@ a {
     }
   }
 
-}</style>
+}
+</style>
