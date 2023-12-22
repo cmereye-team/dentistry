@@ -164,7 +164,7 @@ export default {
     getlistds() {
       getList({ '_embed': true, 'categories': 21 }).then((res => {
         this.banners = res.data
-        console.log(res.data, 'P9989')
+        // console.log(res.data, 'P9989')
         this.banners.forEach((item, index) => {
           if (item.date.slice(5, 7) === '07') {
             item.month = 'July'

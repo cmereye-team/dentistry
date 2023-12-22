@@ -404,11 +404,11 @@
                 <li class="nav-item">
                   <nuxt-link class="nav-link" to="/about-us">關於我們</nuxt-link>
                 </li>
-                <li class="nav-item dropdown">
-                  <nuxt-link class="nav-link dropdown-toggle" to="/service" id="navbarDropdownMenuLink" role="button"
-                    data-bs-toggle="dropdown">牙科服務</nuxt-link>
+                <li class="nav-item dropdown" @click="showChild()">
+                  <!-- <nuxt-link class="nav-link" to="/service" id="navbarDropdownMenuLink">牙科服務</nuxt-link> -->
+                  <div class="serve_mb_open">牙科服務</div>
                   <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
-                  <ul class="dropdown-menu">
+                  <ul :class="[isShowChild == true ? 'mb_serve_menu' : 'mb_serve_menu_close']">
                     <li>
                       <nuxt-link class="dropdown-item" to="/implant">植牙</nuxt-link>
                     </li>
@@ -498,6 +498,7 @@ export default {
   data() {
     return {
       showMenu: false,
+      isShowChild: false,
       action: 0,
       isClosed: 0,
       toTopType: false,
@@ -585,6 +586,10 @@ export default {
   mounted() {
   },
   methods: {
+    showChild() {
+      console.log(1)
+      this.isShowChild = true
+    },
     toServicePages() {
       this.$router.push("/service");
     },
@@ -1159,6 +1164,42 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
+  .serve_mb_open{
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    color: #57B2F3;
+  }
+  .mb_serve_menu_close {
+    display: none;
+  }
+
+  .mb_serve_menu {
+    display: block;
+    &>li {
+      border-bottom: 1px solid #C2C7CD;
+      a {
+        color: #9bd0f5;
+      }
+      a:active {
+        color: #9bd0f5;
+        background: #fff;
+      }
+      a:hover {
+        color: #9bd0f5;
+        background: #fff;
+      }
+    }
+    &>li:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .service_link {}
+
   @keyframes scroll {
     from {
       transform: translate(300px, 0)
@@ -1922,9 +1963,9 @@ export default {
     background: url("https://static.cmereye.com/static/lkximg/image/banner/BurgerBtn.png") no-repeat !important;
   }
 
-  .dropdown-menu {
-    border: 0px;
-  }
+  // .dropdown-menu {
+  //   border: 0px;
+  // }
 
   .dropdown-item {
     color: #9bd0f5;
