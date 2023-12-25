@@ -31,7 +31,7 @@
         </div>
       </div>
     </div>
-    <a class="serve_btn bp-btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
+    <a class="serve_btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="78" height="88" viewBox="0 0 78 88" fill="none">
           <g filter="url(#filter0_d_162_825)">
@@ -170,7 +170,7 @@
           </defs>
         </svg>
       </div>
-      <div class="btn_pc_style">
+      <div class="btn_pc_style" :class="[isHoverAnimate == true ? 'showPcHover' : '']">
         <div class="btn1">
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -265,7 +265,22 @@ export default {
             "採取最新的科技和治療方式，堅守業界最高標準，遵循嚴謹香港及國際醫療技術操作規範，以期達成每位客人的口腔健康需求。",
         },
       ],
+      scrollY: 0,
+      isHoverAnimate: false,
     };
+  },
+  mounted() {
+    window.addEventListener('scroll', this.getScrollY);
+  },
+  methods: {
+    getScrollY() {
+      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      if (this.scrollY < 6954 && this.scrollY > 5674) {
+        this.isHoverAnimate = true;
+      } else {
+        this.isHoverAnimate = false;
+      }
+    },
   },
   computed: {
     clientHeight: {
@@ -452,9 +467,6 @@ export default {
     justify-content: center;
     max-width: 100%;
     margin: 90px auto 0;
-  }
-
-  .serve_btn {
     position: relative;
     text-decoration: none;
 
@@ -465,7 +477,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style {
+  .serve_btn .btn_pc_style {
     position: relative;
     display: flex;
     justify-content: center;
@@ -480,7 +492,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn1,
+  .serve_btn .btn_pc_style .btn1,
   .btn2 {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
@@ -504,35 +516,41 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn2 {
+  .serve_btn .btn_pc_style .btn2 {
     color: #79828D;
     background: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: btnAnim .9s linear;
-    animation-fill-mode: forwards;
+    // animation: btnAnim .9s linear;
+    // animation-fill-mode: forwards;
     width: max-content;
     display: none;
   }
 
-  .bp-btn .btn_pc_style:hover {
-    .btn1 {
-      color: #79828D;
+  // .serve_btn .btn_pc_style:hover {
+  //   .btn1 {
+  //     color: #79828D;
 
-      path {
-        fill: #79828D;
-      }
-    }
+  //     path {
+  //       fill: #79828D;
+  //     }
+  //   }
 
+  //   .btn2 {
+  //     display: flex;
+  //     animation: btnAnim .9s linear;
+  //     animation-fill-mode: forwards;
+  //   }
+  // }
+  .serve_btn .showPcHover {
     .btn2 {
       display: flex;
       animation: btnAnim .9s linear;
       animation-fill-mode: forwards;
     }
   }
-
 
   @keyframes btnAnim {
     0% {
@@ -563,10 +581,6 @@ export default {
     justify-content: center;
     max-width: 100%;
     margin: 90px auto 0;
-
-  }
-
-  .serve_btn {
     position: relative;
     text-decoration: none;
 
@@ -577,7 +591,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style {
+  .serve_btn .btn_pc_style {
     position: relative;
     display: flex;
     justify-content: center;
@@ -592,7 +606,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn1,
+  .serve_btn .btn_pc_style .btn1,
   .btn2 {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
@@ -616,15 +630,15 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn2 {
+  .serve_btn .btn_pc_style .btn2 {
     color: #79828D;
     background: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: btnAnim .9s linear;
-    animation-fill-mode: forwards;
+    // animation: btnAnim .9s linear;
+    // animation-fill-mode: forwards;
     width: max-content;
     display: none;
   }
@@ -654,7 +668,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style:hover {
+  .serve_btn .btn_pc_style:hover {
     .btn1 {
       color: #79828D;
 
@@ -669,7 +683,6 @@ export default {
       animation-fill-mode: forwards;
     }
   }
-
 
   @keyframes btnAnim {
     0% {
@@ -701,6 +714,7 @@ export default {
         justify-content: center;
         align-items: center;
         width: 89.333vw;
+
         &>img {
           width: 100%;
         }
@@ -751,4 +765,5 @@ export default {
       }
     }
   }
-}</style>
+}
+</style>
