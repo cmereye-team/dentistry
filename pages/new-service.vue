@@ -5,6 +5,7 @@
     <footce />
     <serve :isServePage=isServePage />
     <mapGoogle />
+    <registration />
     <foot />
 
   </div>
@@ -16,6 +17,7 @@ import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import serve from "@/components/about-me/serve/new-index.vue"
+import registration from "@/components/common/new-test-registration-form.vue"
 // import Banner from "@/components/service/banner/index.vue"
 
 export default {
@@ -25,6 +27,7 @@ export default {
     serve,
     mapGoogle,
     foot,
+    registration
     // Banner
   },
   data() {
