@@ -10,7 +10,7 @@
           <div class="text-form">立即預約牙科服務，<br class="mbShow" />展現自信笑容！</div>
           <div class="table-message">
             <el-form label-position="top" label-width="80px" ref="ruleForm" :model="ruleForm" :rules="rules"
-              action="https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental" method="post">
+              method="post">
               <el-form-item prop="name" label="姓名">
                 <el-input v-model="ruleForm.name" placeholder="請輸入你的姓名" name="name"></el-input>
               </el-form-item>
@@ -110,7 +110,7 @@
   </div>
 </template>
 <script>
-  import { submitForm }from '@/api/index.js'
+// import { submitForm } from '@/api/index.js'
 export default {
   data() {
     return {
@@ -180,12 +180,20 @@ export default {
       console.log("提交表单了");
     },
     submitForm(formName) {
-      console.log(formName,'ruleForm');
+      console.log(formName, 'ruleForm');
       this.$refs[formName].validate((valid) => {
         if (valid) {
           console.log(this.ruleForm, 'submit!');
-          console.log(this.ruleForm,'988');
-          submitForm(this.ruleForm)
+          console.log(this.ruleForm, '988');
+        fetch('https://forms.cmerdental.com/api.php/cms/addmsg', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(this.ruleForm)
+          })
+
+          // submitForm(this.ruleForm)
         } else {
           console.log('error submit!!');
           return false;
@@ -193,7 +201,7 @@ export default {
       });
     },
     // this.$refs[formName].resetFields(); // 重置表单 
-    
+
     // submitForm() {
     //   if (
     //     this.ruleForm.name === "" ||
