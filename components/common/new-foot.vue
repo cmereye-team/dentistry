@@ -3,8 +3,7 @@
     <div class="main_footer pcShow">
       <div class="section">
         <div>
-          <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png"
-            alt="logo">
+          <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png" alt="logo">
         </div>
         <div>
           <div class="icon_text">
@@ -12,16 +11,13 @@
           </div>
           <div class="media_icon">
             <a href="https://www.facebook.com/dental.cmer/" class="Facebook">
-              <img src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png"
-                alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png" alt="" />
             </a>
             <a href="https://www.instagram.com/cmerdental/" class="IG">
-              <img src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png"
-                alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png" alt="" />
             </a>
             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos" class="Youtube">
-              <img src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png"
-                alt="" />
+              <img src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png" alt="" />
             </a>
           </div>
           <div class="copyright">
@@ -39,15 +35,14 @@
           </div>
         </div>
       </div>
-      <div class="mascot">
+      <div class="mascot" :class="[isCouldAnimate == true ? 'couldAnimate afterMain' : 'couldVanish afterVanish']">
         <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
           alt="希小牙">
       </div>
     </div>
     <div class="main_footer mbShow">
       <div>
-        <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png"
-          alt="logo">
+        <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png" alt="logo">
       </div>
       <div>
         立即追蹤我哋獲取更多牙科資訊
@@ -55,14 +50,11 @@
       <div>
         <div>
           <a target="_blank" href="https://www.facebook.com/dental.cmer/"><img
-              src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png"
-              alt="" /></a>
-          <a  target="_blank" href="https://www.instagram.com/cmerdental/"><img
-              src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png"
-              alt="" /></a>
+              src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png" alt="" /></a>
+          <a target="_blank" href="https://www.instagram.com/cmerdental/"><img
+              src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png" alt="" /></a>
           <a target="_blank" href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos"><img
-              src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png"
-              alt="" /></a>
+              src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png" alt="" /></a>
         </div>
         <div>
           <nuxt-link to="/policy#A1">隱私政策</nuxt-link>
@@ -80,10 +72,27 @@
 <script>
 export default {
   data() {
-    return {};
+    return {
+      isCouldAnimate: false,
+    };
   },
   created() { },
+  mounted() {
+    window.addEventListener('scroll', this.checkScroll);
+  },
   methods: {
+    // 检测滚动条到底部
+    checkScroll() {
+      const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+      const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
+      const windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
+      if (scrollTop + windowHeight >= scrollHeight - 100) {
+        console.log(9998);
+        this.isCouldAnimate = true;
+      } else {
+        this.isCouldAnimate = false;
+      }
+    }
   },
 };
 </script>
@@ -94,6 +103,123 @@ a {
 }
 
 @media only screen and (min-width: 768px) {
+  .couldVanish {
+    height: 320px;
+
+    img {
+      animation: .5s vanish linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .couldAnimate {
+    height: 320px;
+
+    img {
+      animation: .7s identifier cubic-bezier(0, 0.29, 0.48, 1.28);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes identifier {
+    0% {
+      height: 320px;
+      z-index: -1;
+      opacity: 0;
+      top: -20px !important;
+      transform: translate(-20px, -1050px) rotate(-5deg);
+    }
+
+    50% {
+      height: 320px;
+      z-index: 5;
+      opacity: 0.7;
+      top: -20px !important;
+      transform: translateX(0, -20px) rotate(-5deg);
+    }
+
+    100% {
+      height: 320px;
+      z-index: 5;
+      opacity: 1;
+      top: -20px !important;
+      transform: translateX(20px, 0) rotate(-5deg);
+    }
+  }
+
+  @keyframes vanish {
+    0% {
+      height: 320px;
+      z-index: 5;
+      opacity: 1;
+      top: -20px !important;
+      transform: translateX(20px, 0) rotate(-5deg);
+    }
+
+    50% {
+      height: 320px;
+      z-index: 5;
+      opacity: 0.5;
+      top: -20px !important;
+      transform: translateX(0, -20px) rotate(-5deg);
+    }
+
+    100% {
+      height: 320px;
+      z-index: -1;
+      opacity: 0;
+      top: -20px !important;
+      transform: translate(-20px, -1050px) rotate(-5deg);
+    }
+  }
+
+  .afterMain::after {
+    height: 292px;
+    animation: .9s afterImg linear;
+    animation-fill-mode: forwards;
+  }
+
+
+  @keyframes afterImg {
+    0% {
+      opacity: 0;
+      height: 1px;
+    }
+
+    70% {
+      height: 146;
+      opacity: 0.3;
+    }
+
+    100% {
+      height: 292px;
+      opacity: 1;
+    }
+  }
+
+  .afterVanish::after {
+    height: 292px;
+    animation: .9s afterImgVanish linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes afterImgVanish {
+    0% {
+      height: 292px;
+      opacity: 1;
+    }
+
+    70% {
+      height: 146;
+      opacity: 0.7;
+    }
+
+    100% {
+      opacity: 0;
+      height: 1px;
+    }
+  }
+
   .mbShow {
     display: none !important;
   }
@@ -146,9 +272,12 @@ a {
     flex: 4;
     display: flex;
     justify-content: center;
+    position: relative;
+    height: 320px;
 
     img {
       width: 312px;
+      height: 0;
       transform: rotate(-5deg);
       position: relative;
       z-index: 10;
@@ -158,7 +287,7 @@ a {
 
 
 
-  .main_footer::after {
+  .mascot::after {
     content: "";
     background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1070.4wsfn8i2qv80.png');
     background-position: 100% 100%;
@@ -166,7 +295,7 @@ a {
     background-size: 100% 100%;
     width: 685px;
     display: inline-block;
-    height: 292px;
+    // height: 292px;
     position: absolute;
     bottom: 0;
     right: 0;

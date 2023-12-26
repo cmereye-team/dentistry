@@ -1107,7 +1107,7 @@ export default {
       left: 50%;
       width: 8px;
       height: 8px;
-      border: 2px solid #fff;
+      border: 2px solid #57b2f3;
       border-right: none;
       border-bottom: none;
       transform: translateX(-50%) rotate(45deg);
@@ -1256,7 +1256,7 @@ export default {
       left: 50%;
       width: 8px;
       height: 8px;
-      border: 2px solid #fff;
+      border: 2px solid #57b2f3;
       border-right: none;
       border-bottom: none;
       transform: translateX(-50%) rotate(45deg);
