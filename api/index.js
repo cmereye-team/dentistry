@@ -6,7 +6,6 @@ export function getList(data) {
 export function postFormData(data) {
   return http.post('https://send.pageclip.co/oLDloEgenkRMGb9ZYDIO4wlarrwjxsBu/Cmerdental', data)
 }
-
 export function submitForm(data) {
-  return http.post('https://forms.cmerdental.com/api.php/cms/addmsg', data)
+  return http.post('/api', data)
 }

@@ -63,21 +63,21 @@
               </div>
               <div class="radioInfo1">
                 <div class="radiocon">
-                  <el-radio v-model="radio" name="confidentiality" label="true" value="我已知曉内容皆保密處理">
+                  <el-radio v-model="radio" name="confidentiality">
                     閣下必須提前至少三個工作天進行網上預約；<br />網上提交表格並不等於預約成功，閣下將會在兩<br />個工作天內以電話或電郵收取預約確認通知；<br />閣下所提供的個人信息只會用於預約服務，<br />所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio1" name="privary" label="true" value="我已知曉同意收集個人資料及私隱">
+                  <el-radio v-model="radio1" name="privary">
                     本人已閱讀，明白及同意收集個人資料及<br /><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio2" name="broadcast" label="true" value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。">
+                  <el-radio v-model="radio2" name="broadcast">
                     本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio>
                 </div>
               </div>
               <el-form-item>
-                <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提1交</el-button>
+                <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提交</el-button>
                 <!-- <div class="form-btn" @click="submitForm('ruleForm')">提交</div> -->
                 <!-- <a class="serve_btn bp-btn" @click="submitForm('ruleForm')">
                   <div><img src="https://static.cmereye.com/imgs/2023/12/4c7b51a900c5d922.png" alt=""></div>
@@ -97,9 +97,9 @@
                 </a> -->
                 <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
               </el-form-item>
-              <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
+              <!-- <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
                 提交
-              </button>
+              </button> -->
 
               <input type="text" name="pageUrl" v-show="false" v-model="pageUrl">
             </el-form>
@@ -110,7 +110,7 @@
   </div>
 </template>
 <script>
-// import { submitForm } from '@/api/index.js'
+import { Message } from 'element-ui';
 export default {
   data() {
     return {
@@ -151,6 +151,7 @@ export default {
         name: "",
         region: "",
         beforePhone: '+852',
+        email: '',
         phone: "",
         serve: [],
         source: '',
@@ -158,7 +159,7 @@ export default {
       rules: {
         name: [
           { required: true, message: "必須輸入答案", trigger: "blur" },
-          { min: 2, max: 5, message: "长度在 2 到 5 个字符", trigger: "blur" },
+          { min: 2, max: 15, message: "长度在 2 到 15 个字符", trigger: "blur" },
         ],
         region: [
           { required: true, message: "必須輸入答案", trigger: "change" },
@@ -176,24 +177,46 @@ export default {
     this.pageUrl = window.location.href;
   },
   methods: {
-    aa() {
-      console.log("提交表单了");
-    },
+    // aa() {
+    //   console.log("提交表单了");
+    // },
     submitForm(formName) {
-      console.log(formName, 'ruleForm');
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          console.log(this.ruleForm, 'submit!');
-          console.log(this.ruleForm, '988');
-        fetch('https://forms.cmerdental.com/api.php/cms/addmsg', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(this.ruleForm)
-          })
-
-          // submitForm(this.ruleForm)
+          let dataList = new FormData()
+          let _dataList = this.ruleForm
+          dataList.append('form_name', _dataList.name),
+            dataList.append('form_region', _dataList.region),
+            dataList.append('form_phone', `${_dataList.beforePhone}-${_dataList.phone}`),
+            dataList.append('form_email', _dataList.email),
+            dataList.append('form_serve', _dataList.serve),
+            dataList.append('form_source', _dataList.source),
+            dataList.append('form_page', this.pageUrl),
+            dataList.append('form_raido', this.radio),
+            dataList.append('form_radio1', this.radio1),
+            dataList.append('form_radio2', this.radio2),
+            this.$confirm('此操作将提交信息, 是否继续?', '提示', {
+              confirmButtonText: '提交',
+              cancelButtonText: '取消',
+              type: 'warning'
+            }).then(() => {
+              fetch('/api', {
+                method: 'POST',
+                body: dataList,
+              }).then(res => res.json())
+                .then(res => {
+                  if (res.code == 1) {
+                    this.radio = false;
+                    this.radio1 = false;
+                    this.radio2 = false;
+                    this.ruleForm.email = '';
+                    alert(res.data);
+                    this.$refs[formName].resetFields();
+                  }
+                })
+            }).catch(() => {
+              Message({ message: '已取消删除', type: 'info' });
+            });
         } else {
           console.log('error submit!!');
           return false;
@@ -224,7 +247,6 @@ export default {
     //     this.$refs.submitButt.click();
     //   }
     // },
-
   },
 };
 </script>
@@ -367,6 +389,9 @@ a {
   // ::v-deep .el-input {
   //   font-size: 1.2rem;
   // }
+  ::v-deep .el-form-item__content {
+    display: flex;
+  }
 
   ::v-deep .el-input__inner {
     // border: 0px;
@@ -686,6 +711,10 @@ a {
     font-weight: 600;
   }
 
+  ::v-deep .el-form-item__content {
+    display: flex;
+  }
+
   ::v-deep .el-input__inner {
     border: 2px solid #fff;
     border-radius: 10px;
@@ -810,6 +839,7 @@ a {
                 &>div:nth-child(1) {
                   input {
                     color: #86c1e8;
+                    width: 25vw;
                   }
                 }
               }
@@ -1107,6 +1137,20 @@ a {
     100% {
       clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
     }
+  }
+}
+</style>
+
+<style>
+@media screen and (max-width: 767px) {
+  .el-message-box__wrapper {
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+  }
+
+  .el-message-box {
+    width: 80% !important;
+    margin: 0 auto !important;
   }
 }
 </style>

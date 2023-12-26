@@ -2,7 +2,6 @@ import axios from 'axios'
 let cancel ,promiseArr = {}//promiseArr拦截使用
 const CancelToken = axios.CancelToken
 axios.defaults.baseURL = 'https://api.cmerdental.com/wp-json/wp/v2'
-
 axios.defaults.headers = {
   // 'X-Requested-With': 'XMLHttpRequest',
   'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'

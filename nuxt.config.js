@@ -104,7 +104,26 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules  站点地图
   modules: [
     '@nuxtjs/sitemap',
+    '@nuxtjs/proxy'
   ],
+  axios: {
+    proxy: true,
+    // credentials: true,
+    // baseURL:,
+    // headers: {
+      // 'Content-Type': 'application/json',
+      // 'X-Requested-With': 'XMLHttpRequest'
+    // }
+  },
+  proxy:{
+    '/api': {
+      target:'https://forms.cmerdental.com/api.php/cms/addmsg',
+      changeOrigin: true,
+      pathRewrite: {
+        '^/api': ''
+      }
+    },
+  },
   sitemap: sitemap,
   //重定向路由
   router: {
