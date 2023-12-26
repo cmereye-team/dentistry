@@ -62,7 +62,7 @@
         </div>
         <div>©2022 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
       </div>
-      <div class="mascot">
+      <div class="mascot" :class="[isCouldAnimate == true ? 'couldAnimate afterMain' : 'couldVanish afterVanish']">
         <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
           alt="希小牙">
       </div>
@@ -78,18 +78,27 @@ export default {
   },
   created() { },
   mounted() {
+    // 获取文档宽度
     window.addEventListener('scroll', this.checkScroll);
   },
   methods: {
     // 检测滚动条到底部
     checkScroll() {
+      const condition = document.documentElement.clientWidth > 767;
+      let heightNum = 0
+      if (condition) {
+        heightNum = 100;
+      } else {
+        heightNum = 300
+      }
       const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
       const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
       const windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
-      if (scrollTop + windowHeight >= scrollHeight - 100) {
-        console.log(9998);
+      if (scrollTop + windowHeight >= scrollHeight - heightNum) {
+        console.log('到底了');
         this.isCouldAnimate = true;
       } else {
+        console.log('没到');
         this.isCouldAnimate = false;
       }
     }
@@ -364,6 +373,122 @@ a {
 }
 
 @media only screen and (max-width: 767px) {
+  .couldVanish {
+    height: 154px;
+
+    img {
+      animation: .5s vanish linear;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .couldAnimate {
+    height: 154px;
+
+    img {
+      animation: .7s identifier cubic-bezier(0, 0.29, 0.48, 1.28);
+      animation-fill-mode: forwards;
+    }
+  }
+
+  @keyframes identifier {
+    0% {
+      height: 154px;
+      z-index: -1;
+      opacity: 0;
+      top: -20px !important;
+      transform: translate(-20px, -1050px) rotate(-5deg);
+    }
+
+    50% {
+      height: 154px;
+      z-index: 5;
+      opacity: 0.7;
+      top: -20px !important;
+      transform: translateX(0, -20px) rotate(-5deg);
+    }
+
+    100% {
+      height: 154px;
+      z-index: 5;
+      opacity: 1;
+      top: -20px !important;
+      transform: translateX(20px, 0) rotate(-5deg);
+    }
+  }
+
+  @keyframes vanish {
+    0% {
+      height: 154px;
+      z-index: 5;
+      opacity: 1;
+      top: -20px !important;
+      transform: translateX(20px, 0) rotate(-5deg);
+    }
+
+    50% {
+      height: 154px;
+      z-index: 5;
+      opacity: 0.5;
+      top: -20px !important;
+      transform: translateX(0, -20px) rotate(-5deg);
+    }
+
+    100% {
+      height: 154px;
+      z-index: -1;
+      opacity: 0;
+      top: -20px !important;
+      transform: translate(-20px, -1050px) rotate(-5deg);
+    }
+  }
+
+  .afterMain::after {
+    height: 264px;
+    animation: .9s afterImg linear;
+    animation-fill-mode: forwards;
+  }
+
+
+  @keyframes afterImg {
+    0% {
+      opacity: 0;
+      height: 1px;
+    }
+
+    70% {
+      height: 132px;
+      opacity: 0.3;
+    }
+
+    100% {
+      height: 264px;
+      opacity: 1;
+    }
+  }
+
+  .afterVanish::after {
+    height: 264px;
+    animation: .9s afterImgVanish linear;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes afterImgVanish {
+    0% {
+      height: 264px;
+      opacity: 1;
+    }
+
+    70% {
+      height: 146;
+      opacity: 0.7;
+    }
+
+    100% {
+      opacity: 0;
+      height: 1px;
+    }
+  }
   .pcShow {
     display: none !important;
   }
@@ -472,7 +597,7 @@ a {
     }
   }
 
-  .main_footer::after {
+  .mascot::after {
     content: "";
     background: url('https://static.cmereye.com/imgs/2023/12/eac68ef91ffba77f.png');
     background-position: 100% 100%;
@@ -482,7 +607,7 @@ a {
     display: inline-block;
     height: 16.5rem;
     position: absolute;
-    bottom: 0;
+    bottom: -100%;
     right: 0;
   }
 }
