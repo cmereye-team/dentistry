@@ -48,18 +48,18 @@
               </el-form-item>
               <div class="radioInfo">
                 <div class="radiocon">
-                  <el-radio v-model="radio" name="confidentiality">
+                  <el-radio v-model="radio" name="confidentiality" label="我已知曉内容皆保密處理">
                     <!-- value="我已知曉内容皆保密處理" -->
                     閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br />閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio1" name="privary">
+                  <el-radio v-model="radio1" name="privary" label="我已知曉同意收集個人資料及私隱">
                     <!-- value="我已知曉同意收集個人資料及私隱" -->
                     本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio2" name="broadcast">
+                  <el-radio v-model="radio2" name="broadcast" label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊">
                     <!-- value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。" -->
                     本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio>
                 </div>
@@ -149,7 +149,7 @@ export default {
       ],
       radio: '我已知曉内容皆保密處理',
       radio1: '我已知曉同意收集個人資料及私隱',
-      radio2: '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。',
+      radio2: '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊',
       ruleForm: {
         name: "",
         region: "",
@@ -195,9 +195,9 @@ export default {
             dataList.append('form_serve', _dataList.serve),
             dataList.append('form_source', _dataList.source),
             dataList.append('form_page', this.pageUrl),
-            dataList.append('form_raido', '我已知曉内容皆保密處理'),
-            dataList.append('form_radio1', '我已知曉同意收集個人資料及私隱'),
-            dataList.append('form_radio2', '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊'),
+            dataList.append('form_radio', this.radio),
+            dataList.append('form_radio1', this.radio1),
+            dataList.append('form_radio2', this.radio2),
             this.$confirm('此操作将提交信息, 是否继续?', '提示', {
               confirmButtonText: '提交',
               cancelButtonText: '取消',
@@ -209,9 +209,9 @@ export default {
               }).then(res => res.json())
                 .then(res => {
                   if (res.code == 1) {
-                    this.radio = false;
-                    this.radio1 = false;
-                    this.radio2 = false;
+                    this.radio = '';
+                    this.radio1 = '';
+                    this.radio2 = '';
                     this.ruleForm.email = '';
                     alert(res.data);
                     this.$refs[formName].resetFields();
