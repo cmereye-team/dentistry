@@ -195,9 +195,9 @@ export default {
             dataList.append('form_serve', _dataList.serve),
             dataList.append('form_source', _dataList.source),
             dataList.append('form_page', this.pageUrl),
-            dataList.append('form_raido', this.radio),
-            dataList.append('form_radio1', this.radio1),
-            dataList.append('form_radio2', this.radio2),
+            dataList.append('form_raido', '我已知曉内容皆保密處理'),
+            dataList.append('form_radio1', '我已知曉同意收集個人資料及私隱'),
+            dataList.append('form_radio2', '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊'),
             this.$confirm('此操作将提交信息, 是否继续?', '提示', {
               confirmButtonText: '提交',
               cancelButtonText: '取消',
