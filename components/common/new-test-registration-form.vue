@@ -147,9 +147,9 @@ export default {
           name: '其他', id: '4'
         },
       ],
-      radio: true,
-      radio1: true,
-      radio2: true,
+      radio: '我已知曉内容皆保密處理',
+      radio1: '我已知曉同意收集個人資料及私隱',
+      radio2: '本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。',
       ruleForm: {
         name: "",
         region: "",
