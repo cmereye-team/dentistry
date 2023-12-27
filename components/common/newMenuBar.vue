@@ -1207,7 +1207,7 @@ export default {
     }
   }
 
-  .service_link {}
+  // .service_link {}
 
   @keyframes scroll {
     from {
