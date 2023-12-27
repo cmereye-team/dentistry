@@ -571,7 +571,6 @@ export default {
       flex-direction: column;
       align-items: center;
       padding-top: 50px;
-      border: 1px solid pink;
 
       &>div {
         display: flex;
