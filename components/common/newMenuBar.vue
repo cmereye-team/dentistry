@@ -621,6 +621,12 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@font-face {
+  font-family: 'Noto Sans CJK TC';
+  font-style: normal;
+  font-weight: 500;
+  src: url('@/asset/font/NotoSansCJKtc.woff');
+}
 //pc
 @media only screen and (min-width: 760px) {
   .service_link:hover+.serve_list {
@@ -717,7 +723,7 @@ export default {
               margin-top: 6.5px;
               color: #505050;
               text-align: center;
-              font-family: 'Noto Sans HK';
+              font-family: 'Noto Sans CJK TC';
               font-size: 11px;
               font-style: normal;
               font-weight: 500;
