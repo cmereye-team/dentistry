@@ -717,7 +717,7 @@ export default {
               margin-top: 6.5px;
               color: #505050;
               text-align: center;
-              font-family: Noto Sans CJK TC;
+              font-family: 'Noto Sans CJK TC';
               font-size: 11px;
               font-style: normal;
               font-weight: 500;
@@ -746,7 +746,7 @@ export default {
     &>div::before {
       content: '';
       background: #299DF0;
-      width: 18px;
+      width: 13px;
       height: 2px;
       display: inline-block;
       position: absolute;
