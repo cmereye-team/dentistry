@@ -643,7 +643,10 @@ export default {
     transform: translateY(-50%);
     right: 5px;
   }
-
+  .service_link:hover::after {
+    transition: all 0.3s;
+    transform: translateY(-50%) rotate(90deg);
+  }
   .serve_list:hover {
     display: block;
   }
