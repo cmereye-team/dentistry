@@ -18,15 +18,15 @@
         <div class="border_box">
           <div></div>
           <div></div>
-          <div class="border1_round">口齒不清</div>
+          <div class="border1_round hover_round">口齒不清</div>
           <div></div>
           <div></div>
           <div></div>
         </div>
         <div class="border_box1">
-          <div class="border2_round">咀嚼困難</div>
-          <div class="border2_round1">臉型歪斜</div>
-          <div class="border2_round2">腦退化</div>
+          <div class="border2_round hover_round">咀嚼困難</div>
+          <div class="border2_round1 hover_round">臉型歪斜</div>
+          <div class="border2_round2 hover_round">腦退化</div>
           <div></div>
           <div></div>
         </div>
@@ -34,10 +34,10 @@
           <div></div>
           <div></div>
           <div></div>
-          <div class="border3_round">牙周疾病</div>
+          <div class="border3_round hover_round">牙周疾病</div>
           <div></div>
           <div></div>
-          <div class="border3_round1">咬合不正</div>
+          <div class="border3_round1 hover_round">咬合不正</div>
         </div>
       </div>
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
@@ -94,6 +94,7 @@ export default {
     this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
   },
   methods: {
+    // 鼠标移入停止动画 放大1.1倍
   },
 };
 </script>
@@ -531,79 +532,80 @@ export default {
   @keyframes identifier4 {
     0% {
       transform: scale(0.8);
-      font-size:30px;
+      font-size: 30px;
       opacity: 1;
     }
 
     35% {
       transform: scale(0.9);
-      font-size:30px;
+      font-size: 30px;
       opacity: 0.8;
     }
 
     65% {
       transform: scale(0.8);
-      font-size:30px;
+      font-size: 30px;
       opacity: 0.7;
     }
 
     100% {
       transform: scale(1);
-      font-size:30px;
+      font-size: 30px;
       opacity: 0.7;
     }
   }
+
   @keyframes identifier5 {
     0% {
       transform: scale(0.8);
-      font-size:50px;
+      font-size: 50px;
       opacity: 1;
     }
 
     35% {
       transform: scale(1);
-      font-size:50px;
+      font-size: 50px;
       opacity: 0.8;
     }
 
     65% {
       transform: scale(0.8);
-      font-size:50px;
+      font-size: 50px;
       opacity: 0.7;
     }
 
     100% {
       transform: scale(0.9);
-      font-size:50px;
+      font-size: 50px;
       opacity: 1;
     }
   }
+
   @keyframes identifier6 {
     0% {
       transform: scale(0.8);
-      font-size:42px;
+      font-size: 42px;
       opacity: 1;
     }
 
     35% {
       transform: scale(0.9);
-      font-size:42px;
+      font-size: 42px;
       opacity: 0.8;
     }
 
     65% {
       transform: scale(0.8);
-      font-size:42px;
+      font-size: 42px;
       opacity: 0.7;
     }
 
     100% {
       transform: scale(1);
-      font-size:42px;
+      font-size: 42px;
       opacity: 0.7;
     }
   }
-
   .mbshow {
     display: none;
   }
