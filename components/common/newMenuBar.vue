@@ -717,7 +717,7 @@ export default {
               margin-top: 6.5px;
               color: #505050;
               text-align: center;
-              font-family: 'Noto Sans CJK TC';
+              font-family: 'Noto Sans HK';
               font-size: 11px;
               font-style: normal;
               font-weight: 500;
