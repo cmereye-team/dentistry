@@ -136,7 +136,7 @@ a {
       z-index: -1;
       opacity: 0;
       top: -20px !important;
-      transform: translate(-20px, -1050px) rotate(-5deg);
+      transform: translate(-20px, -150px) rotate(-5deg);
     }
 
     50% {
@@ -178,7 +178,7 @@ a {
       z-index: -1;
       opacity: 0;
       top: -20px !important;
-      transform: translate(-20px, -1050px) rotate(-5deg);
+      transform: translate(-20px, -150px) rotate(-5deg);
     }
   }
 
