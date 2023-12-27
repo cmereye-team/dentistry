@@ -259,7 +259,7 @@ export default {
     font-weight: 700;
     line-height: 160%;
     letter-spacing: 0;
-    animation: identifier4 10s ease infinite;
+    animation: identifier5 10s ease infinite;
   }
 
   .border_box2 {
@@ -338,7 +338,7 @@ export default {
     line-height: 108%;
     letter-spacing: 0;
     margin: 0 10px;
-    animation: identifier4 8s ease-in-out infinite;
+    animation: identifier6 8s ease-in-out infinite;
   }
 
   .border3_round1 {
@@ -393,22 +393,22 @@ export default {
 
   @keyframes amplification2 {
     0% {
-      transform: scale(1.1) translate(-20%, 30%);
+      transform: scale(1.1) translate(20%, 30%);
       opacity: 0.7;
     }
 
     30% {
-      transform: scale(1) translate(20%, -20%);
+      transform: scale(1) translate(20%, 50%);
       opacity: 1;
     }
 
     70% {
-      transform: scale(0.9) translate(-30%, -20%);
+      transform: scale(0.9) translate(30%, 70%);
       opacity: 0.8;
     }
 
     100% {
-      transform: scale(1.1) translate(-20%, 30%);
+      transform: scale(1.1) translate(20%, 30%);
       opacity: 1;
     }
   }
@@ -448,7 +448,7 @@ export default {
     }
 
     70% {
-      transform: scale(1) translate(10%, -20%) rotate(240deg);
+      transform: scale(1) translate(-10%, -20%) rotate(240deg);
       opacity: 0.9;
     }
 
@@ -479,24 +479,24 @@ export default {
   @keyframes identifier2 {
     0% {
       transform: scale(0.9);
-      font-size: 25px;
+      font-size: 27px;
       opacity: 1;
     }
 
     25% {
-      transform: scale(1.2);
-      font-size: 26px;
+      transform: scale(1.1);
+      font-size: 27px;
       opacity: 0.7;
     }
 
     75% {
-      transform: scale(1.1);
-      font-size: 26px;
+      transform: scale(1);
+      font-size: 27px;
       opacity: 0.7;
     }
 
     100% {
-      transform: scale(1);
+      transform: scale(1.1);
       opacity: 1;
       font-size: 27px;
     }
@@ -504,25 +504,25 @@ export default {
 
   @keyframes identifier3 {
     0% {
-      transform: scale(0.9) translateY(0%);
-      font-size: 15px;
+      transform: scale(1.1) translateY(0%);
+      font-size: 17px;
       opacity: 1;
     }
 
     25% {
-      transform: scale(1.2) translateY(10%);
-      font-size: 16px;
+      transform: scale(1) translateY(10%);
+      font-size: 17px;
       opacity: 0.7;
     }
 
     75% {
-      transform: scale(1.1) translateY(20%);
-      font-size: 16px;
+      transform: scale(0.9) translateY(20%);
+      font-size: 17px;
       opacity: 0.7;
     }
 
     100% {
-      transform: scale(1) translateY(10%);
+      transform: scale(0.8) translateY(10%);
       opacity: 1;
       font-size: 17px;
     }
@@ -531,21 +531,75 @@ export default {
   @keyframes identifier4 {
     0% {
       transform: scale(0.8);
+      font-size:30px;
       opacity: 1;
     }
 
     35% {
       transform: scale(0.9);
+      font-size:30px;
       opacity: 0.8;
     }
 
     65% {
       transform: scale(0.8);
+      font-size:30px;
       opacity: 0.7;
     }
 
     100% {
       transform: scale(1);
+      font-size:30px;
+      opacity: 0.7;
+    }
+  }
+  @keyframes identifier5 {
+    0% {
+      transform: scale(0.8);
+      font-size:50px;
+      opacity: 1;
+    }
+
+    35% {
+      transform: scale(1);
+      font-size:50px;
+      opacity: 0.8;
+    }
+
+    65% {
+      transform: scale(0.8);
+      font-size:50px;
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(0.9);
+      font-size:50px;
+      opacity: 1;
+    }
+  }
+  @keyframes identifier6 {
+    0% {
+      transform: scale(0.8);
+      font-size:42px;
+      opacity: 1;
+    }
+
+    35% {
+      transform: scale(0.9);
+      font-size:42px;
+      opacity: 0.8;
+    }
+
+    65% {
+      transform: scale(0.8);
+      font-size:42px;
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1);
+      font-size:42px;
       opacity: 0.7;
     }
   }
