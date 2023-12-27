@@ -14,7 +14,31 @@
     <div class="main-container agomphosis">
       <div class="why_significance isArrowQuestion">缺牙不補會有哪些後遺症？</div>
       <div>
-        <img src="https://static.cmereye.com/imgs/2023/12/f686533c6de00f5b.png" alt="">
+        <!-- <img src="https://static.cmereye.com/imgs/2023/12/f686533c6de00f5b.png" alt=""> -->
+        <div class="border_box">
+          <div></div>
+          <div></div>
+          <div class="border1_round">口齒不清</div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="border_box1">
+          <div class="border2_round">咀嚼困難</div>
+          <div class="border2_round1">臉型歪斜</div>
+          <div class="border2_round2">腦退化</div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="border_box2">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div class="border3_round">牙周疾病</div>
+          <div></div>
+          <div></div>
+          <div class="border3_round1">咬合不正</div>
+        </div>
       </div>
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" />
@@ -77,6 +101,455 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .border_box {
+    position: relative;
+    margin-left: -5%;
+    margin-bottom: -1.5%;
+
+    &>div:nth-child(1) {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #8FCFF2;
+      border-radius: 50%;
+      left: -50%;
+      bottom: 25%;
+      animation: identifier 10s linear infinite;
+    }
+
+    &>div:nth-child(2) {
+      position: absolute;
+      width: 39px;
+      height: 39px;
+      background: #BFE4F8;
+      border-radius: 50%;
+      left: -35%;
+      bottom: 20%;
+      animation: amplification 7s linear infinite;
+    }
+
+    &>div:nth-child(4) {
+      position: absolute;
+      width: 45px;
+      height: 45px;
+      background: #D3ECF8;
+      border-radius: 50%;
+      right: -40%;
+      top: 20%;
+      animation: amplification2 9s linear infinite;
+    }
+
+    &>div:nth-child(5) {
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      background: #BFE4F8;
+      border-radius: 50%;
+      right: -10%;
+      top: 0%;
+      animation: identifier 10s linear infinite;
+    }
+
+    &>div:nth-child(6) {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #57B2F3;
+      border-radius: 50%;
+      right: -55%;
+      top: 10%;
+      animation: identifier 9s linear infinite;
+    }
+  }
+
+  .border_box1 {
+    margin-top: -2%;
+
+    &>div:nth-child(4) {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #BFE4F8;
+      border-radius: 50%;
+      right: 5%;
+      bottom: 0;
+      animation: identifier 10s linear infinite;
+    }
+
+    &>div:nth-child(5) {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #8FCFF2;
+      border-radius: 50%;
+      right: 0%;
+      bottom: 10%;
+      animation: identifier 10s linear infinite;
+    }
+  }
+
+  .border1_round {
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+    width: 135px;
+    height: 134px;
+    background: #D3ECF8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0;
+    animation: identifier2 7s linear infinite;
+  }
+
+  .border2_round {
+    width: 158px;
+    height: 158px;
+    background: #D3ECF8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+    letter-spacing: 0;
+    margin-top: 3%;
+    animation: identifier4 6s linear infinite;
+  }
+
+  .border2_round1 {
+    margin: 0 10px;
+    width: 98px;
+    height: 98px;
+    background: #D3ECF8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 17.913px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+    letter-spacing: 0;
+    animation: identifier3 7s linear infinite;
+  }
+
+  .border2_round2 {
+    width: 211px;
+    height: 211px;
+    background: #7FC8F0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: 0;
+    animation: identifier4 10s ease infinite;
+  }
+
+  .border_box2 {
+    margin-top: -2.5%;
+    margin-left: 6%;
+
+    &>div:nth-child(1) {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      background: #D3ECF8;
+      border-radius: 50%;
+      left: -20%;
+      top: 15%;
+      animation: amplification3 8s linear infinite;
+    }
+
+    &>div:nth-child(2) {
+      position: absolute;
+      width: 19px;
+      height: 19px;
+      background: #BFE4F8;
+      border-radius: 50%;
+      left: -20%;
+      top: 55%;
+      animation: identifier 10s linear infinite;
+    }
+
+    &>div:nth-child(3) {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #57B2F3;
+      border-radius: 50%;
+      left: -6%;
+      top: 52%;
+      animation: identifier 10s linear infinite;
+    }
+
+    &>div:nth-child(5) {
+      position: absolute;
+      width: 56px;
+      height: 56px;
+      background: #8FCFF2;
+      border-radius: 50%;
+      right: 30%;
+      bottom: 0%;
+      animation: amplification4 9s linear infinite;
+    }
+
+    &>div:nth-child(6) {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      background: #ECF7FC;
+      border-radius: 50%;
+      right: 50%;
+      bottom: 0%;
+      animation: identifier 10s linear infinite;
+    }
+  }
+
+  .border3_round {
+    width: 216px;
+    height: 216px;
+    background: #A4D8F4;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+    letter-spacing: 0;
+    margin: 0 10px;
+    animation: identifier4 8s ease-in-out infinite;
+  }
+
+  .border3_round1 {
+    width: 140px;
+    height: 140px;
+    background: #D3ECF8;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #50565E;
+    font-family: Noto Sans;
+    font-size: 27.327px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108%;
+    letter-spacing: 0;
+    animation: identifier2 5s linear infinite;
+  }
+
+  @keyframes amplification {
+    0% {
+      transform: scale(1) translate(10%, 10%) rotate(0deg);
+      opacity: 0.7;
+    }
+
+    20% {
+      transform: scale(0.9) translate(-10%, 20%) rotate(72deg);
+      opacity: 0.8;
+    }
+
+    40% {
+      transform: scale(1) translate(-20%, -20%) rotate(144deg);
+      opacity: 0.9;
+    }
+
+    60% {
+      transform: scale(0.9) translate(20%, -20%) rotate(216deg);
+      opacity: 1;
+    }
+
+    80% {
+      transform: scale(1.1) translate(20%, 10%) rotate(288deg);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1) translate(10%, 10%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes amplification2 {
+    0% {
+      transform: scale(1.1) translate(-20%, 30%);
+      opacity: 0.7;
+    }
+
+    30% {
+      transform: scale(1) translate(20%, -20%);
+      opacity: 1;
+    }
+
+    70% {
+      transform: scale(0.9) translate(-30%, -20%);
+      opacity: 0.8;
+    }
+
+    100% {
+      transform: scale(1.1) translate(-20%, 30%);
+      opacity: 1;
+    }
+  }
+
+  @keyframes amplification3 {
+    0% {
+      transform: scale(1) translate(30%, -10%) rotate(0deg);
+      opacity: 0.7;
+    }
+
+    33% {
+      transform: scale(0.9) translate(30%, 20%) rotate(72deg);
+      opacity: 0.8;
+    }
+
+
+    66% {
+      transform: scale(1.1) translate(30%, -20%) rotate(216deg);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1) translate(30%, -10%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+  @keyframes amplification4 {
+    0% {
+      transform: scale(1) translate(-10%, 0%) rotate(0deg);
+      opacity: 1;
+    }
+
+    30% {
+      transform: scale(0.9) translate(0%, -10%) rotate(120deg);
+      opacity: 0.8;
+    }
+
+    70% {
+      transform: scale(1) translate(10%, -20%) rotate(240deg);
+      opacity: 0.9;
+    }
+
+    100% {
+      transform: scale(1) translate(-10%, 0%) rotate(360deg);
+      opacity: 1;
+    }
+  }
+
+
+  @keyframes identifier {
+    0% {
+      transform: scale(1.2) translate(10%, 10%);
+      opacity: .7;
+    }
+
+    50% {
+      transform: scale(1.6) translate(0%, 0%);
+      opacity: 1;
+    }
+
+    100% {
+      transform: scale(1.2) translate(10%, 10%);
+      opacity: .8;
+    }
+  }
+
+  @keyframes identifier2 {
+    0% {
+      transform: scale(0.9);
+      font-size: 25px;
+      opacity: 1;
+    }
+
+    25% {
+      transform: scale(1.2);
+      font-size: 26px;
+      opacity: 0.7;
+    }
+
+    75% {
+      transform: scale(1.1);
+      font-size: 26px;
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+      font-size: 27px;
+    }
+  }
+
+  @keyframes identifier3 {
+    0% {
+      transform: scale(0.9) translateY(0%);
+      font-size: 15px;
+      opacity: 1;
+    }
+
+    25% {
+      transform: scale(1.2) translateY(10%);
+      font-size: 16px;
+      opacity: 0.7;
+    }
+
+    75% {
+      transform: scale(1.1) translateY(20%);
+      font-size: 16px;
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1) translateY(10%);
+      opacity: 1;
+      font-size: 17px;
+    }
+  }
+
+  @keyframes identifier4 {
+    0% {
+      transform: scale(0.8);
+      opacity: 1;
+    }
+
+    35% {
+      transform: scale(0.9);
+      opacity: 0.8;
+    }
+
+    65% {
+      transform: scale(0.8);
+      opacity: 0.7;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 0.7;
+    }
+  }
+
   .mbshow {
     display: none;
   }
@@ -92,9 +565,19 @@ export default {
     margin-top: 126px;
 
     &>div:nth-child(2) {
-      margin: 67px auto 84px;
+      // margin: 67px auto 84px;
       display: flex;
       justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      border: 1px solid pink;
+
+      &>div {
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
     }
   }
 
