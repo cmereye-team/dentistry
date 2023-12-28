@@ -141,9 +141,11 @@ export default {
   .mbShow {
     display: none;
   }
+
   ::v-deep .mbShow {
     display: none;
   }
+
   .superiority-case-step {
     margin-top: 109px;
   }
@@ -343,6 +345,7 @@ export default {
   .pcShow {
     display: none;
   }
+
   ::v-deep .img_absolute {
     right: 18% !important;
   }
@@ -382,11 +385,13 @@ export default {
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
             display: inline-block;
             width: 100%;
-            height: 1px;
+            height: 2px;
             background: #57B2F3;
+            max-width: 108px;
+            left: 50%;
+            transform: translateX(-50%);
           }
 
           &>div:nth-child(2) {
@@ -604,5 +609,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>
