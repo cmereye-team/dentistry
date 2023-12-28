@@ -186,12 +186,12 @@ const getRoutes = resolve => [
     component: resolve('pages/policy'),
 
   },
+  // {
+  //   path: '/service',
+  //   component: resolve('pages/service'),
+  // },
   {
     path: '/service',
-    component: resolve('pages/service'),
-  },
-  {
-    path: '/new-service',
     component: resolve('pages/new-service'),
   },
   // {
