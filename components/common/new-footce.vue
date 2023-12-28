@@ -413,11 +413,11 @@ export default {
     }
   }
 
-  .face-primary {
-    img {
+  // .face-primary {
+    // img {
       // padding-left: 0.5vw;
-    }
-  }
+    // }
+  // }
 
   .online {
     position: fixed;
@@ -559,7 +559,7 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
-  .mb_height {}
+  // .mb_height {}
 
   .mbNavigation {
     background: url(https://static.cmereye.com/imgs/2023/12/4cd06b2fb6ea5baa.png);
