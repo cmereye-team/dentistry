@@ -162,7 +162,7 @@ export default {
     // }
     // }, 100);
     if (process.client) {
-      console.log(process, 'process.client');
+      // console.log(process, 'process.client');
       this.screenWidth = document.body.clientWidth
       window.onresize = () => {
         return (() => {

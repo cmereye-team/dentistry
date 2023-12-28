@@ -23,7 +23,7 @@
         </div>
         <div>
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" />
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1820" :minNum="640" />
         </div>
         <div class="pcShow">
           <img src="https://static.cmereye.com/imgs/2023/12/69ef54f26b6fbfc4.png" alt="">
@@ -244,6 +244,7 @@ export default {
   ::v-deep .img_absolute {
     right: 18% !important;
   }
+
   .all-ceramic-one {
     margin-top: 101px;
     padding: 0 20px;

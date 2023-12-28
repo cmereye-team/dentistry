@@ -24,7 +24,7 @@ import menuBar from "@/components/common/newMenuBar.vue";
 import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import footce from "@/components/common/new-footce.vue"
-import registration from "@/components/common/new-registration-form.vue"
+import registration from "@/components/common/new-test-registration-form.vue"
 import foot from "@/components/common/new-foot.vue"
 import Banner from "@/components/about-me/banner/new-index.vue";
 import serve from "@/components/about-me/serve/new-index.vue";

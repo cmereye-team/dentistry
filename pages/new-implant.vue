@@ -23,7 +23,7 @@ import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
 import newBtn from '@/components/common/new-btn.vue';
-import registration from "@/components/common/new-registration-form.vue"
+import registration from "@/components/common/new-test-registration-form.vue"
 import zhiya from "@/components/implant/zhiya/new-index.vue"
 import agomphiasisYouth from '@/components/implant/agomphiasis-youth/index.vue';
 import newStep from '@/components/implant/new-step/index.vue';

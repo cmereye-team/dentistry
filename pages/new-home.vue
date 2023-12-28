@@ -24,7 +24,7 @@ import debtistryHealth from "@/components/about-me/debtistry-health/new-index.vu
 import menuBar from "@/components/common/newMenuBar.vue";
 import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
-import registration from "@/components/common/new-registration-form.vue"
+import registration from "@/components/common/new-test-registration-form.vue"
 import foot from "@/components/common/new-foot.vue"
 export default {
   components: {

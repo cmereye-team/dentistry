@@ -17,7 +17,7 @@ import menuBar from "@/components/common/newMenuBar.vue";
 import footce from "@/components/common/new-footce.vue"
 import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/new-foot.vue"
-import registration from "@/components/common/new-registration-form.vue"
+import registration from "@/components/common/new-test-registration-form.vue"
 import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
 import stepConditionAttention from '@/components/therapy/step-condition-attention/index.vue';
 import therapy from "@/components/therapy/therapy/new-index.vue"

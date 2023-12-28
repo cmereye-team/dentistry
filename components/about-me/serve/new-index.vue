@@ -55,8 +55,7 @@
           </div>
         </div>
       </div>
-      <a class="serve_btn bp-btn"
-        href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
+      <a class="serve_btn bp-btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="78" height="88" viewBox="0 0 78 88" fill="none">
             <g filter="url(#filter0_d_162_825)">
@@ -324,7 +323,9 @@ export default {
   methods: {
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      if (this.scrollY < 2400 && this.scrollY > 1300) {
+      if (this.scrollY < 1800 && this.scrollY > 620) {
+        this.isHoverAnimate = true;
+      } else if (this.scrollY < 2480 && this.scrollY > 1290) {
         this.isHoverAnimate = true;
       } else {
         this.isHoverAnimate = false;
@@ -1111,7 +1112,7 @@ a {
     content: '';
     position: absolute;
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 1px;
     top: -1px;
     left: 0;
@@ -1122,7 +1123,7 @@ a {
     content: '';
     position: absolute;
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 1px;
     top: -1px;
     left: 0;
@@ -1133,7 +1134,7 @@ a {
     content: '';
     position: absolute;
     display: inline-block;
-    width: 30px;
+    width: 20px;
     height: 1px;
     top: -1px;
     left: 0;

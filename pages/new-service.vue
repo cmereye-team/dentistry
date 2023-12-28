@@ -7,7 +7,6 @@
     <mapGoogle />
     <registration />
     <foot />
-
   </div>
 </template>
 
