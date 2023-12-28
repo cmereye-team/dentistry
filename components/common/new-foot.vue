@@ -95,10 +95,8 @@ export default {
       const scrollHeight = document.documentElement.scrollHeight || document.body.scrollHeight;
       const windowHeight = document.documentElement.clientHeight || document.body.clientHeight;
       if (scrollTop + windowHeight >= scrollHeight - heightNum) {
-        console.log('到底了');
         this.isCouldAnimate = true;
       } else {
-        console.log('没到');
         this.isCouldAnimate = false;
       }
     }

@@ -56,7 +56,7 @@
             class="pcShow" />以徹底清除，導致細菌<br class="mbShow" />繼續繁殖，造成感染擴散至形成牙瘡。
         </div>
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" />
+          :paddingSizeMb="paddingSizeMb"  :maxNum="2990" :minNum="1789" />
       </div>
     </div>
     <div class="attention main-container">

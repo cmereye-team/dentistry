@@ -14,7 +14,7 @@
         :maxWidth="maxWidth" />
       <div class="newBtn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" />
+        :paddingSizeMb="paddingSizeMb"  :maxNum="1621" :minNum="438" />
       </div>
     </div>
   </div>

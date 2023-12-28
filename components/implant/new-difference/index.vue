@@ -71,7 +71,7 @@
       </div>
     </div>
     <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-      :paddingSizeMb="paddingSizeMb" />
+      :paddingSizeMb="paddingSizeMb" :maxNum="5406" :minNum="4234" />
   </div>
 </template>
 

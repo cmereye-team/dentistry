@@ -82,18 +82,28 @@
           </div>
         </div>
       </div>
-      <a href="https://api.whatsapp.com/send?phone=85295128192" target="_blank" class="toothWash">
-        <div>
-          立即預約洗牙
-        </div>
-      </a>
+      <div style="margin-top: 150px;">
+        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+          :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
+      </div>
     </div>
   </div>
 </template>
 <script>
+import newBtn from '@/components/common/new-btn.vue';
 export default {
+  components: {
+    newBtn
+  },
   data() {
     return {
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: '立即預約洗牙',
+      isShowSvg: false,
+      mb: '',
+      paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
+      newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       currentIndex: 0,   // 当前点击的tab的索引
       value2: 0,
       several: 0,

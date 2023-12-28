@@ -9,7 +9,8 @@
               alt="預防牙周疾病">
           </div>
           <div>預防牙周疾病</div>
-          <div>定期洗牙有效預防牙齦炎和牙<br class="pcShow" />周炎。這些疾病常由牙菌膜長<br class="pcShow" />期積聚而引起，如不及時清<br class="pcShow" />除，會導致牙齦紅腫流血、牙<br class="pcShow" />齒鬆脫等問題。</div>
+          <div>定期洗牙有效預防牙齦炎和牙<br class="pcShow" />周炎。這些疾病常由牙菌膜長<br class="pcShow" />期積聚而引起，如不及時清<br
+              class="pcShow" />除，會導致牙齦紅腫流血、牙<br class="pcShow" />齒鬆脫等問題。</div>
         </div>
         <div>
           <div>
@@ -17,7 +18,8 @@
               alt="防止蛀牙">
           </div>
           <div>防止蛀牙</div>
-          <div>口腔中的細菌和食物殘渣是引<br class="pcShow" />起蛀牙的主要原因。定期洗牙<br class="pcShow" />可清除牙齒表面的牙菌膜和牙<br class="pcShow" />結石，減少蛀牙的風險。</div>
+          <div>口腔中的細菌和食物殘渣是引<br class="pcShow" />起蛀牙的主要原因。定期洗牙<br class="pcShow" />可清除牙齒表面的牙菌膜和牙<br
+              class="pcShow" />結石，減少蛀牙的風險。</div>
         </div>
         <div>
           <div>
@@ -36,32 +38,28 @@
           <div>
             <div><span>1</span></div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/12/6769c2cd162a065e.png"
-                alt="清除牙結石及牙菌膜">
+              <img src="https://static.cmereye.com/imgs/2023/12/6769c2cd162a065e.png" alt="清除牙結石及牙菌膜">
             </div>
             <div>利用超聲波震動儀器，清除牙結石及牙菌膜。</div>
           </div>
           <div>
             <div><span>2</span></div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/12/152aee531c736d95.png"
-                alt="利用刮牙石器去除牙結石">
+              <img src="https://static.cmereye.com/imgs/2023/12/152aee531c736d95.png" alt="利用刮牙石器去除牙結石">
             </div>
             <div>利用刮牙石器去除牙結石。</div>
           </div>
           <div>
             <div><span>3</span></div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/12/5b7618e6a93618fd.png"
-                alt="拋光打磨牙齒表面">
+              <img src="https://static.cmereye.com/imgs/2023/12/5b7618e6a93618fd.png" alt="拋光打磨牙齒表面">
             </div>
             <div>拋光打磨牙齒表面，去除牙漬及強化牙齒外層，避免藏污納垢，減低患上牙周病的風險。</div>
           </div>
           <div>
             <div><span>4</span></div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/12/d9e8d5230cea810c.png"
-                alt="塗上牙面氟化物助鞏固琺瑯質">
+              <img src="https://static.cmereye.com/imgs/2023/12/d9e8d5230cea810c.png" alt="塗上牙面氟化物助鞏固琺瑯質">
             </div>
             <div>塗上牙面氟化物助鞏固琺瑯質。</div>
           </div>
@@ -70,15 +68,11 @@
           <div>
             <div>
               <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/12/d52e23aad557311a.png"
-                  alt="清除牙結石及牙菌膜">
+                <img src="https://static.cmereye.com/imgs/2023/12/d52e23aad557311a.png" alt="清除牙結石及牙菌膜">
               </div>
               <div>
                 <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/12/779289004a2dc385.png"
-                    alt="1">
+                  <img src="https://static.cmereye.com/imgs/2023/12/779289004a2dc385.png" alt="1">
                 </div>
                 <div>利用超聲波震動儀器，清除牙結石及牙菌膜。</div>
               </div>
@@ -87,15 +81,11 @@
           <div>
             <div>
               <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/12/65e2d3775437a3f1.png"
-                  alt="利用刮牙石器去除牙結石">
+                <img src="https://static.cmereye.com/imgs/2023/12/65e2d3775437a3f1.png" alt="利用刮牙石器去除牙結石">
               </div>
               <div>
                 <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/12/cc37d29b318c00b6.png"
-                    alt="2">
+                  <img src="https://static.cmereye.com/imgs/2023/12/cc37d29b318c00b6.png" alt="2">
                 </div>
                 <div>利用刮牙石器去除牙結石。</div>
               </div>
@@ -110,9 +100,7 @@
               </div>
               <div>
                 <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/12/7fcf92c3e62095c0.png"
-                    alt="3">
+                  <img src="https://static.cmereye.com/imgs/2023/12/7fcf92c3e62095c0.png" alt="3">
                 </div>
                 <div>拋光打磨牙齒表面，去除牙漬及強化牙齒外層，避免藏污納垢，減低患上牙周病的風險。</div>
               </div>
@@ -121,15 +109,11 @@
           <div>
             <div>
               <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2023/12/c5ea9b912f7946e9.png"
-                  alt="塗上牙面氟化物助鞏固琺瑯質">
+                <img src="https://static.cmereye.com/imgs/2023/12/c5ea9b912f7946e9.png" alt="塗上牙面氟化物助鞏固琺瑯質">
               </div>
               <div>
                 <div>
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/12/83564b132e80b07f.png"
-                    alt="4">
+                  <img src="https://static.cmereye.com/imgs/2023/12/83564b132e80b07f.png" alt="4">
                 </div>
                 <div>塗上牙面氟化物助鞏固琺瑯質。</div>
               </div>
@@ -138,20 +122,34 @@
         </div>
       </div>
     </div>
-    <a href="https://api.whatsapp.com/send?phone=85295128192" target="_blank" class="toothWash">
+    <!-- <a href="https://api.whatsapp.com/send?phone=85295128192" target="_blank" class="toothWash">
       <div>
         立即預約洗牙
       </div>
-    </a>
+    </a> -->
+    <div style="margin: 90px 0">
+      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" :maxNum="3420" :minNum="2247" :newSvg="newSvg" />
+    </div>
   </div>
 </template>
 
 <script>
+import newBtn from '@/components/common/new-btn.vue';
 export default {
+  components: {
+    newBtn
+  },
   name: 'Regular Dental Cleaning',
   data() {
     return {
-
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: '立即預約洗牙',
+      isShowSvg: false,
+      mb: '',
+      paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
+      newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
     };
   },
   methods: {}
@@ -183,9 +181,11 @@ export default {
     position: relative;
     padding-bottom: 15px;
   }
+
   .isArrowQuestion {
     padding-left: 20px;
   }
+
   .why_significance::after {
     content: '';
     background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Vector.5u4eydocd6c0.png');
@@ -370,6 +370,7 @@ export default {
   .procedure {
     margin-top: 54px;
   }
+
   .pcShow {
     display: none;
   }
@@ -635,4 +636,5 @@ export default {
       right: 12%;
     }
   }
-}</style>
+}
+</style>

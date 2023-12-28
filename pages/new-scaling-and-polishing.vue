@@ -9,17 +9,17 @@
     <problem />
     <!-- <serve /> -->
     <mapGoogle />
-    <a href="https://api.whatsapp.com/send?phone=85295128192" target="_blank" class="toothWash">
-      <div>
-        立即預約洗牙
-      </div>
-    </a>
+    <div class="new_btn_scaling" style="margin:90px 0">
+      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" :maxNum="6240" :minNum="5034" :newSvg="newSvg" />
+    </div>
     <registration />
     <foot />
   </div>
 </template>
 
 <script>
+import newBtn from '@/components/common/new-btn.vue';
 import menuBar from "@/components/common/newMenuBar.vue";
 import bannerInsidePage from "@/components/common/new-banner-inside-page.vue";
 import mapGoogle from "@/components/common/new-googleMap.vue"
@@ -44,10 +44,18 @@ export default {
     scaleTeeth,
     foot,
     registration,
-    problem
+    problem,
+    newBtn
   },
   data() {
     return {
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: '立即預約洗牙',
+      isShowSvg: false,
+      mb: '',
+      paddingSize: '10px 100px',
+      paddingSizeMb: '6px 74px',
+      newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       bannerImg: {
         link: 'https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
         linkAll: 'https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 400w,  https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
@@ -80,6 +88,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and(min-width: 768px) {
+  ::v-deep .new_btn_scaling {
+    .img_absolute {
+      right: 68% !important;
+    }
+  }
+
   .toothWash {
     max-width: 1440px;
     display: flex;

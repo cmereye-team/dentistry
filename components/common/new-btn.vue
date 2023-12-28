@@ -1,6 +1,6 @@
 <template>
   <div>
-    <a class="serve_btn bp-btn" :href="linkHref" target="_blank">
+    <a class="serve_btn" :href="linkHref" target="_blank">
       <div v-if="newSvg" class="img_absolute">
         <img :src="newSvg" alt="">
       </div>
@@ -142,7 +142,7 @@
           </defs>
         </svg>
       </div>
-      <div class="btn_pc_style">
+      <div class="btn_pc_style" :class="[isHoverAnimate == true ? 'showPcHover' : '']">
         <div class="btn1" :style="{ padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
           <div v-if="isShowSvg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -199,13 +199,35 @@ export default {
     },
     newSvg: {
       type: String,
-    }
+    },
+    maxNum: {
+      type: Number,
+    },
+    minNum: {
+      type: Number,
+    },
   },
   data() {
     return {
+      scrollY: 0,
+      isHoverAnimate: false,
     }
   },
   mounted() {
+    window.addEventListener('scroll', this.getScrollY);
+  },
+  methods:{
+    getScrollY() {
+      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(this.scrollY,'scrollY');
+      if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
+        console.log(1);
+        this.isHoverAnimate = true;
+      } else {
+        console.log(2);
+        this.isHoverAnimate = false;
+      }
+    },
   },
   computed: {
   },
@@ -229,10 +251,6 @@ export default {
     justify-content: center;
     max-width: 100%;
     margin: 90px auto 0;
-
-  }
-
-  .serve_btn {
     position: relative;
     text-decoration: none;
 
@@ -243,7 +261,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style {
+  .serve_btn .btn_pc_style {
     position: relative;
     display: flex;
     justify-content: center;
@@ -258,7 +276,7 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn1,
+  .serve_btn .btn_pc_style .btn1,
   .btn2 {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
@@ -282,35 +300,41 @@ export default {
     }
   }
 
-  .bp-btn .btn_pc_style .btn2 {
+  .serve_btn .btn_pc_style .btn2 {
     color: #79828D;
     background: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: btnAnim .9s linear;
-    animation-fill-mode: forwards;
+    // animation: btnAnim .9s linear;
+    // animation-fill-mode: forwards;
     width: max-content;
     display: none;
   }
 
-  .bp-btn .btn_pc_style:hover {
-    .btn1 {
-      color: #79828D;
+  // .serve_btn .btn_pc_style:hover {
+  //   .btn1 {
+  //     color: #79828D;
 
-      path {
-        fill: #79828D;
-      }
-    }
+  //     path {
+  //       fill: #79828D;
+  //     }
+  //   }
 
+  //   .btn2 {
+  //     display: flex;
+  //     animation: btnAnim .9s linear;
+  //     animation-fill-mode: forwards;
+  //   }
+  // }
+  .serve_btn .showPcHover {
     .btn2 {
       display: flex;
       animation: btnAnim .9s linear;
       animation-fill-mode: forwards;
     }
   }
-
 
   @keyframes btnAnim {
     0% {
