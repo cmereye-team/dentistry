@@ -216,15 +216,12 @@ export default {
   mounted() {
     window.addEventListener('scroll', this.getScrollY);
   },
-  methods:{
+  methods: {
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      console.log(this.scrollY,'scrollY');
       if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
-        console.log(1);
         this.isHoverAnimate = true;
       } else {
-        console.log(2);
         this.isHoverAnimate = false;
       }
     },

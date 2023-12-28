@@ -5,7 +5,7 @@
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
     </div>
     <div class="coll-box">
-      <el-collapse v-model="activeNames" @change="handleChange" accordion>
+      <el-collapse v-model="activeNames" accordion>
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/free/Q.png" alt="">  :class="judgeActive('1')!==-1? 'backgroud1':'backgroud2'"-->
         <el-collapse-item name="1">
           <template slot="title">

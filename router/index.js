@@ -51,7 +51,11 @@ const getRoutes = resolve => [
   {
     path: '/invisalign',
     component: resolve('pages/invisalign'),
-
+  },
+  {
+      // 新版页面
+    path: '/new-invisalign',
+    component: resolve('pages/new-invisalign'),
   },
   {
     path: '/invisalign-new',
