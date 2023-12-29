@@ -19,9 +19,12 @@
         <div class="why_significance">成功案例</div>
         <div class="case_img_cursor">
           <div>
-            <div class="mbShow" :class="[beforeOrAfter === true? 'isAfter' : 'isBefore']">{{ beforeOrAfter === true ?
+            <div class="mbShow" :class="[beforeOrAfter === true ? 'isAfter' : 'isBefore']">{{ beforeOrAfter === true ?
               'after' : 'before' }}</div>
-            <img src="https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png" alt="">
+            <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png" alt="">
+            <img class="mbShow"
+              :src="beforeOrAfter === true ? 'https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png' : 'https://static.cmereye.com/imgs/2023/12/5e9595fdb766774d.png'"
+              alt="">
             <div @touchstart="gtouchstart()" @touchmove="gtouchmove()" @touchend="gtouchend()" class="mbShow case_img">
               <img :src=img alt="">
             </div>
@@ -30,10 +33,13 @@
             <div class="mbShow" :class="[beforeOrAfter1 === true ? 'isAfter' : 'isBefore']">{{
               beforeOrAfter1 === true ?
               'after' : 'before' }}</div>
-            <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png" alt="">
-            <img class="mbShow" src="https://static.cmereye.com/imgs/2023/12/ccffcb82bdf364b1.png" alt="">
-            <div @touchstart="gtouchstart1()" @touchmove="gtouchmove1()" @touchend="gtouchend1()" class="mbShow case_img"><img
-                :src=img1 alt=""></div>
+            <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/5bdef92e60f3c5c0.png" alt="">
+            <img class="mbShow"
+              :src="beforeOrAfter1 === true ? 'https://static.cmereye.com/imgs/2023/12/ccffcb82bdf364b1.png' : 'https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png'"
+              alt="">
+            <div @touchstart="gtouchstart1()" @touchmove="gtouchmove1()" @touchend="gtouchend1()" class="mbShow case_img">
+              <img :src=img1 alt="">
+            </div>
           </div>
         </div>
       </div>
@@ -200,6 +206,9 @@ export default {
   mounted() {
     // 获取屏幕宽度
     this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+    window.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
   },
 }
 </script>
@@ -218,15 +227,41 @@ export default {
     margin-top: 109px;
   }
 
+  .case {
+    cursor: url('https://static.cmereye.com/imgs/2023/12/31d23616c2087a0a.png'), auto;
+  }
+
   .case_img_cursor {
+
     &>div:nth-child(1) {
-      cursor: url('https://static.cmereye.com/imgs/2023/12/31d23616c2087a0a.png'), auto;
+      cursor: url('https://static.cmereye.com/imgs/2023/12/031788755ad5d5e3.png'), auto;
+    }
+
+    &>div:nth-child(1):hover {
+      background: url(https://static.cmereye.com/imgs/2023/12/5e9595fdb766774d.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      img {
+        opacity: 0;
+      }
     }
 
     &>div:nth-child(2) {
       cursor: url('https://static.cmereye.com/imgs/2023/12/031788755ad5d5e3.png'), auto;
     }
+
+    &>div:nth-child(2):hover {
+      background: url(https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+
+      img {
+        opacity: 0;
+      }
+    }
   }
+
 
   .superiority {
     &>div:nth-child(2) {
@@ -423,6 +458,7 @@ export default {
   .case_img {
     position: relative;
   }
+
   .case_img::after {
     content: '';
     background: url(https://static.cmereye.com/imgs/2023/12/3190a04b85e892b9.png);
@@ -433,6 +469,7 @@ export default {
     bottom: -120%;
     right: 20%;
   }
+
   .isAfter {
     color: #57B2F3;
     font-family: Noto Sans TC;
@@ -441,6 +478,7 @@ export default {
     font-weight: 700;
     line-height: 160%;
   }
+
   .isBefore {
     color: #79828D;
     font-family: Noto Sans TC;
@@ -550,7 +588,7 @@ export default {
           margin-bottom: 67px;
           position: relative;
 
-          &>div:nth-child(3) {
+          &>div:nth-child(4) {
             position: absolute;
             bottom: 8px;
             right: 9px;
