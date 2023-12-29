@@ -490,7 +490,7 @@ export default {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     animation: identifier 2s ease-in-out infinite;
 

@@ -50,7 +50,8 @@
         <div v-for="item in stepList" :key="item.id">
           <div class="pcShow">{{ item.id }}</div>
           <div>
-            <img :src="item.mb == true ? item.imgSrcMb : item.imgSrc" alt="">
+            <img class="pcShow" :src="item.imgSrc" alt="">
+            <img class="mbShow" :src="item.imgSrcMb" alt="">
           </div>
           <div>{{ item.title }}</div>
           <div>{{ item.content }}</div>
@@ -115,7 +116,7 @@ export default {
           id: 1,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/142749bf037eee93.png',
           imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/f94f08ae0f2b5642.png',
-          mb: true,
+          // mb: true,
           title: '術前諮詢',
           content: '檢查客人的口腔健康狀況，確保牙齒和牙周健康，塑造符合客人期望的牙齒形狀及顏色。'
         },
@@ -123,7 +124,7 @@ export default {
           id: 2,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/ff783fb4971ca5bc.png',
           imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/d061903ef5c3cb27.png',
-          mb: true,
+          // mb: true,
           title: '打磨牙面',
           content: '輕輕磨去牙齒表面的琺瑯質。'
         },
@@ -131,7 +132,7 @@ export default {
           id: 3,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/f2eced45c3943a76.png',
           imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/a536a3c4581c1012.png',
-          mb: true,
+          // mb: true,
           title: '印製牙模及拍攝X-Ray',
           content: '印製牙模，以度身設計及訂製專屬瓷牙貼片。'
         },
@@ -139,7 +140,7 @@ export default {
           id: 4,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/323c625a547644dc.png',
           imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/3688adf22cca6024.png',
-          mb: true,
+          // mb: true,
           title: '裝配貼片',
           content: '把牙貼片黏附在牙齒外側面，檢查黏合程度和顏色。'
         },
@@ -147,7 +148,7 @@ export default {
           id: 5,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/32e6ecc0d9c4355b.png',
           imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/4df5d4f93e52388d.png',
-          mb: true,
+          // mb: true,
           title: '定期追蹤',
           content: '裝上貼片後，需如真牙般對待。為確保其最佳狀態，建議按照牙醫的指示，定期覆診檢查及保養，以延長貼片壽命。'
         },
@@ -205,7 +206,7 @@ export default {
   },
   mounted() {
     // 获取屏幕宽度
-    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+    this.mb = window.innerWidth < 767 ? 'mb' : 'pc';
     window.addEventListener('contextmenu', function (e) {
       e.preventDefault();
     });
