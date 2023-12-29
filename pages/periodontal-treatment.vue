@@ -1,6 +1,5 @@
 <template>
   <div id="lay">
-
     <menuBar />
     <Banner />
     <periodontosis />
@@ -9,7 +8,6 @@
     <serve />
     <mapGoogle />
     <foot />
-
   </div>
 </template>
 
