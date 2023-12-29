@@ -7,8 +7,8 @@
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"> -->
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png" 
         srcset="https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/DentalCareMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png" 
-        title="牙齒健康" 
-        alt="牙齒健康" 
+        title="健康資訊" 
+        alt="健康資訊" 
         src="https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png"/>
 
 
@@ -22,7 +22,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/DentalCare.png 1650w,
             "> -->
       <div class="title">
-        牙齒健康
+        健康資訊
       </div>
       </div>
       <!-- <div class="carousel-item">

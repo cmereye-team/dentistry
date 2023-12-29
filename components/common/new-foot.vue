@@ -384,7 +384,7 @@ a {
     height: 154px;
 
     img {
-      animation: .7s identifier cubic-bezier(0, 0.29, 0.48, 1.28);
+      animation: .3s identifier cubic-bezier(0, 0, 0, 1.89);
       animation-fill-mode: forwards;
     }
   }
@@ -443,7 +443,7 @@ a {
 
   .afterMain::after {
     height: 264px;
-    animation: .9s afterImg linear;
+    animation: .3s afterImg linear;
     animation-fill-mode: forwards;
   }
 

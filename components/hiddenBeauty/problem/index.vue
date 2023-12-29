@@ -303,11 +303,11 @@ p {
   }
 
   .downArrow2 {
-    // display: inline-block;
-    // width: 12px;
-    // height: 12px;
-    // background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
-    // transform: rotate(-180deg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url(https://static.cmereye.com/static/lkximg/image/implant/+.png);
+    transform: rotate(-180deg);
   }
 
 

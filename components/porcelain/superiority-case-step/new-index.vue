@@ -17,9 +17,24 @@
     <div class="case">
       <div class="main-container">
         <div class="why_significance">成功案例</div>
-        <div>
-          <div><img src="https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png" alt=""></div>
-          <div><img src="https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png" alt=""></div>
+        <div class="case_img_cursor">
+          <div>
+            <div class="mbShow" :class="[beforeOrAfter === true? 'isAfter' : 'isBefore']">{{ beforeOrAfter === true ?
+              'after' : 'before' }}</div>
+            <img src="https://static.cmereye.com/imgs/2023/12/ea682545477e1c94.png" alt="">
+            <div @touchstart="gtouchstart()" @touchmove="gtouchmove()" @touchend="gtouchend()" class="mbShow case_img">
+              <img :src=img alt="">
+            </div>
+          </div>
+          <div>
+            <div class="mbShow" :class="[beforeOrAfter1 === true ? 'isAfter' : 'isBefore']">{{
+              beforeOrAfter1 === true ?
+              'after' : 'before' }}</div>
+            <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/8833b2b27a0b090c.png" alt="">
+            <img class="mbShow" src="https://static.cmereye.com/imgs/2023/12/ccffcb82bdf364b1.png" alt="">
+            <div @touchstart="gtouchstart1()" @touchmove="gtouchmove1()" @touchend="gtouchend1()" class="mbShow case_img"><img
+                :src=img1 alt=""></div>
+          </div>
         </div>
       </div>
     </div>
@@ -40,7 +55,7 @@
       </div>
       <div>
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" :newSvg="newSvg"  :maxNum="4400" :minNum="3210" />
+          :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="4400" :minNum="3210" />
       </div>
     </div>
   </div>
@@ -55,6 +70,11 @@ export default {
   name: 'superiority-case-step',
   data() {
     return {
+      beforeOrAfter: true,
+      beforeOrAfter1: true,
+      img: 'https://static.cmereye.com/imgs/2023/12/d21353be5f8e49e2.png',
+      img1: 'https://static.cmereye.com/imgs/2023/12/d21353be5f8e49e2.png',
+      timeOutEvent: 0, //定时器
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約及諮詢',
       isShowSvg: false,
@@ -128,7 +148,55 @@ export default {
       ]
     };
   },
-  methods: {},
+  methods: {
+    gtouchstart() {
+      this.timeOutEvent = setTimeout(this.longPress(), 3000);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改
+      return false;
+    },
+    //手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件   
+    gtouchend() {
+      clearTimeout(this.timeOutEvent);//清除定时器   
+      if (this.timeOutEvent != 0) {
+        this.beforeOrAfter = true
+        this.img = 'https://static.cmereye.com/imgs/2023/12/d21353be5f8e49e2.png'
+      }
+      return false;
+    },
+    //如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按   
+    gtouchmove() {
+      clearTimeout(this.timeOutEvent);//清除定时器   
+      this.timeOutEvent = 0;
+    },
+    //真正长按后应该执行的内容   
+    longPress() {
+      this.beforeOrAfter = false
+      this.img = 'https://static.cmereye.com/imgs/2023/12/ec3c456479d5c84e.png'
+    },
+
+    gtouchstart1() {
+      this.timeOutEvent = setTimeout(this.longPress1(), 3000);//这里设置定时器，定义长按500毫秒触发长按事件，时间可以自己改
+      return false;
+    },
+    //手释放，如果在500毫秒内就释放，则取消长按事件，此时可以执行onclick应该执行的事件   
+    gtouchend1() {
+      clearTimeout(this.timeOutEvent);//清除定时器   
+      if (this.timeOutEvent != 0) {
+        this.beforeOrAfter1 = true
+        this.img1 = 'https://static.cmereye.com/imgs/2023/12/d21353be5f8e49e2.png'
+      }
+      return false;
+    },
+    //如果手指有移动，则取消所有事件，此时说明用户只是要移动而不是长按   
+    gtouchmove1() {
+      clearTimeout(this.timeOutEvent);//清除定时器   
+      this.timeOutEvent = 0;
+    },
+    //真正长按后应该执行的内容   
+    longPress1() {
+      this.beforeOrAfter1 = false
+      this.img1 = 'https://static.cmereye.com/imgs/2023/12/ec3c456479d5c84e.png'
+    },
+  },
   mounted() {
     // 获取屏幕宽度
     this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
@@ -148,6 +216,16 @@ export default {
 
   .superiority-case-step {
     margin-top: 109px;
+  }
+
+  .case_img_cursor {
+    &>div:nth-child(1) {
+      cursor: url('https://static.cmereye.com/imgs/2023/12/31d23616c2087a0a.png'), auto;
+    }
+
+    &>div:nth-child(2) {
+      cursor: url('https://static.cmereye.com/imgs/2023/12/031788755ad5d5e3.png'), auto;
+    }
   }
 
   .superiority {
@@ -187,7 +265,7 @@ export default {
           &>div:nth-child(1)::before {
             content: '';
             display: inline-block;
-            width: 30px;
+            width: 18px;
             height: 1px;
             position: absolute;
             bottom: -1px;
@@ -342,6 +420,36 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .case_img {
+    position: relative;
+  }
+  .case_img::after {
+    content: '';
+    background: url(https://static.cmereye.com/imgs/2023/12/3190a04b85e892b9.png);
+    display: inline-block;
+    width: 13px;
+    height: 20px;
+    position: absolute;
+    bottom: -120%;
+    right: 20%;
+  }
+  .isAfter {
+    color: #57B2F3;
+    font-family: Noto Sans TC;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+  }
+  .isBefore {
+    color: #79828D;
+    font-family: Noto Sans TC;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%;
+  }
+
   .pcShow {
     display: none;
   }
@@ -439,7 +547,24 @@ export default {
         }
 
         &>div:nth-child(1) {
-          margin-bottom: 107px;
+          margin-bottom: 67px;
+          position: relative;
+
+          &>div:nth-child(3) {
+            position: absolute;
+            bottom: 8px;
+            right: 9px;
+          }
+        }
+
+        &>div:nth-child(2) {
+          position: relative;
+
+          &>div:nth-child(4) {
+            position: absolute;
+            bottom: 8px;
+            right: 9px;
+          }
         }
       }
     }

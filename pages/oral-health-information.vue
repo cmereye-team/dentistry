@@ -1,13 +1,12 @@
 <template>
-<div id="lay">
-  <menuBar/>
-  <Banner/>
-  <equipInfo/>
-  <footce/>
-  <mapGoogle/>
-  <foot/>
-  
-</div>
+  <div id="lay">
+    <menuBar />
+    <Banner />
+    <equipInfo />
+    <footce />
+    <mapGoogle />
+    <foot />
+  </div>
 </template>
 
 <script>
@@ -18,18 +17,18 @@ import foot from "@/components/common/foot.vue"
 import Banner from "@/components/equipment/banner/index.vue"
 import equipInfo from "@/components/equipment/equipInfo/index.vue"
 export default {
-   components: { 
+  components: {
     menuBar,
     footce,
     Banner,
     mapGoogle,
     equipInfo,
     foot
-    },
-    mounted(){
-       document.getElementsByTagName("body")[0].className="body-oral-health-information";
-    },
-    head() {
+  },
+  mounted() {
+    document.getElementsByTagName("body")[0].className = "body-oral-health-information";
+  },
+  head() {
     return {
       title: '牙齒健康 | 健康資訊 | 希瑪牙科中心',
       meta: [{
@@ -45,9 +44,7 @@ export default {
       ]
     }
   }
-  
+
 }
 </script>
-<style>
- 
-</style>
+<style></style>

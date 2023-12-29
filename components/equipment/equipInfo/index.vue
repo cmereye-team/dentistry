@@ -8,7 +8,7 @@
         >
       </p>
       <p style="margin: 0 0.5vw">></p>
-      <p style="color: #57b2f3">牙齒健康</p>
+      <p style="color: #57b2f3">健康資訊</p>
     </div>
     <div v-if="isShow" class="flex justify-center selectEqu">
       <el-select v-model="value" placeholder="请选择" @change="selectLei">

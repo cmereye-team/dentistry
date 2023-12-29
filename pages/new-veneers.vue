@@ -39,8 +39,8 @@ export default {
   data() {
     return {
       bannerImg: {
-        link: 'https://static.cmereye.com/imgs/2023/12/e9b0f37ac2c995b0.png',
-        linkAll: 'https://static.cmereye.com/imgs/2023/12/f063815a07f95a3f.png 400w,  https://static.cmereye.com/imgs/2023/12/f063815a07f95a3f.png 640w, https://static.cmereye.com/imgs/2023/12/e9b0f37ac2c995b0.png',
+        link: 'https://static.cmereye.com/imgs/2023/12/eb20df94e37af305.png',
+        linkAll: 'https://static.cmereye.com/imgs/2023/12/72e550a4649f3690.png 400w,  https://static.cmereye.com/imgs/2023/12/72e550a4649f3690.png 640w, https://static.cmereye.com/imgs/2023/12/eb20df94e37af305.png',
         title: '',
         alt: '',
       }
@@ -48,6 +48,8 @@ export default {
   },
   mounted() {
     document.getElementsByTagName("body")[0].className = "body-veneers";
+    // 禁止长按默认事件
+    document.addEventListener('touchmove', this.handleTouchMove, { passive: false });
   },
   head() {
     return {

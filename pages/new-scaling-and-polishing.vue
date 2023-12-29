@@ -58,7 +58,7 @@ export default {
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       bannerImg: {
         link: 'https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
-        linkAll: 'https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 400w,  https://static.cmereye.com/imgs/2023/12/cdae38e9e67d680d.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
+        linkAll: 'https://static.cmereye.com/imgs/2023/12/6ce9dfd0420ee24d.png 400w,  https://static.cmereye.com/imgs/2023/12/6ce9dfd0420ee24d.png 640w, https://static.cmereye.com/imgs/2023/12/cb6b24b8deb4079d.png',
         title: '',
         alt: '',
       }

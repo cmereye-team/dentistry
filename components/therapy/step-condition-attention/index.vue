@@ -51,12 +51,16 @@
             <div>細菌侵蝕至牙髓，引起內部組織發炎、<br />感染，導致細胞壞死或化膿等問題。</div>
           </div>
         </div>
+        <div class="mbShow mb_effect">
+          <img src="https://static.cmereye.com/imgs/2023/12/9048ddefccd8cfb0.png" alt="">
+          <img src="https://static.cmereye.com/imgs/2023/12/5fa5a88b7d743416.png" alt="">
+        </div>
         <div class="condition-text">
           若牙髓持續遭受感染，未加以治療，<br class="mbShow" />根管鈣化會逐漸惡化，使受感染或壞死<br class="mbShow" />的牙髓組織難<br
             class="pcShow" />以徹底清除，導致細菌<br class="mbShow" />繼續繁殖，造成感染擴散至形成牙瘡。
         </div>
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb"  :maxNum="2990" :minNum="1789" />
+          :paddingSizeMb="paddingSizeMb" :maxNum="2990" :minNum="1789" />
       </div>
     </div>
     <div class="attention main-container">
@@ -358,6 +362,7 @@ export default {
         position: absolute;
         bottom: 20%;
         right: 9%;
+        animation: identifier 2s ease-in-out infinite;
       }
 
       &>div:nth-child(2)::after {
@@ -369,6 +374,7 @@ export default {
         position: absolute;
         bottom: -8%;
         right: 9%;
+        animation: identifier 2s ease-in-out infinite;
       }
 
       &>div:nth-child(3) {
@@ -384,6 +390,17 @@ export default {
     }
   }
 
+  @keyframes identifier {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
   .condition-text {
     display: flex;
     flex-direction: column;
@@ -469,6 +486,31 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .mb_effect {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    animation: identifier 2s ease-in-out infinite;
+
+    &>img {
+      width: 50%;
+    }
+  }
+
+  @keyframes identifier {
+    0% {
+      transform: translateY(-20px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
   .pcShow {
     display: none;
   }
@@ -668,7 +710,7 @@ export default {
   }
 
   .condition-text {
-    margin-top: 45px;
+    margin-top: 25px;
     color: #79828D;
     text-align: center;
     font-family: Noto Sans;
@@ -703,5 +745,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>

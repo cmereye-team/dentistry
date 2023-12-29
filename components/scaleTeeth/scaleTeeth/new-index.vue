@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div style="margin-top: 150px;">
+      <div class="new-btn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
           :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
       </div>
@@ -129,6 +129,10 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .new-btn {
+    margin-top: 150px;
+  }
+
   ::v-deep .el-slider__button {
     background: url(https://static.cmereye.com/imgs/2023/12/6ee295d9a8618fc5.png);
     background-size: 100% 100%;
@@ -411,6 +415,18 @@ export default {
 
 // mb
 @media only screen and (max-width: 767px) {
+  .new-btn {
+    margin-top: 65px;
+  }
+
+  ::v-deep .new-btn {
+    .img_absolute {
+      right: 23%;
+      top: -110%;
+      z-index: 11;
+    }
+  }
+
   ::v-deep .el-slider__button {
     background: url(https://static.cmereye.com/imgs/2023/12/6ee295d9a8618fc5.png);
     background-size: 100% 100%;
@@ -575,7 +591,7 @@ export default {
       right: 0;
       bottom: 0;
       z-index: 1;
-      bottom: 52%;
+      bottom: 300px;
     }
 
     .content {
@@ -684,5 +700,4 @@ export default {
       right: 12%;
     }
   }
-}
-</style>
+}</style>

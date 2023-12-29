@@ -210,7 +210,7 @@ export default {
 
           &>div:nth-child(1)::before {
             content: '';
-            width: 30px;
+            width: 18px;
             height: 1px;
             background: #299DF0;
             display: inline-block;
