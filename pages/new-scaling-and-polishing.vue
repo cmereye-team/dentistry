@@ -136,6 +136,13 @@ export default {
 }
 
 @media screen and(max-width: 767px) {
+  ::v-deep .new_btn_scaling {
+    .img_absolute {
+      right: 23% !important;
+      top: -110% !important;
+      z-index: 11 !important;
+    }
+  }
   .toothWash {
     max-width: 100%;
     display: flex;

@@ -421,9 +421,9 @@ export default {
 
   ::v-deep .new-btn {
     .img_absolute {
-      right: 23%;
-      top: -110%;
-      z-index: 11;
+      right: 23% !important;
+      top: -110% !important;
+      z-index: 11 !important;
     }
   }
 

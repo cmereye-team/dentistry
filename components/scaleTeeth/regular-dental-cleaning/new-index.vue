@@ -127,7 +127,7 @@
         立即預約洗牙
       </div>
     </a> -->
-    <div style="margin: 90px 0">
+    <div style="margin: 90px 0" class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :maxNum="3420" :minNum="2247" :newSvg="newSvg" />
     </div>
@@ -367,6 +367,13 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  ::v-deep .new-btn {
+    .img_absolute {
+      right: 23% !important;
+      top: -110% !important;
+      z-index: 11 !important;
+    }
+  }
   .procedure {
     margin-top: 54px;
   }
