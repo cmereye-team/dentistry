@@ -507,76 +507,76 @@ export default {
         {
           link: '/implant',
           name: '植牙',
-          img: 'https://static.cmereye.com/imgs/2023/12/ce5102967b583892.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/46eab302c918952f.png'
         },
         {
           link: '/rct',
           name: `根管治療<br  class="pcShow"/>(杜牙根)`,
-          img: 'https://static.cmereye.com/imgs/2023/12/0bc64675abdebbd8.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/bd69b3e9e1bb5c5e.png'
         },
         {
           link: '/periodontal-treatment',
           name: `牙周病治療`,
-          img: 'https://static.cmereye.com/imgs/2023/12/5d1cf4b26bee8eb9.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/a489189f941da951.png'
         },
         {
           link: '/extractions-and-wisdom-teeth-extraction',
           name: `拔牙及剝智慧齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/da62716e691418e5.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/d38fe2acda241a43.png'
         },
         {
           link: '/complete-and-partial-denture',
           name: `全口牙托<span class="pcShow"></span><br class="mbShow" />局部牙托`,
-          img: 'https://static.cmereye.com/imgs/2023/12/f0bd591dffa5dff4.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/aaaa916b14c4faee.png'
         },
       ],
       basicDentistry: [
         {
           link: '/scaling-and-polishing',
           name: `洗牙`,
-          img: 'https://static.cmereye.com/imgs/2023/12/53e4c1448d8d9b8b.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/d24fe70a00a29699.png'
         },
         {
           link: '/fillings',
           name: `補牙`,
-          img: 'https://static.cmereye.com/imgs/2023/12/c140cf76befa8e6d.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/29dfa82bd5447379.png'
         },
         {
           link: '/general-oral-examination',
           name: `一般口腔檢查`,
-          img: 'https://static.cmereye.com/imgs/2023/12/cbc42aef1d596ed5.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/0d51b6a2439cbaa6.png'
         },
         {
           link: '/children-dentistry',
           name: `兒童牙科`,
-          img: 'https://static.cmereye.com/imgs/2023/12/c4774364d54759d1.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/fb5299cbae5cd341.png'
         }
       ],
       cosmeticDentistry: [
         {
           link: '/veneers',
           name: `全瓷貼片`,
-          img: 'https://static.cmereye.com/imgs/2023/12/9d40c68ddcaee787.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/0106108cc912ff20.png'
         },
         {
           link: '/orthodontics',
           name: `矯齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/9a4ef414592b503c.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/599df2b67b8bf13b.png'
         },
         {
           link: '/invisalign',
           name: `隱形牙箍`,
-          img: 'https://static.cmereye.com/imgs/2023/12/c360637084507e26.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/b8f10e0b609cb913.png'
         },
         {
           link: '/teeth-whitening',
           name: `美白牙齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/57e0ec740662a2a7.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/78d708a7c8e81295.png'
         },
         {
           link: '/crowns-and-bridges',
           name: `全瓷牙冠<span class="pcShow"></span><br class="mbShow" />及全鋯牙冠`,
-          img: 'https://static.cmereye.com/imgs/2023/12/6fecae8a82cd8089.png'
+          img: 'https://static.cmereye.com/imgs/2023/12/040e8b465d5c3680.png'
         },
 
       ]
@@ -732,7 +732,7 @@ export default {
               min-height: 26px;
               display: flex;
               flex-direction: column;
-              justify-content: center;
+              justify-content: flex-start;
 
               &>p {
                 margin: 0;
