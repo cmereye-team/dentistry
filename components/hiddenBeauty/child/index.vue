@@ -18,7 +18,7 @@
       <div class="age_gap">
         <div><img src="https://static.cmereye.com/imgs/2023/12/3f00f54861c5d157.png" alt=""></div>
         <div>
-          <layoutPage :layoutPageScr="layoutPageScr" :layoutPageText="layoutPageText" :layoutPage="layoutPage"
+          <layoutPage :layoutPageScr="layoutPageScr" :isInvisalign="isInvisalign" :layoutPageText="layoutPageText" :layoutPage="layoutPage"
             :maxWidth="maxWidth" />
         </div>
       </div>
@@ -49,6 +49,12 @@ export default {
           two: '7 至 9 歲',
           three: '換牙期，有效處理牙齒排列和咬合問題。'
         },
+        textPc1: {
+          one: '到了',
+          two: '10 至 12 歲',
+          three: '發育期，可進一步矯正齒',
+          four: '列、咬合或顎骨偏差問題。'
+        },
         textMb: {
           one: '到了',
           two: '10 至 12 歲',
@@ -58,6 +64,7 @@ export default {
       },
       // 文字内容有span标签 有特殊样式 为true  目前只有 洗牙
       layoutPage: true,
+      isInvisalign:true,
       maxWidth: '480px', // 植牙的文本最大宽
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
       linkText: '立即預約及諮詢',
@@ -86,6 +93,24 @@ export default {
     align-items: center;
     flex-direction: column;
     padding: 220px 0;
+  }
+
+  ::v-deep .interval {
+    &>div:nth-child(2) {
+      &>div:nth-child(1) {
+        justify-content: space-between;
+        padding-bottom: 20px;
+        .pc_span_style {
+          color: #57B2F3;
+          font-family: Noto Sans;
+          font-size: 25px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 2.5px;
+        }
+      }
+    }
   }
 
   ::v-deep .new_btn {
@@ -147,4 +172,5 @@ export default {
   }
 }
 
-@media screen and (max-width: 767px) {}</style>
+@media screen and (max-width: 767px) {}
+</style>

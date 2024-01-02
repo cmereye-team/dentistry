@@ -462,14 +462,29 @@ export default {
 
   .case_img::after {
     content: '';
-    background: url(https://static.cmereye.com/imgs/2023/12/3190a04b85e892b9.png);
+    // background: url(https://static.cmereye.com/imgs/2023/12/3190a04b85e892b9.png);
     display: inline-block;
-    width: 13px;
-    height: 20px;
+    width: 17px;
+    height: 28px;
     position: absolute;
-    bottom: -120%;
+    bottom: -150%;
     right: 20%;
+    animation: identifier 2s infinite;
   }
+  @keyframes identifier {
+      0% {
+        background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
+      }
+      50% {
+        background: url('https://static.cmereye.com/imgs/2024/01/e28fe1414dd13387.png');
+      }
+      95% {
+        background: url('https://static.cmereye.com/imgs/2024/01/45004062c3535c1d.png');
+      }
+      100% {
+        background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
+      }
+    }
 
   .isAfter {
     color: #57B2F3;

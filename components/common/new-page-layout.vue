@@ -3,15 +3,17 @@
     <div class="this-background"></div>
     <div class="content main-container">
       <div>
-        <div v-html="layoutPageText.text1"  :style="{ maxWidth: maxWidth.length > 0 ? maxWidth : '' }"></div>
+        <div v-html="layoutPageText.text1" :style="{ maxWidth: maxWidth.length > 0 ? maxWidth : '' }"></div>
         <div :style="{ maxWidth: maxWidth.length > 0 ? maxWidth : '' }">{{ layoutPageText.text3 }}</div>
         <div :style="{ maxWidth: maxWidth.length > 0 ? maxWidth : '' }">{{ layoutPageText.text4 }}</div>
         <div v-if="layoutPage">
           {{ layoutPageText.text2.one }}<span class="layout_span_style">{{ layoutPageText.text2.two }}</span>{{
             layoutPageText.text2.three }}
         </div>
-        <div v-if="layoutPage" class="pcShow">{{ layoutPageText.textPc.one }}<span class="layout_span_style">{{
+        <div v-if="layoutPage" class="pcShow">{{ layoutPageText.textPc.one }}<span class="layout_span_style pc_span_style">{{
           layoutPageText.textPc.two }}</span>{{ layoutPageText.textPc.three }}</div>
+        <div v-if="layoutPage && isInvisalign" class="pcShow">{{ layoutPageText.textPc1.one }}<span class="layout_span_style pc_span_style">{{
+          layoutPageText.textPc1.two }}</span>{{ layoutPageText.textPc1.three }}{{ layoutPageText.textPc1.four }}</div>
         <div v-if="layoutPage" class="mbShow mb_style">
           <span>{{ layoutPageText.textMb.one }}</span><span>{{ layoutPageText.textMb.two }}</span><span>{{
             layoutPageText.textMb.three }}</span><span>{{ layoutPageText.textMb.four }}</span>
@@ -40,6 +42,9 @@ export default {
     },
     maxWidth: {
       type: String
+    },
+    isInvisalign: {
+      type: Boolean
     }
   },
   data() {

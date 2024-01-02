@@ -5,6 +5,7 @@
     <hiddenBeauty />
     <fit />
     <child />
+    <merit />
     <footce />
     <problem />
     <mapGoogle />
@@ -23,6 +24,7 @@ import foot from "@/components/common/new-foot.vue"
 import hiddenBeauty from "@/components/hiddenBeauty/hiddenBeauty/new-index.vue"
 import fit from "@/components/hiddenBeauty/fit/new-index.vue"
 import child from '@/components/hiddenBeauty/child/index.vue';
+import merit from '@/components/hiddenBeauty/merit/new-index.vue';
 import problem from "@/components/hiddenBeauty/problem/index.vue"
 
 export default {
@@ -36,6 +38,7 @@ export default {
     foot,
     fit,
     child,
+    merit,
     problem
   },
   data() {
