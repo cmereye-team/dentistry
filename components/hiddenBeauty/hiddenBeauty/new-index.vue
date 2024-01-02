@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="main-container menu">
+    <div class="main-container menu pcShow">
       <nuxt-link to="/">主頁</nuxt-link>
       <span>
         <svg xmlns="http://www.w3.org/2000/svg" width="6" height="11" viewBox="0 0 6 11" fill="none">
@@ -20,11 +20,17 @@
     <div class="main-container">
       <div class="title">
         <div>隱形牙箍</div>
-        <div>隱形牙箍是一種活動式透明牙箍，可自行除戴。透過先進數位<br class="pcShow" />科技，以電腦模擬牙齒移動過程，並利用牙箍的機械性力量，<br class="pcShow" />令牙齒周圍組織產生移動，將牙齒逐步推向理想位置。</div>
-        <a><img src="https://static.cmereye.com/imgs/2023/12/996d7bbac360f590.png" alt="page-down"></a>
+        <div>
+          隱形牙箍是一種活動式透明牙箍，可自<br class="mbShow" />行除戴。透過先進數位<br class="pcShow" />科技，以電腦模<br
+            class="mbShow" />擬牙齒移動過程，並利用牙箍的機械性<br class="mbShow" />力量，<br class="pcShow" />令牙齒周圍組織產生移動，將牙<br
+            class="mbShow" />齒逐步推向理想位置。</div>
+        <a>
+          <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/996d7bbac360f590.png" alt="page-down">
+          <img class="mbShow" src="https://static.cmereye.com/imgs/2024/01/6a8b5c22a80bc484.png" alt="page-down">
+        </a>
       </div>
-      <div>
-        <div class="why_significance isArrowQuestion">哪種牙齒狀況下會考慮隱形矯正？</div>
+      <div class="correction_box">
+        <div class="why_significance isArrowQuestion">哪種牙齒狀況下<br class="mbShow" />會考慮隱形矯正？</div>
         <div class="correction">
           <div v-for="item in correctionList" :key="item.id" class="significance_item">
             <div class="significance_item_img">
@@ -35,7 +41,7 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="newBtn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
             :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1745" :minNum="580" />
         </div>
@@ -182,6 +188,7 @@ export default {
       text-align: center;
       margin-top: 1px;
     }
+
     &>a:nth-child(3) {
       position: absolute;
       top: -38px;
@@ -244,6 +251,85 @@ export default {
 
 //md
 @media only screen and (max-width: 767px) {
+  .title {
+    margin-top: 100px;
+    padding: 0 20px;
+    position: relative;
+
+    &>div:nth-child(1) {
+      color: #57B2F3;
+      text-align: center;
+      font-family: Noto Sans;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2.2px;
+    }
+
+    &>div:nth-child(2) {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.6px;
+      text-align: center;
+    }
+
+    &>a {
+      position: absolute;
+      top: -115%;
+      right: 12%;
+    }
+  }
+
+  .correction_box {
+    margin-top: 61px;
+    padding: 0 20px;
+  }
+
+  .correction {
+    margin-top: 45px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.8125rem 1.25rem;
+    justify-items: center;
+
+    &>div {
+      &>div:nth-child(1) {
+        max-width: 42.133vw;
+
+        &>img {
+          width: 100%;
+        }
+      }
+
+      &>div:nth-child(2) {
+        margin-top: 10px;
+        color: #57B2F3;
+        font-family: Noto Sans TC;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        text-align: center;
+      }
+    }
+  }
+
+  ::v-deep .newBtn {
+    &>div {
+      .img_absolute {
+        top: -115% !important;
+        right: 22% !important;
+        z-index: 99 !important;
+      }
+    }
+  }
+
   .pcShow {
     display: none;
   }

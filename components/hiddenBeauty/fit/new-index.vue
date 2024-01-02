@@ -32,7 +32,7 @@ export default {
       stepList: [
         {
           id: 1,
-          img: 'https://static.cmereye.com/imgs/2023/12/32e6ecc0d9c4355b.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/e3b9fc6572dd0838.png',
           title: '初步評估',
           text: '與牙醫溝通後，會先為客人進行全面口腔檢查及拍攝X-Ray，以蒐集數位資料，評估牙齒狀況和咬合問題。'
         },
@@ -44,19 +44,19 @@ export default {
         },
         {
           id: 3,
-          img: 'https://static.cmereye.com/imgs/2023/12/4a5579003d8b2543.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/744ce5da24cd1d40.png',
           title: '牙箍製作',
           text: '廠商利用3D電腦雷射列印技術製成一系列隱形牙箍，並寄送至牙科診所。'
         },
         {
           id: 4,
-          img: 'https://static.cmereye.com/imgs/2023/12/744ce5da24cd1d40.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/4a5579003d8b2543.png',
           title: '配戴指導',
           text: '會聯絡並安排客人到診進行試戴並評估效果。'
         },
         {
           id: 5,
-          img: 'https://static.cmereye.com/imgs/2023/12/e3b9fc6572dd0838.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/32e6ecc0d9c4355b.png',
           title: '定期追蹤',
           text: '客人需定期覆診，與牙醫跟進療程進度及領取新牙箍。'
         },
@@ -68,8 +68,6 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-@media screen and (max-width: 767px) {}
-
 @media screen and (min-width: 768px) {
   .process {
     margin: 109px auto 102px;
@@ -116,7 +114,7 @@ export default {
       }
 
       &>div:nth-child(4) {
-        width: 170px;
+        width: 185px;
         padding-left: 15px;
         color: #79828D;
         font-family: Noto Sans;
@@ -182,6 +180,26 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .process {
+    padding: 0 20px;
+  }
+
+  .step_container {
+    margin-top: 45px;
+
+    &>div {
+      max-width: 224px;
+      border-radius: 40px;
+      background: #ECF7FC;
+      position: relative;
+
+      &>div:nth-child(4) {}
+    }
+    &>div:nth-child(even) {
+      margin: 1.5625rem 0 1.5625rem auto;
+    }
+  }
+
   .pcShow {
     display: none;
   }
@@ -210,4 +228,5 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}</style>
+}
+</style>

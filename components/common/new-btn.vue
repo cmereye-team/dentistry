@@ -219,6 +219,7 @@ export default {
   methods: {
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      console.log(this.scrollY, 'getScrollY');
       if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
         this.isHoverAnimate = true;
       } else {
