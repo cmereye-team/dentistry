@@ -65,7 +65,7 @@
           </div>
         </div>
       </div>
-      <div class="interval">
+      <div class="interval" style="display:none;">
         <div class="this-background"></div>
         <div class="content main-container">
           <div>
@@ -82,9 +82,38 @@
           </div>
         </div>
       </div>
-      <div class="new-btn">
-        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+      <div class="new_circle">
+        <div></div>
+        <div class="main-container">
+          <div>
+            <div>
+              <div>提供洗牙和深層洗牙服務，定期洗牙有<br class="mbShow" />效清除牙齒上的<br class="pcShow" />牙菌膜、牙結石和牙<br
+                  class="mbShow" />漬，保持口腔衛生，預防牙周疾病<br class="pcShow" />或其<br class="mbShow" />他口腔問題。
+              </div>
+              <div>牙醫正常建議<span>每半年至一年</span>洗牙<br class="mbShow" />一次。</div>
+              <div class="pcShow">若患有牙周病、吸煙、佩戴假牙、或正接受矯齒人士，<br class="pcShow" />則建議<span>每三個月至半年</span>洗牙一次。</div>
+              <div class="mbShow mb_style"><span>若患有牙周病、吸煙、佩戴假牙、或正接受</span><br class="mbShow" /><span>矯齒人士，
+                  則建議</span><span>每三個月至半年</span><br class="mbShow" />洗牙一次。
+              </div>
+              <div class="new-btn">
+                <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
           :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
+              </div>
+            </div>
+          </div>
+          <div>
+            <!-- <video width="380" height="690" src="../../../asset/video/xiya.mp4"></video> -->
+            <!-- <iframe src="https://youtube.com/shorts/kfysOuM3slg?si=GqXdtKO74Co63Krj" frameborder="0"></iframe> -->
+            <iframe v-if="pcOrMb == pc" width="380" height="690" src="https://www.youtube.com/embed/kfysOuM3slg"
+              title="【你的線上牙醫💁🏻‍♂️洗牙篇】" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+            <iframe v-else width="335" height="600" src="https://www.youtube.com/embed/kfysOuM3slg"
+              title="【你的線上牙醫💁🏻‍♂️洗牙篇】" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -107,11 +136,18 @@ export default {
       currentIndex: 0,   // 当前点击的tab的索引
       value2: 0,
       several: 0,
+      pcOrMb: 'pc',
     }
   },
   computed: {
   },
+  mounted() {
+    this.getDocWidth()
+  },
   methods: {
+    getDocWidth() {
+      this.pcOrMb = window.innerWidth > 767 ? 'pc' : 'mb'
+    },
     handleClick(index) {
       this.currentIndex = index
     },
@@ -129,6 +165,70 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .new_circle {
+    margin-top: 154px;
+    position: relative;
+
+    &>div:nth-child(1) {
+      background: #ECF7FC;
+      // clip-path: ellipse(105% 55% at -50% 50%);
+      width: 1400px;
+      height: 1400px;
+      border-radius: 50%;
+      position: absolute;
+      right: -40%;
+      bottom: -350px;
+      z-index: 1;
+      // transform: rotate(-180deg);
+    }
+
+    &>div:nth-child(2) {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+
+
+      &>div:nth-child(1) {
+        flex: 6;
+        display: flex;
+        justify-content: flex-end;
+
+
+        &>div {
+          margin-right: 82px;
+          color: #79828D;
+          font-family: Noto Sans;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 1.8px;
+
+          &>div {
+            span {
+              color: #57B2F3;
+              font-family: Noto Sans;
+              font-size: 25px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 2.5px;
+            }
+          }
+
+          &>div:nth-child(2) {
+            margin: 20px 0;
+          }
+        }
+      }
+
+      &>div:nth-child(2) {
+        flex: 4;
+      }
+    }
+  }
+
   .new-btn {
     margin-top: 150px;
   }
@@ -413,8 +513,108 @@ export default {
   }
 }
 
+@media screen and (min-width: 1925px) and (max-width: 4096px) {
+  .new_circle {
+    &>div:nth-child(1) {
+      background: #ECF7FC;
+      width: 1800px;
+      height: 1800px;
+      border-radius: 50%;
+      position: absolute;
+      right: -35%;
+      bottom: -550px;
+      z-index: 1;
+    }
+  }
+}
+
 // mb
 @media only screen and (max-width: 767px) {
+  .new_circle {
+    padding: 0 20px;
+
+    &>div:nth-child(2) {
+      display: flex;
+      flex-direction: column-reverse;
+
+      &>div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+
+      }
+
+      &>div:nth-child(1) {
+        margin-top: 18px;
+        display: flex;
+        justify-content: center;
+
+        &>div {
+          &>div:nth-child(1) {
+            color: #79828D;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.6px;
+          }
+
+          &>div:nth-child(2) {
+            margin: 20px 0;
+            color: #818A94;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 2.4px;
+
+            &>span {
+              color: #57B2F3;
+              font-family: Noto Sans;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 3.3px;
+            }
+          }
+
+          &>div:nth-child(4) {
+            color: #79828D;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 1.6px;
+
+            &>span:nth-child(1),
+            &>span:nth-child(3) {
+              color: #79828D;
+              font-family: Noto Sans;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 0px;
+              letter-spacing: -0.32px;
+            }
+
+            &>span:nth-child(4) {
+              color: #57B2F3;
+              font-family: Noto Sans;
+              font-size: 22px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+              letter-spacing: 2.2px;
+            }
+          }
+        }
+      }
+    }
+  }
+
   .new-btn {
     margin-top: 65px;
   }
@@ -700,4 +900,5 @@ export default {
       right: 12%;
     }
   }
-}</style>
+}
+</style>

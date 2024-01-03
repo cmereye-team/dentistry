@@ -88,6 +88,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media screen and(min-width: 768px) {
+  #lay {
+    overflow: hidden;
+  }
   ::v-deep .new_btn_scaling {
     .img_absolute {
       right: 68% !important;
