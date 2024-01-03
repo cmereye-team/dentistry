@@ -6,11 +6,11 @@
         <div>
           <img :src="item.img" :alt="item.title">
         </div>
-        <div>{{ item.title }}</div>
+        <div v-html="item.title"></div>
         <div>{{ item.text }}</div>
       </div>
     </div>
-    <div>
+    <div class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="5150" :minNum="4060" />
     </div>
@@ -37,19 +37,19 @@ export default {
         {
           id: 1,
           img: 'https://static.cmereye.com/imgs/2024/01/7f68060190d655ce.png',
-          title: '無礙日常活動及學習',
+          title: '無礙日常<br class="mbShow" />活動及學習',
           text: '採用舒適及隱形設計，可避免傳統鋼箍鋼線或骨釘刮傷囗腔，無論演講、運動、吹奏樂器時，都可方便除戴，讓小朋友更專注於多元興趣中'
         },
         {
           id: 2,
           img: 'https://static.cmereye.com/imgs/2024/01/03c713cda627ae74.png',
-          title: '方便檢查佩戴牙箍時間',
+          title: '方便檢查佩<br class="mbShow" />戴牙箍時間',
           text: '家長可在隱形牙箍加上藍色依從性顯示點，以便隨時檢查小朋友佩戴牙箍時間是否足夠，確保更佳的矯齒效果。'
         },
         {
           id: 3,
           img: 'https://static.cmereye.com/imgs/2024/01/90ce913c5030bcd8.png',
-          title: '可處理複雜和嚴重個案',
+          title: '可處理複雜<br class="mbShow" />和嚴重個案',
           text: '隱形牙箍設有「輔助翼托」，可達到將下顎向前移的作用，有效改善小朋友哨牙等問題。'
         },
       ]
@@ -135,6 +135,78 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .merit {
+    margin-top: 68px;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  .merit_content {
+    display: flex;
+    overflow-x: auto;
+    margin-top: 31px;
+    padding: 0 10px;
+
+    &>div {
+      &>div:nth-child(1) {
+        width: 42.1333vw;
+
+        &>img {
+          width: 100%;
+        }
+      }
+
+      &>div:nth-child(2) {
+        color: #57B2F3;
+        text-align: center;
+        font-family: Noto Sans TC;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+      }
+
+      &>div:nth-child(3) {
+        color: #79828D;
+        font-family: Noto Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+      }
+    }
+
+    &>div:nth-child(2) {
+      margin: 0 20px;
+    }
+  }
+
+  ::v-deep .new-btn {
+    .serve_btn {
+      margin: 40px auto 60px;
+    }
+    .img_absolute {
+      right: 22% !important;
+      top: -116% !important;
+      z-index: 20 !important;
+    }
+  }
+
   .pcShow {
     display: none;
   }

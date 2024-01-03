@@ -100,6 +100,37 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .maintainList {
+    margin-top: 43px;
+    padding: 0 20px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    justify-items: center;
+
+    &>div {
+      &>div:nth-child(1) {
+        width: 42.133vw;
+
+        &>img {
+          width: 100%;
+        }
+      }
+
+      &>div:nth-child(2) {
+        color: #79828D;
+        text-align: center;
+        font-family: Noto Sans TC;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%;
+        text-wrap: balance;
+      }
+    }
+  }
+
   .pcShow {
     display: none;
   }

@@ -195,7 +195,6 @@ export default {
 
   ::v-deep .el-collapse-item__header.is-active {
     background-color: transparent;
-
   }
 
   ::v-deep .el-collapse-item__content {
@@ -294,6 +293,18 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  ::v-deep .el-collapse-item__header.is-active {
+    background-color: transparent;
+  }
+
+  .qa {
+    margin-top: 61px;
+  }
+
+  .coll-box {
+    margin-top: 42px;
+  }
+
   .why_significance {
     color: #79828D;
     text-align: center;
@@ -318,5 +329,49 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+
+  .discon {
+    color: #79828D;
+    font-family: Noto Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    padding-left: 56px;
+  }
+
+  .contents {
+    &>div {
+      color: #79828D;
+      font-family: Noto Sans;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.6px;
+    }
+  }
+
+  .downArrow1 {
+    display: inline-block;
+    width: 2.25rem;
+    height: 2.25rem;
+    min-width: 2.25rem;
+    transition: all .5s;
+    background-size: 100% 100%;
+    background-image: url(https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1018+.55g66fshwgc0.png);
+    margin-right: 1.25rem;
+  }
+
+  .downArrow2 {
+    display: inline-block;
+    width: 2.25rem;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    transition: all .5s;
+    background-size: 100% 100%;
+    background-image: url(https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-1018.77gibtpj4xw0.png);
+    margin-right: 1.25rem;
+  }
+}</style>
