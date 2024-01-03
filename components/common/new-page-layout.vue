@@ -10,10 +10,16 @@
           {{ layoutPageText.text2.one }}<span class="layout_span_style">{{ layoutPageText.text2.two }}</span>{{
             layoutPageText.text2.three }}
         </div>
-        <div v-if="layoutPage" class="pcShow">{{ layoutPageText.textPc.one }}<span class="layout_span_style pc_span_style">{{
-          layoutPageText.textPc.two }}</span>{{ layoutPageText.textPc.three }}</div>
-        <div v-if="layoutPage && isInvisalign" class="pcShow">{{ layoutPageText.textPc1.one }}<span class="layout_span_style pc_span_style">{{
-          layoutPageText.textPc1.two }}</span>{{ layoutPageText.textPc1.three }}{{ layoutPageText.textPc1.four }}</div>
+        <div v-if="layoutPage" class="pcShow">{{ layoutPageText.textPc.one }}<span
+            class="layout_span_style pc_span_style">{{
+              layoutPageText.textPc.two }}</span>{{ layoutPageText.textPc.three }}</div>
+        <div v-if="layoutPage && isInvisalign" class="pcShow">{{ layoutPageText.textPc1.one }}<span
+            class="layout_span_style pc_span_style">{{
+              layoutPageText.textPc1.two }}</span>{{ layoutPageText.textPc1.three }}{{ layoutPageText.textPc1.four }}</div>
+        <div v-if="layoutPage" class="mbShow mb_style">
+          <span>{{ layoutPageText.textMb1.one }}</span><span>{{ layoutPageText.textMb1.two }}</span><span>{{
+            layoutPageText.textMb1.three }}</span><span>{{ layoutPageText.textMb1.four }}</span>
+        </div>
         <div v-if="layoutPage" class="mbShow mb_style">
           <span>{{ layoutPageText.textMb.one }}</span><span>{{ layoutPageText.textMb.two }}</span><span>{{
             layoutPageText.textMb.three }}</span><span>{{ layoutPageText.textMb.four }}</span>
