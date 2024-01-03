@@ -522,7 +522,7 @@ export default {
       border-radius: 50%;
       position: absolute;
       right: -35%;
-      bottom: -550px;
+      bottom: -600px;
       z-index: 1;
     }
   }
