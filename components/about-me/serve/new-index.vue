@@ -934,7 +934,7 @@ a {
         border-radius: 4.625rem;
         color: #FFF;
         font-family: Noto Sans;
-        font-size: 18.075px;
+        font-size: 1.1297rem;
         font-style: normal;
         font-weight: 700;
         line-height: normal;

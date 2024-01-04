@@ -46,7 +46,7 @@ export default {
       linkText: '立即預約及諮詢',
       isShowSvg: false,
       mb: '',
-      paddingSize: '10px 88px',
+      paddingSize: '2.6667vw 23.4667vw',
       paddingSizeMb: '6px 64px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       allCeramicList: [

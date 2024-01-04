@@ -82,7 +82,7 @@
           </div>
         </div>
       </div>
-      <div class="new_circle">
+      <div class="new_circle main-container">
         <div></div>
         <div class="main-container">
           <div>
@@ -96,15 +96,15 @@
                   則建議</span><span>每三個月至半年</span><br class="mbShow" />洗牙一次。
               </div>
               <div class="new-btn">
-                <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
+                <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize"
+                  :mb="mb" :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
               </div>
             </div>
           </div>
           <div>
             <!-- <video width="380" height="690" src="../../../asset/video/xiya.mp4"></video> -->
             <!-- <iframe src="https://youtube.com/shorts/kfysOuM3slg?si=GqXdtKO74Co63Krj" frameborder="0"></iframe> -->
-            <iframe v-if="pcOrMb == pc" width="380" height="690" src="https://www.youtube.com/embed/kfysOuM3slg"
+            <iframe v-if="pcOrMb == 'pc'" width="380" height="690" src="https://www.youtube.com/embed/kfysOuM3slg"
               title="【你的線上牙醫💁🏻‍♂️洗牙篇】" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
@@ -172,12 +172,12 @@ export default {
     &>div:nth-child(1) {
       background: #ECF7FC;
       // clip-path: ellipse(105% 55% at -50% 50%);
-      width: 1400px;
-      height: 1400px;
+      width: 678px;
+      height: 678px;
       border-radius: 50%;
       position: absolute;
-      right: -40%;
-      bottom: -350px;
+      right: 40px;
+      bottom: 0;
       z-index: 1;
       // transform: rotate(-180deg);
     }
@@ -350,6 +350,7 @@ export default {
       width: 100%;
       background-size: 100% 100%;
       justify-content: flex-end;
+      z-index: 99;
 
       &>div:nth-child(1) {
         color: #79828D;
@@ -513,20 +514,20 @@ export default {
   }
 }
 
-@media screen and (min-width: 1925px) and (max-width: 4096px) {
-  .new_circle {
-    &>div:nth-child(1) {
-      background: #ECF7FC;
-      width: 1800px;
-      height: 1800px;
-      border-radius: 50%;
-      position: absolute;
-      right: -35%;
-      bottom: -600px;
-      z-index: 1;
-    }
-  }
-}
+// @media screen and (min-width: 1925px) and (max-width: 4096px) {
+//   .new_circle {
+//     &>div:nth-child(1) {
+//       background: #ECF7FC;
+//       width: 1800px;
+//       height: 1800px;
+//       border-radius: 50%;
+//       position: absolute;
+//       right: -35%;
+//       bottom: -600px;
+//       z-index: 1;
+//     }
+//   }
+// }
 
 // mb
 @media only screen and (max-width: 767px) {

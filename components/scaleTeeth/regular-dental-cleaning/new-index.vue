@@ -159,6 +159,10 @@ export default {
 <style   lang='scss' scoped>
 @import url('https://static.cmereye.com/static/font/Yuanti.woff2');
 @media screen and (min-width: 768px) {
+  .Regular_dental_cleaning {
+    z-index: 99;
+    position: relative;
+  }
   .mbShow {
     display: none;
   }
