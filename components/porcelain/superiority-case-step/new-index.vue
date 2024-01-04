@@ -469,7 +469,7 @@ export default {
     position: absolute;
     bottom: -150%;
     right: 20%;
-    animation: identifier 2s infinite;
+    animation: identifier .9s infinite;
   }
   @keyframes identifier {
       0% {
