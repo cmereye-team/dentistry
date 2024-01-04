@@ -115,7 +115,7 @@ export default {
         {
           id: 1,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/142749bf037eee93.png',
-          imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/f94f08ae0f2b5642.png',
+          imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/4df5d4f93e52388d.png',
           // mb: true,
           title: '術前諮詢',
           content: '檢查客人的口腔健康狀況，確保牙齒和牙周健康，塑造符合客人期望的牙齒形狀及顏色。'
@@ -147,7 +147,7 @@ export default {
         {
           id: 5,
           imgSrc: 'https://static.cmereye.com/imgs/2023/12/32e6ecc0d9c4355b.png',
-          imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/4df5d4f93e52388d.png',
+          imgSrcMb: 'https://static.cmereye.com/imgs/2023/12/f94f08ae0f2b5642.png',
           // mb: true,
           title: '定期追蹤',
           content: '裝上貼片後，需如真牙般對待。為確保其最佳狀態，建議按照牙醫的指示，定期覆診檢查及保養，以延長貼片壽命。'

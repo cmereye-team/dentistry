@@ -95,7 +95,7 @@
             <div>
               <div>
                 <img
-                  src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Rectangle-4664.1jk46fmwo6e8.png"
+                  src="https://static.cmereye.com/imgs/2024/01/9ff8dbf932e72958.png"
                   alt="拋光打磨牙齒表面">
               </div>
               <div>
