@@ -13,7 +13,7 @@
       :maxWidth="maxWidth" />
     <div class="main-container agomphosis">
       <div class="why_significance isArrowQuestion">缺牙不補會有哪些後遺症？</div>
-      <div>
+      <div class="pcShow">
         <!-- <img src="https://static.cmereye.com/imgs/2023/12/f686533c6de00f5b.png" alt=""> -->
         <div class="border_box">
           <div></div>
@@ -39,6 +39,9 @@
           <div></div>
           <div class="border3_round1 hover_round">咬合不正</div>
         </div>
+      </div>
+      <div class="agomphosis_mb mbShow">
+        <img src="https://static.cmereye.com/imgs/2024/01/8bdad865bcb81806.png" alt="">
       </div>
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :maxNum="1906" :minNum="770" />
@@ -669,6 +672,11 @@ export default {
 
 //md
 @media only screen and (max-width: 767px) {
+  .agomphosis_mb {
+    margin: 45px auto 0;
+    display: flex;
+    justify-content: center;
+  }
   .pcShow {
     display: none !important;
   }
