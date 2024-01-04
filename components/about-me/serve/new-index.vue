@@ -934,11 +934,11 @@ a {
         border-radius: 4.625rem;
         color: #FFF;
         font-family: Noto Sans;
-        font-size: 1.1297rem;
+        font-size: 4.8vw;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: 1.446px;
+        letter-spacing: .3856vw;
         position: relative;
         z-index: 10;
       }

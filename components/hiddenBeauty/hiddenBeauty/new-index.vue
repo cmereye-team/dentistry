@@ -61,7 +61,7 @@ export default {
       linkText: '立即預約及諮詢',
       isShowSvg: false,
       mb: '',
-      paddingSize: '2.6667vw 23.4667vw',
+      paddingSize: '10px 88px',
       paddingSizeMb: '6px 64px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       correctionList: [
@@ -323,8 +323,8 @@ export default {
   ::v-deep .newBtn {
     &>div {
       .img_absolute {
-        top: -115% !important;
-        right: 22% !important;
+        top: -13.3333vw !important;
+        right: 18.6667vw !important;
         z-index: 99 !important;
       }
     }
