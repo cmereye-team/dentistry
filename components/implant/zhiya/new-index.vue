@@ -89,7 +89,7 @@ export default {
       // 文字内容有span标签 有特殊样式 为true  目前只有 洗牙
       layoutPage: false,
       maxWidth: '430px', // 植牙的文本最大宽
-      pcOrMb:'pc'
+      pcOrMb: 'pc'
     };
   },
   computed: {},
@@ -127,7 +127,7 @@ export default {
       border-radius: 50%;
       left: -50%;
       bottom: 25%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(2) {
@@ -138,7 +138,7 @@ export default {
       border-radius: 50%;
       left: -35%;
       bottom: 20%;
-      animation: amplification 7s linear infinite;
+      animation: amplification 7s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(4) {
@@ -149,7 +149,7 @@ export default {
       border-radius: 50%;
       right: -40%;
       top: 20%;
-      animation: amplification2 9s linear infinite;
+      animation: amplification2 9s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(5) {
@@ -160,7 +160,7 @@ export default {
       border-radius: 50%;
       right: -10%;
       top: 0%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(6) {
@@ -171,7 +171,7 @@ export default {
       border-radius: 50%;
       right: -55%;
       top: 10%;
-      animation: identifier 9s linear infinite;
+      animation: identifier 9s infinite alternate ease-in-out;
     }
   }
 
@@ -186,7 +186,7 @@ export default {
       border-radius: 50%;
       right: 5%;
       bottom: 0;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(5) {
@@ -197,7 +197,7 @@ export default {
       border-radius: 50%;
       right: 0%;
       bottom: 10%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
   }
 
@@ -216,7 +216,7 @@ export default {
     align-items: center;
     justify-content: center;
     letter-spacing: 0;
-    animation: identifier2 7s linear infinite;
+    animation: identifier2 7s infinite alternate ease-in-out;
   }
 
   .border2_round {
@@ -235,7 +235,7 @@ export default {
     line-height: 108%;
     letter-spacing: 0;
     margin-top: 3%;
-    animation: identifier4 6s linear infinite;
+    animation: identifier4 9s infinite alternate ease-in-out;
   }
 
   .border2_round1 {
@@ -254,7 +254,7 @@ export default {
     font-weight: 700;
     line-height: 108%;
     letter-spacing: 0;
-    animation: identifier3 7s linear infinite;
+    animation: identifier3 7s infinite alternate ease-in-out;
   }
 
   .border2_round2 {
@@ -272,7 +272,7 @@ export default {
     font-weight: 700;
     line-height: 160%;
     letter-spacing: 0;
-    animation: identifier5 10s ease infinite;
+    animation: identifier5 7s infinite alternate ease-in-out;
   }
 
   .border_box2 {
@@ -287,7 +287,7 @@ export default {
       border-radius: 50%;
       left: -20%;
       top: 15%;
-      animation: amplification3 8s linear infinite;
+      animation: amplification3 8s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(2) {
@@ -298,7 +298,7 @@ export default {
       border-radius: 50%;
       left: -20%;
       top: 55%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(3) {
@@ -309,7 +309,7 @@ export default {
       border-radius: 50%;
       left: -6%;
       top: 52%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(5) {
@@ -320,7 +320,7 @@ export default {
       border-radius: 50%;
       right: 30%;
       bottom: 0%;
-      animation: amplification4 9s linear infinite;
+      animation: amplification4 9s infinite alternate ease-in-out;
     }
 
     &>div:nth-child(6) {
@@ -331,7 +331,7 @@ export default {
       border-radius: 50%;
       right: 50%;
       bottom: 0%;
-      animation: identifier 10s linear infinite;
+      animation: identifier 10s infinite alternate ease-in-out;
     }
   }
 
@@ -351,7 +351,7 @@ export default {
     line-height: 108%;
     letter-spacing: 0;
     margin: 0 10px;
-    animation: identifier6 8s ease-in-out infinite;
+    animation: identifier6 8s infinite alternate ease-in-out;
   }
 
   .border3_round1 {
@@ -369,7 +369,7 @@ export default {
     font-weight: 700;
     line-height: 108%;
     letter-spacing: 0;
-    animation: identifier2 5s linear infinite;
+    animation: identifier2 7s infinite alternate ease-in-out;
   }
 
   @keyframes amplification {
@@ -474,18 +474,14 @@ export default {
 
   @keyframes identifier {
     0% {
-      transform: scale(1.2) translate(10%, 10%);
+      transform: scale(1) translate(10%, 10%);
       opacity: .7;
     }
 
-    50% {
-      transform: scale(1.6) translate(0%, 0%);
-      opacity: 1;
-    }
 
     100% {
       transform: scale(1.2) translate(10%, 10%);
-      opacity: .8;
+      opacity: 1;
     }
   }
 
@@ -495,23 +491,10 @@ export default {
       font-size: 27px;
       opacity: 1;
     }
-
-    25% {
-      transform: scale(1.1);
-      font-size: 27px;
-      opacity: 0.7;
-    }
-
-    75% {
-      transform: scale(1);
-      font-size: 27px;
-      opacity: 0.7;
-    }
-
     100% {
-      transform: scale(1.1);
+      transform: scale(1);
       opacity: 1;
-      font-size: 27px;
+      font-size: 25px;
     }
   }
 
@@ -569,26 +552,26 @@ export default {
 
   @keyframes identifier5 {
     0% {
-      transform: scale(0.8);
-      font-size: 50px;
-      opacity: 1;
-    }
-
-    35% {
-      transform: scale(1);
-      font-size: 50px;
-      opacity: 0.8;
-    }
-
-    65% {
-      transform: scale(0.8);
+      transform: scale(0.9);
       font-size: 50px;
       opacity: 0.7;
     }
 
+    // 35% {
+    //   transform: scale(1);
+    //   font-size: 50px;
+    //   opacity: 0.8;
+    // }
+
+    // 65% {
+    //   transform: scale(0.8);
+    //   font-size: 50px;
+    //   opacity: 0.7;
+    // }
+
     100% {
-      transform: scale(0.9);
-      font-size: 50px;
+      transform: scale(1);
+      font-size: 48px;
       opacity: 1;
     }
   }
@@ -600,21 +583,21 @@ export default {
       opacity: 1;
     }
 
-    35% {
-      transform: scale(0.9);
-      font-size: 42px;
-      opacity: 0.8;
-    }
+    // 35% {
+    //   transform: scale(0.9);
+    //   font-size: 42px;
+    //   opacity: 0.8;
+    // }
 
-    65% {
-      transform: scale(0.8);
-      font-size: 42px;
-      opacity: 0.7;
-    }
+    // 65% {
+    //   transform: scale(0.8);
+    //   font-size: 42px;
+    //   opacity: 0.7;
+    // }
 
     100% {
       transform: scale(1);
-      font-size: 42px;
+      font-size: 40px;
       opacity: 0.7;
     }
   }
@@ -757,4 +740,5 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}</style>
+}
+</style>
