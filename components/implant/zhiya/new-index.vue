@@ -105,6 +105,9 @@ export default {
 <style lang="scss" scoped>
 //pc
 @media only screen and (min-width: 768px) {
+  .mbShow {
+    display: none;
+  }
   .border_box {
     position: relative;
     margin-left: -5%;
@@ -672,6 +675,9 @@ export default {
 
 //md
 @media only screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
   .agomphosis_mb {
     margin: 45px auto 0;
     display: flex;
