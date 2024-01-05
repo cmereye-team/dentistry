@@ -61,6 +61,9 @@ export default {
 
 <style  scoped lang='scss'>
 @media screen and (min-width: 768px) {
+  ::v-deep .mbShow {
+    display: none !important;
+  }
   .merit {
     margin: 109px auto;
   }
@@ -82,6 +85,7 @@ export default {
       }
 
       &>div:nth-child(2) {
+        margin: 18px auto 4px;
         color: #57B2F3;
         text-align: center;
         font-family: Noto Sans TC;
@@ -135,6 +139,9 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .pcShow {
+    display: none;
+  }
   .merit {
     margin-top: 68px;
   }

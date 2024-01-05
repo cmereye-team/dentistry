@@ -48,7 +48,7 @@ export default {
   .maintainList {
     display: flex;
     justify-content: space-between;
-    padding: 64px 200px 0;
+    padding: 64px 230px 0;
 
     &>div {
       &>div:nth-child(1) {
@@ -65,6 +65,17 @@ export default {
         font-weight: 400;
         line-height: 160%;
         white-space: break-spaces;
+      }
+    }
+
+    &>div:nth-child(3) {
+      position: relative;
+
+      &>div:nth-child(2) {
+        text-wrap: nowrap;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
       }
     }
   }

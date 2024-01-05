@@ -1,5 +1,7 @@
 <template>
   <div class="child">
+    <div class="pcShow child_img"><img src="https://static.cmereye.com/imgs/2024/01/4a4b4288adebdec0.png" alt="儿童专线">
+    </div>
     <div class="child_bg">
       <div class="main-container bubble">
         <div v-if="pcOrMb == 'pc'">
@@ -103,8 +105,19 @@ export default {
     display: none;
   }
 
+  .child {
+    position: relative;
+
+    .child_img {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 99;
+    }
+  }
+
   .child_bg {
-    background: url('https://static.cmereye.com/imgs/2023/12/e4a5e880add655b2.png');
+    background: url('https://static.cmereye.com/imgs/2024/01/c5efc4c265dbf76d.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -116,6 +129,27 @@ export default {
     align-items: center;
     flex-direction: column;
     padding: 220px 0;
+  }
+
+  .child_bg::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    background: url('https://static.cmereye.com/imgs/2024/01/89a795a521f13758.png');
+    width: 338px;
+    height: 228px;
+    top: 30px;
+    right: 0;
+  }
+
+  .child_bg::before {
+    content: '';
+    position: absolute;
+    background: url(https://static.cmereye.com/imgs/2024/01/b3c79ef725ccb740.png);
+    width: 338px;
+    height: 228px;
+    top: 30px;
+    left: 0;
   }
 
   ::v-deep .interval {
@@ -323,5 +357,4 @@ export default {
       letter-spacing: 1.6px !important;
     }
   }
-}
-</style>
+}</style>
