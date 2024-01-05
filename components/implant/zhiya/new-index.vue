@@ -13,7 +13,7 @@
       :maxWidth="maxWidth" />
     <div class="main-container agomphosis">
       <div class="why_significance isArrowQuestion">缺牙不補會有哪些後遺症？</div>
-      <div class="pcShow">
+      <div v-if="pcOrMb == 'pc'" class="pcShow">
         <!-- <img src="https://static.cmereye.com/imgs/2023/12/f686533c6de00f5b.png" alt=""> -->
         <div class="border_box">
           <div></div>
@@ -40,7 +40,7 @@
           <div class="border3_round1 hover_round">咬合不正</div>
         </div>
       </div>
-      <div class="agomphosis_mb mbShow">
+      <div v-else class="agomphosis_mb mbShow">
         <img src="https://static.cmereye.com/imgs/2024/01/8bdad865bcb81806.png" alt="">
       </div>
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
@@ -89,16 +89,21 @@ export default {
       // 文字内容有span标签 有特殊样式 为true  目前只有 洗牙
       layoutPage: false,
       maxWidth: '430px', // 植牙的文本最大宽
+      pcOrMb:'pc'
     };
   },
   computed: {},
+  methods: {
+    // 获取文档宽度
+    getDocWidth() {
+      this.pcOrMb = window.innerWidth > 767 ? 'pc' : 'mb'
+    }
+  },
   mounted() {
+    this.getDocWidth()
     // 获取屏幕宽度
     this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
-  },
-  methods: {
-    // 鼠标移入停止动画 放大1.1倍
-  },
+  }
 };
 </script>
 
@@ -108,6 +113,7 @@ export default {
   .mbShow {
     display: none;
   }
+
   .border_box {
     position: relative;
     margin-left: -5%;
@@ -612,6 +618,7 @@ export default {
       opacity: 0.7;
     }
   }
+
   .mbshow {
     display: none;
   }
@@ -678,11 +685,13 @@ export default {
   .pcShow {
     display: none;
   }
+
   .agomphosis_mb {
     margin: 45px auto 0;
     display: flex;
     justify-content: center;
   }
+
   .pcShow {
     display: none !important;
   }
@@ -748,5 +757,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>
