@@ -62,12 +62,12 @@ const getRoutes = resolve => [
     component: resolve('pages/invisalign-new'),
 
   },
+  // {
+  //   path: '/veneers',
+  //   component: resolve('pages/veneers'),
+  // },
   {
     path: '/veneers',
-    component: resolve('pages/veneers'),
-  },
-  {
-    path: '/new-veneers',
     component: resolve('pages/new-veneers'),
   },
   {
