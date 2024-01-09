@@ -186,6 +186,7 @@ export default {
   .discon {
     // margin: 1vw 0 0 0;
     display: flex;
+    padding-left: 65px;
 
     ul {
       padding-left: 0;
@@ -201,7 +202,7 @@ export default {
     margin-bottom: 90px;
 
     &>div:nth-child(2) {
-      max-width: 870px;
+      max-width: 840px;
       margin: 0 auto;
       margin-top: 75px;
     }
@@ -226,7 +227,7 @@ export default {
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
-    padding: 5px 0 20px 105px;
+    padding: 0 2vw;
   }
 
   ::v-deep .el-collapse-item__header.is-active {

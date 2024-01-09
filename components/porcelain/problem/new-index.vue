@@ -185,6 +185,8 @@ export default {
 
 @media only screen and (min-width: 768px) {
   .qoa {
+    max-width: 840px !important;
+    margin: auto;
     margin-top: 109px;
   }
 

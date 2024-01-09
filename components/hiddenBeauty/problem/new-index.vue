@@ -23,9 +23,7 @@
           </template>
           <div class="discon">
             <div>
-              <span>隱適美療程並沒有特別的年齡限制，只要有足夠牙齒數量及經牙醫評估你的狀況合適就可以。</span>
-              <span>兒童為最理想的矯齒黃金期，由於兒童的骨質較軟，令移動速度及效果較好。家長可考慮於小</span>
-              <span>童7歲左右的換牙階段，找牙醫作檢查及評估，及早針對牙冠及早期矯正需要。</span>
+              隱形矯正無明確年齡界線，只需經牙科醫生評估適合便可進行療程。
             </div>
           </div>
         </el-collapse-item>
@@ -33,13 +31,12 @@
           <template slot="title">
             <div class="contents">
               <i :class="judgeActive('3') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
-              <div :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">戴上隱適美牙箍會有痛楚嗎？</div>
+              <div :class="judgeActive('3') !== -1 ? 'p2' : 'p1'">戴上隱形牙箍會有痛楚嗎？</div>
             </div>
           </template>
           <div class="discon">
             <div>
-              <span>隱適美牙箍以漸進緩和的矯正力道移動你的牙齒，相比其他矯正療程引起的痛楚較低。</span>
-              <span>而某些使用者會於剛戴上新牙箍數天內或會感到緊繃的感覺，此為牙齒移動的跡象，不適感亦會於數天後消失。</span>
+              隱形牙箍以漸進緩和的力道移動牙齒，痛感較其他矯正療程低。初期戴新牙箍可能感到緊繃，此為牙齒移動的跡象，數日後會自然消退。
             </div>
           </div>
         </el-collapse-item>
@@ -47,13 +44,12 @@
           <template slot="title">
             <div class="contents">
               <i :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
-              <div :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">隱適美的全方位矯齒療程同副線隱適美‧易（Invisalign Go）有什麼分別？</div>
+              <div :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">小朋友應在換牙後進行隱形矯正嗎？</div>
             </div>
           </template>
           <div class="discon">
             <div>
-              <span>隱適美的全方位矯齒療程可解決輕微至複雜的矯齒個案，包括開咬、深咬、錯咬、倒及、哨牙等較複雜的牙齒問題。</span>
-              <span>隱適美‧易（Invisalign Go）矯齒療程主要處理較輕微至中度的牙齒問題，適合想於較短時間內改善牙縫、牙齒擠擁等牙齒排列問題，價格亦較為優惠。</span>
+              小朋友的牙齒排列問題不容小覷，愈遲改善，影響範圍就愈廣泛。及早矯正牙齒有助減低治療難度或避免情況惡化。 建議家長考慮在小朋友7歲的換牙期，尋求牙醫的協助並接受檢查和評估。
             </div>
           </div>
         </el-collapse-item>
@@ -61,13 +57,12 @@
           <template slot="title">
             <div class="contents">
               <i :class="judgeActive('5') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
-              <div :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">對小朋友而言，隱適美兒童專線 (Invisalign First) 矯齒療程安全嗎？</div>
+              <div :class="judgeActive('5') !== -1 ? 'p2' : 'p1'">兒童專線隱形矯正療程安全嗎？</div>
             </div>
           </template>
           <div class="discon">
             <div>
-              <span>Invisalign First 矯齒牙箍採用已獲專利的SmartTrack材料，並且得到美國FDA認證其安全性。</span>
-              <span>Invisalign First更根據兒童的短小牙齒進行優化，使用相應附件，提供穩定力度。牙箍亦可加上藍色依從性顯示點，方便檢查及監察牙箍佩戴時間，達致最佳療程效果。</span>
+              我們選用的隱形牙箍得到美國FDA認證其安全性，採用獲專利物料及專屬附件粒粒，可針對小朋友細小的牙冠，給予輕柔持續的移動力，亦能控制牙冠及牙腳安全移動。
             </div>
           </div>
         </el-collapse-item>
@@ -206,7 +201,7 @@ export default {
 
   .coll-box {
     margin: 30px auto;
-    width: 60%;
+    // width: 60%;
   }
 
   .contents {
@@ -263,6 +258,8 @@ export default {
 
 @media screen and (min-width: 768px) {
   .qa {
+    max-width: 840px !important;
+    margin: auto;
     margin-top: 109px;
   }
 

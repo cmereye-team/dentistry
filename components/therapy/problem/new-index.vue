@@ -235,7 +235,7 @@ export default {
 
   .coll-box {
     margin: 3vw auto;
-    width: 846px;
+    width: 840px;
   }
 
   .contents {

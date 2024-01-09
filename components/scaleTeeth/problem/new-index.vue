@@ -459,13 +459,14 @@ export default {
   ::v-deep .el-collapse-item__content {
     font-weight: 400;
     font-size: 19px;
-    padding-left: 2vw;
+    // padding-left: 2vw;
+    padding: 0 2vw;
     // background-color: #DFDFDF;
   }
 
   .coll-box {
     margin: 3vw auto;
-    width: 60%;
+    width: 840px;
   }
 
   .contents {
