@@ -60,7 +60,6 @@ const getRoutes = resolve => [
   {
     path: '/invisalign-new',
     component: resolve('pages/invisalign-new'),
-
   },
   // {
   //   path: '/veneers',
@@ -73,7 +72,6 @@ const getRoutes = resolve => [
   {
     path: '/teeth-whitening',
     component: resolve('pages/teeth-whitening'),
-
   },
   {
     path: '/cosmetic',
