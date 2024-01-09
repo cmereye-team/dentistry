@@ -1,6 +1,8 @@
 <template>
-  <div class="child">
-    <div class="pcShow child_img"><img src="https://static.cmereye.com/imgs/2024/01/4a4b4288adebdec0.png" alt="儿童专线">
+  <div id="child" class="child">
+    <div class="child_img"><img
+        :src="pcOrMb == 'pc' ? 'https://static.cmereye.com/imgs/2024/01/4a4b4288adebdec0.png' : 'https://static.cmereye.com/imgs/2024/01/ff1023a5ccd96750.png'"
+        alt="儿童专线">
     </div>
     <div class="child_bg">
       <div class="main-container bubble">
@@ -10,13 +12,13 @@
         <div>
           <div v-if="pcOrMb == 'pc'"><img src="https://static.cmereye.com/imgs/2023/12/d1f99bcd3aff5ebd.png" alt=""></div>
           <div><img
-              :src="pcOrMb == 'pc' ? 'https://static.cmereye.com/imgs/2023/12/63668eed6619c30f.png' : 'https://static.cmereye.com/imgs/2024/01/d02a371c94deb7b9.png'"
+              :src="pcOrMb == 'pc' ? 'https://static.cmereye.com/imgs/2024/01/cbd499bac63a0a6a.png' : 'https://static.cmereye.com/imgs/2024/01/d59d521c77a0fe37.png'"
               alt=""></div>
           <div v-if="pcOrMb == 'pc'"><img src="https://static.cmereye.com/imgs/2023/12/3f654ed56a2419ea.png" alt=""></div>
         </div>
-        <div v-if="pcOrMb == 'pc'" class="new_btn">
+        <div class="new_btn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1745" :minNum="580" />
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="3650" :minNum="2440" :isChild="child" />
         </div>
       </div>
       <div class="age_gap">
@@ -85,6 +87,7 @@ export default {
       paddingSize: '10px 88px',
       paddingSizeMb: '6px 64px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/d0209184f5c3c712.png',
+      child:'child',
     };
   },
   methods: {
@@ -95,6 +98,8 @@ export default {
   },
   mounted() {
     this.getDocWidth()
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
   }
 }
 </script>
@@ -113,11 +118,12 @@ export default {
       left: 50%;
       transform: translateX(-50%);
       z-index: 99;
+      top: 60px;
     }
   }
 
   .child_bg {
-    background: url('https://static.cmereye.com/imgs/2024/01/c5efc4c265dbf76d.png');
+    background: url('https://static.cmereye.com/imgs/2024/01/7730344d5b47ad69.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -138,7 +144,7 @@ export default {
     background: url('https://static.cmereye.com/imgs/2024/01/89a795a521f13758.png');
     width: 338px;
     height: 228px;
-    top: 30px;
+    top: 90px;
     right: 0;
   }
 
@@ -148,7 +154,7 @@ export default {
     background: url(https://static.cmereye.com/imgs/2024/01/b3c79ef725ccb740.png);
     width: 338px;
     height: 228px;
-    top: 30px;
+    top: 90px;
     left: 0;
   }
 
@@ -177,10 +183,10 @@ export default {
       top: -160% !important;
     }
 
-    .btn1,
-    .btn2 {
-      background: #57B2F3 !important;
-    }
+    // .btn1,
+    // .btn2 {
+    //   background: #57B2F3 !important;
+    // }
   }
 
   .bubble {
@@ -227,6 +233,63 @@ export default {
         height: 305px;
       }
     }
+
+    ::v-deep .layout_page {
+      .interval {
+        .content {
+          &>div:nth-child(1) {
+            position: relative;
+
+            &>div {
+              max-width: 425px !important;
+            }
+          }
+
+          &>div:nth-child(1)::before {
+            content: '';
+            background: url('https://static.cmereye.com/imgs/2024/01/f1de70154e17f880.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 106px;
+            height: 147px;
+            position: absolute;
+            left: 85px;
+            top: -82px;
+          }
+
+          &>div:nth-child(1)::after {
+            content: '';
+            background: url('https://static.cmereye.com/imgs/2024/01/deb32f30dc2ea844.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 87px;
+            height: 121px;
+            position: absolute;
+            right: 240px;
+            bottom: -90px;
+          }
+        }
+
+        &>div:nth-child(2) {
+          &>div:nth-child(2) {
+            position: relative;
+          }
+
+          &>div:nth-child(2)::after {
+            content: '';
+            background: url('https://static.cmereye.com/imgs/2024/01/7b74d41f469aef95.png');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            width: 97px;
+            height: 171px;
+            position: absolute;
+            right: 5px;
+            top: -150px;
+            z-index: -9;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -235,13 +298,26 @@ export default {
     display: none;
   }
 
+  .child {
+    position: relative;
+  }
+
+  .child_img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    top: -25px;
+  }
+
   .child_bg {
-    background: url('https://static.cmereye.com/imgs/2024/01/502f8ee9f0a0fdc5.png');
+    margin-top: 75px;
+    background: url('https://static.cmereye.com/imgs/2024/01/a609a4425386a049.png');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    height: 1281px;
+    height: 1200px;
     position: relative;
     display: flex;
     // justify-content: center;
@@ -251,8 +327,6 @@ export default {
   }
 
   .age_gap {
-    margin-top: 165px;
-
     &>div:nth-child(1) {
       display: flex;
       justify-content: center;
@@ -330,6 +404,21 @@ export default {
       background: url(https://static.cmereye.com/imgs/2024/01/2ba686d56b5304a8.png) !important;
       background-repeat: no-repeat !important;
       background-size: 100% 100% !important;
+    }
+  }
+
+  ::v-deep .new_btn {
+    .img_absolute {
+      width: 88px !important;
+      top: -190% !important;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .btn_pc_style {
+      background: #57B2F3 !important;
     }
   }
 

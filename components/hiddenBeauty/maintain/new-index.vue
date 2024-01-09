@@ -18,22 +18,22 @@ export default {
       maintainList: [
         {
           id: 1,
-          img: 'https://static.cmereye.com/imgs/2024/01/15813bd1779f311c.png',
+          img: 'https://static.cmereye.com/imgs/2024/01/4bca2df99215753c.png',
           text: '每天須自律佩\n20至22小時',
         },
         {
           id: 2,
-          img: 'https://static.cmereye.com/imgs/2024/01/4bca2df99215753c.png',
+          img: 'https://static.cmereye.com/imgs/2024/01/15813bd1779f311c.png',
           text: '進食時須除下\n隱形牙箍',
         },
         {
           id: 3,
-          img: 'https://static.cmereye.com/imgs/2024/01/2f3946c3fed3a181.png',
+          img: 'https://static.cmereye.com/imgs/2024/01/77b854d09317d101.png',
           text: '避免進食染色食物',
         },
         {
           id: 4,
-          img: 'https://static.cmereye.com/imgs/2024/01/77b854d09317d101.png',
+          img: 'https://static.cmereye.com/imgs/2024/01/2f3946c3fed3a181.png',
           text: '保持口腔衛生',
         },
       ]

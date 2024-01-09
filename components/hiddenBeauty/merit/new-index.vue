@@ -55,7 +55,11 @@ export default {
       ]
     };
   },
-  methods: {}
+  methods: {},
+  mounted(){
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 </script>
 
@@ -186,6 +190,7 @@ export default {
         font-style: normal;
         font-weight: 500;
         line-height: 160%;
+        margin-top: 8px;
       }
 
       &>div:nth-child(3) {

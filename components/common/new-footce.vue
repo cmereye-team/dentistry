@@ -4,10 +4,8 @@
       <div v-if="isShow" class="pc">
         <a target="_blank" href="https://api.whatsapp.com/send?phone=85295128192">
           <div class="whatsapp_pc">
-            <div>
-              <img
-                src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/dentistry/Group-10081.2vvogt7bnx40.png"
-                alt="">
+            <div class="brand_doll">
+              <img src="https://static.cmereye.com/imgs/2024/01/7070c5f8856f45a3.png" alt="">
             </div>
             <div>
               <div>
@@ -230,6 +228,18 @@ export default {
       right: 10px;
     }
 
+    &>div:nth-child(1)::before {
+      content: '';
+      background: url('https://static.cmereye.com/imgs/2024/01/75fe08af51de7ee4.png');
+      display: inline-block;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 169px;
+      height: 101px;
+      position: absolute;
+      top: -70px;
+    }
+
     &>div:nth-child(2) {
       display: flex;
       align-items: flex-end;
@@ -260,6 +270,25 @@ export default {
         bottom: 0;
         transform: translateX(-55%);
       }
+    }
+  }
+
+  .whatsapp_pc:hover {
+    .brand_doll {
+      transform: scale(1.1) translateY(-10px);
+    }
+    .brand_doll::before {
+      content: '';
+      background: url('https://static.cmereye.com/imgs/2024/01/1a97b0c3c9602941.png');
+      display: inline-block;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      width: 64px;
+      height: 64px;
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -414,9 +443,9 @@ export default {
   }
 
   // .face-primary {
-    // img {
-      // padding-left: 0.5vw;
-    // }
+  // img {
+  // padding-left: 0.5vw;
+  // }
   // }
 
   .online {

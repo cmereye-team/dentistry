@@ -1,7 +1,8 @@
 <template>
   <div>
-    <a class="serve_btn" :href="linkHref" target="_blank">
-      <div v-if="newSvg" class="img_absolute">
+    <a class="serve_btn" :class="[isChild == 'child' ? 'serve_btn_child' : '']" :href="linkHref" target="_blank">
+      <div v-if="newSvg" class="img_absolute"
+        :class="[isChild == 'child' && isHoverAnimate == true ? 'child_embellish' : '']">
         <img :src="newSvg" alt="">
       </div>
       <div v-else>
@@ -206,6 +207,9 @@ export default {
     minNum: {
       type: Number,
     },
+    isChild: {
+      type: String,
+    }
   },
   data() {
     return {
@@ -298,6 +302,16 @@ export default {
     }
   }
 
+  .serve_btn_child {
+    .btn_pc_style {
+
+      .btn1,
+      .btn2 {
+        background: #57B2F3;
+      }
+    }
+  }
+
   .serve_btn .btn_pc_style .btn2 {
     color: #79828D;
     background: #fff;
@@ -345,6 +359,53 @@ export default {
 
     100% {
       clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
+    }
+  }
+
+  .child_embellish {
+    position: relative;
+  }
+
+  .child_embellish::after {
+    content: '';
+    background: url('https://static.cmereye.com/imgs/2024/01/d190aa82876bade0.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 167px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    left: -20px;
+    transform: rotate(360deg) translateY(10);
+    top: 30px;
+    animation: flicker .7s linear;
+  }
+
+  .child_embellish::before {
+    content: '';
+    background: url('https://static.cmereye.com/imgs/2024/01/610519491457e24d.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 88px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    animation: flicker .7s linear;
+  }
+
+  @keyframes flicker {
+
+    0%,
+    50%,
+    100% {
+      opacity: 1;
+    }
+
+    40%,
+    70% {
+      opacity: 0;
     }
   }
 }
@@ -406,5 +467,4 @@ export default {
       margin-right: .375rem;
     }
   }
-}
-</style>
+}</style>

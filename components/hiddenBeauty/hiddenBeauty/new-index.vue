@@ -24,9 +24,9 @@
           隱形牙箍是一種活動式透明牙箍，可自<br class="mbShow" />行除戴。透過先進數位<br class="pcShow" />科技，以電腦模<br
             class="mbShow" />擬牙齒移動過程，並利用牙箍的機械性<br class="mbShow" />力量，<br class="pcShow" />令牙齒周圍組織產生移動，將牙<br
             class="mbShow" />齒逐步推向理想位置。</div>
-        <a>
+        <a href="#child" class="mb_img_a">
           <img class="pcShow" src="https://static.cmereye.com/imgs/2023/12/996d7bbac360f590.png" alt="page-down">
-          <img class="mbShow" src="https://static.cmereye.com/imgs/2024/01/6a8b5c22a80bc484.png" alt="page-down">
+          <img class="mbShow" src="https://static.cmereye.com/imgs/2024/01/1ea5e40c52bd5608.png" alt="page-down">
         </a>
       </div>
       <div class="correction_box">
@@ -43,7 +43,7 @@
         </div>
         <div class="newBtn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1745" :minNum="580" />
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1800" :minNum="585"/>
         </div>
       </div>
     </div>
@@ -66,7 +66,7 @@ export default {
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
       correctionList: [
         {
-          img: 'https://static.cmereye.com/imgs/2023/12/eb96793dc4e0121a.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/b3b7e510a4d3c0ae.png',
           title: '開咬',
           id: '1'
         },
@@ -76,7 +76,7 @@ export default {
           id: '2'
         },
         {
-          img: 'https://static.cmereye.com/imgs/2023/12/b3b7e510a4d3c0ae.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/eb96793dc4e0121a.png',
           title: '反咬合',
           id: '3'
         },
@@ -86,12 +86,12 @@ export default {
           id: '4'
         },
         {
-          img: 'https://static.cmereye.com/imgs/2023/12/040103ea9d9c95ce.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/ba6b7d2cf3c259f9.png',
           title: '牙齒倒及',
           id: '5'
         },
         {
-          img: 'https://static.cmereye.com/imgs/2023/12/ba6b7d2cf3c259f9.png',
+          img: 'https://static.cmereye.com/imgs/2023/12/040103ea9d9c95ce.png',
           title: '牙齒擠擁',
           id: '6'
         },
@@ -101,7 +101,11 @@ export default {
   computed: {
   },
   methods: {
-  }
+  },
+  mounted() {
+    // 获取屏幕宽度
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+  },
 }
 
 </script>
@@ -159,6 +163,24 @@ export default {
 
     &>a:last-child::after {
       content: none;
+    }
+  }
+
+  .mb_img_a {
+    &>img {
+      animation: floatUpDown 2s ease-in-out infinite;
+    }
+  }
+
+  @keyframes floatUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
     }
   }
 
@@ -280,8 +302,27 @@ export default {
 
     &>a {
       position: absolute;
-      top: -115%;
-      right: 12%;
+      top: -175%;
+      right: 0;
+    }
+  }
+
+  .mb_img_a {
+    transform: scale(0.5);
+    img {
+      animation: floatUpDown 2s ease-in-out infinite;
+    }
+  }
+
+  @keyframes floatUpDown {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
     }
   }
 
@@ -358,5 +399,4 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}
-</style>
+}</style>
