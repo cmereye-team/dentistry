@@ -257,7 +257,7 @@ export default {
       font-family: Noto Sans;
       font-size: 21px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       letter-spacing: 2.1px;
     }
@@ -269,7 +269,7 @@ export default {
     font-family: Noto Sans;
     font-size: 16px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     line-height: normal;
     letter-spacing: 1.6px;
   }

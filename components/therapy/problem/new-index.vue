@@ -222,7 +222,7 @@ export default {
 
   ::v-deep .el-collapse-item__header.is-active {
     background-color: transparent;
-    padding: 0 35px;
+    padding: 0 2vw;
   }
 
   ::v-deep .el-collapse-item__content {
@@ -267,7 +267,7 @@ export default {
       font-family: Noto Sans;
       font-size: 16px;
       font-style: normal;
-      font-weight: 500;
+      font-weight: 400;
       line-height: normal;
       letter-spacing: 1.6px;
       padding-bottom: 20px;
