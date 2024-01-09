@@ -229,13 +229,13 @@ export default {
   }
 
   .case {
-    cursor: url('https://static.cmereye.com/imgs/2023/12/31d23616c2087a0a.png'), auto;
+    cursor: url('https://static.cmereye.com/imgs/2023/12/31d23616c2087a0a.png') 62.5 62.5, auto;
   }
 
   .case_img_cursor {
 
     &>div:nth-child(1) {
-      cursor: url('https://static.cmereye.com/imgs/2023/12/031788755ad5d5e3.png'), auto;
+      cursor: url('https://static.cmereye.com/imgs/2023/12/031788755ad5d5e3.png')62.5 62.5, auto;
     }
 
     &>div:nth-child(1):hover {
