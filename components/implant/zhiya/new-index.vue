@@ -478,7 +478,6 @@ export default {
       opacity: .7;
     }
 
-
     100% {
       transform: scale(1.2) translate(10%, 10%);
       opacity: 1;
@@ -488,7 +487,7 @@ export default {
   @keyframes identifier2 {
     0% {
       transform: scale(0.9);
-      font-size: 29.7px;
+      font-size: 27px;
       opacity: 1;
     }
     100% {
@@ -501,47 +500,24 @@ export default {
   @keyframes identifier3 {
     0% {
       transform: scale(1.1) translateY(0%);
-      font-size: 15.3px;
+      font-size: 17px;
       opacity: 1;
     }
-
-    // 25% {
-    //   transform: scale(1) translateY(10%);
-    //   font-size: 17px;
-    //   opacity: 0.7;
-    // }
-
-    // 75% {
-    //   transform: scale(0.9) translateY(20%);
-    //   font-size: 18.7px;
-    //   opacity: 0.7;
-    // }
 
     100% {
       transform: scale(0.8) translateY(10%);
       opacity: 1;
-      font-size: 20.4px;
+      font-size: 17px;
     }
   }
 
   @keyframes identifier4 {
     0% {
       transform: scale(0.8);
-      font-size: 36px;
+      font-size: 30px;
       opacity: 1;
     }
 
-    // 35% {
-    //   transform: scale(0.9);
-    //   font-size: 30px;
-    //   opacity: 0.8;
-    // }
-
-    // 65% {
-    //   transform: scale(0.8);
-    //   font-size: 30px;
-    //   opacity: 0.7;
-    // }
 
     100% {
       transform: scale(1);
@@ -553,21 +529,9 @@ export default {
   @keyframes identifier5 {
     0% {
       transform: scale(0.9);
-      font-size: 55px;
+      font-size: 50px;
       opacity: 0.7;
     }
-
-    // 35% {
-    //   transform: scale(1);
-    //   font-size: 50px;
-    //   opacity: 0.8;
-    // }
-
-    // 65% {
-    //   transform: scale(0.8);
-    //   font-size: 50px;
-    //   opacity: 0.7;
-    // }
 
     100% {
       transform: scale(1);
@@ -579,21 +543,9 @@ export default {
   @keyframes identifier6 {
     0% {
       transform: scale(0.8);
-      font-size: 50.4px;
+      font-size: 42px;
       opacity: 1;
     }
-
-    // 35% {
-    //   transform: scale(0.9);
-    //   font-size: 42px;
-    //   opacity: 0.8;
-    // }
-
-    // 65% {
-    //   transform: scale(0.8);
-    //   font-size: 42px;
-    //   opacity: 0.7;
-    // }
 
     100% {
       transform: scale(1);
