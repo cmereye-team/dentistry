@@ -35,28 +35,28 @@
       <div class="main-container">
         <div class="why_significance">洗牙四步曲</div>
         <div class="step_four pcShow">
-          <div>
+          <div class="hidden" :class="[flag == true ? 'show_box' : '']">
             <div><span>1</span></div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/12/6769c2cd162a065e.png" alt="清除牙結石及牙菌膜">
             </div>
             <div>利用超聲波震動儀器，清除牙結石及牙菌膜。</div>
           </div>
-          <div>
+          <div class="hidden" :class="[flag == true ? 'show_box' : '']">
             <div><span>2</span></div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/12/152aee531c736d95.png" alt="利用刮牙石器去除牙結石">
             </div>
             <div>利用刮牙石器去除牙結石。</div>
           </div>
-          <div>
+          <div class="hidden" :class="[flag == true ? 'show_box' : '']">
             <div><span>3</span></div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/12/5b7618e6a93618fd.png" alt="拋光打磨牙齒表面">
             </div>
             <div>拋光打磨牙齒表面，去除牙漬及強化牙齒外層，避免藏污納垢，減低患上牙周病的風險。</div>
           </div>
-          <div>
+          <div class="hidden" :class="[flag == true ? 'show_box' : '']">
             <div><span>4</span></div>
             <div>
               <img src="https://static.cmereye.com/imgs/2023/12/d9e8d5230cea810c.png" alt="塗上牙面氟化物助鞏固琺瑯質">
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="mb_step_four mbShow">
-          <div>
+          <div class="hidden" :class="[flagMb == true ? 'show_box' : '']">
             <div>
               <div>
                 <img src="https://static.cmereye.com/imgs/2023/12/d52e23aad557311a.png" alt="清除牙結石及牙菌膜">
@@ -78,7 +78,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="hidden" :class="[flagMb == true ? 'show_box' : '']">
             <div>
               <div>
                 <img src="https://static.cmereye.com/imgs/2023/12/65e2d3775437a3f1.png" alt="利用刮牙石器去除牙結石">
@@ -91,12 +91,10 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="hidden" :class="[flagMb == true ? 'show_box' : '']">
             <div>
               <div>
-                <img
-                  src="https://static.cmereye.com/imgs/2024/01/9ff8dbf932e72958.png"
-                  alt="拋光打磨牙齒表面">
+                <img src="https://static.cmereye.com/imgs/2024/01/9ff8dbf932e72958.png" alt="拋光打磨牙齒表面">
               </div>
               <div>
                 <div>
@@ -106,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="hidden" :class="[flagMb == true ? 'show_box' : '']">
             <div>
               <div>
                 <img src="https://static.cmereye.com/imgs/2023/12/c5ea9b912f7946e9.png" alt="塗上牙面氟化物助鞏固琺瑯質">
@@ -150,19 +148,63 @@ export default {
       paddingSize: '10px 100px',
       paddingSizeMb: '6px 74px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/ff870ed05ae5440d.png',
+      scrollY: 0,
+      flagMb: false,
+      flag: false,
     };
   },
-  methods: {}
+  methods: {
+    getScrollY() {
+      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      if (this.scrollY > 1800) {
+        this.flag = true
+      }
+      if (this.scrollY > 2800) {
+        this.flagMb = true
+      }
+    },
+  },
+  mounted() {
+    window.addEventListener('scroll', this.getScrollY);
+  }
 }
 </script>
 
 <style   lang='scss' scoped>
 @import url('https://static.cmereye.com/static/font/Yuanti.woff2');
 @media screen and (min-width: 768px) {
+  .hidden {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .show_box:nth-child(1) {
+    animation: fadeIn 1s 0s forwards;
+  }
+
+  .show_box:nth-child(2) {
+    animation: fadeIn 1s .5s forwards;
+  }
+
+  .show_box:nth-child(3) {
+    animation: fadeIn 1s 1s forwards;
+  }
+
+  .show_box:nth-child(4) {
+    animation: fadeIn 1s 1.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
   .Regular_dental_cleaning {
     z-index: 99;
     position: relative;
   }
+
   .mbShow {
     display: none;
   }
@@ -254,7 +296,6 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      opacity: 0;
       position: relative;
 
       &>div:nth-child(1) {
@@ -308,26 +349,6 @@ export default {
     &>div:last-child:after {
       content: none;
     }
-
-    &>div:nth-child(1) {
-      opacity: 1;
-      transition: all 0.3s;
-    }
-
-    &>div:nth-child(2) {
-      opacity: 1;
-      transition: all 0.5s;
-    }
-
-    &>div:nth-child(3) {
-      opacity: 1;
-      transition: all 0.7s;
-    }
-
-    &>div:nth-child(4) {
-      opacity: 1;
-      transition: all 0.9s;
-    }
   }
 
   .toothWash {
@@ -371,6 +392,33 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
+  .hidden {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  .show_box:nth-child(1) {
+    animation: fadeIn 1s 0s forwards;
+  }
+
+  .show_box:nth-child(2) {
+    animation: fadeIn 1s .5s forwards;
+  }
+
+  .show_box:nth-child(3) {
+    animation: fadeIn 1s 1s forwards;
+  }
+
+  .show_box:nth-child(4) {
+    animation: fadeIn 1s 1.5s forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
   ::v-deep .new-btn {
     .img_absolute {
       right: 23% !important;
@@ -378,6 +426,7 @@ export default {
       z-index: 11 !important;
     }
   }
+
   .procedure {
     margin-top: 54px;
   }
