@@ -11,7 +11,7 @@
     <mapGoogle />
     <div class="new_btn_scaling" style="margin:90px 0">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" :maxNum="6240" :minNum="5034" :newSvg="newSvg" />
+        :paddingSizeMb="paddingSizeMb" :maxNum="6240" :minNum="5034" :maxNumMb="7910" :minNumMb="7575"  :newSvg="newSvg" />
     </div>
     <registration />
     <foot />
@@ -65,6 +65,7 @@ export default {
     }
   },
   mounted() {
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
     document.getElementsByTagName("body")[0].className = "body-scaling-and-polishing";
   },
   head() {
@@ -141,8 +142,8 @@ export default {
 @media screen and(max-width: 767px) {
   ::v-deep .new_btn_scaling {
     .img_absolute {
-      right: 23% !important;
-      top: -110% !important;
+      right: 13% !important;
+      top: -140% !important;
       z-index: 11 !important;
     }
   }

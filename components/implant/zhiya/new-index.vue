@@ -43,8 +43,10 @@
       <div v-else class="agomphosis_mb mbShow">
         <img src="https://static.cmereye.com/imgs/2024/01/8bdad865bcb81806.png" alt="">
       </div>
-      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" :maxNum="1906" :minNum="770" />
+      <div class="new-btn">
+        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+          :paddingSizeMb="paddingSizeMb" :maxNum="1906" :minNum="770"  :maxNumMb="1760" :minNumMb="1350"  />
+      </div>
     </div>
   </div>
 </template>
@@ -490,6 +492,7 @@ export default {
       font-size: 27px;
       opacity: 1;
     }
+
     100% {
       transform: scale(1);
       opacity: 1;
@@ -619,6 +622,15 @@ export default {
 @media only screen and (max-width: 767px) {
   .pcShow {
     display: none;
+  }
+
+  ::v-deep .new-btn {
+    .serve_btn {
+      &>div:nth-child(1) {
+        top: -160% !important;
+        right: -13% !important;
+      }
+    }
   }
 
   .agomphosis_mb {

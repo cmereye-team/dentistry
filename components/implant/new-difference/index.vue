@@ -71,7 +71,7 @@
       </div>
     </div>
     <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-      :paddingSizeMb="paddingSizeMb" :maxNum="5406" :minNum="4234" />
+      :paddingSizeMb="paddingSizeMb" :maxNum="5406" :minNum="4234" :maxNumMb="5510" :minNumMb="5155" />
   </div>
 </template>
 
@@ -674,4 +674,5 @@ export default {
     right: 50%;
     transform: translateX(50%);
   }
-}</style>
+}
+</style>

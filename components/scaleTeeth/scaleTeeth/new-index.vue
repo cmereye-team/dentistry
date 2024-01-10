@@ -97,7 +97,7 @@
               </div>
               <div class="new-btn">
                 <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize"
-                  :mb="mb" :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653" :newSvg="newSvg" />
+                  :mb="mb" :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653"  :maxNumMb="1850" :minNumMb="1440"  :newSvg="newSvg" />
               </div>
             </div>
           </div>

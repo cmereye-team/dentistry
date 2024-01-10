@@ -127,7 +127,7 @@
     </a> -->
     <div style="margin: 90px 0" class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" :maxNum="3420" :minNum="2247" :newSvg="newSvg" />
+        :paddingSizeMb="paddingSizeMb" :maxNum="3420" :minNum="2247"  :maxNumMb="5250" :minNumMb="4875"  :newSvg="newSvg" />
     </div>
   </div>
 </template>
@@ -166,6 +166,7 @@ export default {
   },
   mounted() {
     window.addEventListener('scroll', this.getScrollY);
+    this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
   }
 }
 </script>
@@ -421,8 +422,8 @@ export default {
 
   ::v-deep .new-btn {
     .img_absolute {
-      right: 23% !important;
-      top: -110% !important;
+      right: 13% !important;
+      top: -140% !important;
       z-index: 11 !important;
     }
   }
