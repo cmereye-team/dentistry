@@ -21,9 +21,10 @@
             <div>{{ item.title }}</div>
           </div>
         </div>
-        <div>
+        <div class="new-btn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1820" :minNum="640" />
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1820" :minNum="640" :maxNumMb="1700"
+            :minNumMb="1270" />
         </div>
         <div class="pcShow">
           <img src="https://static.cmereye.com/imgs/2023/12/69ef54f26b6fbfc4.png" alt="">
@@ -241,8 +242,13 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
-  ::v-deep .img_absolute {
-    right: 18% !important;
+
+  ::v-deep .new-btn {
+    .img_absolute {
+      right: 10% !important;
+      top: -140% !important;
+      z-index: 9;
+    }
   }
 
   .all-ceramic-one {

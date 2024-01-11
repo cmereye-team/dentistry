@@ -62,7 +62,8 @@
       </div>
       <div>
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="4400" :minNum="3210" />
+          :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="4400" :minNum="3210" :maxNumMb="5945"
+          :minNumMb="5590" />
       </div>
     </div>
   </div>
@@ -471,20 +472,24 @@ export default {
     right: 20%;
     animation: identifier .9s infinite;
   }
+
   @keyframes identifier {
-      0% {
-        background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
-      }
-      50% {
-        background: url('https://static.cmereye.com/imgs/2024/01/e28fe1414dd13387.png');
-      }
-      95% {
-        background: url('https://static.cmereye.com/imgs/2024/01/45004062c3535c1d.png');
-      }
-      100% {
-        background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
-      }
+    0% {
+      background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
     }
+
+    50% {
+      background: url('https://static.cmereye.com/imgs/2024/01/e28fe1414dd13387.png');
+    }
+
+    95% {
+      background: url('https://static.cmereye.com/imgs/2024/01/45004062c3535c1d.png');
+    }
+
+    100% {
+      background: url('https://static.cmereye.com/imgs/2024/01/f0b1f0556840d29a.png');
+    }
+  }
 
   .isAfter {
     color: #57B2F3;
@@ -509,7 +514,9 @@ export default {
   }
 
   ::v-deep .img_absolute {
-    right: 18% !important;
+    right: 10% !important;
+    top: -136% !important;
+    z-index: 9;
   }
 
   .superiority {

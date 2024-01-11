@@ -48,7 +48,7 @@ export default {
     return {
       bannerImg: {
         link: 'https://static.cmereye.com/imgs/2024/01/3ccdc793d15d6bf7.png',
-        linkAll: 'https://static.cmereye.com/imgs/2023/12/c5610bedb8002da1.png 400w,  https://static.cmereye.com/imgs/2023/12/c5610bedb8002da1.png 640w, https://static.cmereye.com/imgs/2024/01/3ccdc793d15d6bf7.png',
+        linkAll: 'https://static.cmereye.com/imgs/2024/01/1952c923fe809ef7.png 400w,  https://static.cmereye.com/imgs/2024/01/1952c923fe809ef7.png 640w, https://static.cmereye.com/imgs/2024/01/3ccdc793d15d6bf7.png',
         title: '',
         alt: '',
       }

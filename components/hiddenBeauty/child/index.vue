@@ -22,7 +22,8 @@
           </div>
           <div class="new_btn">
             <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-              :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="3650" :minNum="2440"  :maxNumMb="4320" :minNumMb="4000"  :isChild="child" />
+              :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="3630" :minNum="2375" :maxNumMb="4320"
+              :minNumMb="4000" :isChild="child" />
           </div>
         </div>
         <div class="age_gap">
@@ -90,7 +91,7 @@ export default {
       isShowSvg: false,
       mb: '',
       paddingSize: '10px 88px',
-      paddingSizeMb: '6px 64px',
+      paddingSizeMb: '6px 54px',
       newSvg: 'https://static.cmereye.com/imgs/2023/12/d0209184f5c3c712.png',
       child: 'child',
     };
@@ -114,9 +115,11 @@ export default {
   .mbShow {
     display: none;
   }
+
   #child {
     height: 110px;
   }
+
   .child {
     position: relative;
 
@@ -307,6 +310,7 @@ export default {
   #child {
     height: 70px;
   }
+
   .pcShow {
     display: none;
   }
@@ -422,9 +426,11 @@ export default {
 
   ::v-deep .new_btn {
     margin-top: 60px;
+
     .img_absolute {
       width: 96px !important;
       top: -210% !important;
+      right: -8% !important;
 
       img {
         width: 100%;
@@ -461,5 +467,4 @@ export default {
       letter-spacing: 1.6px !important;
     }
   }
-}
-</style>
+}</style>

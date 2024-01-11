@@ -2,7 +2,7 @@
   <div>
     <a class="serve_btn" :class="[isChild == 'child' ? 'serve_btn_child' : '']" :href="linkHref" target="_blank">
       <div v-if="newSvg" class="img_absolute"
-        :class="[isChild == 'child' && isHoverAnimate == true ? 'child_embellish' : '']">
+        :class="[isChild == 'child' && isHoverAnimate == true || isChild == 'child' && isHoverAnimateMb == true ? 'child_embellish' : '']">
         <img :src="newSvg" alt="">
       </div>
       <div v-else>
@@ -143,7 +143,7 @@
           </defs>
         </svg>
       </div>
-      <div class="btn_pc_style" :class="[isHoverAnimate == true ? 'showPcHover' : '']">
+      <div class="btn_pc_style" :class="[isHoverAnimate == true || isHoverAnimateMb == true ? 'showPcHover' : '']">
         <div class="btn1" :style="{ padding: mb == 'mb' ? paddingSizeMb : paddingSize }">
           <div v-if="isShowSvg">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33" fill="none">
@@ -237,9 +237,9 @@ export default {
         this.isHoverAnimate = false;
       }
       if (this.scrollY < this.maxNumMb && this.scrollY > this.minNumMb) {
-        this.isHoverAnimate = true;
+        this.isHoverAnimateMb = true;
       } else {
-        this.isHoverAnimate = false;
+        this.isHoverAnimateMb = false;
       }
     },
   },
@@ -307,7 +307,7 @@ export default {
     letter-spacing: 1.92px;
 
     &>div:nth-child(1) {
-      margin-right: 8px;
+      // margin-right: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -516,7 +516,7 @@ export default {
     letter-spacing: 1.92px;
 
     &>div:nth-child(1) {
-      margin-right: 8px;
+      // margin-right: 8px;
       display: flex;
       align-items: center;
       justify-content: center;
