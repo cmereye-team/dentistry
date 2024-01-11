@@ -31,7 +31,11 @@
         </div>
       </div>
     </div>
-    <a class="serve_btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
+    <div class="newBtn">
+      <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" :maxNum="6954" :minNum="5674" :maxNumMb="6200" :minNumMb="5650" />
+    </div>
+    <!-- <a class="serve_btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="78" height="88" viewBox="0 0 78 88" fill="none">
           <g filter="url(#filter0_d_162_825)">
@@ -198,13 +202,24 @@
           <div>WhatsApp 預約</div>
         </div>
       </div>
-    </a>
+    </a> -->
   </div>
 </template>
 <script>
+import newBtn from '@/components/common/new-btn.vue';
 export default {
+  components: {
+    newBtn
+  },
   data() {
     return {
+      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
+      linkText: 'WhatsApp 預約',
+      isShowSvg: true,
+      mb: '',
+      paddingSize: '10px 60px',
+      paddingSizeMb: '6px 74px',
+      newSvg: '',
       serContentList: [
         {
           src: 'https://static.cmereye.com/imgs/2023/12/54f23b7cc0ffc844.png',
@@ -270,17 +285,17 @@ export default {
     };
   },
   mounted() {
-    window.addEventListener('scroll', this.getScrollY);
+    // window.addEventListener('scroll', this.getScrollY);
   },
   methods: {
-    getScrollY() {
-      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      if (this.scrollY < 6954 && this.scrollY > 5674) {
-        this.isHoverAnimate = true;
-      } else {
-        this.isHoverAnimate = false;
-      }
-    },
+    // getScrollY() {
+    //   this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    //   if (this.scrollY < 6954 && this.scrollY > 5674) {
+    //     this.isHoverAnimate = true;
+    //   } else {
+    //     this.isHoverAnimate = false;
+    //   }
+    // },
   },
   computed: {
     clientHeight: {
@@ -309,6 +324,14 @@ export default {
 
 //pc
 @media only screen and (min-width: 768px) {
+  ::v-deep .newBtn {
+    .serve_btn {
+      &>div:nth-child(1) {
+        top: -100% !important;
+      }
+    }
+  }
+
   .mbShow {
     display: none !important;
   }
@@ -569,6 +592,24 @@ export default {
 
 //mb
 @media only screen and (max-width: 767px) {
+  ::v-deep .newBtn {
+    .serve_btn {
+      &>div:nth-child(1) {
+        top: -110% !important;
+      }
+    }
+
+    .btn_pc_style {
+      &>div {
+        align-items: center;
+
+        &>div:nth-child(1) {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
   .pcShow {
     display: none;
   }
@@ -765,5 +806,4 @@ export default {
       }
     }
   }
-}
-</style>
+}</style>
