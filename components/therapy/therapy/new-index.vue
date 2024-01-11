@@ -14,7 +14,7 @@
         :maxWidth="maxWidth" />
       <div class="newBtn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb"  :maxNum="1621" :minNum="438" />
+        :paddingSizeMb="paddingSizeMb"  :maxNum="1621" :minNum="438"  :maxNumMb="1420" :minNumMb="1050"  />
       </div>
     </div>
   </div>
@@ -168,8 +168,13 @@ export default {
 }
 
 @media screen and (max-width: 767px) {
-  .newBtn {
+  ::v-deep .newBtn {
     margin-top: -60px;
+    .serve_btn {
+      &>div:nth-child(1) {
+        top: -152% !important;
+      }
+    }
   }
   .radices_dentis {
     margin: 90px auto 60px;

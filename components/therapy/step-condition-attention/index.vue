@@ -59,8 +59,10 @@
           若牙髓持續遭受感染，未加以治療，<br class="mbShow" />根管鈣化會逐漸惡化，使受感染或壞死<br class="mbShow" />的牙髓組織難<br
             class="pcShow" />以徹底清除，導致細菌<br class="mbShow" />繼續繁殖，造成感染擴散至形成牙瘡。
         </div>
-        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" :maxNum="2990" :minNum="1789" />
+        <div class="new-btn">
+          <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+          :paddingSizeMb="paddingSizeMb" :maxNum="2990" :minNum="1789" :maxNumMb="4935" :minNumMb="4485"  />
+        </div>
       </div>
     </div>
     <div class="attention main-container">
@@ -744,5 +746,13 @@ export default {
     bottom: 0;
     right: 50%;
     transform: translateX(50%);
+  }
+
+  ::v-deep .new-btn {
+    .serve_btn {
+      &>div:nth-child(1) {
+        top: -150% !important;
+      }
+    }
   }
 }</style>
