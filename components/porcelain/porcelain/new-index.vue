@@ -23,8 +23,8 @@
         </div>
         <div class="new-btn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1820" :minNum="640" :maxNumMb="1700"
-            :minNumMb="1270" />
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1820" :minNum="640" :maxNumMb="1680"
+            :minNumMb="1280" />
         </div>
         <div class="pcShow">
           <img src="https://static.cmereye.com/imgs/2023/12/69ef54f26b6fbfc4.png" alt="">
