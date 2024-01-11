@@ -289,6 +289,18 @@ export default {
       top: -50px;
       left: 50%;
       transform: translateX(-50%);
+      animation: identifier 1s ease-in-out infinite;
+    }
+  }
+  @keyframes identifier {
+    0%,100% {
+      background: url('https://static.cmereye.com/imgs/2024/01/cd65b59c075422a6.png');
+    }
+    65%{
+      background: url('https://static.cmereye.com/imgs/2024/01/30a8ba5bc1850fd6.png');
+    }
+    95%{
+      background: url('https://static.cmereye.com/imgs/2024/01/1a97b0c3c9602941.png');
     }
   }
 

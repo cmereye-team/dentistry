@@ -91,7 +91,7 @@ export default {
     display: none;
   }
   .process {
-    margin: 109px auto 102px;
+    margin: 109px auto 0;
   }
 
   .step_container {

@@ -43,7 +43,7 @@
         </div>
         <div class="newBtn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1800" :minNum="585"/>
+            :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1800" :minNum="585"  :maxNumMb="1580" :minNumMb="1245" />
         </div>
       </div>
     </div>
@@ -365,7 +365,7 @@ export default {
     &>div {
       .img_absolute {
         top: -13.3333vw !important;
-        right: 18.6667vw !important;
+        right: 4.6667vw !important;
         z-index: 99 !important;
       }
     }

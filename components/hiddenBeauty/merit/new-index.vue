@@ -12,7 +12,7 @@
     </div>
     <div class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="5150" :minNum="4060" />
+        :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="5150" :minNum="4060"  :maxNumMb="5725" :minNumMb="5300"  />
     </div>
   </div>
 </template>
@@ -213,8 +213,8 @@ export default {
       margin: 40px auto 60px;
     }
     .img_absolute {
-      right: 22% !important;
-      top: -116% !important;
+      right: 10% !important;
+      top: -136% !important;
       z-index: 20 !important;
     }
   }

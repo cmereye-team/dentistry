@@ -19,7 +19,7 @@ export default {
         {
           id: 1,
           img: 'https://static.cmereye.com/imgs/2024/01/4bca2df99215753c.png',
-          text: '每天須自律佩\n20至22小時',
+          text: '每天須自律佩戴\n20至22小時',
         },
         {
           id: 2,
@@ -57,6 +57,7 @@ export default {
       }
 
       &>div:nth-child(2) {
+        margin-top: 8px;
         color: #79828D;
         text-align: center;
         font-family: Noto Sans TC;
@@ -130,6 +131,7 @@ export default {
       }
 
       &>div:nth-child(2) {
+        margin-top: 8px;
         color: #79828D;
         text-align: center;
         font-family: Noto Sans TC;
@@ -137,7 +139,8 @@ export default {
         font-style: normal;
         font-weight: 500;
         line-height: 160%;
-        text-wrap: balance;
+        // text-wrap: balance;
+        white-space: pre-wrap;
       }
     }
   }
