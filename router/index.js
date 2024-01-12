@@ -48,13 +48,13 @@ const getRoutes = resolve => [
     path: '/rct',
     component: resolve('pages/new-rct'),
   },
-  {
-    path: '/invisalign',
-    component: resolve('pages/invisalign'),
-  },
+  // {
+  //   path: '/invisalign',
+  //   component: resolve('pages/invisalign'),
+  // },
   {
       // 新版页面
-    path: '/new-invisalign',
+    path: '/invisalign',
     component: resolve('pages/new-invisalign'),
   },
   {
