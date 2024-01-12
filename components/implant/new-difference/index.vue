@@ -17,7 +17,7 @@
     </div>
     <div>
       <div class="table">
-        <div class="row row-one">
+        <div class="row row-one" :class="[flicker == true ? 'flicker_style' : '']">
           <div class="cell"></div>
           <div class="cell" style="border-left: 1px solid #57B2F3;">傳統植牙</div>
           <div class="cell header-three">微創植牙</div>
@@ -90,12 +90,23 @@ export default {
       mb: '',
       paddingSize: '10px 100px',
       paddingSizeMb: '6px 74px',
+      flicker: false,
     };
   },
-  methods: {},
+  methods: {
+    getScrollY() {
+      this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+      if (this.scrollY < 4300 && this.scrollY > 4060) {
+        this.flicker = true;
+      } else {
+        this.flicker = false;
+      }
+    },
+  },
   mounted() {
     // 获取屏幕宽度
     this.mb = window.innerWidth < 768 ? 'mb' : 'pc';
+    window.addEventListener('scroll', this.getScrollY);
   },
 }
 </script>
@@ -109,6 +120,46 @@ export default {
 @media screen and (min-width: 768px) {
   .mbShow {
     display: none !important;
+  }
+
+  .flicker_style {
+    &>div:nth-child(3)::after {
+      animation: flicker_an .7s ease-in;
+      animation: btnAnim .7s linear;
+      animation-fill-mode: forwards;
+    }
+    &>div:nth-child(3)::before {
+      animation: flicker_an .7s ease-in;
+    }
+  }
+
+  @keyframes flicker_an {
+
+    0%,
+    100% {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  @keyframes btnAnim {
+    0% {
+      clip-path: polygon(-10% 0, 0 0, -10% 100%, -20% 100%);
+      background: url(https://static.cmereye.com/imgs/2024/01/37c59898d8eec062.png);
+    }
+
+    50% {
+      clip-path: polygon(50% 0, 60% 0, 50% 100%, 40% 100%);
+      background: url(https://static.cmereye.com/imgs/2024/01/37c59898d8eec062.png);
+    }
+
+    100% {
+      clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
+      background: url(https://static.cmereye.com/imgs/2024/01/37c59898d8eec062.png);
+    }
   }
 
   .difference {
@@ -298,6 +349,20 @@ export default {
     }
 
     &>div:nth-child(3)::after {
+      content: '';
+      background: url(https://static.cmereye.com/imgs/2023/12/e98c7b94ee3eec92.png);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      display: inline-block;
+      position: absolute;
+      top: -45%;
+      width: 109px;
+      height: 100%;
+      right: 5%;
+      z-index: 9;
+    }
+
+    &>div:nth-child(3)::before {
       content: '';
       background: url(https://static.cmereye.com/imgs/2023/12/e98c7b94ee3eec92.png);
       background-repeat: no-repeat;
