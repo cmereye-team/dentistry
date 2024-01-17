@@ -138,7 +138,7 @@ export default {
   components: {
     newBtn
   },
-  name: 'Regular Dental Cleaning',
+  name: 'Regular-Dental-Cleaning',
   data() {
     return {
       linkHref: 'https://api.whatsapp.com/send?phone=85295128192',

@@ -13,7 +13,7 @@
         </el-option>
       </el-select>
       <el-select v-model="value1" placeholder="请选择">
-        <el-option v-for="item in options1" :key="item.value" :label="item.label" >
+        <el-option v-for="item in options1" :key="item.value" :label="item.label">
         </el-option>
       </el-select>
     </div>
@@ -51,7 +51,7 @@
       </div>
       <img class="date" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt="">
     </div> -->
- <div class="info" v-for="(item,listIndex) in list" :key="listIndex">
+    <div class="info" v-for="(item, listIndex) in list" :key="listIndex">
       <img class="pic" :src="item._embedded[Object.keys(item._embedded)[1]][0].source_url" alt="">
       <div class="dateinfo">
         <!-- <img class="date2" src="https://static.cmereye.com/static/lkximg/image/equipment/date.png" alt=""> -->
@@ -62,10 +62,13 @@
       </div>
       <div class="content">
         <h2 v-html="item.title.rendered"></h2>
-        <div  @click="showContent"><p :class="showitem === true ?'':'p_content_long'" v-html="item.content.rendered"></p></div>
-        
+        <div @click="showContent">
+          <p :class="showitem === true ? '' : 'p_content_long'" v-html="item.content.rendered"></p>
+        </div>
+
         <div style="display: flex;" class="p_content_type">
-          <div v-for="(lab,labIndex) in item._embedded[Object.keys(item._embedded)[2]][1]" :key="labIndex" style=" margin: 0 0.5vw;">
+          <div v-for="(lab, labIndex) in item._embedded[Object.keys(item._embedded)[2]][1]" :key="labIndex"
+            style=" margin: 0 0.5vw;">
             <p class="label">{{ lab.name }}</p>
           </div>
         </div>
@@ -84,13 +87,13 @@ export default {
   watch: {
     screenWidth: {
       handler: function (val, oldVal) {
-        console.log('val========', val);
+        // console.log('val========', val);
         if (val < 768) {
-          console.log('屏幕宽度小于760px')
+          // console.log('屏幕宽度小于760px')
           this.isShow = false
         } else {
           this.isShow = true
-          console.log('屏幕宽度大于760px')
+          // console.log('屏幕宽度大于760px')
         }
       },
       immediate: true
@@ -98,26 +101,26 @@ export default {
   },
   data() {
     return {
-      showitem:false,
+      showitem: false,
       navList: [
         {
           title: '所有類別',
           name: 'BusinessIntroduction',
           list: [
             {
-          value: '0',
-          label: '所有類別'
-        },
-        {
-        value: '26',
-        label: '消費券付款'
-      }, {
-        value: '6',
-        label: '新店開幕'
-      }, {
-        value: '27',
-        label: '營業時間安排'
-      }
+              value: '0',
+              label: '所有類別'
+            },
+            {
+              value: '26',
+              label: '消費券付款'
+            }, {
+              value: '6',
+              label: '新店開幕'
+            }, {
+              value: '27',
+              label: '營業時間安排'
+            }
           ],
         },
         {
@@ -178,25 +181,25 @@ export default {
       }, {
         value: '五月',
         label: '五月'
-      },{
+      }, {
         value: '六月',
         label: '六月'
-      },{
+      }, {
         value: '七月',
         label: '七月'
-      },{
+      }, {
         value: '八月',
         label: '八月'
-      },{
+      }, {
         value: '九月',
         label: '九月'
-      },{
+      }, {
         value: '十月',
         label: '十月'
-      },{
+      }, {
         value: '十一月',
         label: '十一月'
-      },{
+      }, {
         value: '十二月',
         label: '十二月'
       },],
@@ -206,7 +209,7 @@ export default {
       options: [{
         value: '0',
         label: '所有類別'
-      },{
+      }, {
         value: '26',
         label: '消費券付款'
       }, {
@@ -232,32 +235,32 @@ export default {
     }
   },
   methods: {
-    showContent(){
+    showContent() {
       this.showitem = !this.showitem
       console.log(this.showitem);
     },
     selectLei(value) {
-          console.log('value========', value);
-          this.selectVal = value
-          if (value === '0') {
-            this.getListDs()
-          } else {
-              getList({ '_embed': true,  'tags': this.selectVal, 'categories': 25 }).then((res => {
-                this.list = res.data
-                this.addMonth(this.list)
-                console.log(this.list);
-              }))
-            
-          }
+      console.log('value========', value);
+      this.selectVal = value
+      if (value === '0') {
+        this.getListDs()
+      } else {
+        getList({ '_embed': true, 'tags': this.selectVal, 'categories': 25 }).then((res => {
+          this.list = res.data
+          this.addMonth(this.list)
+          console.log(this.list);
+        }))
 
-        },
-       
+      }
+
+    },
+
     handleClick(value) {
       let nav = document.querySelectorAll('.nav'); //获取父级菜单栏，以便添加选中样式
       let items = document.querySelectorAll('.nav-n-box'); //获取容纳子级菜单栏的容器，以便动态设置高度，实现下拉效果
       for (let i = 0; i < nav.length; i++) {
-          items[i].style.height = '0rem';
-        }
+        items[i].style.height = '0rem';
+      }
       this.selectLei(value.value)
     },
     openNav(index, num, value) {
@@ -309,36 +312,36 @@ export default {
         console.log(this.list);
       }))
     },
-    addMonth(value){
+    addMonth(value) {
       value.forEach((item, index) => {
-          if (item.date.slice(5, 7) === '07') {
-            item.month = 'July'
-          } else if (item.date.slice(5, 7) === '01') {
-            item.month = 'Jan'
-          } else if (item.date.slice(5, 7) === '02') {
-            item.month = 'Feb'
-          } else if (item.date.slice(5, 7) === '03') {
-            item.month = 'Mar'
-          } else if (item.date.slice(5, 7) === '04') {
-            item.month = 'Apr'
-          } else if (item.date.slice(5, 7) === '05') {
-            item.month = 'May'
-          } else if (item.date.slice(5, 7) === '06') {
-            item.month = 'June'
-          } else if (item.date.slice(5, 7) === '08') {
-            item.month = 'August'
-          } else if (item.date.slice(5, 7) === '09') {
-            item.month = 'Sep'
-          } else if (item.date.slice(5, 7) === '10') {
-            item.month = 'Oct'
-          } else if (item.date.slice(5, 7) === '11') {
-            item.month = 'Nov'
-          } else if (item.date.slice(5, 7) === '12') {
-            item.month = 'Dec'
-          }
-          item.datas = item.date.slice(8, 10)
-        });
-        return value
+        if (item.date.slice(5, 7) === '07') {
+          item.month = 'July'
+        } else if (item.date.slice(5, 7) === '01') {
+          item.month = 'Jan'
+        } else if (item.date.slice(5, 7) === '02') {
+          item.month = 'Feb'
+        } else if (item.date.slice(5, 7) === '03') {
+          item.month = 'Mar'
+        } else if (item.date.slice(5, 7) === '04') {
+          item.month = 'Apr'
+        } else if (item.date.slice(5, 7) === '05') {
+          item.month = 'May'
+        } else if (item.date.slice(5, 7) === '06') {
+          item.month = 'June'
+        } else if (item.date.slice(5, 7) === '08') {
+          item.month = 'August'
+        } else if (item.date.slice(5, 7) === '09') {
+          item.month = 'Sep'
+        } else if (item.date.slice(5, 7) === '10') {
+          item.month = 'Oct'
+        } else if (item.date.slice(5, 7) === '11') {
+          item.month = 'Nov'
+        } else if (item.date.slice(5, 7) === '12') {
+          item.month = 'Dec'
+        }
+        item.datas = item.date.slice(8, 10)
+      });
+      return value
     },
   }
 }
@@ -440,35 +443,37 @@ export default {
     background-color: #fff;
     padding: 0.5vw;
   }
- .date {
-      width: 6vw;
-      height: 6vw;
-      display: none;
-    }
 
-    .date01 {
-      width: 21vw;
-      height: 21vw;
-      background-color: #9BD0F5;
-      border-radius: 50%;
-      margin: 1vw;
-      display: flex;
-      text-align: center;
-      color: #FFF;
-      font-weight: 600;
-      justify-content: center;
-      flex-direction: column;
+  .date {
+    width: 6vw;
+    height: 6vw;
+    display: none;
+  }
 
-      .linesy {
-        font-size: 27px;
-        border-bottom: 3px solid #FFF;
-        margin: 0 3vw;
-      }
-    }
+  .date01 {
+    width: 21vw;
+    height: 21vw;
+    background-color: #9BD0F5;
+    border-radius: 50%;
+    margin: 1vw;
+    display: flex;
+    text-align: center;
+    color: #FFF;
+    font-weight: 600;
+    justify-content: center;
+    flex-direction: column;
 
-    .yagao {
-      margin-top: 8.5vw !important;
+    .linesy {
+      font-size: 27px;
+      border-bottom: 3px solid #FFF;
+      margin: 0 3vw;
     }
+  }
+
+  .yagao {
+    margin-top: 8.5vw !important;
+  }
+
   .dateinfo {
     display: flex;
     justify-content: center;
@@ -639,7 +644,8 @@ export default {
       font-weight: 600;
       justify-content: center;
       flex-direction: column;
-      span{
+
+      span {
         font-family: 'Noto Sans CJK TC';
         font-style: normal;
         font-weight: 500;
@@ -649,6 +655,7 @@ export default {
         text-align: center;
         letter-spacing: 0.1em;
       }
+
       .linesy {
         font-size: 32px;
         border-bottom: 3px solid #FFF;
@@ -712,7 +719,5 @@ export default {
       }
     }
   }
-}
-</style>
-<style lang="scss" >
-</style>
+}</style>
+<style lang="scss" ></style>

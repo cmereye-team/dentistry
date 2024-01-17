@@ -59,12 +59,12 @@ export default {
   watch: {
         screenWidth: {
           handler: function (val, oldVal) {
-            console.log('val========',val);
+            // console.log('val========',val);
             if (val < 768) {
-              console.log('屏幕宽度小于760px')
+              // console.log('屏幕宽度小于760px')
               this.isShow = false
             } else {
-              console.log('屏幕宽度大于760px')
+              // console.log('屏幕宽度大于760px')
             }
           },
           immediate: true
