@@ -79,8 +79,8 @@
                     本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio>
                 </div>
               </div>
-              <el-form-item>
-                <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提交</el-button>
+              <el-form-item class="submit_new">
+                <!-- <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提交</el-button> -->
                 <!-- <div class="form-btn" @click="submitForm('ruleForm')">提交</div> -->
                 <!-- <a class="serve_btn bp-btn" @click="submitForm('ruleForm')">
                   <div><img src="https://static.cmereye.com/imgs/2023/12/4c7b51a900c5d922.png" alt=""></div>
@@ -99,11 +99,16 @@
                   </div>
                 </a> -->
                 <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
+                <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref" :linkText="linkText"
+                :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb" :paddingSizeMb="paddingSizeMb"
+                :maxNum="99999" :minNum="99999" :maxNumMb="5510" :minNumMb="5155" />
               </el-form-item>
               <!-- <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
                 提交
               </button> -->
-
+              <!-- <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref" :linkText="linkText"
+                :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb" :paddingSizeMb="paddingSizeMb"
+                :maxNum="5406" :minNum="4234" :maxNumMb="5510" :minNumMb="5155" /> -->
               <input type="text" name="pageUrl" v-show="false" v-model="pageUrl">
             </el-form>
           </div>
@@ -114,9 +119,20 @@
 </template>
 <script>
 import { Message } from 'element-ui';
+import newBtn from '@/components/common/new-btn.vue';
 export default {
+  components: {
+    newBtn,
+  },
   data() {
     return {
+      linkHref: '',
+      linkText: '提交',
+      isShowSvg: false,
+      mb: '',
+      paddingSize: '8px 92px 12px',
+      paddingSizeMb: '6px 74px',
+      newSvg: '	https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png',
       selectList: [
         { itemName: "微創植牙/種植牙", id: 1 },
         { itemName: "全瓷貼片", id: 2 },
@@ -183,6 +199,9 @@ export default {
     // aa() {
     //   console.log("提交表单了");
     // },
+    handleChildEvent(formName) {
+      this.submitForm(formName)
+    },
     submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
@@ -261,6 +280,18 @@ a {
 
 //pc
 @media only screen and (min-width: 768px) {
+  ::v-deep .new—btn {
+    .img_absolute {
+      top: -125% !important;
+      right: 55% !important;
+      z-index: 9;
+    }
+  }
+  .submit_new {
+    display: flex;
+    justify-content: center;
+  }
+
   .serve_btn {
     width: fit-content;
     display: inline-block;

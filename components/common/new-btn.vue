@@ -1,6 +1,7 @@
 <template>
   <div>
-    <a class="serve_btn" :class="[isChild == 'child' ? 'serve_btn_child' : '']" :href="linkHref" target="_blank">
+    <a class="serve_btn" :class="[isChild == 'child' ? 'serve_btn_child' : '']" :href="linkHref" target="_blank"
+      @click.prevent="parentEvent">
       <div v-if="newSvg" class="img_absolute"
         :class="[isChild == 'child' && isHoverAnimate == true || isChild == 'child' && isHoverAnimateMb == true ? 'child_embellish' : '']">
         <img :src="newSvg" alt="">
@@ -221,7 +222,9 @@ export default {
     return {
       scrollY: 0,
       isHoverAnimate: false,
-      isHoverAnimateMb:false,
+      isHoverAnimateMb: false,
+      eventEffect: true,
+      docHeight: 0
     }
   },
   mounted() {
@@ -231,17 +234,31 @@ export default {
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
       // console.log(this.scrollY, 'getScrollY');
-      if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
-        this.isHoverAnimate = true;
+      if (this.maxNum == 99999) {
+        this.docHeight = document.body.clientHeight
+        if (this.docHeight - 1819 <= this.scrollY) {
+          this.isHoverAnimate = true;
+        } else {
+          this.isHoverAnimate = false;
+        }
       } else {
-        this.isHoverAnimate = false;
+        if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
+          this.isHoverAnimate = true;
+        } else {
+          this.isHoverAnimate = false;
+        }
+        if (this.scrollY < this.maxNumMb && this.scrollY > this.minNumMb) {
+          this.isHoverAnimateMb = true;
+        } else {
+          this.isHoverAnimateMb = false;
+        }
       }
-      if (this.scrollY < this.maxNumMb && this.scrollY > this.minNumMb) {
-        this.isHoverAnimateMb = true;
-      } else {
-        this.isHoverAnimateMb = false;
-      }
+
     },
+    parentEvent() {
+      this.$emit('childEvent', this.eventEffect);
+    },
+    // 获取当前文档高度
   },
   computed: {
   },
@@ -568,6 +585,7 @@ export default {
       clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
     }
   }
+
   .child_embellish {
     position: relative;
   }
