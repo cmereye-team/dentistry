@@ -99,9 +99,9 @@
                   </div>
                 </a> -->
                 <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
-                <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref" :linkText="linkText"
-                :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb" :paddingSizeMb="paddingSizeMb"
-                :maxNum="99999" :minNum="99999" :maxNumMb="5510" :minNumMb="5155" />
+                <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref"
+                  :linkText="linkText" :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+                  :paddingSizeMb="paddingSizeMb" :maxNum="99999" :minNum="99999" :maxNumMb="99999" :minNumMb="99999" />
               </el-form-item>
               <!-- <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
                 提交
@@ -287,6 +287,7 @@ a {
       z-index: 9;
     }
   }
+
   .submit_new {
     display: flex;
     justify-content: center;
@@ -723,6 +724,22 @@ a {
 
 //mb
 @media only screen and (max-width: 767px) {
+  .submit_new {
+    display: flex;
+    justify-content: center;
+  }
+
+  ::v-deep .new—btn {
+    .img_absolute {
+      top: -115% !important;
+      right: 50% !important;
+      z-index: 9;
+      &>img {
+        width: 80%;
+      }
+    }
+  }
+
   .texts {
     text-align: center;
 

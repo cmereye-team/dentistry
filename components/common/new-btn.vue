@@ -233,13 +233,21 @@ export default {
   methods: {
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      // console.log(this.scrollY, 'getScrollY');
-      if (this.maxNum == 99999) {
+      console.log(this.scrollY, 'getScrollY');
+      if (this.maxNum == 99999 || this.maxNumMb == 99999) {
         this.docHeight = document.body.clientHeight
+        console.log(this.docHeight, 'p0001');
         if (this.docHeight - 1819 <= this.scrollY) {
           this.isHoverAnimate = true;
         } else {
           this.isHoverAnimate = false;
+        }
+        // 移动端
+        if (this.docHeight - 884 <= this.scrollY) {
+          console.log(this.docHeight - 884,'999');
+          this.isHoverAnimateMb = true;
+        } else {
+          this.isHoverAnimateMb = false;
         }
       } else {
         if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
