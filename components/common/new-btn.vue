@@ -231,36 +231,52 @@ export default {
     window.addEventListener('scroll', this.getScrollY);
   },
   methods: {
+    // getScrollY() {
+    //   this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
+    //   // console.log(this.scrollY, 'getScrollY');
+    //   if (this.maxNum == 99999 || this.maxNumMb == 99999) {
+    //     this.docHeight = document.body.clientHeight
+    //     if (this.docHeight - 1819 <= this.scrollY) {
+    //       this.isHoverAnimate = true;
+    //     } else {
+    //       this.isHoverAnimate = false;
+    //     }
+    //     // 移动端
+    //     if (this.docHeight - 884 <= this.scrollY) {
+    //       this.isHoverAnimateMb = true;
+    //     } else {
+    //       this.isHoverAnimateMb = false;
+    //     }
+    //   } else {
+    //     if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
+    //       this.isHoverAnimate = true;
+    //     } else {
+    //       this.isHoverAnimate = false;
+    //     }
+    //     if (this.scrollY < this.maxNumMb && this.scrollY > this.minNumMb) {
+    //       this.isHoverAnimateMb = true;
+    //     } else {
+    //       this.isHoverAnimateMb = false;
+    //     }
+    //   }
+    // },
     getScrollY() {
       this.scrollY = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop;
-      // console.log(this.scrollY, 'getScrollY');
-      if (this.maxNum == 99999 || this.maxNumMb == 99999) {
-        this.docHeight = document.body.clientHeight
-        if (this.docHeight - 1819 <= this.scrollY) {
-          this.isHoverAnimate = true;
-        } else {
-          this.isHoverAnimate = false;
-        }
-        // 移动端
-        if (this.docHeight - 884 <= this.scrollY) {
-          this.isHoverAnimateMb = true;
-        } else {
-          this.isHoverAnimateMb = false;
-        }
-      } else {
-        if (this.scrollY < this.maxNum && this.scrollY > this.minNum) {
-          this.isHoverAnimate = true;
-        } else {
-          this.isHoverAnimate = false;
-        }
-        if (this.scrollY < this.maxNumMb && this.scrollY > this.minNumMb) {
-          this.isHoverAnimateMb = true;
-        } else {
-          this.isHoverAnimateMb = false;
-        }
-      }
 
+      const isDesktop = this.maxNum !== 99999 && this.maxNumMb !== 99999;
+      const isWithinRange = (scrollY, min, max) => scrollY >= min && scrollY <= max;
+
+      if (isDesktop) {
+        this.isHoverAnimate = isWithinRange(this.scrollY, this.minNum, this.maxNum);
+        this.isHoverAnimateMb = isWithinRange(this.scrollY, this.minNumMb, this.maxNumMb);
+      } else {
+        const docHeight = document.body.clientHeight;
+        // document.body.clientHeight window.innerHeight
+        this.isHoverAnimate = docHeight - 1819 <= this.scrollY;
+        this.isHoverAnimateMb = docHeight - 884 <= this.scrollY;
+      }
     },
+
     parentEvent() {
       this.$emit('childEvent', this.eventEffect);
     },
