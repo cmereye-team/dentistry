@@ -43,7 +43,7 @@
         </span>
       </div>
       <div class="copyright long">
-        ©2023 希瑪牙科（希瑪醫療集團旗下牙科中心）
+        ©2024 希瑪牙科（希瑪醫療集團旗下牙科中心）
       </div>
     </div>
   </div>
