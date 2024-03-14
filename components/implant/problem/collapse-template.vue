@@ -58,7 +58,7 @@
           <template slot="title">
             <div class="contents">
               <i :class="judgeActive('4') !== -1 ? 'downArrow2' : 'downArrow1'"></i>
-              <div :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">植牙會有什麼後道症？</div>
+              <div :class="judgeActive('4') !== -1 ? 'p2' : 'p1'">植牙會有什麼後遺症？</div>
             </div>
           </template>
           <div class="discon">
