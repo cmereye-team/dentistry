@@ -2,77 +2,98 @@
   <div class="ambient bg-white py-5 pb-0 py-xs-2">
     <div class="main-container">
       <div class="flex justify-center texts">
-      <h2>中心環境</h2>
-      <img src="@/asset/image/about-me/serve/Vector.png" alt="">
-    </div>
-    <!-- 轮播 -->
-    <div id="demo2" class="carousel slide" data-bs-ride="carousel">
-      <!-- 轮播图片 -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/0.jpg">
+        <h2>中心環境</h2>
+        <img src="@/asset/image/about-me/serve/Vector.png" alt="" />
+      </div>
+      <!-- 轮播 -->
+      <div id="demo2" class="carousel slide" data-bs-ride="carousel">
+        <!-- 轮播图片 -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/0.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/01.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/01.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/02.jpg">
+          <!-- <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/02.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/03.JPG">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/03.JPG"
+              />
+            </div>
+          </div> -->
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/04.JPG"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/04.JPG">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/05.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/05.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/06.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/06.jpg">
-          </div>
-        </div>
-        <!-- <div class="carousel-item">
+          <!-- <div class="carousel-item">
           <div class="main">
             <div class="border_corner border_corner_left_top"></div>
             <div class="border_corner border_corner_right_top"></div>
@@ -81,98 +102,172 @@
             <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/07.jpg">
           </div>
         </div> -->
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/08.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/08.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/09.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/09.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/static/lkximg/clinic/10.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/static/lkximg/clinic/10.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_cor  ner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_cor ner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-            <img class="show" src="https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg">
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
+              <img
+                class="show"
+                src="https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg"
+              />
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <div class="main">
-            <div class="border_corner border_corner_left_top"></div>
-            <div class="border_corner border_corner_right_top"></div>
-            <div class="border_corner border_corner_left_bottom"></div>
-            <div class="border_corner border_corner_right_bottom"></div>
-   
-              <iframe v-loading="loading" class="iframesty" ref="Iframe" src="https://www.youtube.com/embed/3Aa6VnRgQow"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-         
-            
-          </div>
-        </div>
+          <div class="carousel-item">
+            <div class="main">
+              <div class="border_corner border_corner_left_top"></div>
+              <div class="border_corner border_corner_right_top"></div>
+              <div class="border_corner border_corner_left_bottom"></div>
+              <div class="border_corner border_corner_right_bottom"></div>
 
-      </div>
-      <div class="carousel-indicators carousel-about">
-        <button type="button" id="button0" data-bs-target="#demo2" data-bs-slide-to="0" class="active"></button>
-        <button type="button" id="button1" data-bs-target="#demo2" data-bs-slide-to="1"></button>
-        <button type="button" id="button2" data-bs-target="#demo2" data-bs-slide-to="2"></button>
-        <button type="button" id="button3" data-bs-target="#demo2" data-bs-slide-to="3"></button>
-        <button type="button" id="button4" data-bs-target="#demo2" data-bs-slide-to="4"></button>
-        <button type="button" id="button5" data-bs-target="#demo2" data-bs-slide-to="5"></button>
-        <button type="button" id="button6" data-bs-target="#demo2" data-bs-slide-to="6"></button>
-        <!-- <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button> -->
-        <!-- <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button> -->
-        <!-- <button type="button" id="button10" data-bs-target="#demo2" data-bs-slide-to="9"></button> -->
-        <button type="button" id="button11" data-bs-target="#demo2" data-bs-slide-to="10"></button>
-        <button type="button" id="button12" data-bs-target="#demo2" data-bs-slide-to="11"></button>
-        <button type="button" id="button13" data-bs-target="#demo2" data-bs-slide-to="12"></button>
-        <button type="button" id="button14" data-bs-target="#demo2" data-bs-slide-to="13"></button>
+              <iframe
+                v-loading="loading"
+                class="iframesty"
+                ref="Iframe"
+                src="https://www.youtube.com/embed/3Aa6VnRgQow"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-indicators carousel-about">
+          <button
+            type="button"
+            id="button0"
+            data-bs-target="#demo2"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <!-- <button
+            type="button"
+            id="button1"
+            data-bs-target="#demo2"
+            data-bs-slide-to="1"
+          ></button> -->
+          <!-- <button
+            type="button"
+            id="button2"
+            data-bs-target="#demo2"
+            data-bs-slide-to="2"
+          ></button> -->
+          <button
+            type="button"
+            id="button3"
+            data-bs-target="#demo2"
+            data-bs-slide-to="3"
+          ></button>
+          <button
+            type="button"
+            id="button4"
+            data-bs-target="#demo2"
+            data-bs-slide-to="4"
+          ></button>
+          <button
+            type="button"
+            id="button5"
+            data-bs-target="#demo2"
+            data-bs-slide-to="5"
+          ></button>
+          <button
+            type="button"
+            id="button6"
+            data-bs-target="#demo2"
+            data-bs-slide-to="6"
+          ></button>
+          <!-- <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button> -->
+          <!-- <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button> -->
+          <!-- <button type="button" id="button10" data-bs-target="#demo2" data-bs-slide-to="9"></button> -->
+          <button
+            type="button"
+            id="button11"
+            data-bs-target="#demo2"
+            data-bs-slide-to="10"
+          ></button>
+          <button
+            type="button"
+            id="button12"
+            data-bs-target="#demo2"
+            data-bs-slide-to="11"
+          ></button>
+          <button
+            type="button"
+            id="button13"
+            data-bs-target="#demo2"
+            data-bs-slide-to="12"
+          ></button>
+          <button
+            type="button"
+            id="button14"
+            data-bs-target="#demo2"
+            data-bs-slide-to="13"
+          ></button>
+        </div>
       </div>
     </div>
-    </div>
-    
   </div>
-
 </template>
 
 <script>
@@ -184,9 +279,9 @@ export default {
         { src: require("@/asset/image/me/BigPic.jpg") },
         { src: require("@/asset/image/me/BigPic.jpg") },
         { src: require("@/asset/image/me/BigPic.jpg") },
-        { src: require("@/asset/image/me/BigPic.jpg") }
+        { src: require("@/asset/image/me/BigPic.jpg") },
       ],
-    }
+    };
   },
   mounted() {
     this.iframeLoad();
@@ -209,8 +304,8 @@ export default {
         };
       }
     },
-  }
-}
+  },
+};
 </script>
 <style lang="scss" scoped>
 //[data-bs-target]
@@ -222,7 +317,7 @@ export default {
 
   h2 {
     font-weight: 300;
-    color: #79828D;
+    color: #79828d;
     margin-bottom: 0vw;
   }
 
@@ -233,11 +328,11 @@ export default {
 
 //mb
 @media only screen and (max-width: 760px) {
-  .iframesty{
-  width: 100%;
-  height: 231px;
-  padding: 5vw 5vw;
-}
+  .iframesty {
+    width: 100%;
+    height: 231px;
+    padding: 5vw 5vw;
+  }
   .carousel-inner img {
     height: 92%;
     width: 76% !important;
@@ -251,7 +346,7 @@ export default {
     height: 23px;
     padding: 1vw;
     background: rgba(0, 0, 0, 0);
-    border: 4px solid #FFB7B7;
+    border: 4px solid #ffb7b7;
   }
 
   .border_corner_left_top {
@@ -299,7 +394,6 @@ export default {
     margin-top: 5vw;
     clip-path: ellipse(129% 54% at 50% 54%);
     // background: radial-gradient(108vw 68vw at bottom, transparent 50%, #ECF7FC 50%) !important;
-
   }
 
   .imgbox {
@@ -311,13 +405,13 @@ export default {
     // margin-left: 5px;
   }
 
-  // [data-bs-target]           
+  // [data-bs-target]
   ::v-deep .carousel-about {
     box-sizing: content-box;
     flex: 0 1 auto;
     // width: 0;
     height: 0;
-        text-align: justify;
+    text-align: justify;
     margin-right: 0px;
     margin-left: 0px;
     // text-indent: -88px;
@@ -328,13 +422,13 @@ export default {
     // margin: 2rem 6rem;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    opacity: .5;
+    opacity: 0.5;
     border-radius: 0% !important;
     margin-right: 1%;
     margin-left: 1%;
 
-    transition: opacity .6s ease;
-    background-color: #79828D;
+    transition: opacity 0.6s ease;
+    background-color: #79828d;
 
     // background-image:url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
     // img {
@@ -343,116 +437,114 @@ export default {
     // }
     #button0 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
 
     #button1 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
 
     #button2 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/02.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button3 {
+    #button3 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/03.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button4 {
+    #button4 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/04.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button5 {
+    #button5 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/05.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button6 {
+    #button6 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/06.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button7 {
+    #button7 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/07.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button8 {
+    #button8 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/08.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button9 {
+    #button9 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/09.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button10 {
+    #button10 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/10.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button11 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button12 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button13 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button14 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
   }
 
-
   ::v-deep .carousel-about {
-
     position: inherit;
     display: block !important;
     // margin-left: 5% !important;
@@ -460,12 +552,12 @@ export default {
 
   ::v-deep .carousel-about .active {
     opacity: 1 !important;
-    background-color: #9BA5B1;
+    background-color: #9ba5b1;
   }
 
   ::v-deep .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .55);
-    border-color: #fff
+    color: rgba(0, 0, 0, 0.55);
+    border-color: #fff;
   }
 
   .carousel-inner img {
@@ -543,51 +635,153 @@ export default {
 
 //pc
 @media only screen and (min-width: 760px) {
-.titleImg{height: auto !important;}  
-.carousel{margin-top: 25px;}
-.carousel-inner .titleImg img{height: auto !important;border-radius: 12px !important;}  
-.titleImg .title{text-shadow: 0px 0px 10px #FFFFFF;top: 0 !important;bottom: 0;left: 0;right: 0; margin: auto;height: auto !important;width: auto !important;display: flex;align-items: center;justify-content: center;font-weight:600 !important;}
-.comContent .meun{margin-top: 30px;padding-left: 5vw !important;}    
-.comContent .meun p:first-child{border-bottom: 1px solid #79828D;padding: 4px 0;}             
-.comContent .meun p:nth-child(2){margin: 0 10px !important;padding: 3px 0;}
-.comContent .meun p:nth-child(3){border-bottom: 1px solid #57B2F3;padding: 3px 0;} 
-.comContent .meun p:nth-child(4){padding: 3px 10px !important;margin: 0 !important;} 
-.comContent   .texts h2{font-weight: 500 !important;}
-.comContent   .texts  .serve_cons{padding-top: 0 !important;}
-.comContent   .texts>h3{margin-bottom: 0 !important;}
-.city img{margin: 5vw 0 !important;width: 100% !important;}
-.comContent  .ya_con{font-weight: 400;font-size: 15px !important;line-height: 22px;text-align: center !important;letter-spacing: 0.1em; padding:0 5vw !important;}
-.comContent  .textsd:last-child .ya_con br{display: none;}    
-.comContent  .textsd:last-child .ya_con{margin-bottom: 80px ;}
-#demo2 .carousel-inner{margin-top: 40px;padding-bottom: 54px;}
-#demo2 .carousel-inner img{border-radius: 12px !important;width: calc(100%) !important; height: 497px;}
-#demo2 .border_corner{width: 28px !important;height: 28px !important;border-width: 3px !important;}
-.ambient{padding-left: 5vw;padding-right: 5vw;}
-#demo2 .border_corner.border_corner_left_top,#demo2 .border_corner.border_corner_left_bottom{left: 0 !important;}
-#demo2 .border_corner_right_top,#demo2 .border_corner_right_bottom{right: 0 !important;}
+  .titleImg {
+    height: auto !important;
+  }
+  .carousel {
+    margin-top: 25px;
+  }
+  .carousel-inner .titleImg img {
+    height: auto !important;
+    border-radius: 12px !important;
+  }
+  .titleImg .title {
+    text-shadow: 0px 0px 10px #ffffff;
+    top: 0 !important;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: auto !important;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600 !important;
+  }
+  .comContent .meun {
+    margin-top: 30px;
+    padding-left: 5vw !important;
+  }
+  .comContent .meun p:first-child {
+    border-bottom: 1px solid #79828d;
+    padding: 4px 0;
+  }
+  .comContent .meun p:nth-child(2) {
+    margin: 0 10px !important;
+    padding: 3px 0;
+  }
+  .comContent .meun p:nth-child(3) {
+    border-bottom: 1px solid #57b2f3;
+    padding: 3px 0;
+  }
+  .comContent .meun p:nth-child(4) {
+    padding: 3px 10px !important;
+    margin: 0 !important;
+  }
+  .comContent .texts h2 {
+    font-weight: 500 !important;
+  }
+  .comContent .texts .serve_cons {
+    padding-top: 0 !important;
+  }
+  .comContent .texts > h3 {
+    margin-bottom: 0 !important;
+  }
+  .city img {
+    margin: 5vw 0 !important;
+    width: 100% !important;
+  }
+  .comContent .ya_con {
+    font-weight: 400;
+    font-size: 15px !important;
+    line-height: 22px;
+    text-align: center !important;
+    letter-spacing: 0.1em;
+    padding: 0 5vw !important;
+  }
+  .comContent .textsd:last-child .ya_con br {
+    display: none;
+  }
+  .comContent .textsd:last-child .ya_con {
+    margin-bottom: 80px;
+  }
+  #demo2 .carousel-inner {
+    margin-top: 40px;
+    padding-bottom: 54px;
+  }
+  #demo2 .carousel-inner img {
+    border-radius: 12px !important;
+    width: calc(100%) !important;
+    height: 497px;
+  }
+  #demo2 .border_corner {
+    width: 28px !important;
+    height: 28px !important;
+    border-width: 3px !important;
+  }
+  .ambient {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  #demo2 .border_corner.border_corner_left_top,
+  #demo2 .border_corner.border_corner_left_bottom {
+    left: 0 !important;
+  }
+  #demo2 .border_corner_right_top,
+  #demo2 .border_corner_right_bottom {
+    right: 0 !important;
+  }
 
-#demo2  .carousel-about>button{width: calc(18%) !important; margin: 0 10px;border-bottom: 6px solid #ffffff;opacity: unset;position: relative !important;}
-#demo2  .carousel-about>button.active{ border-bottom: 6px solid #FFB7B7;}
-#demo2  .carousel-about>button:before{position: absolute;content: '';left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 100%;height: 100%;background: rgba(194, 199, 205, 0.7);}
-#demo2  .carousel-about .active:before{background: unset;}
-.ambient{padding-bottom: 35vw !important;height:auto !important;}
-.about-us .adress{margin-top: 20px;}
-.texts{margin-top: 5vw;}
+  #demo2 .carousel-about > button {
+    width: calc(18%) !important;
+    margin: 0 10px;
+    border-bottom: 6px solid #ffffff;
+    opacity: unset;
+    position: relative !important;
+  }
+  #demo2 .carousel-about > button.active {
+    border-bottom: 6px solid #ffb7b7;
+  }
+  #demo2 .carousel-about > button:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: rgba(194, 199, 205, 0.7);
+  }
+  #demo2 .carousel-about .active:before {
+    background: unset;
+  }
+  .ambient {
+    padding-bottom: 35vw !important;
+    height: auto !important;
+  }
+  .about-us .adress {
+    margin-top: 20px;
+  }
+  .texts {
+    margin-top: 5vw;
+  }
 
-.iframesty{
-  width: calc(100%);
-  height: 497px;
-  padding:  2vw;
-}
-.carousel-indicators [data-bs-target] {
+  .iframesty {
+    width: calc(100%);
+    height: 497px;
+    padding: 2vw;
+  }
+  .carousel-indicators [data-bs-target] {
     border-radius: 0%;
     margin-left: 5px;
-    
   }
-.carousel-indicators{
+  .carousel-indicators {
     margin: 0 auto !important;
-}         
- .carousel-about {
+  }
+  .carousel-about {
     box-sizing: content-box;
     height: 39px;
     display: flex !important;
@@ -608,8 +802,8 @@ export default {
     margin: 2rem 6rem;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
-    transition: opacity .6s ease;
-    background-color: #79828D;
+    transition: opacity 0.6s ease;
+    background-color: #79828d;
     justify-content: flex-start;
     // background-image:url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
     // img {
@@ -618,113 +812,112 @@ export default {
     // }
     #button0 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
 
     #button1 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
 
     #button2 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/02.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button3 {
+    #button3 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/03.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button4 {
+    #button4 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/04.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button5 {
+    #button5 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/05.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button6 {
+    #button6 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/06.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button7 {
+    #button7 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/07.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button8 {
+    #button8 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/08.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button9 {
+    #button9 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/09.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
-     #button10 {
+    #button10 {
       background-image: url("https://static.cmereye.com/static/lkximg/clinic/10.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button11 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/5aa9d38acfe639db.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button12 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/af2717536b4e0930.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button13 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/ea9f1391a551e5c6.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
     #button14 {
       background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
-      background-color: #79828D;
+      background-color: #79828d;
       height: 102px;
       width: 102px;
-      background-size:cover;
+      background-size: cover;
     }
   }
-
 
   .show {
     padding: 2vw;
@@ -743,7 +936,7 @@ export default {
     height: 23px;
     padding: 1vw;
     background: rgba(0, 0, 0, 0);
-    border: 4px solid #FFB7B7;
+    border: 4px solid #ffb7b7;
   }
 
   .border_corner_left_top {
@@ -780,8 +973,12 @@ export default {
 
   .ambient {
     position: relative;
-    background: #ECF7FC;
-    background: radial-gradient(129vw 28vw at bottom, transparent 42%, #ECF7FC 42%);
+    background: #ecf7fc;
+    background: radial-gradient(
+      129vw 28vw at bottom,
+      transparent 42%,
+      #ecf7fc 42%
+    );
     -webkit-clip-path: ellipse(100% 67% at 50% 70%);
     clip-path: ellipse(100% 67% at 50% 70%);
     height: 80vw;
@@ -792,17 +989,14 @@ export default {
     margin: 0 3vw;
   }
 
-
-
-
   ::v-deep .carousel-indicators .active {
     opacity: 1 !important;
-    background-color: #9BA5B1;
+    background-color: #9ba5b1;
   }
 
   ::v-deep .navbar-light .navbar-toggler {
-    color: rgba(0, 0, 0, .55);
-    border-color: #fff
+    color: rgba(0, 0, 0, 0.55);
+    border-color: #fff;
   }
 
   .carousel-inner img[data-v-703b804a] {
@@ -815,7 +1009,6 @@ export default {
 
     img {
       // border-radius: 80px 80px 80px 80px;
-
     }
   }
 
@@ -853,9 +1046,9 @@ export default {
 }
 </style>
 <style lang="scss">
-  .texts{
-    h2{
-      font-weight: 600 !important;
-    }
+.texts {
+  h2 {
+    font-weight: 600 !important;
   }
+}
 </style>

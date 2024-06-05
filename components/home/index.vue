@@ -238,10 +238,10 @@ export default {
           url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (1).jpg",
           type: 2,
         },
-        {
-          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (2).jpg",
-          type: 2,
-        },
+        // {
+        //   url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (2).jpg",
+        //   type: 2,
+        // },
         {
           url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (4).jpg",
           type: 2,
