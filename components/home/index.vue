@@ -230,10 +230,10 @@ export default {
     return {
       screenWidth: '',
       SliderImgList: [
-        {
-          url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (3).jpg",
-          type: 2,
-        },
+        // {
+        //   url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (3).jpg",
+        //   type: 2,
+        // },
         {
           url: "https://static.cmereye.com/imgs/cmermedical/images/business/cmerdental/sli (1).jpg",
           type: 2,

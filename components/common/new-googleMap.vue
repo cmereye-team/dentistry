@@ -90,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="justify-center addmap">
+      <!-- <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">尖沙咀</div>
           <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" />
@@ -152,7 +152,7 @@
             <a class="link_more" href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">觀塘</div>
@@ -346,9 +346,9 @@
       </div>
     </div>
     <div v-else-if="addcurrentIndex === 1 && showAllMap == false">
-      <div class="justify-center addmap">
+      <!-- <div class="justify-center addmap">
         <div id="map">
-          <div class="map-title">尖沙咀</div>
+          <div class="map-title">22尖沙咀</div>
           <img src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg" width="100%" />
         </div>
         <div>
@@ -408,7 +408,7 @@
             <a class="link_more" href="https://j.map.baidu.com/8f/37s" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">觀塘</div>
