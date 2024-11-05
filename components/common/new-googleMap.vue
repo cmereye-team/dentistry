@@ -76,7 +76,7 @@
                     <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <span>09:30 － 18:30</span><span>09:30 － 18:30</span><span>休息</span>
                   </div>
                 </div>
               </div>
@@ -330,7 +330,7 @@
                     <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <span>09:30 － 18:30</span><span>09:30 － 18:30</span><span>休息</span>
                   </div>
                 </div>
               </div>
