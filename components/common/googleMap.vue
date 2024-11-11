@@ -178,25 +178,13 @@
       </div> -->
     </div>
     <div v-else-if="addcurrentIndex === 1">
-      <!-- <div class="tab flex justify-center" id="tab">
-        <ul>
-          <li @click='handleClick(index)' :class='currentIndex == index ? "active" : ""' class="tab2" :id="item.id + 6"  :key='item.id'
-            v-for='(item, index) in list2'>
-            <p class="tab2" :id="item.id + 6">{{ item.title }}</p>
-          </li>
-        </ul>
-      </div> -->
-      <div class="justify-center addmap">
+      <!-- <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">尖沙咀</div>
-          <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img
             src="https://static.cmereye.com/static/lkximg/map/materials_尖沙嘴.jpg"
             width="100%"
           />
-          <!-- <iframe width="100%" height="100%"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d922.9848698486852!2d114.18467229461001!3d22.280282274531697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x340400569abcc067%3A0xe007ab3d4e24f3df!2z5Lic6KeS5Lit5b-D!5e0!3m2!1szh-CN!2sus!4v1655884494712!5m2!1szh-CN!2sus"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
         <div>
           <div class="mapcontennt">
@@ -237,7 +225,6 @@
               target="_blank"
               >Google 地圖</a
             >
-            <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
             <a
               class="link_more"
               href="https://j.map.baidu.com/8f/37s"
@@ -247,7 +234,7 @@
             >
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">鑽石山</div>

@@ -123,7 +123,7 @@
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
         </div>
         <div>
-          <div class="mapcontennt">
+          <!-- <div class="mapcontennt">
             <div class="addressMap">
             <img class="addrescoin" src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="">
             <p class="address1" id="addresd">地址</p>
@@ -134,7 +134,7 @@
             星期三至星期五: <br> 上午9:00 - 下午6:00</p>
             <p class="week2">星期六<br> 上午9:00 - 下午5:00<br>星期日及公眾假期休息</p>
             </div>
-          </div>
+          </div> -->
           <div class="button">
             <a  class="link_more"  href="https://goo.gl/maps/ubJUKR2QrmmtYqUWA" aria-hidden="true" target="_blank">Google 地圖</a>
             <!-- <nuxt-link class="link_more" to="">Google 地圖</nuxt-link> -->
