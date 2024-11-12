@@ -12,7 +12,7 @@
   </template>
   
   <script>
-  import mapGoogle from "@/components/common/googleMap.vue"
+  import mapGoogle from "@/components/common/new-googleMap.vue"
   import Banner from "@/components/hiddenBeauty/banner/index.vue"
   import serve from "@/components/hiddenBeauty/serve/index.vue"
   import hiddenBeauty from "@/components/hiddenBeauty/hiddenBeauty/index.vue"

@@ -12,8 +12,8 @@
 
 <script>
 import menuBar from "@/components/common/menuBar.vue";
-import footce from "@/components/common/footce.vue"
-import mapGoogle from "@/components/common/googleMap.vue"
+import footce from "@/components/common/new-footce.vue"
+import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/foot.vue"
 import serve from "@/components/about-me/serve/index.vue"
 // import Banner from "@/components/service/banner/index.vue"

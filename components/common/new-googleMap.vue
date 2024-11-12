@@ -16,8 +16,8 @@
     <div v-if="showAllMap">
       <div class="justify-center addmap">
         <div id="map">
-          <div class="map-title">中環</div>
-          <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" />
+          <div class="map-title">銅鑼灣</div>
+          <img src="https://static.cmereye.com/imgs/2024/11/515c7f2228ba300b.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
@@ -37,7 +37,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div>中環畢打街1-3號中建大廈11樓1102室</div>
+                <div>銅鑼灣軒尼詩道555號東角中心舊翼11樓1101室</div>
               </div>
               <div>
                 <div>
@@ -61,7 +61,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div>中環地鐵站G出口（鄰近置地廣場）</div>
+                <div>銅鑼灣站D2出口</div>
               </div>
               <div>
                 <div>
@@ -73,17 +73,18 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 18:30</span><span>休息</span>
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="button">
-            <a class="link_more google_map" href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true"
+            <a class="link_more google_map" href="https://maps.app.goo.gl/LNcejozM2zkifphY6" aria-hidden="true"
               target="_blank">Google
               地圖</a>
             <a class="link_more" href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
@@ -199,10 +200,11 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
@@ -262,10 +264,11 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
@@ -283,15 +286,15 @@
     <div v-if="addcurrentIndex === 0 && showAllMap == false">
       <div class="justify-center addmap">
         <div id="map">
-          <div class="map-title">中環</div>
-          <img src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg" width="100%" />
+          <div class="map-title">銅鑼灣</div>
+          <img src="https://static.cmereye.com/imgs/2024/11/515c7f2228ba300b.jpg" width="100%" />
         </div>
         <div>
           <div class="mapcontennt">
             <div class="map_style">
               <div>
                 <div><img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Frame.svg" alt="" /></div>
-                <div>中環畢打街1-3號中建大廈11樓1102室</div>
+                <div>銅鑼灣軒尼詩道555號東角中心舊翼11樓1101室</div>
               </div>
               <div>
                 <div>
@@ -315,7 +318,7 @@
                     </defs>
                   </svg>
                 </div>
-                <div>中環地鐵站G出口（鄰近置地廣場）</div>
+                <div>銅鑼灣站D2出口</div>
               </div>
               <div>
                 <div>
@@ -327,17 +330,18 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 18:30</span><span>休息</span>
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           <div class="button">
-            <a class="link_more google_map" href="https://goo.gl/maps/PvdcUiRiCqSdmHSn9" aria-hidden="true"
+            <a class="link_more google_map" href="https://maps.app.goo.gl/LNcejozM2zkifphY6" aria-hidden="true"
               target="_blank">Google
               地圖</a>
             <a class="link_more" href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
@@ -455,10 +459,12 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <!-- <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span> -->
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
@@ -520,10 +526,12 @@
                 </div>
                 <div>
                   <div>
-                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
+                    <!-- <span>星期一至星期六</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
-                    <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span>
+                    <!-- <span>09:30 － 18:30</span><span>09:30 － 17:30</span><span>休息</span> -->
+                    <span>星期日及公眾假期</span><span>休息</span>
                   </div>
                 </div>
               </div>
@@ -688,7 +696,7 @@ a {
         color: #FFF;
         text-align: justify;
         font-family: Noto Sans;
-        font-size: 15px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -703,14 +711,22 @@ a {
     &>div:nth-child(3) {
       &>div:nth-child(2) {
         display: flex;
-
+        flex-direction: column;
+        gap: 10px 0;
+        
         &>div {
           display: flex;
-          flex-direction: column;
+          gap: 0 10px;
+          &>span:nth-child(1){
+            min-width: 140px;
+          }
+          &>span:nth-child(2){
+            white-space: nowrap;
+          }
         }
 
         &>div:nth-child(1) {
-          margin-right: 30px;
+          margin-right: 0;
         }
       }
     }
@@ -846,15 +862,15 @@ a {
   .mapcontennt {
     background: #8cd1f8;
     border-radius: 30px 30px 30px 30px;
-    margin-left: 87px;
+    margin-left: 75px;
     margin-top: 10px;
     position: relative;
-    padding: 24px 30px;
-    max-width: 400px;
+    padding: 35px 15px 35px 5px ;
+    min-width: 420px;
 
     .addressMap {
       padding: 10px;
-      font-size: 1rem;
+      font-size: 0.95rem;
     }
 
     .addrescoin {
@@ -1027,8 +1043,7 @@ a {
   .map_style {
     display: flex;
     flex-direction: column;
-    min-width: 20rem;
-    padding: 1.25rem 0.9375rem;
+    padding: 1.25rem 0.8375rem;
 
     &>div {
       display: flex;
@@ -1051,11 +1066,11 @@ a {
         color: #FFF;
         text-align: justify;
         font-family: Noto Sans;
-        font-size: 13px;
+        font-size: 4.265vw;
         font-style: normal;
-        font-weight: 700;
+        font-weight: 500;
         line-height: normal;
-        letter-spacing: 1.3px;
+        letter-spacing: 1px;
       }
     }
 
@@ -1066,14 +1081,16 @@ a {
     &>div:nth-child(3) {
       &>div:nth-child(2) {
         display: flex;
-
+        flex-direction: column;
+        gap: 10px 0;
         &>div {
           display: flex;
           flex-direction: column;
         }
 
         &>div:nth-child(1) {
-          margin-right: 30px;
+          margin-right: 2.3vw;
+
         }
       }
     }
@@ -1203,7 +1220,7 @@ a {
 
   .mapcontennt {
     height: 65vw;
-    width: 81vw;
+    width: 91vw;
     border: 1;
     background: #8cd1f8;
     border-radius: 16px 16px 16px 16px;

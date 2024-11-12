@@ -11,8 +11,8 @@
 
 <script>
 import menuBar from "@/components/common/newMenuBar.vue";
-import footce from "@/components/common/footce.vue"
-import mapGoogle from "@/components/common/googleMap.vue"
+import footce from "@/components/common/new-footce.vue"
+import mapGoogle from "@/components/common/new-googleMap.vue"
 import foot from "@/components/common/foot.vue"
 import Banner from "@/components/equipment/banner/index.vue"
 import equipInfo from "@/components/equipment/equipInfo/index.vue"

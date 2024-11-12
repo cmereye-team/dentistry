@@ -323,7 +323,8 @@ a {
 
 @media only screen and (min-width: 760px) and (max-width: 7680px) {
   .service_pic img {
-    max-width: 200px;
+    // max-width: 200px;
+    max-width: clamp(30px, 15vw, 60px);
     // width: 6vw;
   }
 
@@ -698,6 +699,7 @@ a {
         width: 42.1333vw;
         height: 42.1333vw;
 
+
         &>a {
           display: flex;
           flex-direction: column;
@@ -715,6 +717,10 @@ a {
             display: flex;
             align-items: center;
             justify-content: center;
+            img{
+              max-width: max(50px, min(25px, 60px));
+              max-height: max(50px, min(25px, 60px));
+            }
           }
 
           &>div:nth-child(2) {

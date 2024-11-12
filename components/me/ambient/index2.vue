@@ -41,19 +41,7 @@
               <div class="border_corner border_corner_right_bottom"></div>
               <img
                 class="show"
-                src="https://static.cmereye.com/static/lkximg/clinic/03.JPG"
-              />
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="main">
-              <div class="border_corner border_corner_left_top"></div>
-              <div class="border_corner border_corner_right_top"></div>
-              <div class="border_corner border_corner_left_bottom"></div>
-              <div class="border_corner border_corner_right_bottom"></div>
-              <img
-                class="show"
-                src="https://static.cmereye.com/static/lkximg/clinic/08.jpg"
+                src="https://static.cmereye.com/static/lkximg/clinic/04.jpg"
               />
             </div>
           </div>
@@ -172,25 +160,25 @@
             type="button"
             id="button3"
             data-bs-target="#demo2"
-            data-bs-slide-to="2"
+            data-bs-slide-to="3"
           ></button>
           <button
             type="button"
             id="button4"
             data-bs-target="#demo2"
-            data-bs-slide-to="3"
+            data-bs-slide-to="4"
           ></button>
           <button
             type="button"
             id="button5"
             data-bs-target="#demo2"
-            data-bs-slide-to="4"
+            data-bs-slide-to="5"
           ></button>
           <button
             type="button"
             id="button6"
             data-bs-target="#demo2"
-            data-bs-slide-to="5"
+            data-bs-slide-to="6"
           ></button>
           <!-- <button type="button" id="button8" data-bs-target="#demo2" data-bs-slide-to="7"></button> -->
           <!-- <button type="button" id="button9" data-bs-target="#demo2" data-bs-slide-to="8"></button> -->
@@ -199,25 +187,25 @@
             type="button"
             id="button11"
             data-bs-target="#demo2"
-            data-bs-slide-to="6"
+            data-bs-slide-to="10"
           ></button>
           <button
             type="button"
             id="button12"
             data-bs-target="#demo2"
-            data-bs-slide-to="7"
+            data-bs-slide-to="11"
           ></button>
           <button
             type="button"
             id="button13"
             data-bs-target="#demo2"
-            data-bs-slide-to="8"
+            data-bs-slide-to="12"
           ></button>
           <button
             type="button"
             id="button14"
             data-bs-target="#demo2"
-            data-bs-slide-to="9"
+            data-bs-slide-to="13"
           ></button>
         </div>
       </div>
@@ -247,20 +235,17 @@ export default {
       this.loading = true;
       const iframe = this.$refs.Iframe;
       // 兼容处理
-      // if (iframe.attachEvent) {
-      //   // IE
-      //   iframe.attachEvent("onload", () => {
-      //     this.loading = false;
-      //   });
-      // } else {
-      //   // 非IE
-      //   iframe.onload = () => {
-      //     this.loading = false;
-      //   };
-      // }
-      // iframe.onload = () => {
-      //     this.loading = false;
-      //   };
+      if (iframe.attachEvent) {
+        // IE
+        iframe.attachEvent("onload", () => {
+          this.loading = false;
+        });
+      } else {
+        // 非IE
+        iframe.onload = () => {
+          this.loading = false;
+        };
+      }
     },
   },
 };
@@ -424,7 +409,7 @@ export default {
       background-size: cover;
     }
     #button4 {
-      background-image: url("https://static.cmereye.com/static/lkximg/clinic/08.jpg");
+      background-image: url("https://static.cmereye.com/static/lkximg/clinic/04.jpg");
       background-color: #79828d;
       height: 102px;
       width: 102px;
@@ -799,7 +784,7 @@ export default {
       background-size: cover;
     }
     #button4 {
-      background-image: url("https://static.cmereye.com/static/lkximg/clinic/08.jpg");
+      background-image: url("https://static.cmereye.com/static/lkximg/clinic/04.jpg");
       background-color: #79828d;
       height: 102px;
       width: 102px;

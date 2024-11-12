@@ -36,7 +36,7 @@
           <div class="map-title">中環</div>
           <!-- <img src="https://static.cmereye.com/static/lkximg/image/about-me/mapstyle/Mapgroup.jpg" width="100%" > -->
           <img
-            src="https://static.cmereye.com/static/lkximg/map/materials_中環.jpg"
+            src="https://static.cmereye.com/imgs/2024/11/515c7f2228ba300b.jpg"
             width="100%"
           />
           <!-- <iframe width="100%" height="100%"

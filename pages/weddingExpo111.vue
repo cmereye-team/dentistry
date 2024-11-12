@@ -73,7 +73,7 @@
 import menuBar from "@/components/common/menuBar.vue";
 import Banner from "@/components/weddingExpo/banner/index.vue";
 import serveConcept from "@/components/weddingExpo/service-concept/index.vue"
-import footce from "@/components/common/footce.vue"
+import footce from "@/components/common/new-footce.vue"
 import foot from "@/components/common/foot.vue"
 import dynamicLoadCss from "@/tools/cssLink.js"
 export default {
