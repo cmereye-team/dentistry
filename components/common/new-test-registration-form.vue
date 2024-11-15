@@ -3,16 +3,31 @@
     <div class="video_box md:font-black">
       <div class="flex justify-center texts">
         <h2>預約</h2>
-        <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+        <img
+          src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+          alt=""
+        />
       </div>
       <div class="form">
         <div class="form-table">
-          <div class="text-form">立即預約牙科服務，<br class="mbShow" />展現自信笑容！</div>
+          <div class="text-form">
+            立即預約牙科服務，<br class="mbShow" />展現自信笑容！
+          </div>
           <div class="table-message">
-            <el-form label-position="top" label-width="80px" ref="ruleForm" :model="ruleForm" :rules="rules"
-              method="post">
+            <el-form
+              label-position="top"
+              label-width="80px"
+              ref="ruleForm"
+              :model="ruleForm"
+              :rules="rules"
+              method="post"
+            >
               <el-form-item prop="name" label="姓名">
-                <el-input v-model="ruleForm.name" placeholder="請輸入你的姓名" name="name"></el-input>
+                <el-input
+                  v-model="ruleForm.name"
+                  placeholder="請輸入你的姓名"
+                  name="name"
+                ></el-input>
               </el-form-item>
               <el-form-item prop="region" label="稱呼">
                 <el-radio-group v-model="ruleForm.region">
@@ -22,9 +37,19 @@
                 </el-radio-group>
               </el-form-item>
               <el-form-item prop="phone" label="電話號碼">
-                <el-input placeholder="請輸入你的電話號碼" v-model="ruleForm.phone" name="phone" class="input-with-select">
-                  <el-select style="max-width:100px" v-model="ruleForm.beforePhone" name="beforePhone" slot="prepend"
-                    placeholder="请选择">
+                <el-input
+                  placeholder="請輸入你的電話號碼"
+                  v-model="ruleForm.phone"
+                  name="phone"
+                  class="input-with-select"
+                >
+                  <el-select
+                    style="max-width: 100px"
+                    v-model="ruleForm.beforePhone"
+                    name="beforePhone"
+                    slot="prepend"
+                    placeholder="请选择"
+                  >
                     <el-option label="+852" value="1"></el-option>
                     <el-option label="+853" value="2"></el-option>
                     <el-option label="+86" value="3"></el-option>
@@ -32,51 +57,99 @@
                 </el-input>
               </el-form-item>
               <el-form-item label="電郵地址">
-                <el-input v-model="ruleForm.email" placeholder="請輸入你的電郵地址" name="email"></el-input>
+                <el-input
+                  v-model="ruleForm.email"
+                  placeholder="請輸入你的電郵地址"
+                  name="email"
+                ></el-input>
               </el-form-item>
-              <el-form-item prop="serve" label="診症服務"><span>（可選多於一項）</span>
+              <el-form-item prop="serve" label="診症服務"
+                ><span>（可選多於一項）</span>
                 <el-checkbox-group v-model="ruleForm.serve">
-                  <el-checkbox v-for="city in selectList" name="serve" :label="city.itemName" :key="city.id">{{
-                    city.itemName
-                  }}</el-checkbox>
+                  <el-checkbox
+                    v-for="city in selectList"
+                    name="serve"
+                    :label="city.itemName"
+                    :key="city.id"
+                    >{{ city.itemName }}</el-checkbox
+                  >
                 </el-checkbox-group>
               </el-form-item>
               <el-form-item prop="source" label="閣下從什麼途徑得知我們？">
                 <el-radio-group v-model="ruleForm.source">
-                  <el-radio v-for="(item) in selectSource" name="source" :key="item.id" :label="item.name"></el-radio>
+                  <el-radio
+                    v-for="item in selectSource"
+                    name="source"
+                    :key="item.id"
+                    :label="item.name"
+                  ></el-radio>
                 </el-radio-group>
               </el-form-item>
               <div class="radioInfo">
                 <div class="radiocon">
-                  <el-radio v-model="radio0" name="confidentiality" label="我已知曉内容皆保密處理">
+                  <el-radio
+                    v-model="radio0"
+                    name="confidentiality"
+                    label="我已知曉内容皆保密處理"
+                  >
                     <!-- value="我已知曉内容皆保密處理" -->
                     閣下必須提前至少三個工作天進行網上預約；網上提交表格並不等於預約成功，<br />閣下將會在兩個工作天內以電話或電郵收取預約確認通知；閣下所提供的個人信息只會用於預約服務，所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio1" name="privary" label="我已知曉同意收集個人資料及私隱">
+                  <el-radio
+                    v-model="radio1"
+                    name="privary"
+                    label="我已知曉同意收集個人資料及私隱"
+                  >
                     <!-- value="我已知曉同意收集個人資料及私隱" -->
-                    本人已閱讀，明白及同意收集個人資料及<nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
+                    本人已閱讀，明白及同意收集個人資料及<nuxt-link
+                      to="/policy#A1"
+                      ><span>私隱政策</span></nuxt-link
+                    >。</el-radio
+                  >
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio2" name="broadcast" label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊">
+                  <el-radio
+                    v-model="radio2"
+                    name="broadcast"
+                    label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊"
+                  >
                     <!-- value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。" -->
-                    本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio>
+                    本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio
+                  >
                 </div>
               </div>
               <div class="radioInfo1">
                 <div class="radiocon">
-                  <el-radio v-model="radio0" name="confidentiality" label="我已知曉内容皆保密處理">
+                  <el-radio
+                    v-model="radio0"
+                    name="confidentiality"
+                    label="我已知曉内容皆保密處理"
+                  >
                     閣下必須提前至少三個工作天進行網上預約；<br />網上提交表格並不等於預約成功，閣下將會在兩<br />個工作天內以電話或電郵收取預約確認通知；<br />閣下所提供的個人信息只會用於預約服務，<br />所有內容皆會保密處理。
                   </el-radio>
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio1" name="privary" label="我已知曉同意收集個人資料及私隱">
-                    本人已閱讀，明白及同意收集個人資料及<br /><nuxt-link to="/policy#A1"><span>私隱政策</span></nuxt-link>。</el-radio>
+                  <el-radio
+                    v-model="radio1"
+                    name="privary"
+                    label="我已知曉同意收集個人資料及私隱"
+                  >
+                    本人已閱讀，明白及同意收集個人資料及<br /><nuxt-link
+                      to="/policy#A1"
+                      ><span>私隱政策</span></nuxt-link
+                    >。</el-radio
+                  >
                 </div>
                 <div class="radiocon">
-                  <el-radio v-model="radio2" name="broadcast" label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊">
-                    本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio>
+                  <el-radio
+                    v-model="radio2"
+                    name="broadcast"
+                    label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊"
+                  >
+                    本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio
+                  >
                 </div>
               </div>
               <el-form-item class="submit_new">
@@ -99,9 +172,21 @@
                   </div>
                 </a> -->
                 <!-- <el-button @click="resetForm('ruleForm')">重置</el-button> -->
-                <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref"
-                  :linkText="linkText" :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-                  :paddingSizeMb="paddingSizeMb" :maxNum="99999" :minNum="99999" :maxNumMb="99999" :minNumMb="99999" />
+                <newBtn
+                  class="new—btn"
+                  @childEvent="handleChildEvent('ruleForm')"
+                  :linkHref="linkHref"
+                  :linkText="linkText"
+                  :newSvg="newSvg"
+                  :isShowSvg="isShowSvg"
+                  :paddingSize="paddingSize"
+                  :mb="mb"
+                  :paddingSizeMb="paddingSizeMb"
+                  :maxNum="99999"
+                  :minNum="99999"
+                  :maxNumMb="99999"
+                  :minNumMb="99999"
+                />
               </el-form-item>
               <!-- <button ref="submitButt" v-show="false" type="submit" value="Submit" @click="aa">
                 提交
@@ -109,7 +194,12 @@
               <!-- <newBtn class="new—btn" @childEvent="handleChildEvent('ruleForm')" :linkHref="linkHref" :linkText="linkText"
                 :newSvg="newSvg" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb" :paddingSizeMb="paddingSizeMb"
                 :maxNum="5406" :minNum="4234" :maxNumMb="5510" :minNumMb="5155" /> -->
-              <input type="text" name="pageUrl" v-show="false" v-model="pageUrl">
+              <input
+                type="text"
+                name="pageUrl"
+                v-show="false"
+                v-model="pageUrl"
+              />
             </el-form>
           </div>
         </div>
@@ -118,21 +208,22 @@
   </div>
 </template>
 <script>
-import { Message } from 'element-ui';
-import newBtn from '@/components/common/new-btn.vue';
+import { Message } from "element-ui";
+import newBtn from "@/components/common/new-btn.vue";
 export default {
   components: {
     newBtn,
   },
   data() {
     return {
-      linkHref: '',
-      linkText: '提交',
+      linkHref: "",
+      linkText: "提交",
       isShowSvg: false,
-      mb: '',
-      paddingSize: '8px 92px 12px',
-      paddingSizeMb: '6px 74px',
-      newSvg: '	https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png',
+      mb: "",
+      paddingSize: "8px 92px 12px",
+      paddingSizeMb: "6px 74px",
+      newSvg:
+        "	https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png",
       selectList: [
         { itemName: "微創植牙/種植牙", id: 1 },
         { itemName: "全瓷貼片", id: 2 },
@@ -151,47 +242,62 @@ export default {
       ],
       selectSource: [
         {
-          name: '搜尋引擎', id: '1'
+          name: "搜尋引擎",
+          id: "1",
         },
         {
-          name: '廣告 (Facebook/IG)', id: '2'
+          name: "廣告 (Facebook/IG)",
+          id: "2",
         },
         {
-          name: '親友介紹', id: '3'
+          name: "親友介紹",
+          id: "3",
         },
         {
-          name: '其他', id: '4'
+          name: "其他",
+          id: "4",
         },
       ],
-      radio0: '',
-      radio1: '',
-      radio2: '',
+      radio0: "",
+      radio1: "",
+      radio2: "",
       ruleForm: {
         name: "",
         region: "",
-        beforePhone: '+852',
-        email: '',
+        beforePhone: "+852",
+        email: "",
         phone: "",
         serve: [],
-        source: '',
+        source: "",
       },
       rules: {
         name: [
           { required: true, message: "必須輸入答案", trigger: "blur" },
-          { min: 2, max: 15, message: "长度在 2 到 15 个字符", trigger: "blur" },
+          {
+            min: 2,
+            max: 15,
+            message: "长度在 2 到 15 个字符",
+            trigger: "blur",
+          },
         ],
         region: [
           { required: true, message: "必須輸入答案", trigger: "change" },
         ],
 
-        source: [{ required: true, message: "請選擇一個來源", trigger: "change" }],
-        phone: [{ required: true, message: "請輸入你的電話號碼", trigger: "blur" }],
-        serve: [{ required: true, message: "請至少選擇一個症狀", trigger: "change" }],
+        source: [
+          { required: true, message: "請選擇一個來源", trigger: "change" },
+        ],
+        phone: [
+          { required: true, message: "請輸入你的電話號碼", trigger: "blur" },
+        ],
+        serve: [
+          { required: true, message: "請至少選擇一個症狀", trigger: "change" },
+        ],
       },
-      pageUrl: ''
+      pageUrl: "",
     };
   },
-  created() { },
+  created() {},
   mounted() {
     this.pageUrl = window.location.href;
   },
@@ -200,75 +306,145 @@ export default {
     //   console.log("提交表单了");
     // },
     handleChildEvent(formName) {
-      this.submitForm(formName)
+      this.submitForm(formName);
     },
-    submitForm(formName) {
+    async submitForm(formName) {
       this.$refs[formName].validate((valid) => {
         if (valid) {
-          let dataList = new FormData()
-          let _dataList = this.ruleForm
-          dataList.append('form_name', _dataList.name),
-            dataList.append('form_region', _dataList.region),
-            dataList.append('form_phone', `${_dataList.beforePhone}-${_dataList.phone}`),
-            dataList.append('form_email', _dataList.email),
-            dataList.append('form_serve', _dataList.serve),
-            dataList.append('form_source', _dataList.source),
-            dataList.append('form_page', this.pageUrl),
-            dataList.append('form_radio', this.radio0),
-            dataList.append('form_radio1', this.radio1),
-            dataList.append('form_radio2', this.radio2),
-            this.$confirm('此操作将提交信息, 是否继续?', '提示', {
-              confirmButtonText: '提交',
-              cancelButtonText: '取消',
-              type: 'warning'
-            }).then(() => {
-              fetch('https://forms.cmerdental.com/api.php/cms/addmsg', {
-                method: 'POST',
-                body: dataList,
-              }).then(res => res.json())
-                .then(res => {
-                  if (res.code == 1) {
-                    this.radio0 = '';
-                    this.radio1 = '';
-                    this.radio2 = '';
-                    this.ruleForm.email = '';
-                    alert(res.data);
-                    this.$refs[formName].resetFields();
-                  }
-                })
-            }).catch(() => {
-              Message({ message: '已取消删除', type: 'info' });
+          if (
+            localStorage.getItem("contactForm") &&
+            localStorage.getItem("contactForm") ===
+              JSON.stringify(this.ruleForm)
+          ) {
+            Message({
+              message: "提交稍後有工作人員與與您聯係，耐心等待",
+              type: "info",
             });
+          } else {
+            let dataList = new FormData();
+            let _dataList = this.ruleForm;
+            dataList.append("form_name", _dataList.name),
+              dataList.append("form_region", _dataList.region),
+              dataList.append(
+                "form_phone",
+                `${_dataList.beforePhone}-${_dataList.phone}`
+              ),
+              dataList.append("form_email", _dataList.email),
+              dataList.append("form_serve", _dataList.serve),
+              dataList.append("form_source", _dataList.source),
+              dataList.append("form_page", this.pageUrl),
+              dataList.append("form_radio", this.radio0),
+              dataList.append("form_radio1", this.radio1),
+              dataList.append("form_radio2", this.radio2),
+              // this.$confirm("此操作将提交信息, 是否继续?", "提示", {
+              //   confirmButtonText: "提交",
+              //   cancelButtonText: "取消",
+              //   type: "warning",
+              // })
+              //   .then(() => {
+              //     fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
+              //       method: "POST",
+              //       body: dataList,
+              //     })
+              //       .then((res) => res.json())
+              //       .then((res) => {
+              //         if (res.code == 1) {
+              //           localStorage.setItem(
+              //             "contactForm",
+              //             JSON.stringify(_form)
+              //           );
+              //           this.radio0 = "";
+              //           this.radio1 = "";
+              //           this.radio2 = "";
+              //           this.ruleForm.email = "";
+              //           this.$refs[formName].resetFields();
+              //           Message({ message: "已提交", type: "info" });
+              //         }
+              //       });
+              //   })
+              //   .catch(() => {
+              //     Message({ message: "已取消删除", type: "info" });
+              //   });
+              fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
+                method: "POST",
+                body: dataList,
+              })
+                .then((res) => res.json())
+                .then((res) => {
+                  if (res.code == 1) {
+                    localStorage.setItem("contactForm", JSON.stringify(_form));
+                    this.radio0 = "";
+                    this.radio1 = "";
+                    this.radio2 = "";
+                    this.ruleForm.email = "";
+                    this.$refs[formName].resetFields();
+                    Message({ message: "已提交", type: "info" });
+                  }
+                });
+            this.ruleForm.serve = this.ruleForm.serve.join(",");
+            this.postDat(this.ruleForm);
+          }
         } else {
-          console.log('error submit!!');
+          console.log("error submit!!");
           return false;
         }
       });
     },
-    // this.$refs[formName].resetFields(); // 重置表单 
-
-    // submitForm() {
-    //   if (
-    //     this.ruleForm.name === "" ||
-    //     this.ruleForm.region === "" ||
-    //     this.ruleForm.phone === "" ||
-    //     this.ruleForm.serve === "" ||
-    //     this.ruleForm.source === ""
-    //   ) {
-    //     console.log(this.ruleForm, 'P175');
-    //     alert("請完善信息！");
-    //   } else if (
-    //     localStorage.getItem("ruleForm") === JSON.stringify(this.ruleForm)
-    //   ) {
-    //     this.ruleForm = {};
-    //     alert("我们已经收到啦~请不要重复提交");
-    //     location.reload();
-    //   } else {
-    //     alert("提交成功！");
-    //     localStorage.setItem("ruleForm", JSON.stringify(this.ruleForm));
-    //     this.$refs.submitButt.click();
-    //   }
-    // },
+    async postDat(_form) {
+      let _message = {
+        msgtype: "text",
+        text: {
+          content: `姓名：${_form.name}
+  称呼: ${_form.region}
+  電話號碼：${_form.beforePhone}-${_form.phone}
+  電郵地址：${_form.email}
+  診症服務：${_form.serve}
+  途徑：${_form.source}
+  已知曉内容：${_form.confidentiality ? _form.confidentiality : "否"}
+  同意收集個人資料及私隱：${_form.privary ? _form.privary : "否"}
+  願意收取宣傳資訊：${_form.broadcast ? _form.broadcast : "否"}
+  提交页面：${this.pageUrl}
+  提交時間：${new Date().toLocaleString()}`,
+        },
+      };
+      // console.log(_message, "_message_message_message");
+      this.$confirm("此操作将提交信息, 是否继续?", "提示", {
+        confirmButtonText: "提交",
+        cancelButtonText: "取消",
+        type: "warning",
+      }).then(() => {
+        fetch(
+          "/dingtalk/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json;charset=utf-8",
+            },
+            body: JSON.stringify(_message),
+          }
+        )
+          .then((res) => res.json())
+          .then((res) => {
+            if (res.code) {
+              localStorage.setItem("contactForm", JSON.stringify(_form));
+              Message({ message: "已提交", type: "success" });
+              this.radio0 = "";
+              this.radio1 = "";
+              this.radio2 = "";
+              this.ruleForm.email = "";
+              this.$refs[formName].resetFields();
+            } else {
+              Message({
+                message: "服務異常，請稍後重試",
+                type: "error",
+              });
+            }
+          })
+          .catch(() => {
+            Message({ message: "已取消删除", type: "info" });
+          });
+      });
+    },
   },
 };
 </script>
@@ -276,7 +452,6 @@ export default {
 a {
   text-decoration: none;
 }
-
 
 //pc
 @media only screen and (min-width: 768px) {
@@ -301,14 +476,13 @@ a {
     justify-content: center;
     max-width: 100%;
     margin: 90px auto 0;
-
   }
 
   .serve_btn {
     position: relative;
     text-decoration: none;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       position: absolute;
       top: -120%;
       right: 55%;
@@ -325,7 +499,7 @@ a {
   }
 
   .btn_pc_style {
-    &>div {
+    & > div {
       display: flex;
     }
   }
@@ -335,18 +509,18 @@ a {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
     padding: 8px 92px 12px;
-    background: #FFD333;
+    background: #ffd333;
     cursor: pointer;
     top: 0;
-    color: #FFF;
-    font-family: 'Noto Sans CJK TC';
+    color: #fff;
+    font-family: "Noto Sans CJK TC";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.92px;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin-right: 8px;
       display: flex;
       align-items: center;
@@ -355,13 +529,13 @@ a {
   }
 
   .bp-btn .btn_pc_style .btn2 {
-    color: #79828D;
+    color: #79828d;
     background: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: btnAnim .9s linear;
+    animation: btnAnim 0.9s linear;
     animation-fill-mode: forwards;
     width: max-content;
     display: none;
@@ -369,20 +543,19 @@ a {
 
   .bp-btn .btn_pc_style:hover {
     .btn1 {
-      color: #79828D;
+      color: #79828d;
 
       path {
-        fill: #79828D;
+        fill: #79828d;
       }
     }
 
     .btn2 {
       display: flex;
-      animation: btnAnim .9s linear;
+      animation: btnAnim 0.9s linear;
       animation-fill-mode: forwards;
     }
   }
-
 
   @keyframes btnAnim {
     0% {
@@ -446,7 +619,7 @@ a {
   }
 
   ::v-deep .el-form--label-top .el-form-item__label {
-    color: #FFF;
+    color: #fff;
     text-align: justify;
     font-family: Noto Sans TC;
     font-size: 24px;
@@ -463,16 +636,16 @@ a {
   }
 
   ::v-deep .el-form {
-    &>div:nth-child(3) {
-      &>div:nth-child(2) {
-        &>div:nth-child(1) {
-          &>input {
+    & > div:nth-child(3) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
+          & > input {
             border-radius: 0 10px 10px 0;
           }
 
-          &>div:nth-child(1) {
-            &>div:nth-child(1) {
-              &>div:nth-child(1) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
                 input {
                   color: #86c1e8;
                 }
@@ -483,20 +656,20 @@ a {
       }
     }
 
-    &>div:nth-child(5) {
+    & > div:nth-child(5) {
       position: relative !important;
 
-      &>label {
+      & > label {
         position: relative !important;
       }
 
-      &>div:nth-child(2) {
-        &>span {
+      & > div:nth-child(2) {
+        & > span {
           position: absolute;
           top: 0;
           left: 0px;
           transform: translate(70%, -150%);
-          color: #EC1212;
+          color: #ec1212;
           font-family: Noto Sans TC;
           font-size: 18px;
           font-style: normal;
@@ -507,9 +680,9 @@ a {
       }
     }
 
-    &>div:nth-child(5)::after {
-      content: '*為必填';
-      color: #EC1212;
+    & > div:nth-child(5)::after {
+      content: "*為必填";
+      color: #ec1212;
       text-align: justify;
       font-family: Noto Sans TC;
       font-size: 18px;
@@ -520,9 +693,9 @@ a {
       padding-top: 20px;
     }
 
-    &>div:nth-child(6) {
-      &>div:nth-child(2) {
-        &>div:nth-child(1) {
+    & > div:nth-child(6) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
           display: flex;
           flex-direction: column;
         }
@@ -543,7 +716,7 @@ a {
     color: #9bd0f5;
   }
 
-  ::v-deep .el-radio__input.is-checked+.el-radio__label {
+  ::v-deep .el-radio__input.is-checked + .el-radio__label {
     color: #ffffff;
   }
 
@@ -551,7 +724,7 @@ a {
     color: #ffffff;
   }
 
-  ::v-deep .el-checkbox__input.is-checked+.el-checkbox__label {
+  ::v-deep .el-checkbox__input.is-checked + .el-checkbox__label {
     color: #ffffff;
   }
 
@@ -565,7 +738,7 @@ a {
   }
 
   ::v-deep .el-checkbox-group .el-checkbox .el-checkbox__label {
-    color: #FFF;
+    color: #fff;
     text-align: justify;
     font-family: Noto Sans TC;
     font-size: 18px;
@@ -576,7 +749,7 @@ a {
   }
 
   ::v-deep .el-radio-group .el-radio .el-radio__label {
-    color: #FFF;
+    color: #fff;
     text-align: justify;
     font-family: Noto Sans TC;
     font-size: 18px;
@@ -637,7 +810,7 @@ a {
   }
 
   .form-p {
-    color: #EC1212;
+    color: #ec1212;
     text-align: justify;
     font-family: Noto Sans TC;
     font-size: 18px;
@@ -649,7 +822,7 @@ a {
 
   .form-btn {
     margin: 92px auto;
-    color: #FFF;
+    color: #fff;
     font-family: Noto Sans;
     font-size: 24px;
     font-style: normal;
@@ -658,7 +831,7 @@ a {
     letter-spacing: 1.92px;
     width: fit-content;
     padding: 8px 92px 12px;
-    background: #FFD333;
+    background: #ffd333;
     border-radius: 100px;
     position: relative;
     z-index: 10;
@@ -666,8 +839,8 @@ a {
   }
 
   .form-btn::before {
-    content: '';
-    background: url('https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png');
+    content: "";
+    background: url("https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 104px;
@@ -734,7 +907,7 @@ a {
       top: -115% !important;
       right: 50% !important;
       z-index: 9;
-      &>img {
+      & > img {
         width: 80%;
       }
     }
@@ -789,7 +962,7 @@ a {
     color: #9bd0f5;
   }
 
-  ::v-deep .el-radio__input.is-checked+.el-radio__label {
+  ::v-deep .el-radio__input.is-checked + .el-radio__label {
     color: #ffffff;
   }
 
@@ -882,12 +1055,12 @@ a {
     }
 
     ::v-deep .el-form {
-      &>div:nth-child(3) {
-        &>div:nth-child(2) {
-          &>div:nth-child(1) {
-            &>div:nth-child(1) {
-              &>div:nth-child(1) {
-                &>div:nth-child(1) {
+      & > div:nth-child(3) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
+            & > div:nth-child(1) {
+              & > div:nth-child(1) {
+                & > div:nth-child(1) {
                   input {
                     color: #86c1e8;
                     width: 25vw;
@@ -896,7 +1069,7 @@ a {
               }
             }
 
-            &>input {
+            & > input {
               width: 52vw;
               border-radius: 0 10px 10px 0;
             }
@@ -904,20 +1077,20 @@ a {
         }
       }
 
-      &>div:nth-child(5) {
+      & > div:nth-child(5) {
         position: relative !important;
 
-        &>label {
+        & > label {
           position: relative !important;
         }
 
-        &>div:nth-child(2) {
-          &>span {
+        & > div:nth-child(2) {
+          & > span {
             position: absolute;
             top: 0;
             left: 0px;
             transform: translate(80%, -150%);
-            color: #EC1212;
+            color: #ec1212;
             font-family: Noto Sans TC;
             font-size: 13px;
             font-style: normal;
@@ -928,9 +1101,9 @@ a {
         }
       }
 
-      &>div:nth-child(6) {
-        &>div:nth-child(2) {
-          &>div:nth-child(1) {
+      & > div:nth-child(6) {
+        & > div:nth-child(2) {
+          & > div:nth-child(1) {
             display: flex;
             flex-direction: column;
           }
@@ -941,9 +1114,9 @@ a {
         }
       }
 
-      &>div:nth-child(6)::after {
-        content: '*為必填';
-        color: #EC1212;
+      & > div:nth-child(6)::after {
+        content: "*為必填";
+        color: #ec1212;
         text-align: justify;
         font-family: Noto Sans TC;
         font-size: 16px;
@@ -976,10 +1149,10 @@ a {
   }
 
   ::v-deep .el-form--label-top .el-form-item__label {
-    color: #FFF;
+    color: #fff;
     text-align: justify;
     letter-spacing: 2.4px;
-    color: #FFF;
+    color: #fff;
     font-family: Noto Sans TC;
     font-size: 18px;
     font-style: normal;
@@ -998,22 +1171,22 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &>label {
+    & > label {
       min-width: 140px;
       width: 140px;
     }
 
-    &>label:nth-child(odd) {
+    & > label:nth-child(odd) {
       margin-right: 15px;
     }
 
-    &>label:nth-child(even) {
+    & > label:nth-child(even) {
       margin-right: 0;
     }
   }
 
   ::v-deep .el-checkbox-group .el-checkbox .el-checkbox__label {
-    color: #FFF;
+    color: #fff;
     text-align: justify;
     font-family: Noto Sans TC;
     font-size: 14.63px;
@@ -1029,7 +1202,7 @@ a {
 
   .form-btn {
     margin: 5rem auto 3.875rem;
-    color: #FFF;
+    color: #fff;
     font-family: Noto Sans;
     font-size: 1.0532rem;
     font-style: normal;
@@ -1038,7 +1211,7 @@ a {
     letter-spacing: 0.0843rem;
     width: fit-content;
     padding: 0.5rem 5.75rem 0.75rem;
-    background: #FFD333;
+    background: #ffd333;
     border-radius: 100px;
     position: relative;
     z-index: 10;
@@ -1046,8 +1219,8 @@ a {
   }
 
   .form-btn::before {
-    content: '';
-    background: url('https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png');
+    content: "";
+    background: url("https://cdn.statically.io/gh/CMER-SZ/picx-images-hosting@master/new-hkcmereye/Layer_1.3w7a4yvapcg0.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 73px;
@@ -1073,7 +1246,7 @@ a {
     position: relative;
     text-decoration: none;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       position: absolute;
       top: -170%;
       right: 60%;
@@ -1091,7 +1264,7 @@ a {
   }
 
   .btn_pc_style {
-    &>div {
+    & > div {
       display: flex;
     }
   }
@@ -1101,11 +1274,11 @@ a {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
     padding: 7px 64px;
-    background: #FFD333;
+    background: #ffd333;
     cursor: pointer;
     top: 0;
-    color: #FFF;
-    font-family: 'Noto Sans CJK TC';
+    color: #fff;
+    font-family: "Noto Sans CJK TC";
     font-size: 18.7px;
     font-style: normal;
     font-weight: 700;
@@ -1121,13 +1294,13 @@ a {
   }
 
   .bp-btn .btn_pc_style .btn2 {
-    color: #79828D;
+    color: #79828d;
     background: #fff;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     z-index: 2;
-    animation: btnAnim .9s linear;
+    animation: btnAnim 0.9s linear;
     animation-fill-mode: forwards;
     width: max-content;
     display: none;
@@ -1147,7 +1320,7 @@ a {
   }
 
   .serve_btn {
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       width: 54px;
       top: -160%;
       right: 60%;
@@ -1161,20 +1334,19 @@ a {
 
   .bp-btn .btn_pc_style:hover {
     .btn1 {
-      color: #79828D;
+      color: #79828d;
 
       path {
-        fill: #79828D;
+        fill: #79828d;
       }
     }
 
     .btn2 {
       display: flex;
-      animation: btnAnim .9s linear;
+      animation: btnAnim 0.9s linear;
       animation-fill-mode: forwards;
     }
   }
-
 
   @keyframes btnAnim {
     0% {

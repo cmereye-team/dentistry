@@ -111,18 +111,26 @@ export default {
     // credentials: true,
     // baseURL:,
     // headers: {
-      // 'Content-Type': 'application/json',
-      // 'X-Requested-With': 'XMLHttpRequest'
+    // 'Content-Type': 'application/json',
+    // 'X-Requested-With': 'XMLHttpRequest'
     // }
   },
-  proxy:{
+  proxy: {
     '/api': {
-      target:'https://forms.cmerdental.com/api.php/cms/addmsg',
+      target: 'https://forms.cmerdental.com/api.php/cms/addmsg',
       changeOrigin: true,
       pathRewrite: {
         '^/api': ''
       }
     },
+    "/dingtalk": {
+      target: 'https://oapi.dingtalk.com',
+      prependPath: true,
+      changeOrigin: true,
+      pathRewrite: {
+        '^/dingtalk': ''
+      }
+    }
   },
   sitemap: sitemap,
   //重定向路由
@@ -150,5 +158,5 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     transpile: [/^element-ui/],
-  } 
+  }
 }
