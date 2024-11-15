@@ -414,7 +414,8 @@ export default {
         type: "warning",
       }).then(() => {
         fetch(
-          "/dingtalk/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed",
+          // "/dingtalk/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed",
+          'https://oapi.dingtalk.com/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed',
           {
             method: "POST",
             headers: {
