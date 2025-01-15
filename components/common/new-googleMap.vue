@@ -283,10 +283,10 @@
         </div>
       </div>
     </div>
-    <div v-if="addcurrentIndex === 0 && showAllMap == false">
-      <div class="justify-center addmap">
+    <!-- <div v-if="addcurrentIndex === 0 && showAllMap == false"> -->
+      <!-- <div class="justify-center addmap">
         <div id="map">
-          <div class="map-title">銅鑼灣</div>
+          <div class="map-title">銅鑼2灣</div>
           <img src="https://static.cmereye.com/imgs/2024/11/515c7f2228ba300b.jpg" width="100%" />
         </div>
         <div>
@@ -330,7 +330,7 @@
                 </div>
                 <div>
                   <div>
-                    <!-- <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span> -->
+                    <span>星期一至星期五</span><span>星期六</span><span>星期日及公眾假期</span>
                     <span>星期一至星期六</span><span>09:30AM － 06:30PM</span>
                   </div>
                   <div>
@@ -347,9 +347,9 @@
             <a class="link_more" href="https://j.map.baidu.com/e7/6Wx" aria-hidden="true" target="_blank">百度地圖</a>
           </div>
         </div>
-      </div>
-    </div>
-    <div v-else-if="addcurrentIndex === 1 && showAllMap == false">
+      </div> -->
+    <!-- </div> -->
+    <div v-else-if="addcurrentIndex === 0 && showAllMap == false">
       <!-- <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">22尖沙咀</div>
@@ -479,7 +479,7 @@
         </div>
       </div>
     </div>
-    <div v-else-if="addcurrentIndex === 2 && showAllMap == false">
+    <div v-else-if="addcurrentIndex === 1 && showAllMap == false">
       <div class="justify-center addmap">
         <div id="map">
           <div class="map-title">沙田</div>
@@ -590,10 +590,10 @@ export default {
         },
       ],
       addresslist: [
-        {
-          id: 1,
-          title: "港島",
-        },
+        //{
+        //  id: 1,
+        //  title: "港島",
+        //},
         {
           id: 2,
           title: "九龍",

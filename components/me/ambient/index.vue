@@ -123,10 +123,10 @@
               <div class="border_corner border_corner_right_top"></div>
               <div class="border_corner border_corner_left_bottom"></div>
               <div class="border_corner border_corner_right_bottom"></div>
-              <img
+              <!-- <img
                 class="show"
                 src="https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg"
-              />
+              /> -->
             </div>
           </div>
           <!-- <div class="carousel-item">
@@ -213,12 +213,12 @@
             data-bs-target="#demo2"
             data-bs-slide-to="8"
           ></button>
-          <button
+          <!-- <button
             type="button"
             id="button14"
             data-bs-target="#demo2"
             data-bs-slide-to="9"
-          ></button>
+          ></button> -->
         </div>
       </div>
     </div>
@@ -493,13 +493,13 @@ export default {
       width: 102px;
       background-size: cover;
     }
-    #button14 {
-      background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
-      background-color: #79828d;
-      height: 102px;
-      width: 102px;
-      background-size: cover;
-    }
+    // #button14 {
+    //   background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
+    //   background-color: #79828d;
+    //   height: 102px;
+    //   width: 102px;
+    //   background-size: cover;
+    // }
   }
 
   ::v-deep .carousel-about {
@@ -868,13 +868,13 @@ export default {
       width: 102px;
       background-size: cover;
     }
-    #button14 {
-      background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
-      background-color: #79828d;
-      height: 102px;
-      width: 102px;
-      background-size: cover;
-    }
+    // #button14 {
+    //   background-image: url("https://static.cmereye.com/imgs/2022/10/4f6b5c5042278c0c.jpg");
+    //   background-color: #79828d;
+    //   height: 102px;
+    //   width: 102px;
+    //   background-size: cover;
+    // }
   }
 
   .show {

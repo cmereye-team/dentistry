@@ -8,7 +8,7 @@
           alt=""
         />
       </div>
-      <div class="form">
+      <div class="form" v-loading="loading">
         <div class="form-table">
           <div class="text-form">
             立即預約牙科服務，<br class="mbShow" />展現自信笑容！
@@ -220,6 +220,7 @@ export default {
       linkText: "提交",
       isShowSvg: false,
       mb: "",
+      loading: false,
       paddingSize: "8px 92px 12px",
       paddingSizeMb: "6px 74px",
       newSvg:
@@ -306,6 +307,7 @@ export default {
     //   console.log("提交表单了");
     // },
     handleChildEvent(formName) {
+      this.loading = true;
       this.submitForm(formName);
     },
     async submitForm(formName) {
@@ -316,9 +318,11 @@ export default {
             localStorage.getItem("contactForm") ===
               JSON.stringify(this.ruleForm)
           ) {
-            Message({
+            Message.info({
+              showClose: true,
               message: "提交稍後有工作人員與與您聯係，耐心等待",
-              type: "info",
+              offset: 120,
+              duration: 3000,
             });
           } else {
             let dataList = new FormData();
@@ -335,62 +339,72 @@ export default {
               dataList.append("form_page", this.pageUrl),
               dataList.append("form_radio", this.radio0),
               dataList.append("form_radio1", this.radio1),
-              dataList.append("form_radio2", this.radio2),
-              // this.$confirm("此操作将提交信息, 是否继续?", "提示", {
-              //   confirmButtonText: "提交",
-              //   cancelButtonText: "取消",
-              //   type: "warning",
-              // })
-              //   .then(() => {
-              //     fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
-              //       method: "POST",
-              //       body: dataList,
-              //     })
-              //       .then((res) => res.json())
-              //       .then((res) => {
-              //         if (res.code == 1) {
-              //           localStorage.setItem(
-              //             "contactForm",
-              //             JSON.stringify(_form)
-              //           );
-              //           this.radio0 = "";
-              //           this.radio1 = "";
-              //           this.radio2 = "";
-              //           this.ruleForm.email = "";
-              //           this.$refs[formName].resetFields();
-              //           Message({ message: "已提交", type: "info" });
-              //         }
-              //       });
-              //   })
-              //   .catch(() => {
-              //     Message({ message: "已取消删除", type: "info" });
-              //   });
-              fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
-                method: "POST",
-                body: dataList,
-              })
-                .then((res) => res.json())
-                .then((res) => {
-                  if (res.code == 1) {
-                    localStorage.setItem("contactForm", JSON.stringify(_form));
-                    this.radio0 = "";
-                    this.radio1 = "";
-                    this.radio2 = "";
-                    this.ruleForm.email = "";
-                    this.$refs[formName].resetFields();
-                    Message({ message: "已提交", type: "info" });
-                  }
-                });
+              dataList.append("form_radio2", this.radio2);
+            // this.$confirm("此操作将提交信息, 是否继续?", "提示", {
+            //   confirmButtonText: "提交",
+            //   cancelButtonText: "取消",
+            //   type: "warning",
+            // })
+            //   .then(() => {
+            //     fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
+            //       method: "POST",
+            //       body: dataList,
+            //     })
+            //       .then((res) => res.json())
+            //       .then((res) => {
+            //         if (res.code == 1) {
+            //           localStorage.setItem(
+            //             "contactForm",
+            //             JSON.stringify(_form)
+            //           );
+            //           this.radio0 = "";
+            //           this.radio1 = "";
+            //           this.radio2 = "";
+            //           this.ruleForm.email = "";
+            //           this.$refs[formName].resetFields();
+            //           Message({ message: "已提交", type: "info" });
+            //         }
+            //       });
+            //   })
+            //   .catch(() => {
+            //     Message({ message: "已取消删除", type: "info" });
+            //   });
+            fetch("https://forms.cmerdental.com/api.php/cms/addmsg", {
+              method: "POST",
+              body: dataList,
+            })
+              .then((res) => res.json())
+              .then((res) => {
+                if (res.code == 1) {
+                  this.loading = false;
+                  localStorage.setItem("contactForm", JSON.stringify(_dataList));
+
+                  Message.success({
+                    showClose: true,
+                    message: "已提交，稍後將有工作人員與您聯絡，請耐心等待",
+                    offset: 120,
+                    duration: 0,
+                  });
+
+                  this.radio0 = "";
+                  this.radio1 = "";
+                  this.radio2 = "";
+                  this.ruleForm.email = "";
+                  this.$refs[formName].resetFields();
+                }
+              });
             this.ruleForm.serve = this.ruleForm.serve.join(",");
-            this.postDat(this.ruleForm);
+            // this.postDat(this.ruleForm);
           }
         } else {
-          console.log("error submit!!");
+          console.log("error submit!!", err);
           return false;
         }
       });
     },
-    async postDat(_form) {
+
+    async postDat(formName) {
+      let _form = this.ruleForm;
       let _message = {
         msgtype: "text",
         text: {
@@ -415,7 +429,7 @@ export default {
       }).then(() => {
         fetch(
           // "/dingtalk/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed",
-          'https://oapi.dingtalk.com/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed',
+          "https://oapi.dingtalk.com/robot/send?access_token=5894d7415133f808f8b2b154395128b9c21c49839bec6c0a31f0e09352bea3ed",
           {
             method: "POST",
             headers: {

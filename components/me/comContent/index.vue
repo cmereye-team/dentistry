@@ -8,11 +8,11 @@
     <div class="flex justify-center texts">
       <h2>公司簡介</h2>
       <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="">
-      <h3>希瑪牙科</h3>
+      <!-- <h3>希瑪牙科</h3> -->
       <p class="serve_cons">
         為香港希瑪眼科醫療控股有限公司<br>
         （股份代號：3309）旗下的牙科中心，<br>
-        分佈港九新界，位於銅鑼灣、沙田及觀塘。
+        分佈港九新界，位於沙田及觀塘。
       </p>
     </div>
     <div class="city">
