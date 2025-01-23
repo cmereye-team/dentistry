@@ -10,10 +10,10 @@
         <div>{{ item.text }}</div>
       </div>
     </div>
-    <div class="new-btn">
+    <!-- <div class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="5150" :minNum="4060"  :maxNumMb="5725" :minNumMb="5300"  />
-    </div>
+    </div> -->
   </div>
 </template>
 

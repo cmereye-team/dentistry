@@ -20,11 +20,11 @@
             <div v-if="pcOrMb == 'pc'"><img src="https://static.cmereye.com/imgs/2023/12/3f654ed56a2419ea.png" alt="">
             </div>
           </div>
-          <div class="new_btn">
+          <!-- <div class="new_btn">
             <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
               :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="3630" :minNum="2375" :maxNumMb="4320"
               :minNumMb="4000" :isChild="child" />
-          </div>
+          </div> -->
         </div>
         <div class="age_gap">
           <div><img

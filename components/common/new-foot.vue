@@ -31,7 +31,7 @@
             </span>
           </div>
           <div class="copyright long">
-            ©2024 希瑪牙科（希瑪醫療集團旗下牙科中心）
+            ©2025 希瑪牙科（希瑪醫療集團旗下牙科中心）
           </div>
         </div>
       </div>
@@ -60,7 +60,7 @@
           <nuxt-link to="/policy#A1">隱私政策</nuxt-link>
           <nuxt-link to="/policy#A2">免責條款</nuxt-link>
         </div>
-        <div>©2024 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
+        <div>©2025 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
       </div>
       <div class="mascot" :class="[isCouldAnimate == true ? 'couldAnimate afterMain' : 'couldVanish afterVanish']">
         <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"

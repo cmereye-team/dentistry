@@ -97,6 +97,7 @@ export default {
     margin-bottom: 5px;
 
     &>div {
+      display:none!important;
       color: #FFF;
       text-align: center;
       font-family: Noto Sans TC;

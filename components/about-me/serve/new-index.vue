@@ -55,10 +55,10 @@
           </div>
         </div>
       </div>
-      <div class="newBtn">
+      <!-- <div class="newBtn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb"  :maxNum="2500" :minNum="1410"  :maxNumMb="2600" :minNumMb="1910"  />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

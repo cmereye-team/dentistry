@@ -70,8 +70,8 @@
         牙齒狀況因人而異，建議尋求牙科醫生的評估及諮詢，以確定是否適合進行該項療程。
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-      :paddingSizeMb="paddingSizeMb" :maxNum="5406" :minNum="4234" :maxNumMb="5510" :minNumMb="5155" />
+    <!-- <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+      :paddingSizeMb="paddingSizeMb" :maxNum="5406" :minNum="4234" :maxNumMb="5510" :minNumMb="5155" /> -->
   </div>
 </template>
 

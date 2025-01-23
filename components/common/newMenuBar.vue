@@ -1227,6 +1227,7 @@ export default {
     overflow: hidden;
 
     &>div {
+      display:none!important;
       color: #FFF;
       text-align: center;
       font-family: Noto Sans TC;

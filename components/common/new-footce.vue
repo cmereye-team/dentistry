@@ -2,7 +2,7 @@
   <div class="container">
     <div class="online footer">
       <div v-if="isShow" class="pc">
-        <a
+        <!-- <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=85295128192"
         >
@@ -26,7 +26,7 @@
               </div>
             </div>
           </div>
-        </a>
+        </a> -->
       </div>
       <!-- <div v-else>
         <a id="zxzx" class="face-button d-block web_app_a gtm_app phoneMd" href="tel:85236202428 " aria-hidden="true"
@@ -665,6 +665,9 @@ body {
 
     & > a {
       flex: 1;
+     &:nth-child(2){
+           visibility: hidden;
+     }
     }
 
     & > a:first-child,

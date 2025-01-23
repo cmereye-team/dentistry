@@ -40,8 +40,8 @@
         </div>
       </div>
     </div>
-    <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-        :paddingSizeMb="paddingSizeMb" :maxNum="3357" :minNum="2155"  :maxNumMb="3510" :minNumMb="3200"  />
+    <!-- <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+        :paddingSizeMb="paddingSizeMb" :maxNum="3357" :minNum="2155"  :maxNumMb="3510" :minNumMb="3200"  /> -->
   </div>
 </template>
 

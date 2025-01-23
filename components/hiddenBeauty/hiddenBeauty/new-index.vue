@@ -41,10 +41,10 @@
             </div>
           </div>
         </div>
-        <div class="newBtn">
+        <!-- <div class="newBtn">
           <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
             :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="1800" :minNum="585"  :maxNumMb="1580" :minNumMb="1245" />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
