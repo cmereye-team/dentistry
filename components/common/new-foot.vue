@@ -6,7 +6,7 @@
           <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png" alt="logo">
         </div>
         <div>
-          <div class="icon_text">
+          <!-- <div class="icon_text">
             <div>立即追蹤我哋獲取更多牙科資訊</div>
           </div>
           <div class="media_icon">
@@ -19,7 +19,7 @@
             <a href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos" class="Youtube">
               <img src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png" alt="" />
             </a>
-          </div>
+          </div> -->
           <div class="copyright">
             <span>
               <nuxt-link to="/policy#A1">隱私政策</nuxt-link>
@@ -44,18 +44,18 @@
       <div>
         <img src="https://static.cmereye.com/imgs/2023/12/13a36beccc3107ed.png" alt="logo">
       </div>
-      <div>
+      <!-- <div>
         立即追蹤我哋獲取更多牙科資訊
-      </div>
+      </div> -->
       <div>
-        <div>
+        <!-- <div>
           <a target="_blank" href="https://www.facebook.com/dental.cmer/"><img
               src="https://static.cmereye.com/imgs/2023/12/18730f4dbc34b795.png" alt="" /></a>
           <a target="_blank" href="https://www.instagram.com/cmerdental/"><img
               src="https://static.cmereye.com/imgs/2023/12/d668802f40b1ebae.png" alt="" /></a>
           <a target="_blank" href="https://www.youtube.com/channel/UChTznjEW5KXzeubsUeW91tQ/videos"><img
               src="https://static.cmereye.com/imgs/2023/12/b7b177dc7458c379.png" alt="" /></a>
-        </div>
+        </div> -->
         <div>
           <nuxt-link to="/policy#A1">隱私政策</nuxt-link>
           <nuxt-link to="/policy#A2">免責條款</nuxt-link>

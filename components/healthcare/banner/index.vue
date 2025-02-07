@@ -7,8 +7,8 @@
         <!-- <img src="https://static.cmereye.com/static/lkximg/image/banner/healthcare.png"> -->
         <img data-cfsrc="https://static.cmereye.com/static/lkximg/image/banner/healthcare.png " 
         srcset="https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 400w, https://static.cmereye.com/static/lkximg/image/banner/healthcareMb.png 640w, https://static.cmereye.com/static/lkximg/image/banner/healthcare.png " 
-        title="兒童牙科保健及治療" 
-        alt="兒童牙科保健及治療" 
+        title="兒童牙科服務" 
+        alt="兒童牙科服務" 
         src="https://static.cmereye.com/static/lkximg/image/banner/healthcare.png "/>
 
         <!-- <img src=" https://static.cmereye.com/static/lkximg/image/banner/healthcare.png "
@@ -21,7 +21,7 @@
             https://static.cmereye.com/static/lkximg/image/banner/healthcare.png 1650w,
             "> -->
           <div class="title">
-        兒童牙科保健及治療
+        兒童牙科服務
       </div>
       </div>
       <!-- <div class="carousel-item">

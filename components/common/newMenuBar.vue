@@ -22,7 +22,7 @@
                 <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
                 <div class="serve_list">
                   <div class="service_box_line service_box1">
-                    <div>高階牙科</div>
+                    <div>高階牙科服務</div>
                     <div>
                       <div v-for="(item, index) in adDentistry" :key="index">
                         <nuxt-link :to="item.link">
@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="service_box_line service_box2">
-                    <div>基本牙科</div>
+                    <div>基本牙科服務</div>
                     <div>
                       <div v-for="(item, index) in basicDentistry" :key="index">
                         <nuxt-link :to="item.link">
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <div class="service_box_line service_box3">
-                    <div>美容牙科</div>
+                    <div>牙科美容服務</div>
                     <div>
                       <div v-for="(item, index) in cosmeticDentistry " :key="index">
                         <nuxt-link :to="item.link">
@@ -566,7 +566,7 @@ export default {
         {
           link: '/invisalign',
           name: `隱形牙箍`,
-          img: 'https://static.cmereye.com/imgs/2023/12/b8f10e0b609cb913.png'
+          img: 'https://statichk.cmermedical.com/cmermedical/578230be8392aa70.png'
         },
         {
           link: '/teeth-whitening',

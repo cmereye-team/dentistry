@@ -27,9 +27,9 @@
         幫助客人恢復自信笑容。
       </p>
     </div>
-    <div class="awards">
+    <!-- <div class="awards">
       <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
-    </div>
+    </div> -->
     <div class="textsd" style="padding-top:1vw">
       <p class="ya yas">
         中心秉持<br></p>

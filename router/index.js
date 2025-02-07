@@ -159,21 +159,21 @@ const getRoutes = resolve => [
     component: resolve('pages/children-dentistry'),
 
   },
-  {
-    path: '/facilities',
-    component: resolve('pages/facilities'),
+  // {
+  //   path: '/facilities',
+  //   component: resolve('pages/facilities'),
 
-  },
-  {
-    path: '/oral-health-information',
-    component: resolve('pages/oral-health-information'),
+  // },
+  // {
+  //   path: '/oral-health-information',
+  //   component: resolve('pages/oral-health-information'),
 
-  },
-  {
-    path: '/news',
-    component: resolve('pages/news'),
+  // },
+  // {
+  //   path: '/news',
+  //   component: resolve('pages/news'),
 
-  },
+  // },
   // {
   //   path: '/contact-us',
   //   component: resolve('pages/contact-us'),
