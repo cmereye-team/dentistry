@@ -6,12 +6,12 @@
       <p class="serve_con" v-if="isServePage !== true">
         點擊以下圖示，了解更多牙科資訊
       </p>
-      <div v-if="isServePage" class="serve_page">中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，到牙齒美白、<br
-          class="pcShow" />全口修復及各種牙科治療，幫助客人回復自信笑容。</div>
+      <div v-if="isServePage" class="serve_page">我們的牙科醫療團隊，旗下有30多位註冊執業牙醫提供全科及專科牙科服務，從一般口腔<br
+        class="pcShow" />檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助病人回復自信笑容。</div>
     </div>
     <div class="mb-padding">
       <div class="service_box_line service_box1">
-        <div>高階牙科</div>
+        <!-- <div>高階牙科</div> -->
         <div>
           <div v-for="(item, index) in adDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -26,7 +26,7 @@
         </div>
       </div>
       <div class="service_box_line service_box2">
-        <div>基本牙科</div>
+        <!-- <div>基本牙科</div> -->
         <div>
           <div v-for="(item, index) in basicDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="service_box_line service_box3">
-        <div>美容牙科</div>
+        <!-- <div>美容牙科</div> -->
         <div>
           <div v-for="(item, index) in cosmeticDentistry " :key="index">
             <nuxt-link :to="item.link">
@@ -662,7 +662,7 @@ a {
     display: flex;
     flex-direction: column;
 
-    &>div:nth-child(1) {
+    //&>div:nth-child(1) {
       padding-top: 20px;
       border-top: 1px solid #EBEBEB;
       color: #57B2F3;
@@ -673,19 +673,19 @@ a {
       line-height: normal;
       letter-spacing: 2.1px;
       position: relative;
-    }
+    //}
 
-    &>div:nth-child(1)::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 1px;
-      background: #299DF0;
-      top: -1px;
-      left: 0;
-    }
+    // &>div:nth-child(1)::before {
+    //   content: '';
+    //   position: absolute;
+    //   width: 20px;
+    //   height: 1px;
+    //   background: #299DF0;
+    //   top: -1px;
+    //   left: 0;
+    // }
 
-    &>div:nth-child(2) {
+    &>div:nth-child(1) {
       padding: 1.375rem 0;
       display: grid;
       grid-template-rows: auto auto;
@@ -906,20 +906,21 @@ a {
     display: flex;
     border-top: 1px solid #EBEBEB;
     position: relative;
+    justify-content: center;
+
+    // &>div:nth-child(1) {
+    //   flex: 1;
+    //   font-family: Noto Sans TC;
+    //   font-size: 21px;
+    //   font-style: normal;
+    //   font-weight: 500;
+    //   line-height: normal;
+    //   letter-spacing: 2.1px;
+    //   color: #57B2F3;
+    //   padding-top: 19px;
+    // }
 
     &>div:nth-child(1) {
-      flex: 1;
-      font-family: Noto Sans TC;
-      font-size: 21px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 2.1px;
-      color: #57B2F3;
-      padding-top: 19px;
-    }
-
-    &>div:nth-child(2) {
       flex: 4;
       display: grid;
       grid-template-rows: auto auto;
@@ -976,16 +977,16 @@ a {
     }
   }
 
-  .service_box1::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    top: -1px;
-    left: 0;
-    background: #299DF0;
-  }
+  // .service_box1::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: inline-block;
+  //   width: 20px;
+  //   height: 1px;
+  //   top: -1px;
+  //   left: 0;
+  //   background: #299DF0;
+  // }
 
   .service_box2::before {
     content: '';

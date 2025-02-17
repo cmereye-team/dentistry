@@ -104,15 +104,15 @@
           <div>
             <!-- <video width="380" height="690" src="../../../asset/video/xiya.mp4"></video> -->
             <!-- <iframe src="https://youtube.com/shorts/kfysOuM3slg?si=GqXdtKO74Co63Krj" frameborder="0"></iframe> -->
-            <iframe v-if="pcOrMb == 'pc'" width="380" height="690" src="https://www.youtube.com/embed/kfysOuM3slg"
+            <!-- <iframe v-if="pcOrMb == 'pc'" width="380" height="690" src="https://www.youtube.com/embed/kfysOuM3slg"
               title="【你的線上牙醫💁🏻‍♂️洗牙篇】" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowfullscreen></iframe>
             <iframe v-else width="335" height="600" src="https://www.youtube.com/embed/kfysOuM3slg"
               title="【你的線上牙醫💁🏻‍♂️洗牙篇】" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </div>
+              allowfullscreen></iframe>-->
+          </div> 
         </div>
       </div>
     </div>
@@ -190,7 +190,7 @@ export default {
 
 
       &>div:nth-child(1) {
-        flex: 6;
+        flex: 12;
         display: flex;
         justify-content: flex-end;
 

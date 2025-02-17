@@ -1,7 +1,7 @@
 <template>
   <div class="superiority-case-step">
     <div class="superiority main-container">
-      <div class="why_significance">全瓷貼片五大優勢</div>
+      <div class="why_significance">全瓷貼片五大特點</div>
       <div>
         <div>
           <img src="https://static.cmereye.com/imgs/2023/12/b6273252e09a8aeb.png" alt="">
@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="case">
+    <!-- <div class="case">
       <div class="main-container">
         <div class="why_significance">成功案例</div>
         <div class="case_img_cursor">
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <div class="main-container step">
       <div class="why_significance">全瓷貼片五步曲</div>
       <div>
@@ -95,10 +95,10 @@ export default {
           title: '即日定制',
           content: `利用電腦斷層掃描技術，全方位瞭解<br class=mbShow />牙齒狀況，讓瓷貼片更符合其需求，<br class=mbShow />當日可完成磨牙和裝貼步驟`
         },
-        {
-          title: '知名物料',
-          content: `採用德國進口CEREC Tessera™<br class=mbShow />物料，獲ISO優質認證`
-        },
+        // {
+        //   title: '知名物料',
+        //   content: `採用德國進口CEREC Tessera™<br class=mbShow />物料，獲ISO優質認證`
+        // },
         {
           title: '自然仿真',
           content: `有多色選擇，光澤通透，近似<br class=mbShow />真牙，以配合美齒期望`

@@ -9,7 +9,7 @@
       <div id="demo2" class="carousel slide" data-bs-ride="carousel">
         <!-- 轮播图片 -->
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <!-- <div class="carousel-item">
             <div class="main">
               <div class="border_corner border_corner_left_top"></div>
               <div class="border_corner border_corner_right_top"></div>
@@ -20,8 +20,8 @@
                 src="https://static.cmereye.com/static/lkximg/clinic/0.jpg"
               />
             </div>
-          </div>
-          <div class="carousel-item">
+          </div> -->
+          <div class="carousel-item active">
             <div class="main">
               <div class="border_corner border_corner_left_top"></div>
               <div class="border_corner border_corner_right_top"></div>
@@ -161,18 +161,19 @@
           </div> -->
         </div>
         <div class="carousel-indicators carousel-about">
-          <button
+          <!-- <button
             type="button"
             id="button0"
             data-bs-target="#demo2"
             data-bs-slide-to="0"
-            class="active"
-          ></button>
+          
+          ></button> -->
           <button
             type="button"
             id="button3"
             data-bs-target="#demo2"
             data-bs-slide-to="2"
+            class="active"
           ></button>
           <button
             type="button"
@@ -393,13 +394,13 @@ export default {
     //   height: 92px;
     //   width: 102px;
     // }
-    #button0 {
-      background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
-      background-color: #79828d;
-      height: 102px;
-      width: 102px;
-      background-size: cover;
-    }
+    // #button0 {
+    //   background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
+    //   background-color: #79828d;
+    //   height: 102px;
+    //   width: 102px;
+    //   background-size: cover;
+    // }
 
     // #button1 {
     //   background-image: url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");
@@ -768,13 +769,13 @@ export default {
     //   height: 92px;
     //   width: 102px;
     // }
-    #button0 {
-      background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
-      background-color: #79828d;
-      height: 102px;
-      width: 102px;
-      background-size: cover;
-    }
+    // #button0 {
+    //   background-image: url("https://static.cmereye.com/static/lkximg/clinic/0.jpg");
+    //   background-color: #79828d;
+    //   height: 102px;
+    //   width: 102px;
+    //   background-size: cover;
+    // }
 
     // #button1 {
     //   background-image: url("https://static.cmereye.com/static/lkximg/clinic/01.jpg");

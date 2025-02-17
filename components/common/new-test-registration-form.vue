@@ -11,7 +11,8 @@
       <div class="form" v-loading="loading">
         <div class="form-table">
           <div class="text-form">
-            立即預約牙科服務，<br class="mbShow" />展現自信笑容！
+            <!-- 立即預約牙科服務，<br class="mbShow" />展現自信笑容！ -->
+            預約牙科診症
           </div>
           <div class="table-message">
             <el-form

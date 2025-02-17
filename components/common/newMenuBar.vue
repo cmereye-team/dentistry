@@ -68,7 +68,7 @@
                   </div>
                 </div>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link" to="/facilities">儀器及設備</nuxt-link>
               </li>
               <li class="nav-item">
@@ -76,7 +76,7 @@
               </li>
               <li class="nav-item">
                 <nuxt-link class="nav-link" to="/news">最新消息</nuxt-link>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>
               </li>
@@ -663,7 +663,7 @@ export default {
     padding: 23px;
     position: absolute;
     top: 100%;
-    left: -150%;
+    left: -290%;
     border-radius: 20px;
     border: 1px solid #C1C1C1;
 

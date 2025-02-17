@@ -5,65 +5,109 @@
       <Banner />
       <footce />
       <div class="context">
-        <div class="context-t">每個閃爍時刻{{ `\n` }}希瑪牙科為你送上美滿祝福</div>
+        <div class="context-t">
+          每個閃爍時刻{{ `\n` }}希瑪牙科為你送上美滿祝福
+        </div>
         <h2>牙科服務</h2>
-        <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
-        <p class="serve_con">希瑪牙科提供全方位牙科及美容牙科服務, 由洗牙, 補牙, 牙齒美白等治療, 幫助客人回復自信笑容。根據客人的實際口腔健康狀況, 制定嚴格且針對性的治療。同時, 我們亦注重口腔衛生教育,
-          希望透過推廣牙齒健康的重要性, 提高大眾對口腔護理的關注。</p>
+        <img
+          src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+          alt=""
+        />
+        <p class="serve_con">
+          希瑪牙科提供全方位牙科及美容牙科服務, 由洗牙, 補牙, 牙齒美白等治療,
+          幫助客人回復自信笑容。根據客人的實際口腔健康狀況,
+          制定嚴格且針對性的治療。同時, 我們亦注重口腔衛生教育,
+          希望透過推廣牙齒健康的重要性, 提高大眾對口腔護理的關注。
+        </p>
       </div>
       <serveConcept />
       <div class="lecture">
         <div class="lecture-title">
           <h2>講座</h2>
-          <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
+          <img
+            src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+            alt=""
+          />
         </div>
         <div class="lecture-in">
           <div>
-            <div><img src="https://static.cmereye.com/imgs/2023/07/d59751cd588d41be.jpg" alt="" /></div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/07/d59751cd588d41be.jpg"
+                alt=""
+              />
+            </div>
             <div>
               <div class="title">美白原理</div>
-              <div class="text">牙齒美白是一種利用激光或藍光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。具體有關牙齒美白會在是次講座詳細講解。</div>
+              <div class="text">
+                牙齒美白是一種利用激光或藍光照射牙齒表面，去除色素沈積物，使牙齒變白的方法。具體有關牙齒美白會在是次講座詳細講解。
+              </div>
               <div class="text">講座開始時間：2:30pm</div>
               <a href="https://bit.ly/3X0U0JH">
                 <div class="btn">立即預約講座</div>
               </a>
             </div>
             <div class="lecture-in-box">
-              <img src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png" alt="">
-              <img src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png">
+              <img
+                src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png"
+                alt=""
+              />
+              <img
+                src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png"
+              />
             </div>
           </div>
           <div>
-            <div><img src="https://static.cmereye.com/imgs/2023/06/6e1352692f382e1d.jpg" alt="" /></div>
+            <div>
+              <img
+                src="https://static.cmereye.com/imgs/2023/06/6e1352692f382e1d.jpg"
+                alt=""
+              />
+            </div>
             <div>
               <div class="title">隱形牙箍矯正原理</div>
-              <div class="text">隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。</div>
+              <div class="text">
+                隱形牙箍是一種近年來比較流行的牙齒矯正方式，其原理是利用一組定制的透明牙套逐步調整牙齒位置，達到矯正牙齒的效果。具體有關隱形牙箍會在是次講座詳細講解。
+              </div>
               <div class="text">講座開始時間：6:30pm</div>
               <a href="https://bit.ly/3qsegY7">
                 <div class="btn">立即預約講座</div>
               </a>
             </div>
             <div class="lecture-in-box">
-              <img src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png" alt="">
-              <img src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png">
+              <img
+                src="https://static.cmereye.com/imgs/2023/07/fa3a6b18bf574c7f.png"
+                alt=""
+              />
+              <img
+                src="https://static.cmereye.com/imgs/2023/07/5deae6bda0b12191.png"
+              />
             </div>
           </div>
         </div>
       </div>
       <div class="boxAd">
-        <div class="boxAd-title">*由即日起預約講座，每人可獲得7月婚展門票一張，數量有限。</div>
+        <div class="boxAd-title">
+          *由即日起預約講座，每人可獲得7月婚展門票一張，數量有限。
+        </div>
         <div class="boxAd-in">
           <!-- <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
             srcset="https://static.cmereye.com/imgs/2023/06/a6c753b471c186b2.png 600w, https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg"
             title="牙科服務" alt="牙科服務" src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" /> -->
-          <img src="https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg" srcset="https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 400w, 
-          https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 640w, 
-          https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg" title="牙科服務" alt="牙科服務">
+          <img
+            src="https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg"
+            srcset="
+              https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 400w,
+              https://static.cmereye.com/imgs/2023/06/b831aacdeae0ef61.jpg 640w,
+              https://static.cmereye.com/imgs/2023/06/c82dd6b43c1b589e.jpg
+            "
+            title="牙科服務"
+            alt="牙科服務"
+          />
           <!-- <img src="https://static.cmereye.com/imgs/2023/06/64533e1a2d337ace.jpg" /> -->
         </div>
       </div>
       <foot />
-
     </div>
   </div>
 </template>
@@ -72,50 +116,49 @@
 // import menuBar from "@/components/about-me/menu-bar/index.vue";
 import menuBar from "@/components/common/menuBar.vue";
 import Banner from "@/components/weddingExpo/banner/index.vue";
-import serveConcept from "@/components/weddingExpo/service-concept/index.vue"
-import footce from "@/components/common/new-footce.vue"
-import foot from "@/components/common/foot.vue"
-import dynamicLoadCss from "@/tools/cssLink.js"
+import serveConcept from "@/components/weddingExpo/service-concept/index.vue";
+import footce from "@/components/common/new-footce.vue";
+import foot from "@/components/common/foot.vue";
+import dynamicLoadCss from "@/tools/cssLink.js";
 export default {
   components: {
     menuBar,
     Banner,
     footce,
     serveConcept,
-    foot
+    foot,
   },
   data() {
     return {
-      head: '',
-      link: ''
-    }
+      head: "",
+      link: "",
+    };
   },
   mounted() {
     document.getElementsByTagName("body")[0].className = "body-index";
   },
-  created() {
-  },
-  methods: {
-
-  },
+  created() {},
+  methods: {},
   head() {
     return {
-      title: '婚展禮遇 | 希瑪牙科中心',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: '希瑪牙科中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，剝智慧牙、植牙、箍牙、牙齒美白、全口修復及各種牙科治療等，幫助客人回復自信笑容。'
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: '希瑪牙科 牙科服務 全面口腔照顧 基本牙科 美容牙科 高階牙科服務港島牙科 九龍牙科 新界牙科'
-      },
-      ]
-    }
+      title: "婚展禮遇 | 希瑪牙科中心",
+      meta: [
+        {
+          hid: "description",
+          name: "description",
+          content:
+            "希瑪牙科中心提供基本牙科、美容牙科及高階牙科服務，從一般口腔檢查、洗牙、補牙，剝智慧牙、植牙、箍牙、牙齒美白、全口修復及各種牙科治療等，幫助客人回復自信笑容。",
+        },
+        {
+          hid: "keywords",
+          name: "keywords",
+          content:
+            "希瑪牙科 牙科服務 全面口腔照顧 基本牙科 美容牙科 高階牙科服務港島牙科 九龍牙科 新界牙科",
+        },
+      ],
+    };
   },
-
-}
+};
 </script>
 <style lang="scss" scoped>
 .context {
@@ -125,44 +168,43 @@ export default {
   margin-top: 58px;
 
   &-t {
-    font-family: 'Noto Sans CJK TC';
+    font-family: "Noto Sans CJK TC";
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #79828D;
+    color: #79828d;
     white-space: pre-wrap;
   }
 
   h2 {
-    font-family: 'Noto Sans CJK TC';
+    font-family: "Noto Sans CJK TC";
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
     line-height: 37px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #79828D;
+    color: #79828d;
     margin-top: 61px;
     margin-bottom: 0;
   }
 
   p {
-    font-family: 'Noto Sans CJK TC';
+    font-family: "Noto Sans CJK TC";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #79828D;
+    color: #79828d;
     width: 100%;
     max-width: 587px;
     margin-top: 17.72px;
   }
-
 }
 
 .lecture {
@@ -177,14 +219,14 @@ export default {
     align-items: center;
 
     h2 {
-      font-family: 'Noto Sans CJK TC';
+      font-family: "Noto Sans CJK TC";
       font-style: normal;
       font-weight: bold;
       font-size: 28px;
       line-height: 37px;
       text-align: center;
       letter-spacing: 0.1em;
-      color: #79828D;
+      color: #79828d;
       margin-bottom: 0;
     }
   }
@@ -196,9 +238,9 @@ export default {
     display: flex;
     flex-direction: column;
 
-    &>div {
+    & > div {
       margin-top: 40px;
-      background: #ECF7FC;
+      background: #ecf7fc;
       border-radius: 20px;
       display: flex;
       padding: 10px;
@@ -206,7 +248,7 @@ export default {
       align-items: center;
       position: relative;
 
-      &>div {
+      & > div {
         &:first-child {
           margin-right: 55px;
 
@@ -218,42 +260,42 @@ export default {
         }
 
         .title {
-          font-family: 'Noto Sans CJK TC';
+          font-family: "Noto Sans CJK TC";
           font-style: normal;
           font-weight: 500;
           font-size: 24px;
           line-height: 30px;
           letter-spacing: 0.1em;
-          color: #57B2F3;
+          color: #57b2f3;
           margin-top: 0;
-          border-left: 10px solid #9BD0F5;
+          border-left: 10px solid #9bd0f5;
           padding-left: 15px;
         }
 
         .text {
-          font-family: 'Noto Sans CJK TC';
+          font-family: "Noto Sans CJK TC";
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 19px;
           text-align: justify;
           letter-spacing: 0.1em;
-          color: #57B2F3;
+          color: #57b2f3;
           padding-right: 70px;
           margin-top: 22.62px;
         }
 
         .btn {
-          font-family: 'Noto Sans CJK TC';
+          font-family: "Noto Sans CJK TC";
           font-style: normal;
           font-weight: 500;
           font-size: 18px;
           line-height: 24px;
           text-align: center;
           letter-spacing: 0.1em;
-          color: #57B2F3;
-          background: #FFFFFF;
-          border: 1px solid #57B2F3;
+          color: #57b2f3;
+          background: #ffffff;
+          border: 1px solid #57b2f3;
           border-radius: 100px;
           margin-top: 25px;
           padding: 10px 20px;
@@ -272,7 +314,6 @@ export default {
         border-radius: 50%;
       }
     }
-
   }
 }
 
@@ -284,14 +325,14 @@ export default {
   align-items: center;
 
   &-title {
-    font-family: 'Noto Sans CJK TC';
+    font-family: "Noto Sans CJK TC";
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
     line-height: 22px;
     text-align: center;
     letter-spacing: 0.1em;
-    color: #79828D;
+    color: #79828d;
   }
 
   &-in {
@@ -328,7 +369,6 @@ export default {
   }
 
   .lecture {
-
     // margin-top: 90px;
     &-title {
       h2 {
@@ -340,13 +380,13 @@ export default {
       padding: 0 5vw;
       margin-top: 0;
 
-      &>div {
+      & > div {
         margin-top: 40px;
         padding: 10px;
         flex-direction: column;
         align-items: center;
 
-        &>div {
+        & > div {
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -380,7 +420,6 @@ export default {
             margin: 20px auto 0;
           }
         }
-
       }
 
       .lecture-in-box {
@@ -394,7 +433,6 @@ export default {
         }
       }
     }
-
   }
 
   .boxAd {

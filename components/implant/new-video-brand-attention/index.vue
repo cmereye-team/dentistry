@@ -1,6 +1,6 @@
 <template>
   <div class="video-brand-attention">
-    <div class="video">
+    <!-- <div class="video">
       <div class="why_significance">植牙技術動畫</div>
       <div class="pcShow video-img main-container">
         <iframe width="744" height="418" src="https://www.youtube.com/embed/xX_R8poOb9w?si=I8D__j3RTjfOv7Kt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -8,8 +8,8 @@
       <div class="mbShow video-img main-container">
         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xX_R8poOb9w?si=I8D__j3RTjfOv7Kt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
       </div>
-    </div>
-    <div class="advantage-bg main-container">
+    </div> -->
+    <!-- <div class="advantage-bg main-container">
       <div class="why_significance">我們的優勢</div>
       <div class="advantage">
         <div>
@@ -34,8 +34,8 @@
         </div>
         <div class="mbShow"></div>
       </div>
-    </div>
-    <div class="brand">
+    </div> -->
+    <!-- <div class="brand">
       <div class="why_significance">合作品牌</div>
       <div class="main-container">
         <div><img src="https://static.cmereye.com/imgs/2023/12/5570126989dfe532.png" alt=""></div>
@@ -44,7 +44,7 @@
         <div><img src="https://static.cmereye.com/imgs/2023/12/9c0bb60a3bddbc91.png" alt=""></div>
         <div><img src="https://static.cmereye.com/imgs/2023/12/d462a2ef6d03353c.png" alt=""></div>
       </div>
-    </div>
+    </div> -->
     <div class="attention-bg main-container">
       <div class="why_significance">植牙後注意事項</div>
       <div class="attention">

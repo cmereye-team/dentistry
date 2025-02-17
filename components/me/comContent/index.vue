@@ -18,7 +18,7 @@
     <div class="city">
       <img src="https://static.cmereye.com/static/lkximg/image/me/CitySkyline.png" alt="">
     </div>
-    <div class="textsd">
+    <!-- <div class="textsd">
       <p class="ya">
         希瑪牙科提供<br></p>
       <h3>全方位牙科及美容牙科服務</h3>
@@ -26,16 +26,16 @@
         由洗牙、補牙，牙齒美白等治療，<br>
         幫助客人恢復自信笑容。
       </p>
-    </div>
+    </div> -->
     <div class="awards">
       <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
     </div>
     <div class="textsd" style="padding-top:1vw">
       <p class="ya yas">
         中心秉持<br></p>
-      <h3>「整體分析」的原則 </h3>
+      <h3>「整體分析」的原則</h3>
       <p class="ya_con">
-        根據客人的實際口腔健康狀況，制定嚴格且針對性的治療。同時，我們亦注重<br>口腔衛生教育，希望透過推廣牙齒健康的重要性，提高大眾對口腔護理的關注。
+        我司的宗旨是保障病人安全為基礎, 確保所有治療過程符合最高的安全標準。更設有關愛基金長者牙科服務資助及可使用醫療卷服務, 符合不同階層病人的需要。根據客人的實際口腔健康狀況，制定嚴格且針對性的治療。同時，我們亦注重口腔衛生和健康的重要性，提高病人對口腔護理的關注。
       </p>
     </div>
   </div>
