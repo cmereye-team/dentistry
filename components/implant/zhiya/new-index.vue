@@ -44,8 +44,8 @@
         <img src="https://static.cmereye.com/imgs/2024/01/8bdad865bcb81806.png" alt="">
       </div>
       <div class="new-btn">
-        <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
-          :paddingSizeMb="paddingSizeMb" :maxNum="1906" :minNum="770"  :maxNumMb="1760" :minNumMb="1350"  />
+        <!-- <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
+          :paddingSizeMb="paddingSizeMb" :maxNum="1906" :minNum="770"  :maxNumMb="1760" :minNumMb="1350"  /> -->
       </div>
     </div>
   </div>

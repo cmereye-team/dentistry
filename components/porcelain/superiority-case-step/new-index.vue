@@ -60,11 +60,11 @@
       <div>
         療程時間和程序因個人牙齒狀況而異，<br class="mbShow" />建議於療程前先諮詢<br class="pcShow" />牙醫的意見，<br class="mbShow" />以了解個人需求。
       </div>
-      <div>
+      <!-- <div>
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
           :paddingSizeMb="paddingSizeMb" :newSvg="newSvg" :maxNum="4400" :minNum="3210" :maxNumMb="5945"
           :minNumMb="5590" />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

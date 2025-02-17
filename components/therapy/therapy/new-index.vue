@@ -12,10 +12,10 @@
       <div class="why_significance isArrowQuestion">為何要杜牙根？</div>
       <layoutPage :layoutPageScr="layoutPageScr" :layoutPageText="layoutPageText" :layoutPage="layoutPage"
         :maxWidth="maxWidth" />
-      <div class="newBtn">
+      <!-- <div class="newBtn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb"  :maxNum="1621" :minNum="438"  :maxNumMb="1420" :minNumMb="1050"  />
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

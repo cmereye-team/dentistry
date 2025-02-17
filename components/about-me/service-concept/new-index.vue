@@ -31,10 +31,10 @@
         </div>
       </div>
     </div>
-    <div class="newBtn">
+    <!-- <div class="newBtn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :maxNum="6954" :minNum="5674" :maxNumMb="6200" :minNumMb="5650" />
-    </div>
+    </div> -->
     <!-- <a class="serve_btn" href="https://api.whatsapp.com/send?phone=85295128192" target="_blank">
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="78" height="88" viewBox="0 0 78 88" fill="none">

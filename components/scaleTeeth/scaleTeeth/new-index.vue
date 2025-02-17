@@ -95,10 +95,10 @@
               <div class="mbShow mb_style"><span>若患有牙周病、吸煙、佩戴假牙、或正接受</span><br class="mbShow" /><span>矯齒人士，
                   則建議</span><span>每三個月至半年</span><br class="mbShow" />洗牙一次。
               </div>
-              <div class="new-btn">
+              <!-- <div class="new-btn">
                 <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize"
                   :mb="mb" :paddingSizeMb="paddingSizeMb" :maxNum="1810" :minNum="653"  :maxNumMb="1850" :minNumMb="1440"  :newSvg="newSvg" />
-              </div>
+              </div> -->
             </div>
           </div>
           <div>

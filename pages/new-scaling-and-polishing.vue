@@ -9,10 +9,10 @@
     <problem />
     <!-- <serve /> -->
     <mapGoogle />
-    <div class="new_btn_scaling" style="margin:90px 0">
+    <!-- <div class="new_btn_scaling" style="margin:90px 0">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :maxNum="6240" :minNum="5034" :maxNumMb="7910" :minNumMb="7575"  :newSvg="newSvg" />
-    </div>
+    </div> -->
     <registration />
     <foot />
   </div>

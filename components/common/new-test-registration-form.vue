@@ -76,7 +76,7 @@
                   >
                 </el-checkbox-group>
               </el-form-item>
-              <el-form-item prop="source" label="閣下從什麼途徑得知我們？">
+              <!-- <el-form-item prop="source" label="閣下從什麼途徑得知我們？">
                 <el-radio-group v-model="ruleForm.source">
                   <el-radio
                     v-for="item in selectSource"
@@ -85,7 +85,7 @@
                     :label="item.name"
                   ></el-radio>
                 </el-radio-group>
-              </el-form-item>
+              </el-form-item> -->
               <div class="radioInfo">
                 <div class="radiocon">
                   <el-radio
@@ -110,16 +110,16 @@
                     >。</el-radio
                   >
                 </div>
-                <div class="radiocon">
+                <!-- <div class="radiocon">
                   <el-radio
                     v-model="radio2"
                     name="broadcast"
                     label="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊"
                   >
-                    <!-- value="本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。" -->
+        
                     本人願意日後收取希瑪醫療集團以及其關連公司之產品資料及宣傳資訊。如選擇拒絕，本人同時不會收到貴公司的任何禮品、<br />折扣及其他優惠資訊。</el-radio
                   >
-                </div>
+                </div> -->
               </div>
               <div class="radioInfo1">
                 <div class="radiocon">
@@ -143,7 +143,7 @@
                     >。</el-radio
                   >
                 </div>
-                <div class="radiocon">
+                <!-- <div class="radiocon">
                   <el-radio
                     v-model="radio2"
                     name="broadcast"
@@ -151,7 +151,7 @@
                   >
                     本人願意日後收取希瑪醫療集團以及其關連<br />公司之產品資料及宣傳資訊。如選擇拒絕，本<br />人同時不會收到貴公司的任何禮品、折扣及其<br />他優惠資訊。</el-radio
                   >
-                </div>
+                </div> -->
               </div>
               <el-form-item class="submit_new">
                 <!-- <el-button class="form-btn" type="primary" @click="submitForm('ruleForm')">提交</el-button> -->
@@ -312,7 +312,9 @@ export default {
       this.submitForm(formName);
     },
     async submitForm(formName) {
+   
       this.$refs[formName].validate((valid) => {
+ 
         if (valid) {
           if (
             localStorage.getItem("contactForm") &&
@@ -340,7 +342,8 @@ export default {
               dataList.append("form_page", this.pageUrl),
               dataList.append("form_radio", this.radio0),
               dataList.append("form_radio1", this.radio1),
-              dataList.append("form_radio2", this.radio2);
+          
+              // dataList.append("form_radio2", this.radio2);
             // this.$confirm("此操作将提交信息, 是否继续?", "提示", {
             //   confirmButtonText: "提交",
             //   cancelButtonText: "取消",
@@ -376,6 +379,7 @@ export default {
             })
               .then((res) => res.json())
               .then((res) => {
+          
                 if (res.code == 1) {
                   this.loading = false;
                   localStorage.setItem("contactForm", JSON.stringify(_dataList));
@@ -417,11 +421,12 @@ export default {
   途徑：${_form.source}
   已知曉内容：${_form.confidentiality ? _form.confidentiality : "否"}
   同意收集個人資料及私隱：${_form.privary ? _form.privary : "否"}
-  願意收取宣傳資訊：${_form.broadcast ? _form.broadcast : "否"}
+
   提交页面：${this.pageUrl}
   提交時間：${new Date().toLocaleString()}`,
         },
       };
+        // 願意收取宣傳資訊：${_form.broadcast ? _form.broadcast : "否"}
       // console.log(_message, "_message_message_message");
       this.$confirm("此操作将提交信息, 是否继续?", "提示", {
         confirmButtonText: "提交",

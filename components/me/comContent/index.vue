@@ -12,7 +12,7 @@
       <p class="serve_cons">
         為香港希瑪眼科醫療控股有限公司<br>
         （股份代號：3309）旗下的牙科中心，<br>
-        分佈港九新界，位於沙田及觀塘。
+        分佈九龍新界，位於沙田及觀塘。
       </p>
     </div>
     <div class="city">
@@ -26,10 +26,15 @@
         由洗牙、補牙，牙齒美白等治療，<br>
         幫助客人恢復自信笑容。
       </p>
+<<<<<<< HEAD
     </div> -->
     <div class="awards">
-      <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
+=======
     </div>
+    <!-- <div class="awards">
+>>>>>>> 2c5b5c36e46ebb9268a1c9e994bee545cbe28866
+      <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
+    </div> -->
     <div class="textsd" style="padding-top:1vw">
       <p class="ya yas">
         中心秉持<br></p>

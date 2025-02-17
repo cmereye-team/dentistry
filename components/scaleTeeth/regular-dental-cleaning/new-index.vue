@@ -125,10 +125,10 @@
         立即預約洗牙
       </div>
     </a> -->
-    <div style="margin: 90px 0" class="new-btn">
+    <!-- <div style="margin: 90px 0" class="new-btn">
       <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb" :maxNum="3420" :minNum="2247"  :maxNumMb="5250" :minNumMb="4875"  :newSvg="newSvg" />
-    </div>
+    </div> -->
   </div>
 </template>
 

@@ -5,7 +5,7 @@
       <p style="margin:0 0.5vw">></p>
       <p style="color:#57B2F3">牙科服務</p>
       <p style="margin:0 0.5vw">></p>
-      <p style="color:#57B2F3">兒童牙科保健及治療</p>
+      <p style="color:#57B2F3">兒童牙科服務</p>
     </div>
     <div class="step">
       <div class="list">
@@ -13,7 +13,7 @@
           <li>
             <img src="https://static.cmereye.com/static/lkximg/image/healthcare/apple.png" alt="">
             <div class="list_dis">
-              <strong>兒童牙科保健及治療</strong>
+              <strong>兒童牙科服務</strong>
               <ul>
                 <li>作為家長的你，可能好多人都會時刻關注自己小朋友的身體健康，但在小朋友的口腔健康上，大多數人可能都會認為等待小朋友就讀小一時，參加由政府提供的牙科保健就已經足夠。其實等待小朋友6歲才開始檢查牙齒，可能已經太遲。因為好多小朋友都喜歡食糖或甜食，又不喜歡刷牙，大大增加患上蛀牙的風險。</li>
                 <li>小朋友擁有第一隻牙開始，就可以定期檢查牙齒。定期進行牙科保健，從小了解保持口腔健康的知識和重要性，家長們亦可以緊貼小朋友的牙齒發育進度，及早發現兒童牙齒的潛在問題，作出針對性治療。</li>
