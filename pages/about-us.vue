@@ -3,7 +3,7 @@
     <menuBar />
     <Banner />
     <comContent />
-    <ambient />
+    <!-- <ambient /> -->
     <footce />
     <mapGoogle style="margin-top: 0vw" />
     <foot />

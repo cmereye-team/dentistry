@@ -22,7 +22,7 @@
                 <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
                 <div class="serve_list">
                   <div class="service_box_line service_box1">
-                    <div>高階牙科服務</div>
+                    <div></div>
                     <div>
                       <div v-for="(item, index) in adDentistry" :key="index">
                         <nuxt-link :to="item.link">
@@ -37,7 +37,7 @@
                     </div>
                   </div>
                   <div class="service_box_line service_box2">
-                    <div>基本牙科服務</div>
+                    <div></div>
                     <div>
                       <div v-for="(item, index) in basicDentistry" :key="index">
                         <nuxt-link :to="item.link">
@@ -52,7 +52,7 @@
                     </div>
                   </div>
                   <div class="service_box_line service_box3">
-                    <div>牙科美容服務</div>
+                    <div></div>
                     <div>
                       <div v-for="(item, index) in cosmeticDentistry " :key="index">
                         <nuxt-link :to="item.link">
@@ -381,7 +381,7 @@
                   </div>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link facilities" to="/facilities">儀器及設備</nuxt-link>
               </li>
               <li class="nav-item">
@@ -389,7 +389,7 @@
               </li>
               <li class="nav-item">
                 <nuxt-link class="nav-link news" to="/news">最新消息</nuxt-link>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <nuxt-link class="nav-link contact-us" to="/contact-us">聯絡我們</nuxt-link>
               </li>
@@ -416,7 +416,7 @@
                       <nuxt-link class="dropdown-item" to="/rct">根管治療（杜牙根）</nuxt-link>
                     </li>
                     <li>
-                      <nuxt-link class="dropdown-item" to="/invisalign">Invisalign 隱適美</nuxt-link>
+                      <nuxt-link class="dropdown-item" to="/invisalign">隱形牙箍</nuxt-link>
                     </li>
                     <li>
                       <nuxt-link class="dropdown-item" to="/veneers">瓷貼片</nuxt-link>
@@ -452,15 +452,6 @@
                       <nuxt-link class="dropdown-item" to="/children-dentistry">兒童牙科保健及治療</nuxt-link>
                     </li>
                   </ul>
-                </li>
-                <li class="nav-item">
-                  <nuxt-link class="nav-link" to="/facilities">儀器及設備</nuxt-link>
-                </li>
-                <li class="nav-item">
-                  <nuxt-link class="nav-link" to="/oral-health-information">健康資訊</nuxt-link>
-                </li>
-                <li class="nav-item">
-                  <nuxt-link class="nav-link" to="/news">最新消息</nuxt-link>
                 </li>
                 <li class="nav-item">
                   <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>

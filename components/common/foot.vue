@@ -1,7 +1,7 @@
 <template>
   <div class="main_footer">
     <div class="section">
-      <div>
+      <!-- <div>
         <ul>
           <li>
             <a href="https://www.facebook.com/dental.cmer/" class="Facebook">
@@ -31,7 +31,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div class="copyright">
         <span>
           <nuxt-link to="/policy#A1">私隱政策</nuxt-link>

@@ -11,11 +11,7 @@
     </div>
     <div class="mb-padding">
       <div class="service_box_line service_box1">
-<<<<<<< HEAD
         <!-- <div>高階牙科</div> -->
-=======
-        <div>高階牙科服務</div>
->>>>>>> 2c5b5c36e46ebb9268a1c9e994bee545cbe28866
         <div>
           <div v-for="(item, index) in adDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -30,11 +26,7 @@
         </div>
       </div>
       <div class="service_box_line service_box2">
-<<<<<<< HEAD
         <!-- <div>基本牙科</div> -->
-=======
-        <div>基本牙科服務</div>
->>>>>>> 2c5b5c36e46ebb9268a1c9e994bee545cbe28866
         <div>
           <div v-for="(item, index) in basicDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -49,11 +41,7 @@
         </div>
       </div>
       <div class="service_box_line service_box3">
-<<<<<<< HEAD
         <!-- <div>美容牙科</div> -->
-=======
-        <div>牙科美容服務</div>
->>>>>>> 2c5b5c36e46ebb9268a1c9e994bee545cbe28866
         <div>
           <div v-for="(item, index) in cosmeticDentistry " :key="index">
             <nuxt-link :to="item.link">

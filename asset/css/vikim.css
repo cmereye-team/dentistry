@@ -15,7 +15,7 @@ body .section{width: unset !important;}
 .navbar-collapse.show .navbar-nav .nav-link{font-family: 'Noto Sans CJK TC';font-style: normal;font-weight: 500;font-size: 16px;line-height: 24px;letter-spacing: 0.1em;color: #57B2F3;}
 .gnav{padding: 15vw 5vw !important;}
 .navbar-collapse.show .navbar-nav .nav-item,.navbar-collapse.collapsing .navbar-nav .nav-item,.gnav.action .navbar-nav .nav-item{padding: 15px 0 !important;border-bottom: 1px solid #C2C7CD;text-indent: 2em;}
-.navbar-collapse.show .navbar-nav .nav-item:last-child,.navbar-collapse.show .navbar-nav .nav-item:nth-last-child(2){border-bottom: none;}
+/* .navbar-collapse.show .navbar-nav .nav-item:last-child,.navbar-collapse.show .navbar-nav .nav-item:nth-last-child(2){border-bottom: none;} */
 
 /* navbar  汉堡包 */
 .hamburglar{transform: translate(16px,-20px) scale(1) !important;} 

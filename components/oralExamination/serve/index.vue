@@ -35,7 +35,7 @@
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">Invisalign 隱形牙箍</p>
+                  <p class="fs-sm-16 ">隱形牙箍</p>
                 </div>
               </nuxt-link>
             </div>
@@ -203,7 +203,7 @@
                 <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
                     alt="Invisalign隱形牙箍" /> </div>
                 <div class="service_txt">
-                  <p class="fs-sm-16 ">Invisalign 隱形牙箍</p>
+                  <p class="fs-sm-16 ">隱形牙箍</p>
                 </div>
               </nuxt-link>
             </div>

@@ -57,7 +57,7 @@
                 />
               </div>
               <div class="service_txt">
-                <p class="fs-sm-16 setWith">Invisalign 隱形牙箍</p>
+                <p class="fs-sm-16 setWith">隱形牙箍</p>
               </div>
             </nuxt-link>
           </div>

@@ -26,13 +26,8 @@
         由洗牙、補牙，牙齒美白等治療，<br>
         幫助客人恢復自信笑容。
       </p>
-<<<<<<< HEAD
-    </div> -->
-    <div class="awards">
-=======
     </div>
-    <!-- <div class="awards">
->>>>>>> 2c5b5c36e46ebb9268a1c9e994bee545cbe28866
+    <div class="awards">
       <img src="https://static.cmereye.com/imgs/2023/07/084b7e4b0c0fad67.png" alt="奖项">
     </div> -->
     <div class="textsd" style="padding-top:1vw">

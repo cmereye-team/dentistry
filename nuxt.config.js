@@ -78,7 +78,7 @@ export default {
       { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css' },
       { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.svg' },
       { rel: 'stylesheet', type: 'text/css', href: 'swiper/dist/css/swiper.css' },
-      { rel: 'stylesheet', type: 'text/css', href: 'https://static.cmereye.com/static/css/cmerdental/vikim.css' }
+      { rel: 'stylesheet', type: 'text/css', href: 'https://static.cmereye.com/static/css/cmerdental/vikim.css?v=1.0.0' }
     ]
   },
 
