@@ -5,7 +5,7 @@
     <Banner />
     <yacrown />
     <footce />
-    <serve />
+      <!-- <serve/> -->
     <mapGoogle />
     <foot />
   </div>

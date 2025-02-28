@@ -17,10 +17,10 @@
                 <nuxt-link class="nav-link about-us" to="/about-us">關於我們</nuxt-link>
               </li>
               <li class="nav-item dropdown">
-                <nuxt-link class="nav-link yaserve service_link" to="/service"
+                <nuxt-link class="nav-link yaserve" to="/service"
                   id="navbarDropdownMenuLink">牙科服務</nuxt-link>
                 <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
-                <div class="serve_list">
+                <!-- <div class="serve_list">
                   <div class="service_box_line service_box1">
                     <div></div>
                     <div>
@@ -66,7 +66,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> -->
               </li>
               <!-- <li class="nav-item">
                 <nuxt-link class="nav-link" to="/facilities">儀器及設備</nuxt-link>
@@ -404,11 +404,12 @@
                 <li class="nav-item">
                   <nuxt-link class="nav-link" to="/about-us">關於我們</nuxt-link>
                 </li>
-                <li class="nav-item dropdown" @click="showChild()">
-                  <!-- <nuxt-link class="nav-link" to="/service" id="navbarDropdownMenuLink">牙科服務</nuxt-link> -->
-                  <div class="serve_mb_open">牙科服務</div>
+                <li class="nav-item">
+                  <!-- @click="showChild()" -->
+                  <nuxt-link class="nav-link" to="/service" id="navbarDropdownMenuLink">牙科服務</nuxt-link>
+                  <!-- <div class="serve_mb_open">牙科服務</div> -->
                   <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
-                  <ul :class="[isShowChild == true ? 'mb_serve_menu' : 'mb_serve_menu_close']">
+                  <!-- <ul :class="[isShowChild == true ? 'mb_serve_menu' : 'mb_serve_menu_close']">
                     <li>
                       <nuxt-link class="dropdown-item" to="/implant">植牙</nuxt-link>
                     </li>
@@ -451,7 +452,7 @@
                     <li>
                       <nuxt-link class="dropdown-item" to="/children-dentistry">兒童牙科保健及治療</nuxt-link>
                     </li>
-                  </ul>
+                  </ul> -->
                 </li>
                 <li class="nav-item">
                   <nuxt-link class="nav-link" to="/contact-us">聯絡我們</nuxt-link>

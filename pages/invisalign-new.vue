@@ -4,7 +4,7 @@
     <hiddenBeauty/>
     <fit/>
     <problem/>
-    <serve/>
+      <!-- <serve/> -->
     <mapGoogle/>
   
     

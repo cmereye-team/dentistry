@@ -5,7 +5,7 @@
     <whitening />
     <footce />
     <problem />
-    <serve />
+      <!-- <serve/> -->
     <mapGoogle />
     <foot />
   </div>

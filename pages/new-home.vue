@@ -2,14 +2,14 @@
   <div id="new-home">
     <div>
       <menuBar />
-      <Banner />
-      <footce />
+      <!-- <Banner /> -->
+      <!-- <footce /> -->
       <serve />
-      <dentalExplain />
-      <serveConcept />
+      <!-- <dentalExplain /> -->
+      <!-- <serveConcept /> -->
       <!-- <debtistryHealth /> -->
       <mapGoogle />
-      <registration />
+      <!-- <registration /> -->
       <foot />
     </div>
   </div>

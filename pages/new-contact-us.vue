@@ -6,7 +6,7 @@
     <footce />
     <mapGoogle />
     <!-- <contact /> -->
-    <registration />
+    <!-- <registration /> -->
     <foot />
   </div>
 </template>

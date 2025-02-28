@@ -5,7 +5,7 @@
   <Banner/>
   <healthcare/>
   <footce/>
-  <serve/>
+    <!-- <serve/> -->
   <mapGoogle/>
   <foot/>
   

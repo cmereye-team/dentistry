@@ -6,7 +6,7 @@
     <porcelain />
     <footce />
     <problem />
-    <serve />
+      <!-- <serve/> -->
     <mapGoogle />
     <foot />
 

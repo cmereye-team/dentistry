@@ -6,7 +6,7 @@
     <exelcymosis />
     <footce />
     <problem />
-    <serve />
+    <!-- <serve /> -->
     <mapGoogle />
     <foot />
 

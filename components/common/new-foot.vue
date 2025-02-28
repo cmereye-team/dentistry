@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="mascot" :class="[isCouldAnimate == true ? 'couldAnimate afterMain' : 'couldVanish afterVanish']">
-        <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
-          alt="希小牙">
+        <!-- <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
+          alt="希小牙"> -->
       </div>
     </div>
     <div class="main_footer mbShow">
@@ -63,8 +63,8 @@
         <div>©2025 希瑪牙科（希瑪醫療集團旗下牙科中心）</div>
       </div>
       <div class="mascot" :class="[isCouldAnimate == true ? 'couldAnimate afterMain' : 'couldVanish afterVanish']">
-        <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
-          alt="希小牙">
+        <!-- <img src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/小牙向左指.1h5gu7c9wstc.gif"
+          alt="希小牙"> -->
       </div>
     </div>
   </div>
@@ -296,7 +296,8 @@ a {
 
   .mascot::after {
     content: "";
-    background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1070.4wsfn8i2qv80.png');
+    // background: url('https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/Group-1070.4wsfn8i2qv80.png');
+    background: transparent;
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -493,7 +494,7 @@ a {
 
   .main_footer {
     overflow: hidden;
-    padding: 3.75rem 2.375rem 13.5rem;
+    padding: 3.75rem 2.375rem;
     background: #e8f6fb;
     position: relative;
 
@@ -596,8 +597,9 @@ a {
   }
 
   .mascot::after {
-    content: "";
-    background: url('https://static.cmereye.com/imgs/2023/12/eac68ef91ffba77f.png');
+    // content: "";
+    // background: url('https://static.cmereye.com/imgs/2023/12/eac68ef91ffba77f.png');
+    background: transparent;
     background-position: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;

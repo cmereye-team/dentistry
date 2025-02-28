@@ -2,16 +2,41 @@
   <div class="bg-white pb-0 py-xs-2 main-container serve-top">
     <div class="flex justify-center texts">
       <h2>牙科服務</h2>
-      <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png" alt="" />
-      <p class="serve_con" v-if="isServePage !== true">
+      <img
+        src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Vector.png"
+        alt=""
+      />
+      <!-- <p class="serve_con" v-if="isServePage !== true">
         點擊以下圖示，了解更多牙科資訊
-      </p>
-      <div v-if="isServePage" class="serve_page">我們的牙科醫療團隊，旗下有30多位註冊執業牙醫提供全科及專科牙科服務，從一般口腔<br
-        class="pcShow" />檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療，幫助病人回復自信笑容。</div>
+      </p> -->
+      <div v-if="isServePage" class="serve_page">
+        我們的牙科醫療團隊，旗下有30多位註冊執業牙醫提供全科及專科牙科服務，從一般口腔<br
+          class="pcShow"
+        />檢查、洗牙、補牙，到牙齒美白、全口修復及各種牙科治療。
+      </div>
     </div>
     <div class="mb-padding">
       <div class="service_box_line service_box1">
         <!-- <div>高階牙科</div> -->
+        <div>
+          <div v-for="(item, index) in dentistry" :key="index">
+            <nuxt-link :to="`#`">
+              <div class="service_pic">
+                <img :src="item.img" />
+              </div>
+              <div class="service_txt">
+                <p
+                  class="fs-sm-16"
+                  v-html="item.name"
+                  :class="`p_style_${index}`"
+                ></p>
+              </div>
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="service_box_line service_box1">
+        <div>高階牙科</div>
         <div>
           <div v-for="(item, index) in adDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -19,14 +44,18 @@
                 <img :src="item.img" />
               </div>
               <div class="service_txt">
-                <p class="fs-sm-16" v-html="item.name" :class="`p_style_${index}`"></p>
+                <p
+                  class="fs-sm-16"
+                  v-html="item.name"
+                  :class="`p_style_${index}`"
+                ></p>
               </div>
             </nuxt-link>
           </div>
         </div>
       </div>
       <div class="service_box_line service_box2">
-        <!-- <div>基本牙科</div> -->
+        <div>基本牙科</div>
         <div>
           <div v-for="(item, index) in basicDentistry" :key="index">
             <nuxt-link :to="item.link">
@@ -41,9 +70,9 @@
         </div>
       </div>
       <div class="service_box_line service_box3">
-        <!-- <div>美容牙科</div> -->
+        <div>美容牙科</div>
         <div>
-          <div v-for="(item, index) in cosmeticDentistry " :key="index">
+          <div v-for="(item, index) in cosmeticDentistry" :key="index">
             <nuxt-link :to="item.link">
               <div class="service_pic">
                 <img :src="item.img" />
@@ -54,7 +83,7 @@
             </nuxt-link>
           </div>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="newBtn">
         <newBtn :linkHref="linkHref" :linkText="linkText" :isShowSvg="isShowSvg" :paddingSize="paddingSize" :mb="mb"
         :paddingSizeMb="paddingSizeMb"  :maxNum="2500" :minNum="1410"  :maxNumMb="2600" :minNumMb="1910"  />
@@ -63,10 +92,10 @@
   </div>
 </template>
 <script>
-import newBtn from '@/components/common/new-btn.vue';
+import newBtn from "@/components/common/new-btn.vue";
 export default {
   components: {
-    newBtn
+    newBtn,
   },
   props: {
     isServePage: {
@@ -80,89 +109,135 @@ export default {
       isHoverAnimate: false,
       adDentistry: [
         {
-          link: '/implant',
-          name: '微創植牙/種植牙',
-          img: 'https://static.cmereye.com/imgs/2023/12/57732f633a997d95.png'
+          link: "/implant",
+          name: "微創植牙/種植牙",
+          img: "https://static.cmereye.com/imgs/2023/12/57732f633a997d95.png",
         },
         {
-          link: '/rct',
+          link: "/rct",
           name: `根管治療 (杜牙根)`,
-          img: 'https://static.cmereye.com/imgs/2023/12/298de7f7370976ab.png'
+          img: "https://static.cmereye.com/imgs/2023/12/298de7f7370976ab.png",
         },
         {
-          link: '/periodontal-treatment',
+          link: "/periodontal-treatment",
           name: `牙周病治療`,
-          img: 'https://static.cmereye.com/imgs/2023/12/bc1c1cdd16eb124a.png'
+          img: "https://static.cmereye.com/imgs/2023/12/bc1c1cdd16eb124a.png",
         },
         {
-          link: '/extractions-and-wisdom-teeth-extraction',
+          link: "/extractions-and-wisdom-teeth-extraction",
           name: `拔牙及剝智慧齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/bf496ebdf0a60544.png'
+          img: "https://static.cmereye.com/imgs/2023/12/bf496ebdf0a60544.png",
         },
         {
-          link: '/complete-and-partial-denture',
+          link: "/complete-and-partial-denture",
           name: `全口牙托<span class="pcShow">/</span><br class="mbShow" />局部牙托`,
-          img: 'https://static.cmereye.com/imgs/2023/12/1ecf290d714a0367.png'
+          img: "https://static.cmereye.com/imgs/2023/12/1ecf290d714a0367.png",
         },
       ],
       basicDentistry: [
         {
-          link: '/scaling-and-polishing',
+          link: "/scaling-and-polishing",
           name: `洗牙`,
-          img: 'https://static.cmereye.com/imgs/2023/12/0543183b780abdfe.png'
+          img: "https://static.cmereye.com/imgs/2023/12/0543183b780abdfe.png",
         },
         {
-          link: '/fillings',
+          link: "/fillings",
           name: `補牙`,
-          img: 'https://static.cmereye.com/imgs/2023/12/c4ec73cc3358570e.png'
+          img: "https://static.cmereye.com/imgs/2023/12/c4ec73cc3358570e.png",
         },
         {
-          link: '/general-oral-examination',
+          link: "/general-oral-examination",
           name: `一般口腔檢查`,
-          img: 'https://static.cmereye.com/imgs/2023/12/fe2fc699dee06320.png'
+          img: "https://static.cmereye.com/imgs/2023/12/fe2fc699dee06320.png",
         },
         {
-          link: '/children-dentistry',
+          link: "/children-dentistry",
           name: `兒童牙科`,
-          img: 'https://static.cmereye.com/imgs/2023/12/c8e2ae1c0b80dbf8.png'
-        }
+          img: "https://static.cmereye.com/imgs/2023/12/c8e2ae1c0b80dbf8.png",
+        },
       ],
       cosmeticDentistry: [
         {
-          link: '/veneers',
+          link: "/veneers",
           name: `全瓷貼片`,
-          img: 'https://static.cmereye.com/imgs/2023/12/207351d3afe0d62e.png'
+          img: "https://static.cmereye.com/imgs/2023/12/207351d3afe0d62e.png",
         },
         {
-          link: '/orthodontics',
+          link: "/orthodontics",
           name: `矯齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/588c65469ac643fc.png'
+          img: "https://static.cmereye.com/imgs/2023/12/588c65469ac643fc.png",
         },
         {
-          link: '/invisalign',
+          link: "/invisalign",
           name: `隱形牙箍`,
-          img: 'https://statichk.cmermedical.com/cmermedical/578230be8392aa70.png'
+          img: "https://statichk.cmermedical.com/cmermedical/578230be8392aa70.png",
         },
         {
-          link: '/teeth-whitening',
+          link: "/teeth-whitening",
           name: `美白牙齒`,
-          img: 'https://static.cmereye.com/imgs/2023/12/cdc53cbef72b0392.png'
+          img: "https://static.cmereye.com/imgs/2023/12/cdc53cbef72b0392.png",
         },
         {
-          link: '/crowns-and-bridges',
+          link: "/crowns-and-bridges",
           name: `全瓷牙冠<span class="pcShow">/</span><br class="mbShow" />全鋯牙冠`,
-          img: 'https://static.cmereye.com/imgs/2023/12/eacf82fc433bf385.png'
+          img: "https://static.cmereye.com/imgs/2023/12/eacf82fc433bf385.png",
         },
-
       ],
-      linkHref: 'https://api.whatsapp.com/send?phone=85295128192',
-      linkText: 'WhatsApp 預約',
+      dentistry: [
+        {
+          link: "/general-oral-examination",
+          name: `牙科全科`,
+          img: "https://static.cmereye.com/imgs/2023/12/fe2fc699dee06320.png",
+        },
+        {
+          link: "/orthodontics",
+          name: `牙齒矯正科`,
+          img: "https://static.cmereye.com/imgs/2023/12/588c65469ac643fc.png",
+        },
+        {
+          link: "/extractions-and-wisdom-teeth-extraction",
+          name: `口腔頜面外科`,
+          img: "https://static.cmereye.com/imgs/2023/12/bf496ebdf0a60544.png",
+        },
+        {
+          link: "/periodontal-treatment",
+          name: `牙周治療科`,
+          img: "https://static.cmereye.com/imgs/2023/12/bc1c1cdd16eb124a.png",
+        },
+        {
+          link: "/rct",
+          name: `牙髓治療科`,
+          img: "https://static.cmereye.com/imgs/2023/12/298de7f7370976ab.png",
+        },
+        {
+          link: "/children-dentistry",
+          name: `兒童齒科`,
+          img: "https://static.cmereye.com/imgs/2023/12/c8e2ae1c0b80dbf8.png",
+        },
+        {
+          link: "/fillings",
+          name: `修復齒科`,
+          img: "https://static.cmereye.com/imgs/2023/12/c4ec73cc3358570e.png",
+        },
+        {
+          link: "/teeth-whitening",
+          name: `家庭牙醫科`,
+          img: "https://static.cmereye.com/imgs/2023/12/cdc53cbef72b0392.png",
+        },
+        {
+          link: "/teeth-whitening",
+          name: `社會牙醫科`,
+          img: "https://static.cmereye.com/imgs/2023/12/cdc53cbef72b0392.png",
+        },
+      ],
+      linkHref: "https://api.whatsapp.com/send?phone=85295128192",
+      linkText: "WhatsApp 預約",
       isShowSvg: true,
-      mb:'',
-      paddingSize: '10px 60px',
-      paddingSizeMb: '6px 74px',
-      newSvg: '',
-    }
+      mb: "",
+      paddingSize: "10px 60px",
+      paddingSizeMb: "6px 74px",
+      newSvg: "",
+    };
   },
   mounted() {
     // window.addEventListener('scroll', this.getScrollY);
@@ -179,7 +254,7 @@ export default {
     //   }
     // },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
 .texts {
@@ -343,7 +418,7 @@ a {
     padding-top: 17.72px;
     margin: 0 200px;
 
-    color: #79828D;
+    color: #79828d;
     text-align: center;
     font-family: Noto Sans;
     font-size: 20px;
@@ -393,23 +468,23 @@ a {
     height: 108%;
     margin-left: 9.5px;
     z-index: 0 !important;
-    background: linear-gradient(120deg,
-        rgba(0, 123, 255, 0) 20%,
-        rgba(0, 123, 255, 0.25),
-        rgba(255, 255, 255, 0),
-        #b3d7ff,
-        rgba(255, 255, 255, 0),
-        #4777d8,
-        rgba(0, 123, 255, 0.25),
-        rgba(0, 123, 255, 0.5),
-        rgba(0, 123, 255, 0.25),
-        rgba(255, 255, 255, 0));
+    background: linear-gradient(
+      120deg,
+      rgba(0, 123, 255, 0) 20%,
+      rgba(0, 123, 255, 0.25),
+      rgba(255, 255, 255, 0),
+      #b3d7ff,
+      rgba(255, 255, 255, 0),
+      #4777d8,
+      rgba(0, 123, 255, 0.25),
+      rgba(0, 123, 255, 0.5),
+      rgba(0, 123, 255, 0.25),
+      rgba(255, 255, 255, 0)
+    );
     background-size: 482%;
     filter: blur(0px);
     transition: 1s;
-    animation: animate 8s linear alternate
-      /*,opacity 3s linear   alternate*/
-    ;
+    animation: animate 8s linear alternate /*,opacity 3s linear   alternate*/;
   }
 
   @keyframes animate {
@@ -605,14 +680,14 @@ a {
 @media screen and (max-width: 768px) {
   ::v-deep .newBtn {
     .serve_btn {
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         top: -110% !important;
       }
     }
     .btn_pc_style {
-      &>div{
+      & > div {
         align-items: center;
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           margin-right: 5px;
         }
       }
@@ -634,7 +709,7 @@ a {
 
     h2 {
       margin-bottom: 0.5625rem;
-      color: #79828D;
+      color: #79828d;
       text-align: center;
       font-family: Noto Sans;
       font-size: 25px;
@@ -645,7 +720,7 @@ a {
     }
 
     p {
-      color: #79828D;
+      color: #79828d;
       padding: 0;
       text-align: justify;
       font-family: Noto Sans;
@@ -663,16 +738,16 @@ a {
     flex-direction: column;
 
     //&>div:nth-child(1) {
-      padding-top: 20px;
-      border-top: 1px solid #EBEBEB;
-      color: #57B2F3;
-      font-family: Noto Sans TC;
-      font-size: 21px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-      letter-spacing: 2.1px;
-      position: relative;
+    padding-top: 20px;
+    // border-top: 1px solid #EBEBEB;
+    color: #57b2f3;
+    font-family: Noto Sans TC;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 2.1px;
+    position: relative;
     //}
 
     // &>div:nth-child(1)::before {
@@ -685,7 +760,7 @@ a {
     //   left: 0;
     // }
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       padding: 1.375rem 0;
       display: grid;
       grid-template-rows: auto auto;
@@ -693,14 +768,13 @@ a {
       gap: 1.25rem;
       justify-items: center;
 
-      &>div {
+      & > div {
         border-radius: 1.25rem;
-        background: #ECF7FC;
+        background: #ecf7fc;
         width: 42.1333vw;
         height: 42.1333vw;
 
-
-        &>a {
+        & > a {
           display: flex;
           flex-direction: column;
           align-content: center;
@@ -710,20 +784,20 @@ a {
           align-items: center;
           border-radius: 1.25rem;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             width: 6.875rem;
             height: 6.875rem;
             border-radius: 1.25rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            img{
+            img {
               max-width: max(50px, min(25px, 60px));
               max-height: max(50px, min(25px, 60px));
             }
           }
 
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             color: #505050;
 
             text-align: center;
@@ -735,78 +809,77 @@ a {
             /* 133.333% */
             letter-spacing: 1.5px;
           }
-
         }
 
-        &>a:hover {
+        & > a:hover {
           border-radius: 1.25rem;
-          background: #9BD0F5;
+          background: #9bd0f5;
         }
       }
     }
   }
 
   .service_box3 {
-    &>div:nth-child(1) {
-      color: #FFB7B7;
+    & > div:nth-child(1) {
+      color: #ffb7b7;
     }
 
-    &>div:nth-child(1)::before {
-      background: #FF8585;
+    & > div:nth-child(1)::before {
+      background: #ff8585;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 1.25rem;
 
-      &>div {
-        background: #FFEBEB;
+      & > div {
+        background: #ffebeb;
 
-        &>a:hover {
+        & > a:hover {
           border-radius: 1.25rem;
-          background: #FFB7B7;
+          background: #ffb7b7;
         }
       }
     }
   }
 
   .mb-padding {
-    &>a {
+    & > a {
       display: flex;
       position: relative;
       width: fit-content;
       margin: 60px auto;
 
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         position: absolute;
         width: 3.4375rem;
         right: -12%;
         top: -100%;
         z-index: 1;
 
-        &>svg {
+        & > svg {
           width: 100%;
         }
       }
 
-      &>div:nth-child(2) {
-        &>div:nth-child(1) {
+      & > div:nth-child(2) {
+        & > div:nth-child(1) {
           margin-right: 0.3125rem;
         }
 
         display: flex;
         align-items: center;
-        padding: .375rem 2.5rem .5rem 2.8125rem;
-        background: #FFD333;
+        padding: 0.375rem 2.5rem 0.5rem 2.8125rem;
+        background: #ffd333;
         border-radius: 4.625rem;
-        color: #FFF;
+        color: #fff;
         font-family: Noto Sans;
         font-size: 4.8vw;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
-        letter-spacing: .3856vw;
+        letter-spacing: 0.3856vw;
         position: relative;
         z-index: 10;
       }
@@ -841,15 +914,15 @@ a {
     display: flex;
     align-items: center;
 
-    &>div:nth-child(1) {
-      margin-right: .375rem;
+    & > div:nth-child(1) {
+      margin-right: 0.375rem;
     }
   }
 }
 
 @media screen and (min-width: 768px) {
   .serve_page {
-    color: #79828D;
+    color: #79828d;
     text-align: center;
     font-family: Noto Sans;
     font-size: 20px;
@@ -862,7 +935,7 @@ a {
 
   .texts {
     h2 {
-      color: #79828D;
+      color: #79828d;
       text-align: center;
       font-family: Noto Sans;
       font-size: 25px;
@@ -904,7 +977,7 @@ a {
 
   .service_box_line {
     display: flex;
-    border-top: 1px solid #EBEBEB;
+    // border-top: 1px solid #EBEBEB;
     position: relative;
     justify-content: center;
 
@@ -920,7 +993,7 @@ a {
     //   padding-top: 19px;
     // }
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       flex: 4;
       display: grid;
       grid-template-rows: auto auto;
@@ -929,15 +1002,15 @@ a {
       /* 四列，每列平均分配剩余空间 */
       justify-items: center;
       max-width: 1220px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
 
-      &>div {
+      & > div {
         flex: 1;
         width: 250px;
         height: 250px;
         margin: 0 15px;
         border-radius: 20px;
-        background: #ECF7FC;
+        background: #ecf7fc;
         margin-top: 30px;
 
         a {
@@ -949,7 +1022,7 @@ a {
           height: 100%;
           align-items: center;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             width: 150px;
             height: 120px;
             display: flex;
@@ -957,7 +1030,7 @@ a {
             justify-content: center;
           }
 
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             color: #505050;
             text-align: center;
             font-family: Noto Sans TC;
@@ -971,8 +1044,8 @@ a {
         }
       }
 
-      &>div:hover {
-        background: #9BD0F5;
+      & > div:hover {
+        background: #9bd0f5;
       }
     }
   }
@@ -988,40 +1061,40 @@ a {
   //   background: #299DF0;
   // }
 
-  .service_box2::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    top: -1px;
-    left: 0;
-    background: #299DF0;
-  }
+  // .service_box2::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: inline-block;
+  //   width: 20px;
+  //   height: 1px;
+  //   top: -1px;
+  //   left: 0;
+  //   background: #299DF0;
+  // }
 
-  .service_box3::before {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 20px;
-    height: 1px;
-    top: -1px;
-    left: 0;
-    background: #FF8585;
-  }
+  // .service_box3::before {
+  //   content: '';
+  //   position: absolute;
+  //   display: inline-block;
+  //   width: 20px;
+  //   height: 1px;
+  //   top: -1px;
+  //   left: 0;
+  //   background: #FF8585;
+  // }
 
   .service_box3 {
-    &>div:nth-child(1) {
-      color: #FFB7B7;
+    & > div:nth-child(1) {
+      color: #ffb7b7;
     }
 
-    &>div:nth-child(2) {
-      &>div {
-        background: #FFEBEB;
+    & > div:nth-child(2) {
+      & > div {
+        background: #ffebeb;
       }
 
-      &>div:hover {
-        background: #FFB7B7;
+      & > div:hover {
+        background: #ffb7b7;
       }
     }
   }
@@ -1037,7 +1110,7 @@ a {
     position: relative;
     text-decoration: none;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       position: absolute;
       top: -80%;
       right: -12%;
@@ -1054,7 +1127,7 @@ a {
   }
 
   .btn_pc_style {
-    &>div {
+    & > div {
       display: flex;
     }
   }
@@ -1064,18 +1137,18 @@ a {
     box-shadow: 0px 1.74695px 3.4939px 0px rgba(157, 157, 157, 0.66);
     border-radius: 40px;
     padding: 10px 60px;
-    background: #FFD333;
+    background: #ffd333;
     cursor: pointer;
     top: 0;
-    color: #FFF;
-    font-family: 'Noto Sans CJK TC';
+    color: #fff;
+    font-family: "Noto Sans CJK TC";
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.92px;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin-right: 8px;
       display: flex;
       align-items: center;
@@ -1084,7 +1157,7 @@ a {
   }
 
   .serve_btn .btn_pc_style .btn2 {
-    color: #79828D;
+    color: #79828d;
     background: #fff;
     position: absolute;
     left: 50%;
@@ -1115,7 +1188,7 @@ a {
   .serve_btn .showPcHover {
     .btn2 {
       display: flex;
-      animation: btnAnim .9s linear;
+      animation: btnAnim 0.9s linear;
       animation-fill-mode: forwards;
     }
   }
@@ -1133,6 +1206,5 @@ a {
       clip-path: polygon(110% 0, 120% 0, 110% 100%, 100% 100%);
     }
   }
-
 }
 </style>

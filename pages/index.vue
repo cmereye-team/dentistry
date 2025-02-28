@@ -4,7 +4,7 @@
       <menuBar />
       <Banner />
       <footce />
-      <serve />
+        <!-- <serve/> -->
       <serveConcept />
       <debtistryHealth />
       <mapGoogle />

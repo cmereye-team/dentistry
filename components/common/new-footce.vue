@@ -698,7 +698,9 @@ body {
         margin-top: 2.6vw;
       }
     }
-
+    & > a:last-child { 
+      visibility: hidden;
+    }
     & > a:nth-child(2) {
       display: flex;
       position: relative;

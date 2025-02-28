@@ -3,7 +3,7 @@
     <menuBar />
     <!-- <Banner /> -->
     <footce />
-    <serve />
+      <!-- <serve/> -->
     <mapGoogle />
     <foot />
 

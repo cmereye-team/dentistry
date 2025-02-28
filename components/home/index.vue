@@ -14,7 +14,7 @@
             <img src="https://static.cmereye.com/imgs/2023/12/b3082a5c64b21247.png" alt="希瑪牙科">
           </div>
         </div>
-        <div>
+        <!-- <div>
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" width="170" height="85" viewBox="0 0 170 85" fill="none">
               <path
@@ -105,7 +105,7 @@
           <div>
             希瑪牙科秉持「整體分析」原則，用心照顧客人的需要，幫助重獲自信笑容。
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <div v-else>
@@ -121,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="dental_logo">
+      <!-- <div class="dental_logo">
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="170" height="85" viewBox="0 0 170 85" fill="none">
             <path
@@ -212,10 +212,10 @@
         <div>
           希瑪牙科秉持「整體分析」原則，用心照顧客人的需要，幫助重獲自信笑容。
         </div>
-      </div>
+      </div> -->
     </div>
     <div class="dental_con  main-container">
-      <div>希瑪牙科隸屬於主板上市公司「香港希瑪眼科集團」（股份代號：03309），<br class="pcShow" />為大眾提供基本牙科、美容牙科及高階牙科服務。 </div>
+      <!-- <div>希瑪牙科隸屬於主板上市公司「香港希瑪眼科集團」（股份代號：03309），<br class="pcShow" />為大眾提供基本牙科、美容牙科及高階牙科服務。 </div> -->
       <div>自2021年成立以來，始終堅守以客人需求為導向的服務理念，致力於提供符合<br class="pcShow" />國際標準的牙科診療服務。 </div>
       <div>結合客人口腔健康狀況，制定安全且可靠的治療方案，同時強調口腔保健教育，<br class="pcShow" />鼓勵大眾瞭解牙齒健康的重要性，提升對口腔護理的關注。</div>
     </div>
@@ -329,7 +329,7 @@ export default {
       &>div:nth-child(1) {
         display: flex;
         flex: 5;
-        justify-content: flex-end;
+        justify-content: center;
         z-index: 1;
         position: relative;
 

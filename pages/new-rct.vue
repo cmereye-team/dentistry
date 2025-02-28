@@ -7,7 +7,7 @@
     <footce />
     <problem />
     <mapGoogle />
-    <registration />
+      <!-- <registration  /> -->
     <foot />
   </div>
 </template>

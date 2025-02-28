@@ -5,7 +5,7 @@
     <footce />
     <serve :isServePage=isServePage />
     <mapGoogle />
-    <registration />
+    <!-- <registration /> -->
     <foot />
   </div>
 </template>

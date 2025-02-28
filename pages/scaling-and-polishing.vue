@@ -6,7 +6,7 @@
     <scaleTeeth />
     <footce />
     <problem />
-    <serve />
+      <!-- <serve/> -->
     <mapGoogle />
     <foot />
 
