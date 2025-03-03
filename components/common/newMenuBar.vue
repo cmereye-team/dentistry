@@ -474,9 +474,9 @@
           <span :style="{ height: toTopType ? '20px' : '0px' }"></span>
           <span :style="{ height: toTopType ? '15px' : '0px' }"></span>
         </div>
-        <img class="pageTop"
+        <!-- <img class="pageTop"
           src="https://raw.gitmirror.com/CMER-SZ/picx-images-hosting/master/new-hkcmereye/image-10.13h8v2f2dmkg.png"
-          alt="">
+          alt=""> -->
       </div>
     </el-backtop>
   </div>

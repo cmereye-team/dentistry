@@ -214,7 +214,7 @@
             <a class="link_more google_map" href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true"
               target="_blank">Google
               地圖</a>
-            <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
+            <!-- <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a> -->
           </div>
         </div>
       </div>
@@ -278,7 +278,7 @@
             <a class="link_more google_map" href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true"
               target="_blank">Google
               地圖</a>
-            <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
+            <!-- <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a> -->
           </div>
         </div>
       </div>
@@ -474,7 +474,7 @@
             <a class="link_more google_map" href="https://goo.gl/maps/SGs1wJ5upMoEqJ3k7" aria-hidden="true"
               target="_blank">Google
               地圖</a>
-            <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a>
+            <!-- <a class="link_more" href="https://j.map.baidu.com/f2/Vgzc" aria-hidden="true" target="_blank">百度地圖</a> -->
           </div>
         </div>
       </div>
@@ -541,7 +541,7 @@
             <a class="link_more google_map" href="https://goo.gl/maps/SrWKtmDL1Ygixk2u9" aria-hidden="true"
               target="_blank">Google
               地圖</a>
-            <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a>
+            <!-- <a class="link_more" href="https://j.map.baidu.com/8f/jisf" aria-hidden="true" target="_blank">百度地圖</a> -->
           </div>
         </div>
       </div>
