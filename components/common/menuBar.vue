@@ -37,7 +37,7 @@
             </li> -->
               <li class="nav-item dropdown">
                 <nuxt-link
-                  class="nav-link dropdown-toggle yaserve"
+                  class="nav-link  yaserve"
                   to="/service"
                   id="navbarDropdownMenuLink"
                   role="button"
@@ -46,7 +46,7 @@
                   >牙科服務</nuxt-link
                 >
                 <!-- 注意：这个ul是包含在li里面的 是下拉菜单的内容 -->
-                <ul class="dropdown-menu">
+                <!-- <ul class="dropdown-menu">
                   <div class="drop">
                     <li class="nav-item nav-items">
                       <div class="service_box">
@@ -65,13 +65,7 @@
                               </div>
                             </nuxt-link>
 
-                            <!-- <a href="/implant">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame.png" title="植牙"
-                            alt="植牙" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">植牙</p>
-                        </div>
-                      </a> -->
+  
                           </div>
                         </div>
                       </div>
@@ -93,13 +87,7 @@
                                 <p class="fs-sm-16">根管治療<br />（杜牙根）</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/rct">
-                        <div class="service_pic"> <img class="imgya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group.png" title="根管治療（杜牙根）"
-                            alt="根管治療（杜牙根）" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">根管治療<br>（杜牙根）</p>
-                        </div>
-                      </a> -->
+         
                           </div>
                         </div>
                       </div>
@@ -121,13 +109,7 @@
                                 <p class="fs-sm-16">Invisalign<br />隱形牙箍</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/invisalign">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/tif.png" title="Invisalign隱形牙箍"
-                            alt="Invisalign隱形牙箍" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">Invisalign<br>隱形牙箍</p>
-                        </div>
-                      </a> -->
+          
                           </div>
                         </div>
                       </div>
@@ -149,13 +131,7 @@
                                 <p class="fs-sm-16">瓷貼片</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/veneers">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_0.png" title=" 瓷貼片"
-                            alt=" 瓷貼片" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 "> 瓷貼片</p>
-                        </div>
-                      </a> -->
+            
                           </div>
                         </div>
                       </div>
@@ -182,12 +158,7 @@
                                 <p class="fs-sm-16">牙齒美白</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/teeth-whitening">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_1.png" title="牙齒美白" alt="牙齒美白" /></div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">牙齒美白</p>
-                        </div>
-                      </a> -->
+        
                           </div>
                         </div>
                       </div>
@@ -212,12 +183,7 @@
                                 <p class="fs-sm-16">全瓷牙冠<br />及全鋯牙冠</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/crowns-and-bridges">
-                        <div class="service_pic"> <img class="quanci" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame01.png" title="全瓷牙冠及全鋯牙冠" alt="全瓷牙冠及全鋯牙冠" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">全瓷牙冠<br>及全鋯牙冠</p>
-                        </div>
-                      </a> -->
+             
                           </div>
                         </div>
                       </div>
@@ -243,12 +209,6 @@
                               </div>
                             </nuxt-link>
 
-                            <!-- <a href="/extractions-and-wisdom-teeth-extraction">
-                        <div class="service_pic"> <img class="imgba" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame02.png" title="拔牙及智慧齒脫除" alt="拔牙及智慧齒脫除" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">拔牙及智慧齒脫除</p>
-                        </div>
-                      </a> -->
                           </div>
                         </div>
                       </div>
@@ -273,12 +233,7 @@
                                 <p class="fs-sm-16">牙周病治療</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/periodontal-treatment">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame03.png" title="牙周病治療" alt="牙周病治療" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 "> 牙周病治療</p>
-                        </div>
-                      </a> -->
+        
                           </div>
                         </div>
                       </div>
@@ -305,12 +260,7 @@
                                 <p class="fs-sm-16">全口牙托及<br />局部牙托</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/complete-and-partial-denture">
-                        <div class="service_pic"><img class="allya" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_2.png" title="全口牙托及局部牙托" alt="全口牙托及局部牙托" /></div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">全口牙托及<br>局部牙托</p>
-                        </div>
-                      </a> -->
+    
                           </div>
                         </div>
                       </div>
@@ -333,12 +283,6 @@
                               </div>
                             </nuxt-link>
 
-                            <!-- <a href="/orthodontics">
-                        <div class="service_pic"> <img class="quanci" src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Frame04.png" title="矯齒" alt="矯齒" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">矯齒</p>
-                        </div>
-                      </a> -->
                           </div>
                         </div>
                       </div>
@@ -364,12 +308,7 @@
                               </div>
                             </nuxt-link>
 
-                            <!-- <a href="/scaling-and-polishing">
-                        <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_3.png" title="洗牙" alt="洗牙" /></div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">洗牙</p>
-                        </div>
-                      </a> -->
+   
                           </div>
                         </div>
                       </div>
@@ -390,12 +329,7 @@
                                 <p class="fs-sm-16">補牙</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/fillings">
-                        <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_4.png" title="補牙" alt="補牙" />  </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 "> 補牙</p>
-                        </div>
-                      </a> -->
+            
                           </div>
                         </div>
                       </div>
@@ -421,12 +355,7 @@
                                 <p class="fs-sm-16">一般口腔檢查</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/general-oral-examination">
-                        <div class="service_pic"><img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_5.png" title="一般口腔檢查"  alt="一般口腔檢查" /></div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">一般口腔檢查</p>
-                        </div>
-                      </a> -->
+     
                           </div>
                         </div>
                       </div>
@@ -450,46 +379,35 @@
                                 <p class="fs-sm-16">兒童牙科<br />保健及治療</p>
                               </div>
                             </nuxt-link>
-                            <!-- <a href="/children-dentistry">
-                        <div class="service_pic"> <img src="https://static.cmereye.com/static/lkximg/image/about-me/serve/Group_6.png" title="兒童牙科保健及治療" alt="兒童牙科保健及治療" /> </div>
-                        <div class="service_txt">
-                          <p class="fs-sm-16 ">兒童牙科<br>保健及治療</p>
-                        </div>
-                      </a> -->
+
                           </div>
                         </div>
                       </div>
                     </li>
                   </div>
-                </ul>
+                </ul> -->
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link" to="/facilities"
                   >儀器及設備</nuxt-link
                 >
 
-                <!-- <a class="nav-link" href="/facilities">儀器及設備</a> -->
               </li>
               <li class="nav-item">
                 <nuxt-link class="nav-link" to="/oral-health-information"
                   >健康資訊</nuxt-link
                 >
-                <!-- <a class="nav-link" href="/equipment">健康資訊</a> -->
-              </li>
-              <li class="nav-item">
+              </li> -->
+              <!-- <li class="nav-item">
                 <nuxt-link class="nav-link" to="/news">最新消息</nuxt-link>
-                <!-- <a class="nav-link" href="/news">最新消息</a> -->
-              </li>
+              </li> -->
               <li class="nav-item">
                 <nuxt-link class="nav-link" to="/contact-us"
                   >聯絡我們</nuxt-link
                 >
-                <!-- <a class="nav-link" href="/contactUs">聯絡我們</a> -->
               </li>
+   
               <!-- <li class="nav-item ipad-not-show">
-                <nuxt-link class="nav-link eng " to="#">ENG</nuxt-link>
-              </li> -->
-              <li class="nav-item ipad-not-show">
                 <a
                   id="zxzx"
                   class="nav-link yuyue"
@@ -502,7 +420,7 @@
                     >3620 2428</span
                   ></a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
         </nav>
